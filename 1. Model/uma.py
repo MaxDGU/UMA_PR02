@@ -255,10 +255,10 @@ class Goal(Chunk):
 
 def toDigArr(n):
     """ Interpret n as an array of digits """
-    if type(n)==list and all(type(d) in [int, np.int32] for d in n):
+    if type(n)==list and all(type(d) in [int, np.int32, np.int64] for d in n):
         # n is already an array of digits
         return(n)
-    elif type(n) in [int, np.int32]:
+    elif type(n) in [int, np.int32, np.int64]:
         # n is an integer
         return [int(d) for d in str(n)]
     elif type(n)==list and all((type(k)==str and k.isdigit() and len(k)==1) for k in n):
@@ -285,9 +285,9 @@ class Number(Chunk):
         n = None
         if type(number)==str:
             n = number
-        elif type(number) in [int, np.int32]:
+        elif type(number) in [int, np.int32, np.int64]:
             n = str(number)
-        elif type(number)==list and all(type(k) in [int, np.int32] for k in number):
+        elif type(number)==list and all(type(k) in [int, np.int32, np.int64] for k in number):
             n = "".join([str(d) for d in number])
         elif type(number)==list and all(type(k)==str and k.isdigit() for k in number):
             n = "".join([d for d in number])
@@ -1502,7 +1502,15 @@ class UMA:
                     self.trace.append((copy.deepcopy(state), None))
                     UMA_traces.append(('Rule selection failure', self.trace))
                     break
-                
+
+                # If no rule matched (chooseRule returned None), terminate gracefully
+                if rule is None:
+                    p = str(state.ws[0]) if len(self.trace)==0 else str(self.trace[-1][0].ws[0])
+                    if verbose: print("STEP " + str(step) + "\n" + str(state) + "UMA.run while solving " + p + " ended due to no matching rules\n")
+                    self.trace.append((copy.deepcopy(state), None))
+                    UMA_traces.append(('No matching rules', self.trace))
+                    break
+
                 # If a rule was selected, fire it
                 self.trace.append((copy.deepcopy(state), rule))
                 if verbose: print("STEP " + str(step) + "\n" + str(state) + "RULE: " + str(rule) + "\n")
@@ -1621,10 +1629,16 @@ class UMA:
                 n           = list(force_names & set(mnames))
                 P[n]        = 1.0/len(n)
         # Select a rule and return it together with its binding
-        idx         = np.random.choice(range(0,len(P)), p=P)
-        rule        = self.rules[idx]
-        binding     = bindings[idx]
-        return((rule, binding))
+        # Normalize P to handle floating point errors in softmax
+        if P.sum() > 0:
+            P = P / P.sum()
+            idx         = np.random.choice(range(0,len(P)), p=P)
+            rule        = self.rules[idx]
+            binding     = bindings[idx]
+            return((rule, binding))
+        else:
+            # No rules match - return None to signal failure
+            return((None, {}))
     def getRuleActivations(self, context):
         C = context.data[self.proc_mem.index]   # features present in context
         A = self.proc_mem.mul(C, axis=0).sum(axis=0) / C.sum()
@@ -1671,6 +1685,9 @@ class UMA:
         if R.shape[0]>0:
             P = pd.Series(0, index=A.index)
             P[R.index] = self.getProbabilities(R)
+            # Normalize P to handle floating point errors in softmax
+            if P.sum() > 0:
+                P = P / P.sum()
             idx = np.random.choice(range(0,len(P)), p=P)
             answer = copy.deepcopy(self.answers[idx])
             return(answer)

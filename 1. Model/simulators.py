@@ -243,7 +243,7 @@ class Cohort():
         return(params_list)
     @classmethod
     def saveModels(self, fn="models"):
-        f = os.path.abspath(os.getcwd()) + "\\Output\\" + fn + ".xlsx"
+        f = os.path.join(os.path.abspath(os.getcwd()), "Output", fn + ".xlsx")
         with pd.ExcelWriter(f, engine="xlsxwriter") as writer:
             workbook   = writer.book
             S = pd.DataFrame([[s, json.dumps(p)] for (s,p) in zip(self.subjids, self.params)], columns=['subjid', 'params'])
@@ -265,7 +265,7 @@ class Cohort():
             A.to_excel(writer, sheet_name='ans')
     @classmethod
     def loadModels(cls, fn, rules=all_rules):
-        f = os.path.abspath(os.getcwd()) + "\\Output\\" + fn + ".xlsx"
+        f = os.path.join(os.path.abspath(os.getcwd()), "Output", fn + ".xlsx")
         S = pd.read_excel(f, sheet_name='subj', index_col=0)
         P = pd.read_excel(f, sheet_name='proc', index_col=0)
         A = pd.read_excel(f, sheet_name='ans', index_col=0)
@@ -296,7 +296,7 @@ class Cohort():
                     out = R
                 else:
                     out = pd.concat([out, R], ignore_index=True)
-        f = os.path.abspath(os.getcwd())+"\\Output\\" + fn
+        f = os.path.join(os.path.abspath(os.getcwd()), "Output", fn)
         if add_date:
             f = f + " " + datetime.now().strftime("%y-%m-%d %H.%M.%S")
         f = f + ".xlsx"
@@ -368,9 +368,17 @@ class Simulation():
                 self.tests[5] = [TDA, TDM]
             elif curriculum=="fractions":
                 self.tests[5] = [TFA]
-    def run(self, start_subjid=0, end_subjid=None):
+    def run(self, start_subjid=0, end_subjid=None, save_final_only=False):
+        """
+        Run simulation for all students.
+
+        Args:
+            start_subjid: First student index to process (for parallelization)
+            end_subjid: Last student index to process (for parallelization)
+            save_final_only: If True, only save grade 6 model and test files (reduces ~19k to ~6k files)
+        """
         # create directory to save results
-        fn_stem = os.path.abspath(os.getcwd())+"\\Output\\" + self.name + "\\"
+        fn_stem = os.path.join(os.path.abspath(os.getcwd()), "Output", self.name) + os.sep
         if not os.path.exists(fn_stem):
             os.makedirs(fn_stem)
         time1 = datetime.now()
@@ -388,21 +396,25 @@ class Simulation():
                     # train model
                     if course is not None:
                         course.trainModel(self.cohort.students[subjid])
-                        with pd.ExcelWriter(sfn_stem + " model.xlsx", engine="xlsxwriter") as writer:
-                            S = pd.DataFrame([[subjid, json.dumps(self.cohort.params[subjid])]], columns=['subjid', 'params'])
-                            S.to_excel(writer, sheet_name='subj')
-                            self.cohort.students[subjid].proc_mem.to_excel(writer, sheet_name='proc')
-                            self.cohort.students[subjid].ans_mem.to_excel(writer, sheet_name='ans')
+                        # Only save if final grade OR not in save_final_only mode
+                        if grade == 6 or not save_final_only:
+                            with pd.ExcelWriter(sfn_stem + " model.xlsx", engine="xlsxwriter") as writer:
+                                S = pd.DataFrame([[subjid, json.dumps(self.cohort.params[subjid])]], columns=['subjid', 'params'])
+                                S.to_excel(writer, sheet_name='subj')
+                                self.cohort.students[subjid].proc_mem.to_excel(writer, sheet_name='proc')
+                                self.cohort.students[subjid].ans_mem.to_excel(writer, sheet_name='ans')
                     # test model
                     if tests is not None:
-                        for j in range(len(tests)):
-                            R = tests[j].testModel(self.cohort.students[subjid])
-                            orig_cols = R.columns
-                            R['subjid'] = subjid
-                            for param, value in self.cohort.params[subjid].items():
-                                R[param] = value
-                            R = R[['subjid']+list(self.cohort.params[subjid].keys())+list(orig_cols)]
-                            R.to_excel(sfn_stem + " test_" + str(j+1) + ".xlsx")
+                        # Only save if final grade OR not in save_final_only mode
+                        if grade == 6 or not save_final_only:
+                            for j in range(len(tests)):
+                                R = tests[j].testModel(self.cohort.students[subjid])
+                                orig_cols = R.columns
+                                R['subjid'] = subjid
+                                for param, value in self.cohort.params[subjid].items():
+                                    R[param] = value
+                                R = R[['subjid']+list(self.cohort.params[subjid].keys())+list(orig_cols)]
+                                R.to_excel(sfn_stem + " test_" + str(j+1) + ".xlsx")
                     self.cohort.students[subjid].trace = [] # maybe saves memory?
         # record end time and run time
         time2 = datetime.now()
@@ -412,7 +424,7 @@ class Simulation():
     def mergeResults(cls, name):
         """ Combine results of named simulation into a small number of Excel files """
         # get filenames
-        path = os.path.abspath(os.getcwd())+"\\Output\\" + name + "\\"
+        path = os.path.join(os.path.abspath(os.getcwd()), "Output", name) + os.sep
         files = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
         P = pd.DataFrame(files, columns=['file'])
         for c in ['subjid', 'grade', 'type', 'number']:
@@ -448,16 +460,16 @@ class Simulation():
         X = X.drop(columns=[c for c in X.columns if "Unnamed" in c])
         X['notation'] = pd.Categorical(list(X['notation']), categories=["whole", "fraction", "decimal"])
         X = X.sort_values(by=['notation', 'grade', 'test', 'subjid'])
-        X.to_csv(os.path.abspath(os.getcwd()) + "\\Output\\sim " + name + ".csv")
+        X.to_csv(os.path.join(os.path.abspath(os.getcwd()), "Output", "sim " + name + ".csv"))
 
 # # Uncomment these lines to run the full simulations
 # ps      = {
-   # 'g':     [.01, .02, .03, .04, .05, .06, .07, .08, .09, .10],
-   # 'd':     [.1, .3, .5, .7, .9],
-   # 'c':     [5],
-   # 'rt_mu': [3, 4, 5, 6],
-   # 'rt_sd': [1],
-   # 'ice':   [0, 25, 50, 75, 100]}
+#    'g':     [.01, .02, .03, .04, .05, .06, .07, .08, .09, .10],
+#    'd':     [.1, .3, .5, .7, .9],
+#    'c':     [5],
+#    'rt_mu': [3, 4, 5, 6],
+#    'rt_sd': [1],
+#    'ice':   [0, 25, 50, 75, 100]}
 # S = Simulation("ALL29_BCD", params_sets=ps, rules=all_rules, N=1, curriculum="full")
 # S.run()
 # Simulation.mergeResults("ALL29_BCD")
