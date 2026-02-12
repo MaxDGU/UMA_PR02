@@ -17,7 +17,7 @@ from torch.cuda.amp import autocast, GradScaler
 from fractions import Fraction
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-TRACES_PATH = os.path.join(SCRIPT_DIR, 'uma_traces_all.csv')
+TRACES_PATH = os.path.join(SCRIPT_DIR, '..', 'UMA_replication', 'uma_traces_all.csv.gz')
 SP2013_PATH = os.path.join(SCRIPT_DIR, '..', 'UMA_replication', 'sp2013.csv')
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, 'output')
 os.makedirs(OUTPUT_DIR, exist_ok=True)

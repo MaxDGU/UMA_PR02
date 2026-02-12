@@ -41,9 +41,10 @@ from fractions import Fraction
 
 warnings.filterwarnings('ignore')
 
-# Paths
+# Paths - relative to repo structure: UMA_PR02/results/UMA_replication/
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-UMA_MODEL_DIR = os.path.join(SCRIPT_DIR, 'UMA_PR02_fork', '1. Model')
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..'))
+UMA_MODEL_DIR = os.path.join(REPO_ROOT, '1. Model')
 PAPER_OUTPUT_PATH = os.path.join(SCRIPT_DIR, 'uma_paper_replication.csv')
 SYNTHETIC_OUTPUT_PATH = os.path.join(SCRIPT_DIR, 'uma_synthetic_traces.csv')
 
