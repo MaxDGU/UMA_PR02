@@ -320,7 +320,7 @@ class Simulation():
         elif curriculum=="full":
             base_rules  = all_rules
         elif curriculum in ["rational", "fractions", "decimals"]:
-            base_rules  = RA_rules
+            base_rules  = all_rules  # Changed from RA_rules to all_rules
         self.cohort = Cohort(rules=base_rules, params_sets=params_sets, N=N)
         
         ## Define self.courses
