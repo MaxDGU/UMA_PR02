@@ -3,26 +3,40 @@
 Translate UMA symbolic traces into deterministic NLP-style training text.
 
 This script is intended as a preprocessing step before transformer training.
-It preserves the source trace fields and appends natural-language columns.
+It preserves source trace fields, appends natural-language columns, and can
+assemble one output dataset from multiple UMA CSV sources.
+
+By default it combines:
+- results/UMA_replication/uma_traces_all.csv
+- results/UMA_replication/sp2013_eval/seed_{1..20}/sp2013_seed{seed}_all_models.csv
 
 Example:
   python results/transformer_replication/translate_uma_traces_to_nlp.py \
+    --output-csv results/transformer_replication/uma_traces_all_nlp.csv.gz
+
+  python results/transformer_replication/translate_uma_traces_to_nlp.py \
+    --no-include-sp2013-seeds \
     --input-csv results/UMA_replication/uma_traces_all.csv \
     --output-csv results/transformer_replication/uma_traces_all_nlp.csv.gz
 """
 
 import argparse
+import glob
+import math
 import os
 import re
-from typing import Dict, List, Optional, Tuple
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_INPUT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replication", "uma_traces_all.csv"))
+DEFAULT_UMA_INPUT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replication", "uma_traces_all.csv"))
+DEFAULT_SP2013_EVAL_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replication", "sp2013_eval"))
 DEFAULT_OUTPUT = os.path.join(SCRIPT_DIR, "uma_traces_all_nlp.csv.gz")
-TRANSLATION_VERSION = "uma_nlp_rules_v2_child_style"
+DEFAULT_SP2013_SEEDS = "1-20"
+TRANSLATION_VERSION = "uma_nlp_rules_v5_checked_claims_trace_quality"
 
 
 OPERATION_TEXT: Dict[str, str] = {
@@ -52,6 +66,19 @@ STRATEGY_TEXT: Dict[str, str] = {
     "ICDM_OG": "I use an invert-and-convert approach where applicable before operating",
     "OTHER": "I use a mixed or uncategorized strategy",
 }
+
+
+STRATEGY_CODES: List[str] = [
+    "KDON_AS",
+    "KDON_OG",
+    "CDON_AS",
+    "CDON_OG",
+    "ONOD_M",
+    "ONOD_OG",
+    "CROP_M",
+    "ICDM_D",
+    "ICDM_OG",
+]
 
 
 GOAL_TEXT: Dict[str, str] = {
@@ -99,21 +126,89 @@ IGNORED_GOAL_RULES_IN_REASONING = {
 }
 
 
+CANONICAL_COLUMNS: List[str] = [
+    "subjid",
+    "prob",
+    "operation",
+    "strategy",
+    "goals",
+    "exec",
+    "answer",
+    "correct",
+    "is_correct",
+    "g",
+    "d",
+    "rt_mu",
+    "ice",
+]
+
+MAPPING_COLUMNS: List[str] = [
+    "source_dataset",
+    "source_file",
+    "source_seed",
+    "source_row_idx",
+    "source_uid",
+]
+
+
+@dataclass(frozen=True)
+class SourceSpec:
+    path: str
+    dataset: str
+    seed: Optional[int]
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Translate UMA traces into NLP-style text.")
-    parser.add_argument("--input-csv", type=str, default=DEFAULT_INPUT, help="Path to UMA trace CSV.")
+    parser.add_argument(
+        "--input-csv",
+        type=str,
+        action="append",
+        default=[],
+        help="Input UMA CSV path (repeatable). Globs are allowed.",
+    )
+    parser.add_argument(
+        "--include-default-uma-traces",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=f"Include default UMA traces file ({DEFAULT_UMA_INPUT}).",
+    )
+    parser.add_argument(
+        "--include-sp2013-seeds",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include SP2013 inference outputs from seed-level all_models CSV files.",
+    )
+    parser.add_argument(
+        "--sp2013-eval-dir",
+        type=str,
+        default=DEFAULT_SP2013_EVAL_DIR,
+        help="Directory containing SP2013 seed folders (seed_1..seed_20).",
+    )
+    parser.add_argument(
+        "--sp2013-seeds",
+        type=str,
+        default=DEFAULT_SP2013_SEEDS,
+        help="Seed list/ranges to include from sp2013_eval (e.g. '1-20' or '1,3,5-8').",
+    )
     parser.add_argument("--output-csv", type=str, default=DEFAULT_OUTPUT, help="Path for NLP output CSV/CSV.GZ.")
     parser.add_argument("--chunksize", type=int, default=100000, help="Rows per processing chunk.")
     parser.add_argument("--max-rows", type=int, default=None, help="Optional cap for quick test runs.")
     parser.add_argument(
         "--minimal-columns",
         action="store_true",
-        help="Write only key metadata columns + NLP columns instead of all source columns.",
+        help="Write mapping + canonical UMA fields + NLP fields instead of all source columns.",
     )
     parser.add_argument(
         "--include-outcome-text",
         action="store_true",
         help="Append correctness text to response_nl.",
+    )
+    parser.add_argument(
+        "--include-student-params",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include UMA parameter block in instruction_nl prompt.",
     )
     return parser.parse_args()
 
@@ -130,6 +225,16 @@ def safe_text(value: object, default: str = "") -> str:
     if txt.lower() == "nan":
         return default
     return txt if txt else default
+
+
+def safe_float(value: object) -> Optional[float]:
+    text = safe_text(value, default="")
+    if text == "":
+        return None
+    try:
+        return float(text)
+    except Exception:
+        return None
 
 
 def split_tokens(value: object) -> List[str]:
@@ -174,6 +279,35 @@ def parse_binary_problem(prob: str, operation: str) -> Tuple[str, str, Optional[
     return left, right, parse_fraction(left), parse_fraction(right)
 
 
+def apply_int_operation(
+    lhs: int,
+    rhs: int,
+    operation: str,
+    prefer_larger_first: bool = False,
+    drop_remainder: bool = False,
+) -> Optional[int]:
+    if operation == "+":
+        return lhs + rhs
+    if operation == "-":
+        if prefer_larger_first:
+            return max(lhs, rhs) - min(lhs, rhs)
+        return lhs - rhs
+    if operation == "*":
+        return lhs * rhs
+    if operation == ":":
+        num, den = (lhs, rhs)
+        if prefer_larger_first:
+            num, den = max(lhs, rhs), min(lhs, rhs)
+        if den == 0:
+            return None
+        if drop_remainder:
+            return int(num / den)
+        if num % den == 0:
+            return num // den
+        return None
+    return None
+
+
 def render_rule_sequence(tokens: List[str], rule_text: Dict[str, str], unknown_prefix: str) -> str:
     if not tokens:
         return "No explicit rule was logged."
@@ -193,9 +327,9 @@ def to_optional_bool(value: object) -> Optional[bool]:
     if isinstance(value, bool):
         return value
     text = safe_text(value, default="").lower()
-    if text in {"1", "true", "t", "yes", "y"}:
+    if text in {"1", "1.0", "true", "t", "yes", "y"}:
         return True
-    if text in {"0", "false", "f", "no", "n"}:
+    if text in {"0", "0.0", "false", "f", "no", "n"}:
         return False
     return None
 
@@ -222,6 +356,24 @@ def dedupe_keep_order(items: List[str]) -> List[str]:
     return out
 
 
+def format_numeric_token(value: object, fallback: str = "unk") -> str:
+    val = safe_float(value)
+    if val is None:
+        return fallback
+    if val.is_integer():
+        return str(int(val))
+    text = f"{val:.10f}".rstrip("0").rstrip(".")
+    return text if text != "" else fallback
+
+
+def build_student_block(record: Dict[str, object]) -> str:
+    g_value = format_numeric_token(record.get("g"))
+    d_value = format_numeric_token(record.get("d"))
+    rt_value = format_numeric_token(record.get("rt_mu"))
+    ice_value = format_numeric_token(record.get("ice"))
+    return f"<student> g {g_value} d {d_value} rt {rt_value} ice {ice_value} </student>"
+
+
 def build_child_reasoning(
     prob: str,
     operation: str,
@@ -229,7 +381,7 @@ def build_child_reasoning(
     goals: List[str],
     exec_rules: List[str],
     answer: str,
-) -> str:
+) -> Tuple[str, Dict[str, object]]:
     # Hide selected internal UMA tokens from the narrated trace.
     exec_rules_for_narration = [r for r in exec_rules if r not in IGNORED_EXEC_RULES_IN_REASONING]
     goals_for_narration = [g for g in goals if g not in IGNORED_GOAL_RULES_IN_REASONING]
@@ -239,36 +391,126 @@ def build_child_reasoning(
     ans_frac = parse_fraction(answer)
     ans_num = ans_frac[0] if ans_frac else safe_text(answer, default="?")
     ans_den = ans_frac[1] if ans_frac else None
+    ans_num_int = int(ans_num) if ans_frac else None
+    ans_den_int = int(ans_den) if ans_frac else None
+
+    has_larger_first = ("sub_LbS" in exec_rules_for_narration) or ("div_LbS" in exec_rules_for_narration) or ("div_LbS_drop_rem" in exec_rules_for_narration)
+    has_drop_remainder = ("div_drop_rem" in exec_rules_for_narration) or ("div_LbS_drop_rem" in exec_rules_for_narration)
+
+    quality_flags: Set[str] = set()
+    verified_claims = 0
+    unverified_claims = 0
+
+    def note_check_result(matched: Optional[bool]) -> None:
+        nonlocal verified_claims, unverified_claims
+        if matched is True:
+            verified_claims += 1
+            return
+        unverified_claims += 1
+        if matched is False:
+            quality_flags.add("arith_claim_mismatch")
+        else:
+            quality_flags.add("unverified_numeric_claim")
 
     main_sentences: List[str] = []
     if strategy_code in {"ICDM_D", "ICDM_OG"} and operation == ":" and left_frac and right_frac and ans_den is not None:
         a, b = left_frac
         c, d = right_frac
         main_sentences.append(f"I flipped {c}/{d} to {d}/{c} and changed it to multiplication")
-        main_sentences.append(f"Then I did {a} times {d} and got {ans_num}, and {b} times {c} and got {ans_den}")
+        top_prod = int(a) * int(d)
+        bot_prod = int(b) * int(c)
+        if ans_num_int is not None and ans_den_int is not None and top_prod == ans_num_int and bot_prod == ans_den_int:
+            note_check_result(True)
+            note_check_result(True)
+            main_sentences.append(f"Then I did {a} times {d} and got {ans_num}, and {b} times {c} and got {ans_den}")
+        else:
+            note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
+            note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
+            main_sentences.append("Then I multiplied across to form a new top and bottom")
     elif strategy_code.startswith("CDON"):
         common_den = ans_den or (left_frac[1] if left_frac else "?")
+        if left_frac and right_frac:
+            b_val = int(left_frac[1])
+            d_val = int(right_frac[1])
+            if b_val != 0 and d_val != 0:
+                common_den = str((abs(b_val * d_val)) // math.gcd(abs(b_val), abs(d_val)))
         main_sentences.append(f"I found a common denominator, {common_den}, first")
         if left_frac and right_frac and ans_den is not None:
             a, _ = left_frac
             c, _ = right_frac
-            main_sentences.append(f"Then I took {a} {op_word} {c} and got {ans_num}")
+            num_result = apply_int_operation(
+                int(a),
+                int(c),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            if ans_num_int is not None and num_result is not None and num_result == ans_num_int:
+                note_check_result(True)
+                main_sentences.append(f"Then I took {a} {op_word} {c} and got {ans_num}")
+            else:
+                note_check_result(False if ans_num_int is not None and num_result is not None else None)
+                main_sentences.append(f"Then I combined the top numbers with {op_word} and kept {common_den} on the bottom")
     elif strategy_code.startswith("KDON"):
         if left_frac and right_frac and ans_den is not None:
             a, b = left_frac
             c, d = right_frac
             keep_den = b if b == d else ans_den
-            main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and I kept {keep_den} on the bottom")
+            num_result = apply_int_operation(
+                int(a),
+                int(c),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            if ans_num_int is not None and num_result is not None and num_result == ans_num_int:
+                note_check_result(True)
+                main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and I kept {keep_den} on the bottom")
+            else:
+                note_check_result(False if ans_num_int is not None and num_result is not None else None)
+                main_sentences.append(f"I combined the top numbers and kept {keep_den} on the bottom")
     elif strategy_code.startswith("ONOD"):
         if left_frac and right_frac and ans_den is not None:
             a, b = left_frac
             c, d = right_frac
-            main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and {b} {op_word} {d} and got {ans_den}")
+            top_result = apply_int_operation(
+                int(a),
+                int(c),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            bottom_result = apply_int_operation(
+                int(b),
+                int(d),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            top_match = ans_num_int is not None and top_result is not None and top_result == ans_num_int
+            bot_match = ans_den_int is not None and bottom_result is not None and bottom_result == ans_den_int
+            if top_match and bot_match:
+                note_check_result(True)
+                note_check_result(True)
+                main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and {b} {op_word} {d} and got {ans_den}")
+            else:
+                note_check_result(False if ans_num_int is not None and top_result is not None else None)
+                note_check_result(False if ans_den_int is not None and bottom_result is not None else None)
+                main_sentences.append(f"I applied {op_word} to top numbers and bottom numbers separately")
     elif strategy_code == "CROP_M":
         if left_frac and right_frac and ans_den is not None:
             a, b = left_frac
             c, d = right_frac
-            main_sentences.append(f"I crossed them and did {a} times {d} to get {ans_num}, and {b} times {c} to get {ans_den}")
+            top_prod = int(a) * int(d)
+            bot_prod = int(b) * int(c)
+            if ans_num_int is not None and ans_den_int is not None and top_prod == ans_num_int and bot_prod == ans_den_int:
+                note_check_result(True)
+                note_check_result(True)
+                main_sentences.append(f"I crossed them and did {a} times {d} to get {ans_num}, and {b} times {c} to get {ans_den}")
+            else:
+                note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
+                note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
+                main_sentences.append("I crossed the fractions and multiplied to form a new top and bottom")
 
     if not main_sentences:
         if left_frac and right_frac:
@@ -292,16 +534,100 @@ def build_child_reasoning(
     elif "check_simplify" in goals_for_narration:
         detail_sentences.append("I checked if it could be simplified")
 
+    if any(
+        tag in exec_rules_for_narration
+        for tag in {"convert_CD_omit_nums", "invert_rand", "sub_LbS", "div_LbS", "div_LbS_drop_rem", "div_drop_rem", "acc_skip", "acc_extra"}
+    ):
+        quality_flags.add("has_exec_error_rule")
+
     sentences = dedupe_keep_order(main_sentences + detail_sentences)
     if answer not in {"", "?"}:
         last = sentences[-1].lower()
         if answer not in last:
             sentences.append(f"So I got {answer}")
 
-    return ". ".join(sentence.rstrip(".") for sentence in sentences if sentence.strip()) + "."
+    reasoning = ". ".join(sentence.rstrip(".") for sentence in sentences if sentence.strip()) + "."
+    quality = {
+        "reasoning_quality_flags": ",".join(sorted(quality_flags)),
+        "reasoning_verified_claims": verified_claims,
+        "reasoning_unverified_claims": unverified_claims,
+    }
+    return reasoning, quality
 
 
-def translate_record(record: Dict[str, object], include_outcome_text: bool) -> Dict[str, str]:
+def infer_strategy_from_flags(chunk: pd.DataFrame) -> pd.Series:
+    present = [code for code in STRATEGY_CODES if code in chunk.columns]
+    if not present:
+        return pd.Series("OTHER", index=chunk.index, dtype="object")
+
+    flags = chunk[present].apply(pd.to_numeric, errors="coerce").fillna(0.0)
+    gt0 = flags > 0
+    has_any = gt0.any(axis=1)
+    first = gt0.idxmax(axis=1)
+    inferred = pd.Series("OTHER", index=chunk.index, dtype="object")
+    inferred.loc[has_any] = first.loc[has_any]
+    return inferred
+
+
+def missing_value_mask(series: pd.Series) -> pd.Series:
+    text = series.astype("string")
+    cleaned = text.str.strip()
+    return text.isna() | cleaned.isna() | (cleaned == "") | cleaned.str.lower().isin(["nan", "none"])
+
+
+def canonicalize_chunk(chunk: pd.DataFrame, source: SourceSpec, row_offset: int) -> pd.DataFrame:
+    out = chunk.copy()
+
+    n_rows = len(out)
+    out["source_dataset"] = source.dataset
+    out["source_file"] = source.path
+    out["source_seed"] = source.seed if source.seed is not None else pd.NA
+    out["source_row_idx"] = range(row_offset, row_offset + n_rows)
+    out["source_uid"] = out["source_file"].astype(str) + "::" + out["source_row_idx"].astype(str)
+
+    for column in CANONICAL_COLUMNS:
+        if column not in out.columns:
+            out[column] = pd.NA
+
+    text_columns = ["prob", "operation", "strategy", "goals", "exec", "answer", "correct"]
+    for column in text_columns:
+        out[column] = out[column].astype("string")
+
+    if "ans" in out.columns:
+        missing_answer = missing_value_mask(out["answer"])
+        out.loc[missing_answer, "answer"] = out.loc[missing_answer, "ans"].astype("string")
+
+    strategy_missing = missing_value_mask(out["strategy"])
+    if strategy_missing.any():
+        inferred = infer_strategy_from_flags(out)
+        out.loc[strategy_missing, "strategy"] = inferred.loc[strategy_missing]
+
+    for column in ["goals", "exec"]:
+        missing = missing_value_mask(out[column])
+        if missing.any():
+            out.loc[missing, column] = ""
+
+    op_missing_or_bad = missing_value_mask(out["operation"]) | (~out["operation"].astype(str).str.strip().isin(OPERATION_TEXT.keys()))
+    if op_missing_or_bad.any():
+        probs = out.loc[op_missing_or_bad, "prob"].astype(str)
+        out.loc[op_missing_or_bad, "operation"] = probs.map(lambda p: detect_operation(p, ""))
+
+    if "key" in out.columns:
+        missing_correct = missing_value_mask(out["correct"])
+        out.loc[missing_correct, "correct"] = out.loc[missing_correct, "key"].astype("string")
+
+    if "acc" in out.columns:
+        missing_is_correct = missing_value_mask(out["is_correct"])
+        out.loc[missing_is_correct, "is_correct"] = out.loc[missing_is_correct, "acc"]
+
+    return out
+
+
+def translate_record(
+    record: Dict[str, object],
+    include_outcome_text: bool,
+    include_student_params: bool,
+) -> Dict[str, object]:
     prob = safe_text(record.get("prob"), default="?")
     strategy_code = safe_text(record.get("strategy"), default="OTHER")
     if strategy_code == "":
@@ -316,10 +642,12 @@ def translate_record(record: Dict[str, object], include_outcome_text: bool) -> D
     strategy_nl = STRATEGY_TEXT.get(strategy_code, f"I use an uncataloged strategy pattern ({strategy_code})")
     goals_nl = render_rule_sequence(goals, GOAL_TEXT, "goal")
     exec_nl = render_rule_sequence(exec_rules, EXEC_TEXT, "execution")
-    student_nl = ""
-
-    instruction_nl = f"Solve this fraction problem: {prob}=?"
-    reasoning_nl = build_child_reasoning(
+    student_nl = build_student_block(record) if include_student_params else ""
+    if include_student_params:
+        instruction_nl = f"{student_nl}\nSolve this fraction problem: {prob}=?"
+    else:
+        instruction_nl = f"Solve this fraction problem: {prob}=?"
+    reasoning_nl, quality = build_child_reasoning(
         prob=prob,
         operation=operation,
         strategy_code=strategy_code,
@@ -340,76 +668,209 @@ def translate_record(record: Dict[str, object], include_outcome_text: bool) -> D
         "exec_nl": exec_nl,
         "instruction_nl": instruction_nl,
         "response_nl": response_nl,
+        "reasoning_quality_flags": quality["reasoning_quality_flags"],
+        "reasoning_verified_claims": quality["reasoning_verified_claims"],
+        "reasoning_unverified_claims": quality["reasoning_unverified_claims"],
         "translation_version": TRANSLATION_VERSION,
     }
 
 
-def translate_chunk(chunk: pd.DataFrame, include_outcome_text: bool) -> pd.DataFrame:
+def translate_chunk(
+    chunk: pd.DataFrame,
+    include_outcome_text: bool,
+    include_student_params: bool,
+) -> pd.DataFrame:
     records = chunk.to_dict(orient="records")
-    translated = [translate_record(record, include_outcome_text=include_outcome_text) for record in records]
+    translated = [
+        translate_record(
+            record,
+            include_outcome_text=include_outcome_text,
+            include_student_params=include_student_params,
+        )
+        for record in records
+    ]
     return pd.DataFrame(translated)
 
 
-def output_columns(chunk: pd.DataFrame, minimal_columns: bool) -> pd.DataFrame:
-    if not minimal_columns:
-        return chunk.reset_index(drop=True)
+def parse_seed_ranges(seed_expr: str) -> List[int]:
+    text = safe_text(seed_expr, default="")
+    if text == "":
+        return []
 
-    keep = ["subjid", "prob", "operation", "strategy", "goals", "exec", "answer", "correct", "is_correct", "g", "d", "rt_mu", "ice"]
-    present = [col for col in keep if col in chunk.columns]
-    return chunk[present].reset_index(drop=True)
+    seeds = set()
+    for part in text.split(","):
+        token = part.strip()
+        if token == "":
+            continue
+        if "-" in token:
+            left, right = token.split("-", 1)
+            start = int(left.strip())
+            end = int(right.strip())
+            if start > end:
+                start, end = end, start
+            for value in range(start, end + 1):
+                seeds.add(value)
+        else:
+            seeds.add(int(token))
+
+    return sorted(seeds)
+
+
+def classify_dataset(path: str) -> Tuple[str, Optional[int]]:
+    base = os.path.basename(path)
+    match = re.fullmatch(r"sp2013_seed(\d+)_all_models\.csv", base)
+    if match:
+        return "sp2013_eval_seed", int(match.group(1))
+    if "uma_traces_all" in base:
+        return "uma_traces_all", None
+    return "uma_trace_custom", None
+
+
+def expand_input_paths(raw_paths: List[str]) -> List[str]:
+    expanded: List[str] = []
+    for raw in raw_paths:
+        token = safe_text(raw, default="")
+        if token == "":
+            continue
+        matches = sorted(glob.glob(token))
+        if matches:
+            expanded.extend(matches)
+        else:
+            expanded.append(token)
+    return expanded
+
+
+def build_source_specs(args: argparse.Namespace) -> List[SourceSpec]:
+    specs: List[SourceSpec] = []
+
+    if args.include_default_uma_traces:
+        specs.append(SourceSpec(path=DEFAULT_UMA_INPUT, dataset="uma_traces_all", seed=None))
+
+    for path in expand_input_paths(args.input_csv):
+        abs_path = os.path.abspath(path)
+        dataset, seed = classify_dataset(abs_path)
+        specs.append(SourceSpec(path=abs_path, dataset=dataset, seed=seed))
+
+    if args.include_sp2013_seeds:
+        sp_root = os.path.abspath(args.sp2013_eval_dir)
+        for seed in parse_seed_ranges(args.sp2013_seeds):
+            path = os.path.join(sp_root, f"seed_{seed}", f"sp2013_seed{seed}_all_models.csv")
+            specs.append(SourceSpec(path=os.path.abspath(path), dataset="sp2013_eval_seed", seed=seed))
+
+    dedup: Dict[str, SourceSpec] = {}
+    for spec in specs:
+        dedup[spec.path] = spec
+
+    final_specs = list(dedup.values())
+    if not final_specs:
+        raise ValueError("No input sources were resolved. Check --input-csv/seed options.")
+
+    missing = [spec.path for spec in final_specs if not os.path.exists(spec.path)]
+    if missing:
+        raise FileNotFoundError(
+            "Missing input source files:\n" + "\n".join(f"  - {path}" for path in missing)
+        )
+
+    return final_specs
+
+
+def collect_union_source_columns(sources: List[SourceSpec]) -> List[str]:
+    ordered: Dict[str, None] = {}
+    for source in sources:
+        header_cols = pd.read_csv(source.path, nrows=0).columns.tolist()
+        for column in header_cols:
+            ordered.setdefault(column, None)
+
+    for column in MAPPING_COLUMNS + CANONICAL_COLUMNS:
+        ordered.setdefault(column, None)
+
+    return list(ordered.keys())
+
+
+def build_base_output_columns(all_source_columns: List[str], minimal_columns: bool) -> List[str]:
+    if minimal_columns:
+        return MAPPING_COLUMNS + CANONICAL_COLUMNS
+
+    base = list(all_source_columns)
+    for column in MAPPING_COLUMNS + CANONICAL_COLUMNS:
+        if column not in base:
+            base.append(column)
+    return base
 
 
 def main() -> None:
     args = parse_args()
-    input_csv = os.path.abspath(args.input_csv)
     output_csv = os.path.abspath(args.output_csv)
-
-    if not os.path.exists(input_csv):
-        raise FileNotFoundError(f"Input CSV not found: {input_csv}")
 
     out_dir = os.path.dirname(output_csv)
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
 
+    sources = build_source_specs(args)
+    all_source_columns = collect_union_source_columns(sources)
+    base_columns = build_base_output_columns(all_source_columns, minimal_columns=args.minimal_columns)
+
     print("=" * 70)
     print("UMA -> NLP TRACE TRANSLATION")
     print("=" * 70)
-    print(f"input: {input_csv}")
     print(f"output: {output_csv}")
     print(f"chunksize: {args.chunksize}")
     print(f"max_rows: {args.max_rows if args.max_rows is not None else 'ALL'}")
     print(f"minimal_columns: {args.minimal_columns}")
     print(f"include_outcome_text: {args.include_outcome_text}")
+    print(f"include_student_params: {args.include_student_params}")
+    print(f"translation_version: {TRANSLATION_VERSION}")
+    print(f"input_sources: {len(sources)}")
+    for idx, source in enumerate(sources, start=1):
+        seed_text = f", seed={source.seed}" if source.seed is not None else ""
+        print(f"  [{idx}] {source.dataset}{seed_text} -> {source.path}")
     print("")
 
-    reader = pd.read_csv(input_csv, chunksize=args.chunksize)
     wrote_header = False
     total_rows = 0
 
-    for chunk_idx, chunk in enumerate(reader, start=1):
+    for source_idx, source in enumerate(sources, start=1):
+        source_rows = 0
+        reader = pd.read_csv(source.path, chunksize=args.chunksize)
+
+        for chunk_idx, chunk in enumerate(reader, start=1):
+            if args.max_rows is not None and total_rows >= args.max_rows:
+                break
+
+            if args.max_rows is not None:
+                remaining = args.max_rows - total_rows
+                if remaining <= 0:
+                    break
+                if len(chunk) > remaining:
+                    chunk = chunk.iloc[:remaining].copy()
+
+            normalized = canonicalize_chunk(chunk, source=source, row_offset=source_rows)
+            source_rows += len(normalized)
+
+            translated = translate_chunk(
+                normalized,
+                include_outcome_text=args.include_outcome_text,
+                include_student_params=args.include_student_params,
+            )
+            base = normalized.reindex(columns=base_columns).reset_index(drop=True)
+            out_chunk = pd.concat([base, translated], axis=1)
+
+            mode = "w" if not wrote_header else "a"
+            out_chunk.to_csv(output_csv, index=False, mode=mode, header=not wrote_header, compression="infer")
+
+            wrote_header = True
+            total_rows += len(normalized)
+            print(
+                f"[source {source_idx}/{len(sources)} chunk {chunk_idx}] "
+                f"wrote {len(normalized):,} rows (source_total {source_rows:,}, global_total {total_rows:,})"
+            )
+
         if args.max_rows is not None and total_rows >= args.max_rows:
             break
-        if args.max_rows is not None:
-            remaining = args.max_rows - total_rows
-            if remaining <= 0:
-                break
-            if len(chunk) > remaining:
-                chunk = chunk.iloc[:remaining].copy()
-
-        translated = translate_chunk(chunk, include_outcome_text=args.include_outcome_text)
-        base = output_columns(chunk, minimal_columns=args.minimal_columns)
-        out_chunk = pd.concat([base, translated], axis=1)
-
-        mode = "w" if not wrote_header else "a"
-        out_chunk.to_csv(output_csv, index=False, mode=mode, header=not wrote_header, compression="infer")
-
-        wrote_header = True
-        total_rows += len(chunk)
-        print(f"[chunk {chunk_idx}] wrote {len(chunk):,} rows (total {total_rows:,})")
 
     print("")
     print(f"Done. Total translated rows: {total_rows:,}")
-    print(f"Translation version: {TRANSLATION_VERSION}")
+    print(f"Output: {output_csv}")
 
 
 if __name__ == "__main__":
