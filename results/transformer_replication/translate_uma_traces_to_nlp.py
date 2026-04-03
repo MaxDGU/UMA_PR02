@@ -22,11 +22,13 @@ Example:
 
 import argparse
 import glob
+import hashlib
+import json
 import math
 import os
 import re
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 
@@ -36,7 +38,10 @@ DEFAULT_UMA_INPUT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replicat
 DEFAULT_SP2013_EVAL_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replication", "sp2013_eval"))
 DEFAULT_OUTPUT = os.path.join(SCRIPT_DIR, "uma_traces_all_nlp.csv.gz")
 DEFAULT_SP2013_SEEDS = "1-20"
-TRANSLATION_VERSION = "uma_nlp_rules_v5_checked_claims_trace_quality"
+TRANSLATION_VERSION = "uma_nlp_rules_v7_trace_step_prompt_modes"
+VALID_STUDENT_PROMPT_MODES = ("none", "always", "dropout")
+DEFAULT_STUDENT_PARAMS_DROP_PROB = 0.5
+DEFAULT_STUDENT_PARAMS_DROP_SEED = 0
 
 
 OPERATION_TEXT: Dict[str, str] = {
@@ -158,6 +163,13 @@ class SourceSpec:
     seed: Optional[int]
 
 
+@dataclass(frozen=True)
+class StudentPromptConfig:
+    mode: str
+    drop_prob: float
+    drop_seed: int
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Translate UMA traces into NLP-style text.")
     parser.add_argument(
@@ -205,10 +217,29 @@ def parse_args() -> argparse.Namespace:
         help="Append correctness text to response_nl.",
     )
     parser.add_argument(
+        "--student-prompt-mode",
+        type=str,
+        choices=VALID_STUDENT_PROMPT_MODES,
+        default=None,
+        help="How to condition prompts on student params: none, always, or deterministic dropout.",
+    )
+    parser.add_argument(
+        "--student-params-drop-prob",
+        type=float,
+        default=DEFAULT_STUDENT_PARAMS_DROP_PROB,
+        help="Row-level probability of dropping the student block when --student-prompt-mode=dropout.",
+    )
+    parser.add_argument(
+        "--student-params-drop-seed",
+        type=int,
+        default=DEFAULT_STUDENT_PARAMS_DROP_SEED,
+        help="Seed mixed into source_uid hashing for deterministic student-block dropout.",
+    )
+    parser.add_argument(
         "--include-student-params",
         action=argparse.BooleanOptionalAction,
-        default=True,
-        help="Include UMA parameter block in instruction_nl prompt.",
+        default=None,
+        help="Legacy alias for student prompt mode: true -> always, false -> none.",
     )
     return parser.parse_args()
 
@@ -225,6 +256,34 @@ def safe_text(value: object, default: str = "") -> str:
     if txt.lower() == "nan":
         return default
     return txt if txt else default
+
+
+def resolve_student_prompt_config(args: argparse.Namespace) -> StudentPromptConfig:
+    requested_mode = safe_text(args.student_prompt_mode, default="")
+    legacy_include = args.include_student_params
+
+    if requested_mode == "":
+        mode = "always" if legacy_include is not False else "none"
+    else:
+        mode = requested_mode
+        if legacy_include is not None:
+            legacy_mode = "always" if legacy_include else "none"
+            if mode != legacy_mode:
+                raise ValueError(
+                    "Conflicting student prompt settings: "
+                    f"--student-prompt-mode {mode} does not match legacy "
+                    f"--{'include' if legacy_include else 'no-include'}-student-params."
+                )
+
+    drop_prob = float(args.student_params_drop_prob)
+    if not 0.0 <= drop_prob <= 1.0:
+        raise ValueError(f"--student-params-drop-prob must be in [0, 1], got {drop_prob}.")
+
+    return StudentPromptConfig(
+        mode=mode,
+        drop_prob=drop_prob,
+        drop_seed=int(args.student_params_drop_seed),
+    )
 
 
 def safe_float(value: object) -> Optional[float]:
@@ -277,6 +336,104 @@ def parse_binary_problem(prob: str, operation: str) -> Tuple[str, str, Optional[
     left = parts[0].strip()
     right = parts[1].strip()
     return left, right, parse_fraction(left), parse_fraction(right)
+
+
+def is_known_math_token(value: object) -> bool:
+    token = safe_text(value, default="")
+    return token.lower() not in {"", "?", "none", "nan", "null"}
+
+
+def normalize_trace_problem(problem_obj: object) -> Dict[str, str]:
+    if not isinstance(problem_obj, dict):
+        return {"op": "?", "op1": "?", "op2": "?", "ans": "?"}
+    return {
+        "op": safe_text(problem_obj.get("op"), default="?"),
+        "op1": safe_text(problem_obj.get("op1"), default="?"),
+        "op2": safe_text(problem_obj.get("op2"), default="?"),
+        "ans": safe_text(problem_obj.get("ans"), default="?"),
+    }
+
+
+def parse_trace_steps(value: object) -> List[Dict[str, object]]:
+    raw = safe_text(value, default="")
+    if raw == "":
+        return []
+
+    try:
+        payload = json.loads(raw)
+    except Exception:
+        return []
+
+    if not isinstance(payload, list):
+        return []
+
+    steps: List[Dict[str, object]] = []
+    for step_obj in payload:
+        if not isinstance(step_obj, dict):
+            continue
+
+        main = normalize_trace_problem(step_obj.get("main"))
+        subs_raw = step_obj.get("subs", [])
+        subs: List[Dict[str, str]] = []
+        if isinstance(subs_raw, list):
+            for sub_obj in subs_raw:
+                subs.append(normalize_trace_problem(sub_obj))
+
+        steps.append(
+            {
+                "i": step_obj.get("i"),
+                "rule": safe_text(step_obj.get("rule"), default=""),
+                "main": main,
+                "subs": subs,
+            }
+        )
+
+    return steps
+
+
+def build_trace_claim(problem_obj: Dict[str, str]) -> str:
+    op = safe_text(problem_obj.get("op"), default="?")
+    op1 = safe_text(problem_obj.get("op1"), default="?")
+    op2 = safe_text(problem_obj.get("op2"), default="?")
+    ans = safe_text(problem_obj.get("ans"), default="?")
+
+    if not is_known_math_token(ans):
+        return ""
+
+    if op in OPERATION_WORD and is_known_math_token(op1) and is_known_math_token(op2):
+        return f"I took {op1} {OPERATION_WORD[op]} {op2} and got {ans}"
+    if is_known_math_token(op) and is_known_math_token(op1) and is_known_math_token(op2):
+        return f"I worked on {op1} {op} {op2} and got {ans}"
+    if is_known_math_token(op1) and is_known_math_token(op2):
+        return f"I worked with {op1} and {op2} and got {ans}"
+    return f"I got {ans}"
+
+
+def collect_trace_claims(trace_steps: List[Dict[str, object]], max_claims: int = 8) -> List[str]:
+    claims: List[str] = []
+    seen = set()
+
+    for step in trace_steps:
+        step_items: List[Dict[str, str]] = []
+        main = step.get("main")
+        if isinstance(main, dict):
+            step_items.append(main)  # type: ignore[arg-type]
+        subs = step.get("subs", [])
+        if isinstance(subs, list):
+            for sub in subs:
+                if isinstance(sub, dict):
+                    step_items.append(sub)  # type: ignore[arg-type]
+
+        for item in step_items:
+            claim = build_trace_claim(item)
+            if claim == "" or claim in seen:
+                continue
+            seen.add(claim)
+            claims.append(claim)
+            if len(claims) >= max_claims:
+                return claims
+
+    return claims
 
 
 def apply_int_operation(
@@ -372,6 +529,97 @@ def build_student_block(record: Dict[str, object]) -> str:
     rt_value = format_numeric_token(record.get("rt_mu"))
     ice_value = format_numeric_token(record.get("ice"))
     return f"<student> g {g_value} d {d_value} rt {rt_value} ice {ice_value} </student>"
+
+
+def stable_hash_fraction(text: str) -> float:
+    digest = hashlib.sha256(text.encode("utf-8")).digest()
+    return int.from_bytes(digest[:8], byteorder="big", signed=False) / float(1 << 64)
+
+
+def student_drop_key(record: Dict[str, object]) -> str:
+    source_uid = safe_text(record.get("source_uid"), default="")
+    if source_uid != "":
+        return source_uid
+    return "::".join(
+        [
+            safe_text(record.get("source_file"), default=""),
+            safe_text(record.get("source_row_idx"), default=""),
+            safe_text(record.get("prob"), default="?"),
+            safe_text(record.get("answer"), default="?"),
+        ]
+    )
+
+
+def student_params_visible(record: Dict[str, object], prompt_cfg: StudentPromptConfig) -> bool:
+    if prompt_cfg.mode == "always":
+        return True
+    if prompt_cfg.mode == "none":
+        return False
+
+    key = f"{prompt_cfg.drop_seed}:{student_drop_key(record)}"
+    return stable_hash_fraction(key) >= prompt_cfg.drop_prob
+
+
+def build_reasoning_details(goals_for_narration: List[str], exec_rules_for_narration: List[str]) -> List[str]:
+    detail_sentences: List[str] = []
+    if "convert_CD_omit_nums" in exec_rules_for_narration:
+        detail_sentences.append("I changed the bottom numbers and kept the top numbers the same")
+    if "invert_rand" in exec_rules_for_narration:
+        detail_sentences.append("I flipped one of the fractions")
+    if "sub_LbS" in exec_rules_for_narration:
+        detail_sentences.append("I subtracted the smaller number from the bigger number")
+    if "div_LbS" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
+        detail_sentences.append("I divided the bigger number by the smaller number")
+    if "div_drop_rem" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
+        detail_sentences.append("I used the whole-number part after dividing")
+    if "simplify_fraction" in goals_for_narration:
+        detail_sentences.append("Then I simplified it")
+    elif "check_simplify" in goals_for_narration:
+        detail_sentences.append("I checked if it could be simplified")
+    return detail_sentences
+
+
+def build_trace_reasoning(
+    prob: str,
+    goals: List[str],
+    exec_rules: List[str],
+    answer: str,
+    trace_steps: List[Dict[str, object]],
+) -> Tuple[str, Dict[str, object]]:
+    exec_rules_for_narration = [r for r in exec_rules if r not in IGNORED_EXEC_RULES_IN_REASONING]
+    goals_for_narration = [g for g in goals if g not in IGNORED_GOAL_RULES_IN_REASONING]
+
+    quality_flags: Set[str] = set()
+    if any(
+        tag in exec_rules_for_narration
+        for tag in {"convert_CD_omit_nums", "invert_rand", "sub_LbS", "div_LbS", "div_LbS_drop_rem", "div_drop_rem", "acc_skip", "acc_extra"}
+    ):
+        quality_flags.add("has_exec_error_rule")
+
+    claims = collect_trace_claims(trace_steps, max_claims=8)
+    sentences = dedupe_keep_order(claims + build_reasoning_details(goals_for_narration, exec_rules_for_narration))
+
+    if not sentences:
+        left_txt, right_txt, _, _ = parse_binary_problem(prob, detect_operation(prob, ""))
+        if left_txt and right_txt:
+            sentences.append(f"I worked with {left_txt} and {right_txt} and got {answer}")
+        else:
+            sentences.append(f"I worked it out and got {answer}")
+
+    if answer not in {"", "?"}:
+        last = sentences[-1].lower()
+        if answer not in last:
+            sentences.append(f"So I got {answer}")
+
+    reasoning = ". ".join(sentence.rstrip(".") for sentence in sentences if sentence.strip()) + "."
+    return (
+        reasoning,
+        {
+            "reasoning_quality_flags": ",".join(sorted(quality_flags)),
+            "reasoning_verified_claims": len(claims),
+            "reasoning_unverified_claims": 0,
+        },
+    )
 
 
 def build_child_reasoning(
@@ -626,7 +874,7 @@ def canonicalize_chunk(chunk: pd.DataFrame, source: SourceSpec, row_offset: int)
 def translate_record(
     record: Dict[str, object],
     include_outcome_text: bool,
-    include_student_params: bool,
+    student_prompt_config: StudentPromptConfig,
 ) -> Dict[str, object]:
     prob = safe_text(record.get("prob"), default="?")
     strategy_code = safe_text(record.get("strategy"), default="OTHER")
@@ -642,19 +890,30 @@ def translate_record(
     strategy_nl = STRATEGY_TEXT.get(strategy_code, f"I use an uncataloged strategy pattern ({strategy_code})")
     goals_nl = render_rule_sequence(goals, GOAL_TEXT, "goal")
     exec_nl = render_rule_sequence(exec_rules, EXEC_TEXT, "execution")
-    student_nl = build_student_block(record) if include_student_params else ""
-    if include_student_params:
+    params_visible = student_params_visible(record, student_prompt_config)
+    student_nl = build_student_block(record) if params_visible else ""
+    if params_visible:
         instruction_nl = f"{student_nl}\nSolve this fraction problem: {prob}=?"
     else:
         instruction_nl = f"Solve this fraction problem: {prob}=?"
-    reasoning_nl, quality = build_child_reasoning(
-        prob=prob,
-        operation=operation,
-        strategy_code=strategy_code,
-        goals=goals,
-        exec_rules=exec_rules,
-        answer=answer,
-    )
+    trace_steps = parse_trace_steps(record.get("trace_steps_json"))
+    if len(trace_steps) > 0:
+        reasoning_nl, quality = build_trace_reasoning(
+            prob=prob,
+            goals=goals,
+            exec_rules=exec_rules,
+            answer=answer,
+            trace_steps=trace_steps,
+        )
+    else:
+        reasoning_nl, quality = build_child_reasoning(
+            prob=prob,
+            operation=operation,
+            strategy_code=strategy_code,
+            goals=goals,
+            exec_rules=exec_rules,
+            answer=answer,
+        )
     response_lines = [reasoning_nl, f"### answer: {answer}"]
     if include_outcome_text:
         response_lines.append(f"### correctness: {build_outcome_sentence(record)}")
@@ -662,6 +921,8 @@ def translate_record(
 
     return {
         "operation_nl": op_text,
+        "student_prompt_mode": student_prompt_config.mode,
+        "student_params_visible": params_visible,
         "student_nl": student_nl,
         "strategy_nl": strategy_nl,
         "goals_nl": goals_nl,
@@ -678,14 +939,14 @@ def translate_record(
 def translate_chunk(
     chunk: pd.DataFrame,
     include_outcome_text: bool,
-    include_student_params: bool,
+    student_prompt_config: StudentPromptConfig,
 ) -> pd.DataFrame:
     records = chunk.to_dict(orient="records")
     translated = [
         translate_record(
             record,
             include_outcome_text=include_outcome_text,
-            include_student_params=include_student_params,
+            student_prompt_config=student_prompt_config,
         )
         for record in records
     ]
@@ -800,6 +1061,7 @@ def build_base_output_columns(all_source_columns: List[str], minimal_columns: bo
 
 def main() -> None:
     args = parse_args()
+    student_prompt_config = resolve_student_prompt_config(args)
     output_csv = os.path.abspath(args.output_csv)
 
     out_dir = os.path.dirname(output_csv)
@@ -818,7 +1080,11 @@ def main() -> None:
     print(f"max_rows: {args.max_rows if args.max_rows is not None else 'ALL'}")
     print(f"minimal_columns: {args.minimal_columns}")
     print(f"include_outcome_text: {args.include_outcome_text}")
-    print(f"include_student_params: {args.include_student_params}")
+    print(f"student_prompt_mode: {student_prompt_config.mode}")
+    print(f"student_params_drop_prob: {student_prompt_config.drop_prob}")
+    print(f"student_params_drop_seed: {student_prompt_config.drop_seed}")
+    if args.include_student_params is not None:
+        print(f"legacy_include_student_params: {args.include_student_params}")
     print(f"translation_version: {TRANSLATION_VERSION}")
     print(f"input_sources: {len(sources)}")
     for idx, source in enumerate(sources, start=1):
@@ -850,7 +1116,7 @@ def main() -> None:
             translated = translate_chunk(
                 normalized,
                 include_outcome_text=args.include_outcome_text,
-                include_student_params=args.include_student_params,
+                student_prompt_config=student_prompt_config,
             )
             base = normalized.reindex(columns=base_columns).reset_index(drop=True)
             out_chunk = pd.concat([base, translated], axis=1)
