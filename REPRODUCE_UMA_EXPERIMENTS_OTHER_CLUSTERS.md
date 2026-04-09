@@ -5,7 +5,7 @@ This note describes how to reproduce the current UMA transformer experiments on 
 It focuses on the experiment code currently on:
 
 - branch: `main_changho`
-- commit: `1957ae417573899c6517ed93b87486cc213d5182`
+- target revision: the current `main_changho` head when you sync to the new cluster
 
 It covers:
 
@@ -19,9 +19,9 @@ It covers:
 
 ### Code
 
-Use branch `main_changho` at:
+Use branch `main_changho`.
 
-- `1957ae417573899c6517ed93b87486cc213d5182`
+If you want a frozen handoff, record the exact commit after pulling on the source machine and sync that same SHA to the destination cluster.
 
 ### Processed input data
 
@@ -455,3 +455,47 @@ If I were reproducing this on a new cluster with the least friction, I would do 
 6. After that works, switch to your cluster scheduler’s multi-job launch method.
 
 That path separates “cluster integration problems” from “experiment logic problems” as cleanly as possible.
+
+## 14. Current neuronic handoff for the 135M LR x scheduler grid
+
+The most cluster-portable path for the current 12-job scheduler study is:
+
+- launcher:
+  [submit_135m_paramsalways_lr_scheduler_ablation_ailab.sh](/scratch/gpfs/BRENDEN/changho/UMA_PR02/results/transformer_replication/submit_135m_paramsalways_lr_scheduler_ablation_ailab.sh)
+- experiment note:
+  [EXPERIMENT_135M_LR_SCHEDULER_MATCHED_SP2013.md](/scratch/gpfs/BRENDEN/changho/UMA_PR02/EXPERIMENT_135M_LR_SCHEDULER_MATCHED_SP2013.md)
+
+That launcher submits the same `s135_cos_*` and `s135_lin_*` jobs that are currently queued on Princeton, but it now also accepts cluster-overrides for:
+
+- `PARTITION`
+- `ACCOUNT`
+- `QOS`
+- `MEM`
+- `SKIP_MODULE_LOAD`
+- `ACTIVATE_CMD`
+
+Recommended preview on neuronic:
+
+```bash
+PARTITION=<neuronic_partition> \
+ACCOUNT=<account_if_needed> \
+QOS=<qos_if_needed> \
+MEM=64G \
+SKIP_MODULE_LOAD=1 \
+ACTIVATE_CMD='source /path/to/venv/bin/activate' \
+HF_HUB_OFFLINE=0 \
+TRANSFORMERS_OFFLINE=0 \
+DRY_RUN=1 \
+bash results/transformer_replication/submit_135m_paramsalways_lr_scheduler_ablation_ailab.sh
+```
+
+Then submit the same command again without `DRY_RUN=1`.
+
+If you need to reduce memory usage on neuronic, adjust:
+
+- `BATCH_SIZE`
+- `EVAL_BATCH_SIZE`
+- `ID_EVAL_BATCH_SIZE`
+- `GPUS_PER_NODE`
+
+and keep the experiment logic otherwise unchanged.

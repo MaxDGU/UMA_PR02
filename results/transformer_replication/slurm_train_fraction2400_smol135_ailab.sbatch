@@ -23,9 +23,25 @@ cd "${ROOT_DIR}"
 
 mkdir -p "${ROOT_DIR}/results/transformer_replication/logs"
 
-module load anaconda3/2024.10
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate "${CONDA_ENV:-torch-env}"
+MODULE_LOAD_CMD="${MODULE_LOAD_CMD:-module load anaconda3/2024.10}"
+ACTIVATE_CMD="${ACTIVATE_CMD:-}"
+SKIP_MODULE_LOAD="${SKIP_MODULE_LOAD:-0}"  # 0/1
+TORCHRUN_BIN="${TORCHRUN_BIN:-torchrun}"
+
+if [[ "${SKIP_MODULE_LOAD}" != "1" ]]; then
+  eval "${MODULE_LOAD_CMD}"
+fi
+
+if [[ -n "${ACTIVATE_CMD}" ]]; then
+  eval "${ACTIVATE_CMD}"
+else
+  if ! command -v conda >/dev/null 2>&1; then
+    echo "conda not found; set ACTIVATE_CMD or ensure conda is on PATH" >&2
+    exit 1
+  fi
+  source "$(conda info --base)/etc/profile.d/conda.sh"
+  conda activate "${CONDA_ENV:-torch-env}"
+fi
 
 export HF_HOME="${HF_HOME:-${ROOT_DIR}/.cache/huggingface}"
 export TRANSFORMERS_NO_ADVISORY_WARNINGS=1
@@ -42,7 +58,9 @@ BATCH_SIZE="${BATCH_SIZE:-512}"
 EVAL_BATCH_SIZE="${EVAL_BATCH_SIZE:-512}"
 EPOCHS="${EPOCHS:-3}"
 LR="${LR:-2e-5}"
-MAX_LENGTH="${MAX_LENGTH:-192}"
+MIN_LR="${MIN_LR:-0.0}"
+LR_SCHEDULER_TYPE="${LR_SCHEDULER_TYPE:-cosine}"
+MAX_LENGTH="${MAX_LENGTH:-256}"
 VAL_FRAC="${VAL_FRAC:-0.05}"
 TEST_FRAC="${TEST_FRAC:-0.05}"
 NUM_WORKERS="${NUM_WORKERS:-2}"
@@ -53,8 +71,13 @@ EVALS_PER_EPOCH="${EVALS_PER_EPOCH:-5}"
 BEST_BY="${BEST_BY:-val_loss}"
 EVAL_SP2013="${EVAL_SP2013:-1}"  # 0/1
 EVAL_ID_FINAL_ANSWER="${EVAL_ID_FINAL_ANSWER:-1}"  # 0/1
-SP2013_MAX_NEW_TOKENS="${SP2013_MAX_NEW_TOKENS:-192}"
-ID_EVAL_MAX_NEW_TOKENS="${ID_EVAL_MAX_NEW_TOKENS:-192}"
+SP2013_MAX_NEW_TOKENS="${SP2013_MAX_NEW_TOKENS:-256}"
+ID_EVAL_MAX_NEW_TOKENS="${ID_EVAL_MAX_NEW_TOKENS:-256}"
+ID_EVAL_SPLIT="${ID_EVAL_SPLIT:-val}"
+ID_EVAL_SIZE="${ID_EVAL_SIZE:-64}"
+ID_EVAL_TARGET="${ID_EVAL_TARGET:-response}"
+ID_EVAL_REPORT_TRUE_TARGET="${ID_EVAL_REPORT_TRUE_TARGET:-0}"  # 0/1
+ID_EVAL_BATCH_SIZE="${ID_EVAL_BATCH_SIZE:-64}"
 SP2013_USE_PARAM_GRID="${SP2013_USE_PARAM_GRID:-1}"  # 0/1
 SP2013_GRID_G="${SP2013_GRID_G:-0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.10}"
 SP2013_GRID_D="${SP2013_GRID_D:-0.1,0.3,0.5,0.7,0.9}"
@@ -97,10 +120,16 @@ echo "require_resume=${REQUIRE_RESUME}"
 echo "move_sp2013_rows_to_val=${MOVE_SP2013_ROWS_TO_VAL}"
 echo "save_eval_checkpoints=${SAVE_EVAL_CHECKPOINTS}, save_best_checkpoint=${SAVE_BEST_CHECKPOINT}, save_final_checkpoint=${SAVE_FINAL_CHECKPOINT}, verify_saved_checkpoint_load=${VERIFY_SAVED_CHECKPOINT_LOAD}"
 echo "eval max_new_tokens: sp2013=${SP2013_MAX_NEW_TOKENS}, id=${ID_EVAL_MAX_NEW_TOKENS}"
+echo "id_eval split=${ID_EVAL_SPLIT} size=${ID_EVAL_SIZE} target=${ID_EVAL_TARGET} report_true=${ID_EVAL_REPORT_TRUE_TARGET} batch_size=${ID_EVAL_BATCH_SIZE}"
+echo "lr=${LR} min_lr=${MIN_LR} lr_scheduler_type=${LR_SCHEDULER_TYPE}"
 echo "sp2013_use_param_grid=${SP2013_USE_PARAM_GRID} (g=${SP2013_GRID_G}, d=${SP2013_GRID_D}, rt=${SP2013_GRID_RT}, ice=${SP2013_GRID_ICE})"
 echo "sp2013_grid_sizes: g=${GRID_G_N}, d=${GRID_D_N}, rt=${GRID_RT_N}, ice=${GRID_ICE_N} -> total=${GRID_TOTAL}"
 echo "train_prompt_student_mode=${TRAIN_PROMPT_STUDENT_MODE} dropout_prob=${TRAIN_PROMPT_STUDENT_DROPOUT_PROB} dropout_seed=${TRAIN_PROMPT_STUDENT_DROPOUT_SEED}"
 echo "output_dir=${OUT_DIR}"
+echo "activation: skip_module_load=${SKIP_MODULE_LOAD} conda_env=${CONDA_ENV:-torch-env} torchrun_bin=${TORCHRUN_BIN}"
+if [[ -n "${ACTIVATE_CMD}" ]]; then
+  echo "activation override: ACTIVATE_CMD is set"
+fi
 
 if [[ "${REQUIRE_RESUME}" == "1" && ! -f "${OUT_DIR}/last/trainer_state.pt" ]]; then
   echo "REQUIRE_RESUME=1 but no ${OUT_DIR}/last/trainer_state.pt found" >&2
@@ -125,6 +154,11 @@ fi
 ID_EVAL_FLAG=(--no-eval_id_final_answer)
 if [[ "${EVAL_ID_FINAL_ANSWER}" == "1" ]]; then
   ID_EVAL_FLAG=(--eval_id_final_answer)
+fi
+
+ID_EVAL_REPORT_TRUE_FLAG=(--no-id_eval_report_true_target)
+if [[ "${ID_EVAL_REPORT_TRUE_TARGET}" == "1" ]]; then
+  ID_EVAL_REPORT_TRUE_FLAG=(--id_eval_report_true_target)
 fi
 
 MOVE_SP2013_ROWS_FLAG=(--no-move_sp2013_rows_to_val)
@@ -163,7 +197,7 @@ if [[ "${VERIFY_SAVED_CHECKPOINT_LOAD}" == "1" ]]; then
   VERIFY_LOAD_FLAG=(--verify_saved_checkpoint_load)
 fi
 
-torchrun \
+"${TORCHRUN_BIN}" \
   --standalone \
   --nnodes=1 \
   --nproc_per_node="${GPUS_PER_NODE}" \
@@ -177,6 +211,8 @@ torchrun \
     --eval_batch_size "${EVAL_BATCH_SIZE}" \
     --grad_accum_steps 1 \
     --lr "${LR}" \
+    --min_lr "${MIN_LR}" \
+    --lr_scheduler_type "${LR_SCHEDULER_TYPE}" \
     --max_length "${MAX_LENGTH}" \
     --val_frac "${VAL_FRAC}" \
     --test_frac "${TEST_FRAC}" \
@@ -185,6 +221,10 @@ torchrun \
     --amp_dtype "${AMP_DTYPE}" \
     --evals_per_epoch "${EVALS_PER_EPOCH}" \
     --best_by "${BEST_BY}" \
+    --id_eval_split "${ID_EVAL_SPLIT}" \
+    --id_eval_size "${ID_EVAL_SIZE}" \
+    --id_eval_target "${ID_EVAL_TARGET}" \
+    --id_eval_batch_size "${ID_EVAL_BATCH_SIZE}" \
     --train_prompt_student_mode "${TRAIN_PROMPT_STUDENT_MODE}" \
     --train_prompt_student_dropout_prob "${TRAIN_PROMPT_STUDENT_DROPOUT_PROB}" \
     --train_prompt_student_dropout_seed "${TRAIN_PROMPT_STUDENT_DROPOUT_SEED}" \
@@ -196,6 +236,7 @@ torchrun \
     "${SP2013_FLAG[@]}" \
     "${SP2013_GRID_FLAGS[@]}" \
     "${ID_EVAL_FLAG[@]}" \
+    "${ID_EVAL_REPORT_TRUE_FLAG[@]}" \
     "${MOVE_SP2013_ROWS_FLAG[@]}" \
     "${SAVE_EVAL_FLAG[@]}" \
     "${SAVE_BEST_FLAG[@]}" \

@@ -43,9 +43,14 @@ import pandas as pd
 import torch
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
+from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.data import DataLoader, Dataset
 from torch.utils.data.distributed import DistributedSampler
-from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer, get_cosine_schedule_with_warmup
+from transformers import (
+    AutoConfig,
+    AutoModelForCausalLM,
+    AutoTokenizer,
+)
 
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -57,6 +62,46 @@ DEFAULT_SP2013_GRID_D = "0.1,0.3,0.5,0.7,0.9"
 DEFAULT_SP2013_GRID_RT = "3,4,5,6"
 DEFAULT_SP2013_GRID_ICE = "0,25,50,75,100"
 TRAINER_STATE_FILE = "trainer_state.pt"
+
+
+def build_lr_scheduler(
+    optimizer: torch.optim.Optimizer,
+    scheduler_type: str,
+    num_warmup_steps: int,
+    num_training_steps: int,
+    base_lr: float,
+    min_lr: float,
+) -> LambdaLR:
+    total_steps = max(1, int(num_training_steps))
+    warmup_steps = max(0, int(num_warmup_steps))
+    if base_lr <= 0.0:
+        if min_lr != 0.0:
+            raise ValueError("--min_lr must be 0 when --lr is 0.")
+        return LambdaLR(optimizer, lr_lambda=lambda _step: 1.0)
+    if min_lr < 0.0:
+        raise ValueError("--min_lr must be non-negative.")
+    if min_lr > base_lr:
+        raise ValueError("--min_lr cannot exceed --lr.")
+
+    min_ratio = min_lr / base_lr
+
+    def lr_lambda(current_step: int) -> float:
+        if warmup_steps > 0 and current_step < warmup_steps:
+            return float(current_step) / float(max(1, warmup_steps))
+        if total_steps <= warmup_steps:
+            return 1.0
+
+        progress = float(current_step - warmup_steps) / float(max(1, total_steps - warmup_steps))
+        progress = min(max(progress, 0.0), 1.0)
+        if scheduler_type == "linear":
+            decay_ratio = 1.0 - progress
+        elif scheduler_type == "cosine":
+            decay_ratio = 0.5 * (1.0 + math.cos(math.pi * progress))
+        else:
+            raise ValueError(f"Unsupported lr scheduler type: {scheduler_type}")
+        return min_ratio + (1.0 - min_ratio) * decay_ratio
+
+    return LambdaLR(optimizer, lr_lambda=lr_lambda)
 
 
 def parse_args() -> argparse.Namespace:
@@ -81,6 +126,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--eval_batch_size", type=int, default=64, help="Per-device eval batch size.")
     parser.add_argument("--grad_accum_steps", type=int, default=1)
     parser.add_argument("--lr", type=float, default=2e-5)
+    parser.add_argument(
+        "--min_lr",
+        type=float,
+        default=0.0,
+        help="Minimum learning-rate floor reached at the end of decay.",
+    )
+    parser.add_argument(
+        "--lr_scheduler_type",
+        choices=["cosine", "linear"],
+        default="cosine",
+        help="Learning-rate scheduler family.",
+    )
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--warmup_ratio", type=float, default=0.03)
     parser.add_argument("--max_grad_norm", type=float, default=1.0)
@@ -159,7 +216,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--preview_samples", type=int, default=3, help="Generate N preview samples after training.")
     parser.add_argument("--preview_max_new_tokens", type=int, default=96)
     parser.add_argument("--sp2013_csv", type=str, default=DEFAULT_SP2013_CSV)
-    parser.add_argument("--sp2013_max_new_tokens", type=int, default=64)
+    parser.add_argument("--sp2013_max_new_tokens", type=int, default=256)
     parser.add_argument("--eval_sp2013", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--sp2013_every", type=int, default=1, help="Evaluate SP2013 every N epochs.")
     parser.add_argument(
@@ -222,9 +279,15 @@ def parse_args() -> argparse.Namespace:
         default=64,
         help="Sample size per split for in-distribution final-answer eval (<=0 means full split).",
     )
-    parser.add_argument("--id_eval_max_new_tokens", type=int, default=64)
+    parser.add_argument("--id_eval_max_new_tokens", type=int, default=256)
     parser.add_argument("--id_eval_every", type=int, default=1, help="Evaluate in-distribution answer metrics every N epochs.")
     parser.add_argument("--id_eval_seed", type=int, default=123)
+    parser.add_argument(
+        "--id_eval_batch_size",
+        type=int,
+        default=64,
+        help="Generation batch size for in-distribution final-answer eval.",
+    )
     parser.add_argument(
         "--resume_from",
         type=str,
@@ -257,6 +320,12 @@ def parse_args() -> argparse.Namespace:
         choices=["response", "true"],
         default="response",
         help="ID final-answer target: response_nl answer token (response) or mathematically true answer from prob (true).",
+    )
+    parser.add_argument(
+        "--id_eval_report_true_target",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Also report true-answer accuracy from the same ID-eval generations.",
     )
     parser.add_argument(
         "--local_files_only",
@@ -468,6 +537,15 @@ def evaluate(
         dist.all_reduce(local, op=dist.ReduceOp.SUM)
     denom = max(float(local[1].item()), 1.0)
     return float(local[0].item() / denom)
+
+
+def load_saved_train_args_if_exists(ckpt_dir: str) -> Dict[str, Any]:
+    path = os.path.join(ckpt_dir, "train_args.json")
+    if not os.path.isfile(path):
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data if isinstance(data, dict) else {}
 
 
 def save_checkpoint(
@@ -1020,6 +1098,109 @@ def apply_train_prompt_student_mode(
     }
 
 
+def count_unique_student_param_tuples(frame: pd.DataFrame) -> int:
+    required_cols = ["g", "d", "rt_mu", "ice"]
+    missing = [col for col in required_cols if col not in frame.columns]
+    if missing:
+        raise ValueError(f"Student parameter tuple count requires columns: {missing}")
+    if len(frame) == 0:
+        return 0
+    return int(frame.loc[:, required_cols].drop_duplicates().shape[0])
+
+
+def assert_sp2013_only_validation_split(
+    train_df: pd.DataFrame,
+    val_df: pd.DataFrame,
+    test_df: pd.DataFrame,
+    problem_col: str,
+    sp2013_probs: Sequence[str],
+) -> None:
+    expected_val_rows = 16000
+    expected_prob_count = 16
+    expected_param_tuple_count = 1000
+
+    sp2013_prob_set = set(str(prob).strip() for prob in sp2013_probs)
+    train_sp_rows = int(train_df[problem_col].isin(sp2013_prob_set).sum())
+    test_sp_rows = int(test_df[problem_col].isin(sp2013_prob_set).sum())
+    val_sp_rows = int(val_df[problem_col].isin(sp2013_prob_set).sum())
+    val_prob_count = int(val_df[problem_col].nunique())
+    val_param_tuple_count = count_unique_student_param_tuples(val_df)
+
+    if train_sp_rows != 0 or test_sp_rows != 0:
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            f"train_sp_rows={train_sp_rows}, test_sp_rows={test_sp_rows}."
+        )
+    if val_sp_rows != len(val_df):
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            f"val_sp_rows={val_sp_rows}, val_rows={len(val_df)}."
+        )
+    if len(val_df) != expected_val_rows:
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            f"expected val_rows={expected_val_rows}, got {len(val_df)}."
+        )
+    if val_prob_count != expected_prob_count or len(sp2013_prob_set) != expected_prob_count:
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            f"expected {expected_prob_count} unique problems, got val={val_prob_count}, ref={len(sp2013_prob_set)}."
+        )
+    if val_param_tuple_count != expected_param_tuple_count:
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            f"expected {expected_param_tuple_count} unique student tuples, got {val_param_tuple_count}."
+        )
+
+
+def summarize_id_eval_target(
+    out_df: pd.DataFrame,
+    target_prefix: str,
+) -> Dict[str, Any]:
+    parseable_col = f"{target_prefix}_target_parseable"
+    correct_col = f"is_correct_{target_prefix}"
+    n_total = int(len(out_df))
+    n_scored = int(out_df[parseable_col].sum()) if n_total > 0 else 0
+    n_correct = int(out_df[(out_df[parseable_col] == 1) & (out_df[correct_col] == 1)].shape[0]) if n_total > 0 else 0
+    coverage = float(n_scored / n_total) if n_total > 0 else 0.0
+    acc_scored = float(n_correct / n_scored) if n_scored > 0 else float("nan")
+    acc_all = float(n_correct / n_total) if n_total > 0 else float("nan")
+    return {
+        "acc_scored": acc_scored,
+        "acc_all": acc_all,
+        "coverage": coverage,
+        "n_total": n_total,
+        "n_scored": n_scored,
+        "n_correct": n_correct,
+    }
+
+
+def write_best_eval_artifacts(
+    output_dir: str,
+    eval_record: Dict[str, Any],
+    sp2013_metrics: Optional[Dict[str, Any]] = None,
+    sp2013_df: Optional[pd.DataFrame] = None,
+    id_val_metrics: Optional[Dict[str, Any]] = None,
+    id_val_df: Optional[pd.DataFrame] = None,
+    id_test_metrics: Optional[Dict[str, Any]] = None,
+    id_test_df: Optional[pd.DataFrame] = None,
+) -> None:
+    with open(os.path.join(output_dir, "best_checkpoint_summary.json"), "w", encoding="utf-8") as f:
+        json.dump(eval_record, f, indent=2)
+    if sp2013_metrics is not None and sp2013_df is not None:
+        sp2013_df.to_csv(os.path.join(output_dir, "best_sp2013.csv"), index=False)
+        with open(os.path.join(output_dir, "best_sp2013_metrics.json"), "w", encoding="utf-8") as f:
+            json.dump(sp2013_metrics, f, indent=2)
+    if id_val_metrics is not None and id_val_df is not None:
+        id_val_df.to_csv(os.path.join(output_dir, "best_id_val.csv"), index=False)
+        with open(os.path.join(output_dir, "best_id_val_metrics.json"), "w", encoding="utf-8") as f:
+            json.dump(id_val_metrics, f, indent=2)
+    if id_test_metrics is not None and id_test_df is not None:
+        id_test_df.to_csv(os.path.join(output_dir, "best_id_test.csv"), index=False)
+        with open(os.path.join(output_dir, "best_id_test_metrics.json"), "w", encoding="utf-8") as f:
+            json.dump(id_test_metrics, f, indent=2)
+
+
 def extract_final_answer(generation: str) -> str:
     txt = str(generation)
     m = re.search(r"###\s*answer\s*:\s*([^\n\r]+)", txt, flags=re.IGNORECASE)
@@ -1339,10 +1520,12 @@ def evaluate_in_distribution_final_answer(
     sample_size: int,
     seed: int,
     target_mode: str = "response",
+    report_true_target: bool = False,
+    batch_size: int = 64,
     prob_col: str = "prob",
 ):
     if eval_df is None or len(eval_df) == 0:
-        return {
+        empty_metrics = {
             "target_mode": target_mode,
             "acc_scored": float("nan"),
             "acc_all": float("nan"),
@@ -1350,7 +1533,21 @@ def evaluate_in_distribution_final_answer(
             "n_total": 0,
             "n_scored": 0,
             "n_correct": 0,
-        }, pd.DataFrame()
+            "batch_size": int(batch_size),
+            "report_true_target": bool(report_true_target),
+        }
+        if report_true_target:
+            empty_metrics.update(
+                {
+                    "true_acc_scored": float("nan"),
+                    "true_acc_all": float("nan"),
+                    "true_coverage": 0.0,
+                    "true_n_total": 0,
+                    "true_n_scored": 0,
+                    "true_n_correct": 0,
+                }
+            )
+        return empty_metrics, pd.DataFrame()
 
     if sample_size is not None and sample_size > 0 and sample_size < len(eval_df):
         work_df = eval_df.sample(n=sample_size, random_state=seed).reset_index(drop=True)
@@ -1359,22 +1556,26 @@ def evaluate_in_distribution_final_answer(
 
     core = model.module if hasattr(model, "module") else model
     core.eval()
+    batch_size = max(1, int(batch_size))
 
     rows = []
-    for _, row in work_df.iterrows():
-        p = str(row[prompt_col]).strip()
-        target_response = str(row[response_col])
-        prob = str(row.get(prob_col, "")).strip() if prob_col in work_df.columns else ""
-        if prob == "":
-            prob = extract_prob_from_prompt(p)
+    for start in range(0, len(work_df), batch_size):
+        batch_df = work_df.iloc[start : start + batch_size].reset_index(drop=True)
+        prompts = batch_df[prompt_col].astype(str).str.strip().tolist()
+        target_responses = batch_df[response_col].astype(str).tolist()
+        probs = (
+            batch_df[prob_col].astype(str).str.strip().tolist()
+            if prob_col in batch_df.columns
+            else [""] * len(batch_df)
+        )
+        probs = [prob if prob != "" else extract_prob_from_prompt(prompt) for prob, prompt in zip(probs, prompts)]
 
-        if target_mode == "true":
-            gold_answer = compute_correct_answer(prob)
-        else:
-            gold_answer = extract_final_answer(target_response)
-        gold_parseable = answer_to_float(gold_answer) is not None
-
-        encoded = tokenizer(p, return_tensors="pt", add_special_tokens=False).to(device)
+        encoded = tokenizer(
+            prompts,
+            return_tensors="pt",
+            add_special_tokens=False,
+            padding=True,
+        ).to(device)
         with torch.no_grad():
             out = core.generate(
                 **encoded,
@@ -1383,40 +1584,52 @@ def evaluate_in_distribution_final_answer(
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
-        gen_ids = out[0, encoded["input_ids"].shape[1] :]
-        gen_text = tokenizer.decode(gen_ids, skip_special_tokens=True)
-        pred_answer = extract_final_answer(gen_text)
-        is_correct = answers_match(pred_answer, gold_answer) if gold_parseable else False
+        prompt_width = encoded["input_ids"].shape[1]
+        gen_texts = tokenizer.batch_decode(out[:, prompt_width:], skip_special_tokens=True)
 
-        rows.append(
-            {
-                "prob": prob,
-                "prompt": p,
-                "target_answer": gold_answer,
-                "target_parseable": int(gold_parseable),
-                "pred_answer": pred_answer,
-                "is_correct": int(is_correct),
-                "generation_text": gen_text.strip(),
-            }
-        )
+        for prompt, target_response, prob, gen_text in zip(prompts, target_responses, probs, gen_texts):
+            response_gold_answer = extract_final_answer(target_response)
+            true_gold_answer = compute_correct_answer(prob)
+            response_parseable = answer_to_float(response_gold_answer) is not None
+            true_parseable = answer_to_float(true_gold_answer) is not None
+            pred_answer = extract_final_answer(gen_text)
+
+            rows.append(
+                {
+                    "prob": prob,
+                    "prompt": prompt,
+                    "response_target_answer": response_gold_answer,
+                    "response_target_parseable": int(response_parseable),
+                    "true_target_answer": true_gold_answer,
+                    "true_target_parseable": int(true_parseable),
+                    "pred_answer": pred_answer,
+                    "is_correct_response": int(answers_match(pred_answer, response_gold_answer)) if response_parseable else 0,
+                    "is_correct_true": int(answers_match(pred_answer, true_gold_answer)) if true_parseable else 0,
+                    "generation_text": gen_text.strip(),
+                }
+            )
 
     out_df = pd.DataFrame(rows)
-    n_total = int(len(out_df))
-    n_scored = int(out_df["target_parseable"].sum()) if n_total > 0 else 0
-    n_correct = int(out_df[(out_df["target_parseable"] == 1) & (out_df["is_correct"] == 1)].shape[0]) if n_total > 0 else 0
-    coverage = float(n_scored / n_total) if n_total > 0 else 0.0
-    acc_scored = float(n_correct / n_scored) if n_scored > 0 else float("nan")
-    acc_all = float(n_correct / n_total) if n_total > 0 else float("nan")
-
+    primary_prefix = "true" if target_mode == "true" else "response"
+    primary_metrics = summarize_id_eval_target(out_df, primary_prefix)
     metrics = {
         "target_mode": target_mode,
-        "acc_scored": acc_scored,
-        "acc_all": acc_all,
-        "coverage": coverage,
-        "n_total": n_total,
-        "n_scored": n_scored,
-        "n_correct": n_correct,
+        "batch_size": int(batch_size),
+        "report_true_target": bool(report_true_target),
+        **primary_metrics,
     }
+    if report_true_target:
+        true_metrics = summarize_id_eval_target(out_df, "true")
+        metrics.update(
+            {
+                "true_acc_scored": true_metrics["acc_scored"],
+                "true_acc_all": true_metrics["acc_all"],
+                "true_coverage": true_metrics["coverage"],
+                "true_n_total": true_metrics["n_total"],
+                "true_n_scored": true_metrics["n_scored"],
+                "true_n_correct": true_metrics["n_correct"],
+            }
+        )
     return metrics, out_df
 
 
@@ -1456,6 +1669,9 @@ def main() -> None:
         rank0_print(rank, f"sp2013_eval: {args.eval_sp2013} ({args.sp2013_csv})")
         rank0_print(rank, f"sp2013_param_grid_eval: {args.sp2013_use_param_grid}")
         rank0_print(rank, f"evals_per_epoch: {args.evals_per_epoch}")
+        rank0_print(rank, f"lr: {args.lr}")
+        rank0_print(rank, f"min_lr: {args.min_lr}")
+        rank0_print(rank, f"lr_scheduler_type: {args.lr_scheduler_type}")
         rank0_print(rank, f"local_files_only: {args.local_files_only}")
         rank0_print(rank, f"resume_from: {args.resume_from if str(args.resume_from).strip() else '(disabled)'}")
         rank0_print(rank, f"save_last_every_updates: {args.save_last_every_updates}")
@@ -1468,12 +1684,15 @@ def main() -> None:
         rank0_print(
             rank,
             f"id_eval: {args.eval_id_final_answer} "
-            f"(split={args.id_eval_split}, sample_size={args.id_eval_size}, target={args.id_eval_target})",
+            f"(split={args.id_eval_split}, sample_size={args.id_eval_size}, target={args.id_eval_target}, "
+            f"report_true_target={args.id_eval_report_true_target}, batch_size={args.id_eval_batch_size})",
         )
         rank0_print(rank, "")
 
         if args.evals_per_epoch < 1:
             raise ValueError("--evals_per_epoch must be >= 1.")
+        if args.id_eval_batch_size < 1:
+            raise ValueError("--id_eval_batch_size must be >= 1.")
         if args.best_by == "sp2013_acc" and (not args.eval_sp2013 or args.sp2013_every <= 0):
             raise ValueError("--best_by sp2013_acc requires SP2013 eval enabled (set --eval_sp2013 and --sp2013_every > 0).")
         if args.best_by == "id_val_acc":
@@ -1597,6 +1816,7 @@ def main() -> None:
                     f"(remaining {len(train_df):,})",
                 )
 
+        sp2013_probs: List[str] = []
         if args.move_sp2013_rows_to_val:
             if args.problem_col not in df.columns:
                 raise ValueError(
@@ -1610,11 +1830,12 @@ def main() -> None:
                     "--move_sp2013_rows_to_val requires a problem column in "
                     f"{args.sp2013_csv}; tried '{args.problem_col}' and 'prob'."
                 )
-            sp2013_probs = set(sp2013_ref[sp2013_problem_col].dropna().astype(str).str.strip().tolist())
+            sp2013_probs = sp2013_ref[sp2013_problem_col].dropna().astype(str).str.strip().tolist()
+            sp2013_prob_set = set(sp2013_probs)
 
-            train_sp_mask = train_df[args.problem_col].isin(sp2013_probs)
-            test_sp_mask = test_df[args.problem_col].isin(sp2013_probs)
-            val_sp_mask = val_df[args.problem_col].isin(sp2013_probs)
+            train_sp_mask = train_df[args.problem_col].isin(sp2013_prob_set)
+            test_sp_mask = test_df[args.problem_col].isin(sp2013_prob_set)
+            val_sp_mask = val_df[args.problem_col].isin(sp2013_prob_set)
 
             moved_train_rows = int(train_sp_mask.sum())
             moved_test_rows = int(test_sp_mask.sum())
@@ -1634,14 +1855,14 @@ def main() -> None:
             if moved_frames:
                 val_df = pd.concat([val_df] + moved_frames, ignore_index=True)
 
-            final_val_sp_mask = val_df[args.problem_col].isin(sp2013_probs)
+            final_val_sp_mask = val_df[args.problem_col].isin(sp2013_prob_set)
             final_val_sp_rows = int(final_val_sp_mask.sum())
             final_val_sp_probs = int(val_df.loc[final_val_sp_mask, args.problem_col].nunique())
             rank0_print(
                 rank,
                 (
                     "move_sp2013_rows_to_val: "
-                    f"sp2013_probs={len(sp2013_probs):,}, "
+                    f"sp2013_probs={len(sp2013_prob_set):,}, "
                     f"moved_train_rows={moved_train_rows:,} ({train_sp_probs_before:,} probs), "
                     f"moved_test_rows={moved_test_rows:,} ({test_sp_probs_before:,} probs), "
                     f"val_sp_rows_before={val_sp_rows_before:,} ({val_sp_probs_before:,} probs), "
@@ -1656,6 +1877,20 @@ def main() -> None:
         rank0_print(rank, f"rows train: {len(train_df):,}")
         rank0_print(rank, f"rows val:   {len(val_df):,}")
         rank0_print(rank, f"rows test:  {len(test_df):,}")
+
+        if args.move_sp2013_rows_to_val and args.val_frac == 0.0 and args.test_frac == 0.0:
+            assert_sp2013_only_validation_split(
+                train_df=train_df,
+                val_df=val_df,
+                test_df=test_df,
+                problem_col=args.problem_col,
+                sp2013_probs=sp2013_probs,
+            )
+            rank0_print(
+                rank,
+                "sp2013_only_validation: confirmed val_rows=16,000, val_probs=16, "
+                "val_student_param_tuples=1,000, train_sp_rows=0, test_sp_rows=0",
+            )
 
         if prompt_student_mode_active:
             rank0_print(
@@ -1748,6 +1983,20 @@ def main() -> None:
 
         if args.init_from_scratch and resume_dir:
             raise ValueError("--init_from_scratch cannot be used with --resume_from.")
+        if resume_dir:
+            saved_train_args = load_saved_train_args_if_exists(resume_dir)
+            saved_scheduler_type = str(saved_train_args.get("lr_scheduler_type", "cosine"))
+            if saved_scheduler_type != args.lr_scheduler_type:
+                raise ValueError(
+                    "Resume checkpoint scheduler mismatch: "
+                    f"checkpoint uses {saved_scheduler_type}, requested {args.lr_scheduler_type}."
+                )
+            saved_min_lr = float(saved_train_args.get("min_lr", 0.0))
+            if not math.isclose(saved_min_lr, args.min_lr, rel_tol=0.0, abs_tol=1e-12):
+                raise ValueError(
+                    "Resume checkpoint min_lr mismatch: "
+                    f"checkpoint uses {saved_min_lr}, requested {args.min_lr}."
+                )
 
         model_source = resolve_model_source(args.model_name, args.local_files_only)
         tokenizer_source = model_source
@@ -1898,10 +2147,13 @@ def main() -> None:
         rank0_print(rank, f"total optimizer updates: {total_updates}")
         rank0_print(rank, f"warmup updates: {warmup_steps}")
         rank0_print(rank, "")
-        scheduler = get_cosine_schedule_with_warmup(
-            optimizer,
+        scheduler = build_lr_scheduler(
+            optimizer=optimizer,
+            scheduler_type=args.lr_scheduler_type,
             num_warmup_steps=warmup_steps,
             num_training_steps=max(1, total_updates),
+            base_lr=args.lr,
+            min_lr=args.min_lr,
         )
 
         history: List[Dict] = []
@@ -2051,10 +2303,20 @@ def main() -> None:
 
                 sp2013_acc = float("nan")
                 sp2013_by_op: Dict[str, float] = {}
+                sp2013_metrics: Optional[Dict[str, Any]] = None
+                sp2013_df: Optional[pd.DataFrame] = None
                 id_val_acc = float("nan")
                 id_val_coverage = float("nan")
+                id_val_true_acc = float("nan")
+                id_val_true_coverage = float("nan")
+                id_val_metrics: Optional[Dict[str, Any]] = None
+                id_val_df: Optional[pd.DataFrame] = None
                 id_test_acc = float("nan")
                 id_test_coverage = float("nan")
+                id_test_true_acc = float("nan")
+                id_test_true_coverage = float("nan")
+                id_test_metrics: Optional[Dict[str, Any]] = None
+                id_test_df: Optional[pd.DataFrame] = None
                 eval_tag = f"e{epoch:02d}_u{updates_in_epoch:04d}"
                 at_epoch_end = updates_in_epoch >= updates_per_epoch
 
@@ -2096,9 +2358,13 @@ def main() -> None:
                             sample_size=args.id_eval_size,
                             seed=args.id_eval_seed,
                             target_mode=args.id_eval_target,
+                            report_true_target=args.id_eval_report_true_target,
+                            batch_size=args.id_eval_batch_size,
                         )
                         id_val_acc = id_val_metrics["acc_scored"]
                         id_val_coverage = id_val_metrics["coverage"]
+                        id_val_true_acc = id_val_metrics.get("true_acc_scored", float("nan"))
+                        id_val_true_coverage = id_val_metrics.get("true_coverage", float("nan"))
                         id_val_df.to_csv(os.path.join(args.output_dir, f"id_val_{eval_tag}.csv"), index=False)
                         with open(os.path.join(args.output_dir, f"id_val_metrics_{eval_tag}.json"), "w", encoding="utf-8") as f:
                             json.dump(id_val_metrics, f, indent=2)
@@ -2119,9 +2385,13 @@ def main() -> None:
                             sample_size=args.id_eval_size,
                             seed=args.id_eval_seed,
                             target_mode=args.id_eval_target,
+                            report_true_target=args.id_eval_report_true_target,
+                            batch_size=args.id_eval_batch_size,
                         )
                         id_test_acc = id_test_metrics["acc_scored"]
                         id_test_coverage = id_test_metrics["coverage"]
+                        id_test_true_acc = id_test_metrics.get("true_acc_scored", float("nan"))
+                        id_test_true_coverage = id_test_metrics.get("true_coverage", float("nan"))
                         id_test_df.to_csv(os.path.join(args.output_dir, f"id_test_{eval_tag}.csv"), index=False)
                         with open(os.path.join(args.output_dir, f"id_test_metrics_{eval_tag}.json"), "w", encoding="utf-8") as f:
                             json.dump(id_test_metrics, f, indent=2)
@@ -2142,18 +2412,24 @@ def main() -> None:
                     "sp2013_by_op": sp2013_by_op,
                     "id_val_acc": id_val_acc,
                     "id_val_coverage": id_val_coverage,
+                    "id_val_true_acc": id_val_true_acc,
+                    "id_val_true_coverage": id_val_true_coverage,
                     "id_test_acc": id_test_acc,
                     "id_test_coverage": id_test_coverage,
+                    "id_test_true_acc": id_test_true_acc,
+                    "id_test_true_coverage": id_test_true_coverage,
                     "elapsed_sec": time.time() - t0,
                 }
 
                 if rank == 0:
                     history.append(eval_record)
-                    print(
+                    msg = (
                         f"[eval {eval_tag}] train={train_loss:.4f} val={val_loss:.4f} test={test_loss:.4f} "
-                        f"sp2013={sp2013_acc:.4f} id_val={id_val_acc:.4f}",
-                        flush=True,
+                        f"sp2013={sp2013_acc:.4f} id_val={id_val_acc:.4f}"
                     )
+                    if is_finite_number(id_val_true_acc):
+                        msg += f" id_val_true={id_val_true_acc:.4f}"
+                    print(msg, flush=True)
 
                     if args.best_by == "sp2013_acc":
                         improved = is_finite_number(sp2013_acc) and (
@@ -2205,6 +2481,16 @@ def main() -> None:
                     if improved:
                         if args.save_best_checkpoint:
                             save_checkpoint(best_dir, model, tokenizer, vars(args), history)
+                            write_best_eval_artifacts(
+                                output_dir=args.output_dir,
+                                eval_record=eval_record,
+                                sp2013_metrics=sp2013_metrics,
+                                sp2013_df=sp2013_df,
+                                id_val_metrics=id_val_metrics,
+                                id_val_df=id_val_df,
+                                id_test_metrics=id_test_metrics,
+                                id_test_df=id_test_df,
+                            )
                             if args.best_by == "sp2013_acc":
                                 print(
                                     f"  saved best checkpoint -> {best_dir} "
@@ -2353,12 +2639,16 @@ def main() -> None:
                             sample_size=args.id_eval_size,
                             seed=args.id_eval_seed,
                             target_mode=args.id_eval_target,
+                            report_true_target=args.id_eval_report_true_target,
+                            batch_size=args.id_eval_batch_size,
                         )
                         id_val_df.to_csv(os.path.join(args.output_dir, "best_id_val.csv"), index=False)
                         with open(os.path.join(args.output_dir, "best_id_val_metrics.json"), "w", encoding="utf-8") as f:
                             json.dump(id_val_metrics, f, indent=2)
                         loaded_summary["id_val_acc"] = id_val_metrics.get("acc_scored", float("nan"))
                         loaded_summary["id_val_coverage"] = id_val_metrics.get("coverage", float("nan"))
+                        loaded_summary["id_val_true_acc"] = id_val_metrics.get("true_acc_scored", float("nan"))
+                        loaded_summary["id_val_true_coverage"] = id_val_metrics.get("true_coverage", float("nan"))
                         print(
                             f"Reloaded-checkpoint ID-val answer_acc: {id_val_metrics.get('acc_scored', float('nan')):.4f} "
                             f"(coverage={id_val_metrics.get('coverage', float('nan')):.4f})",
@@ -2378,12 +2668,16 @@ def main() -> None:
                             sample_size=args.id_eval_size,
                             seed=args.id_eval_seed,
                             target_mode=args.id_eval_target,
+                            report_true_target=args.id_eval_report_true_target,
+                            batch_size=args.id_eval_batch_size,
                         )
                         id_test_df.to_csv(os.path.join(args.output_dir, "best_id_test.csv"), index=False)
                         with open(os.path.join(args.output_dir, "best_id_test_metrics.json"), "w", encoding="utf-8") as f:
                             json.dump(id_test_metrics, f, indent=2)
                         loaded_summary["id_test_acc"] = id_test_metrics.get("acc_scored", float("nan"))
                         loaded_summary["id_test_coverage"] = id_test_metrics.get("coverage", float("nan"))
+                        loaded_summary["id_test_true_acc"] = id_test_metrics.get("true_acc_scored", float("nan"))
+                        loaded_summary["id_test_true_coverage"] = id_test_metrics.get("true_coverage", float("nan"))
                         print(
                             f"Reloaded-checkpoint ID-test answer_acc: {id_test_metrics.get('acc_scored', float('nan')):.4f} "
                             f"(coverage={id_test_metrics.get('coverage', float('nan')):.4f})",
@@ -2394,6 +2688,61 @@ def main() -> None:
                     json.dump(loaded_summary, f, indent=2)
 
                 del reloaded_model
+
+        if rank == 0:
+            best_record: Optional[Dict[str, Any]] = None
+            if history:
+                if args.best_by == "val_loss":
+                    candidates = [rec for rec in history if is_finite_number(rec.get("val_loss", float("nan")))]
+                    if candidates:
+                        best_record = min(candidates, key=lambda rec: (rec["val_loss"], -rec.get("updates_done", 0)))
+                else:
+                    metric_key = "sp2013_acc" if args.best_by == "sp2013_acc" else "id_val_acc"
+                    candidates = [rec for rec in history if is_finite_number(rec.get(metric_key, float("nan")))]
+                    if candidates:
+                        best_record = max(
+                            candidates,
+                            key=lambda rec: (
+                                rec[metric_key],
+                                -(rec["val_loss"] if is_finite_number(rec.get("val_loss", float("nan"))) else float("inf")),
+                                rec.get("updates_done", 0),
+                            ),
+                        )
+
+            def finite_or_none(value: Any) -> Optional[float]:
+                try:
+                    value_f = float(value)
+                except Exception:
+                    return None
+                return value_f if is_finite_number(value_f) else None
+
+            summary_metrics = {
+                "best_by": args.best_by,
+                "lr": args.lr,
+                "min_lr": args.min_lr,
+                "lr_scheduler_type": args.lr_scheduler_type,
+                "epochs": int(args.epochs),
+                "train_rows": int(len(train_df)),
+                "val_rows": int(len(val_df)),
+                "test_rows": int(len(test_df)),
+                "checkpoint_source": resume_dir or model_source,
+                "move_sp2013_rows_to_val": bool(args.move_sp2013_rows_to_val),
+                "train_prompt_student_mode": args.train_prompt_student_mode,
+                "id_eval_target": args.id_eval_target,
+                "id_eval_report_true_target": bool(args.id_eval_report_true_target),
+                "best_checkpoint_dir": best_dir if os.path.isdir(best_dir) else None,
+                "best_epoch": int(best_record["epoch"]) if best_record is not None else None,
+                "best_eval_tag": best_record.get("eval_tag") if best_record is not None else None,
+                "best_updates_done": int(best_record["updates_done"]) if best_record is not None else None,
+                "best_val_loss": finite_or_none(best_record.get("val_loss")) if best_record is not None else None,
+                "best_sp2013_acc": finite_or_none(best_record.get("sp2013_acc")) if best_record is not None else None,
+                "best_id_val_acc": finite_or_none(best_record.get("id_val_acc")) if best_record is not None else None,
+                "best_id_val_true_acc": finite_or_none(best_record.get("id_val_true_acc")) if best_record is not None else None,
+                "best_id_test_acc": finite_or_none(best_record.get("id_test_acc")) if best_record is not None else None,
+                "best_id_test_true_acc": finite_or_none(best_record.get("id_test_true_acc")) if best_record is not None else None,
+            }
+            with open(os.path.join(args.output_dir, "summary_metrics.json"), "w", encoding="utf-8") as f:
+                json.dump(summary_metrics, f, indent=2)
 
         if rank == 0:
             print("\nDone.", flush=True)
