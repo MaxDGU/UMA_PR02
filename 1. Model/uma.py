@@ -1619,7 +1619,7 @@ class UMA:
         mnames      = [name for (name, match, binding) in matches if match]
         bindings    = [binding for (name, match, binding) in matches]
         # Calculate probabilities of matching rules
-        P = pd.Series(0, index=[rule.name for rule in self.rules])
+        P = pd.Series(0.0, index=[rule.name for rule in self.rules], dtype=float)
         if stimulate:
             self.proc_act   = self.getRuleActivations(state.getContext())
         if len(mnames)>0:
@@ -1683,7 +1683,7 @@ class UMA:
         rt  = np.max([1.0, np.random.normal(loc=self.rt_mu, scale=self.rt_sd)])
         R   = A[A>rt]
         if R.shape[0]>0:
-            P = pd.Series(0, index=A.index)
+            P = pd.Series(0.0, index=A.index, dtype=float)
             P[R.index] = self.getProbabilities(R)
             # Normalize P to handle floating point errors in softmax
             if P.sum() > 0:

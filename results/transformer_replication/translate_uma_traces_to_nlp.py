@@ -38,8 +38,10 @@ DEFAULT_UMA_INPUT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replicat
 DEFAULT_SP2013_EVAL_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "..", "UMA_replication", "sp2013_eval"))
 DEFAULT_OUTPUT = os.path.join(SCRIPT_DIR, "uma_traces_all_nlp.csv.gz")
 DEFAULT_SP2013_SEEDS = "1-20"
-TRANSLATION_VERSION = "uma_nlp_rules_v7_trace_step_prompt_modes"
+BASE_TRANSLATION_VERSION = "uma_nlp_rules_v10_clean_child_label_alignment"
 VALID_STUDENT_PROMPT_MODES = ("none", "always", "dropout")
+VALID_REASONING_MODES = ("trace_or_child", "clean_child")
+VALID_ROW_FILTER_MODES = ("none", "correct_exec", "correct_exec_and_answer")
 DEFAULT_STUDENT_PARAMS_DROP_PROB = 0.5
 DEFAULT_STUDENT_PARAMS_DROP_SEED = 0
 
@@ -120,6 +122,9 @@ EXEC_TEXT: Dict[str, str] = {
     "div_drop_rem": "I divide and drop any remainder",
 }
 
+NUMERIC_TOKEN_RE = r"[+\-]?(?:\d+(?:/\d+)?|\d*\.\d+)"
+BINARY_PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*/:])\s*({NUMERIC_TOKEN_RE})\s*")
+
 # These rule tokens are intentionally omitted from student-facing narratives.
 # Rationale: they are internal/meta states that real students would usually not
 # verbalize explicitly in think-aloud explanations.
@@ -128,6 +133,14 @@ IGNORED_EXEC_RULES_IN_REASONING = {
 }
 IGNORED_GOAL_RULES_IN_REASONING = {
     "skip_simplify",
+}
+SURFACED_HIDDEN_GOAL_SENTENCES: Dict[str, str] = {
+    "skip_simplify": "I decided not to simplify the fraction any further",
+}
+SURFACED_HIDDEN_EXEC_SENTENCES: Dict[str, str] = {
+    "invert_fail": "I tried to flip a fraction, but I did not change it",
+    "acc_skip": "I moved on without updating the running answer",
+    "acc_extra": "I made an extra running-answer update",
 }
 
 
@@ -168,6 +181,23 @@ class StudentPromptConfig:
     mode: str
     drop_prob: float
     drop_seed: int
+
+
+NLP_OUTPUT_COLUMNS: List[str] = [
+    "operation_nl",
+    "student_prompt_mode",
+    "student_params_visible",
+    "student_nl",
+    "strategy_nl",
+    "goals_nl",
+    "exec_nl",
+    "instruction_nl",
+    "response_nl",
+    "reasoning_quality_flags",
+    "reasoning_verified_claims",
+    "reasoning_unverified_claims",
+    "translation_version",
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -241,6 +271,26 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Legacy alias for student prompt mode: true -> always, false -> none.",
     )
+    parser.add_argument(
+        "--reasoning-mode",
+        type=str,
+        choices=VALID_REASONING_MODES,
+        default="trace_or_child",
+        help="How to build reasoning text: keep trace-step claims when available, or always use clean child reasoning.",
+    )
+    parser.add_argument(
+        "--row-filter",
+        type=str,
+        choices=VALID_ROW_FILTER_MODES,
+        default="none",
+        help="Optional post-translation row filter for cleaned distillation datasets.",
+    )
+    parser.add_argument(
+        "--surface-hidden-trace-steps",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="When enabled, verbalize internal UMA steps that are hidden in the default humanlike trace.",
+    )
     return parser.parse_args()
 
 
@@ -305,16 +355,15 @@ def split_tokens(value: object) -> List[str]:
 
 def detect_operation(prob: str, op_from_col: str) -> str:
     op = safe_text(op_from_col, default="")
+    if op == "/":
+        op = ":"
     if op in OPERATION_TEXT:
         return op
-    if "*" in prob:
-        return "*"
-    if ":" in prob:
+    parsed = parse_binary_problem_parts(prob)
+    if parsed is not None:
+        return parsed[1]
+    if re.search(r"\s/\s", str(prob)):
         return ":"
-    if "+" in prob:
-        return "+"
-    if "-" in prob:
-        return "-"
     return "?"
 
 
@@ -326,16 +375,67 @@ def parse_fraction(text: str) -> Optional[Tuple[str, str]]:
     return match.group(1), match.group(2)
 
 
+def split_fraction_text(text: str) -> Optional[Tuple[str, str]]:
+    t = safe_text(text, default="")
+    if "/" not in t:
+        return None
+    left, right = t.split("/", 1)
+    left = left.strip()
+    right = right.strip()
+    if left == "" or right == "":
+        return None
+    return left, right
+
+
+def numeric_text_tolerance(text: object) -> float:
+    token = safe_text(text, default="")
+    if token == "":
+        return 1e-9
+    if "." in token:
+        decimals = len(token.split(".", 1)[1])
+        return 0.5 * (10 ** (-decimals)) + 1e-9
+    return 1e-9
+
+
+def numeric_text_matches(expected: Optional[float], observed_text: object) -> Optional[bool]:
+    observed = safe_float(observed_text)
+    if expected is None or observed is None:
+        return None
+    return abs(expected - observed) <= numeric_text_tolerance(observed_text)
+
+
+def parse_binary_problem_parts(prob: str) -> Optional[Tuple[str, str, str]]:
+    p = safe_text(prob, default="")
+    match = BINARY_PROB_RE.fullmatch(p)
+    if not match:
+        return None
+    left = match.group(1).strip()
+    op = match.group(2).strip()
+    right = match.group(3).strip()
+    if op == "/":
+        op = ":"
+    return left, op, right
+
+
 def parse_binary_problem(prob: str, operation: str) -> Tuple[str, str, Optional[Tuple[str, str]], Optional[Tuple[str, str]]]:
     p = safe_text(prob, default="")
     if operation not in OPERATION_TEXT:
         return p, "", None, None
-    parts = p.split(operation, 1)
-    if len(parts) != 2:
+    parsed = parse_binary_problem_parts(p)
+    if parsed is None:
         return p, "", None, None
-    left = parts[0].strip()
-    right = parts[1].strip()
+    left, parsed_op, right = parsed
+    if parsed_op != operation:
+        return p, "", None, None
     return left, right, parse_fraction(left), parse_fraction(right)
+
+
+def render_problem_for_prompt(prob: str, operation: str) -> str:
+    left_txt, right_txt, _, _ = parse_binary_problem(prob, operation)
+    if left_txt and right_txt:
+        op_surface = f" {operation} "
+        return f"{left_txt}{op_surface}{right_txt}"
+    return safe_text(prob, default="?")
 
 
 def is_known_math_token(value: object) -> bool:
@@ -465,6 +565,33 @@ def apply_int_operation(
     return None
 
 
+def apply_numeric_operation(
+    lhs: int,
+    rhs: int,
+    operation: str,
+    prefer_larger_first: bool = False,
+    drop_remainder: bool = False,
+) -> Optional[float]:
+    if operation != ":":
+        out = apply_int_operation(
+            lhs,
+            rhs,
+            operation,
+            prefer_larger_first=prefer_larger_first,
+            drop_remainder=drop_remainder,
+        )
+        return None if out is None else float(out)
+
+    num, den = (lhs, rhs)
+    if prefer_larger_first:
+        num, den = max(lhs, rhs), min(lhs, rhs)
+    if den == 0:
+        return None
+    if drop_remainder:
+        return float(int(num / den))
+    return num / den
+
+
 def render_rule_sequence(tokens: List[str], rule_text: Dict[str, str], unknown_prefix: str) -> str:
     if not tokens:
         return "No explicit rule was logged."
@@ -560,22 +687,78 @@ def student_params_visible(record: Dict[str, object], prompt_cfg: StudentPromptC
     return stable_hash_fraction(key) >= prompt_cfg.drop_prob
 
 
-def build_reasoning_details(goals_for_narration: List[str], exec_rules_for_narration: List[str]) -> List[str]:
+def translation_version(*, surface_hidden_trace_steps: bool) -> str:
+    if surface_hidden_trace_steps:
+        return f"{BASE_TRANSLATION_VERSION}_with_hidden_steps"
+    return BASE_TRANSLATION_VERSION
+
+
+def prepare_reasoning_rules(
+    goals: List[str],
+    exec_rules: List[str],
+    *,
+    surface_hidden_trace_steps: bool,
+) -> Tuple[List[str], List[str]]:
+    if surface_hidden_trace_steps:
+        return list(goals), list(exec_rules)
+    exec_rules_for_narration = [r for r in exec_rules if r not in IGNORED_EXEC_RULES_IN_REASONING]
+    goals_for_narration = [g for g in goals if g not in IGNORED_GOAL_RULES_IN_REASONING]
+    return goals_for_narration, exec_rules_for_narration
+
+
+def build_reasoning_details(
+    goals_for_narration: List[str],
+    exec_rules_for_narration: List[str],
+    *,
+    strategy_code: str = "",
+    operation: str = "",
+    surface_hidden_trace_steps: bool = False,
+) -> List[str]:
     detail_sentences: List[str] = []
+    if "add_fact" in exec_rules_for_narration:
+        detail_sentences.append("I used an addition fact to get that result")
+    if "sub_fact" in exec_rules_for_narration:
+        detail_sentences.append("I used a subtraction fact to get that result")
+    if "mul_fact" in exec_rules_for_narration:
+        detail_sentences.append("I used a multiplication fact to get that result")
     if "convert_CD_omit_nums" in exec_rules_for_narration:
         detail_sentences.append("I changed the bottom numbers and kept the top numbers the same")
-    if "invert_rand" in exec_rules_for_narration:
+    if "invert_rand" in exec_rules_for_narration and not (strategy_code in {"ICDM_D", "ICDM_OG"} and operation == ":"):
         detail_sentences.append("I flipped one of the fractions")
+    if "div_to_mul_denied" in exec_rules_for_narration:
+        if "invert_op2" in goals_for_narration:
+            detail_sentences.append("I thought about flipping the second fraction and changing it to multiplication, but I kept it in this form")
+        else:
+            detail_sentences.append("I thought about changing it to multiplication, but I kept it in this form")
+    if "div_calculator" in exec_rules_for_narration:
+        detail_sentences.append("I worked out that division directly")
     if "sub_LbS" in exec_rules_for_narration:
         detail_sentences.append("I subtracted the smaller number from the bigger number")
-    if "div_LbS" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
+    if "div_LbS_drop_rem" in exec_rules_for_narration:
+        detail_sentences.append("I divided the bigger number by the smaller number and kept only the whole-number part")
+    if "div_LbS" in exec_rules_for_narration:
         detail_sentences.append("I divided the bigger number by the smaller number")
-    if "div_drop_rem" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
+    if "div_drop_rem" in exec_rules_for_narration:
         detail_sentences.append("I used the whole-number part after dividing")
     if "simplify_fraction" in goals_for_narration:
-        detail_sentences.append("Then I simplified it")
+        if "get_GCD" in goals_for_narration:
+            detail_sentences.append("I checked for a greatest common factor and then used it to simplify it")
+        else:
+            detail_sentences.append("Then I simplified it")
     elif "check_simplify" in goals_for_narration:
-        detail_sentences.append("I checked if it could be simplified")
+        if "get_GCD" in goals_for_narration:
+            detail_sentences.append("I checked for a greatest common factor")
+        else:
+            detail_sentences.append("I checked if it could be simplified")
+    if surface_hidden_trace_steps:
+        for goal in goals_for_narration:
+            sentence = SURFACED_HIDDEN_GOAL_SENTENCES.get(goal)
+            if sentence is not None:
+                detail_sentences.append(sentence)
+        for rule in exec_rules_for_narration:
+            sentence = SURFACED_HIDDEN_EXEC_SENTENCES.get(rule)
+            if sentence is not None:
+                detail_sentences.append(sentence)
     return detail_sentences
 
 
@@ -585,9 +768,14 @@ def build_trace_reasoning(
     exec_rules: List[str],
     answer: str,
     trace_steps: List[Dict[str, object]],
+    *,
+    surface_hidden_trace_steps: bool = False,
 ) -> Tuple[str, Dict[str, object]]:
-    exec_rules_for_narration = [r for r in exec_rules if r not in IGNORED_EXEC_RULES_IN_REASONING]
-    goals_for_narration = [g for g in goals if g not in IGNORED_GOAL_RULES_IN_REASONING]
+    goals_for_narration, exec_rules_for_narration = prepare_reasoning_rules(
+        goals,
+        exec_rules,
+        surface_hidden_trace_steps=surface_hidden_trace_steps,
+    )
 
     quality_flags: Set[str] = set()
     if any(
@@ -597,7 +785,14 @@ def build_trace_reasoning(
         quality_flags.add("has_exec_error_rule")
 
     claims = collect_trace_claims(trace_steps, max_claims=8)
-    sentences = dedupe_keep_order(claims + build_reasoning_details(goals_for_narration, exec_rules_for_narration))
+    sentences = dedupe_keep_order(
+        claims
+        + build_reasoning_details(
+            goals_for_narration,
+            exec_rules_for_narration,
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
+        )
+    )
 
     if not sentences:
         left_txt, right_txt, _, _ = parse_binary_problem(prob, detect_operation(prob, ""))
@@ -629,16 +824,21 @@ def build_child_reasoning(
     goals: List[str],
     exec_rules: List[str],
     answer: str,
+    *,
+    surface_hidden_trace_steps: bool = False,
 ) -> Tuple[str, Dict[str, object]]:
-    # Hide selected internal UMA tokens from the narrated trace.
-    exec_rules_for_narration = [r for r in exec_rules if r not in IGNORED_EXEC_RULES_IN_REASONING]
-    goals_for_narration = [g for g in goals if g not in IGNORED_GOAL_RULES_IN_REASONING]
+    goals_for_narration, exec_rules_for_narration = prepare_reasoning_rules(
+        goals,
+        exec_rules,
+        surface_hidden_trace_steps=surface_hidden_trace_steps,
+    )
 
     op_word = OPERATION_WORD.get(operation, "with")
     left_txt, right_txt, left_frac, right_frac = parse_binary_problem(prob, operation)
     ans_frac = parse_fraction(answer)
-    ans_num = ans_frac[0] if ans_frac else safe_text(answer, default="?")
-    ans_den = ans_frac[1] if ans_frac else None
+    ans_text_frac = split_fraction_text(answer)
+    ans_num = ans_frac[0] if ans_frac else (ans_text_frac[0] if ans_text_frac else safe_text(answer, default="?"))
+    ans_den = ans_frac[1] if ans_frac else (ans_text_frac[1] if ans_text_frac else None)
     ans_num_int = int(ans_num) if ans_frac else None
     ans_den_int = int(ans_den) if ans_frac else None
 
@@ -664,7 +864,12 @@ def build_child_reasoning(
     if strategy_code in {"ICDM_D", "ICDM_OG"} and operation == ":" and left_frac and right_frac and ans_den is not None:
         a, b = left_frac
         c, d = right_frac
-        main_sentences.append(f"I flipped {c}/{d} to {d}/{c} and changed it to multiplication")
+        if "invert_rand" in exec_rules_for_narration:
+            main_sentences.append(f"I flipped one of the fractions, {c}/{d}, to {d}/{c} and changed it to multiplication")
+        elif "invert_op2" in goals_for_narration:
+            main_sentences.append(f"I flipped the second fraction, {c}/{d}, to {d}/{c} and changed it to multiplication")
+        else:
+            main_sentences.append(f"I flipped {c}/{d} to {d}/{c} and changed it to multiplication")
         top_prod = int(a) * int(d)
         bot_prod = int(b) * int(c)
         if ans_num_int is not None and ans_den_int is not None and top_prod == ans_num_int and bot_prod == ans_den_int:
@@ -675,30 +880,110 @@ def build_child_reasoning(
             note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
             note_check_result(False if ans_num_int is not None and ans_den_int is not None else None)
             main_sentences.append("Then I multiplied across to form a new top and bottom")
+    elif strategy_code in {"ICDM_D", "ICDM_OG"} and left_frac and right_frac and ans_den is not None:
+        main_sentences.append(
+            f"I worked on the top numbers and on the bottom numbers separately and got {ans_num}/{ans_den}"
+        )
     elif strategy_code.startswith("CDON"):
         common_den = ans_den or (left_frac[1] if left_frac else "?")
+        common_den_int: Optional[int] = None
         if left_frac and right_frac:
             b_val = int(left_frac[1])
             d_val = int(right_frac[1])
             if b_val != 0 and d_val != 0:
-                common_den = str((abs(b_val * d_val)) // math.gcd(abs(b_val), abs(d_val)))
-        main_sentences.append(f"I found a common denominator, {common_den}, first")
-        if left_frac and right_frac and ans_den is not None:
-            a, _ = left_frac
-            c, _ = right_frac
+                common_den_int = (abs(b_val * d_val)) // math.gcd(abs(b_val), abs(d_val))
+                common_den = str(common_den_int)
+        if "get_LCM" in goals_for_narration:
+            main_sentences.append(f"I found the least common multiple of the denominators, {common_den}, first")
+        elif "convert_CD_LCM" in goals_for_narration:
+            main_sentences.append(f"I used the least common denominator, {common_den}, first")
+        else:
+            main_sentences.append(f"I found a common denominator, {common_den}, first")
+        if left_frac and right_frac:
+            a, b = left_frac
+            c, d = right_frac
+            left_conv_num: Optional[int] = None
+            right_conv_num: Optional[int] = None
+            if common_den_int is not None:
+                left_conv_num = int(a) * (common_den_int // int(b))
+                right_conv_num = int(c) * (common_den_int // int(d))
+            if (
+                "convert_CD" in goals_for_narration
+                and "convert_fra_to_den" not in goals_for_narration
+                and common_den_int is not None
+            ):
+                main_sentences.append(f"I changed both fractions to use denominator {common_den}")
+            if "convert_fra_to_den" in goals_for_narration and common_den_int is not None:
+                if "convert_CD_omit_nums" in exec_rules_for_narration:
+                    main_sentences.append(f"I tried to change both fractions to use denominator {common_den}")
+                elif left_conv_num is not None and right_conv_num is not None:
+                    main_sentences.append(
+                        f"I rewrote {a}/{b} as {left_conv_num}/{common_den} and {c}/{d} as {right_conv_num}/{common_den}"
+                    )
+            lhs_num = int(a)
+            rhs_num = int(c)
+            if operation in {"+", "-", ":"} and common_den_int is not None:
+                lhs_num *= common_den_int // int(b)
+                rhs_num *= common_den_int // int(d)
             num_result = apply_int_operation(
-                int(a),
-                int(c),
+                lhs_num,
+                rhs_num,
                 operation,
                 prefer_larger_first=has_larger_first and operation in {"-", ":"},
                 drop_remainder=has_drop_remainder and operation == ":",
             )
-            if ans_num_int is not None and num_result is not None and num_result == ans_num_int:
+            numeric_result = apply_numeric_operation(
+                lhs_num,
+                rhs_num,
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            answer_match: Optional[bool] = None
+            if num_result is not None:
+                if operation in {"+", "-"} and common_den_int is not None and ans_den_int not in {None, 0} and ans_num_int is not None:
+                    answer_match = (num_result * ans_den_int) == (ans_num_int * common_den_int)
+                elif ans_num_int is not None:
+                    answer_match = num_result == ans_num_int
+            if answer_match is None:
+                answer_match = numeric_text_matches(numeric_result, ans_num)
+            if answer_match is True:
                 note_check_result(True)
-                main_sentences.append(f"Then I took {a} {op_word} {c} and got {ans_num}")
+                explicit_keep_den = (
+                    "pass_den" in goals_for_narration
+                    and (
+                        operation in {"+", "-", ":"}
+                        or (operation == "*" and ans_den is not None)
+                    )
+                )
+                keep_den = common_den if operation in {"+", "-", ":"} else ans_den
+                if (
+                    operation in {"+", "-"}
+                    and common_den_int is not None
+                    and ans_den_int not in {None, 0}
+                    and ans_num_int is not None
+                    and (num_result != ans_num_int or common_den_int != ans_den_int)
+                ):
+                    if explicit_keep_den and keep_den is not None and num_result is not None:
+                        main_sentences.append(
+                            f"Then I took {lhs_num} {op_word} {rhs_num} and got {num_result}, and I kept {keep_den} on the bottom"
+                        )
+                    else:
+                        main_sentences.append(
+                            f"Then I took {lhs_num} {op_word} {rhs_num} and got {num_result}/{common_den}"
+                        )
+                elif explicit_keep_den and keep_den is not None:
+                    main_sentences.append(
+                        f"Then I took {lhs_num} {op_word} {rhs_num} and got {ans_num}, and I kept {keep_den} on the bottom"
+                    )
+                else:
+                    main_sentences.append(f"Then I took {lhs_num} {op_word} {rhs_num} and got {ans_num}")
             else:
-                note_check_result(False if ans_num_int is not None and num_result is not None else None)
-                main_sentences.append(f"Then I combined the top numbers with {op_word} and kept {common_den} on the bottom")
+                if operation == ":":
+                    main_sentences.append(f"Then I worked on the top numbers and kept {common_den} on the bottom")
+                else:
+                    note_check_result(answer_match)
+                    main_sentences.append(f"Then I combined the top numbers with {op_word} and kept {common_den} on the bottom")
     elif strategy_code.startswith("KDON"):
         if left_frac and right_frac and ans_den is not None:
             a, b = left_frac
@@ -711,11 +996,23 @@ def build_child_reasoning(
                 prefer_larger_first=has_larger_first and operation in {"-", ":"},
                 drop_remainder=has_drop_remainder and operation == ":",
             )
-            if ans_num_int is not None and num_result is not None and num_result == ans_num_int:
+            numeric_result = apply_numeric_operation(
+                int(a),
+                int(c),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            answer_match: Optional[bool] = None
+            if ans_num_int is not None and num_result is not None:
+                answer_match = num_result == ans_num_int
+            if answer_match is None:
+                answer_match = numeric_text_matches(numeric_result, ans_num)
+            if answer_match is True:
                 note_check_result(True)
                 main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and I kept {keep_den} on the bottom")
             else:
-                note_check_result(False if ans_num_int is not None and num_result is not None else None)
+                note_check_result(answer_match)
                 main_sentences.append(f"I combined the top numbers and kept {keep_den} on the bottom")
     elif strategy_code.startswith("ONOD"):
         if left_frac and right_frac and ans_den is not None:
@@ -735,15 +1032,37 @@ def build_child_reasoning(
                 prefer_larger_first=has_larger_first and operation in {"-", ":"},
                 drop_remainder=has_drop_remainder and operation == ":",
             )
-            top_match = ans_num_int is not None and top_result is not None and top_result == ans_num_int
-            bot_match = ans_den_int is not None and bottom_result is not None and bottom_result == ans_den_int
-            if top_match and bot_match:
+            top_numeric = apply_numeric_operation(
+                int(a),
+                int(c),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            bottom_numeric = apply_numeric_operation(
+                int(b),
+                int(d),
+                operation,
+                prefer_larger_first=has_larger_first and operation in {"-", ":"},
+                drop_remainder=has_drop_remainder and operation == ":",
+            )
+            top_match: Optional[bool] = None
+            bot_match: Optional[bool] = None
+            if ans_num_int is not None and top_result is not None:
+                top_match = top_result == ans_num_int
+            if ans_den_int is not None and bottom_result is not None:
+                bot_match = bottom_result == ans_den_int
+            if top_match is None:
+                top_match = numeric_text_matches(top_numeric, ans_num)
+            if bot_match is None:
+                bot_match = numeric_text_matches(bottom_numeric, ans_den)
+            if top_match is True and bot_match is True:
                 note_check_result(True)
                 note_check_result(True)
                 main_sentences.append(f"I took {a} {op_word} {c} and got {ans_num}, and {b} {op_word} {d} and got {ans_den}")
             else:
-                note_check_result(False if ans_num_int is not None and top_result is not None else None)
-                note_check_result(False if ans_den_int is not None and bottom_result is not None else None)
+                note_check_result(top_match)
+                note_check_result(bot_match)
                 main_sentences.append(f"I applied {op_word} to top numbers and bottom numbers separately")
     elif strategy_code == "CROP_M":
         if left_frac and right_frac and ans_den is not None:
@@ -766,21 +1085,13 @@ def build_child_reasoning(
         else:
             main_sentences.append(f"I worked it out and got {answer}")
 
-    detail_sentences: List[str] = []
-    if "convert_CD_omit_nums" in exec_rules_for_narration:
-        detail_sentences.append("I changed the bottom numbers and kept the top numbers the same")
-    if "invert_rand" in exec_rules_for_narration and strategy_code not in {"ICDM_D", "ICDM_OG"}:
-        detail_sentences.append("I flipped one of the fractions")
-    if "sub_LbS" in exec_rules_for_narration:
-        detail_sentences.append("I subtracted the smaller number from the bigger number")
-    if "div_LbS" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
-        detail_sentences.append("I divided the bigger number by the smaller number")
-    if "div_drop_rem" in exec_rules_for_narration or "div_LbS_drop_rem" in exec_rules_for_narration:
-        detail_sentences.append("I used the whole-number part after dividing")
-    if "simplify_fraction" in goals_for_narration:
-        detail_sentences.append("Then I simplified it")
-    elif "check_simplify" in goals_for_narration:
-        detail_sentences.append("I checked if it could be simplified")
+    detail_sentences = build_reasoning_details(
+        goals_for_narration,
+        exec_rules_for_narration,
+        strategy_code=strategy_code,
+        operation=operation,
+        surface_hidden_trace_steps=surface_hidden_trace_steps,
+    )
 
     if any(
         tag in exec_rules_for_narration
@@ -875,6 +1186,8 @@ def translate_record(
     record: Dict[str, object],
     include_outcome_text: bool,
     student_prompt_config: StudentPromptConfig,
+    reasoning_mode: str,
+    surface_hidden_trace_steps: bool,
 ) -> Dict[str, object]:
     prob = safe_text(record.get("prob"), default="?")
     strategy_code = safe_text(record.get("strategy"), default="OTHER")
@@ -886,6 +1199,7 @@ def translate_record(
     answer = safe_text(record.get("answer"), default="?")
     operation = detect_operation(prob, safe_text(record.get("operation"), default=""))
     op_text = OPERATION_TEXT.get(operation, "unknown operation")
+    prompt_prob = render_problem_for_prompt(prob, operation)
 
     strategy_nl = STRATEGY_TEXT.get(strategy_code, f"I use an uncataloged strategy pattern ({strategy_code})")
     goals_nl = render_rule_sequence(goals, GOAL_TEXT, "goal")
@@ -893,17 +1207,28 @@ def translate_record(
     params_visible = student_params_visible(record, student_prompt_config)
     student_nl = build_student_block(record) if params_visible else ""
     if params_visible:
-        instruction_nl = f"{student_nl}\nSolve this fraction problem: {prob}=?"
+        instruction_nl = f"{student_nl}\nSolve this fraction problem: {prompt_prob}=?"
     else:
-        instruction_nl = f"Solve this fraction problem: {prob}=?"
+        instruction_nl = f"Solve this fraction problem: {prompt_prob}=?"
     trace_steps = parse_trace_steps(record.get("trace_steps_json"))
-    if len(trace_steps) > 0:
+    if reasoning_mode == "clean_child":
+        reasoning_nl, quality = build_child_reasoning(
+            prob=prob,
+            operation=operation,
+            strategy_code=strategy_code,
+            goals=goals,
+            exec_rules=exec_rules,
+            answer=answer,
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
+        )
+    elif len(trace_steps) > 0:
         reasoning_nl, quality = build_trace_reasoning(
             prob=prob,
             goals=goals,
             exec_rules=exec_rules,
             answer=answer,
             trace_steps=trace_steps,
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
         )
     else:
         reasoning_nl, quality = build_child_reasoning(
@@ -913,6 +1238,7 @@ def translate_record(
             goals=goals,
             exec_rules=exec_rules,
             answer=answer,
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
         )
     response_lines = [reasoning_nl, f"### answer: {answer}"]
     if include_outcome_text:
@@ -932,7 +1258,7 @@ def translate_record(
         "reasoning_quality_flags": quality["reasoning_quality_flags"],
         "reasoning_verified_claims": quality["reasoning_verified_claims"],
         "reasoning_unverified_claims": quality["reasoning_unverified_claims"],
-        "translation_version": TRANSLATION_VERSION,
+        "translation_version": translation_version(surface_hidden_trace_steps=surface_hidden_trace_steps),
     }
 
 
@@ -940,6 +1266,8 @@ def translate_chunk(
     chunk: pd.DataFrame,
     include_outcome_text: bool,
     student_prompt_config: StudentPromptConfig,
+    reasoning_mode: str,
+    surface_hidden_trace_steps: bool,
 ) -> pd.DataFrame:
     records = chunk.to_dict(orient="records")
     translated = [
@@ -947,10 +1275,40 @@ def translate_chunk(
             record,
             include_outcome_text=include_outcome_text,
             student_prompt_config=student_prompt_config,
+            reasoning_mode=reasoning_mode,
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
         )
         for record in records
     ]
     return pd.DataFrame(translated)
+
+
+def truthy_mask(series: pd.Series) -> pd.Series:
+    text = series.fillna("").astype(str).str.strip().str.lower()
+    return text.isin({"1", "1.0", "true", "t", "yes", "y"})
+
+
+def apply_row_filter(frame: pd.DataFrame, row_filter: str) -> Tuple[pd.DataFrame, Dict[str, int]]:
+    if row_filter == "none" or len(frame) == 0:
+        return frame, {
+            "rows_in": int(len(frame)),
+            "rows_kept": int(len(frame)),
+            "rows_dropped": 0,
+        }
+
+    quality_flags = frame["reasoning_quality_flags"].fillna("").astype(str)
+    unverified = pd.to_numeric(frame["reasoning_unverified_claims"], errors="coerce").fillna(0).astype(int)
+    keep_mask = (unverified == 0) & (~quality_flags.str.contains("arith_claim_mismatch", regex=False))
+
+    if row_filter == "correct_exec_and_answer":
+        keep_mask &= truthy_mask(frame["is_correct"])
+
+    out = frame.loc[keep_mask].reset_index(drop=True)
+    return out, {
+        "rows_in": int(len(frame)),
+        "rows_kept": int(len(out)),
+        "rows_dropped": int(len(frame) - len(out)),
+    }
 
 
 def parse_seed_ranges(seed_expr: str) -> List[int]:
@@ -1083,9 +1441,12 @@ def main() -> None:
     print(f"student_prompt_mode: {student_prompt_config.mode}")
     print(f"student_params_drop_prob: {student_prompt_config.drop_prob}")
     print(f"student_params_drop_seed: {student_prompt_config.drop_seed}")
+    print(f"reasoning_mode: {args.reasoning_mode}")
+    print(f"row_filter: {args.row_filter}")
     if args.include_student_params is not None:
         print(f"legacy_include_student_params: {args.include_student_params}")
-    print(f"translation_version: {TRANSLATION_VERSION}")
+    print(f"surface_hidden_trace_steps: {args.surface_hidden_trace_steps}")
+    print(f"translation_version: {translation_version(surface_hidden_trace_steps=args.surface_hidden_trace_steps)}")
     print(f"input_sources: {len(sources)}")
     for idx, source in enumerate(sources, start=1):
         seed_text = f", seed={source.seed}" if source.seed is not None else ""
@@ -1094,6 +1455,7 @@ def main() -> None:
 
     wrote_header = False
     total_rows = 0
+    total_rows_kept = 0
 
     for source_idx, source in enumerate(sources, start=1):
         source_rows = 0
@@ -1117,25 +1479,49 @@ def main() -> None:
                 normalized,
                 include_outcome_text=args.include_outcome_text,
                 student_prompt_config=student_prompt_config,
+                reasoning_mode=args.reasoning_mode,
+                surface_hidden_trace_steps=args.surface_hidden_trace_steps,
             )
             base = normalized.reindex(columns=base_columns).reset_index(drop=True)
             out_chunk = pd.concat([base, translated], axis=1)
+            out_chunk, filter_stats = apply_row_filter(out_chunk, args.row_filter)
+
+            if len(out_chunk) == 0:
+                total_rows += len(normalized)
+                print(
+                    f"[source {source_idx}/{len(sources)} chunk {chunk_idx}] "
+                    f"filtered out all {filter_stats['rows_in']:,} rows "
+                    f"(source_total {source_rows:,}, global_seen {total_rows:,})"
+                )
+                continue
 
             mode = "w" if not wrote_header else "a"
             out_chunk.to_csv(output_csv, index=False, mode=mode, header=not wrote_header, compression="infer")
 
             wrote_header = True
             total_rows += len(normalized)
+            total_rows_kept += len(out_chunk)
             print(
                 f"[source {source_idx}/{len(sources)} chunk {chunk_idx}] "
-                f"wrote {len(normalized):,} rows (source_total {source_rows:,}, global_total {total_rows:,})"
+                f"kept {len(out_chunk):,}/{filter_stats['rows_in']:,} rows "
+                f"(source_total {source_rows:,}, global_seen {total_rows:,}, global_kept {total_rows_kept:,})"
             )
 
         if args.max_rows is not None and total_rows >= args.max_rows:
             break
 
+    if not wrote_header:
+        pd.DataFrame(columns=base_columns + NLP_OUTPUT_COLUMNS).to_csv(
+            output_csv,
+            index=False,
+            mode="w",
+            header=True,
+            compression="infer",
+        )
+
     print("")
-    print(f"Done. Total translated rows: {total_rows:,}")
+    print(f"Done. Total translated rows seen: {total_rows:,}")
+    print(f"Done. Total translated rows kept: {total_rows_kept:,}")
     print(f"Output: {output_csv}")
 
 

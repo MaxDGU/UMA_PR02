@@ -1,0 +1,70 @@
+# Local caches and Python build junk
+.cache/
+.codex
+**/__pycache__/
+*.py[cod]
+slurm-*.out
+backup_*/
+
+# Local model and checkpoint artifacts
+distilled/
+human_ft/
+*.safetensors
+
+# Generated report outputs
+reports/human_strategy_ppo_guarded_20260412/build/
+reports/human_strategy_ppo_guarded_20260412/figures/
+reports/human_strategy_ppo_guarded_20260412/tables/
+reports/human_strategy_ppo_guarded_20260412/*.pdf
+
+# Generated UMA replication artifacts
+results/UMA_replication/__pycache__/
+results/UMA_replication/checkpoints/
+results/UMA_replication/figures/
+results/UMA_replication/fraction2400_traces/
+results/UMA_replication/gomath_traces/
+results/UMA_replication/gomath_traces_v2/
+results/UMA_replication/logs/
+results/UMA_replication/panel_seed_traces/
+results/UMA_replication/pilot_runs/
+results/UMA_replication/recovery/
+results/UMA_replication/results/
+results/UMA_replication/sp2013_eval/
+results/UMA_replication/sp2013_eval_g_sweep_010_100_step005/
+results/UMA_replication/sp2013_fixed_subjid_0472/
+results/UMA_replication/subjid472_answer_failure_audit/
+results/UMA_replication/synth_unique_seed1_all1000/
+results/UMA_replication/synth_unique_seed_traces/
+results/UMA_replication/trained_models/
+results/UMA_replication/*.csv
+results/UMA_replication/*.csv.gz
+results/UMA_replication/*.json
+results/UMA_replication/*.ipynb
+
+# Generated transformer replication artifacts
+results/transformer_replication/__pycache__/
+results/transformer_replication/_tmp*/
+results/transformer_replication/figures/
+results/transformer_replication/logs/
+results/transformer_replication/translator_auto_metrics*/
+results/transformer_replication/human_strategy_ppo_*/
+results/transformer_replication/human_strategy_eval_smoke_cli/
+results/transformer_replication/smol2_*/
+results/transformer_replication/strategy_classifier_*/
+results/transformer_replication/strategy_scale_distilbert_*/
+results/transformer_replication/batch128_smoke_*/
+results/transformer_replication/translator_rule_audit/
+results/transformer_replication/*smoke*/
+results/transformer_replication/*.json
+results/transformer_replication/*.tsv
+results/transformer_replication/*.csv
+results/transformer_replication/*.csv.gz
+results/transformer_replication/*.png
+results/transformer_replication/*.pdf
+results/transformer_replication/*.html
+results/transformer_replication/*.ipynb
+results/transformer_replication/*.pt
+
+# Analysis notebook exports outside transformer replication
+results/*.ipynb
+results/*.html

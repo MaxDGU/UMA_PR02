@@ -12,9 +12,30 @@ LOG_DIR="${LOG_DIR:-${ROOT_DIR}/results/transformer_replication/logs}"
 mkdir -p "${LOG_DIR}"
 
 RUN_TS="${RUN_TS:-$(date +%Y%m%d_%H%M%S)}"
-MANIFEST="${MANIFEST:-${OUT_BASE_DIR}/jobs_135m_paramsalways_lr_scheduler_ablation_${RUN_TS}.tsv}"
-RECORD_PATH="${RECORD_PATH:-${OUT_BASE_DIR}/distill_135m_paramsalways_lr_scheduler_ablation_${RUN_TS}.json}"
 DRY_RUN="${DRY_RUN:-0}"
+INIT_MODE="${INIT_MODE:-pretrained}"
+
+case "${INIT_MODE}" in
+  pretrained)
+    INIT_FROM_SCRATCH_DEFAULT=0
+    INIT_TAG="pretrained"
+    INIT_NOTE="pretrained"
+    JOB_PREFIX="s135"
+    ;;
+  scratch)
+    INIT_FROM_SCRATCH_DEFAULT=1
+    INIT_TAG="scratch"
+    INIT_NOTE="from-scratch"
+    JOB_PREFIX="s135scr"
+    ;;
+  *)
+    echo "unknown INIT_MODE: ${INIT_MODE} (expected pretrained or scratch)" >&2
+    exit 2
+    ;;
+esac
+
+MANIFEST="${MANIFEST:-${OUT_BASE_DIR}/jobs_135m_paramsalways_lr_scheduler_ablation_${INIT_TAG}_${RUN_TS}.tsv}"
+RECORD_PATH="${RECORD_PATH:-${OUT_BASE_DIR}/distill_135m_paramsalways_lr_scheduler_ablation_${INIT_TAG}_${RUN_TS}.json}"
 
 LRS_STR="${LRS:-5e-4 1e-4 5e-5 1e-5 5e-6 1e-6}"
 SCHEDULERS_STR="${SCHEDULERS:-cosine linear}"
@@ -24,12 +45,27 @@ TIME_LIMIT="${TIME_LIMIT:-24:00:00}"
 CHAIN_COUNT="${CHAIN_COUNT:-2}"
 GPUS_PER_NODE="${GPUS_PER_NODE:-1}"
 CPUS_PER_TASK="${CPUS_PER_TASK:-8}"
+BATCH_SIZE="${BATCH_SIZE:-512}"
+EVAL_BATCH_SIZE="${EVAL_BATCH_SIZE:-512}"
+ID_EVAL_BATCH_SIZE="${ID_EVAL_BATCH_SIZE:-64}"
+GRAD_ACCUM_STEPS="${GRAD_ACCUM_STEPS:-1}"
+MAX_LENGTH="${MAX_LENGTH:-256}"
+NUM_WORKERS="${NUM_WORKERS:-2}"
+AMP_DTYPE="${AMP_DTYPE:-auto}"
+LOCAL_FILES_ONLY="${LOCAL_FILES_ONLY:-1}"
+MAX_SAMPLES="${MAX_SAMPLES:-}"
+PREVIEW_SAMPLES="${PREVIEW_SAMPLES:-0}"
+ID_EVAL_EVERY="${ID_EVAL_EVERY:-1}"
+LOSS_EVALS_PER_EPOCH="${LOSS_EVALS_PER_EPOCH:-4}"
 ACCOUNT="${ACCOUNT:-}"
 QOS="${QOS:-}"
 MEM="${MEM:-}"
 SBATCH_EXTRA_ARGS="${SBATCH_EXTRA_ARGS:-}"
 SAVE_LAST_EVERY_UPDATES="${SAVE_LAST_EVERY_UPDATES:-4000}"
 MIN_LR="${MIN_LR:-1e-6}"
+TMP_ROOT="${TMP_ROOT:-/n/fs/cogai/cs1095/tmp}"
+
+mkdir -p "${TMP_ROOT}"
 
 lr_tag() {
   local value="$1"
@@ -42,12 +78,26 @@ lr_tag() {
 printf "lr\tscheduler\tstage\tjob_id\tjob_name\tdependency\ttime_limit\tout_dir\tlog_out\tlog_err\n" > "${MANIFEST}"
 
 echo "Submitting 135M params-always LR x scheduler ablation"
+echo "init_mode=${INIT_MODE}"
 echo "data_csv=${DATA_CSV}"
 echo "sp2013_csv=${SP2013_CSV}"
 echo "run_ts=${RUN_TS}"
 echo "lrs=${LRS_STR}"
 echo "schedulers=${SCHEDULERS_STR}"
 echo "min_lr=${MIN_LR}"
+echo "batch_size=${BATCH_SIZE}"
+echo "eval_batch_size=${EVAL_BATCH_SIZE}"
+echo "id_eval_batch_size=${ID_EVAL_BATCH_SIZE}"
+echo "grad_accum_steps=${GRAD_ACCUM_STEPS}"
+echo "max_length=${MAX_LENGTH}"
+echo "num_workers=${NUM_WORKERS}"
+echo "amp_dtype=${AMP_DTYPE}"
+echo "local_files_only=${LOCAL_FILES_ONLY}"
+if [[ -n "${MAX_SAMPLES}" ]]; then
+  echo "max_samples=${MAX_SAMPLES}"
+fi
+echo "preview_samples=${PREVIEW_SAMPLES}"
+echo "loss_evals_per_epoch=${LOSS_EVALS_PER_EPOCH}"
 echo "manifest=${MANIFEST}"
 if [[ -n "${ACCOUNT}" ]]; then
   echo "account=${ACCOUNT}"
@@ -63,7 +113,7 @@ if [[ -n "${SBATCH_EXTRA_ARGS}" ]]; then
 fi
 echo
 
-submission_tsv="$(mktemp)"
+submission_tsv="$(mktemp -p "${TMP_ROOT}" "jobs_135m_paramsalways_lr_scheduler_ablation_${RUN_TS}_XXXX.tsv")"
 cleanup() {
   rm -f "${submission_tsv}"
 }
@@ -80,24 +130,29 @@ for lr in ${LRS_STR}; do
       *) echo "unknown scheduler: ${scheduler}" >&2; exit 2 ;;
     esac
 
-    run_name="smol2_135m_synth_unique_seed1_all1000_mincols_paramsalways_pretrained_matchspval_iduma_lr${lr_suffix}_${sched_suffix}_e5_${RUN_TS}"
+    run_name="smol2_135m_synth_unique_seed1_all1000_mincols_paramsalways_${INIT_TAG}_matchspval_iduma_lr${lr_suffix}_${sched_suffix}_e5_${RUN_TS}"
     out_dir="${OUT_BASE_DIR}/${run_name}"
     prev_job_id=""
 
     for stage in $(seq 1 "${CHAIN_COUNT}"); do
-      job_name="s135_${sched_suffix}_lr${lr_suffix}_p${stage}"
+      job_name="${JOB_PREFIX}_${sched_suffix}_lr${lr_suffix}_p${stage}"
       log_out="${LOG_DIR}/${job_name}_${RUN_TS}_%j.out"
       log_err="${LOG_DIR}/${job_name}_${RUN_TS}_%j.err"
       dependency=""
       resume_from="none"
       require_resume="0"
+      stage_init_from_scratch="${INIT_FROM_SCRATCH_DEFAULT}"
       if [[ "${stage}" -gt 1 ]]; then
         dependency="afterany:${prev_job_id}"
         resume_from="auto"
         require_resume="1"
+        stage_init_from_scratch="0"
       fi
 
-      export_vars="ALL,REPO_ROOT=${ROOT_DIR},CONDA_ENV=${CONDA_ENV},DATA_CSV=${DATA_CSV},SP2013_CSV=${SP2013_CSV},OUT_DIR=${out_dir},MODEL_NAME=HuggingFaceTB/SmolLM2-135M,INIT_FROM_SCRATCH=0,EPOCHS=5,LR=${lr},MIN_LR=${MIN_LR},LR_SCHEDULER_TYPE=${scheduler},BEST_BY=id_val_acc,VAL_FRAC=0,TEST_FRAC=0,BATCH_SIZE=512,EVAL_BATCH_SIZE=512,MAX_LENGTH=256,WARMUP_RATIO=0.03,AMP_DTYPE=auto,GC=0,EVALS_PER_EPOCH=1,EVAL_SP2013=0,EVAL_ID_FINAL_ANSWER=1,ID_EVAL_SPLIT=val,ID_EVAL_SIZE=0,ID_EVAL_TARGET=response,ID_EVAL_REPORT_TRUE_TARGET=1,ID_EVAL_BATCH_SIZE=64,ID_EVAL_MAX_NEW_TOKENS=256,MOVE_SP2013_ROWS_TO_VAL=1,TRAIN_PROMPT_STUDENT_MODE=always,TRAIN_PROMPT_STUDENT_DROPOUT_PROB=0.0,TRAIN_PROMPT_STUDENT_DROPOUT_SEED=0,SAVE_EVAL_CHECKPOINTS=0,SAVE_BEST_CHECKPOINT=1,SAVE_FINAL_CHECKPOINT=1,VERIFY_SAVED_CHECKPOINT_LOAD=0,SAVE_LAST_EVERY_UPDATES=${SAVE_LAST_EVERY_UPDATES},RESUME_FROM=${resume_from},REQUIRE_RESUME=${require_resume},GPUS_PER_NODE=${GPUS_PER_NODE}"
+      export_vars="ALL,REPO_ROOT=${ROOT_DIR},CONDA_ENV=${CONDA_ENV},DATA_CSV=${DATA_CSV},SP2013_CSV=${SP2013_CSV},OUT_DIR=${out_dir},MODEL_NAME=HuggingFaceTB/SmolLM2-135M,INIT_FROM_SCRATCH=${stage_init_from_scratch},EPOCHS=5,LR=${lr},MIN_LR=${MIN_LR},LR_SCHEDULER_TYPE=${scheduler},BEST_BY=id_val_acc,VAL_FRAC=0,TEST_FRAC=0,BATCH_SIZE=${BATCH_SIZE},EVAL_BATCH_SIZE=${EVAL_BATCH_SIZE},GRAD_ACCUM_STEPS=${GRAD_ACCUM_STEPS},MAX_LENGTH=${MAX_LENGTH},NUM_WORKERS=${NUM_WORKERS},WARMUP_RATIO=0.03,AMP_DTYPE=${AMP_DTYPE},GC=0,EVALS_PER_EPOCH=1,LOSS_EVALS_PER_EPOCH=${LOSS_EVALS_PER_EPOCH},EVAL_SP2013=0,EVAL_ID_FINAL_ANSWER=1,ID_EVAL_EVERY=${ID_EVAL_EVERY},ID_EVAL_SPLIT=val,ID_EVAL_SIZE=0,ID_EVAL_TARGET=response,ID_EVAL_REPORT_TRUE_TARGET=1,ID_EVAL_BATCH_SIZE=${ID_EVAL_BATCH_SIZE},ID_EVAL_MAX_NEW_TOKENS=256,MOVE_SP2013_ROWS_TO_VAL=1,TRAIN_PROMPT_STUDENT_MODE=always,TRAIN_PROMPT_STUDENT_DROPOUT_PROB=0.0,TRAIN_PROMPT_STUDENT_DROPOUT_SEED=0,SAVE_EVAL_CHECKPOINTS=0,SAVE_BEST_CHECKPOINT=1,SAVE_FINAL_CHECKPOINT=1,VERIFY_SAVED_CHECKPOINT_LOAD=0,SAVE_LAST_EVERY_UPDATES=${SAVE_LAST_EVERY_UPDATES},LOCAL_FILES_ONLY=${LOCAL_FILES_ONLY},PREVIEW_SAMPLES=${PREVIEW_SAMPLES},RESUME_FROM=${resume_from},REQUIRE_RESUME=${require_resume},GPUS_PER_NODE=${GPUS_PER_NODE}"
+      if [[ -n "${MAX_SAMPLES}" ]]; then
+        export_vars+=",MAX_SAMPLES=${MAX_SAMPLES}"
+      fi
 
       submit_args=(
         --parsable
@@ -157,7 +212,7 @@ for lr in ${LRS_STR}; do
   done
 done
 
-python - "${submission_tsv}" "${RECORD_PATH}" "${RUN_TS}" "${LRS_STR}" "${SCHEDULERS_STR}" <<'PY'
+python - "${submission_tsv}" "${RECORD_PATH}" "${RUN_TS}" "${LRS_STR}" "${SCHEDULERS_STR}" "${BATCH_SIZE}" "${EVAL_BATCH_SIZE}" "${ID_EVAL_BATCH_SIZE}" "${GRAD_ACCUM_STEPS}" "${MAX_LENGTH}" "${NUM_WORKERS}" "${AMP_DTYPE}" "${LOCAL_FILES_ONLY}" "${INIT_MODE}" "${INIT_NOTE}" <<'PY'
 import json
 import sys
 
@@ -182,14 +237,22 @@ with open(submission_tsv, "r", encoding="utf-8") as f:
 payload = {
     "run_ts": run_ts,
     "note": (
-        "135M pretrained params-always distillation ablation over learning rate and scheduler. "
+        f"135M {sys.argv[14]} params-always distillation ablation over learning rate and scheduler. "
         "Uses SP2013-only validation (16,000 matched-format prompts), best_by=id_val_acc against UMA responses, "
         "and logs true-answer accuracy as a secondary diagnostic from the same generations. "
         "Schedulers decay to a minimum learning-rate floor instead of zero."
     ),
     "model": "HuggingFaceTB/SmolLM2-135M",
-    "init": "pretrained",
+    "init": sys.argv[14],
     "epochs": 5,
+    "batch_size": int(sys.argv[6]),
+    "eval_batch_size": int(sys.argv[7]),
+    "id_eval_batch_size": int(sys.argv[8]),
+    "grad_accum_steps": int(sys.argv[9]),
+    "max_length": int(sys.argv[10]),
+    "num_workers": int(sys.argv[11]),
+    "amp_dtype": sys.argv[12],
+    "local_files_only": sys.argv[13] == "1",
     "min_learning_rate": 1e-6,
     "learning_rates": lrs,
     "schedulers": schedulers,

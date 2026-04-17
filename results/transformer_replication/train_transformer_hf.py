@@ -44,7 +44,7 @@ import torch
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.optim.lr_scheduler import LambdaLR
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import BatchSampler, DataLoader, Dataset, RandomSampler, Sampler
 from torch.utils.data.distributed import DistributedSampler
 from transformers import (
     AutoConfig,
@@ -57,6 +57,14 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DATA_CSV = os.path.join(SCRIPT_DIR, "uma_traces_all_nlp.csv.gz")
 DEFAULT_OUT_DIR = os.path.join(SCRIPT_DIR, "smollm2_135m_nlp_finetune")
 DEFAULT_SP2013_CSV = os.path.join(SCRIPT_DIR, "..", "UMA_replication", "sp2013.csv")
+DEFAULT_SP2013_TARGET_CSV = os.path.join(
+    SCRIPT_DIR,
+    "..",
+    "UMA_replication",
+    "sp2013_eval",
+    "seed_1",
+    "sp2013_seed1_all_models.csv",
+)
 DEFAULT_SP2013_GRID_G = "0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.10"
 DEFAULT_SP2013_GRID_D = "0.1,0.3,0.5,0.7,0.9"
 DEFAULT_SP2013_GRID_RT = "3,4,5,6"
@@ -171,6 +179,17 @@ def parse_args() -> argparse.Namespace:
             "out of train/test and into val."
         ),
     )
+    parser.add_argument(
+        "--strict_sp2013_only_validation_layout",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "When --move_sp2013_rows_to_val is active with val/test fractions at 0, require the "
+            "original full-layout SP2013 validation pool (16,000 rows, 16 problems, and 1,000 "
+            "student tuples when parameter columns are present). Disable this for filtered "
+            "datasets that intentionally keep only a subset of SP2013 rows."
+        ),
+    )
     parser.add_argument("--max_samples", type=int, default=None)
     parser.add_argument("--num_workers", type=int, default=4)
     parser.add_argument("--seed", type=int, default=42)
@@ -216,9 +235,26 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--preview_samples", type=int, default=3, help="Generate N preview samples after training.")
     parser.add_argument("--preview_max_new_tokens", type=int, default=96)
     parser.add_argument("--sp2013_csv", type=str, default=DEFAULT_SP2013_CSV)
+    parser.add_argument("--sp2013_target_csv", type=str, default=DEFAULT_SP2013_TARGET_CSV)
+    parser.add_argument(
+        "--sp2013_val_source_csv",
+        type=str,
+        default="",
+        help=(
+            "Optional alternate CSV used only to build the SP2013 validation pool when "
+            "--move_sp2013_rows_to_val is active. This is useful when training data is filtered "
+            "but the held-out SP2013 validation set should remain the full unfiltered pool."
+        ),
+    )
     parser.add_argument("--sp2013_max_new_tokens", type=int, default=256)
     parser.add_argument("--eval_sp2013", action=argparse.BooleanOptionalAction, default=True)
     parser.add_argument("--sp2013_every", type=int, default=1, help="Evaluate SP2013 every N epochs.")
+    parser.add_argument(
+        "--sp2013_target_mode",
+        choices=["true", "uma_tuple", "uma_distribution"],
+        default="true",
+        help="SP2013 primary target: mathematically true answer, tuple-conditioned UMA answers, or no-param UMA answer distribution.",
+    )
     parser.add_argument(
         "--sp2013_use_param_grid",
         action=argparse.BooleanOptionalAction,
@@ -256,11 +292,28 @@ def parse_args() -> argparse.Namespace:
         help="Run evaluation this many times per epoch (>=1).",
     )
     parser.add_argument(
+        "--loss_evals_per_epoch",
+        type=int,
+        default=0,
+        help=(
+            "Run lightweight validation-loss evaluation this many times per epoch. "
+            "Set to 0 to reuse --evals_per_epoch."
+        ),
+    )
+    parser.add_argument(
         "--best_by",
-        choices=["val_loss", "sp2013_acc", "id_val_acc"],
+        choices=["val_loss", "sp2013_acc", "sp2013_primary", "id_val_acc"],
         default="val_loss",
         help="Checkpoint selection criterion for the best model.",
     )
+    parser.add_argument("--sp2013_num_rollouts", type=int, default=1)
+    parser.add_argument("--sp2013_do_sample", action=argparse.BooleanOptionalAction, default=False)
+    parser.add_argument("--sp2013_temperature", type=float, default=0.7)
+    parser.add_argument("--sp2013_top_p", type=float, default=0.95)
+    parser.add_argument("--sp2013_top_k", type=int, default=50)
+    parser.add_argument("--sp2013_sample_seed", type=int, default=123)
+    parser.add_argument("--sp2013_rollout_batch_size", type=int, default=1)
+    parser.add_argument("--sp2013_progress_every", type=int, default=0)
     parser.add_argument(
         "--eval_id_final_answer",
         action=argparse.BooleanOptionalAction,
@@ -419,6 +472,108 @@ class NLPtracesDataset(Dataset):
         return self.prompts[idx], self.responses[idx]
 
 
+def get_legacy_random_sampler_epoch_seed(base_seed: int, epoch: int) -> int:
+    if epoch < 1:
+        raise ValueError("epoch must be >= 1.")
+    generator = torch.Generator()
+    generator.manual_seed(int(base_seed))
+    seed_value = 0
+    for _ in range(epoch):
+        seed_value = int(torch.empty((), dtype=torch.int64).random_(generator=generator).item())
+    return seed_value
+
+
+class OffsetBatchSampler(Sampler[List[int]]):
+    def __init__(self, sampler: Sampler[int], batch_size: int, drop_last: bool, start_batch: int = 0):
+        if batch_size < 1:
+            raise ValueError("batch_size must be >= 1.")
+        if start_batch < 0:
+            raise ValueError("start_batch must be >= 0.")
+        self.sampler = sampler
+        self.batch_size = int(batch_size)
+        self.drop_last = bool(drop_last)
+        self.start_batch = int(start_batch)
+
+    def __iter__(self):
+        batch: List[int] = []
+        batch_idx = 0
+        for idx in self.sampler:
+            batch.append(idx)
+            if len(batch) == self.batch_size:
+                if batch_idx >= self.start_batch:
+                    yield batch
+                batch = []
+                batch_idx += 1
+        if batch and not self.drop_last and batch_idx >= self.start_batch:
+            yield batch
+
+    def __len__(self) -> int:
+        base_batches = len(BatchSampler(self.sampler, self.batch_size, self.drop_last))
+        return max(0, base_batches - self.start_batch)
+
+
+def build_train_index_sampler(
+    train_ds: Dataset,
+    distributed: bool,
+    world_size: int,
+    rank: int,
+    seed: int,
+    epoch: int,
+) -> Sampler[int]:
+    if distributed:
+        sampler = DistributedSampler(
+            train_ds,
+            num_replicas=world_size,
+            rank=rank,
+            shuffle=True,
+            drop_last=False,
+        )
+        sampler.set_epoch(epoch)
+        return sampler
+
+    # Match the legacy RandomSampler behavior so existing single-GPU checkpoints
+    # can resume at a batch offset without replaying tens of thousands of batches.
+    generator = torch.Generator()
+    generator.manual_seed(get_legacy_random_sampler_epoch_seed(seed, epoch))
+    return RandomSampler(train_ds, generator=generator)
+
+
+def build_train_loader_for_epoch(
+    train_ds: Dataset,
+    collate_fn,
+    batch_size: int,
+    num_workers: int,
+    pin_memory: bool,
+    distributed: bool,
+    world_size: int,
+    rank: int,
+    seed: int,
+    epoch: int,
+    start_batch: int = 0,
+) -> DataLoader:
+    sampler = build_train_index_sampler(
+        train_ds=train_ds,
+        distributed=distributed,
+        world_size=world_size,
+        rank=rank,
+        seed=seed,
+        epoch=epoch,
+    )
+    batch_sampler = OffsetBatchSampler(
+        sampler=sampler,
+        batch_size=batch_size,
+        drop_last=False,
+        start_batch=start_batch,
+    )
+    return DataLoader(
+        train_ds,
+        batch_sampler=batch_sampler,
+        num_workers=num_workers,
+        pin_memory=pin_memory,
+        collate_fn=collate_fn,
+    )
+
+
 def build_collate_fn(tokenizer: AutoTokenizer, max_length: int, train_on_prompt: bool):
     pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
     eos_id = tokenizer.eos_token_id
@@ -537,6 +692,16 @@ def evaluate(
         dist.all_reduce(local, op=dist.ReduceOp.SUM)
     denom = max(float(local[1].item()), 1.0)
     return float(local[0].item() / denom)
+
+
+def build_eval_targets(updates_per_epoch: int, num_evals_per_epoch: int) -> List[int]:
+    num_evals_per_epoch = max(1, int(num_evals_per_epoch))
+    return sorted(
+        {
+            max(1, min(updates_per_epoch, math.ceil((i * updates_per_epoch) / num_evals_per_epoch)))
+            for i in range(1, num_evals_per_epoch + 1)
+        }
+    )
 
 
 def load_saved_train_args_if_exists(ckpt_dir: str) -> Dict[str, Any]:
@@ -778,22 +943,42 @@ def generate_previews(
     return previews
 
 
-def op_from_prob(prob: str) -> str:
-    p = str(prob)
-    if "+" in p:
-        return "+"
-    if "-" in p:
-        return "-"
-    if "*" in p:
-        return "*"
-    if ":" in p:
-        return ":"
-    return "?"
-
-
 NUMERIC_TOKEN_RE = r"[+\-]?(?:\d+(?:/\d+)?|\d*\.\d+)"
-PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*:])\s*({NUMERIC_TOKEN_RE})\s*")
+ANSWER_TOKEN_RE = re.compile(r"-?(?:\d+(?:\.\d+)?)(?:/-?(?:\d+(?:\.\d+)?))?")
+PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*/:])\s*({NUMERIC_TOKEN_RE})\s*")
 PROMPT_PROB_RE = re.compile(r"Solve this fraction problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
+
+
+def canonicalize_division_op(op: str) -> str:
+    return ":" if str(op).strip() == "/" else str(op).strip()
+
+
+def display_operation_symbol(op: str) -> str:
+    return "/" if canonicalize_division_op(op) == ":" else canonicalize_division_op(op)
+
+
+def parse_binary_problem(prob: str) -> Optional[Tuple[str, str, str]]:
+    m = PROB_RE.fullmatch(str(prob).strip())
+    if not m:
+        return None
+    left_s, op, right_s = m.group(1), canonicalize_division_op(m.group(2)), m.group(3)
+    return left_s, op, right_s
+
+
+def render_problem_for_prompt(prob: str) -> str:
+    parsed = parse_binary_problem(prob)
+    if parsed is None:
+        return str(prob).strip()
+    left_s, op, right_s = parsed
+    surface_op = " / " if op == ":" else f" {op} "
+    return f"{left_s}{surface_op}{right_s}"
+
+
+def op_from_prob(prob: str) -> str:
+    parsed = parse_binary_problem(prob)
+    if parsed is None:
+        return "?"
+    return display_operation_symbol(parsed[1])
 
 
 def parse_numeric_token(token: str) -> Fraction:
@@ -805,10 +990,10 @@ def parse_numeric_token(token: str) -> Fraction:
 
 
 def compute_correct_answer(prob: str) -> str:
-    m = PROB_RE.fullmatch(str(prob))
-    if not m:
+    parsed = parse_binary_problem(prob)
+    if parsed is None:
         return "?"
-    left_s, op, right_s = m.group(1), m.group(2), m.group(3)
+    left_s, op, right_s = parsed
     try:
         left = parse_numeric_token(left_s)
         right = parse_numeric_token(right_s)
@@ -939,20 +1124,35 @@ def normalize_answer(ans: str) -> str:
     return t
 
 
-def answer_to_float(ans: str):
+def answer_to_fraction(ans: str) -> Optional[Fraction]:
     t = normalize_answer(ans)
     if t == "" or t in {"?", "nan", "None"}:
         return None
     try:
         if "/" in t:
             a, b = t.split("/", 1)
-            return float(int(a) / int(b))
-        return float(t)
+            den = Fraction(b)
+            if den == 0:
+                return None
+            return Fraction(a) / den
+        return Fraction(t)
     except Exception:
-        try:
-            return float(Fraction(t))
-        except Exception:
-            return None
+        return None
+
+
+def answer_to_float(ans: str):
+    frac = answer_to_fraction(ans)
+    if frac is None:
+        return None
+    return float(frac)
+
+
+def canonicalize_answer_label(ans: str) -> str:
+    frac = answer_to_fraction(ans)
+    if frac is None:
+        token = normalize_answer(ans)
+        return token if token != "" else "?"
+    return str(frac.numerator) if frac.denominator == 1 else f"{frac.numerator}/{frac.denominator}"
 
 
 def answers_match(pred: str, correct: str, tol: float = 1e-6) -> bool:
@@ -1005,10 +1205,11 @@ def format_numeric_token(value: float) -> str:
 
 
 def build_student_prompt(prob: str, g: float, d: float, rt_mu: float, ice: float) -> str:
+    prompt_prob = render_problem_for_prompt(prob)
     return (
         f"<student> g {format_numeric_token(g)} d {format_numeric_token(d)} "
         f"rt {format_numeric_token(rt_mu)} ice {format_numeric_token(ice)} </student>\n"
-        f"Solve this fraction problem: {prob}=?"
+        f"Solve this fraction problem: {prompt_prob}=?"
     )
 
 
@@ -1098,14 +1299,37 @@ def apply_train_prompt_student_mode(
     }
 
 
-def count_unique_student_param_tuples(frame: pd.DataFrame) -> int:
+def count_unique_student_param_tuples(frame: pd.DataFrame) -> Optional[int]:
     required_cols = ["g", "d", "rt_mu", "ice"]
     missing = [col for col in required_cols if col not in frame.columns]
     if missing:
-        raise ValueError(f"Student parameter tuple count requires columns: {missing}")
+        return None
     if len(frame) == 0:
         return 0
     return int(frame.loc[:, required_cols].drop_duplicates().shape[0])
+
+
+def load_and_clean_trace_frame(
+    csv_path: str,
+    usecols: Sequence[str],
+    prompt_col: str,
+    response_col: str,
+    problem_col: str,
+) -> pd.DataFrame:
+    df = pd.read_csv(csv_path, usecols=list(usecols))
+    missing = [c for c in usecols if c not in df.columns]
+    if missing:
+        raise ValueError(f"Missing required columns in {csv_path}: {missing}")
+
+    df = df.dropna(subset=list(usecols)).copy()
+    df[prompt_col] = df[prompt_col].astype(str).str.strip()
+    df[response_col] = df[response_col].astype(str).str.strip()
+    if problem_col in df.columns:
+        df[problem_col] = df[problem_col].astype(str).str.strip()
+    df = df[(df[prompt_col] != "") & (df[response_col] != "")].reset_index(drop=True)
+    if problem_col in df.columns:
+        df = df[df[problem_col] != ""].reset_index(drop=True)
+    return df
 
 
 def assert_sp2013_only_validation_split(
@@ -1114,7 +1338,8 @@ def assert_sp2013_only_validation_split(
     test_df: pd.DataFrame,
     problem_col: str,
     sp2013_probs: Sequence[str],
-) -> None:
+    strict_layout: bool = True,
+) -> Dict[str, Any]:
     expected_val_rows = 16000
     expected_prob_count = 16
     expected_param_tuple_count = 1000
@@ -1136,21 +1361,44 @@ def assert_sp2013_only_validation_split(
             "SP2013-only validation split failed: "
             f"val_sp_rows={val_sp_rows}, val_rows={len(val_df)}."
         )
-    if len(val_df) != expected_val_rows:
+    if len(val_df) == 0:
+        raise ValueError(
+            "SP2013-only validation split failed: "
+            "validation split is empty after moving SP2013 rows."
+        )
+    if strict_layout and len(val_df) != expected_val_rows:
         raise ValueError(
             "SP2013-only validation split failed: "
             f"expected val_rows={expected_val_rows}, got {len(val_df)}."
         )
-    if val_prob_count != expected_prob_count or len(sp2013_prob_set) != expected_prob_count:
+    if strict_layout and (val_prob_count != expected_prob_count or len(sp2013_prob_set) != expected_prob_count):
         raise ValueError(
             "SP2013-only validation split failed: "
             f"expected {expected_prob_count} unique problems, got val={val_prob_count}, ref={len(sp2013_prob_set)}."
         )
-    if val_param_tuple_count != expected_param_tuple_count:
-        raise ValueError(
-            "SP2013-only validation split failed: "
-            f"expected {expected_param_tuple_count} unique student tuples, got {val_param_tuple_count}."
-        )
+    if strict_layout:
+        if val_param_tuple_count is None:
+            raise ValueError(
+                "SP2013-only validation split failed: "
+                "strict layout requires student parameter columns g/d/rt_mu/ice in validation rows."
+            )
+        if val_param_tuple_count != expected_param_tuple_count:
+            raise ValueError(
+                "SP2013-only validation split failed: "
+                f"expected {expected_param_tuple_count} unique student tuples, got {val_param_tuple_count}."
+            )
+
+    return {
+        "val_rows": int(len(val_df)),
+        "val_prob_count": val_prob_count,
+        "ref_prob_count": int(len(sp2013_prob_set)),
+        "val_param_tuple_count": (
+            int(val_param_tuple_count) if val_param_tuple_count is not None else None
+        ),
+        "train_sp_rows": train_sp_rows,
+        "test_sp_rows": test_sp_rows,
+        "strict_layout": bool(strict_layout),
+    }
 
 
 def summarize_id_eval_target(
@@ -1201,28 +1449,27 @@ def write_best_eval_artifacts(
             json.dump(id_test_metrics, f, indent=2)
 
 
-def extract_final_answer(generation: str) -> str:
+def extract_answer_token(generation: str) -> str:
     txt = str(generation)
     m = re.search(r"###\s*answer\s*:\s*([^\n\r]+)", txt, flags=re.IGNORECASE)
     if m:
         answer_text = m.group(1).strip()
         if answer_text:
             candidate = normalize_answer(answer_text.split()[0])
-            if candidate != "" and answer_to_float(candidate) is not None:
+            if candidate != "":
                 return candidate
 
-    # Prefer valid fraction tokens from the generation body, then integers.
-    frac_matches = re.findall(r"-?\d+/-?\d+", txt)
-    for tok in reversed(frac_matches):
+    for tok in reversed(ANSWER_TOKEN_RE.findall(txt)):
         candidate = normalize_answer(tok)
-        if answer_to_float(candidate) is not None:
+        if candidate != "":
             return candidate
+    return "?"
 
-    int_matches = re.findall(r"-?\d+", txt)
-    for tok in reversed(int_matches):
-        candidate = normalize_answer(tok)
-        if answer_to_float(candidate) is not None:
-            return candidate
+
+def extract_final_answer(generation: str) -> str:
+    candidate = extract_answer_token(generation)
+    if candidate != "?" and answer_to_float(candidate) is not None:
+        return canonicalize_answer_label(candidate)
     return "?"
 
 
@@ -1254,6 +1501,202 @@ def build_sp2013_param_grid(
     ]
 
 
+def normalize_problem_key(prob: str) -> str:
+    parsed = parse_binary_problem(prob)
+    if parsed is None:
+        return str(prob).strip()
+    left_s, op, right_s = parsed
+    return f"{left_s}{op}{right_s}"
+
+
+def build_sp2013_tuple_key(prob: str, g: Any, d: Any, rt_mu: Any, ice: Any) -> Tuple[str, str, str, str, str]:
+    return (
+        normalize_problem_key(prob),
+        format_numeric_token(float(g)),
+        format_numeric_token(float(d)),
+        format_numeric_token(float(rt_mu)),
+        format_numeric_token(float(ice)),
+    )
+
+
+def summarize_parseable_match_metrics(frame: pd.DataFrame, parseable_col: str, correct_col: str) -> Dict[str, Any]:
+    n_total = int(len(frame))
+    n_scored = int(frame[parseable_col].sum()) if n_total > 0 else 0
+    n_correct = int(frame[(frame[parseable_col] == 1) & (frame[correct_col] == 1)].shape[0]) if n_total > 0 else 0
+    coverage = float(n_scored / n_total) if n_total > 0 else 0.0
+    acc_scored = float(n_correct / n_scored) if n_scored > 0 else float("nan")
+    acc_all = float(n_correct / n_total) if n_total > 0 else float("nan")
+    return {
+        "acc_scored": acc_scored,
+        "acc_all": acc_all,
+        "coverage": coverage,
+        "n_total": n_total,
+        "n_scored": n_scored,
+        "n_correct": n_correct,
+    }
+
+
+def total_variation_distance(p: Dict[str, float], q: Dict[str, float]) -> float:
+    support = set(p) | set(q)
+    return 0.5 * sum(abs(float(p.get(key, 0.0)) - float(q.get(key, 0.0))) for key in support)
+
+
+def build_answer_distribution(series: pd.Series) -> Dict[str, float]:
+    if len(series) == 0:
+        return {}
+    counts = series.fillna("?").astype(str).value_counts(dropna=False)
+    total = float(counts.sum())
+    return {str(key): float(val / total) for key, val in counts.items()}
+
+
+def load_sp2013_target_frame(target_csv: str) -> pd.DataFrame:
+    if not os.path.exists(target_csv):
+        raise FileNotFoundError(f"SP2013 target CSV not found: {target_csv}")
+    target_df = pd.read_csv(target_csv)
+    required_cols = {"prob", "ans"}
+    if not required_cols.issubset(target_df.columns):
+        raise ValueError(f"SP2013 target CSV missing columns {sorted(required_cols - set(target_df.columns))}: {target_csv}")
+    target_df = target_df.copy()
+    target_df["prob_key"] = target_df["prob"].astype(str).map(normalize_problem_key)
+    target_df["target_answer"] = target_df["ans"].astype(str).map(normalize_answer)
+    target_df["target_answer_label"] = target_df["target_answer"].map(canonicalize_answer_label)
+    target_df["target_answer_parseable"] = target_df["target_answer"].map(lambda x: int(answer_to_float(x) is not None))
+    target_df["op"] = target_df["prob"].astype(str).map(op_from_prob)
+    if {"g", "d", "rt_mu", "ice"}.issubset(target_df.columns):
+        target_df["tuple_key"] = [
+            build_sp2013_tuple_key(prob, g, d, rt_mu, ice)
+            for prob, g, d, rt_mu, ice in zip(
+                target_df["prob"].tolist(),
+                target_df["g"].tolist(),
+                target_df["d"].tolist(),
+                target_df["rt_mu"].tolist(),
+                target_df["ice"].tolist(),
+            )
+        ]
+    return target_df
+
+
+def compute_sp2013_uma_tuple_metrics(out_df: pd.DataFrame, target_df: pd.DataFrame) -> Tuple[Dict[str, Any], pd.DataFrame]:
+    work_df = out_df.copy()
+    work_df["prob_key"] = work_df["prob"].astype(str).map(normalize_problem_key)
+    work_df["tuple_key"] = [
+        build_sp2013_tuple_key(prob, g, d, rt_mu, ice)
+        for prob, g, d, rt_mu, ice in zip(
+            work_df["prob"].tolist(),
+            work_df["g"].tolist(),
+            work_df["d"].tolist(),
+            work_df["rt_mu"].tolist(),
+            work_df["ice"].tolist(),
+        )
+    ]
+    target_slice = target_df.loc[:, ["tuple_key", "target_answer", "target_answer_label", "target_answer_parseable"]].drop_duplicates("tuple_key")
+    merged = work_df.merge(target_slice, on="tuple_key", how="left", validate="many_to_one")
+    if merged["target_answer"].isna().any():
+        missing = int(merged["target_answer"].isna().sum())
+        raise ValueError(f"Missing UMA tuple targets for {missing} generated SP2013 rows.")
+
+    merged["is_correct_target"] = [
+        int(answers_match(pred, target)) if int(parseable) == 1 else 0
+        for pred, target, parseable in zip(
+            merged["pred_answer"].tolist(),
+            merged["target_answer"].tolist(),
+            merged["target_answer_parseable"].tolist(),
+        )
+    ]
+    merged["true_target_parseable"] = 1
+
+    teacher = summarize_parseable_match_metrics(merged, "target_answer_parseable", "is_correct_target")
+    true_metrics = summarize_parseable_match_metrics(merged, "true_target_parseable", "is_correct_true")
+
+    teacher_by_op: Dict[str, float] = {}
+    true_by_op: Dict[str, float] = {}
+    for op in ["+", "-", "*", "/"]:
+        op_df = merged[merged["op"] == op]
+        teacher_by_op[op] = float(op_df["is_correct_target"].mean()) if len(op_df) > 0 else float("nan")
+        true_by_op[op] = float(op_df["is_correct_true"].mean()) if len(op_df) > 0 else float("nan")
+
+    metrics = {
+        "mode": "uma_tuple",
+        "primary_name": "teacher_tuple_acc_all",
+        "primary_value": teacher["acc_all"],
+        "primary_higher_is_better": True,
+        "overall_acc": teacher["acc_all"],
+        "teacher_acc_scored": teacher["acc_scored"],
+        "teacher_acc_all": teacher["acc_all"],
+        "teacher_coverage": teacher["coverage"],
+        "teacher_n_total": teacher["n_total"],
+        "teacher_n_scored": teacher["n_scored"],
+        "teacher_n_correct": teacher["n_correct"],
+        "teacher_by_op": teacher_by_op,
+        "true_acc_scored": true_metrics["acc_scored"],
+        "true_acc_all": true_metrics["acc_all"],
+        "true_coverage": true_metrics["coverage"],
+        "true_n_total": true_metrics["n_total"],
+        "true_n_scored": true_metrics["n_scored"],
+        "true_n_correct": true_metrics["n_correct"],
+        "true_by_op": true_by_op,
+        "n": int(len(merged)),
+        "n_problems": int(merged["prob"].nunique()),
+        "n_target_rows": int(len(target_df)),
+    }
+    return metrics, merged
+
+
+def compute_sp2013_uma_distribution_metrics(out_df: pd.DataFrame, target_df: pd.DataFrame) -> Dict[str, Any]:
+    work_df = out_df.copy()
+    work_df["prob_key"] = work_df["prob"].astype(str).map(normalize_problem_key)
+
+    target_rows = target_df.copy()
+    target_dist_rows = []
+    pred_dist_rows = []
+    tv_rows = []
+    for prob_key, group in work_df.groupby("prob_key"):
+        target_group = target_rows[target_rows["prob_key"] == prob_key]
+        if len(target_group) == 0:
+            raise ValueError(f"Missing UMA distribution target for SP2013 problem: {prob_key}")
+        target_dist = build_answer_distribution(target_group["target_answer_label"])
+        pred_dist = build_answer_distribution(group["pred_answer_label"])
+        tv = total_variation_distance(pred_dist, target_dist)
+        op = str(group["op"].iloc[0])
+        target_dist_rows.append({"prob": prob_key, "op": op, "target_distribution": target_dist})
+        pred_dist_rows.append({"prob": prob_key, "op": op, "pred_distribution": pred_dist})
+        tv_rows.append(
+            {
+                "prob": prob_key,
+                "op": op,
+                "tv_distance": float(tv),
+                "n_rollouts": int(len(group)),
+            }
+        )
+
+    tv_df = pd.DataFrame(tv_rows)
+    by_op_tv: Dict[str, float] = {}
+    for op in ["+", "-", "*", "/"]:
+        op_df = tv_df[tv_df["op"] == op]
+        by_op_tv[op] = float(op_df["tv_distance"].mean()) if len(op_df) > 0 else float("nan")
+
+    parseable_cov = float(work_df["pred_answer_parseable"].mean()) if len(work_df) > 0 else float("nan")
+    true_acc = float(work_df["is_correct_true"].mean()) if len(work_df) > 0 else float("nan")
+    metrics = {
+        "mode": "uma_distribution",
+        "primary_name": "distribution_tv_mean",
+        "primary_value": float(tv_df["tv_distance"].mean()) if len(tv_df) > 0 else float("nan"),
+        "primary_higher_is_better": False,
+        "overall_acc": float("nan"),
+        "distribution_tv_mean": float(tv_df["tv_distance"].mean()) if len(tv_df) > 0 else float("nan"),
+        "distribution_tv_by_op": by_op_tv,
+        "parseable_coverage": parseable_cov,
+        "true_acc_all": true_acc,
+        "sample_parseable_n": int(work_df["pred_answer_parseable"].sum()) if len(work_df) > 0 else 0,
+        "sample_total_n": int(len(work_df)),
+        "n": int(len(work_df)),
+        "n_problems": int(tv_df["prob"].nunique()) if len(tv_df) > 0 else 0,
+        "num_rollouts": int(work_df.groupby("prob_key").size().iloc[0]) if len(work_df) > 0 else 0,
+        "per_problem_tv": tv_df.to_dict(orient="records"),
+    }
+    return metrics
+
+
 def compute_rollout_accuracy_metrics(
     out_df: pd.DataFrame,
     use_param_grid: bool,
@@ -1274,7 +1717,7 @@ def compute_rollout_accuracy_metrics(
 
     sample_overall = float(out_df["is_correct"].mean())
     sample_by_op: Dict[str, float] = {}
-    for op in ["+", "-", "*", ":"]:
+    for op in ["+", "-", "*", "/"]:
         op_df = out_df[out_df["op"] == op]
         sample_by_op[op] = float(op_df["is_correct"].mean()) if len(op_df) > 0 else float("nan")
 
@@ -1290,7 +1733,7 @@ def compute_rollout_accuracy_metrics(
 
     rollout_by_op: Dict[str, float] = {}
     rollout_by_op_any: Dict[str, float] = {}
-    for op in ["+", "-", "*", ":"]:
+    for op in ["+", "-", "*", "/"]:
         op_rollout_df = rollout_df[rollout_df["op"] == op]
         rollout_by_op[op] = (
             float(op_rollout_df["rollout_mean_acc"].mean()) if len(op_rollout_df) > 0 else float("nan")
@@ -1312,6 +1755,9 @@ def compute_rollout_accuracy_metrics(
         "n_prompt_rollout_groups": int(len(rollout_df)),
         "n_problems": int(out_df["prob"].nunique()),
         "use_param_grid": bool(use_param_grid),
+        "primary_name": "overall_acc",
+        "primary_value": rollout_overall,
+        "primary_higher_is_better": True,
     }
     if len(rollout_df) > 0:
         per_problem = rollout_df.groupby("prob", as_index=False)["rollout_mean_acc"].mean()
@@ -1327,7 +1773,9 @@ def evaluate_sp2013_final_answer(
     tokenizer: AutoTokenizer,
     device: torch.device,
     sp2013_csv: str,
+    target_csv: str,
     max_new_tokens: int,
+    target_mode: str = "true",
     use_param_grid: bool = False,
     grid_g: Sequence[float] = (),
     grid_d: Sequence[float] = (),
@@ -1343,6 +1791,7 @@ def evaluate_sp2013_final_answer(
     rollout_batch_size: int = 1,
     progress_every: int = 0,
     progress_label: str = "sp2013_eval",
+    fixed_student_prompt_tuple: Optional[Tuple[float, float, float, float]] = None,
 ):
     if not os.path.exists(sp2013_csv):
         return {"overall_acc": float("nan"), "by_op": {}, "n": 0}, pd.DataFrame()
@@ -1361,6 +1810,18 @@ def evaluate_sp2013_final_answer(
         raise ValueError("SP2013 eval requires rollout_batch_size >= 1.")
     if num_rollouts > 1 and not do_sample:
         raise ValueError("SP2013 eval with num_rollouts > 1 requires do_sample=True.")
+    if fixed_student_prompt_tuple is not None and use_param_grid:
+        raise ValueError("Fixed student-prompt tuple cannot be combined with --sp2013_use_param_grid.")
+    if target_mode == "uma_tuple" and not use_param_grid:
+        raise ValueError("SP2013 UMA tuple eval requires --sp2013_use_param_grid.")
+    if target_mode == "uma_distribution" and use_param_grid:
+        raise ValueError("SP2013 UMA distribution eval requires --no-sp2013_use_param_grid.")
+
+    prompt_tuple: Optional[Tuple[float, float, float, float]] = None
+    if fixed_student_prompt_tuple is not None:
+        if len(fixed_student_prompt_tuple) != 4:
+            raise ValueError("fixed_student_prompt_tuple must be a 4-tuple: (g, d, rt_mu, ice).")
+        prompt_tuple = tuple(float(v) for v in fixed_student_prompt_tuple)
 
     param_grid = build_sp2013_param_grid(
         use_param_grid=use_param_grid,
@@ -1377,6 +1838,9 @@ def evaluate_sp2013_final_answer(
     if progress_every < 0:
         progress_every = 0
     start_time = time.time()
+    target_df: Optional[pd.DataFrame] = None
+    if target_mode in {"uma_tuple", "uma_distribution"}:
+        target_df = load_sp2013_target_frame(target_csv)
 
     if progress_every > 0 and total_items > 0:
         print(
@@ -1392,10 +1856,14 @@ def evaluate_sp2013_final_answer(
         correct = compute_correct_answer(prob)
         op = op_from_prob(prob)
         for g, d, rt, ice in param_grid:
-            if use_param_grid:
-                prompt = build_student_prompt(prob=prob, g=g, d=d, rt_mu=rt, ice=ice)
+            prompt_g, prompt_d, prompt_rt, prompt_ice = g, d, rt, ice
+            if prompt_tuple is not None:
+                prompt_g, prompt_d, prompt_rt, prompt_ice = prompt_tuple
+
+            if use_param_grid or prompt_tuple is not None:
+                prompt = build_student_prompt(prob=prob, g=prompt_g, d=prompt_d, rt_mu=prompt_rt, ice=prompt_ice)
             else:
-                prompt = f"Solve this fraction problem: {prob}=?"
+                prompt = f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
 
             prompt_eval_idx += 1
             if do_sample:
@@ -1422,20 +1890,25 @@ def evaluate_sp2013_final_answer(
                         sample_idx = rollout_idx + local_idx
                         gen_ids = out[local_idx, prompt_len:]
                         gen_text = tokenizer.decode(gen_ids, skip_special_tokens=True)
+                        pred_token = extract_answer_token(gen_text)
                         pred = extract_final_answer(gen_text)
                         is_correct = answers_match(pred, correct)
                         rows.append(
                             {
                                 "prob": prob,
                                 "op": op,
-                                "g": g if use_param_grid else np.nan,
-                                "d": d if use_param_grid else np.nan,
-                                "rt_mu": rt if use_param_grid else np.nan,
-                                "ice": ice if use_param_grid else np.nan,
+                                "g": prompt_g if (use_param_grid or prompt_tuple is not None) else np.nan,
+                                "d": prompt_d if (use_param_grid or prompt_tuple is not None) else np.nan,
+                                "rt_mu": prompt_rt if (use_param_grid or prompt_tuple is not None) else np.nan,
+                                "ice": prompt_ice if (use_param_grid or prompt_tuple is not None) else np.nan,
                                 "sample_idx": sample_idx,
                                 "prompt_text": prompt,
+                                "pred_answer_token": pred_token,
+                                "pred_answer_label": canonicalize_answer_label(pred_token),
+                                "pred_answer_parseable": int(answer_to_float(pred_token) is not None),
                                 "pred_answer": pred,
                                 "correct_answer": correct,
+                                "is_correct_true": int(is_correct),
                                 "is_correct": int(is_correct),
                                 "generation_text": gen_text.strip(),
                             }
@@ -1465,20 +1938,25 @@ def evaluate_sp2013_final_answer(
                     )
                 gen_ids = out[0, encoded["input_ids"].shape[1] :]
                 gen_text = tokenizer.decode(gen_ids, skip_special_tokens=True)
+                pred_token = extract_answer_token(gen_text)
                 pred = extract_final_answer(gen_text)
                 is_correct = answers_match(pred, correct)
                 rows.append(
                     {
                         "prob": prob,
                         "op": op,
-                        "g": g if use_param_grid else np.nan,
-                        "d": d if use_param_grid else np.nan,
-                        "rt_mu": rt if use_param_grid else np.nan,
-                        "ice": ice if use_param_grid else np.nan,
+                        "g": prompt_g if (use_param_grid or prompt_tuple is not None) else np.nan,
+                        "d": prompt_d if (use_param_grid or prompt_tuple is not None) else np.nan,
+                        "rt_mu": prompt_rt if (use_param_grid or prompt_tuple is not None) else np.nan,
+                        "ice": prompt_ice if (use_param_grid or prompt_tuple is not None) else np.nan,
                         "sample_idx": 0,
                         "prompt_text": prompt,
+                        "pred_answer_token": pred_token,
+                        "pred_answer_label": canonicalize_answer_label(pred_token),
+                        "pred_answer_parseable": int(answer_to_float(pred_token) is not None),
                         "pred_answer": pred,
                         "correct_answer": correct,
+                        "is_correct_true": int(is_correct),
                         "is_correct": int(is_correct),
                         "generation_text": gen_text.strip(),
                     }
@@ -1497,7 +1975,14 @@ def evaluate_sp2013_final_answer(
                     )
 
     out_df = pd.DataFrame(rows)
-    metrics = compute_rollout_accuracy_metrics(out_df, use_param_grid=use_param_grid)
+    if target_mode == "uma_tuple":
+        assert target_df is not None
+        metrics, out_df = compute_sp2013_uma_tuple_metrics(out_df, target_df)
+    elif target_mode == "uma_distribution":
+        assert target_df is not None
+        metrics = compute_sp2013_uma_distribution_metrics(out_df, target_df)
+    else:
+        metrics = compute_rollout_accuracy_metrics(out_df, use_param_grid=use_param_grid)
     metrics["grid_size"] = int(len(param_grid))
     metrics["num_rollouts"] = int(num_rollouts)
     metrics["do_sample"] = bool(do_sample)
@@ -1506,6 +1991,9 @@ def evaluate_sp2013_final_answer(
     metrics["top_k"] = int(top_k)
     metrics["sample_seed"] = int(sample_seed)
     metrics["rollout_batch_size"] = int(rollout_batch_size)
+    metrics["target_mode"] = str(target_mode)
+    metrics["sp2013_target_csv"] = target_csv if target_mode in {"uma_tuple", "uma_distribution"} else None
+    metrics["fixed_student_prompt_tuple"] = list(prompt_tuple) if prompt_tuple is not None else None
     return metrics, out_df
 
 
@@ -1667,8 +2155,19 @@ def main() -> None:
         rank0_print(rank, f"output_dir: {args.output_dir}")
         rank0_print(rank, f"distributed: {distributed} (world_size={world_size})")
         rank0_print(rank, f"sp2013_eval: {args.eval_sp2013} ({args.sp2013_csv})")
+        rank0_print(rank, f"sp2013_target_mode: {args.sp2013_target_mode}")
+        rank0_print(rank, f"sp2013_target_csv: {args.sp2013_target_csv}")
         rank0_print(rank, f"sp2013_param_grid_eval: {args.sp2013_use_param_grid}")
+        rank0_print(
+            rank,
+            "sp2013_sampling: "
+            f"rollouts={args.sp2013_num_rollouts} do_sample={args.sp2013_do_sample} "
+            f"temperature={args.sp2013_temperature} top_p={args.sp2013_top_p} "
+            f"top_k={args.sp2013_top_k} rollout_batch={args.sp2013_rollout_batch_size}",
+        )
         rank0_print(rank, f"evals_per_epoch: {args.evals_per_epoch}")
+        resolved_loss_evals_per_epoch = args.loss_evals_per_epoch if args.loss_evals_per_epoch > 0 else args.evals_per_epoch
+        rank0_print(rank, f"loss_evals_per_epoch: {resolved_loss_evals_per_epoch}")
         rank0_print(rank, f"lr: {args.lr}")
         rank0_print(rank, f"min_lr: {args.min_lr}")
         rank0_print(rank, f"lr_scheduler_type: {args.lr_scheduler_type}")
@@ -1691,16 +2190,30 @@ def main() -> None:
 
         if args.evals_per_epoch < 1:
             raise ValueError("--evals_per_epoch must be >= 1.")
+        if args.loss_evals_per_epoch < 0:
+            raise ValueError("--loss_evals_per_epoch must be >= 0.")
         if args.id_eval_batch_size < 1:
             raise ValueError("--id_eval_batch_size must be >= 1.")
-        if args.best_by == "sp2013_acc" and (not args.eval_sp2013 or args.sp2013_every <= 0):
-            raise ValueError("--best_by sp2013_acc requires SP2013 eval enabled (set --eval_sp2013 and --sp2013_every > 0).")
+        if args.best_by in {"sp2013_acc", "sp2013_primary"} and (not args.eval_sp2013 or args.sp2013_every <= 0):
+            raise ValueError("--best_by sp2013_acc/sp2013_primary requires SP2013 eval enabled.")
         if args.best_by == "id_val_acc":
             if (not args.eval_id_final_answer) or (args.id_eval_every <= 0) or (args.id_eval_split not in {"val", "both"}):
                 raise ValueError(
                     "--best_by id_val_acc requires ID eval enabled with val split "
                     "(set --eval_id_final_answer, --id_eval_every > 0, and --id_eval_split val|both)."
                 )
+        if args.sp2013_num_rollouts < 1:
+            raise ValueError("--sp2013_num_rollouts must be >= 1.")
+        if args.sp2013_rollout_batch_size < 1:
+            raise ValueError("--sp2013_rollout_batch_size must be >= 1.")
+        if args.sp2013_target_mode == "uma_tuple" and not args.sp2013_use_param_grid:
+            raise ValueError("--sp2013_target_mode uma_tuple requires --sp2013_use_param_grid.")
+        if args.sp2013_target_mode == "uma_distribution" and args.sp2013_use_param_grid:
+            raise ValueError("--sp2013_target_mode uma_distribution requires --no-sp2013_use_param_grid.")
+        if args.sp2013_num_rollouts > 1 and not args.sp2013_do_sample:
+            raise ValueError("--sp2013_num_rollouts > 1 requires --sp2013_do_sample.")
+        if args.sp2013_target_mode in {"uma_tuple", "uma_distribution"} and not os.path.exists(args.sp2013_target_csv):
+            raise FileNotFoundError(f"SP2013 target CSV not found: {args.sp2013_target_csv}")
 
         sp2013_grid_g: List[float] = []
         sp2013_grid_d: List[float] = []
@@ -1736,19 +2249,13 @@ def main() -> None:
                 if col not in usecols:
                     usecols.append(col)
 
-        df = pd.read_csv(args.data_csv, usecols=usecols)
-        missing = [c for c in usecols if c not in df.columns]
-        if missing:
-            raise ValueError(f"Missing required columns in {args.data_csv}: {missing}")
-
-        df = df.dropna(subset=usecols).copy()
-        df[args.prompt_col] = df[args.prompt_col].astype(str).str.strip()
-        df[args.response_col] = df[args.response_col].astype(str).str.strip()
-        if args.problem_col in df.columns:
-            df[args.problem_col] = df[args.problem_col].astype(str).str.strip()
-        df = df[(df[args.prompt_col] != "") & (df[args.response_col] != "")].reset_index(drop=True)
-        if args.problem_col in df.columns:
-            df = df[df[args.problem_col] != ""].reset_index(drop=True)
+        df = load_and_clean_trace_frame(
+            csv_path=args.data_csv,
+            usecols=usecols,
+            prompt_col=args.prompt_col,
+            response_col=args.response_col,
+            problem_col=args.problem_col,
+        )
 
         if args.max_samples is not None:
             n = min(args.max_samples, len(df))
@@ -1817,6 +2324,7 @@ def main() -> None:
                 )
 
         sp2013_probs: List[str] = []
+        sp2013_val_source_df: Optional[pd.DataFrame] = None
         if args.move_sp2013_rows_to_val:
             if args.problem_col not in df.columns:
                 raise ValueError(
@@ -1832,6 +2340,23 @@ def main() -> None:
                 )
             sp2013_probs = sp2013_ref[sp2013_problem_col].dropna().astype(str).str.strip().tolist()
             sp2013_prob_set = set(sp2013_probs)
+
+            if args.sp2013_val_source_csv:
+                sp2013_val_source_df = load_and_clean_trace_frame(
+                    csv_path=args.sp2013_val_source_csv,
+                    usecols=usecols,
+                    prompt_col=args.prompt_col,
+                    response_col=args.response_col,
+                    problem_col=args.problem_col,
+                )
+                sp2013_val_source_df = sp2013_val_source_df[
+                    sp2013_val_source_df[args.problem_col].isin(sp2013_prob_set)
+                ].reset_index(drop=True)
+                if len(sp2013_val_source_df) == 0:
+                    raise ValueError(
+                        "--sp2013_val_source_csv did not contain any SP2013 rows after cleaning: "
+                        f"{args.sp2013_val_source_csv}"
+                    )
 
             train_sp_mask = train_df[args.problem_col].isin(sp2013_prob_set)
             test_sp_mask = test_df[args.problem_col].isin(sp2013_prob_set)
@@ -1852,12 +2377,20 @@ def main() -> None:
 
             train_df = train_df.loc[~train_sp_mask].reset_index(drop=True)
             test_df = test_df.loc[~test_sp_mask].reset_index(drop=True)
-            if moved_frames:
+            if sp2013_val_source_df is not None:
+                val_df = val_df.loc[~val_sp_mask].reset_index(drop=True)
+                val_df = pd.concat([val_df, sp2013_val_source_df], ignore_index=True)
+            elif moved_frames:
                 val_df = pd.concat([val_df] + moved_frames, ignore_index=True)
 
             final_val_sp_mask = val_df[args.problem_col].isin(sp2013_prob_set)
             final_val_sp_rows = int(final_val_sp_mask.sum())
             final_val_sp_probs = int(val_df.loc[final_val_sp_mask, args.problem_col].nunique())
+            source_label = (
+                f", val_source_rows_added={len(sp2013_val_source_df):,}"
+                if sp2013_val_source_df is not None
+                else ""
+            )
             rank0_print(
                 rank,
                 (
@@ -1867,6 +2400,7 @@ def main() -> None:
                     f"moved_test_rows={moved_test_rows:,} ({test_sp_probs_before:,} probs), "
                     f"val_sp_rows_before={val_sp_rows_before:,} ({val_sp_probs_before:,} probs), "
                     f"val_sp_rows_after={final_val_sp_rows:,} ({final_val_sp_probs:,} probs)"
+                    f"{source_label}"
                 ),
             )
 
@@ -1879,18 +2413,36 @@ def main() -> None:
         rank0_print(rank, f"rows test:  {len(test_df):,}")
 
         if args.move_sp2013_rows_to_val and args.val_frac == 0.0 and args.test_frac == 0.0:
-            assert_sp2013_only_validation_split(
+            sp2013_validation_stats = assert_sp2013_only_validation_split(
                 train_df=train_df,
                 val_df=val_df,
                 test_df=test_df,
                 problem_col=args.problem_col,
                 sp2013_probs=sp2013_probs,
+                strict_layout=args.strict_sp2013_only_validation_layout,
             )
-            rank0_print(
-                rank,
-                "sp2013_only_validation: confirmed val_rows=16,000, val_probs=16, "
-                "val_student_param_tuples=1,000, train_sp_rows=0, test_sp_rows=0",
+            val_param_tuple_label = (
+                "n/a"
+                if sp2013_validation_stats["val_param_tuple_count"] is None
+                else f"{sp2013_validation_stats['val_param_tuple_count']:,}"
             )
+            if args.strict_sp2013_only_validation_layout:
+                rank0_print(
+                    rank,
+                    "sp2013_only_validation: confirmed val_rows=16,000, val_probs=16, "
+                    "val_student_param_tuples=1,000, train_sp_rows=0, test_sp_rows=0",
+                )
+            else:
+                rank0_print(
+                    rank,
+                    "sp2013_only_validation: relaxed layout accepted "
+                    f"(val_rows={sp2013_validation_stats['val_rows']:,}, "
+                    f"val_probs={sp2013_validation_stats['val_prob_count']:,}/"
+                    f"{sp2013_validation_stats['ref_prob_count']:,}, "
+                    f"val_student_param_tuples={val_param_tuple_label}, "
+                    f"train_sp_rows={sp2013_validation_stats['train_sp_rows']:,}, "
+                    f"test_sp_rows={sp2013_validation_stats['test_sp_rows']:,})",
+                )
 
         if prompt_student_mode_active:
             rank0_print(
@@ -2102,21 +2654,10 @@ def main() -> None:
         val_ds = NLPtracesDataset(val_df[args.prompt_col].tolist(), val_df[args.response_col].tolist())
         test_ds = NLPtracesDataset(test_df[args.prompt_col].tolist(), test_df[args.response_col].tolist())
 
-        train_sampler = DistributedSampler(train_ds, num_replicas=world_size, rank=rank, shuffle=True) if distributed else None
         val_sampler = DistributedSampler(val_ds, num_replicas=world_size, rank=rank, shuffle=False) if distributed else None
         test_sampler = DistributedSampler(test_ds, num_replicas=world_size, rank=rank, shuffle=False) if distributed else None
 
         pin = device.type == "cuda"
-        train_loader = DataLoader(
-            train_ds,
-            batch_size=args.batch_size,
-            shuffle=(train_sampler is None),
-            sampler=train_sampler,
-            num_workers=args.num_workers,
-            pin_memory=pin,
-            collate_fn=collate,
-            drop_last=False,
-        )
         val_loader = DataLoader(
             val_ds,
             batch_size=args.eval_batch_size,
@@ -2140,9 +2681,25 @@ def main() -> None:
 
         optim_params = [p for p in model.parameters() if p.requires_grad]
         optimizer = torch.optim.AdamW(optim_params, lr=args.lr, weight_decay=args.weight_decay)
-        updates_per_epoch = max(1, math.ceil(len(train_loader) / args.grad_accum_steps))
+        train_batches_per_epoch = len(
+            OffsetBatchSampler(
+                sampler=build_train_index_sampler(
+                    train_ds=train_ds,
+                    distributed=distributed,
+                    world_size=world_size,
+                    rank=rank,
+                    seed=args.seed,
+                    epoch=1,
+                ),
+                batch_size=args.batch_size,
+                drop_last=False,
+                start_batch=0,
+            )
+        )
+        updates_per_epoch = max(1, math.ceil(train_batches_per_epoch / args.grad_accum_steps))
         total_updates = updates_per_epoch * args.epochs
         warmup_steps = int(total_updates * args.warmup_ratio)
+        rank0_print(rank, f"train batches/epoch: {train_batches_per_epoch}")
         rank0_print(rank, f"optimizer updates/epoch: {updates_per_epoch}")
         rank0_print(rank, f"total optimizer updates: {total_updates}")
         rank0_print(rank, f"warmup updates: {warmup_steps}")
@@ -2158,7 +2715,10 @@ def main() -> None:
 
         history: List[Dict] = []
         best_val = float("inf")
-        best_sp2013 = float("-inf")
+        if args.best_by == "sp2013_primary" and args.sp2013_target_mode == "uma_distribution":
+            best_sp2013 = float("inf")
+        else:
+            best_sp2013 = float("-inf")
         best_dir = os.path.join(args.output_dir, "best")
         last_dir = os.path.join(args.output_dir, "last")
         final_dir = os.path.join(args.output_dir, "final")
@@ -2198,37 +2758,41 @@ def main() -> None:
 
         for epoch in range(start_epoch, args.epochs + 1):
             model.train()
-            if distributed and train_sampler is not None:
-                train_sampler.set_epoch(epoch)
+            resume_batches_in_epoch = resume_updates_in_epoch * args.grad_accum_steps if epoch == start_epoch else 0
+            train_loader = build_train_loader_for_epoch(
+                train_ds=train_ds,
+                collate_fn=collate,
+                batch_size=args.batch_size,
+                num_workers=args.num_workers,
+                pin_memory=pin,
+                distributed=distributed,
+                world_size=world_size,
+                rank=rank,
+                seed=args.seed,
+                epoch=epoch,
+                start_batch=resume_batches_in_epoch,
+            )
+            if resume_batches_in_epoch > 0:
+                rank0_print(
+                    rank,
+                    (
+                        f"epoch {epoch}: resuming from batch {resume_batches_in_epoch:,} "
+                        "without replaying skipped dataloader work."
+                    ),
+                )
             optimizer.zero_grad(set_to_none=True)
 
             train_loss_sum = 0.0
             train_steps = 0
             accum_counter = 0
             updates_in_epoch = resume_updates_in_epoch if epoch == start_epoch else 0
-            updates_to_skip = resume_updates_in_epoch if (epoch == start_epoch and resume_updates_in_epoch > 0) else 0
-            skipped_updates = 0
-            eval_targets = sorted(
-                {
-                    max(1, min(updates_per_epoch, math.ceil((i * updates_per_epoch) / args.evals_per_epoch)))
-                    for i in range(1, args.evals_per_epoch + 1)
-                }
-            )
-            if updates_to_skip > 0:
-                rank0_print(
-                    rank,
-                    f"epoch {epoch}: skipping {updates_to_skip} already-completed optimizer updates from checkpoint.",
-                )
+            loss_eval_targets = build_eval_targets(updates_per_epoch, resolved_loss_evals_per_epoch)
+            full_eval_targets = build_eval_targets(updates_per_epoch, args.evals_per_epoch)
 
             for step, batch in enumerate(train_loader, start=1):
                 accum_counter += 1
 
                 take_step = (accum_counter >= args.grad_accum_steps) or (step == len(train_loader))
-                if skipped_updates < updates_to_skip:
-                    if take_step:
-                        skipped_updates += 1
-                        accum_counter = 0
-                    continue
 
                 batch = move_batch(batch, device)
                 with torch.autocast(device_type=device.type, dtype=amp_dtype, enabled=use_amp):
@@ -2291,7 +2855,9 @@ def main() -> None:
                         flush=True,
                     )
 
-                if updates_in_epoch not in eval_targets:
+                run_full_eval = updates_in_epoch in full_eval_targets
+                run_loss_eval = run_full_eval or (updates_in_epoch in loss_eval_targets)
+                if not run_loss_eval:
                     continue
 
                 local = torch.tensor([train_loss_sum, train_steps], dtype=torch.float64, device=device)
@@ -2299,10 +2865,17 @@ def main() -> None:
                     dist.all_reduce(local, op=dist.ReduceOp.SUM)
                 train_loss = float(local[0].item() / max(local[1].item(), 1.0))
                 val_loss = evaluate(model, val_loader, device, amp_dtype, distributed) if len(val_ds) > 0 else float("nan")
-                test_loss = evaluate(model, test_loader, device, amp_dtype, distributed) if len(test_ds) > 0 else float("nan")
+                test_loss = (
+                    evaluate(model, test_loader, device, amp_dtype, distributed)
+                    if run_full_eval and len(test_ds) > 0
+                    else float("nan")
+                )
 
                 sp2013_acc = float("nan")
                 sp2013_by_op: Dict[str, float] = {}
+                sp2013_primary = float("nan")
+                sp2013_primary_name = "overall_acc"
+                sp2013_primary_higher_is_better = True
                 sp2013_metrics: Optional[Dict[str, Any]] = None
                 sp2013_df: Optional[pd.DataFrame] = None
                 id_val_acc = float("nan")
@@ -2320,23 +2893,37 @@ def main() -> None:
                 eval_tag = f"e{epoch:02d}_u{updates_in_epoch:04d}"
                 at_epoch_end = updates_in_epoch >= updates_per_epoch
 
-                distributed_barrier(distributed, device)
+                if run_full_eval:
+                    distributed_barrier(distributed, device)
 
-                if rank == 0 and args.eval_sp2013 and args.sp2013_every > 0 and (epoch % args.sp2013_every == 0):
+                if run_full_eval and rank == 0 and args.eval_sp2013 and args.sp2013_every > 0 and (epoch % args.sp2013_every == 0):
                     sp2013_metrics, sp2013_df = evaluate_sp2013_final_answer(
                         model=model,
                         tokenizer=tokenizer,
                         device=device,
                         sp2013_csv=args.sp2013_csv,
+                        target_csv=args.sp2013_target_csv,
                         max_new_tokens=args.sp2013_max_new_tokens,
+                        target_mode=args.sp2013_target_mode,
                         use_param_grid=args.sp2013_use_param_grid,
                         grid_g=sp2013_grid_g,
                         grid_d=sp2013_grid_d,
                         grid_rt=sp2013_grid_rt,
                         grid_ice=sp2013_grid_ice,
+                        num_rollouts=args.sp2013_num_rollouts,
+                        do_sample=args.sp2013_do_sample,
+                        temperature=args.sp2013_temperature,
+                        top_p=args.sp2013_top_p,
+                        top_k=args.sp2013_top_k,
+                        sample_seed=args.sp2013_sample_seed,
+                        rollout_batch_size=args.sp2013_rollout_batch_size,
+                        progress_every=args.sp2013_progress_every,
                     )
                     sp2013_acc = sp2013_metrics["overall_acc"]
-                    sp2013_by_op = sp2013_metrics["by_op"]
+                    sp2013_by_op = sp2013_metrics.get("by_op", sp2013_metrics.get("teacher_by_op", {}))
+                    sp2013_primary = sp2013_metrics.get("primary_value", sp2013_acc)
+                    sp2013_primary_name = sp2013_metrics.get("primary_name", "overall_acc")
+                    sp2013_primary_higher_is_better = bool(sp2013_metrics.get("primary_higher_is_better", True))
                     sp2013_df.to_csv(os.path.join(args.output_dir, f"sp2013_{eval_tag}.csv"), index=False)
                     with open(os.path.join(args.output_dir, f"sp2013_metrics_{eval_tag}.json"), "w", encoding="utf-8") as f:
                         json.dump(sp2013_metrics, f, indent=2)
@@ -2345,7 +2932,7 @@ def main() -> None:
                         with open(os.path.join(args.output_dir, f"sp2013_metrics_epoch_{epoch:02d}.json"), "w", encoding="utf-8") as f:
                             json.dump(sp2013_metrics, f, indent=2)
 
-                if rank == 0 and args.eval_id_final_answer and args.id_eval_every > 0 and (epoch % args.id_eval_every == 0):
+                if run_full_eval and rank == 0 and args.eval_id_final_answer and args.id_eval_every > 0 and (epoch % args.id_eval_every == 0):
                     if args.id_eval_split in {"val", "both"} and len(val_df) > 0:
                         id_val_metrics, id_val_df = evaluate_in_distribution_final_answer(
                             model=model,
@@ -2403,12 +2990,16 @@ def main() -> None:
                 eval_record = {
                     "epoch": epoch,
                     "eval_tag": eval_tag,
+                    "eval_scope": "full" if run_full_eval else "loss_only",
                     "update_in_epoch": updates_in_epoch,
                     "updates_done": global_update,
                     "train_loss": train_loss,
                     "val_loss": val_loss,
                     "test_loss": test_loss,
                     "sp2013_acc": sp2013_acc,
+                    "sp2013_primary": sp2013_primary,
+                    "sp2013_primary_name": sp2013_primary_name,
+                    "sp2013_primary_higher_is_better": sp2013_primary_higher_is_better,
                     "sp2013_by_op": sp2013_by_op,
                     "id_val_acc": id_val_acc,
                     "id_val_coverage": id_val_coverage,
@@ -2423,23 +3014,39 @@ def main() -> None:
 
                 if rank == 0:
                     history.append(eval_record)
-                    msg = (
-                        f"[eval {eval_tag}] train={train_loss:.4f} val={val_loss:.4f} test={test_loss:.4f} "
-                        f"sp2013={sp2013_acc:.4f} id_val={id_val_acc:.4f}"
-                    )
-                    if is_finite_number(id_val_true_acc):
-                        msg += f" id_val_true={id_val_true_acc:.4f}"
+                    msg = f"[eval {eval_record['eval_scope']} {eval_tag}] train={train_loss:.4f} val={val_loss:.4f}"
+                    if is_finite_number(test_loss):
+                        msg += f" test={test_loss:.4f}"
+                    if run_full_eval:
+                        msg += (
+                            f" sp2013={sp2013_acc:.4f} sp2013_primary={sp2013_primary:.4f} "
+                            f"({sp2013_primary_name}) id_val={id_val_acc:.4f}"
+                        )
+                        if is_finite_number(id_val_true_acc):
+                            msg += f" id_val_true={id_val_true_acc:.4f}"
                     print(msg, flush=True)
 
-                    if args.best_by == "sp2013_acc":
-                        improved = is_finite_number(sp2013_acc) and (
-                            (sp2013_acc > best_sp2013)
-                            or (
-                                sp2013_acc == best_sp2013
-                                and is_finite_number(val_loss)
-                                and val_loss < best_val
+                    if args.best_by in {"sp2013_acc", "sp2013_primary"}:
+                        compare_value = sp2013_acc if args.best_by == "sp2013_acc" else sp2013_primary
+                        higher_is_better = True if args.best_by == "sp2013_acc" else sp2013_primary_higher_is_better
+                        if higher_is_better:
+                            improved = is_finite_number(compare_value) and (
+                                (compare_value > best_sp2013)
+                                or (
+                                    compare_value == best_sp2013
+                                    and is_finite_number(val_loss)
+                                    and val_loss < best_val
+                                )
                             )
-                        )
+                        else:
+                            improved = is_finite_number(compare_value) and (
+                                (compare_value < best_sp2013)
+                                or (
+                                    compare_value == best_sp2013
+                                    and is_finite_number(val_loss)
+                                    and val_loss < best_val
+                                )
+                            )
                     elif args.best_by == "id_val_acc":
                         improved = is_finite_number(id_val_acc) and (
                             (id_val_acc > best_sp2013)
@@ -2458,8 +3065,10 @@ def main() -> None:
                         if args.best_by == "id_val_acc":
                             if is_finite_number(id_val_acc):
                                 best_sp2013 = id_val_acc
-                        elif is_finite_number(sp2013_acc):
-                            best_sp2013 = sp2013_acc
+                        elif args.best_by in {"sp2013_acc", "sp2013_primary"}:
+                            compare_value = sp2013_acc if args.best_by == "sp2013_acc" else sp2013_primary
+                            if is_finite_number(compare_value):
+                                best_sp2013 = compare_value
 
                     eval_state = build_training_state(
                         epoch=epoch,
@@ -2495,6 +3104,12 @@ def main() -> None:
                                 print(
                                     f"  saved best checkpoint -> {best_dir} "
                                     f"(sp2013={sp2013_acc:.4f}, val={val_loss:.4f})",
+                                    flush=True,
+                                )
+                            elif args.best_by == "sp2013_primary":
+                                print(
+                                    f"  saved best checkpoint -> {best_dir} "
+                                    f"({sp2013_primary_name}={sp2013_primary:.4f}, val={val_loss:.4f})",
                                     flush=True,
                                 )
                             elif args.best_by == "id_val_acc":
@@ -2609,19 +3224,32 @@ def main() -> None:
                         tokenizer=tokenizer,
                         device=device,
                         sp2013_csv=args.sp2013_csv,
+                        target_csv=args.sp2013_target_csv,
                         max_new_tokens=args.sp2013_max_new_tokens,
+                        target_mode=args.sp2013_target_mode,
                         use_param_grid=args.sp2013_use_param_grid,
                         grid_g=sp2013_grid_g,
                         grid_d=sp2013_grid_d,
                         grid_rt=sp2013_grid_rt,
                         grid_ice=sp2013_grid_ice,
+                        num_rollouts=args.sp2013_num_rollouts,
+                        do_sample=args.sp2013_do_sample,
+                        temperature=args.sp2013_temperature,
+                        top_p=args.sp2013_top_p,
+                        top_k=args.sp2013_top_k,
+                        sample_seed=args.sp2013_sample_seed,
+                        rollout_batch_size=args.sp2013_rollout_batch_size,
+                        progress_every=args.sp2013_progress_every,
                     )
                     sp_df.to_csv(os.path.join(args.output_dir, "best_sp2013.csv"), index=False)
                     with open(os.path.join(args.output_dir, "best_sp2013_metrics.json"), "w", encoding="utf-8") as f:
                         json.dump(sp_metrics, f, indent=2)
                     loaded_summary["sp2013_acc"] = sp_metrics.get("overall_acc", float("nan"))
+                    loaded_summary["sp2013_primary"] = sp_metrics.get("primary_value", float("nan"))
+                    loaded_summary["sp2013_primary_name"] = sp_metrics.get("primary_name", "overall_acc")
                     print(
-                        f"Reloaded-checkpoint SP2013 acc: {sp_metrics.get('overall_acc', float('nan')):.4f}",
+                        f"Reloaded-checkpoint SP2013 primary: {sp_metrics.get('primary_value', float('nan')):.4f} "
+                        f"({sp_metrics.get('primary_name', 'overall_acc')})",
                         flush=True,
                     )
 
@@ -2696,6 +3324,28 @@ def main() -> None:
                     candidates = [rec for rec in history if is_finite_number(rec.get("val_loss", float("nan")))]
                     if candidates:
                         best_record = min(candidates, key=lambda rec: (rec["val_loss"], -rec.get("updates_done", 0)))
+                elif args.best_by == "sp2013_primary":
+                    candidates = [rec for rec in history if is_finite_number(rec.get("sp2013_primary", float("nan")))]
+                    if candidates:
+                        higher_is_better = bool(candidates[0].get("sp2013_primary_higher_is_better", True))
+                        if higher_is_better:
+                            best_record = max(
+                                candidates,
+                                key=lambda rec: (
+                                    rec["sp2013_primary"],
+                                    -(rec["val_loss"] if is_finite_number(rec.get("val_loss", float("nan"))) else float("inf")),
+                                    rec.get("updates_done", 0),
+                                ),
+                            )
+                        else:
+                            best_record = min(
+                                candidates,
+                                key=lambda rec: (
+                                    rec["sp2013_primary"],
+                                    rec["val_loss"] if is_finite_number(rec.get("val_loss", float("nan"))) else float("inf"),
+                                    -rec.get("updates_done", 0),
+                                ),
+                            )
                 else:
                     metric_key = "sp2013_acc" if args.best_by == "sp2013_acc" else "id_val_acc"
                     candidates = [rec for rec in history if is_finite_number(rec.get(metric_key, float("nan")))]
@@ -2722,12 +3372,14 @@ def main() -> None:
                 "min_lr": args.min_lr,
                 "lr_scheduler_type": args.lr_scheduler_type,
                 "epochs": int(args.epochs),
+                "loss_evals_per_epoch": int(resolved_loss_evals_per_epoch),
                 "train_rows": int(len(train_df)),
                 "val_rows": int(len(val_df)),
                 "test_rows": int(len(test_df)),
                 "checkpoint_source": resume_dir or model_source,
                 "move_sp2013_rows_to_val": bool(args.move_sp2013_rows_to_val),
                 "train_prompt_student_mode": args.train_prompt_student_mode,
+                "sp2013_target_mode": args.sp2013_target_mode,
                 "id_eval_target": args.id_eval_target,
                 "id_eval_report_true_target": bool(args.id_eval_report_true_target),
                 "best_checkpoint_dir": best_dir if os.path.isdir(best_dir) else None,
@@ -2736,6 +3388,8 @@ def main() -> None:
                 "best_updates_done": int(best_record["updates_done"]) if best_record is not None else None,
                 "best_val_loss": finite_or_none(best_record.get("val_loss")) if best_record is not None else None,
                 "best_sp2013_acc": finite_or_none(best_record.get("sp2013_acc")) if best_record is not None else None,
+                "best_sp2013_primary": finite_or_none(best_record.get("sp2013_primary")) if best_record is not None else None,
+                "best_sp2013_primary_name": best_record.get("sp2013_primary_name") if best_record is not None else None,
                 "best_id_val_acc": finite_or_none(best_record.get("id_val_acc")) if best_record is not None else None,
                 "best_id_val_true_acc": finite_or_none(best_record.get("id_val_true_acc")) if best_record is not None else None,
                 "best_id_test_acc": finite_or_none(best_record.get("id_test_acc")) if best_record is not None else None,

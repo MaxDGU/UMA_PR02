@@ -66,6 +66,7 @@ WARMUP_RATIO="${WARMUP_RATIO:-0.03}"
 AMP_DTYPE="${AMP_DTYPE:-auto}"
 GC="${GC:-0}"  # 0/1
 EVALS_PER_EPOCH="${EVALS_PER_EPOCH:-5}"
+LOSS_EVALS_PER_EPOCH="${LOSS_EVALS_PER_EPOCH:-0}"
 BEST_BY="${BEST_BY:-val_loss}"
 EVAL_SP2013="${EVAL_SP2013:-1}"  # 0/1
 EVAL_ID_FINAL_ANSWER="${EVAL_ID_FINAL_ANSWER:-1}"  # 0/1
@@ -91,7 +92,7 @@ TRAIN_PROMPT_STUDENT_DROPOUT_PROB="${TRAIN_PROMPT_STUDENT_DROPOUT_PROB:-0.5}"
 TRAIN_PROMPT_STUDENT_DROPOUT_SEED="${TRAIN_PROMPT_STUDENT_DROPOUT_SEED:-0}"
 
 echo "Launching SmolLM2-360M on ${GPUS_PER_NODE}x H200"
-echo "batch_size=${BATCH_SIZE} per GPU, grad_accum=1, evals_per_epoch=${EVALS_PER_EPOCH}, time_limit=${SLURM_TIMELIMIT:-24:00:00}"
+echo "batch_size=${BATCH_SIZE} per GPU, grad_accum=1, evals_per_epoch=${EVALS_PER_EPOCH}, loss_evals_per_epoch=${LOSS_EVALS_PER_EPOCH}, time_limit=${SLURM_TIMELIMIT:-24:00:00}"
 echo "resume_from=${RESUME_FROM}, save_last_every_updates=${SAVE_LAST_EVERY_UPDATES}"
 echo "init_from_scratch=${INIT_FROM_SCRATCH}"
 echo "require_resume=${REQUIRE_RESUME}"
@@ -188,6 +189,7 @@ fi
     --warmup_ratio "${WARMUP_RATIO}" \
     --amp_dtype "${AMP_DTYPE}" \
     --evals_per_epoch "${EVALS_PER_EPOCH}" \
+    --loss_evals_per_epoch "${LOSS_EVALS_PER_EPOCH}" \
     --best_by "${BEST_BY}" \
     --train_prompt_student_mode "${TRAIN_PROMPT_STUDENT_MODE}" \
     --train_prompt_student_dropout_prob "${TRAIN_PROMPT_STUDENT_DROPOUT_PROB}" \
