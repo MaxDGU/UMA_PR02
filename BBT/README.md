@@ -87,3 +87,12 @@ Every subpipeline writes `manifest.json` with:
 - `upstream_manifest`
 
 See `BBT/docs/subpipeline_contracts.md` and `BBT/docs/config_reference.md` for details.
+
+## Whole-number adaptation
+
+For adapting the UMA distillation path to whole-number arithmetic, start with:
+
+- `results/transformer_replication/WHOLE_NUMBER_DISTILLATION_HANDOFF.md`
+
+That handoff lists the minimum translation-rule TODOs, trace-schema contract,
+distillation command, evaluation hook, and human-finetuning reference command.
