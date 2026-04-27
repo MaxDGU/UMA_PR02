@@ -135,6 +135,20 @@ def run_subpipeline(
     add_store_true(cmd, "--minimal-columns", bool(sub_cfg.get("minimal_columns", False)))
     add_store_true(cmd, "--include-outcome-text", bool(sub_cfg.get("include_outcome_text", False)))
 
+    reasoning_mode = str(sub_cfg.get("reasoning_mode", "")).strip()
+    if reasoning_mode:
+        cmd.extend(["--reasoning-mode", reasoning_mode])
+
+    row_filter = str(sub_cfg.get("row_filter", "")).strip()
+    if row_filter:
+        cmd.extend(["--row-filter", row_filter])
+
+    add_bool_optional(
+        cmd,
+        "--surface-hidden-trace-steps",
+        bool(sub_cfg.get("surface_hidden_trace_steps", False)),
+    )
+
     extra_inputs = sub_cfg.get("input_csv_extra", [])
     if extra_inputs is None:
         extra_inputs = []

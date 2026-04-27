@@ -189,6 +189,14 @@ def run_subpipeline(
     if max_samples is not None:
         cmd.extend(["--max_samples", str(max_samples)])
 
+    domain = str(sub_cfg.get("domain", "")).strip()
+    if domain:
+        cmd.extend(["--domain", domain])
+
+    train_prompt_student_mode = str(sub_cfg.get("train_prompt_student_mode", "")).strip()
+    if train_prompt_student_mode:
+        cmd.extend(["--train_prompt_student_mode", train_prompt_student_mode])
+
     add_store_true(cmd, "--save_best_only", bool(sub_cfg.get("save_best_only", False)))
     add_store_true(cmd, "--gradient_checkpointing", bool(sub_cfg.get("gradient_checkpointing", False)))
     add_store_true(cmd, "--train_on_prompt", bool(sub_cfg.get("train_on_prompt", False)))
