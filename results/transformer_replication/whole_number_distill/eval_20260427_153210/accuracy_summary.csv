@@ -1,0 +1,7 @@
+model,cell,mean,count
+base,Add_sd,12.3,81
+base,Mul_sd,9.4,64
+distilled,Add_sd,92.6,81
+distilled,Mul_sd,100.0,64
+base,ALL,11.0,145
+distilled,ALL,95.9,145

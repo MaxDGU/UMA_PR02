@@ -1,0 +1,6890 @@
+model,set,cell,prob,key,prompt,generation,parsed_answer,is_correct
+base,sd_add,Add_sd,1+1,2,Solve this whole-number arithmetic problem: 1+1=?,"
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer is 1.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+1=?
+
+The answer",1,False
+base,sd_add,Add_sd,1+2,3,Solve this whole-number arithmetic problem: 1+2=?,"
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to solve this whole-number arithmetic problem: 1+2=?
+
+The answer is 3.
+
+## How to",3,True
+base,sd_add,Add_sd,1+3,4,Solve this whole-number arithmetic problem: 1+3=?,"
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.
+
+The answer is 5.",5,False
+base,sd_add,Add_sd,1+4,5,Solve this whole-number arithmetic problem: 1+4=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,1+5,6,Solve this whole-number arithmetic problem: 1+5=?,"
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+5=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: ",10,False
+base,sd_add,Add_sd,1+6,7,Solve this whole-number arithmetic problem: 1+6=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,1+7,8,Solve this whole-number arithmetic problem: 1+7=?,"
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 1+7=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: ",10,False
+base,sd_add,Add_sd,1+8,9,Solve this whole-number arithmetic problem: 1+8=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,1+9,10,Solve this whole-number arithmetic problem: 1+9=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,True
+base,sd_add,Add_sd,2+1,3,Solve this whole-number arithmetic problem: 2+1=?,"
+
+The answer is 2.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+1=?
+
+Step 1:
+
+The first step is to find the number that is equal to 2.
+
+Step 2:
+
+The second step is to find the number that is equal to 1.
+
+Step 3:
+
+The third step is to find the number that is equal to 2.
+
+Step 4:
+
+The fourth step is to find the number that is equal to 1.
+
+Step 5:
+
+The fifth step is to find the number that is equal to 2.
+
+Step 6:
+
+The sixth step is to find the number that is equal to 1.
+
+Step 7:
+
+The seventh step is to find the number that is equal to 2.
+
+Step 8:
+
+The eighth step is to find the number that is equal to 1.
+
+Step 9:
+
+The ninth step is to find the number that is equal to 2.
+
+Step 10:
+
+The tenth step is to find the number that is equal to",10,False
+base,sd_add,Add_sd,2+2,4,Solve this whole-number arithmetic problem: 2+2=?,"
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to solve this whole-number arithmetic problem: 2+2=?
+
+The answer is 4.
+
+## How to",4,True
+base,sd_add,Add_sd,2+3,5,Solve this whole-number arithmetic problem: 2+3=?,"
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer is 5.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+3=?
+
+The answer",3,False
+base,sd_add,Add_sd,2+4,6,Solve this whole-number arithmetic problem: 2+4=?,"
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 2+4=?
+
+The answer",4,False
+base,sd_add,Add_sd,2+5,7,Solve this whole-number arithmetic problem: 2+5=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,2+6,8,Solve this whole-number arithmetic problem: 2+6=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,2+7,9,Solve this whole-number arithmetic problem: 2+7=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,2+8,10,Solve this whole-number arithmetic problem: 2+8=?,"
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer",12,False
+base,sd_add,Add_sd,2+9,11,Solve this whole-number arithmetic problem: 2+9=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,3+1,4,Solve this whole-number arithmetic problem: 3+1=?,"
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3+1=?
+
+The answer is 3.
+
+## How to Solve 3",3,False
+base,sd_add,Add_sd,3+2,5,Solve this whole-number arithmetic problem: 3+2=?,"
+
+The answer is 5.
+
+### 1.1.1.1
+
+The answer is 5.
+
+### 1.1.1.2
+
+The answer is 1.
+
+### 1.1.1.3
+
+The answer is 1.
+
+### 1.1.1.4
+
+The answer is 1.
+
+### 1.1.1.5
+
+The answer is 1.
+
+### 1.1.1.6
+
+The answer is 1.
+
+### 1.1.1.7
+
+The answer is 1.
+
+### 1.1.1.8
+
+The answer is 1.
+
+### 1.1.1.9
+
+The answer is 1.
+
+### 1.1.1.10
+
+The answer is 1.
+
+### 1.1.1.11
+
+The answer is 1.
+
+### 1.1.1.12
+
+The answer is 1.
+
+### 1.1.1.13
+
+The answer is",13,False
+base,sd_add,Add_sd,3+3,6,Solve this whole-number arithmetic problem: 3+3=?,"
+
+The answer is 6.
+
+## How to Solve this Whole-Number Arithmetic Problem: 3+3=?
+
+Step 1:
+
+The first step is to find the number that is equal to 3.
+
+Step 2:
+
+The second step is to find the number that is equal to 3.
+
+Step 3:
+
+The third step is to find the number that is equal to 3.
+
+Step 4:
+
+The fourth step is to find the number that is equal to 3.
+
+Step 5:
+
+The fifth step is to find the number that is equal to 3.
+
+Step 6:
+
+The sixth step is to find the number that is equal to 3.
+
+Step 7:
+
+The seventh step is to find the number that is equal to 3.
+
+Step 8:
+
+The eighth step is to find the number that is equal to 3.
+
+Step 9:
+
+The ninth step is to find the number that is equal to 3.
+
+Step 10:
+
+The tenth step is to find the number that is equal to",10,False
+base,sd_add,Add_sd,3+4,7,Solve this whole-number arithmetic problem: 3+4=?,"
+
+Solution:
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.
+
+The sum of 3 and 4 is 7.",7,True
+base,sd_add,Add_sd,3+5,8,Solve this whole-number arithmetic problem: 3+5=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,3+6,9,Solve this whole-number arithmetic problem: 3+6=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,3+7,10,Solve this whole-number arithmetic problem: 3+7=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,True
+base,sd_add,Add_sd,3+8,11,Solve this whole-number arithmetic problem: 3+8=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,3+9,12,Solve this whole-number arithmetic problem: 3+9=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,4+1,5,Solve this whole-number arithmetic problem: 4+1=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,4+2,6,Solve this whole-number arithmetic problem: 4+2=?,"
+
+The answer is 6.
+
+## How do you solve 4+2?
+
+To solve 4+2, you need to add 2 to both sides of the equation.
+
+So, 4+2=6.
+
+## How do you solve 4+2x?
+
+To solve 4+2x, you need to add 2 to both sides of the equation.
+
+So, 4+2x=6.
+
+## How do you solve 4+2x+2?
+
+To solve 4+2x+2, you need to add 2 to both sides of the equation.
+
+So, 4+2x+2=6.
+
+## How do you solve 4+2x+2x?
+
+To solve 4+2x+2x, you need to add 2 to both sides of the equation.
+
+So, 4+2x+2x=6.
+
+## How do you solve 4+2x+2x+2?
+
+To solve 4+2x+2x+2, you need to add 2 to both sides of the",2,False
+base,sd_add,Add_sd,4+3,7,Solve this whole-number arithmetic problem: 4+3=?,"
+
+The answer is 5.
+
+## How do you solve a 4+3 problem?
+
+To solve a 4+3 problem, you need to add the numbers in the problem and then subtract the result from the number in the problem.
+
+## How do you solve a 4+3 problem with a calculator?
+
+To solve a 4+3 problem with a calculator, you need to add the numbers in the problem and then subtract the result from the number in the problem.
+
+## How do you solve a 4+3 problem with a calculator?
+
+To solve a 4+3 problem with a calculator, you need to add the numbers in the problem and then subtract the result from the number in the problem.
+
+## How do you solve a 4+3 problem with a calculator?
+
+To solve a 4+3 problem with a calculator, you need to add the numbers in the problem and then subtract the result from the number in the problem.
+
+## How do you solve a 4+3 problem with a calculator?
+
+To solve a 4+3 problem with a calculator, you need to add the numbers in the problem and then subtract the result from",3,False
+base,sd_add,Add_sd,4+4,8,Solve this whole-number arithmetic problem: 4+4=?,"
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: 4+4=?
+
+The answer is 10.
+
+## How to Solve this Whole-Number Arithmetic Problem: ",10,False
+base,sd_add,Add_sd,4+5,9,Solve this whole-number arithmetic problem: 4+5=?,"
+
+The answer is 10.
+
+## How do you solve 4+5=?
+
+To solve 4+5=, we need to find the number that is equal to 4 and 5.
+
+To find the number that is equal to 4 and 5, we need to find the number that is greater than 4 and less than 5.
+
+To find the number that is greater than 4 and less than 5, we need to find the number that is greater than 4 and less than 5.
+
+To find the number that is greater than 4 and less than 5, we need to find the number that is greater than 4 and less than 5.
+
+To find the number that is greater than 4 and less than 5, we need to find the number that is greater than 4 and less than 5.
+
+To find the number that is greater than 4 and less than 5, we need to find the number that is greater than 4 and less than 5.
+
+To find the number that is greater than 4 and less than 5, we need to find the number that is greater than 4",4,False
+base,sd_add,Add_sd,4+6,10,Solve this whole-number arithmetic problem: 4+6=?,"
+
+Solution:
+
+The number 4 is the sum of the digits of 6.
+
+The number 6 is the sum of the digits of 4.
+
+Therefore, 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?
+
+=> 4+6=?",6,False
+base,sd_add,Add_sd,4+7,11,Solve this whole-number arithmetic problem: 4+7=?,"
+
+Solution:
+
+The number 4 is the sum of the digits of the number 7.
+
+The number 7 is the sum of the digits of the number 4.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the number 7.
+
+Therefore, the number 4 is the sum of the digits of the",4,False
+base,sd_add,Add_sd,4+8,12,Solve this whole-number arithmetic problem: 4+8=?,"
+
+Solution:
+
+The number 4 is the sum of the digits of 8.
+
+The number 8 is the sum of the digits of 4.
+
+Therefore, 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?
+
+=> 4+8=?",8,False
+base,sd_add,Add_sd,4+9,13,Solve this whole-number arithmetic problem: 4+9=?,"
+
+The answer is 10.
+
+### 10.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+### 20.
+
+Solve this whole-number arithmetic problem: 10+10=?
+
+The answer is 20.
+
+",20,False
+base,sd_add,Add_sd,5+1,6,Solve this whole-number arithmetic problem: 5+1=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,5+2,7,Solve this whole-number arithmetic problem: 5+2=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,5+3,8,Solve this whole-number arithmetic problem: 5+3=?,"
+
+Solution:
+
+The number 5 is the sum of the digits of 3.
+
+The number 3 is the sum of the digits of 5.
+
+The number 5 is the sum of the digits of 3.
+
+The number 3 is the sum of the digits of 5.
+
+The number 5 is the sum of the digits of 3.
+
+The number 3 is the sum of the digits of 5.
+
+The number 5 is the sum of the digits of 3.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits of 5.
+
+The number 3 is the sum of the digits",3,False
+base,sd_add,Add_sd,5+4,9,Solve this whole-number arithmetic problem: 5+4=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,5+5,10,Solve this whole-number arithmetic problem: 5+5=?,"
+
+Solution:
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is 10.
+
+The sum of 5 and 5 is ",5,False
+base,sd_add,Add_sd,5+6,11,Solve this whole-number arithmetic problem: 5+6=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,5+7,12,Solve this whole-number arithmetic problem: 5+7=?,"
+
+The answer is 10.
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7 to both sides of the equation.
+
+So, 5+7=?
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7 to both sides of the equation.
+
+So, 5+7=?
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7 to both sides of the equation.
+
+So, 5+7=?
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7 to both sides of the equation.
+
+So, 5+7=?
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7 to both sides of the equation.
+
+So, 5+7=?
+
+## How do you solve 5+7?
+
+To solve 5+7, you need to add 7",7,False
+base,sd_add,Add_sd,5+8,13,Solve this whole-number arithmetic problem: 5+8=?,"
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer is 10.
+
+## How to Solve 5+8=?
+
+The answer",8,False
+base,sd_add,Add_sd,5+9,14,Solve this whole-number arithmetic problem: 5+9=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,6+1,7,Solve this whole-number arithmetic problem: 6+1=?,"
+
+The answer is 10.
+
+## How do you solve 6+1?
+
+To solve 6+1, you need to add 1 to both sides of the equation.
+
+So, 6+1=10.
+
+## How do you solve 6+10?
+
+To solve 6+10, you need to add 10 to both sides of the equation.
+
+So, 6+10=100.
+
+## How do you solve 6+100?
+
+To solve 6+100, you need to add 100 to both sides of the equation.
+
+So, 6+100=1000.
+
+## How do you solve 6+1000?
+
+To solve 6+1000, you need to add 1000 to both sides of the equation.
+
+So, 6+1000=1000000.
+
+## How do you solve 6+10000?
+
+To solve 6+10000, you need",10000,False
+base,sd_add,Add_sd,6+2,8,Solve this whole-number arithmetic problem: 6+2=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6+2.
+
+Step 2:
+
+We have to find the value of 6+2.
+
+Step 3:
+
+We have to find the value of 6+2.
+
+Step 4:
+
+We have to find the value of 6+2.
+
+Step 5:
+
+We have to find the value of 6+2.
+
+Step 6:
+
+We have to find the value of 6+2.
+
+Step 7:
+
+We have to find the value of 6+2.
+
+Step 8:
+
+We have to find the value of 6+2.
+
+Step 9:
+
+We have to find the value of 6+2.
+
+Step 10:
+
+We have to find the value of 6+2.
+
+Step 11:
+
+We have to find the value of 6+2.
+
+Step 12:
+
+We have to find the value of 6+2.
+
+Step 13:
+
+",13,False
+base,sd_add,Add_sd,6+3,9,Solve this whole-number arithmetic problem: 6+3=?,"
+
+The answer is 10.
+
+## How do you solve a whole-number arithmetic problem?
+
+To solve a whole-number arithmetic problem, you need to first find the number that is being added to the number that is being subtracted. Then, you need to find the number that is being subtracted from the number that is being added.
+
+## What is the answer to 6+3?
+
+The answer to 6+3 is 10.
+
+## What is the answer to 6+3+3?
+
+The answer to 6+3+3 is 10.
+
+## What is the answer to 6+3+3+3?
+
+The answer to 6+3+3+3 is 10.
+
+## What is the answer to 6+3+3+3+3?
+
+The answer to 6+3+3+3+3 is 10.
+
+## What is the answer to 6+3+3+3+3+3?
+
+The answer to 6+3+3+3+3+3 is 10.
+
+## What is the",10,False
+base,sd_add,Add_sd,6+4,10,Solve this whole-number arithmetic problem: 6+4=?,"
+
+The answer is 10.
+
+## How do you solve a whole-number arithmetic problem?
+
+To solve a whole-number arithmetic problem, you need to first find the number that is being added to the number that is being subtracted. Then, you need to find the number that is being subtracted from the number that is being added.
+
+## What is the difference between whole number and integer?
+
+A whole number is a number that is not a fraction. An integer is a whole number.
+
+## What is the difference between a whole number and a fraction?
+
+A whole number is a number that is not a fraction. An integer is a whole number.
+
+## What is the difference between a whole number and a fraction?
+
+A whole number is a number that is not a fraction. An integer is a whole number.
+
+## What is the difference between a whole number and a fraction?
+
+A whole number is a number that is not a fraction. An integer is a whole number.
+
+## What is the difference between a whole number and a fraction?
+
+A whole number is a number that is not a fraction. An integer is a whole number.
+
+##",10,True
+base,sd_add,Add_sd,6+5,11,Solve this whole-number arithmetic problem: 6+5=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the sum of 6 and 5.
+
+Step 2:
+
+We have to find the sum of 6 and 5.
+
+Step 3:
+
+We have to find the sum of 6 and 5.
+
+Step 4:
+
+We have to find the sum of 6 and 5.
+
+Step 5:
+
+We have to find the sum of 6 and 5.
+
+Step 6:
+
+We have to find the sum of 6 and 5.
+
+Step 7:
+
+We have to find the sum of 6 and 5.
+
+Step 8:
+
+We have to find the sum of 6 and 5.
+
+Step 9:
+
+We have to find the sum of 6 and 5.
+
+Step 10:
+
+We have to find the sum of 6 and 5.
+
+Step 11:
+
+We have to find the sum of 6 and 5.
+
+Step 12:
+
+We have to find the sum of 6 and",6,False
+base,sd_add,Add_sd,6+6,12,Solve this whole-number arithmetic problem: 6+6=?,"
+
+Solution:
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is 12.
+
+The sum of 6 and 6 is ",6,False
+base,sd_add,Add_sd,6+7,13,Solve this whole-number arithmetic problem: 6+7=?,"
+
+The answer is 10.
+
+## How to Solve 6+7=?
+
+Step 1:
+
+The first step is to find the number that is equal to 6.
+
+Step 2:
+
+The second step is to find the number that is equal to 7.
+
+Step 3:
+
+The third step is to find the number that is equal to 10.
+
+Step 4:
+
+The final step is to find the answer.
+
+The answer is 10.
+
+## How to Solve 6+7=?
+
+Step 1:
+
+The first step is to find the number that is equal to 6.
+
+Step 2:
+
+The second step is to find the number that is equal to 7.
+
+Step 3:
+
+The third step is to find the number that is equal to 10.
+
+Step 4:
+
+The final step is to find the answer.
+
+The answer is 10.
+
+## How to Solve 6+7=?
+
+Step 1:
+
+The first step is to find the number that is equal",1,False
+base,sd_add,Add_sd,6+8,14,Solve this whole-number arithmetic problem: 6+8=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6+8.
+
+Step 2:
+
+We have to find the value of 6+8.
+
+Step 3:
+
+We have to find the value of 6+8.
+
+Step 4:
+
+We have to find the value of 6+8.
+
+Step 5:
+
+We have to find the value of 6+8.
+
+Step 6:
+
+We have to find the value of 6+8.
+
+Step 7:
+
+We have to find the value of 6+8.
+
+Step 8:
+
+We have to find the value of 6+8.
+
+Step 9:
+
+We have to find the value of 6+8.
+
+Step 10:
+
+We have to find the value of 6+8.
+
+Step 11:
+
+We have to find the value of 6+8.
+
+Step 12:
+
+We have to find the value of 6+8.
+
+Step 13:
+
+",13,False
+base,sd_add,Add_sd,6+9,15,Solve this whole-number arithmetic problem: 6+9=?,"
+
+Solution:
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15, so 15 is the answer.
+
+We have 6+9=15,",15,True
+base,sd_add,Add_sd,7+1,8,Solve this whole-number arithmetic problem: 7+1=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,7+2,9,Solve this whole-number arithmetic problem: 7+2=?,"
+
+The answer is 10.
+
+## How do you solve 7+2?
+
+To solve 7+2, you need to add 2 to both sides of the equation.
+
+So, 7+2=10.
+
+## How do you solve 7+2x?
+
+To solve 7+2x, you need to add 2 to both sides of the equation.
+
+So, 7+2x=10.
+
+## How do you solve 7+2x+2?
+
+To solve 7+2x+2, you need to add 2 to both sides of the equation.
+
+So, 7+2x+2=10.
+
+## How do you solve 7+2x+2x?
+
+To solve 7+2x+2x, you need to add 2 to both sides of the equation.
+
+So, 7+2x+2x=10.
+
+## How do you solve 7+2x+2x+2?
+
+To solve 7+2x+2x+2, you need to add 2",2,False
+base,sd_add,Add_sd,7+3,10,Solve this whole-number arithmetic problem: 7+3=?,"
+
+Solution:
+
+The number 7 is the sum of the digits of 3 and 2.
+
+The number 3 is the sum of the digits of 2 and 1.
+
+The number 2 is the sum of the digits of 1 and 0.
+
+The number 1 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0 and 0.
+
+The number ",0,False
+base,sd_add,Add_sd,7+4,11,Solve this whole-number arithmetic problem: 7+4=?,"
+
+The answer is 10.
+
+## How do you solve 7+4=?
+
+The answer is 10.
+
+## What is 7+4 in words?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with an equation?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10.
+
+## What is 7+4 in a number sentence with a problem?
+
+The answer is 10",10,False
+base,sd_add,Add_sd,7+5,12,Solve this whole-number arithmetic problem: 7+5=?,"
+
+Solution:
+
+The number 7 is the sum of the digits of 5.
+
+The number 5 is the sum of the digits of 7.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits of 5.
+
+The number 7 is the sum of the digits",7,False
+base,sd_add,Add_sd,7+6,13,Solve this whole-number arithmetic problem: 7+6=?,"
+
+Solution:
+
+The number 7 is the sum of the digits of 6.
+
+The number 6 is the sum of the digits of 7.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits of 6.
+
+The number 7 is the sum of the digits",7,False
+base,sd_add,Add_sd,7+7,14,Solve this whole-number arithmetic problem: 7+7=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,7+8,15,Solve this whole-number arithmetic problem: 7+8=?,"
+
+Solution:
+
+The number 7 is the sum of the digits of 8.
+
+The number 8 is the sum of the digits of 7.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits of 8.
+
+The number 7 is the sum of the digits",7,False
+base,sd_add,Add_sd,7+9,16,Solve this whole-number arithmetic problem: 7+9=?,"
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-number arithmetic problem: 7+9=?
+
+The answer is 10.
+
+## How to Solve 7+9=?
+
+To solve this whole-",9,False
+base,sd_add,Add_sd,8+1,9,Solve this whole-number arithmetic problem: 8+1=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,8+2,10,Solve this whole-number arithmetic problem: 8+2=?,"
+
+Solution:
+
+The number 8 is the sum of the digits of 2 and 2.
+
+The number 2 is the sum of the digits of 1 and 1.
+
+The number 1 is the sum of the digits of 3 and 3.
+
+The number 3 is the sum of the digits of 4 and 4.
+
+The number 4 is the sum of the digits of 5 and 5.
+
+The number 5 is the sum of the digits of 6 and 6.
+
+The number 6 is the sum of the digits of 7 and 7.
+
+The number 7 is the sum of the digits of 8 and 8.
+
+The number 8 is the sum of the digits of 9 and 9.
+
+The number 9 is the sum of the digits of 10 and 10.
+
+The number 10 is the sum of the digits of 11 and 11.
+
+The number 11 is the sum of the digits of 12 and 12.
+
+The number 12 is the sum of the digits of 1",1,False
+base,sd_add,Add_sd,8+3,11,Solve this whole-number arithmetic problem: 8+3=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,8+4,12,Solve this whole-number arithmetic problem: 8+4=?,"
+
+Solution:
+
+The number 8 is the sum of the digits of the number 4.
+
+The number 4 is the sum of the digits of the number 8.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the number 4.
+
+Therefore, the number 8 is the sum of the digits of the",8,False
+base,sd_add,Add_sd,8+5,13,Solve this whole-number arithmetic problem: 8+5=?,"
+
+Solution:
+
+The number 8 is the sum of the digits of 5.
+
+The number 5 is the sum of the digits of 8.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits of 5.
+
+The number 8 is the sum of the digits",8,False
+base,sd_add,Add_sd,8+6,14,Solve this whole-number arithmetic problem: 8+6=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,8+7,15,Solve this whole-number arithmetic problem: 8+7=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,8+8,16,Solve this whole-number arithmetic problem: 8+8=?,"
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer",12,False
+base,sd_add,Add_sd,8+9,17,Solve this whole-number arithmetic problem: 8+9=?,"
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-number arithmetic problem: 8+9=?
+
+The answer is 11.
+
+## How to Solve 8+9=?
+
+To solve this whole-",9,False
+base,sd_add,Add_sd,9+1,10,Solve this whole-number arithmetic problem: 9+1=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,True
+base,sd_add,Add_sd,9+2,11,Solve this whole-number arithmetic problem: 9+2=?,"
+
+Solution:
+
+The number 9 is the sum of the digits of 2 and 2.
+
+The number 2 is the sum of the digits of 1 and 1.
+
+The number 1 is the sum of the digits of 0 and 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The number 0 is the sum of the digits of 0.
+
+The",0,False
+base,sd_add,Add_sd,9+3,12,Solve this whole-number arithmetic problem: 9+3=?,"
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer is 10.
+
+The answer",10,False
+base,sd_add,Add_sd,9+4,13,Solve this whole-number arithmetic problem: 9+4=?,"
+
+Solution:
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 4 is the sum of the digits of the number 9.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.
+
+The number 9 is the sum of the digits of the number 4.",4,False
+base,sd_add,Add_sd,9+5,14,Solve this whole-number arithmetic problem: 9+5=?,"
+
+Solution:
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 5 is the sum of the digits of the number 9.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.
+
+The number 9 is the sum of the digits of the number 5.",5,False
+base,sd_add,Add_sd,9+6,15,Solve this whole-number arithmetic problem: 9+6=?,"
+
+Solution:
+
+The number 9 is the sum of the digits of 6.
+
+The number 6 is the sum of the digits of 9.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits of 6.
+
+The number 9 is the sum of the digits",9,False
+base,sd_add,Add_sd,9+7,16,Solve this whole-number arithmetic problem: 9+7=?,"
+
+Solution:
+
+The number 9 is the sum of the digits of 7.
+
+The number 7 is the sum of the digits of 9.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore, 9+7=16.
+
+Therefore,",16,True
+base,sd_add,Add_sd,9+8,17,Solve this whole-number arithmetic problem: 9+8=?,"
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer is 12.
+
+The answer",12,False
+base,sd_add,Add_sd,9+9,18,Solve this whole-number arithmetic problem: 9+9=?,"
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: 9+9=?
+
+The answer is 18.
+
+## How to Solve this Whole-Number Arithmetic Problem: ",18,True
+base,sd_mul,Mul_sd,2*2,4,Solve this whole-number arithmetic problem: 2*2=?,"
+
+Solution:
+
+The number 2 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 2 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 2 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number 1 is the product of the two numbers 1 and 2.
+
+The number ",2,False
+base,sd_mul,Mul_sd,2*3,6,Solve this whole-number arithmetic problem: 2*3=?,"
+
+Solution:
+
+The number 2 is the first digit of the number 3.
+
+The number 3 is the second digit of the number 2.
+
+The number 2 is the third digit of the number 3.
+
+The number 3 is the fourth digit of the number 2.
+
+The number 2 is the fifth digit of the number 3.
+
+The number 3 is the sixth digit of the number 2.
+
+The number 2 is the seventh digit of the number 3.
+
+The number 3 is the eighth digit of the number 2.
+
+The number 2 is the ninth digit of the number 3.
+
+The number 3 is the tenth digit of the number 2.
+
+The number 2 is the eleventh digit of the number 3.
+
+The number 3 is the twelfth digit of the number 2.
+
+The number 2 is the thirteenth digit of the number 3.
+
+The number 3 is the fourteenth digit of the number 2.
+
+The number 2 is the fifteenth digit of the number 3.
+
+The number 3 is the sixteenth digit of the",3,False
+base,sd_mul,Mul_sd,2*4,8,Solve this whole-number arithmetic problem: 2*4=?,"
+
+Solution:
+
+The number 2 is the product of 2 and 4.
+
+The number 4 is the product of 4 and 2.
+
+The number 2*4=8 is the product of 2 and 4.
+
+The number 4*8=32 is the product of 4 and 2.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16 is the product of 2 and 4.
+
+The number 2*8=16",16,False
+base,sd_mul,Mul_sd,2*5,10,Solve this whole-number arithmetic problem: 2*5=?,"
+
+Solution:
+
+The number 2 is the first digit of the number 5.
+
+The number 5 is the second digit of the number 2.
+
+The number 2 is the third digit of the number 5.
+
+The number 5 is the fourth digit of the number 2.
+
+The number 2 is the fifth digit of the number 5.
+
+The number 5 is the sixth digit of the number 2.
+
+The number 2 is the seventh digit of the number 5.
+
+The number 5 is the eighth digit of the number 2.
+
+The number 2 is the ninth digit of the number 5.
+
+The number 5 is the tenth digit of the number 2.
+
+The number 2 is the tenth digit of the number 5.
+
+The number 5 is the eleventh digit of the number 2.
+
+The number 2 is the eleventh digit of the number 5.
+
+The number 5 is the twelfth digit of the number 2.
+
+The number 2 is the twelfth digit of the number 5.
+
+The number 5 is the thirteenth digit of the",5,False
+base,sd_mul,Mul_sd,2*6,12,Solve this whole-number arithmetic problem: 2*6=?,"
+
+Solution:
+
+The number 2 is the first digit of the number 6.
+
+The number 6 is the second digit of the number 2.
+
+The number 2 is the third digit of the number 6.
+
+The number 6 is the fourth digit of the number 2.
+
+The number 2 is the fifth digit of the number 6.
+
+The number 2 is the sixth digit of the number 6.
+
+The number 2 is the seventh digit of the number 6.
+
+The number 2 is the eighth digit of the number 6.
+
+The number 2 is the ninth digit of the number 6.
+
+The number 2 is the tenth digit of the number 6.
+
+The number 2 is the eleventh digit of the number 6.
+
+The number 2 is the twelfth digit of the number 6.
+
+The number 2 is the thirteenth digit of the number 6.
+
+The number 2 is the fourteenth digit of the number 6.
+
+The number 2 is the fifteenth digit of the number 6.
+
+The number 2 is the sixteenth digit of the",2,False
+base,sd_mul,Mul_sd,2*7,14,Solve this whole-number arithmetic problem: 2*7=?,"
+
+Solution:
+
+The number 2 is the first digit of the number 7.
+
+The number 7 is the second digit of the number 2.
+
+The number 2 is the third digit of the number 7.
+
+The number 7 is the fourth digit of the number 2.
+
+The number 2 is the fifth digit of the number 7.
+
+The number 7 is the sixth digit of the number 2.
+
+The number 2 is the seventh digit of the number 7.
+
+The number 7 is the eighth digit of the number 2.
+
+The number 2 is the ninth digit of the number 7.
+
+The number 7 is the tenth digit of the number 2.
+
+The number 2 is the eleventh digit of the number 7.
+
+The number 7 is the twelfth digit of the number 2.
+
+The number 7 is the thirteenth digit of the number 2.
+
+The number 7 is the fourteenth digit of the number 2.
+
+The number 7 is the fifteenth digit of the number 2.
+
+The number 7 is the sixteenth digit of the",7,False
+base,sd_mul,Mul_sd,2*8,16,Solve this whole-number arithmetic problem: 2*8=?,"
+
+Solution:
+
+The number 2 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2",2,False
+base,sd_mul,Mul_sd,2*9,18,Solve this whole-number arithmetic problem: 2*9=?,"
+
+Solution:
+
+The number 2 is the product of 2 and 9.
+
+The number 9 is the product of 9 and 2.
+
+The number 2*9=24.
+
+The number 9*2=18.
+
+The number 2*9*18=568.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10,000,000.
+
+The number 2*9*18*568=10",10,False
+base,sd_mul,Mul_sd,3*2,6,Solve this whole-number arithmetic problem: 3*2=?,"
+
+Solution:
+
+The number 3 is a multiple of 2.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2=6.
+
+Therefore, 3*2",2,False
+base,sd_mul,Mul_sd,3*3,9,Solve this whole-number arithmetic problem: 3*3=?,"
+
+Solution:
+
+The number 3 is a multiple of 3.
+
+Therefore, 3*3=3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore, 3*3=9.
+
+Therefore,",9,True
+base,sd_mul,Mul_sd,3*4,12,Solve this whole-number arithmetic problem: 3*4=?,"
+
+Solution:
+
+The number 3 is the first digit of the number 4.
+
+The number 4 is the second digit of the number 3.
+
+The number 3 is the third digit of the number 4.
+
+The number 4 is the fourth digit of the number 3.
+
+The number 3 is the fifth digit of the number 4.
+
+The number 4 is the sixth digit of the number 3.
+
+The number 3 is the seventh digit of the number 4.
+
+The number 4 is the eighth digit of the number 3.
+
+The number 4 is the ninth digit of the number 3.
+
+The number 4 is the tenth digit of the number 3.
+
+The number 4 is the eleventh digit of the number 3.
+
+The number 4 is the twelfth digit of the number 3.
+
+The number 4 is the thirteenth digit of the number 3.
+
+The number 4 is the fourteenth digit of the number 3.
+
+The number 4 is the fifteenth digit of the number 3.
+
+The number 4 is the sixteenth digit of the",4,False
+base,sd_mul,Mul_sd,3*5,15,Solve this whole-number arithmetic problem: 3*5=?,"
+
+Solution:
+
+The number 3 is the first number in the sequence.
+
+The number 5 is the second number in the sequence.
+
+The number 3*5=15 is the third number in the sequence.
+
+The number 3*5*5=125 is the fourth number in the sequence.
+
+The number 3*5*5*5=1250 is the fifth number in the sequence.
+
+The number 3*5*5*5*5=12500 is the sixth number in the sequence.
+
+The number 3*5*5*5*5*5=125000 is the seventh number in the sequence.
+
+The number 3*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*5*",5,False
+base,sd_mul,Mul_sd,3*6,18,Solve this whole-number arithmetic problem: 3*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 3*6.
+
+Step 2:
+
+We have to find the value of 3*6.
+
+Step 3:
+
+We have to find the value of 3*6.
+
+Step 4:
+
+We have to find the value of 3*6.
+
+Step 5:
+
+We have to find the value of 3*6.
+
+Step 6:
+
+We have to find the value of 3*6.
+
+Step 7:
+
+We have to find the value of 3*6.
+
+Step 8:
+
+We have to find the value of 3*6.
+
+Step 9:
+
+We have to find the value of 3*6.
+
+Step 10:
+
+We have to find the value of 3*6.
+
+Step 11:
+
+We have to find the value of 3*6.
+
+Step 12:
+
+We have to find the value of 3*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,3*7,21,Solve this whole-number arithmetic problem: 3*7=?,"
+
+Solution:
+
+The number 3 is the first digit of the number 7.
+
+The number 7 is the second digit of the number 3.
+
+The number 3 is the third digit of the number 7.
+
+The number 7 is the fourth digit of the number 3.
+
+The number 3 is the fifth digit of the number 7.
+
+The number 7 is the sixth digit of the number 3.
+
+The number 3 is the seventh digit of the number 7.
+
+The number 7 is the eighth digit of the number 3.
+
+The number 3 is the ninth digit of the number 7.
+
+The number 7 is the tenth digit of the number 3.
+
+The number 3 is the eleventh digit of the number 7.
+
+The number 7 is the twelfth digit of the number 3.
+
+The number 7 is the thirteenth digit of the number 3.
+
+The number 7 is the fourteenth digit of the number 3.
+
+The number 7 is the fifteenth digit of the number 3.
+
+The number 7 is the sixteenth digit of the",7,False
+base,sd_mul,Mul_sd,3*8,24,Solve this whole-number arithmetic problem: 3*8=?,"
+
+Solution:
+
+The number 3 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 3.
+
+The number 3 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 1.
+
+The number 3 is the product of 2 and 3.
+
+The number 8 is the product of 2 and 4.
+
+The number 8 is the product of 2 and 5.
+
+The number 8 is the product of 2 and 6.
+
+The number 8 is the product of 2 and 7.
+
+The number 8 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 9.
+
+The number 8 is the product of 2 and 10.
+
+The number 8 is the product of 2 and 11.
+
+The number 8 is the product of 2 and 12.
+
+The number 8 is the product of 2 and 13.
+
+The number 8 is the",8,False
+base,sd_mul,Mul_sd,3*9,27,Solve this whole-number arithmetic problem: 3*9=?,"
+
+Solution:
+
+The number 3 is the first digit of the number 9.
+
+The number 9 is the second digit of the number 3.
+
+The number 3 is the third digit of the number 9.
+
+The number 9 is the fourth digit of the number 3.
+
+The number 3 is the fifth digit of the number 9.
+
+The number 9 is the sixth digit of the number 3.
+
+The number 3 is the seventh digit of the number 9.
+
+The number 9 is the eighth digit of the number 3.
+
+The number 3 is the ninth digit of the number 9.
+
+The number 9 is the tenth digit of the number 3.
+
+The number 3 is the tenth digit of the number 9.
+
+The number 9 is the eleventh digit of the number 3.
+
+The number 3 is the eleventh digit of the number 9.
+
+The number 9 is the twelfth digit of the number 3.
+
+The number 3 is the twelfth digit of the number 9.
+
+The number 9 is the thirteenth digit of the",9,False
+base,sd_mul,Mul_sd,4*2,8,Solve this whole-number arithmetic problem: 4*2=?,"
+
+Solution:
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*2=4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore, 4*2=8.
+
+Therefore,",8,True
+base,sd_mul,Mul_sd,4*3,12,Solve this whole-number arithmetic problem: 4*3=?,"
+
+Solution:
+
+The number 4 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3 and 3.
+
+The number 3 is the product of 3",3,False
+base,sd_mul,Mul_sd,4*4,16,Solve this whole-number arithmetic problem: 4*4=?,"
+
+Solution:
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*4=4*2=16.
+
+The number 4 is a multiple of 2.
+
+Therefore, 4*",4,False
+base,sd_mul,Mul_sd,4*5,20,Solve this whole-number arithmetic problem: 4*5=?,"
+
+Solution:
+
+The number 4 is the product of 2 and 5.
+
+The number 5 is the product of 2 and 4.
+
+The number 4*5=20.
+
+The number 5*4=20.
+
+The number 20 is the product of 2 and 4.
+
+The number 20 is the product of 2 and 4.
+
+The number 20*4=80.
+
+The number 80 is the product of 2 and 4.
+
+The number 80*4=400.
+
+The number 400 is the product of 2 and 4.
+
+The number 400*4=1600.
+
+The number 1600 is the product of 2 and 4.
+
+The number 1600*4=6400.
+
+The number 6400 is the product of 2 and 4.
+
+The number 6400*4=12800.
+
+The number 12800 is",12800,False
+base,sd_mul,Mul_sd,4*6,24,Solve this whole-number arithmetic problem: 4*6=?,"
+
+Solution:
+
+We have to find the value of 4*6.
+
+We know that 4*6=12.
+
+So, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=12.
+
+Therefore, 4*6=",6,False
+base,sd_mul,Mul_sd,4*7,28,Solve this whole-number arithmetic problem: 4*7=?,"
+
+Solution:
+
+The number 4 is the product of 2 and 7.
+
+The number 7 is the product of 2 and 4.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 7 is the product of 2",2,False
+base,sd_mul,Mul_sd,4*8,32,Solve this whole-number arithmetic problem: 4*8=?,"
+
+Solution:
+
+The number 4 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 4.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2 and 2.
+
+The number 4 is the product of 2 and 2.
+
+The number 8 is the product of 2",2,False
+base,sd_mul,Mul_sd,4*9,36,Solve this whole-number arithmetic problem: 4*9=?,"
+
+Solution:
+
+We have to find the value of 4*9.
+
+We know that 4*9=16.
+
+So, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=16.
+
+Therefore, 4*9=",9,False
+base,sd_mul,Mul_sd,5*2,10,Solve this whole-number arithmetic problem: 5*2=?,"
+
+Solution:
+
+The number 5 is a multiple of 2.
+
+So, 5*2=10.
+
+The number 10 is a multiple of 2.
+
+So, 10*2=20.
+
+The number 20 is a multiple of 2.
+
+So, 20*2=40.
+
+The number 40 is a multiple of 2.
+
+So, 40*2=80.
+
+The number 80 is a multiple of 2.
+
+So, 80*2=160.
+
+The number 160 is a multiple of 2.
+
+So, 160*2=240.
+
+The number 240 is a multiple of 2.
+
+So, 240*2=480.
+
+The number 480 is a multiple of 2.
+
+So, 480*2=760.
+
+The number 760 is a multiple of 2.
+
+So, 760*2=15",15,False
+base,sd_mul,Mul_sd,5*3,15,Solve this whole-number arithmetic problem: 5*3=?,"
+
+Solution:
+
+The number 5 is a multiple of 3.
+
+So, 5*3=15.
+
+The number 15 is a multiple of 3.
+
+So, 15*3=45.
+
+The number 45 is a multiple of 3.
+
+So, 45*3=187.
+
+The number 187 is a multiple of 3.
+
+So, 187*3=365.
+
+The number 365 is a multiple of 3.
+
+So, 365*3=1000.
+
+The number 1000 is a multiple of 3.
+
+So, 1000*3=3660.
+
+The number 3660 is a multiple of 3.
+
+So, 3660*3=10000.
+
+The number 10000 is a multiple of 3.
+
+So, 10000*3=36600.
+
+The number 366",366,False
+base,sd_mul,Mul_sd,5*4,20,Solve this whole-number arithmetic problem: 5*4=?,"
+
+Solution:
+
+The number 5 is a multiple of 4.
+
+So, 5*4=20.
+
+The number 4 is a multiple of 5.
+
+So, 4*5=20.
+
+The number 20 is a multiple of 5.
+
+So, 20*5=100.
+
+The number 100 is a multiple of 5.
+
+So, 100*5=500.
+
+The number 500 is a multiple of 5.
+
+So, 500*5=2500.
+
+The number 2500 is a multiple of 5.
+
+So, 2500*5=10000.
+
+The number 10000 is a multiple of 5.
+
+So, 10000*5=50000.
+
+The number 50000 is a multiple of 5.
+
+So, 50000*5=250000.
+
+The number 2",2,False
+base,sd_mul,Mul_sd,5*5,25,Solve this whole-number arithmetic problem: 5*5=?,"
+
+Solution:
+
+The number 5 is a multiple of 5.
+
+So, 5*5=25.
+
+The number 25 is a multiple of 5.
+
+So, 25*5=100.
+
+The number 100 is a multiple of 5.
+
+So, 100*5=500.
+
+The number 500 is a multiple of 5.
+
+So, 500*5=2500.
+
+The number 2500 is a multiple of 5.
+
+So, 2500*5=7500.
+
+The number 7500 is a multiple of 5.
+
+So, 7500*5=50000.
+
+The number 50000 is a multiple of 5.
+
+So, 50000*5=250000.
+
+The number 250000 is a multiple of 5.
+
+So, 250000*5=75",75,False
+base,sd_mul,Mul_sd,5*6,30,Solve this whole-number arithmetic problem: 5*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 5*6.
+
+Step 2:
+
+We have to find the value of 5*6.
+
+Step 3:
+
+We have to find the value of 5*6.
+
+Step 4:
+
+We have to find the value of 5*6.
+
+Step 5:
+
+We have to find the value of 5*6.
+
+Step 6:
+
+We have to find the value of 5*6.
+
+Step 7:
+
+We have to find the value of 5*6.
+
+Step 8:
+
+We have to find the value of 5*6.
+
+Step 9:
+
+We have to find the value of 5*6.
+
+Step 10:
+
+We have to find the value of 5*6.
+
+Step 11:
+
+We have to find the value of 5*6.
+
+Step 12:
+
+We have to find the value of 5*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,5*7,35,Solve this whole-number arithmetic problem: 5*7=?,"
+
+Solution:
+
+The number 5 is a multiple of 7.
+
+So, 5*7=35.
+
+The number 35 is a multiple of 7.
+
+So, 35*7=270.
+
+The number 270 is a multiple of 7.
+
+So, 270*7=2140.
+
+The number 2140 is a multiple of 7.
+
+So, 2140*7=24300.
+
+The number 24300 is a multiple of 7.
+
+So, 24300*7=287000.
+
+The number 287000 is a multiple of 7.
+
+So, 287000*7=3550000.
+
+The number 3550000 is a multiple of 7.
+
+So, 3550000*7=412500000.
+
+The number 41250000",41250000,False
+base,sd_mul,Mul_sd,5*8,40,Solve this whole-number arithmetic problem: 5*8=?,"
+
+Solution:
+
+The number 5 is a multiple of 8.
+
+So, 5*8=40.
+
+The number 8 is a multiple of 5.
+
+So, 8*5=40.
+
+The number 40 is a multiple of 5.
+
+So, 40*5=200.
+
+The number 200 is a multiple of 5.
+
+So, 200*5=1000.
+
+The number 1000 is a multiple of 5.
+
+So, 1000*5=5000.
+
+The number 5000 is a multiple of 5.
+
+So, 5000*5=25000.
+
+The number 25000 is a multiple of 5.
+
+So, 25000*5=100000.
+
+The number 100000 is a multiple of 5.
+
+So, 100000*5=500000.",500000,False
+base,sd_mul,Mul_sd,5*9,45,Solve this whole-number arithmetic problem: 5*9=?,"
+
+Solution:
+
+The number 5 is the first digit of the number 9.
+
+The number 9 is the second digit of the number 5.
+
+The number 5 is the third digit of the number 9.
+
+The number 9 is the fourth digit of the number 5.
+
+The number 5 is the fifth digit of the number 9.
+
+The number 5 is the sixth digit of the number 9.
+
+The number 5 is the seventh digit of the number 9.
+
+The number 5 is the eighth digit of the number 9.
+
+The number 5 is the ninth digit of the number 9.
+
+The number 5 is the tenth digit of the number 9.
+
+The number 5 is the tenth digit of the number 9.
+
+The number 5 is the eleventh digit of the number 9.
+
+The number 5 is the eleventh digit of the number 9.
+
+The number 5 is the twelfth digit of the number 9.
+
+The number 5 is the twelfth digit of the number 9.
+
+The number 5 is the thirteenth digit of the",5,False
+base,sd_mul,Mul_sd,6*2,12,Solve this whole-number arithmetic problem: 6*2=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6*2.
+
+Step 2:
+
+We have to find the value of 6*2.
+
+Step 3:
+
+We have to find the value of 6*2.
+
+Step 4:
+
+We have to find the value of 6*2.
+
+Step 5:
+
+We have to find the value of 6*2.
+
+Step 6:
+
+We have to find the value of 6*2.
+
+Step 7:
+
+We have to find the value of 6*2.
+
+Step 8:
+
+We have to find the value of 6*2.
+
+Step 9:
+
+We have to find the value of 6*2.
+
+Step 10:
+
+We have to find the value of 6*2.
+
+Step 11:
+
+We have to find the value of 6*2.
+
+Step 12:
+
+We have to find the value of 6*2.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,6*3,18,Solve this whole-number arithmetic problem: 6*3=?,"
+
+Solution:
+
+Step 1:
+
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
+
+Step 6:
+
+Step 7:
+
+Step 8:
+
+Step 9:
+
+Step 10:
+
+Step 11:
+
+Step 12:
+
+Step 13:
+
+Step 14:
+
+Step 15:
+
+Step 16:
+
+Step 17:
+
+Step 18:
+
+Step 19:
+
+Step 20:
+
+Step 21:
+
+Step 22:
+
+Step 23:
+
+Step 24:
+
+Step 25:
+
+Step 26:
+
+Step 27:
+
+Step 28:
+
+Step 29:
+
+Step 30:
+
+Step 31:
+
+Step 32:
+
+Step 33:
+
+Step 34:
+
+Step 35:
+
+Step 36:
+
+Step 37:
+
+",37,False
+base,sd_mul,Mul_sd,6*4,24,Solve this whole-number arithmetic problem: 6*4=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6*4.
+
+Step 2:
+
+We have to find the value of 6*4.
+
+Step 3:
+
+We have to find the value of 6*4.
+
+Step 4:
+
+We have to find the value of 6*4.
+
+Step 5:
+
+We have to find the value of 6*4.
+
+Step 6:
+
+We have to find the value of 6*4.
+
+Step 7:
+
+We have to find the value of 6*4.
+
+Step 8:
+
+We have to find the value of 6*4.
+
+Step 9:
+
+We have to find the value of 6*4.
+
+Step 10:
+
+We have to find the value of 6*4.
+
+Step 11:
+
+We have to find the value of 6*4.
+
+Step 12:
+
+We have to find the value of 6*4.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,6*5,30,Solve this whole-number arithmetic problem: 6*5=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6*5.
+
+Step 2:
+
+We have to find the value of 6*5.
+
+Step 3:
+
+We have to find the value of 6*5.
+
+Step 4:
+
+We have to find the value of 6*5.
+
+Step 5:
+
+We have to find the value of 6*5.
+
+Step 6:
+
+We have to find the value of 6*5.
+
+Step 7:
+
+We have to find the value of 6*5.
+
+Step 8:
+
+We have to find the value of 6*5.
+
+Step 9:
+
+We have to find the value of 6*5.
+
+Step 10:
+
+We have to find the value of 6*5.
+
+Step 11:
+
+We have to find the value of 6*5.
+
+Step 12:
+
+We have to find the value of 6*5.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,6*6,36,Solve this whole-number arithmetic problem: 6*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 6*6.
+
+Step 2:
+
+We have to find the value of 6*6.
+
+Step 3:
+
+We have to find the value of 6*6.
+
+Step 4:
+
+We have to find the value of 6*6.
+
+Step 5:
+
+We have to find the value of 6*6.
+
+Step 6:
+
+We have to find the value of 6*6.
+
+Step 7:
+
+We have to find the value of 6*6.
+
+Step 8:
+
+We have to find the value of 6*6.
+
+Step 9:
+
+We have to find the value of 6*6.
+
+Step 10:
+
+We have to find the value of 6*6.
+
+Step 11:
+
+We have to find the value of 6*6.
+
+Step 12:
+
+We have to find the value of 6*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,6*7,42,Solve this whole-number arithmetic problem: 6*7=?,"
+
+Solution:
+
+Step 1:
+
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
+
+Step 6:
+
+Step 7:
+
+Step 8:
+
+Step 9:
+
+Step 10:
+
+Step 11:
+
+Step 12:
+
+Step 13:
+
+Step 14:
+
+Step 15:
+
+Step 16:
+
+Step 17:
+
+Step 18:
+
+Step 19:
+
+Step 20:
+
+Step 21:
+
+Step 22:
+
+Step 23:
+
+Step 24:
+
+Step 25:
+
+Step 26:
+
+Step 27:
+
+Step 28:
+
+Step 29:
+
+Step 30:
+
+Step 31:
+
+Step 32:
+
+Step 33:
+
+Step 34:
+
+Step 35:
+
+Step 36:
+
+Step 37:
+
+",37,False
+base,sd_mul,Mul_sd,6*8,48,Solve this whole-number arithmetic problem: 6*8=?,"
+
+Solution:
+
+Step 1:
+
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
+
+Step 6:
+
+Step 7:
+
+Step 8:
+
+Step 9:
+
+Step 10:
+
+Step 11:
+
+Step 12:
+
+Step 13:
+
+Step 14:
+
+Step 15:
+
+Step 16:
+
+Step 17:
+
+Step 18:
+
+Step 19:
+
+Step 20:
+
+Step 21:
+
+Step 22:
+
+Step 23:
+
+Step 24:
+
+Step 25:
+
+Step 26:
+
+Step 27:
+
+Step 28:
+
+Step 29:
+
+Step 30:
+
+Step 31:
+
+Step 32:
+
+Step 33:
+
+Step 34:
+
+Step 35:
+
+Step 36:
+
+Step 37:
+
+",37,False
+base,sd_mul,Mul_sd,6*9,54,Solve this whole-number arithmetic problem: 6*9=?,"
+
+Solution:
+
+Step 1:
+
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
+
+Step 6:
+
+Step 7:
+
+Step 8:
+
+Step 9:
+
+Step 10:
+
+Step 11:
+
+Step 12:
+
+Step 13:
+
+Step 14:
+
+Step 15:
+
+Step 16:
+
+Step 17:
+
+Step 18:
+
+Step 19:
+
+Step 20:
+
+Step 21:
+
+Step 22:
+
+Step 23:
+
+Step 24:
+
+Step 25:
+
+Step 26:
+
+Step 27:
+
+Step 28:
+
+Step 29:
+
+Step 30:
+
+Step 31:
+
+Step 32:
+
+Step 33:
+
+Step 34:
+
+Step 35:
+
+Step 36:
+
+Step 37:
+
+",37,False
+base,sd_mul,Mul_sd,7*2,14,Solve this whole-number arithmetic problem: 7*2=?,"
+
+Solution:
+
+The number 7 is a multiple of 2.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14.
+
+Therefore, 7*2=14",14,True
+base,sd_mul,Mul_sd,7*3,21,Solve this whole-number arithmetic problem: 7*3=?,"
+
+Solution:
+
+The number 7 is a multiple of 3.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21.
+
+Therefore, 7*3=21",21,True
+base,sd_mul,Mul_sd,7*4,28,Solve this whole-number arithmetic problem: 7*4=?,"
+
+Solution:
+
+The number 7 is a multiple of 4.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24.
+
+Therefore, 7*4=24",24,False
+base,sd_mul,Mul_sd,7*5,35,Solve this whole-number arithmetic problem: 7*5=?,"
+
+Solution:
+
+The number 7 is a multiple of 5.
+
+So, 7*5=35.
+
+The number 35 is a multiple of 5.
+
+So, 35*5=150.
+
+The number 150 is a multiple of 5.
+
+So, 150*5=750.
+
+The number 750 is a multiple of 5.
+
+So, 750*5=5000.
+
+The number 5000 is a multiple of 5.
+
+So, 5000*5=25000.
+
+The number 25000 is a multiple of 5.
+
+So, 25000*5=100000.
+
+The number 100000 is a multiple of 5.
+
+So, 100000*5=500000.
+
+The number 500000 is a multiple of 5.
+
+So, 50000",50000,False
+base,sd_mul,Mul_sd,7*6,42,Solve this whole-number arithmetic problem: 7*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 7*6.
+
+Step 2:
+
+We have to find the value of 7*6.
+
+Step 3:
+
+We have to find the value of 7*6.
+
+Step 4:
+
+We have to find the value of 7*6.
+
+Step 5:
+
+We have to find the value of 7*6.
+
+Step 6:
+
+We have to find the value of 7*6.
+
+Step 7:
+
+We have to find the value of 7*6.
+
+Step 8:
+
+We have to find the value of 7*6.
+
+Step 9:
+
+We have to find the value of 7*6.
+
+Step 10:
+
+We have to find the value of 7*6.
+
+Step 11:
+
+We have to find the value of 7*6.
+
+Step 12:
+
+We have to find the value of 7*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,7*7,49,Solve this whole-number arithmetic problem: 7*7=?,"
+
+Solution:
+
+The number 7 is a multiple of 10.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=49.
+
+Therefore, 7*7=4",4,False
+base,sd_mul,Mul_sd,7*8,56,Solve this whole-number arithmetic problem: 7*8=?,"
+
+Solution:
+
+The number 7 is the product of 2 and 8.
+
+The number 8 is the product of 2 and 7.
+
+The number 7*8=56.
+
+The number 56 is the product of 2 and 7.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 7.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number 56 is the product of 2 and 8.
+
+The number",8,False
+base,sd_mul,Mul_sd,7*9,63,Solve this whole-number arithmetic problem: 7*9=?,"
+
+Solution:
+
+The number 7 is a multiple of 9.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63.
+
+Therefore, 7*9=63",63,True
+base,sd_mul,Mul_sd,8*2,16,Solve this whole-number arithmetic problem: 8*2=?,"
+
+Solution:
+
+The number 8 is a multiple of 2.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16.
+
+Therefore, 8*2=16",16,True
+base,sd_mul,Mul_sd,8*3,24,Solve this whole-number arithmetic problem: 8*3=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 8*3.
+
+Step 2:
+
+We have to find the value of 8*3.
+
+Step 3:
+
+We have to find the value of 8*3.
+
+Step 4:
+
+We have to find the value of 8*3.
+
+Step 5:
+
+We have to find the value of 8*3.
+
+Step 6:
+
+We have to find the value of 8*3.
+
+Step 7:
+
+We have to find the value of 8*3.
+
+Step 8:
+
+We have to find the value of 8*3.
+
+Step 9:
+
+We have to find the value of 8*3.
+
+Step 10:
+
+We have to find the value of 8*3.
+
+Step 11:
+
+We have to find the value of 8*3.
+
+Step 12:
+
+We have to find the value of 8*3.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,8*4,32,Solve this whole-number arithmetic problem: 8*4=?,"
+
+Solution:
+
+The number 8 is a multiple of 4.
+
+Therefore, 8*4=40.
+
+The number 40 is a multiple of 8.
+
+Therefore, 40*8=320.
+
+The number 320 is a multiple of 8.
+
+Therefore, 320*8=2760.
+
+The number 2760 is a multiple of 8.
+
+Therefore, 2760*8=22520.
+
+The number 22520 is a multiple of 8.
+
+Therefore, 22520*8=200000.
+
+The number 200000 is a multiple of 8.
+
+Therefore, 200000*8=1600000.
+
+The number 1600000 is a multiple of 8.
+
+Therefore, 1600000*8=12000000.
+
+The number 12000000 is",12000000,False
+base,sd_mul,Mul_sd,8*5,40,Solve this whole-number arithmetic problem: 8*5=?,"
+
+Solution:
+
+The number 8 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5 and 5.
+
+The number 5 is the product of 5",5,False
+base,sd_mul,Mul_sd,8*6,48,Solve this whole-number arithmetic problem: 8*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 8*6.
+
+Step 2:
+
+We have to find the value of 8*6.
+
+Step 3:
+
+We have to find the value of 8*6.
+
+Step 4:
+
+We have to find the value of 8*6.
+
+Step 5:
+
+We have to find the value of 8*6.
+
+Step 6:
+
+We have to find the value of 8*6.
+
+Step 7:
+
+We have to find the value of 8*6.
+
+Step 8:
+
+We have to find the value of 8*6.
+
+Step 9:
+
+We have to find the value of 8*6.
+
+Step 10:
+
+We have to find the value of 8*6.
+
+Step 11:
+
+We have to find the value of 8*6.
+
+Step 12:
+
+We have to find the value of 8*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,8*7,56,Solve this whole-number arithmetic problem: 8*7=?,"
+
+Solution:
+
+The number 8 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 8 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7 and 8.
+
+The number 7 is the product of 7",7,False
+base,sd_mul,Mul_sd,8*8,64,Solve this whole-number arithmetic problem: 8*8=?,"
+
+Solution:
+
+The number 8 is a multiple of 16.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=64.
+
+Therefore, 8*8=6",6,False
+base,sd_mul,Mul_sd,8*9,72,Solve this whole-number arithmetic problem: 8*9=?,"
+
+Solution:
+
+Step 1:
+
+We know that 8*9=17
+
+Step 2:
+
+We know that 8*9=17
+
+Step 3:
+
+We know that 8*9=17
+
+Step 4:
+
+We know that 8*9=17
+
+Step 5:
+
+We know that 8*9=17
+
+Step 6:
+
+We know that 8*9=17
+
+Step 7:
+
+We know that 8*9=17
+
+Step 8:
+
+We know that 8*9=17
+
+Step 9:
+
+We know that 8*9=17
+
+Step 10:
+
+We know that 8*9=17
+
+Step 11:
+
+We know that 8*9=17
+
+Step 12:
+
+We know that 8*9=17
+
+Step 13:
+
+We know that 8*9=17
+
+Step 14:
+
+We know that 8",8,False
+base,sd_mul,Mul_sd,9*2,18,Solve this whole-number arithmetic problem: 9*2=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 9*2.
+
+Step 2:
+
+We have to find the value of 9*2.
+
+Step 3:
+
+We have to find the value of 9*2.
+
+Step 4:
+
+We have to find the value of 9*2.
+
+Step 5:
+
+We have to find the value of 9*2.
+
+Step 6:
+
+We have to find the value of 9*2.
+
+Step 7:
+
+We have to find the value of 9*2.
+
+Step 8:
+
+We have to find the value of 9*2.
+
+Step 9:
+
+We have to find the value of 9*2.
+
+Step 10:
+
+We have to find the value of 9*2.
+
+Step 11:
+
+We have to find the value of 9*2.
+
+Step 12:
+
+We have to find the value of 9*2.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,9*3,27,Solve this whole-number arithmetic problem: 9*3=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 9*3.
+
+Step 2:
+
+We have to find the value of 9*3.
+
+Step 3:
+
+We have to find the value of 9*3.
+
+Step 4:
+
+We have to find the value of 9*3.
+
+Step 5:
+
+We have to find the value of 9*3.
+
+Step 6:
+
+We have to find the value of 9*3.
+
+Step 7:
+
+We have to find the value of 9*3.
+
+Step 8:
+
+We have to find the value of 9*3.
+
+Step 9:
+
+We have to find the value of 9*3.
+
+Step 10:
+
+We have to find the value of 9*3.
+
+Step 11:
+
+We have to find the value of 9*3.
+
+Step 12:
+
+We have to find the value of 9*3.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,9*4,36,Solve this whole-number arithmetic problem: 9*4=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 9*4.
+
+Step 2:
+
+We have to find the value of 9*4.
+
+Step 3:
+
+We have to find the value of 9*4.
+
+Step 4:
+
+We have to find the value of 9*4.
+
+Step 5:
+
+We have to find the value of 9*4.
+
+Step 6:
+
+We have to find the value of 9*4.
+
+Step 7:
+
+We have to find the value of 9*4.
+
+Step 8:
+
+We have to find the value of 9*4.
+
+Step 9:
+
+We have to find the value of 9*4.
+
+Step 10:
+
+We have to find the value of 9*4.
+
+Step 11:
+
+We have to find the value of 9*4.
+
+Step 12:
+
+We have to find the value of 9*4.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,9*5,45,Solve this whole-number arithmetic problem: 9*5=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 2:
+
+We have to find the number of times 5 is multiplied by 9.
+
+Step 3:
+
+We have to find the number of times 5 is multiplied by 9.
+
+Step 4:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 5:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 6:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 7:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 8:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 9:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 10:
+
+We have to find the number of times 9 is multiplied by 5.
+
+Step 11:
+
+We have",11,False
+base,sd_mul,Mul_sd,9*6,54,Solve this whole-number arithmetic problem: 9*6=?,"
+
+Solution:
+
+Step 1:
+
+We have to find the value of 9*6.
+
+Step 2:
+
+We have to find the value of 9*6.
+
+Step 3:
+
+We have to find the value of 9*6.
+
+Step 4:
+
+We have to find the value of 9*6.
+
+Step 5:
+
+We have to find the value of 9*6.
+
+Step 6:
+
+We have to find the value of 9*6.
+
+Step 7:
+
+We have to find the value of 9*6.
+
+Step 8:
+
+We have to find the value of 9*6.
+
+Step 9:
+
+We have to find the value of 9*6.
+
+Step 10:
+
+We have to find the value of 9*6.
+
+Step 11:
+
+We have to find the value of 9*6.
+
+Step 12:
+
+We have to find the value of 9*6.
+
+Step 13:
+
+",13,False
+base,sd_mul,Mul_sd,9*7,63,Solve this whole-number arithmetic problem: 9*7=?,"
+
+Solution:
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7 and 9.
+
+The number 9 is the product of 7",7,False
+base,sd_mul,Mul_sd,9*8,72,Solve this whole-number arithmetic problem: 9*8=?,"
+
+Solution:
+
+The number 9 is a multiple of 8.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80.
+
+Therefore, 9*8=80",80,False
+base,sd_mul,Mul_sd,9*9,81,Solve this whole-number arithmetic problem: 9*9=?,"
+
+Solution:
+
+The number 9 is a multiple of 9.
+
+Therefore, 9*9=9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*9=81.
+
+Therefore, 9*",9,False
+distilled,sd_add,Add_sd,1+1,2,Solve this whole-number arithmetic problem: 1+1=?,"I added 1 and 1. So my answer is 2.
+### answer: 2",2,True
+distilled,sd_add,Add_sd,1+2,3,Solve this whole-number arithmetic problem: 1+2=?,"I added 1 and 2. So my answer is 3.
+### answer: 3",3,True
+distilled,sd_add,Add_sd,1+3,4,Solve this whole-number arithmetic problem: 1+3=?,"I added 1 and 3. So my answer is 4.
+### answer: 4",4,True
+distilled,sd_add,Add_sd,1+4,5,Solve this whole-number arithmetic problem: 1+4=?,"I added 1 and 4. So my answer is 5.
+### answer: 5",5,True
+distilled,sd_add,Add_sd,1+5,6,Solve this whole-number arithmetic problem: 1+5=?,"I added 1 and 5. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_add,Add_sd,1+6,7,Solve this whole-number arithmetic problem: 1+6=?,"I added 1 and 6. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,1+7,8,Solve this whole-number arithmetic problem: 1+7=?,"I added 1 and 7. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,1+8,9,Solve this whole-number arithmetic problem: 1+8=?,"I added 1 and 8. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,1+9,10,Solve this whole-number arithmetic problem: 1+9=?,"I added 1 and 9. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,2+1,3,Solve this whole-number arithmetic problem: 2+1=?,"I added 2 and 1. So my answer is 3.
+### answer: 3",3,True
+distilled,sd_add,Add_sd,2+2,4,Solve this whole-number arithmetic problem: 2+2=?,"I added 2 and 2. So my answer is 4.
+### answer: 4",4,True
+distilled,sd_add,Add_sd,2+3,5,Solve this whole-number arithmetic problem: 2+3=?,"I added 2 and 3. So my answer is 5.
+### answer: 5",5,True
+distilled,sd_add,Add_sd,2+4,6,Solve this whole-number arithmetic problem: 2+4=?,"I added 2 and 4. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_add,Add_sd,2+5,7,Solve this whole-number arithmetic problem: 2+5=?,"I added 2 and 5. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,2+6,8,Solve this whole-number arithmetic problem: 2+6=?,"I added 2 and 6. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,2+7,9,Solve this whole-number arithmetic problem: 2+7=?,"I added 2 and 7. I counted up by repeated addition. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,2+8,10,Solve this whole-number arithmetic problem: 2+8=?,"I added 2 and 8. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,2+9,11,Solve this whole-number arithmetic problem: 2+9=?,"I added 2 and 9. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,3+1,4,Solve this whole-number arithmetic problem: 3+1=?,"I added 3 and 1. So my answer is 4.
+### answer: 4",4,True
+distilled,sd_add,Add_sd,3+2,5,Solve this whole-number arithmetic problem: 3+2=?,"I added 3 and 2. So my answer is 5.
+### answer: 5",5,True
+distilled,sd_add,Add_sd,3+3,6,Solve this whole-number arithmetic problem: 3+3=?,"I added 3 and 3. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_add,Add_sd,3+4,7,Solve this whole-number arithmetic problem: 3+4=?,"I added 3 and 4. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,3+5,8,Solve this whole-number arithmetic problem: 3+5=?,"I added 3 and 5. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,3+6,9,Solve this whole-number arithmetic problem: 3+6=?,"I added 3 and 6. I counted up by repeated addition. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,3+7,10,Solve this whole-number arithmetic problem: 3+7=?,"I added 3 and 7. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,3+8,11,Solve this whole-number arithmetic problem: 3+8=?,"I added 3 and 8. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,3+9,12,Solve this whole-number arithmetic problem: 3+9=?,"I added 3 and 9. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,4+1,5,Solve this whole-number arithmetic problem: 4+1=?,"I added 4 and 1. So my answer is 5.
+### answer: 5",5,True
+distilled,sd_add,Add_sd,4+2,6,Solve this whole-number arithmetic problem: 4+2=?,"I added 4 and 2. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_add,Add_sd,4+3,7,Solve this whole-number arithmetic problem: 4+3=?,"I added 4 and 3. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,4+4,8,Solve this whole-number arithmetic problem: 4+4=?,"I added 4 and 4. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,4+5,9,Solve this whole-number arithmetic problem: 4+5=?,"I added 4 and 5. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,4+6,10,Solve this whole-number arithmetic problem: 4+6=?,"I added 4 and 6. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,4+7,11,Solve this whole-number arithmetic problem: 4+7=?,"I added 4 and 7. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,4+8,12,Solve this whole-number arithmetic problem: 4+8=?,"I added 4 and 8. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,4+9,13,Solve this whole-number arithmetic problem: 4+9=?,"I added 4 and 9. I counted up by repeated addition. So my answer is 13.
+### answer: 13",13,True
+distilled,sd_add,Add_sd,5+1,6,Solve this whole-number arithmetic problem: 5+1=?,"I added 5 and 1. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_add,Add_sd,5+2,7,Solve this whole-number arithmetic problem: 5+2=?,"I added 5 and 2. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,5+3,8,Solve this whole-number arithmetic problem: 5+3=?,"I added 5 and 3. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,5+4,9,Solve this whole-number arithmetic problem: 5+4=?,"I added 5 and 4. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,5+5,10,Solve this whole-number arithmetic problem: 5+5=?,"I added 5 and 5. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,5+6,11,Solve this whole-number arithmetic problem: 5+6=?,"I added 5 and 6. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,5+7,12,Solve this whole-number arithmetic problem: 5+7=?,"I added 5 and 7. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,5+8,13,Solve this whole-number arithmetic problem: 5+8=?,"I added 5 and 8. I counted up by repeated addition. So my answer is 13.
+### answer: 13",13,True
+distilled,sd_add,Add_sd,5+9,14,Solve this whole-number arithmetic problem: 5+9=?,"I added 5 and 9. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_add,Add_sd,6+1,7,Solve this whole-number arithmetic problem: 6+1=?,"I added 6 and 1. So my answer is 7.
+### answer: 7",7,True
+distilled,sd_add,Add_sd,6+2,8,Solve this whole-number arithmetic problem: 6+2=?,"I added 6 and 2. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,6+3,9,Solve this whole-number arithmetic problem: 6+3=?,"I added 6 and 3. I counted up by repeated addition. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,6+4,10,Solve this whole-number arithmetic problem: 6+4=?,"I added 6 and 4. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,6+5,11,Solve this whole-number arithmetic problem: 6+5=?,"I added 6 and 5. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,6+6,12,Solve this whole-number arithmetic problem: 6+6=?,"I added 6 and 6. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,6+7,13,Solve this whole-number arithmetic problem: 6+7=?,"I added 6 and 7. I lined the numbers up vertically and worked column by column. My work was: 6 plus 7 is 13; 7 plus 0 is 7; 7 plus 1 is 8. I had a carry to handle along the way. So my answer is 83.
+### answer: 83",83,False
+distilled,sd_add,Add_sd,6+8,14,Solve this whole-number arithmetic problem: 6+8=?,"I added 6 and 8. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_add,Add_sd,6+9,15,Solve this whole-number arithmetic problem: 6+9=?,"I added 6 and 9. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,False
+distilled,sd_add,Add_sd,7+1,8,Solve this whole-number arithmetic problem: 7+1=?,"I added 7 and 1. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_add,Add_sd,7+2,9,Solve this whole-number arithmetic problem: 7+2=?,"I added 7 and 2. I counted up by repeated addition. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,7+3,10,Solve this whole-number arithmetic problem: 7+3=?,"I added 7 and 3. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,7+4,11,Solve this whole-number arithmetic problem: 7+4=?,"I added 7 and 4. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,7+5,12,Solve this whole-number arithmetic problem: 7+5=?,"I added 7 and 5. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,7+6,13,Solve this whole-number arithmetic problem: 7+6=?,"I added 7 and 6. I counted up by repeated addition. So my answer is 13.
+### answer: 13",13,True
+distilled,sd_add,Add_sd,7+7,14,Solve this whole-number arithmetic problem: 7+7=?,"I added 7 and 7. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_add,Add_sd,7+8,15,Solve this whole-number arithmetic problem: 7+8=?,"I added 7 and 8. I lined the numbers up vertically and worked column by column. My work was: 7 plus 8 is 15; 8 plus 0 is 8; 8 plus 1 is 9. I had a carry to handle along the way. So my answer is 95.
+### answer: 95",95,False
+distilled,sd_add,Add_sd,7+9,16,Solve this whole-number arithmetic problem: 7+9=?,"I added 7 and 9. I counted up by repeated addition. So my answer is 16.
+### answer: 16",16,True
+distilled,sd_add,Add_sd,8+1,9,Solve this whole-number arithmetic problem: 8+1=?,"I added 8 and 1. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_add,Add_sd,8+2,10,Solve this whole-number arithmetic problem: 8+2=?,"I added 8 and 2. I counted up by repeated addition. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,8+3,11,Solve this whole-number arithmetic problem: 8+3=?,"I added 8 and 3. I counted up by repeated addition. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,8+4,12,Solve this whole-number arithmetic problem: 8+4=?,"I added 8 and 4. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,8+5,13,Solve this whole-number arithmetic problem: 8+5=?,"I added 8 and 5. I counted up by repeated addition. So my answer is 13.
+### answer: 13",13,True
+distilled,sd_add,Add_sd,8+6,14,Solve this whole-number arithmetic problem: 8+6=?,"I added 8 and 6. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_add,Add_sd,8+7,15,Solve this whole-number arithmetic problem: 8+7=?,"I added 8 and 7. I lined the numbers up vertically and worked column by column. My work was: 8 plus 7 is 15; 7 plus 0 is 7; 7 plus 1 is 8. I had a carry to handle along the way. So my answer is 85.
+### answer: 85",85,False
+distilled,sd_add,Add_sd,8+8,16,Solve this whole-number arithmetic problem: 8+8=?,"I added 8 and 8. I counted up by repeated addition. So my answer is 16.
+### answer: 16",16,True
+distilled,sd_add,Add_sd,8+9,17,Solve this whole-number arithmetic problem: 8+9=?,"I added 8 and 9. I counted up by repeated addition. So my answer is 18.
+### answer: 18",18,False
+distilled,sd_add,Add_sd,9+1,10,Solve this whole-number arithmetic problem: 9+1=?,"I added 9 and 1. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_add,Add_sd,9+2,11,Solve this whole-number arithmetic problem: 9+2=?,"I added 9 and 2. So my answer is 11.
+### answer: 11",11,True
+distilled,sd_add,Add_sd,9+3,12,Solve this whole-number arithmetic problem: 9+3=?,"I added 9 and 3. I counted up by repeated addition. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_add,Add_sd,9+4,13,Solve this whole-number arithmetic problem: 9+4=?,"I added 9 and 4. I counted up by repeated addition. So my answer is 13.
+### answer: 13",13,True
+distilled,sd_add,Add_sd,9+5,14,Solve this whole-number arithmetic problem: 9+5=?,"I added 9 and 5. I counted up by repeated addition. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_add,Add_sd,9+6,15,Solve this whole-number arithmetic problem: 9+6=?,"I added 9 and 6. I counted up by repeated addition. So my answer is 15.
+### answer: 15",15,True
+distilled,sd_add,Add_sd,9+7,16,Solve this whole-number arithmetic problem: 9+7=?,"I added 9 and 7. I lined the numbers up vertically and worked column by column. My work was: 9 plus 7 is 16; 7 plus 0 is 7; 7 plus 1 is 8. I had a carry to handle along the way. So my answer is 86.
+### answer: 86",86,False
+distilled,sd_add,Add_sd,9+8,17,Solve this whole-number arithmetic problem: 9+8=?,"I added 9 and 8. I counted up by repeated addition. So my answer is 17.
+### answer: 17",17,True
+distilled,sd_add,Add_sd,9+9,18,Solve this whole-number arithmetic problem: 9+9=?,"I added 9 and 9. I counted up by repeated addition. So my answer is 18.
+### answer: 18",18,True
+distilled,sd_mul,Mul_sd,2*2,4,Solve this whole-number arithmetic problem: 2*2=?,"I multiplied 2 by 2. So my answer is 4.
+### answer: 4",4,True
+distilled,sd_mul,Mul_sd,2*3,6,Solve this whole-number arithmetic problem: 2*3=?,"I multiplied 2 by 3. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_mul,Mul_sd,2*4,8,Solve this whole-number arithmetic problem: 2*4=?,"I multiplied 2 by 4. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_mul,Mul_sd,2*5,10,Solve this whole-number arithmetic problem: 2*5=?,"I multiplied 2 by 5. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_mul,Mul_sd,2*6,12,Solve this whole-number arithmetic problem: 2*6=?,"I multiplied 2 by 6. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_mul,Mul_sd,2*7,14,Solve this whole-number arithmetic problem: 2*7=?,"I multiplied 2 by 7. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_mul,Mul_sd,2*8,16,Solve this whole-number arithmetic problem: 2*8=?,"I multiplied 2 by 8. So my answer is 16.
+### answer: 16",16,True
+distilled,sd_mul,Mul_sd,2*9,18,Solve this whole-number arithmetic problem: 2*9=?,"I multiplied 2 by 9. So my answer is 18.
+### answer: 18",18,True
+distilled,sd_mul,Mul_sd,3*2,6,Solve this whole-number arithmetic problem: 3*2=?,"I multiplied 3 by 2. So my answer is 6.
+### answer: 6",6,True
+distilled,sd_mul,Mul_sd,3*3,9,Solve this whole-number arithmetic problem: 3*3=?,"I multiplied 3 by 3. So my answer is 9.
+### answer: 9",9,True
+distilled,sd_mul,Mul_sd,3*4,12,Solve this whole-number arithmetic problem: 3*4=?,"I multiplied 3 by 4. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_mul,Mul_sd,3*5,15,Solve this whole-number arithmetic problem: 3*5=?,"I multiplied 3 by 5. So my answer is 15.
+### answer: 15",15,True
+distilled,sd_mul,Mul_sd,3*6,18,Solve this whole-number arithmetic problem: 3*6=?,"I multiplied 3 by 6. So my answer is 18.
+### answer: 18",18,True
+distilled,sd_mul,Mul_sd,3*7,21,Solve this whole-number arithmetic problem: 3*7=?,"I multiplied 3 by 7. So my answer is 21.
+### answer: 21",21,True
+distilled,sd_mul,Mul_sd,3*8,24,Solve this whole-number arithmetic problem: 3*8=?,"I multiplied 3 by 8. So my answer is 24.
+### answer: 24",24,True
+distilled,sd_mul,Mul_sd,3*9,27,Solve this whole-number arithmetic problem: 3*9=?,"I multiplied 3 by 9. So my answer is 27.
+### answer: 27",27,True
+distilled,sd_mul,Mul_sd,4*2,8,Solve this whole-number arithmetic problem: 4*2=?,"I multiplied 4 by 2. So my answer is 8.
+### answer: 8",8,True
+distilled,sd_mul,Mul_sd,4*3,12,Solve this whole-number arithmetic problem: 4*3=?,"I multiplied 4 by 3. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_mul,Mul_sd,4*4,16,Solve this whole-number arithmetic problem: 4*4=?,"I multiplied 4 by 4. So my answer is 16.
+### answer: 16",16,True
+distilled,sd_mul,Mul_sd,4*5,20,Solve this whole-number arithmetic problem: 4*5=?,"I multiplied 4 by 5. So my answer is 20.
+### answer: 20",20,True
+distilled,sd_mul,Mul_sd,4*6,24,Solve this whole-number arithmetic problem: 4*6=?,"I multiplied 4 by 6. So my answer is 24.
+### answer: 24",24,True
+distilled,sd_mul,Mul_sd,4*7,28,Solve this whole-number arithmetic problem: 4*7=?,"I multiplied 4 by 7. So my answer is 28.
+### answer: 28",28,True
+distilled,sd_mul,Mul_sd,4*8,32,Solve this whole-number arithmetic problem: 4*8=?,"I multiplied 4 by 8. So my answer is 32.
+### answer: 32",32,True
+distilled,sd_mul,Mul_sd,4*9,36,Solve this whole-number arithmetic problem: 4*9=?,"I multiplied 4 by 9. So my answer is 36.
+### answer: 36",36,True
+distilled,sd_mul,Mul_sd,5*2,10,Solve this whole-number arithmetic problem: 5*2=?,"I multiplied 5 by 2. So my answer is 10.
+### answer: 10",10,True
+distilled,sd_mul,Mul_sd,5*3,15,Solve this whole-number arithmetic problem: 5*3=?,"I multiplied 5 by 3. So my answer is 15.
+### answer: 15",15,True
+distilled,sd_mul,Mul_sd,5*4,20,Solve this whole-number arithmetic problem: 5*4=?,"I multiplied 5 by 4. So my answer is 20.
+### answer: 20",20,True
+distilled,sd_mul,Mul_sd,5*5,25,Solve this whole-number arithmetic problem: 5*5=?,"I multiplied 5 by 5. So my answer is 25.
+### answer: 25",25,True
+distilled,sd_mul,Mul_sd,5*6,30,Solve this whole-number arithmetic problem: 5*6=?,"I multiplied 5 by 6. So my answer is 30.
+### answer: 30",30,True
+distilled,sd_mul,Mul_sd,5*7,35,Solve this whole-number arithmetic problem: 5*7=?,"I multiplied 5 by 7. So my answer is 35.
+### answer: 35",35,True
+distilled,sd_mul,Mul_sd,5*8,40,Solve this whole-number arithmetic problem: 5*8=?,"I multiplied 5 by 8. So my answer is 40.
+### answer: 40",40,True
+distilled,sd_mul,Mul_sd,5*9,45,Solve this whole-number arithmetic problem: 5*9=?,"I multiplied 5 by 9. So my answer is 45.
+### answer: 45",45,True
+distilled,sd_mul,Mul_sd,6*2,12,Solve this whole-number arithmetic problem: 6*2=?,"I multiplied 6 by 2. So my answer is 12.
+### answer: 12",12,True
+distilled,sd_mul,Mul_sd,6*3,18,Solve this whole-number arithmetic problem: 6*3=?,"I multiplied 6 by 3. So my answer is 18.
+### answer: 18",18,True
+distilled,sd_mul,Mul_sd,6*4,24,Solve this whole-number arithmetic problem: 6*4=?,"I multiplied 6 by 4. So my answer is 24.
+### answer: 24",24,True
+distilled,sd_mul,Mul_sd,6*5,30,Solve this whole-number arithmetic problem: 6*5=?,"I multiplied 6 by 5. So my answer is 30.
+### answer: 30",30,True
+distilled,sd_mul,Mul_sd,6*6,36,Solve this whole-number arithmetic problem: 6*6=?,"I multiplied 6 by 6. So my answer is 36.
+### answer: 36",36,True
+distilled,sd_mul,Mul_sd,6*7,42,Solve this whole-number arithmetic problem: 6*7=?,"I multiplied 6 by 7. So my answer is 42.
+### answer: 42",42,True
+distilled,sd_mul,Mul_sd,6*8,48,Solve this whole-number arithmetic problem: 6*8=?,"I multiplied 6 by 8. So my answer is 48.
+### answer: 48",48,True
+distilled,sd_mul,Mul_sd,6*9,54,Solve this whole-number arithmetic problem: 6*9=?,"I multiplied 6 by 9. So my answer is 54.
+### answer: 54",54,True
+distilled,sd_mul,Mul_sd,7*2,14,Solve this whole-number arithmetic problem: 7*2=?,"I multiplied 7 by 2. So my answer is 14.
+### answer: 14",14,True
+distilled,sd_mul,Mul_sd,7*3,21,Solve this whole-number arithmetic problem: 7*3=?,"I multiplied 7 by 3. So my answer is 21.
+### answer: 21",21,True
+distilled,sd_mul,Mul_sd,7*4,28,Solve this whole-number arithmetic problem: 7*4=?,"I multiplied 7 by 4. So my answer is 28.
+### answer: 28",28,True
+distilled,sd_mul,Mul_sd,7*5,35,Solve this whole-number arithmetic problem: 7*5=?,"I multiplied 7 by 5. So my answer is 35.
+### answer: 35",35,True
+distilled,sd_mul,Mul_sd,7*6,42,Solve this whole-number arithmetic problem: 7*6=?,"I multiplied 7 by 6. So my answer is 42.
+### answer: 42",42,True
+distilled,sd_mul,Mul_sd,7*7,49,Solve this whole-number arithmetic problem: 7*7=?,"I multiplied 7 by 7. So my answer is 49.
+### answer: 49",49,True
+distilled,sd_mul,Mul_sd,7*8,56,Solve this whole-number arithmetic problem: 7*8=?,"I multiplied 7 by 8. So my answer is 56.
+### answer: 56",56,True
+distilled,sd_mul,Mul_sd,7*9,63,Solve this whole-number arithmetic problem: 7*9=?,"I multiplied 7 by 9. So my answer is 63.
+### answer: 63",63,True
+distilled,sd_mul,Mul_sd,8*2,16,Solve this whole-number arithmetic problem: 8*2=?,"I multiplied 8 by 2. So my answer is 16.
+### answer: 16",16,True
+distilled,sd_mul,Mul_sd,8*3,24,Solve this whole-number arithmetic problem: 8*3=?,"I multiplied 8 by 3. So my answer is 24.
+### answer: 24",24,True
+distilled,sd_mul,Mul_sd,8*4,32,Solve this whole-number arithmetic problem: 8*4=?,"I multiplied 8 by 4. So my answer is 32.
+### answer: 32",32,True
+distilled,sd_mul,Mul_sd,8*5,40,Solve this whole-number arithmetic problem: 8*5=?,"I multiplied 8 by 5. So my answer is 40.
+### answer: 40",40,True
+distilled,sd_mul,Mul_sd,8*6,48,Solve this whole-number arithmetic problem: 8*6=?,"I multiplied 8 by 6. So my answer is 48.
+### answer: 48",48,True
+distilled,sd_mul,Mul_sd,8*7,56,Solve this whole-number arithmetic problem: 8*7=?,"I multiplied 8 by 7. So my answer is 56.
+### answer: 56",56,True
+distilled,sd_mul,Mul_sd,8*8,64,Solve this whole-number arithmetic problem: 8*8=?,"I multiplied 8 by 8. So my answer is 64.
+### answer: 64",64,True
+distilled,sd_mul,Mul_sd,8*9,72,Solve this whole-number arithmetic problem: 8*9=?,"I multiplied 8 by 9. So my answer is 72.
+### answer: 72",72,True
+distilled,sd_mul,Mul_sd,9*2,18,Solve this whole-number arithmetic problem: 9*2=?,"I multiplied 9 by 2. So my answer is 18.
+### answer: 18",18,True
+distilled,sd_mul,Mul_sd,9*3,27,Solve this whole-number arithmetic problem: 9*3=?,"I multiplied 9 by 3. So my answer is 27.
+### answer: 27",27,True
+distilled,sd_mul,Mul_sd,9*4,36,Solve this whole-number arithmetic problem: 9*4=?,"I multiplied 9 by 4. So my answer is 36.
+### answer: 36",36,True
+distilled,sd_mul,Mul_sd,9*5,45,Solve this whole-number arithmetic problem: 9*5=?,"I multiplied 9 by 5. So my answer is 45.
+### answer: 45",45,True
+distilled,sd_mul,Mul_sd,9*6,54,Solve this whole-number arithmetic problem: 9*6=?,"I multiplied 9 by 6. So my answer is 54.
+### answer: 54",54,True
+distilled,sd_mul,Mul_sd,9*7,63,Solve this whole-number arithmetic problem: 9*7=?,"I multiplied 9 by 7. So my answer is 63.
+### answer: 63",63,True
+distilled,sd_mul,Mul_sd,9*8,72,Solve this whole-number arithmetic problem: 9*8=?,"I multiplied 9 by 8. So my answer is 72.
+### answer: 72",72,True
+distilled,sd_mul,Mul_sd,9*9,81,Solve this whole-number arithmetic problem: 9*9=?,"I multiplied 9 by 9. So my answer is 81.
+### answer: 81",81,True
