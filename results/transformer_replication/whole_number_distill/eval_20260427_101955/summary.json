@@ -1,0 +1,27 @@
+{
+  "n_problems": 145,
+  "models": {
+    "base": {
+      "overall_accuracy_pct": 11.03448275862069,
+      "n": 145
+    },
+    "distilled": {
+      "overall_accuracy_pct": 53.103448275862064,
+      "n": 145
+    }
+  },
+  "by_cell": {
+    "ALL": {
+      "base": 11.0,
+      "distilled": 53.1
+    },
+    "Add_sd": {
+      "base": 12.3,
+      "distilled": 70.4
+    },
+    "Mul_sd": {
+      "base": 9.4,
+      "distilled": 31.2
+    }
+  }
+}
