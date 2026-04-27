@@ -1,0 +1,168 @@
+{
+  "dataset_id": "uma_fraction_distillation_25",
+  "title": "UMA Fraction Distillation 25",
+  "generated_at_utc": "2026-04-27T19:00:28.083672+00:00",
+  "source_csv": "results/transformer_replication/synth_unique_panel25_even_g_rt5_ice50_seed1_tracev10_default_nosp2013_mincols.csv.gz",
+  "source_csv_bytes": 31384712,
+  "output_dir": "data/distillation/uma_fraction_distillation_25",
+  "compression": "zstd",
+  "max_shard_bytes": 52428800,
+  "chunksize": 200000,
+  "rows_per_shard": 500000,
+  "path_prefixes_normalized": [
+    "/scratch/gpfs/BRENDEN/changho/UMA_PR02/",
+    "/scratch/gpfs/BRENDEN/changho/UMA_PR02/",
+    "/n/fs/cogai/cs1095/UMA_PR02/"
+  ],
+  "summary": {
+    "row_count": 511315,
+    "unique_subjids": 25,
+    "min_subjid": 112,
+    "max_subjid": 992,
+    "unique_probs": 20720,
+    "translation_versions": {
+      "uma_nlp_rules_v10_clean_child_label_alignment": 511315
+    }
+  },
+  "schema": [
+    {
+      "name": "source_dataset",
+      "type": "string"
+    },
+    {
+      "name": "source_file",
+      "type": "string"
+    },
+    {
+      "name": "source_seed",
+      "type": "string"
+    },
+    {
+      "name": "source_row_idx",
+      "type": "int64"
+    },
+    {
+      "name": "source_uid",
+      "type": "string"
+    },
+    {
+      "name": "subjid",
+      "type": "int64"
+    },
+    {
+      "name": "prob",
+      "type": "string"
+    },
+    {
+      "name": "operation",
+      "type": "string"
+    },
+    {
+      "name": "strategy",
+      "type": "string"
+    },
+    {
+      "name": "goals",
+      "type": "string"
+    },
+    {
+      "name": "exec",
+      "type": "string"
+    },
+    {
+      "name": "answer",
+      "type": "string"
+    },
+    {
+      "name": "correct",
+      "type": "string"
+    },
+    {
+      "name": "is_correct",
+      "type": "int64"
+    },
+    {
+      "name": "g",
+      "type": "double"
+    },
+    {
+      "name": "d",
+      "type": "double"
+    },
+    {
+      "name": "rt_mu",
+      "type": "int64"
+    },
+    {
+      "name": "ice",
+      "type": "int64"
+    },
+    {
+      "name": "operation_nl",
+      "type": "string"
+    },
+    {
+      "name": "student_prompt_mode",
+      "type": "string"
+    },
+    {
+      "name": "student_params_visible",
+      "type": "bool"
+    },
+    {
+      "name": "student_nl",
+      "type": "string"
+    },
+    {
+      "name": "strategy_nl",
+      "type": "string"
+    },
+    {
+      "name": "goals_nl",
+      "type": "string"
+    },
+    {
+      "name": "exec_nl",
+      "type": "string"
+    },
+    {
+      "name": "instruction_nl",
+      "type": "string"
+    },
+    {
+      "name": "response_nl",
+      "type": "string"
+    },
+    {
+      "name": "reasoning_quality_flags",
+      "type": "string"
+    },
+    {
+      "name": "reasoning_verified_claims",
+      "type": "int64"
+    },
+    {
+      "name": "reasoning_unverified_claims",
+      "type": "int64"
+    },
+    {
+      "name": "translation_version",
+      "type": "string"
+    }
+  ],
+  "shard_count": 2,
+  "shards": [
+    {
+      "file": "part-00000.parquet",
+      "rows": 500000,
+      "bytes": 21395122,
+      "sha256": "d444a582d418c419fdda7e754c8e424567322bbdb7d9ba3dd669314393a30ffb"
+    },
+    {
+      "file": "part-00001.parquet",
+      "rows": 11315,
+      "bytes": 443269,
+      "sha256": "d4128f9a4c953996f47e04dc0ca5645c233605159cbc0fecd0c81f86155f7856"
+    }
+  ]
+}
