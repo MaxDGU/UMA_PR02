@@ -70,6 +70,29 @@ def test_interaction_contract(case: contract.ChildReasoningCase):
         assert quality["reasoning_unverified_claims"] == case.expected_unverified_claims
 
 
+@pytest.mark.parametrize("case", contract.WHOLE_NUMBER_CASES, ids=lambda case: case.name)
+def test_whole_number_reasoning_contract(case: contract.WholeNumberReasoningCase):
+    reasoning, quality = translator.build_whole_number_reasoning(
+        prob=case.prob,
+        operation=case.operation,
+        strategy_code=case.strategy_code,
+        goals=list(case.goals),
+        exec_rules=list(case.exec_rules),
+        answer=case.answer,
+        work=case.work,
+    )
+
+    _assert_substrings(reasoning, case.expected_substrings, case.forbidden_substrings)
+    if case.expected_verified_claims is not None:
+        assert quality["reasoning_verified_claims"] == case.expected_verified_claims, (
+            f"verified mismatch in {case.name}: got {quality['reasoning_verified_claims']}"
+        )
+    if case.expected_unverified_claims is not None:
+        assert quality["reasoning_unverified_claims"] == case.expected_unverified_claims, (
+            f"unverified mismatch in {case.name}: got {quality['reasoning_unverified_claims']}"
+        )
+
+
 @pytest.mark.parametrize("case", contract.IGNORED_RULE_CASES, ids=lambda case: case.name)
 def test_ignored_internal_rules_do_not_surface(case: contract.IgnoredRuleCase):
     record = {

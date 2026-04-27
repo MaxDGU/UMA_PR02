@@ -29,6 +29,22 @@ class ChildReasoningCase:
 
 
 @dataclass(frozen=True)
+class WholeNumberReasoningCase:
+    name: str
+    prob: str
+    operation: str
+    strategy_code: str
+    goals: Tuple[str, ...]
+    exec_rules: Tuple[str, ...]
+    answer: str
+    work: str
+    expected_substrings: Tuple[str, ...]
+    forbidden_substrings: Tuple[str, ...] = ()
+    expected_verified_claims: int | None = None
+    expected_unverified_claims: int | None = None
+
+
+@dataclass(frozen=True)
 class DetailReasoningCase:
     name: str
     goals: Tuple[str, ...]
@@ -360,5 +376,137 @@ IGNORED_RULE_CASES: Tuple[IgnoredRuleCase, ...] = (
             "failed to invert",
         ),
         expected_answer_suffix="### answer: 1",
+    ),
+)
+
+
+# Whole-number cells: add (no-carry, carry), sub (no-borrow, borrow), mul (single-digit, multi-digit)
+WHOLE_NUMBER_CASES: Tuple[WholeNumberReasoningCase, ...] = (
+    WholeNumberReasoningCase(
+        name="add_no_carry",
+        prob="12+13",
+        operation="+",
+        strategy_code="H2V_WN",
+        goals=("VA_start", "choose_VAS_AS", "VAS_shift_attn", "VAS_shift_attn"),
+        exec_rules=("align_right", "VA_next_calc", "VAS_end_calc", "VA_next_calc", "VAS_end_calc", "VAS_finish"),
+        answer="25",
+        work="2 + 3 = 5 | 1 + 1 = 2",
+        expected_substrings=(
+            "I added 12 and 13",
+            "lined the numbers up vertically",
+            "2 plus 3 is 5",
+            "1 plus 1 is 2",
+            "So my answer is 25",
+        ),
+        forbidden_substrings=("borrow", "carry"),
+        expected_verified_claims=2,
+        expected_unverified_claims=0,
+    ),
+    WholeNumberReasoningCase(
+        name="add_carry",
+        prob="27+38",
+        operation="+",
+        strategy_code="H2V_WN",
+        goals=("VA_start", "choose_VAS_AS", "VAS_do_carry", "VAS_shift_attn", "VAS_add_carry", "VAS_shift_attn"),
+        exec_rules=("align_right", "VA_next_calc", "VAS_end_calc", "VA_next_calc", "VAS_end_calc", "VAS_finish"),
+        answer="65",
+        work="7 + 8 = 15 | 2 + 3 = 5 | 5 + 1 = 6",
+        expected_substrings=(
+            "I added 27 and 38",
+            "7 plus 8 is 15",
+            "carry",
+            "So my answer is 65",
+        ),
+        forbidden_substrings=("borrow",),
+        expected_verified_claims=3,
+        expected_unverified_claims=0,
+    ),
+    WholeNumberReasoningCase(
+        name="sub_no_borrow",
+        prob="58-23",
+        operation="-",
+        strategy_code="H2V_WN",
+        goals=("VA_start", "choose_VAS_AS", "VAS_shift_attn", "VAS_shift_attn"),
+        exec_rules=("align_right", "VS_next_calc", "VAS_end_calc", "VS_next_calc", "VAS_end_calc", "VAS_finish"),
+        answer="35",
+        work="8 - 3 = 5 | 5 - 2 = 3",
+        expected_substrings=(
+            "I subtracted 23 from 58",
+            "8 minus 3 is 5",
+            "5 minus 2 is 3",
+            "So my answer is 35",
+        ),
+        forbidden_substrings=("borrow", "carry"),
+        expected_verified_claims=2,
+        expected_unverified_claims=0,
+    ),
+    WholeNumberReasoningCase(
+        name="sub_borrow",
+        prob="52-19",
+        operation="-",
+        strategy_code="H2V_WN",
+        goals=("VA_start", "choose_VAS_AS", "VAS_shift_attn", "VAS_shift_attn"),
+        exec_rules=(
+            "align_right", "VS_borrow_start", "VS_borrow_to", "VS_borrow_from_nonzero",
+            "VS_next_calc", "sub_LbS", "VAS_end_calc",
+            "VS_next_calc", "sub_LbS", "VAS_end_calc", "VAS_finish",
+        ),
+        answer="33",
+        work="12 - 9 = 3 | 4 - 1 = 3",
+        expected_substrings=(
+            "I subtracted 19 from 52",
+            "12 minus 9 is 3",
+            "borrow",
+            "So my answer is 33",
+        ),
+        expected_verified_claims=2,
+        expected_unverified_claims=0,
+    ),
+    WholeNumberReasoningCase(
+        name="single_digit_mul_via_counting",
+        prob="3*4",
+        operation="*",
+        strategy_code="OTHER",
+        goals=(),
+        exec_rules=("acc_once", "acc_add", "acc_once", "acc_add", "acc_once", "acc_add", "acc_end"),
+        answer="12",
+        work="3 + 3 = 6 | 6 + 3 = 9 | 9 + 3 = 12",
+        expected_substrings=(
+            "I multiplied 3 by 4",
+            "counted up by repeated addition",
+            "3 plus 3 is 6",
+            "9 plus 3 is 12",
+            "So my answer is 12",
+        ),
+        expected_verified_claims=3,
+        expected_unverified_claims=0,
+    ),
+    WholeNumberReasoningCase(
+        name="multi_digit_mul_with_carry_error",
+        prob="14*21",
+        operation="*",
+        strategy_code="H2V_WN",
+        goals=(
+            "VA_start", "choose_VM_M", "VM_shift1", "VM_shift1", "VM_new_row",
+            "VM_shift1", "VM_shift1", "VM_shift2", "VM_add_parts",
+            "VAS_shift_attn", "VAS_shift_attn",
+        ),
+        exec_rules=(
+            "align_right", "VM_next_calc", "VM_end_calc", "VM_next_calc", "VM_end_calc",
+            "VM_shift2_no_zeros", "VM_next_calc", "VM_do_carry", "VM_end_calc",
+            "VM_next_calc", "VM_add_carry", "VM_end_calc",
+            "VA_next_calc", "VAS_end_calc", "VA_next_calc", "VAS_end_calc", "VAS_finish",
+        ),
+        answer="36",
+        work="4 * 1 = 4 | 1 * 1 = 1 | 4 * 2 = 12 | 1 * 2 = 2 | 2 + 1 = 2 | 4 + 2 = 6 | 1 + 2 = 3",
+        expected_substrings=(
+            "I multiplied 14 by 21",
+            "multiplied digit by digit",
+            "4 times 1 is 4",
+            "carry",
+            "So my answer is 36",
+        ),
+        expected_verified_claims=5,
+        expected_unverified_claims=2,
     ),
 )

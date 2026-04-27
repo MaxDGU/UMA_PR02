@@ -40,7 +40,7 @@ DEFAULT_OUTPUT = os.path.join(SCRIPT_DIR, "uma_traces_all_nlp.csv.gz")
 DEFAULT_SP2013_SEEDS = "1-20"
 BASE_TRANSLATION_VERSION = "uma_nlp_rules_v10_clean_child_label_alignment"
 VALID_STUDENT_PROMPT_MODES = ("none", "always", "dropout")
-VALID_REASONING_MODES = ("trace_or_child", "clean_child")
+VALID_REASONING_MODES = ("trace_or_child", "clean_child", "whole_number_think_aloud_child")
 VALID_ROW_FILTER_MODES = ("none", "correct_exec", "correct_exec_and_answer")
 DEFAULT_STUDENT_PARAMS_DROP_PROB = 0.5
 DEFAULT_STUDENT_PARAMS_DROP_SEED = 0
@@ -71,6 +71,8 @@ STRATEGY_TEXT: Dict[str, str] = {
     "CROP_M": "I cross-operate between numerator and denominator positions",
     "ICDM_D": "I invert a divisor and convert division to multiplication",
     "ICDM_OG": "I use an invert-and-convert approach where applicable before operating",
+    # Whole-number strategies
+    "H2V_WN": "I lined the numbers up vertically and worked column by column",
     "OTHER": "I use a mixed or uncategorized strategy",
 }
 
@@ -102,6 +104,17 @@ GOAL_TEXT: Dict[str, str] = {
     "skip_simplify": "I decide to skip simplification",
     "get_GCD": "I compute the greatest common divisor of numerator and denominator",
     "simplify_fraction": "I simplify the fraction with the GCD",
+    # Whole-number goals
+    "VA_start": "I started a column-by-column arithmetic plan",
+    "choose_VAS_AS": "I picked column addition (or subtraction) as my approach",
+    "choose_VM_M": "I picked column multiplication as my approach",
+    "VAS_shift_attn": "I moved over to the next column",
+    "VAS_do_carry": "I noticed I needed to carry into the next column",
+    "VAS_add_carry": "I added the carry into the next column",
+    "VM_shift1": "I moved over one digit position for the partial product",
+    "VM_shift2": "I moved over two digit positions for the next partial-product row",
+    "VM_new_row": "I started a new row of partial products",
+    "VM_add_parts": "I added the partial products together",
 }
 
 
@@ -120,6 +133,30 @@ EXEC_TEXT: Dict[str, str] = {
     "div_LbS": "I divide the larger value by the smaller value",
     "div_LbS_drop_rem": "I divide larger by smaller and drop any remainder",
     "div_drop_rem": "I divide and drop any remainder",
+    # Whole-number exec rules
+    "align_right": "I lined up the numbers on the right",
+    "VA_next_calc": "I added the digits in this column",
+    "VA_lone_carry": "I wrote down the leftover carry on its own",
+    "VAS_finish": "I finished the column-arithmetic and read off the answer",
+    "VAS_end_calc": "I closed out this column",
+    "VS_next_calc": "I subtracted the digits in this column",
+    "VS_borrow_start": "I started a borrow",
+    "VS_borrow_to": "I added the borrowed value into this column",
+    "VS_borrow_from_nonzero": "I borrowed from a non-zero column to the left",
+    "VS_borrow_from_zero": "I had to keep borrowing because the next column was a zero",
+    "VS_next_calc_swap": "I swapped the digit order to subtract larger from smaller in this column",
+    "VS_borrow_from_fail": "I tried to borrow but couldn't",
+    "VM_next_calc": "I multiplied the current pair of digits",
+    "VM_lone_carry": "I wrote down the leftover multiplication carry",
+    "VM_finish_sd": "I finished a single-digit multiplication step",
+    "VM_end_calc": "I closed out this multiplication step",
+    "VM_do_carry": "I noticed a multiplication carry to handle",
+    "VM_add_carry": "I added the multiplication carry into the next column",
+    "VM_shift2_no_zeros": "I shifted over to the next partial-product position",
+    "acc_once": "I counted up by one step",
+    "acc_count": "I kept counting up",
+    "acc_add": "I added by counting up",
+    "acc_end": "I finished counting up",
 }
 
 NUMERIC_TOKEN_RE = r"[+\-]?(?:\d+(?:/\d+)?|\d*\.\d+)"
@@ -1182,6 +1219,129 @@ def canonicalize_chunk(chunk: pd.DataFrame, source: SourceSpec, row_offset: int)
     return out
 
 
+WORK_STEP_RE = re.compile(r"^\s*(-?\d+)\s*([+\-*/])\s*(-?\d+)\s*=\s*(-?\d+)\s*$")
+_OP_WORD = {"+": "plus", "-": "minus", "*": "times"}
+
+
+def build_whole_number_reasoning(
+    prob: str,
+    operation: str,
+    strategy_code: str,
+    goals: List[str],
+    exec_rules: List[str],
+    answer: str,
+    work: str = "",
+    *,
+    surface_hidden_trace_steps: bool = False,
+) -> Tuple[str, Dict[str, object]]:
+    """Build child-style reasoning for whole-number arithmetic traces.
+
+    Primary signal is the `work` scratchpad (pipe-separated `a op b = c` steps).
+    Strategy and goal/exec tokens add framing about column-by-column layout,
+    carries, borrows, and counting fallback.
+
+    The narration preserves UMA's intermediate computations verbatim — including
+    incorrect ones — so the distilled model learns the same error distribution.
+    """
+    del surface_hidden_trace_steps  # whole-number traces have no hidden trace steps to surface
+    quality_flags: Set[str] = set()
+    verified_claims = 0
+    unverified_claims = 0
+
+    left_txt, right_txt, _, _ = parse_binary_problem(prob, operation)
+    sentences: List[str] = []
+
+    # Opening sentence: introduce the problem in the operation's voice
+    if left_txt and right_txt:
+        if operation == "-":
+            sentences.append(f"I subtracted {right_txt} from {left_txt}.")
+        elif operation == "*":
+            sentences.append(f"I multiplied {left_txt} by {right_txt}.")
+        else:
+            sentences.append(f"I added {left_txt} and {right_txt}.")
+
+    # Strategy framing
+    is_counting = any(r.startswith("acc_") for r in exec_rules)
+    if strategy_code == "H2V_WN":
+        if "choose_VM_M" in goals:
+            sentences.append(
+                "I lined the numbers up vertically and multiplied digit by digit, then added the partial products."
+            )
+        elif is_counting:
+            sentences.append(
+                "I tried counting up by repeated addition before falling back to column arithmetic."
+            )
+        else:
+            sentences.append("I lined the numbers up vertically and worked column by column.")
+    elif strategy_code == "OTHER":
+        if operation == "-" and "sub_LbS" in exec_rules:
+            sentences.append("I just subtracted the smaller number from the larger one.")
+        elif is_counting:
+            sentences.append("I counted up by repeated addition.")
+
+    # Narrate the work scratchpad step by step, verifying each substep
+    work_text = safe_text(work, default="")
+    work_steps = [s.strip() for s in work_text.split("|") if s.strip()]
+    narrated_steps: List[str] = []
+    for step in work_steps:
+        m = WORK_STEP_RE.match(step)
+        if m is None:
+            narrated_steps.append(step)
+            unverified_claims += 1
+            quality_flags.add("unverified_numeric_claim")
+            continue
+        a_s, op_s, b_s, c_s = m.group(1), m.group(2), m.group(3), m.group(4)
+        try:
+            a_v, b_v, c_v = int(a_s), int(b_s), int(c_s)
+            if op_s == "+":
+                expected = a_v + b_v
+            elif op_s == "-":
+                expected = a_v - b_v
+            elif op_s == "*":
+                expected = a_v * b_v
+            else:
+                expected = None
+            if expected is not None and expected == c_v:
+                verified_claims += 1
+            else:
+                unverified_claims += 1
+                quality_flags.add("arith_claim_mismatch")
+        except ValueError:
+            unverified_claims += 1
+            quality_flags.add("unverified_numeric_claim")
+        op_word = _OP_WORD.get(op_s, op_s)
+        narrated_steps.append(f"{a_s} {op_word} {b_s} is {c_s}")
+
+    if narrated_steps:
+        sentences.append("My work was: " + "; ".join(narrated_steps) + ".")
+
+    # Surface borrow/carry events that aren't otherwise explicit
+    joined_so_far = " ".join(sentences).lower()
+    if any("borrow" in r for r in exec_rules) and "borrow" not in joined_so_far:
+        sentences.append("I borrowed from the column to my left along the way.")
+    has_carry_evt = (
+        "VAS_do_carry" in goals
+        or "VAS_add_carry" in goals
+        or "VA_lone_carry" in exec_rules
+        or "VM_do_carry" in exec_rules
+        or "VM_add_carry" in exec_rules
+        or "VM_lone_carry" in exec_rules
+    )
+    if has_carry_evt and "carry" not in joined_so_far and "carried" not in joined_so_far:
+        sentences.append("I had a carry to handle along the way.")
+
+    # Closing
+    sentences.append(f"So my answer is {answer}.")
+
+    reasoning = " ".join(sentences)
+    quality = {
+        "reasoning_quality_flags": ",".join(sorted(quality_flags)),
+        "reasoning_verified_claims": verified_claims,
+        "reasoning_unverified_claims": unverified_claims,
+    }
+    return reasoning, quality
+
+
 def translate_record(
     record: Dict[str, object],
     include_outcome_text: bool,
@@ -1206,12 +1366,27 @@ def translate_record(
     exec_nl = render_rule_sequence(exec_rules, EXEC_TEXT, "execution")
     params_visible = student_params_visible(record, student_prompt_config)
     student_nl = build_student_block(record) if params_visible else ""
-    if params_visible:
-        instruction_nl = f"{student_nl}\nSolve this fraction problem: {prompt_prob}=?"
+    if reasoning_mode == "whole_number_think_aloud_child":
+        prompt_template = "Solve this whole-number arithmetic problem: {p}=?"
     else:
-        instruction_nl = f"Solve this fraction problem: {prompt_prob}=?"
+        prompt_template = "Solve this fraction problem: {p}=?"
+    if params_visible:
+        instruction_nl = f"{student_nl}\n{prompt_template.format(p=prompt_prob)}"
+    else:
+        instruction_nl = prompt_template.format(p=prompt_prob)
     trace_steps = parse_trace_steps(record.get("trace_steps_json"))
-    if reasoning_mode == "clean_child":
+    if reasoning_mode == "whole_number_think_aloud_child":
+        reasoning_nl, quality = build_whole_number_reasoning(
+            prob=prob,
+            operation=operation,
+            strategy_code=strategy_code,
+            goals=goals,
+            exec_rules=exec_rules,
+            answer=answer,
+            work=safe_text(record.get("work"), default=""),
+            surface_hidden_trace_steps=surface_hidden_trace_steps,
+        )
+    elif reasoning_mode == "clean_child":
         reasoning_nl, quality = build_child_reasoning(
             prob=prob,
             operation=operation,

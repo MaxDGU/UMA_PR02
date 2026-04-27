@@ -396,6 +396,15 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--domain",
+        choices=["fraction", "whole_number"],
+        default="fraction",
+        help=(
+            "Arithmetic domain. Controls the prompt noun ('fraction problem' vs "
+            "'whole-number arithmetic problem') used when the trainer rewrites or builds prompts."
+        ),
+    )
+    parser.add_argument(
         "--train_prompt_student_mode",
         choices=["none", "always", "dropout"],
         default="none",
@@ -946,7 +955,19 @@ def generate_previews(
 NUMERIC_TOKEN_RE = r"[+\-]?(?:\d+(?:/\d+)?|\d*\.\d+)"
 ANSWER_TOKEN_RE = re.compile(r"-?(?:\d+(?:\.\d+)?)(?:/-?(?:\d+(?:\.\d+)?))?")
 PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*/:])\s*({NUMERIC_TOKEN_RE})\s*")
-PROMPT_PROB_RE = re.compile(r"Solve this fraction problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
+DOMAIN_PROMPT_NOUN: Dict[str, str] = {
+    "fraction": "fraction problem",
+    "whole_number": "whole-number arithmetic problem",
+}
+PROMPT_NOUN_PATTERN = r"(?:fraction problem|whole-number arithmetic problem)"
+PROMPT_PROB_RE = re.compile(
+    rf"Solve this {PROMPT_NOUN_PATTERN}:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE
+)
+
+
+def domain_prompt_template(domain: str) -> str:
+    noun = DOMAIN_PROMPT_NOUN.get(domain, "fraction problem")
+    return f"Solve this {noun}:"
 
 
 def canonicalize_division_op(op: str) -> str:
@@ -1025,7 +1046,7 @@ def detect_prompt_style_counts(prompts: pd.Series) -> Dict[str, int]:
     text = prompts.astype(str).str.strip()
     has_student = text.str.contains(r"<student>", case=False, regex=True, na=False)
     has_solve = text.str.contains(
-        r"Solve this fraction problem:\s*.+\s*=\?\s*$",
+        rf"Solve this {PROMPT_NOUN_PATTERN}:\s*.+\s*=\?\s*$",
         case=False,
         regex=True,
         na=False,
@@ -1204,12 +1225,14 @@ def format_numeric_token(value: float) -> str:
     return f"{value:.10f}".rstrip("0").rstrip(".")
 
 
-def build_student_prompt(prob: str, g: float, d: float, rt_mu: float, ice: float) -> str:
+def build_student_prompt(
+    prob: str, g: float, d: float, rt_mu: float, ice: float, domain: str = "fraction"
+) -> str:
     prompt_prob = render_problem_for_prompt(prob)
     return (
         f"<student> g {format_numeric_token(g)} d {format_numeric_token(d)} "
         f"rt {format_numeric_token(rt_mu)} ice {format_numeric_token(ice)} </student>\n"
-        f"Solve this fraction problem: {prompt_prob}=?"
+        f"{domain_prompt_template(domain)} {prompt_prob}=?"
     )
 
 
@@ -1244,6 +1267,7 @@ def apply_train_prompt_student_mode(
     mode: str,
     dropout_prob: float,
     dropout_seed: int,
+    domain: str = "fraction",
 ) -> Tuple[pd.DataFrame, Dict[str, int]]:
     if mode == "none" or len(frame) == 0:
         return frame, {
@@ -1283,7 +1307,7 @@ def apply_train_prompt_student_mode(
     frame = frame.copy()
     visible_rows = frame.loc[visible_mask]
     frame.loc[visible_mask, prompt_col] = [
-        build_student_prompt(prob=prob, g=g, d=d, rt_mu=rt_mu, ice=ice)
+        build_student_prompt(prob=prob, g=g, d=d, rt_mu=rt_mu, ice=ice, domain=domain)
         for prob, g, d, rt_mu, ice in zip(
             visible_rows[problem_col].astype(str).str.strip().tolist(),
             visible_rows["g"].tolist(),
@@ -1861,9 +1885,12 @@ def evaluate_sp2013_final_answer(
                 prompt_g, prompt_d, prompt_rt, prompt_ice = prompt_tuple
 
             if use_param_grid or prompt_tuple is not None:
-                prompt = build_student_prompt(prob=prob, g=prompt_g, d=prompt_d, rt_mu=prompt_rt, ice=prompt_ice)
+                prompt = build_student_prompt(
+                    prob=prob, g=prompt_g, d=prompt_d, rt_mu=prompt_rt, ice=prompt_ice,
+                    domain=getattr(args, "domain", "fraction"),
+                )
             else:
-                prompt = f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
+                prompt = f"{domain_prompt_template(getattr(args, 'domain', 'fraction'))} {render_problem_for_prompt(prob)}=?"
 
             prompt_eval_idx += 1
             if do_sample:
@@ -2462,6 +2489,7 @@ def main() -> None:
                     mode=args.train_prompt_student_mode,
                     dropout_prob=args.train_prompt_student_dropout_prob,
                     dropout_seed=args.train_prompt_student_dropout_seed,
+                    domain=args.domain,
                 )
                 rewritten_splits[split_name] = rewritten_frame
                 split_prompt_rewrite_stats[split_name] = rewrite_stats
