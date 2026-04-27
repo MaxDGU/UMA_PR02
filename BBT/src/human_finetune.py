@@ -83,13 +83,13 @@ def run_subpipeline(
     if model_run_dir is None:
         raise ValueError("human_finetune subpipeline requires distill run directory input.")
 
-    script = resolve_path(sub_cfg.get("script", "results/transformer_replication/finetune_humandata.py"), run_dir)
+    script = resolve_path(sub_cfg.get("script", "human_ft/finetune_humandata.py"), run_dir)
     train_csv = resolve_path(
-        sub_cfg.get("train_csv") or paths_cfg.get("human_train_csv", "results/human/data_train_nlp.csv"),
+        sub_cfg.get("train_csv") or paths_cfg.get("human_train_csv", "data/human_ft/data_train_nlp.csv"),
         run_dir,
     )
     val_csv = resolve_path(
-        sub_cfg.get("val_csv") or paths_cfg.get("human_val_csv", "results/human/data_val_nlp.csv"),
+        sub_cfg.get("val_csv") or paths_cfg.get("human_val_csv", "data/human_ft/data_val_nlp.csv"),
         run_dir,
     )
     sp2013_csv = resolve_path(

@@ -8,8 +8,8 @@
     "uma_models_dir": "results/UMA_replication/trained_models",
     "uma_problem_csv": "1. Model/Problem Sets Training/go_math.csv",
     "sp2013_csv": "results/UMA_replication/sp2013.csv",
-    "human_train_csv": "results/human/data_train_nlp.csv",
-    "human_val_csv": "results/human/data_val_nlp.csv"
+    "human_train_csv": "data/human_ft/data_train_nlp.csv",
+    "human_val_csv": "data/human_ft/data_val_nlp.csv"
   },
   "external_inputs": {
     "uma_trace_csv": "",
@@ -146,7 +146,7 @@
     },
     "human_finetune": {
       "enabled": true,
-      "script": "results/transformer_replication/finetune_humandata.py",
+      "script": "human_ft/finetune_humandata.py",
       "output_dir": "{run_dir}/05_human_finetune",
       "checkpoint_subdir": "best",
       "train_csv": "",

@@ -1,0 +1,295 @@
+subjid,prob,resp,strategy,instruction_nl,response_nl
+620,3/5*2/5,6/25,"I multiplied 3 times 2 and got 6, and 5 times 5 and got 25, and my answer was 6/25",Solve this fraction problem: 3/5*2/5=?,"I multiplied 3 times 2 and got 6, and 5 times 5 and got 25, and my answer was 6/25
+### answer: 6/25"
+620,3/5*1/2,3/10,"I did 3 times 1 which equaled 3, and 5 times 2 and it'd equal 10, and my answer was 3/10",Solve this fraction problem: 3/5*1/2=?,"I did 3 times 1 which equaled 3, and 5 times 2 and it'd equal 10, and my answer was 3/10
+### answer: 3/10"
+622,3/5+2/5,5/5,3 plus 2 is 5. If the denominators are the same you don't do anything to them. That is an improper fraction.,Solve this fraction problem: 3/5+2/5=?,"3 plus 2 is 5. If the denominators are the same you don't do anything to them. That is an improper fraction.
+### answer: 5/5"
+623,3/5*1/2,3/10,I found my common denominator which was 10 and then I multiplied 3 times 1 and got 3,Solve this fraction problem: 3/5*1/2=?,"I found my common denominator which was 10 and then I multiplied 3 times 1 and got 3
+### answer: 3/10"
+623,3/5-2/5,1/5,"I found my common denominator and it was 5, and then I subtracted 3 minus 2 and got 1",Solve this fraction problem: 3/5-2/5=?,"I found my common denominator and it was 5, and then I subtracted 3 minus 2 and got 1
+### answer: 1/5"
+624,3/5+2/5,1,"I added the numerators together, then I realized that was wrong",Solve this fraction problem: 3/5+2/5=?,"I added the numerators together, then I realized that was wrong
+### answer: 1"
+624,3/5+1/2,1 1/10,I did addition,Solve this fraction problem: 3/5+1/2=?,"I did addition
+### answer: 1 1/10"
+624,3/5*1/2,30/100,"I had to bring the fractions up, then multiply",Solve this fraction problem: 3/5*1/2=?,"I had to bring the fractions up, then multiply
+### answer: 30/100"
+624,3/5-2/5,1/5,I subtracted the numerators and got the denominators,Solve this fraction problem: 3/5-2/5=?,"I subtracted the numerators and got the denominators
+### answer: 1/5"
+624,3/5-1/2,1/10,"I got the denominators to the same thing by multiplying, and then I did the subtraction",Solve this fraction problem: 3/5-1/2=?,"I got the denominators to the same thing by multiplying, and then I did the subtraction
+### answer: 1/10"
+629,3/5+2/5,5/5,"I chose 5/5 because 3 plus 2 is 5, and I remembering hearing something stays the same, and I'm guessing that's the bottom one so I chose 5",Solve this fraction problem: 3/5+2/5=?,"I chose 5/5 because 3 plus 2 is 5, and I remembering hearing something stays the same, and I'm guessing that's the bottom one so I chose 5
+### answer: 5/5"
+629,3/5*2/5,6/25,"I multiplied 3 times 2 equals 6 and 5 times 5 is 25, so I got 6/25",Solve this fraction problem: 3/5*2/5=?,"I multiplied 3 times 2 equals 6 and 5 times 5 is 25, so I got 6/25
+### answer: 6/25"
+629,3/5-2/5,1/5,"I chose 1/5 as my answer and I chose that because 3 minus 2 is 1, and 5 minus 5 is 0 but I picked 5 anyway",Solve this fraction problem: 3/5-2/5=?,"I chose 1/5 as my answer and I chose that because 3 minus 2 is 1, and 5 minus 5 is 0 but I picked 5 anyway
+### answer: 1/5"
+630,3/5+2/5,1,"I thought 3/5 and 2/5 would be one whole, I guessed on that one",Solve this fraction problem: 3/5+2/5=?,"I thought 3/5 and 2/5 would be one whole, I guessed on that one
+### answer: 1"
+630,3/5*1/2,3/10,I thought 3 times 1 would be 3 and 5  times 2 would be 10 so I put 3/10,Solve this fraction problem: 3/5*1/2=?,"I thought 3 times 1 would be 3 and 5  times 2 would be 10 so I put 3/10
+### answer: 3/10"
+630,3/5-2/5,1/5,"I knew that the 5 for the bottom part was the same, cause they're both 5, and 3/5 minus 2/5 would be 1/5",Solve this fraction problem: 3/5-2/5=?,"I knew that the 5 for the bottom part was the same, cause they're both 5, and 3/5 minus 2/5 would be 1/5
+### answer: 1/5"
+631,3/5+2/5,5/5,"I got 5/5 or 1, because since both denominators were the same, they didn't add each other up and I multiplied 3 by 2 and that gave me 5, so I got my answer of 5/5 or 1",Solve this fraction problem: 3/5+2/5=?,"I got 5/5 or 1, because since both denominators were the same, they didn't add each other up and I multiplied 3 by 2 and that gave me 5, so I got my answer of 5/5 or 1
+### answer: 5/5"
+631,3/5+1/2,11/10,"I got my answer because I knew my denominators need to be the same,  so I times 2 by 5 and I times 5 by 2, but since I times the denominators I did the same for the numerators, so I times 1 by 5, and then times 3 by 2, and that gave me 11/10",Solve this fraction problem: 3/5+1/2=?,"I got my answer because I knew my denominators need to be the same,  so I times 2 by 5 and I times 5 by 2, but since I times the denominators I did the same for the numerators, so I times 1 by 5, and then times 3 by 2, and that gave me 11/10
+### answer: 11/10"
+631,3/5*2/5,6/25,"I figured this out by timesing the numerators of 3 and 2 to get 6, and I times the denominator of 5 and 5 to get 25",Solve this fraction problem: 3/5*2/5=?,"I figured this out by timesing the numerators of 3 and 2 to get 6, and I times the denominator of 5 and 5 to get 25
+### answer: 6/25"
+631,3/5*1/2,3/10,"I figured this out because I times 3 times 1 and that equals 3, so that was my numerator, and my denominator, I figured that out by timesing, because I times 5 by 2 to get 10",Solve this fraction problem: 3/5*1/2=?,"I figured this out because I times 3 times 1 and that equals 3, so that was my numerator, and my denominator, I figured that out by timesing, because I times 5 by 2 to get 10
+### answer: 3/10"
+631,3/5-2/5,1/5,"I got my answer by minusing 3/5 by 2/5 which gave me 1/5. I didn't change the denominator because the denominators stay the same, you don't do anything to it",Solve this fraction problem: 3/5-2/5=?,"I got my answer by minusing 3/5 by 2/5 which gave me 1/5. I didn't change the denominator because the denominators stay the same, you don't do anything to it
+### answer: 1/5"
+631,3/5-1/2,1/10,"Well first the denominators need to be the same, so I times 5 by 2 and 2 by 5, since I times the denominators by something I have to do th same for the numerators , so I times 5 by 1, and 2 by 3, that gave me 6/10 minus 5/10 and that equal 5/10",Solve this fraction problem: 3/5-1/2=?,"Well first the denominators need to be the same, so I times 5 by 2 and 2 by 5, since I times the denominators by something I have to do th same for the numerators , so I times 5 by 1, and 2 by 3, that gave me 6/10 minus 5/10 and that equal 5/10
+### answer: 1/10"
+632,3/5*2/5,6/25,"I timesed 3 by 2 to get 6, and 5 by 5 to get 25",Solve this fraction problem: 3/5*2/5=?,"I timesed 3 by 2 to get 6, and 5 by 5 to get 25
+### answer: 6/25"
+632,3/5-2/5,1/5,"I first got 1/5 because I minus 3 from 2 to get 1, then I both of the bottoms are 5 so I kept it a 5",Solve this fraction problem: 3/5-2/5=?,"I first got 1/5 because I minus 3 from 2 to get 1, then I both of the bottoms are 5 so I kept it a 5
+### answer: 1/5"
+633,3/5+2/5,1,"There was no need to change the denominator, and 3 and 2 the numerators added up to be exactly the same as the denominators so the answer was 1",Solve this fraction problem: 3/5+2/5=?,"There was no need to change the denominator, and 3 and 2 the numerators added up to be exactly the same as the denominators so the answer was 1
+### answer: 1"
+633,3/5+1/2,1 1/10,"By doing this I found the LCM in 3/5 and 1/2 which was 6/10 and 5/10, and then added them to get 1 1/10",Solve this fraction problem: 3/5+1/2=?,"By doing this I found the LCM in 3/5 and 1/2 which was 6/10 and 5/10, and then added them to get 1 1/10
+### answer: 1 1/10"
+633,3/5:1/2,1 1/5,"I changed my fractions to decimals, then divided them, and got my answer, changed it back to a fraction and got 1 1/5",Solve this fraction problem: 3/5:1/2=?,"I changed my fractions to decimals, then divided them, and got my answer, changed it back to a fraction and got 1 1/5
+### answer: 1 1/5"
+633,3/5:2/5,1 1/2,"I changed the fractions to decimals, and then divided these, and then changed my answer back to a fraction to get my answer",Solve this fraction problem: 3/5:2/5=?,"I changed the fractions to decimals, and then divided these, and then changed my answer back to a fraction to get my answer
+### answer: 1 1/2"
+633,3/5-2/5,1/5,I figured out that the denominators need not be changed on 3/5 and 2/5 but you must subtract the numerators which were 3 and 2 to equal 1/5 overall,Solve this fraction problem: 3/5-2/5=?,"I figured out that the denominators need not be changed on 3/5 and 2/5 but you must subtract the numerators which were 3 and 2 to equal 1/5 overall
+### answer: 1/5"
+633,3/5-1/2,1/10,I figured out that 3/5 and 1/2 need to have their denominators and numerators changed to fit the proper fraction so I multiplied 3/5 into 6/10 and 1/2 into 5/10 and then subtracted to get 1/10,Solve this fraction problem: 3/5-1/2=?,"I figured out that 3/5 and 1/2 need to have their denominators and numerators changed to fit the proper fraction so I multiplied 3/5 into 6/10 and 1/2 into 5/10 and then subtracted to get 1/10
+### answer: 1/10"
+636,3/5*1/2,3/10,I chose that because I divided 3 times 1 and then I divided 5 times 10.,Solve this fraction problem: 3/5*1/2=?,"I chose that because I divided 3 times 1 and then I divided 5 times 10.
+### answer: 3/10"
+638,3/5+2/5,1,"I added 3/5 and 2/5 and got 1 because I left the denominator 5 and 5 alone which gave me 5, and added the 3 and 2 of the numerator which got 5 also, and that would even out to 1",Solve this fraction problem: 3/5+2/5=?,"I added 3/5 and 2/5 and got 1 because I left the denominator 5 and 5 alone which gave me 5, and added the 3 and 2 of the numerator which got 5 also, and that would even out to 1
+### answer: 1"
+638,3/5-2/5,1/5,"First I took the numerators and subtracted them, 3 and 2 to get 1, and then I took the denominators and I kept them the same since they're both 5's and made it 1/5",Solve this fraction problem: 3/5-2/5=?,"First I took the numerators and subtracted them, 3 and 2 to get 1, and then I took the denominators and I kept them the same since they're both 5's and made it 1/5
+### answer: 1/5"
+639,3/5+2/5,5/5,"I took the lowest common denominator, which was 5, then added 3 plus 2 to get 5",Solve this fraction problem: 3/5+2/5=?,"I took the lowest common denominator, which was 5, then added 3 plus 2 to get 5
+### answer: 5/5"
+640,3/5+2/5,1,"I got one whole as my fraction because 3 plus 2 equals 5, and 5 plus 5 equals 0, and a fraction, or 5 I mean and a fraction, and if you add them together it'd equal one whole",Solve this fraction problem: 3/5+2/5=?,"I got one whole as my fraction because 3 plus 2 equals 5, and 5 plus 5 equals 0, and a fraction, or 5 I mean and a fraction, and if you add them together it'd equal one whole
+### answer: 1"
+640,3/5*2/5,6/25,"I got 6/25 because I multiplied 3 times 2 and that equals 6, and 5 times 5 equals 25, to get 6/25",Solve this fraction problem: 3/5*2/5=?,"I got 6/25 because I multiplied 3 times 2 and that equals 6, and 5 times 5 equals 25, to get 6/25
+### answer: 6/25"
+640,3/5*1/2,3/10,"I got 3/10 by multiplying 1 by 2, and 5 by 2, and that equals 3",Solve this fraction problem: 3/5*1/2=?,"I got 3/10 by multiplying 1 by 2, and 5 by 2, and that equals 3
+### answer: 3/10"
+641,3/5+2/5,5/5,3/5 plus 2/5 equals 5/5 because 3/5 plus 2/5 would also equal one whole,Solve this fraction problem: 3/5+2/5=?,"3/5 plus 2/5 equals 5/5 because 3/5 plus 2/5 would also equal one whole
+### answer: 5/5"
+641,3/5*1/2,3/10,"I decided that 3/5 times 1/2 equals 3/10 because 5 and 2 are not equal numbers but one number they could both be multiplied by is 10, and then you had an equal number on each fraction so then you can go ahead and multiply 3 and 1 which gave me 3/10",Solve this fraction problem: 3/5*1/2=?,"I decided that 3/5 times 1/2 equals 3/10 because 5 and 2 are not equal numbers but one number they could both be multiplied by is 10, and then you had an equal number on each fraction so then you can go ahead and multiply 3 and 1 which gave me 3/10
+### answer: 3/10"
+641,3/5-2/5,1/5,3/5 subtracted by 2/5 equals 1/5 because when you subtract 2/5 from 3/5 you'd get 1/5 because the bottom number was equal on both sides and then you can go ahead and subtract without having to figure out the same number,Solve this fraction problem: 3/5-2/5=?,"3/5 subtracted by 2/5 equals 1/5 because when you subtract 2/5 from 3/5 you'd get 1/5 because the bottom number was equal on both sides and then you can go ahead and subtract without having to figure out the same number
+### answer: 1/5"
+643,3/5+2/5,1,"First I added 3 plus 2 which equals 5, and I got 5/5, and that's one whole",Solve this fraction problem: 3/5+2/5=?,"First I added 3 plus 2 which equals 5, and I got 5/5, and that's one whole
+### answer: 1"
+643,3/5+1/2,1 1/10,I multiplied 3/5 by 2 to get 6/10 and I multiplied 1/2 by 5 and got 5/10 and I added that to get 11/10,Solve this fraction problem: 3/5+1/2=?,"I multiplied 3/5 by 2 to get 6/10 and I multiplied 1/2 by 5 and got 5/10 and I added that to get 11/10
+### answer: 1 1/10"
+643,3/5*2/5,6/25,"For this problem I multiplied 3 by 2 which equals 6, and 5 by 5 which equals 25, that is 6/25",Solve this fraction problem: 3/5*2/5=?,"For this problem I multiplied 3 by 2 which equals 6, and 5 by 5 which equals 25, that is 6/25
+### answer: 6/25"
+643,3/5*1/2,3/10,I multiplied 3/5 by 1/2 and got 3/10.,Solve this fraction problem: 3/5*1/2=?,"I multiplied 3/5 by 1/2 and got 3/10.
+### answer: 3/10"
+643,3/5-2/5,1/5,I subtracted 3/5 subtract 2/5 and got 1/5,Solve this fraction problem: 3/5-2/5=?,"I subtracted 3/5 subtract 2/5 and got 1/5
+### answer: 1/5"
+643,3/5-1/2,1/10,"I multiplied 3/5 by 2 and 1/2 by 5, and I got 6/10, subtract 5/10, and that equals 1/10",Solve this fraction problem: 3/5-1/2=?,"I multiplied 3/5 by 2 and 1/2 by 5, and I got 6/10, subtract 5/10, and that equals 1/10
+### answer: 1/10"
+809,3/5+2/5,1,"For trial 401, I gotyou do not have to find a common demonitor so you just add it across and I got 5 and 5/1 and I simplified it out and got 1.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, I gotyou do not have to find a common demonitor so you just add it across and I got 5 and 5/1 and I simplified it out and got 1.
+### answer: 1"
+809,3/5+1/2,1 1/10,"For trial 402, I found a common denominator and it would be 10 and I took 5 and I times'ed it by 2 and 3 by 2. And I took the 2 and times'ed it by 5 and 1 by 2. I got 10 for... first of all I got 11 over 10 and simpliifed it out and got 1 1/10.",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I found a common denominator and it would be 10 and I took 5 and I times'ed it by 2 and 3 by 2. And I took the 2 and times'ed it by 5 and 1 by 2. I got 10 for... first of all I got 11 over 10 and simpliifed it out and got 1 1/10.
+### answer: 1 1/10"
+809,3/5*2/5,6/25,"I multiplied 5, or 3 times 2 to get 6 and 5 times 5 to get 25. And you cannot simplify it.",Solve this fraction problem: 3/5*2/5=?,"I multiplied 5, or 3 times 2 to get 6 and 5 times 5 to get 25. And you cannot simplify it.
+### answer: 6/25"
+809,3/5*1/2,3/10,"For trial 602, I multiplied 3 times 1 to get 3 and 5 times 2 to get 10. And it cannot be simplified.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I multiplied 3 times 1 to get 3 and 5 times 2 to get 10. And it cannot be simplified.
+### answer: 3/10"
+809,3/5-2/5,1/5,"For trial 701, I got the answer 1/5 because I subtracted 3 minus 2 and I got 1 and 5 minus 5well, 5 would be your common denominator.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I got the answer 1/5 because I subtracted 3 minus 2 and I got 1 and 5 minus 5well, 5 would be your common denominator.
+### answer: 1/5"
+809,3/5-1/2,1/10,"For trial 702, I found a common denominator which would be 10, I, times 5 times 2 and I multiplied 2 times 5 and that would be the common denominator . And 3 times 2 is 6 and 1 times 2, or 1 times 5 is 5. And I subtracted it and got 1/10.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I found a common denominator which would be 10, I, times 5 times 2 and I multiplied 2 times 5 and that would be the common denominator . And 3 times 2 is 6 and 1 times 2, or 1 times 5 is 5. And I subtracted it and got 1/10.
+### answer: 1/10"
+810,3/5+2/5,5/5,"Um, for trial 401, I addedI added across since they already had common denominoator and got 5 over 5.",Solve this fraction problem: 3/5+2/5=?,"Um, for trial 401, I addedI added across since they already had common denominoator and got 5 over 5.
+### answer: 5/5"
+810,3/5+1/2,1 1/10,"Um, I found a common denominator and then added across and then you can' t have an improper fraction as an answer so I turned it into a mixed number, for 402.",Solve this fraction problem: 3/5+1/2=?,"Um, I found a common denominator and then added across and then you can' t have an improper fraction as an answer so I turned it into a mixed number, for 402.
+### answer: 1 1/10"
+810,3/5*2/5,6/25,"For trial 601, I just multiplied across. 3 over... 3 dividi 3 times 2 is 6, 5 times 5 is 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I just multiplied across. 3 over... 3 dividi 3 times 2 is 6, 5 times 5 is 25.
+### answer: 6/25"
+811,3/5+2/5,1,"For trial 401, uh again since I had common denominator I added the numerators and got 5 over 5 and a simplified version of 5 over 5 would be 1 so that was my answer.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, uh again since I had common denominator I added the numerators and got 5 over 5 and a simplified version of 5 over 5 would be 1 so that was my answer.
+### answer: 1"
+811,3/5+1/2,1 1/10,"Uh for trial 402, I found common denominators uh and when I multiplied got 6/10 for the first fraction and 5/10 for the second. Uh when I added the numerators I got 11/10 and switched that to a mixed number giving me 1 and 1/10.",Solve this fraction problem: 3/5+1/2=?,"Uh for trial 402, I found common denominators uh and when I multiplied got 6/10 for the first fraction and 5/10 for the second. Uh when I added the numerators I got 11/10 and switched that to a mixed number giving me 1 and 1/10.
+### answer: 1 1/10"
+811,3/5:1/2,6/5,"Um for 501, uh I did the same method with multiplying by the reciprocal of the second fraction uh and I got fi6 over 5 and I couldn't simpli..well yea I could've made it a mixed number but I left it as an improper fraction again.",Solve this fraction problem: 3/5:1/2=?,"Um for 501, uh I did the same method with multiplying by the reciprocal of the second fraction uh and I got fi6 over 5 and I couldn't simpli..well yea I could've made it a mixed number but I left it as an improper fraction again.
+### answer: 6/5"
+811,3/5:2/5,3/2,"Uh for trial 502, um what I did was took the first fraction and to divide it by the second I flipped the second one to 5 over 2 and multiplied. Then I multiplied across and got 15 over 10 and when I simpified that it was 3 over 2. I couldn've probably made that a mixed number but I just left it as an improper.",Solve this fraction problem: 3/5:2/5=?,"Uh for trial 502, um what I did was took the first fraction and to divide it by the second I flipped the second one to 5 over 2 and multiplied. Then I multiplied across and got 15 over 10 and when I simpified that it was 3 over 2. I couldn've probably made that a mixed number but I just left it as an improper.
+### answer: 3/2"
+811,3/5*2/5,6/25,"For trial 601, uh the two thoughts I was having is to multiply the numerators and denominoators to get my answer. And the other was to cross multiply the 5 and the 2 and the 3 and the 5 but uh I had a stronger feeling it was the first method so that is what I put as my answer.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, uh the two thoughts I was having is to multiply the numerators and denominoators to get my answer. And the other was to cross multiply the 5 and the 2 and the 3 and the 5 but uh I had a stronger feeling it was the first method so that is what I put as my answer.
+### answer: 6/25"
+811,3/5*1/2,3/10,"Um, for 602, uh I, there is something told me you don't need common denominators when multiplying fractions. So I multiplied across the numerators and the denominators giving me the answer.",Solve this fraction problem: 3/5*1/2=?,"Um, for 602, uh I, there is something told me you don't need common denominators when multiplying fractions. So I multiplied across the numerators and the denominators giving me the answer.
+### answer: 3/10"
+811,3/5-2/5,1/5,"For trial 701, since, um, the two fractions have common denominators, I had to go ahead in my mind to just subtract the top. Giving me 1/5.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, since, um, the two fractions have common denominators, I had to go ahead in my mind to just subtract the top. Giving me 1/5.
+### answer: 1/5"
+811,3/5-1/2,1/10,"Um, for trial 702, uh since they.. The 5 and the 2 are not common denominators, I had to find it which would be 10. Um so to get uh 10 for the first fraction, multiplied both sides by 2 giving me 10 on the botom and 6 on the top. And for the second one, multiplied both by 5 giving me 10 on the bottom, 5 on the top.  And when I had common denominators, I subracted 6 minus 5 and got 1 over 10.",Solve this fraction problem: 3/5-1/2=?,"Um, for trial 702, uh since they.. The 5 and the 2 are not common denominators, I had to find it which would be 10. Um so to get uh 10 for the first fraction, multiplied both sides by 2 giving me 10 on the botom and 6 on the top. And for the second one, multiplied both by 5 giving me 10 on the bottom, 5 on the top.  And when I had common denominators, I subracted 6 minus 5 and got 1 over 10.
+### answer: 1/10"
+813,3/5+2/5,1,equals one whole because the 5s cancel out each other and it would be part of the fraction and 3 plus 2 would be 5 over 5 and that would be one whole.,Solve this fraction problem: 3/5+2/5=?,"equals one whole because the 5s cancel out each other and it would be part of the fraction and 3 plus 2 would be 5 over 5 and that would be one whole.
+### answer: 1"
+813,3/5+1/2,1 1/10,would equal 1 1/10 because 3/5 would equal 6/10 and 1/2 would equal 5/10 and the 10s cancel out on each other and would still be the denominator for the answer and 6 plus 5 would equal 11 and that would be changed to 1 1/10.,Solve this fraction problem: 3/5+1/2=?,"would equal 1 1/10 because 3/5 would equal 6/10 and 1/2 would equal 5/10 and the 10s cancel out on each other and would still be the denominator for the answer and 6 plus 5 would equal 11 and that would be changed to 1 1/10.
+### answer: 1 1/10"
+813,3/5:1/2,1 1/5,I used the criss-cross method. 3 times 2 would equal 6 and 5 times 1 would equal 5 and that new fraction would be 1 1/5.  would go to the numerator and the 5 times 1 would go to the denominator.,Solve this fraction problem: 3/5:1/2=?,"I used the criss-cross method. 3 times 2 would equal 6 and 5 times 1 would equal 5 and that new fraction would be 1 1/5.  would go to the numerator and the 5 times 1 would go to the denominator.
+### answer: 1 1/5"
+813,3/5:2/5,1 1/2,"I did the criss-cross method again. 3 times 5 would equal 15, it would go in the numerator, 5 times 2 would equal 10, it would go in the denominator. The new fraction would be 1 5/10, and reduce that to 1 1/2.",Solve this fraction problem: 3/5:2/5=?,"I did the criss-cross method again. 3 times 5 would equal 15, it would go in the numerator, 5 times 2 would equal 10, it would go in the denominator. The new fraction would be 1 5/10, and reduce that to 1 1/2.
+### answer: 1 1/2"
+813,3/5*2/5,6/25,equals 6/25 because I just multiplied across 3 times 2 and 5 times 5.,Solve this fraction problem: 3/5*2/5=?,"equals 6/25 because I just multiplied across 3 times 2 and 5 times 5.
+### answer: 6/25"
+813,3/5*1/2,3/10,equals 3/10 because I just multiplied across 3 times 1 equals 3 and 5 times 2 equals 10.,Solve this fraction problem: 3/5*1/2=?,"equals 3/10 because I just multiplied across 3 times 1 equals 3 and 5 times 2 equals 10.
+### answer: 3/10"
+813,3/5-2/5,1/5,"would equal 1/5 because the 5s would cancel out each other and would stay the same, for the denominator, and 3 minus 2 would equal 1.",Solve this fraction problem: 3/5-2/5=?,"would equal 1/5 because the 5s would cancel out each other and would stay the same, for the denominator, and 3 minus 2 would equal 1.
+### answer: 1/5"
+813,3/5-1/2,1/10,I changed 3/5 to 6/10 and 1/2 to 5/10 and 6/10 minus 5/10 would equal 1/10.,Solve this fraction problem: 3/5-1/2=?,"I changed 3/5 to 6/10 and 1/2 to 5/10 and 6/10 minus 5/10 would equal 1/10.
+### answer: 1/10"
+814,3/5-2/5,1/5,First I would subtract 3 minus 2 so it would be 1/5.,Solve this fraction problem: 3/5-2/5=?,"First I would subtract 3 minus 2 so it would be 1/5.
+### answer: 1/5"
+814,3/5-1/2,1/10,"5 times 2 to make the denominators equal which would make it 10. 2 times 3 to make it 6 and then 5 times 1 would make it 5, so it'd be 6/10 and 5/10. I take 5 out of 6 which would make it 1/10.",Solve this fraction problem: 3/5-1/2=?,"5 times 2 to make the denominators equal which would make it 10. 2 times 3 to make it 6 and then 5 times 1 would make it 5, so it'd be 6/10 and 5/10. I take 5 out of 6 which would make it 1/10.
+### answer: 1/10"
+815,3/5+2/5,1,"I decided that in trial 401, I needed to make sure that the denominators of the fractions were the same and they were so I added the numerators together and kept the denominator the same and it came out to be 5 over 5 so I simplified it to 1.",Solve this fraction problem: 3/5+2/5=?,"I decided that in trial 401, I needed to make sure that the denominators of the fractions were the same and they were so I added the numerators together and kept the denominator the same and it came out to be 5 over 5 so I simplified it to 1.
+### answer: 1"
+815,3/5+1/2,11/10,"I decided that in trial 402, I needed to make sure that the denominators were the same and they weren't so I had to find a common decominator which was 10. And then I added the numerators together to get 11 over 10.",Solve this fraction problem: 3/5+1/2=?,"I decided that in trial 402, I needed to make sure that the denominators were the same and they weren't so I had to find a common decominator which was 10. And then I added the numerators together to get 11 over 10.
+### answer: 11/10"
+815,3/5:1/2,6/5,"I decided that in trial 105, in order to divide the fracton, I had to find the reciprocol of the second fraction which would make 1/2 2 over 1 then I mulitplied the numer.. Numerators and denominators together and that equaledto get 6 over 5.",Solve this fraction problem: 3/5:1/2=?,"I decided that in trial 105, in order to divide the fracton, I had to find the reciprocol of the second fraction which would make 1/2 2 over 1 then I mulitplied the numer.. Numerators and denominators together and that equaledto get 6 over 5.
+### answer: 6/5"
+815,3/5:2/5,15/10,"I decided that in trial 502, in order to solve a division fraction problem, I had to find the reciprocol of the second fraction which was then equal to 5 over 2 and I multipled my numerators and denominators and came up with 15 over 10.",Solve this fraction problem: 3/5:2/5=?,"I decided that in trial 502, in order to solve a division fraction problem, I had to find the reciprocol of the second fraction which was then equal to 5 over 2 and I multipled my numerators and denominators and came up with 15 over 10.
+### answer: 15/10"
+815,3/5*2/5,6/25,"For trial 601, my answer was 6 over 25 because I multiplied the numerators which were 3 times 2 equals 6 and the denominators were 5 times 5 equals 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, my answer was 6 over 25 because I multiplied the numerators which were 3 times 2 equals 6 and the denominators were 5 times 5 equals 25.
+### answer: 6/25"
+815,3/5*1/2,3/10,"For trial 602, I got 3 over 10 because the numerators 3 times 1 equals 3 and the denominators 3 times, I mean 5 times 2 equals 10.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I got 3 over 10 because the numerators 3 times 1 equals 3 and the denominators 3 times, I mean 5 times 2 equals 10.
+### answer: 3/10"
+815,3/5-2/5,1/5,"I decided that in trial 701, in order to solve the subtraction fraction problem, I had to make sure that there were common denominators which there were so I took 3 fifths minus 2 fifths equals 1 fifth.",Solve this fraction problem: 3/5-2/5=?,"I decided that in trial 701, in order to solve the subtraction fraction problem, I had to make sure that there were common denominators which there were so I took 3 fifths minus 2 fifths equals 1 fifth.
+### answer: 1/5"
+815,3/5-1/2,1/10,"I decided that in trial 702, in order to solve the subtraction fraction problem I had to find a common denominator and my common denominator was 10 and so the problem came out to be 6 tenths minus 5 tenths equals 1 tenth.",Solve this fraction problem: 3/5-1/2=?,"I decided that in trial 702, in order to solve the subtraction fraction problem I had to find a common denominator and my common denominator was 10 and so the problem came out to be 6 tenths minus 5 tenths equals 1 tenth.
+### answer: 1/10"
+816,3/5+2/5,5/5,"For the fractions, I added the top numbers, kept the bottom numbers the same. Because if they're the same number, you keep it the same and then you add the top numbers.",Solve this fraction problem: 3/5+2/5=?,"For the fractions, I added the top numbers, kept the bottom numbers the same. Because if they're the same number, you keep it the same and then you add the top numbers.
+### answer: 5/5"
+816,3/5-2/5,1/5,"For trial 701, I put 1/5 because I I subtracted 3 minus 2 and kept the bottom number the same because theyr'e both 5 and 5.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I put 1/5 because I I subtracted 3 minus 2 and kept the bottom number the same because theyr'e both 5 and 5.
+### answer: 1/5"
+818,3/5:1/2,6/5,I did 3 times 2 is 6 and then I did 5 times 1 is 5 and then I put 6 over 5 and eigh6 over 5.,Solve this fraction problem: 3/5:1/2=?,"I did 3 times 2 is 6 and then I did 5 times 1 is 5 and then I put 6 over 5 and eigh6 over 5.
+### answer: 6/5"
+818,3/5:2/5,3/2,Trial 502. I multiplied 5 times 3 is 15 and 5 times 2 is 10 and then I divided by 5.,Solve this fraction problem: 3/5:2/5=?,"Trial 502. I multiplied 5 times 3 is 15 and 5 times 2 is 10 and then I divided by 5.
+### answer: 3/2"
+820,3/5+2/5,1,"For trial 401, um 5 and 5 is in the denominator so I kept that the same but when I added uh si..or 3 and 2 were 5 and 5 over 5 would equal 1 so I pjust put 1.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, um 5 and 5 is in the denominator so I kept that the same but when I added uh si..or 3 and 2 were 5 and 5 over 5 would equal 1 so I pjust put 1.
+### answer: 1"
+820,3/5+1/2,1 1/10,"For trial 402, I found a common denominator for 5 and 2 which would be 10 so I made the denominator 10. When I added 5 and 6, I got 11/10 but since that is an improper fraction, I had to change it to a mixed number and I got 1 and 1/10",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I found a common denominator for 5 and 2 which would be 10 so I made the denominator 10. When I added 5 and 6, I got 11/10 but since that is an improper fraction, I had to change it to a mixed number and I got 1 and 1/10
+### answer: 1 1/10"
+820,3/5*2/5,6/25,"For trial 601, um, for multiplying I just cross multiplied. Multipled 3 by 2 to get 6, 5 times 5 to get 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, um, for multiplying I just cross multiplied. Multipled 3 by 2 to get 6, 5 times 5 to get 25.
+### answer: 6/25"
+820,3/5*1/2,3/10,"For trial 602, I multiplied 3 by 1 to get 3 and 5 by 2 to get 10.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I multiplied 3 by 1 to get 3 and 5 by 2 to get 10.
+### answer: 3/10"
+820,3/5-2/5,1/5,"For trial 701, I subtracted 3 from 2 and got 1 and I just bourhg the denominator is 5 cause that s what the other 2 were.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I subtracted 3 from 2 and got 1 and I just bourhg the denominator is 5 cause that s what the other 2 were.
+### answer: 1/5"
+820,3/5-1/2,1/10,"For trial 702, I found the common denominator which was 10 and because I multiplied the 5 by 2, I multiplied 3 by 2, got 6. And since I multiplied 2 by 5, I multiplied 1 by 5 and I subtracted 6 and 1 and got 1. And I just kept the denominator as 10.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I found the common denominator which was 10 and because I multiplied the 5 by 2, I multiplied 3 by 2, got 6. And since I multiplied 2 by 5, I multiplied 1 by 5 and I subtracted 6 and 1 and got 1. And I just kept the denominator as 10.
+### answer: 1/10"
+821,3/5+2/5,1,"For trial 401, I saw that the denominators were the same so I added right across the top to get 5 out of 5 which equals 1.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, I saw that the denominators were the same so I added right across the top to get 5 out of 5 which equals 1.
+### answer: 1"
+821,3/5+1/2,1 1/10,"For trial 402, I made the least common denominator which would be 10. So I multiplied the first numerator by 2 to get 6 and the second numerator by 5 to get 5 and added across the top to get 11/10 and simplified to get 1 and 1/10.",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I made the least common denominator which would be 10. So I multiplied the first numerator by 2 to get 6 and the second numerator by 5 to get 5 and added across the top to get 11/10 and simplified to get 1 and 1/10.
+### answer: 1 1/10"
+821,3/5:1/2,1 1/5,"For trial 501, I made the...the 1/2 the reciprocal then multplied across the top and bottom to get 1 and 1/5.",Solve this fraction problem: 3/5:1/2=?,"For trial 501, I made the...the 1/2 the reciprocal then multplied across the top and bottom to get 1 and 1/5.
+### answer: 1 1/5"
+821,3/5:2/5,1 1/2,"For trial 502, I made the 2/5 the reciprocal then multiplied the top to get 15 over 10 then reduced to get 1 and 1/2.",Solve this fraction problem: 3/5:2/5=?,"For trial 502, I made the 2/5 the reciprocal then multiplied the top to get 15 over 10 then reduced to get 1 and 1/2.
+### answer: 1 1/2"
+821,3/5*2/5,6/25,"For trial 601, I multiplied the numerators to get 6 and multiplied the denominators to get 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I multiplied the numerators to get 6 and multiplied the denominators to get 25.
+### answer: 6/25"
+821,3/5*1/2,3/10,"For trial 602, I multiplied across the top to get 3 and multiplied the denominators to get 10.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I multiplied across the top to get 3 and multiplied the denominators to get 10.
+### answer: 3/10"
+821,3/5-2/5,1/5,"For trial 701, since the denominators were equal, I just subtracted across the top to get 1.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, since the denominators were equal, I just subtracted across the top to get 1.
+### answer: 1/5"
+821,3/5-1/2,1/10,"For trial 702, I made the... I made like denominators and equaled out the numerators and subtracted the fractions.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I made the... I made like denominators and equaled out the numerators and subtracted the fractions.
+### answer: 1/10"
+823,3/5+1/2,1 1/10,"For trial 402, I first changed 3/5 to 6/10 cause I had to find the least common denominator and I changed 1/2 to 5/10 and I added and got 11/10 and then I changed it to a mixed number, 1 and 1/10.",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I first changed 3/5 to 6/10 cause I had to find the least common denominator and I changed 1/2 to 5/10 and I added and got 11/10 and then I changed it to a mixed number, 1 and 1/10.
+### answer: 1 1/10"
+823,3/5:1/2,1 1/5,"For trial 501, I first... I first wrote the problem down then I found the reciprocal for the second number. It was 2, one 2 and...2, 1. I then multiplied 3/5 times 2, 1. And I got 6/5. I then changed 6/5 to 1 and 1/5 as a mixed number.",Solve this fraction problem: 3/5:1/2=?,"For trial 501, I first... I first wrote the problem down then I found the reciprocal for the second number. It was 2, one 2 and...2, 1. I then multiplied 3/5 times 2, 1. And I got 6/5. I then changed 6/5 to 1 and 1/5 as a mixed number.
+### answer: 1 1/5"
+823,3/5:2/5,1 5/10,"For trial 502, I found, I first wrote the problem down, 3/5 divided by 2/5. I then changed 2/5 to its reciprocal which is 5... 5... 5/2. Then I multiplied 3/5 and 5/2 and got 15/10. I then changed 15/10 to a mixed number and it was 1 and 5/10.",Solve this fraction problem: 3/5:2/5=?,"For trial 502, I found, I first wrote the problem down, 3/5 divided by 2/5. I then changed 2/5 to its reciprocal which is 5... 5... 5/2. Then I multiplied 3/5 and 5/2 and got 15/10. I then changed 15/10 to a mixed number and it was 1 and 5/10.
+### answer: 1 5/10"
+823,3/5*2/5,6/25,"For trial 601, I multiplied the numerators across which would be 3 times 2 and got 6 and multiplied the 5, the num.. Or the denominators across which would be 5 times 5 and got 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I multiplied the numerators across which would be 3 times 2 and got 6 and multiplied the 5, the num.. Or the denominators across which would be 5 times 5 and got 25.
+### answer: 6/25"
+823,3/5*1/2,3/10,"For trial 602, I got, I multiplied the numerators across which would 3 times 2, or 3 times 1 and got 3. And then I multiplied the denominators across and multiplied 5 times 2 and got 10.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I got, I multiplied the numerators across which would 3 times 2, or 3 times 1 and got 3. And then I multiplied the denominators across and multiplied 5 times 2 and got 10.
+### answer: 3/10"
+823,3/5-2/5,1/5,"For trial 701, I subtracted the denominators, or the numerators across which would be 3 minus 5 and got 1 and I kept the denominator the same cause they're... they were both 5 and 5. And in a subtraction, I mean when you're subtracting fractions you keep the denominator the same.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I subtracted the denominators, or the numerators across which would be 3 minus 5 and got 1 and I kept the denominator the same cause they're... they were both 5 and 5. And in a subtraction, I mean when you're subtracting fractions you keep the denominator the same.
+### answer: 1/5"
+823,3/5-1/2,1/10,"For trial 702, I subtracted, or first I got a least common denominator which would be 10 and 10 for both sides then I multiplied... multiplied how I got to 10 which would fi 3 times 2 in the numerators for 3/5 which would make it 6/10 and if I did the same for the second fraction I would get 5/10. I then subtracted both numerators and got 1 and I kept the denominator the same.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I subtracted, or first I got a least common denominator which would be 10 and 10 for both sides then I multiplied... multiplied how I got to 10 which would fi 3 times 2 in the numerators for 3/5 which would make it 6/10 and if I did the same for the second fraction I would get 5/10. I then subtracted both numerators and got 1 and I kept the denominator the same.
+### answer: 1/10"
+824,3/5+2/5,1,"I just added across and since um it, the fraction is 3/5 plus 2/5, um it would equal 5/5 so it would equaled to be 1.",Solve this fraction problem: 3/5+2/5=?,"I just added across and since um it, the fraction is 3/5 plus 2/5, um it would equal 5/5 so it would equaled to be 1.
+### answer: 1"
+824,3/5+1/2,1 1/10,I just found the least common denominator and um and got 6.. Or 6/10 plus 5/10 and that would equal 11/10 and that's an improper fraction. So I put it into a mixed number by um so it would be 1 and 1/10.,Solve this fraction problem: 3/5+1/2=?,"I just found the least common denominator and um and got 6.. Or 6/10 plus 5/10 and that would equal 11/10 and that's an improper fraction. So I put it into a mixed number by um so it would be 1 and 1/10.
+### answer: 1 1/10"
+824,3/5*1/2,30/100,I just multiplied across 3 times 1 and 5 times 2.,Solve this fraction problem: 3/5*1/2=?,"I just multiplied across 3 times 1 and 5 times 2.
+### answer: 30/100"
+824,3/5-2/5,1/5,The fractions were... had the same denominator so I just subtracted across.,Solve this fraction problem: 3/5-2/5=?,"The fractions were... had the same denominator so I just subtracted across.
+### answer: 1/5"
+824,3/5-1/2,1/10,I found the least common denominator and um subtracted across.,Solve this fraction problem: 3/5-1/2=?,"I found the least common denominator and um subtracted across.
+### answer: 1/10"
+826,3/5+2/5,1,They have the same denominator so you just keep it. And then you add the 3 and the 2 which equals 5 so that equals out to 1.,Solve this fraction problem: 3/5+2/5=?,"They have the same denominator so you just keep it. And then you add the 3 and the 2 which equals 5 so that equals out to 1.
+### answer: 1"
+826,3/5+1/2,1 1/10,They do not have the same den so I had to find a comm den which was 10. So then to get the num to change you mult it by the other number so 5 times 2 equals 6 and then and then 5 times 1 is 5 so then I got 11/10 so then I had to reduce it to 1 and  1/10.,Solve this fraction problem: 3/5+1/2=?,"They do not have the same den so I had to find a comm den which was 10. So then to get the num to change you mult it by the other number so 5 times 2 equals 6 and then and then 5 times 1 is 5 so then I got 11/10 so then I had to reduce it to 1 and  1/10.
+### answer: 1 1/10"
+826,3/5:2/5,1 1/2,Ok. This one had a same denominator so all I did was divide 3 and 2 and I got 1.5 so I just converted that into a fraction and got 1 and 1/2.,Solve this fraction problem: 3/5:2/5=?,"Ok. This one had a same denominator so all I did was divide 3 and 2 and I got 1.5 so I just converted that into a fraction and got 1 and 1/2.
+### answer: 1 1/2"
+826,3/5*2/5,6/25,I just multiplied 3 times 2 and got 6 and multiplied 5 times 5 and got 25.,Solve this fraction problem: 3/5*2/5=?,"I just multiplied 3 times 2 and got 6 and multiplied 5 times 5 and got 25.
+### answer: 6/25"
+826,3/5*1/2,3/10,"Ok. For this one, for multiplying fractions you always just multiply across. You take both the numerators and you get your numerator and you take both the denominators you get your denominator. So for this case, 3 times 1 is 3 and 5 times 2 is 10.",Solve this fraction problem: 3/5*1/2=?,"Ok. For this one, for multiplying fractions you always just multiply across. You take both the numerators and you get your numerator and you take both the denominators you get your denominator. So for this case, 3 times 1 is 3 and 5 times 2 is 10.
+### answer: 3/10"
+826,3/5-2/5,1/5,This one already had a same den so I just subtracted and kept the same denom. 3 minus 2 equals 1 soI got 1/5.,Solve this fraction problem: 3/5-2/5=?,"This one already had a same den so I just subtracted and kept the same denom. 3 minus 2 equals 1 soI got 1/5.
+### answer: 1/5"
+826,3/5-1/2,1/10,"Ok. For this one again I had to find a common denominator which was 10 so then I multiplied 3 times 2 and got 6 and 5 times 1 and got 5 and then I subtracted 6 timum, subtracted by 1 I mean 5 and then I got 1/10",Solve this fraction problem: 3/5-1/2=?,"Ok. For this one again I had to find a common denominator which was 10 so then I multiplied 3 times 2 and got 6 and 5 times 1 and got 5 and then I subtracted 6 timum, subtracted by 1 I mean 5 and then I got 1/10
+### answer: 1/10"
+827,3/5*1/2,3/10,For this one you would... I think I'm right but you would multiply it just because of the fact that there's 2 different numbers.,Solve this fraction problem: 3/5*1/2=?,"For this one you would... I think I'm right but you would multiply it just because of the fact that there's 2 different numbers.
+### answer: 3/10"
+828,3/5*2/5,6/25,"For trial 601, I gave the answer 6 over 25 because 3 times 2 equals 6 and 5 times 5 equals 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I gave the answer 6 over 25 because 3 times 2 equals 6 and 5 times 5 equals 25.
+### answer: 6/25"
+828,3/5*1/2,3/10,"For trial 602, I gave the answer 3 over 10 because um 3 times 3 equals 3 and 5 times 2 equals 10.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I gave the answer 3 over 10 because um 3 times 3 equals 3 and 5 times 2 equals 10.
+### answer: 3/10"
+829,3/5+2/5,1,"I tink it's one becauase uh 3/5 plus 2/5, they have a common denominator and if you add 3 to 2 and it equals 5/5 which equals 1.",Solve this fraction problem: 3/5+2/5=?,"I tink it's one becauase uh 3/5 plus 2/5, they have a common denominator and if you add 3 to 2 and it equals 5/5 which equals 1.
+### answer: 1"
+829,3/5+1/2,11/10,"I think this is 11 over 10 because if you make 3/5 um and one-ha..and one half a common denominators, it would be ss-six, oh wait, 6 over 10 and 5 over 10. So if you add across, 6 plus 5 and if you add the numerators across it's 11/10.  Which equals 1 and 1/10.",Solve this fraction problem: 3/5+1/2=?,"I think this is 11 over 10 because if you make 3/5 um and one-ha..and one half a common denominators, it would be ss-six, oh wait, 6 over 10 and 5 over 10. So if you add across, 6 plus 5 and if you add the numerators across it's 11/10.  Which equals 1 and 1/10.
+### answer: 11/10"
+829,3/5:1/2,6/5,"I think it's 6 and 5... 6/5 because um if you divide 3/5 by 1/2 you (mumbling) you can switch 1 the 1/2 the numerator with the dmerator and then you can just multiply across like regular multiplication, 3 times 1..yeah 3 times 2 and then um 5 times 1 which equals 6/5.",Solve this fraction problem: 3/5:1/2=?,"I think it's 6 and 5... 6/5 because um if you divide 3/5 by 1/2 you (mumbling) you can switch 1 the 1/2 the numerator with the dmerator and then you can just multiply across like regular multiplication, 3 times 1..yeah 3 times 2 and then um 5 times 1 which equals 6/5.
+### answer: 6/5"
+829,3/5:2/5,15/10,"I think it's 15 over 10 because uh if you switch 2/5, um the denominator and numerator around, and then you just multiply across it would be 3 times 5 equals 15 and 5 times 2 equals 10.",Solve this fraction problem: 3/5:2/5=?,"I think it's 15 over 10 because uh if you switch 2/5, um the denominator and numerator around, and then you just multiply across it would be 3 times 5 equals 15 and 5 times 2 equals 10.
+### answer: 15/10"
+829,3/5*2/5,6/25,"I think it's 6 over 25 because uh you just multiply across which equals 3 times 2 equals 6 and 5 times 5 equals 25. Yeah, you just multiply across.",Solve this fraction problem: 3/5*2/5=?,"I think it's 6 over 25 because uh you just multiply across which equals 3 times 2 equals 6 and 5 times 5 equals 25. Yeah, you just multiply across.
+### answer: 6/25"
+829,3/5*1/2,3/10,Um I think it's 3/10 because when you multiply fractions you just multiply across which would be 3 times 1 equals 3 and 5 times 2 equals 10.,Solve this fraction problem: 3/5*1/2=?,"Um I think it's 3/10 because when you multiply fractions you just multiply across which would be 3 times 1 equals 3 and 5 times 2 equals 10.
+### answer: 3/10"
+829,3/5-2/5,1/5,This would equal 1/5 because they're common denominators and you can just subtract the nomnumerators which would be 3 minus 2 equals 1.,Solve this fraction problem: 3/5-2/5=?,"This would equal 1/5 because they're common denominators and you can just subtract the nomnumerators which would be 3 minus 2 equals 1.
+### answer: 1/5"
+829,3/5-1/2,1/10,"K. I think it's 1 over 10 because if you make them common denominators, 3/5 would equals 6/10 and 1/2 would equal 5/10. And if you subtract 6 minus 5, it equals 1 over 10.",Solve this fraction problem: 3/5-1/2=?,"K. I think it's 1 over 10 because if you make them common denominators, 3/5 would equals 6/10 and 1/2 would equal 5/10. And if you subtract 6 minus 5, it equals 1 over 10.
+### answer: 1/10"
+830,3/5+2/5,1,And then I did that one because 3 plus 2 is 5 and they have the same denominator so thats like it would be 5/5 which is a whole.,Solve this fraction problem: 3/5+2/5=?,"And then I did that one because 3 plus 2 is 5 and they have the same denominator so thats like it would be 5/5 which is a whole.
+### answer: 1"
+830,3/5:1/2,6/5,I don't know I wasn't sure on that one 'cause'cause like um.. I dont know I remember there was like something with dividing and multiplying with I don't know. So I just multiplied them like diagonally.,Solve this fraction problem: 3/5:1/2=?,"I don't know I wasn't sure on that one 'cause'cause like um.. I dont know I remember there was like something with dividing and multiplying with I don't know. So I just multiplied them like diagonally.
+### answer: 6/5"
+830,3/5*1/2,3/10,And then that one's 3 I don't know if that would be 3/10s or I don't know.,Solve this fraction problem: 3/5*1/2=?,"And then that one's 3 I don't know if that would be 3/10s or I don't know.
+### answer: 3/10"
+830,3/5-2/5,1/5,"Wait, do I just like say it ? Um okay. I just did like 3 minus 2 is 1 and then you just like use the same denominator so. What if I forget what to do if they like have two different denominators.",Solve this fraction problem: 3/5-2/5=?,"Wait, do I just like say it ? Um okay. I just did like 3 minus 2 is 1 and then you just like use the same denominator so. What if I forget what to do if they like have two different denominators.
+### answer: 1/5"
+831,3/5+1/2,1 1/10,"For trial 402, I got the least common denominator of 10 and the numerators were 6 and 5 and 6 plus 5 equals 11 over 10 which equals out to be 1 and 1/10.",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I got the least common denominator of 10 and the numerators were 6 and 5 and 6 plus 5 equals 11 over 10 which equals out to be 1 and 1/10.
+### answer: 1 1/10"
+831,3/5:1/2,1 1/5,"For trial 501, I got 1 and 1/5 because for division you change the second number to its reciprocal which is 2 over 1 and then 3 times 2 equals 6 and 5 times 1 equals 5 which is the same as 1 and 1/5.",Solve this fraction problem: 3/5:1/2=?,"For trial 501, I got 1 and 1/5 because for division you change the second number to its reciprocal which is 2 over 1 and then 3 times 2 equals 6 and 5 times 1 equals 5 which is the same as 1 and 1/5.
+### answer: 1 1/5"
+831,3/5:2/5,1 1/2,"For trial 502, I got 1 and 1/2 because um whenever you change the second number to its reciprocal you get 5 over 2 and 3/5 and then the 5s cancel out so you get 1 and 3 times 1 equals 3 and then 1 times 2 equals 2 which is the same as 1 and 1/2.",Solve this fraction problem: 3/5:2/5=?,"For trial 502, I got 1 and 1/2 because um whenever you change the second number to its reciprocal you get 5 over 2 and 3/5 and then the 5s cancel out so you get 1 and 3 times 1 equals 3 and then 1 times 2 equals 2 which is the same as 1 and 1/2.
+### answer: 1 1/2"
+831,3/5*2/5,6/25,"Ok. For trial 601, I... my answer was 6 over 25 because 3 times 2 equals 6 for the numerator and 5 times 5 is 25 for the denominator.",Solve this fraction problem: 3/5*2/5=?,"Ok. For trial 601, I... my answer was 6 over 25 because 3 times 2 equals 6 for the numerator and 5 times 5 is 25 for the denominator.
+### answer: 6/25"
+831,3/5*1/2,3/10,"Um, as my answer I got 3 over 10 because 3 times 1 equals 3 and 5 times 2 equals 10 and 5 times 2 is the denominator which ould be 10 and 3 times 1 is 3 which be the uh numerator. That was trial 602.",Solve this fraction problem: 3/5*1/2=?,"Um, as my answer I got 3 over 10 because 3 times 1 equals 3 and 5 times 2 equals 10 and 5 times 2 is the denominator which ould be 10 and 3 times 1 is 3 which be the uh numerator. That was trial 602.
+### answer: 3/10"
+831,3/5-2/5,1/5,"For trial 701, I got 1/5 because 3 minus 2 equals 1 and the denominators are already the same so just bring it over and you get 1/5.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I got 1/5 because 3 minus 2 equals 1 and the denominators are already the same so just bring it over and you get 1/5.
+### answer: 1/5"
+831,3/5-1/2,1/10,"For trial 702, the least common denominator is 10 and then for the numerators I got 6 and 5. 6 minus 5 is 1 which is 1/10.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, the least common denominator is 10 and then for the numerators I got 6 and 5. 6 minus 5 is 1 which is 1/10.
+### answer: 1/10"
+832,3/5+2/5,5/5,"For trial 401, I added the numerators- 3 plus 2 is 5 and then the denominators were already the same so you didn't need a common denominator. It just stayed 5. So 5 over 5 was 1.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, I added the numerators- 3 plus 2 is 5 and then the denominators were already the same so you didn't need a common denominator. It just stayed 5. So 5 over 5 was 1.
+### answer: 5/5"
+832,3/5:1/2,1 1/5,"For trial 501, I did um 3/5 times 2 over 1 equals 6 over 5. And made it into a mixed number which was 1 and 1/5.",Solve this fraction problem: 3/5:1/2=?,"For trial 501, I did um 3/5 times 2 over 1 equals 6 over 5. And made it into a mixed number which was 1 and 1/5.
+### answer: 1 1/5"
+832,3/5:2/5,1 1/2,"For trial 502, um, I got the reciprocal for 5 over 2 and did 3 over 5 times 5 over 2. And got 15 over 10 and then made it into uh a mixed number and got 1 and 1/2.",Solve this fraction problem: 3/5:2/5=?,"For trial 502, um, I got the reciprocal for 5 over 2 and did 3 over 5 times 5 over 2. And got 15 over 10 and then made it into uh a mixed number and got 1 and 1/2.
+### answer: 1 1/2"
+832,3/5*2/5,6/25,"For trial 601, I did 3 times 2 is 6 for the numerator and 5 times 5 is 25 for the denominator. And that was the answer.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I did 3 times 2 is 6 for the numerator and 5 times 5 is 25 for the denominator. And that was the answer.
+### answer: 6/25"
+832,3/5*1/2,3/10,"For trial 602, I just multiplied across. 3 times 1 is 3 for the numerator and 5 times 2 is 10 as the denominator. And that was my answer.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I just multiplied across. 3 times 1 is 3 for the numerator and 5 times 2 is 10 as the denominator. And that was my answer.
+### answer: 3/10"
+832,3/5-2/5,1/5,"For trial 701, I did 3/5 minus 2/5 and got 1/5.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I did 3/5 minus 2/5 and got 1/5.
+### answer: 1/5"
+832,3/5-1/2,1/10,"For trial 702, I had to get a common denominator to subtract the fractions. And I found that it was 10 so I did 6 over 10 minus um 5 over 10and got 1 over 10.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I had to get a common denominator to subtract the fractions. And I found that it was 10 so I did 6 over 10 minus um 5 over 10and got 1 over 10.
+### answer: 1/10"

@@ -1,0 +1,89 @@
+{
+  "combined": {
+    "rows": 384,
+    "unique_subjids": 48,
+    "val_only_subjid_count": 12,
+    "val_only_subjids": [
+      "621",
+      "625",
+      "626",
+      "627",
+      "628",
+      "634",
+      "635",
+      "637",
+      "812",
+      "819",
+      "822",
+      "825"
+    ]
+  },
+  "combined_csv": "results/human/all_data/data_trainval_nlp.csv",
+  "definition": "Combined all-data CSV is the train rows followed by validation rows without filtering.",
+  "splits": {
+    "train": {
+      "name": "train",
+      "rows": 288,
+      "subjid_values": [
+        "620",
+        "622",
+        "623",
+        "624",
+        "629",
+        "630",
+        "631",
+        "632",
+        "633",
+        "636",
+        "638",
+        "639",
+        "640",
+        "641",
+        "642",
+        "643",
+        "809",
+        "810",
+        "811",
+        "813",
+        "814",
+        "815",
+        "816",
+        "817",
+        "818",
+        "820",
+        "821",
+        "823",
+        "824",
+        "826",
+        "827",
+        "828",
+        "829",
+        "830",
+        "831",
+        "832"
+      ],
+      "unique_subjids": 36
+    },
+    "val": {
+      "name": "val",
+      "rows": 96,
+      "subjid_values": [
+        "621",
+        "625",
+        "626",
+        "627",
+        "628",
+        "634",
+        "635",
+        "637",
+        "812",
+        "819",
+        "822",
+        "825"
+      ],
+      "unique_subjids": 12
+    }
+  },
+  "train_csv": "results/human/data_train_nlp.csv",
+  "val_csv": "results/human/data_val_nlp.csv"
+}

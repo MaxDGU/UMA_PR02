@@ -1,0 +1,59 @@
+subjid,prob,resp,strategy,instruction_nl,response_nl
+625,3/5*2/5,6/25,"I did 5 times 5 to get 25, and 3 times 2 to get 6, and it's 6/25",Solve this fraction problem: 3/5*2/5=?,"I did 5 times 5 to get 25, and 3 times 2 to get 6, and it's 6/25
+### answer: 6/25"
+625,3/5*1/2,3/10,"I did 3 times 1 to get 3, and 5 times 2 to get 10, and it's 3/10",Solve this fraction problem: 3/5*1/2=?,"I did 3 times 1 to get 3, and 5 times 2 to get 10, and it's 3/10
+### answer: 3/10"
+625,3/5-2/5,1/5,"I did 3 minus 2 to get 1, and then I thought it should've been 0 for 5 minus 5, but I just typed in 5",Solve this fraction problem: 3/5-2/5=?,"I did 3 minus 2 to get 1, and then I thought it should've been 0 for 5 minus 5, but I just typed in 5
+### answer: 1/5"
+626,3/5*2/5,6/25,"I multiplied again, just the top numbers, then the bottom numbers",Solve this fraction problem: 3/5*2/5=?,"I multiplied again, just the top numbers, then the bottom numbers
+### answer: 6/25"
+626,3/5*1/2,3/10,"I just multiplied 3 times 1 is 3, and 5 times 2 is 10",Solve this fraction problem: 3/5*1/2=?,"I just multiplied 3 times 1 is 3, and 5 times 2 is 10
+### answer: 3/10"
+627,3/5+2/5,1,"My answer was 1 because since the denominators are the same, you don't add them, and 3 plus 2 equals 5, and 5/5 would equal 1",Solve this fraction problem: 3/5+2/5=?,"My answer was 1 because since the denominators are the same, you don't add them, and 3 plus 2 equals 5, and 5/5 would equal 1
+### answer: 1"
+627,3/5+1/2,11/10,"I got 11/10 because 3/5 times two seconds would equal 6/10 and 1/2 times 5/5 would equal 5/10, and 6/10 plus 5/10 equals 11/10",Solve this fraction problem: 3/5+1/2=?,"I got 11/10 because 3/5 times two seconds would equal 6/10 and 1/2 times 5/5 would equal 5/10, and 6/10 plus 5/10 equals 11/10
+### answer: 11/10"
+627,3/5-2/5,1/5,I got 1/5 because 3/5 and 2/5 have the same denominator so you just have to do 3 minus 2 equals 1 and you would get 1/5,Solve this fraction problem: 3/5-2/5=?,"I got 1/5 because 3/5 and 2/5 have the same denominator so you just have to do 3 minus 2 equals 1 and you would get 1/5
+### answer: 1/5"
+627,3/5-1/2,1/10,"I got 1/10 because if you did 3/5 times two halves you would get 6/10 and 1/2 times 5/5 would equal 5/10, and 6/10 minus 5/10 equals 1/10",Solve this fraction problem: 3/5-1/2=?,"I got 1/10 because if you did 3/5 times two halves you would get 6/10 and 1/2 times 5/5 would equal 5/10, and 6/10 minus 5/10 equals 1/10
+### answer: 1/10"
+628,3/5*1/2,3/10,I put 3/10 because 3 times 1 is 3 and 5 times 2 is 10 so it would be 3/10.,Solve this fraction problem: 3/5*1/2=?,"I put 3/10 because 3 times 1 is 3 and 5 times 2 is 10 so it would be 3/10.
+### answer: 3/10"
+634,3/5*2/5,6/25,"I just multiplied 3 times 2, and multiplied 5 times 5, and I think I did that wrong?",Solve this fraction problem: 3/5*2/5=?,"I just multiplied 3 times 2, and multiplied 5 times 5, and I think I did that wrong?
+### answer: 6/25"
+634,3/5-2/5,1/5,Subtracted the numerators I guess,Solve this fraction problem: 3/5-2/5=?,"Subtracted the numerators I guess
+### answer: 1/5"
+634,3/5-1/2,1/10,"I made 3/5 6/10, and I made 1/2 5/10, so I subtracted them and got 1/10",Solve this fraction problem: 3/5-1/2=?,"I made 3/5 6/10, and I made 1/2 5/10, so I subtracted them and got 1/10
+### answer: 1/10"
+637,3/5+2/5,5/5,"I added 3 and 2 which equals 5, and if it's the same denominator as the other one, I put 5, so it equals one whole",Solve this fraction problem: 3/5+2/5=?,"I added 3 and 2 which equals 5, and if it's the same denominator as the other one, I put 5, so it equals one whole
+### answer: 5/5"
+637,3/5*1/2,3/10,"First I multiplied 3 and 1 which equals 3, and 5 and 2 which equals 10",Solve this fraction problem: 3/5*1/2=?,"First I multiplied 3 and 1 which equals 3, and 5 and 2 which equals 10
+### answer: 3/10"
+812,3/5:1/2,6/5,"Again, in the fraction you cross multuply which the 3 times 2 which equals 6 then the 5, the 5 times 1 equals which equals an improper fraction.",Solve this fraction problem: 3/5:1/2=?,"Again, in the fraction you cross multuply which the 3 times 2 which equals 6 then the 5, the 5 times 1 equals which equals an improper fraction.
+### answer: 6/5"
+812,3/5:2/5,15/10,"In division fraction, you have to cross multiply, in division. And when you cross it, you times the 3 by the 5 which equals 15 and the 5 by the 2 which equsl 10 which equals an improper fraction.",Solve this fraction problem: 3/5:2/5=?,"In division fraction, you have to cross multiply, in division. And when you cross it, you times the 3 by the 5 which equals 15 and the 5 by the 2 which equsl 10 which equals an improper fraction.
+### answer: 15/10"
+812,3/5*2/5,6/25,I just times'ed 3 times 2 which equals 6 then 5 times..5 times 5 which equals 25.,Solve this fraction problem: 3/5*2/5=?,"I just times'ed 3 times 2 which equals 6 then 5 times..5 times 5 which equals 25.
+### answer: 6/25"
+812,3/5*1/2,3/10,All I did was times 3 times 1 which equals 3 then 5 times 2 which equals 10.,Solve this fraction problem: 3/5*1/2=?,"All I did was times 3 times 1 which equals 3 then 5 times 2 which equals 10.
+### answer: 3/10"
+819,3/5+2/5,1,"For trial 401, I put 1 because 3/5 plus 2/5 equals 5/5 which is 1.",Solve this fraction problem: 3/5+2/5=?,"For trial 401, I put 1 because 3/5 plus 2/5 equals 5/5 which is 1.
+### answer: 1"
+819,3/5+1/2,1 1/10,"For trial 402, I put 1 1/10 because 3/5 plus 1/2 is 11/10 which is an improper fraction.",Solve this fraction problem: 3/5+1/2=?,"For trial 402, I put 1 1/10 because 3/5 plus 1/2 is 11/10 which is an improper fraction.
+### answer: 1 1/10"
+819,3/5*2/5,6/25,"For trial 601, I put 6/25 bcause 3 times 2 is 6 and 5 times 5 is 25.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I put 6/25 bcause 3 times 2 is 6 and 5 times 5 is 25.
+### answer: 6/25"
+819,3/5*1/2,3/10,"For trial 602, I put 3/10 because 3 times 1 is 3 and 5 times 5 is 25.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I put 3/10 because 3 times 1 is 3 and 5 times 5 is 25.
+### answer: 3/10"
+819,3/5-2/5,1/5,"For trial 701, I put 1/5 because 3/5 minus 2/5 equals 1/5.",Solve this fraction problem: 3/5-2/5=?,"For trial 701, I put 1/5 because 3/5 minus 2/5 equals 1/5.
+### answer: 1/5"
+819,3/5-1/2,1/10,"For trial 702, I put 1/10 because I turned 3/5 in to 6/10 and 1/2 into 5/10 and then subtracted.",Solve this fraction problem: 3/5-1/2=?,"For trial 702, I put 1/10 because I turned 3/5 in to 6/10 and 1/2 into 5/10 and then subtracted.
+### answer: 1/10"
+822,3/5*2/5,6/25,"For trial 601, I multiplied straight across.",Solve this fraction problem: 3/5*2/5=?,"For trial 601, I multiplied straight across.
+### answer: 6/25"
+822,3/5*1/2,3/10,"For trial 602, I said it was 3/10 because I multiplied straight across.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I said it was 3/10 because I multiplied straight across.
+### answer: 3/10"
+825,3/5+2/5,5/5,"For trail 401, I added 3 plus 2 which got.. I got 5 and then the den stayed the same which I got 5 over 5 which equalled 1.",Solve this fraction problem: 3/5+2/5=?,"For trail 401, I added 3 plus 2 which got.. I got 5 and then the den stayed the same which I got 5 over 5 which equalled 1.
+### answer: 5/5"
+825,3/5*1/2,3/10,"For trial 602, I found the least comm...lcd for the denominators and got 10 and also multiplied 3 times 1 and got 3.",Solve this fraction problem: 3/5*1/2=?,"For trial 602, I found the least comm...lcd for the denominators and got 10 and also multiplied 3 times 1 and got 3.
+### answer: 3/10"

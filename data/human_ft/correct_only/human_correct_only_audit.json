@@ -1,0 +1,73 @@
+{
+  "definition": "Rows are kept when resp is numerically equivalent to the exact answer computed from prob.",
+  "splits": {
+    "train": {
+      "by_operation": {
+        "*": {
+          "dropped_rows": 29,
+          "kept_rate": 0.5972222222222222,
+          "kept_rows": 43,
+          "total_rows": 72
+        },
+        "+": {
+          "dropped_rows": 32,
+          "kept_rate": 0.5555555555555556,
+          "kept_rows": 40,
+          "total_rows": 72
+        },
+        "-": {
+          "dropped_rows": 30,
+          "kept_rate": 0.5833333333333334,
+          "kept_rows": 42,
+          "total_rows": 72
+        },
+        "/": {
+          "dropped_rows": 50,
+          "kept_rate": 0.3055555555555556,
+          "kept_rows": 22,
+          "total_rows": 72
+        }
+      },
+      "dropped_rows": 141,
+      "input_csv": "results/human/data_train_nlp.csv",
+      "kept_rate": 0.5104166666666666,
+      "kept_rows": 147,
+      "output_csv": "results/human/correct_only/data_train_nlp_correct.csv",
+      "total_rows": 288
+    },
+    "val": {
+      "by_operation": {
+        "*": {
+          "dropped_rows": 10,
+          "kept_rate": 0.5833333333333334,
+          "kept_rows": 14,
+          "total_rows": 24
+        },
+        "+": {
+          "dropped_rows": 18,
+          "kept_rate": 0.25,
+          "kept_rows": 6,
+          "total_rows": 24
+        },
+        "-": {
+          "dropped_rows": 17,
+          "kept_rate": 0.2916666666666667,
+          "kept_rows": 7,
+          "total_rows": 24
+        },
+        "/": {
+          "dropped_rows": 22,
+          "kept_rate": 0.08333333333333333,
+          "kept_rows": 2,
+          "total_rows": 24
+        }
+      },
+      "dropped_rows": 67,
+      "input_csv": "results/human/data_val_nlp.csv",
+      "kept_rate": 0.3020833333333333,
+      "kept_rows": 29,
+      "output_csv": "results/human/correct_only/data_val_nlp_correct.csv",
+      "total_rows": 96
+    }
+  }
+}

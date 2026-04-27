@@ -8,7 +8,11 @@ backup_*/
 
 # Local model and checkpoint artifacts
 distilled/
-human_ft/
+human_ft/*_best_*/
+human_ft/checkpoints/
+human_ft/logs/
+human_ft/outputs/
+human_ft/runs/
 *.safetensors
 
 # Generated report outputs
