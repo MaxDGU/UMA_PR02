@@ -165,6 +165,12 @@ def parse_args() -> argparse.Namespace:
         help="Problem column used for contamination checks and optional problem-level split.",
     )
     parser.add_argument(
+        "--prompt_problem_kind",
+        choices=VALID_PROMPT_PROBLEM_KINDS,
+        default="fraction",
+        help="Noun used in generated prompts, e.g. 'fraction' or 'decimal'.",
+    )
+    parser.add_argument(
         "--drop_train_eval_problem_overlap",
         action=argparse.BooleanOptionalAction,
         default=False,
@@ -231,6 +237,12 @@ def parse_args() -> argparse.Namespace:
         choices=["auto", "bf16", "fp16", "none"],
         default="auto",
         help="Mixed-precision mode on CUDA.",
+    )
+    parser.add_argument(
+        "--model_load_dtype",
+        choices=["none", "auto", "bf16", "fp16", "fp32"],
+        default="none",
+        help="Optional dtype passed to from_pretrained; default preserves previous loading behavior.",
     )
     parser.add_argument("--preview_samples", type=int, default=3, help="Generate N preview samples after training.")
     parser.add_argument("--preview_max_new_tokens", type=int, default=96)
@@ -438,7 +450,7 @@ def setup_distributed() -> Tuple[int, int, int, bool]:
 
     if distributed and not dist.is_initialized():
         backend = "nccl" if torch.cuda.is_available() else "gloo"
-        pg_device = local_rank if backend == "nccl" else None
+        pg_device = torch.device("cuda", local_rank) if backend == "nccl" else None
         dist.init_process_group(backend=backend, init_method="env://", device_id=pg_device)
 
     if distributed:
@@ -641,6 +653,20 @@ def pick_amp_dtype(mode: str, device: torch.device):
     if mode == "fp16":
         return torch.float16
     return torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+
+
+def pick_model_load_dtype(mode: str):
+    if mode == "none":
+        return None
+    if mode == "auto":
+        return "auto"
+    if mode == "bf16":
+        return torch.bfloat16
+    if mode == "fp16":
+        return torch.float16
+    if mode == "fp32":
+        return torch.float32
+    raise ValueError(f"Unsupported model_load_dtype={mode!r}")
 
 
 def move_batch(batch: Dict[str, torch.Tensor], device: torch.device) -> Dict[str, torch.Tensor]:
@@ -944,9 +970,12 @@ def generate_previews(
 
 
 NUMERIC_TOKEN_RE = r"[+\-]?(?:\d+(?:/\d+)?|\d*\.\d+)"
-ANSWER_TOKEN_RE = re.compile(r"-?(?:\d+(?:\.\d+)?)(?:/-?(?:\d+(?:\.\d+)?))?")
+ANSWER_TOKEN_RE = re.compile(
+    r"-?(?:\d+\s+\d+/\d+|\d+(?:\.\d+)?/-?(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)"
+)
 PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*/:])\s*({NUMERIC_TOKEN_RE})\s*")
-PROMPT_PROB_RE = re.compile(r"Solve this fraction problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
+PROMPT_PROB_RE = re.compile(r"Solve this (?:fraction|decimal) problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
+VALID_PROMPT_PROBLEM_KINDS = ("fraction", "decimal")
 
 
 def canonicalize_division_op(op: str) -> str:
@@ -970,7 +999,7 @@ def render_problem_for_prompt(prob: str) -> str:
     if parsed is None:
         return str(prob).strip()
     left_s, op, right_s = parsed
-    surface_op = " / " if op == ":" else f" {op} "
+    surface_op = f" {op} "
     return f"{left_s}{surface_op}{right_s}"
 
 
@@ -1025,7 +1054,7 @@ def detect_prompt_style_counts(prompts: pd.Series) -> Dict[str, int]:
     text = prompts.astype(str).str.strip()
     has_student = text.str.contains(r"<student>", case=False, regex=True, na=False)
     has_solve = text.str.contains(
-        r"Solve this fraction problem:\s*.+\s*=\?\s*$",
+        r"Solve this (?:fraction|decimal) problem:\s*.+\s*=\?\s*$",
         case=False,
         regex=True,
         na=False,
@@ -1058,6 +1087,7 @@ def validate_prompt_format_consistency(
     eval_sp2013: bool,
     sp2013_use_param_grid: bool,
     train_prompt_student_mode: str = "none",
+    sp2013_prompt_style: str = "plain",
 ) -> Dict[str, Dict[str, int]]:
     allow_mixed_plain_and_student = train_prompt_student_mode == "dropout"
     allow_sp2013_style_mismatch = train_prompt_student_mode in {"always", "dropout"}
@@ -1106,7 +1136,11 @@ def validate_prompt_format_consistency(
                 )
 
     if eval_sp2013 and not allow_sp2013_style_mismatch:
-        expected_eval_style = "student_prefixed" if sp2013_use_param_grid else "plain_solve"
+        expected_eval_style = (
+            "student_prefixed"
+            if (sp2013_use_param_grid or sp2013_prompt_style in {"masked_student", "student_values"})
+            else "plain_solve"
+        )
         if train_style != expected_eval_style:
             raise ValueError(
                 "Train/SP2013 prompt format mismatch: "
@@ -1119,9 +1153,11 @@ def validate_prompt_format_consistency(
 
 
 def normalize_answer(ans: str) -> str:
-    t = str(ans).strip().replace(" ", "")
+    t = str(ans).strip()
+    t = re.sub(r"\s+", " ", t)
+    t = re.sub(r"\s*/\s*", "/", t)
     t = t.rstrip(".,;:!?")
-    return t
+    return t.strip()
 
 
 def answer_to_fraction(ans: str) -> Optional[Fraction]:
@@ -1129,6 +1165,15 @@ def answer_to_fraction(ans: str) -> Optional[Fraction]:
     if t == "" or t in {"?", "nan", "None"}:
         return None
     try:
+        mixed = re.fullmatch(r"([+-]?\d+)\s+(\d+)/(\d+)", t)
+        if mixed is not None:
+            whole = int(mixed.group(1))
+            num = int(mixed.group(2))
+            den = int(mixed.group(3))
+            if den == 0:
+                return None
+            frac = Fraction(num, den)
+            return Fraction(whole) - frac if whole < 0 else Fraction(whole) + frac
         if "/" in t:
             a, b = t.split("/", 1)
             den = Fraction(b)
@@ -1204,13 +1249,143 @@ def format_numeric_token(value: float) -> str:
     return f"{value:.10f}".rstrip("0").rstrip(".")
 
 
-def build_student_prompt(prob: str, g: float, d: float, rt_mu: float, ice: float) -> str:
-    prompt_prob = render_problem_for_prompt(prob)
+def render_problem_for_plain_or_masked_prompt(
+    prob: str,
+    *,
+    surface_style: str = "spaced",
+) -> str:
+    parsed = parse_binary_problem(prob)
+    if parsed is None:
+        return str(prob).strip()
+    left_s, op, right_s = parsed
+    if surface_style == "raw":
+        return f"{left_s}{op}{right_s}"
+    if surface_style != "spaced":
+        raise ValueError(f"Unknown problem surface style: {surface_style}")
+    return f"{left_s} {op} {right_s}"
+
+
+def build_plain_prompt(
+    prob: str,
+    *,
+    problem_surface_style: str = "spaced",
+    prompt_problem_kind: str = "fraction",
+) -> str:
+    if prompt_problem_kind not in VALID_PROMPT_PROBLEM_KINDS:
+        raise ValueError(f"Unknown prompt problem kind: {prompt_problem_kind}")
+    prompt_prob = render_problem_for_plain_or_masked_prompt(
+        prob,
+        surface_style=problem_surface_style,
+    )
+    return f"Solve this {prompt_problem_kind} problem: {prompt_prob}=?"
+
+
+def build_masked_student_prompt(
+    prob: str,
+    *,
+    problem_surface_style: str = "spaced",
+    prompt_problem_kind: str = "fraction",
+) -> str:
+    return (
+        "<student> g ?? d ?? rt ?? ice ?? </student>\n"
+        f"{build_plain_prompt(prob, problem_surface_style=problem_surface_style, prompt_problem_kind=prompt_problem_kind)}"
+    )
+
+
+def build_student_id_prompt(
+    prob: str,
+    subjid: object,
+    *,
+    problem_surface_style: str = "spaced",
+    prompt_problem_kind: str = "fraction",
+) -> str:
+    subjid_text = str(subjid).strip()
+    if subjid_text == "":
+        raise ValueError("student_id prompt requires a non-empty subjid.")
+    return (
+        f"<student> subjid {subjid_text} </student>\n"
+        f"{build_plain_prompt(prob, problem_surface_style=problem_surface_style, prompt_problem_kind=prompt_problem_kind)}"
+    )
+
+
+def build_student_prompt(
+    prob: str,
+    g: float,
+    d: float,
+    rt_mu: float,
+    ice: float,
+    *,
+    problem_surface_style: str = "spaced",
+    prompt_problem_kind: str = "fraction",
+) -> str:
+    if prompt_problem_kind not in VALID_PROMPT_PROBLEM_KINDS:
+        raise ValueError(f"Unknown prompt problem kind: {prompt_problem_kind}")
+    if problem_surface_style == "raw":
+        prompt_prob = render_problem_for_plain_or_masked_prompt(prob, surface_style="raw")
+    elif problem_surface_style == "spaced":
+        prompt_prob = render_problem_for_prompt(prob)
+    else:
+        raise ValueError(f"Unknown problem surface style: {problem_surface_style}")
     return (
         f"<student> g {format_numeric_token(g)} d {format_numeric_token(d)} "
         f"rt {format_numeric_token(rt_mu)} ice {format_numeric_token(ice)} </student>\n"
-        f"Solve this fraction problem: {prompt_prob}=?"
+        f"Solve this {prompt_problem_kind} problem: {prompt_prob}=?"
     )
+
+
+def build_prompt_for_style(
+    prob: str,
+    prompt_style: str,
+    subjid: Optional[object] = None,
+    g: Optional[float] = None,
+    d: Optional[float] = None,
+    rt_mu: Optional[float] = None,
+    ice: Optional[float] = None,
+    problem_surface_style: str = "spaced",
+    prompt_problem_kind: str = "fraction",
+) -> str:
+    if prompt_style == "plain":
+        return build_plain_prompt(
+            prob,
+            problem_surface_style=problem_surface_style,
+            prompt_problem_kind=prompt_problem_kind,
+        )
+    if prompt_style == "masked_student":
+        return build_masked_student_prompt(
+            prob,
+            problem_surface_style=problem_surface_style,
+            prompt_problem_kind=prompt_problem_kind,
+        )
+    if prompt_style == "student_id":
+        if subjid is None:
+            raise ValueError("student_id prompt style requires an explicit subjid.")
+        return build_student_id_prompt(
+            prob=prob,
+            subjid=subjid,
+            problem_surface_style=problem_surface_style,
+            prompt_problem_kind=prompt_problem_kind,
+        )
+    if prompt_style == "student_values":
+        missing = [
+            name
+            for name, value in [("g", g), ("d", d), ("rt_mu", rt_mu), ("ice", ice)]
+            if value is None
+        ]
+        if missing:
+            raise ValueError(
+                "student_values prompt style requires explicit parameter values: "
+                f"missing {missing}"
+            )
+        return build_student_prompt(
+            prob=prob,
+            g=g,
+            d=d,
+            rt_mu=rt_mu,
+            ice=ice,
+            problem_surface_style=problem_surface_style,
+            prompt_problem_kind=prompt_problem_kind,
+        )
+    raise ValueError(f"Unknown prompt style: {prompt_style}")
 
 
 def stable_hash_fraction(text: str) -> float:
@@ -1244,6 +1419,7 @@ def apply_train_prompt_student_mode(
     mode: str,
     dropout_prob: float,
     dropout_seed: int,
+    prompt_problem_kind: str = "fraction",
 ) -> Tuple[pd.DataFrame, Dict[str, int]]:
     if mode == "none" or len(frame) == 0:
         return frame, {
@@ -1283,7 +1459,14 @@ def apply_train_prompt_student_mode(
     frame = frame.copy()
     visible_rows = frame.loc[visible_mask]
     frame.loc[visible_mask, prompt_col] = [
-        build_student_prompt(prob=prob, g=g, d=d, rt_mu=rt_mu, ice=ice)
+        build_student_prompt(
+            prob=prob,
+            g=g,
+            d=d,
+            rt_mu=rt_mu,
+            ice=ice,
+            prompt_problem_kind=prompt_problem_kind,
+        )
         for prob, g, d, rt_mu, ice in zip(
             visible_rows[problem_col].astype(str).str.strip().tolist(),
             visible_rows["g"].tolist(),
@@ -1455,7 +1638,12 @@ def extract_answer_token(generation: str) -> str:
     if m:
         answer_text = m.group(1).strip()
         if answer_text:
-            candidate = normalize_answer(answer_text.split()[0])
+            lead = re.match(ANSWER_TOKEN_RE, answer_text)
+            if lead is not None:
+                candidate = normalize_answer(lead.group(0))
+                if candidate != "":
+                    return candidate
+            candidate = normalize_answer(answer_text)
             if candidate != "":
                 return candidate
 
@@ -1792,6 +1980,7 @@ def evaluate_sp2013_final_answer(
     progress_every: int = 0,
     progress_label: str = "sp2013_eval",
     fixed_student_prompt_tuple: Optional[Tuple[float, float, float, float]] = None,
+    prompt_style: str = "plain",
 ):
     if not os.path.exists(sp2013_csv):
         return {"overall_acc": float("nan"), "by_op": {}, "n": 0}, pd.DataFrame()
@@ -1810,12 +1999,20 @@ def evaluate_sp2013_final_answer(
         raise ValueError("SP2013 eval requires rollout_batch_size >= 1.")
     if num_rollouts > 1 and not do_sample:
         raise ValueError("SP2013 eval with num_rollouts > 1 requires do_sample=True.")
+    if prompt_style not in {"plain", "masked_student", "student_values"}:
+        raise ValueError(f"Unknown SP2013 prompt_style: {prompt_style}")
     if fixed_student_prompt_tuple is not None and use_param_grid:
         raise ValueError("Fixed student-prompt tuple cannot be combined with --sp2013_use_param_grid.")
+    if fixed_student_prompt_tuple is not None and prompt_style != "student_values":
+        raise ValueError("Fixed student-prompt tuple requires prompt_style='student_values'.")
     if target_mode == "uma_tuple" and not use_param_grid:
         raise ValueError("SP2013 UMA tuple eval requires --sp2013_use_param_grid.")
     if target_mode == "uma_distribution" and use_param_grid:
         raise ValueError("SP2013 UMA distribution eval requires --no-sp2013_use_param_grid.")
+    if use_param_grid and prompt_style != "student_values":
+        raise ValueError("SP2013 parameter-grid eval requires prompt_style='student_values'.")
+    if prompt_style == "masked_student" and (use_param_grid or fixed_student_prompt_tuple is not None):
+        raise ValueError("masked_student prompt style is aggregate-only and cannot use tuple-conditioned prompts.")
 
     prompt_tuple: Optional[Tuple[float, float, float, float]] = None
     if fixed_student_prompt_tuple is not None:
@@ -1860,10 +2057,14 @@ def evaluate_sp2013_final_answer(
             if prompt_tuple is not None:
                 prompt_g, prompt_d, prompt_rt, prompt_ice = prompt_tuple
 
-            if use_param_grid or prompt_tuple is not None:
-                prompt = build_student_prompt(prob=prob, g=prompt_g, d=prompt_d, rt_mu=prompt_rt, ice=prompt_ice)
-            else:
-                prompt = f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
+            prompt = build_prompt_for_style(
+                prob=prob,
+                prompt_style=prompt_style,
+                g=prompt_g if (use_param_grid or prompt_tuple is not None) else None,
+                d=prompt_d if (use_param_grid or prompt_tuple is not None) else None,
+                rt_mu=prompt_rt if (use_param_grid or prompt_tuple is not None) else None,
+                ice=prompt_ice if (use_param_grid or prompt_tuple is not None) else None,
+            )
 
             prompt_eval_idx += 1
             if do_sample:
@@ -1992,6 +2193,7 @@ def evaluate_sp2013_final_answer(
     metrics["sample_seed"] = int(sample_seed)
     metrics["rollout_batch_size"] = int(rollout_batch_size)
     metrics["target_mode"] = str(target_mode)
+    metrics["prompt_style"] = str(prompt_style)
     metrics["sp2013_target_csv"] = target_csv if target_mode in {"uma_tuple", "uma_distribution"} else None
     metrics["fixed_student_prompt_tuple"] = list(prompt_tuple) if prompt_tuple is not None else None
     return metrics, out_df
@@ -2462,6 +2664,7 @@ def main() -> None:
                     mode=args.train_prompt_student_mode,
                     dropout_prob=args.train_prompt_student_dropout_prob,
                     dropout_seed=args.train_prompt_student_dropout_seed,
+                    prompt_problem_kind=args.prompt_problem_kind,
                 )
                 rewritten_splits[split_name] = rewritten_frame
                 split_prompt_rewrite_stats[split_name] = rewrite_stats
@@ -2576,6 +2779,11 @@ def main() -> None:
                 "--use_lora is enabled, but the resume checkpoint is not a LoRA adapter checkpoint."
             )
 
+        model_load_dtype = pick_model_load_dtype(args.model_load_dtype)
+        model_load_kwargs: Dict[str, Any] = {}
+        if model_load_dtype is not None:
+            model_load_kwargs["torch_dtype"] = model_load_dtype
+
         if is_lora_resume:
             try:
                 from peft import PeftModel
@@ -2586,12 +2794,14 @@ def main() -> None:
             base_model = AutoModelForCausalLM.from_pretrained(
                 model_source,
                 local_files_only=args.local_files_only,
+                **model_load_kwargs,
             )
             model = PeftModel.from_pretrained(base_model, resume_dir, is_trainable=True)
         elif resume_dir:
             model = AutoModelForCausalLM.from_pretrained(
                 resume_dir,
                 local_files_only=args.local_files_only,
+                **model_load_kwargs,
             )
         else:
             if args.init_from_scratch:
@@ -2604,6 +2814,7 @@ def main() -> None:
                 model = AutoModelForCausalLM.from_pretrained(
                     model_source,
                     local_files_only=args.local_files_only,
+                    **model_load_kwargs,
                 )
             if use_lora:
                 if not lora_target_modules:
@@ -2639,6 +2850,7 @@ def main() -> None:
 
         rank0_print(rank, f"device: {device}")
         rank0_print(rank, f"amp_dtype: {str(amp_dtype) if amp_dtype is not None else 'none'}")
+        rank0_print(rank, f"model_load_dtype: {args.model_load_dtype}")
         rank0_print(rank, f"params (total/trainable): {total_params:,}/{trainable_params:,}")
         rank0_print(rank, f"use_lora: {use_lora}")
         if use_lora:
