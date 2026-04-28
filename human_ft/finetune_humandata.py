@@ -51,9 +51,6 @@ try:
         DEFAULT_SP2013_GRID_ICE,
         DEFAULT_SP2013_GRID_RT,
         NLPtracesDataset,
-        build_masked_student_prompt,
-        build_plain_prompt,
-        build_student_id_prompt,
         build_student_prompt,
         build_collate_fn,
         build_training_state,
@@ -62,11 +59,30 @@ try:
         move_batch,
         parse_float_list_arg,
         pick_amp_dtype,
+        render_problem_for_prompt,
         save_checkpoint,
         set_seed,
     )
 except (ImportError, SyntaxError) as exc:
     _RUNTIME_IMPORT_ERROR = exc
+
+
+def build_plain_prompt(prob: str) -> str:
+    return f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
+
+
+def build_masked_student_prompt(prob: str) -> str:
+    return (
+        "<student> g ?? d ?? rt ?? ice ?? </student>\n"
+        f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
+    )
+
+
+def build_student_id_prompt(prob: str, subjid: str) -> str:
+    return (
+        f"<student> subjid {str(subjid).strip()} </student>\n"
+        f"Solve this fraction problem: {render_problem_for_prompt(prob)}=?"
+    )
 
 
 def _ensure_runtime_dependencies() -> None:
@@ -215,6 +231,21 @@ def parse_args() -> argparse.Namespace:
         action=argparse.BooleanOptionalAction,
         default=True,
         help="Load from local HF cache only.",
+    )
+    parser.add_argument(
+        "--use_lora",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Wrap pretrained/random base model with a fresh LoRA adapter before training.",
+    )
+    parser.add_argument("--lora_r", type=int, default=16, help="LoRA rank.")
+    parser.add_argument("--lora_alpha", type=int, default=32, help="LoRA scaling alpha.")
+    parser.add_argument("--lora_dropout", type=float, default=0.05, help="LoRA dropout.")
+    parser.add_argument(
+        "--lora_target_modules",
+        type=str,
+        default="q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj",
+        help="Comma-separated module names to apply LoRA to.",
     )
     parser.add_argument(
         "--best_by",
@@ -861,7 +892,32 @@ def main() -> None:
         model.resize_token_embeddings(len(tokenizer))
     model.config.pad_token_id = tokenizer.pad_token_id
     model.config.use_cache = False
-    if args.gradient_checkpointing:
+
+    if args.use_lora:
+        if args.init_strategy == "checkpoint":
+            raise ValueError(
+                "--use_lora is for wrapping a fresh base model. For checkpoint resume, "
+                "load an existing adapter directly via --init_strategy checkpoint."
+            )
+        from peft import LoraConfig, TaskType, get_peft_model
+        target_modules = [m.strip() for m in args.lora_target_modules.split(",") if m.strip()]
+        lora_cfg = LoraConfig(
+            r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lora_dropout=args.lora_dropout,
+            target_modules=target_modules,
+            bias="none",
+            task_type=TaskType.CAUSAL_LM,
+        )
+        if args.gradient_checkpointing:
+            model.gradient_checkpointing_enable()
+            if hasattr(model, "enable_input_require_grads"):
+                model.enable_input_require_grads()
+        model = get_peft_model(model, lora_cfg)
+        print(f"LoRA: r={args.lora_r} alpha={args.lora_alpha} dropout={args.lora_dropout} "
+              f"target_modules={target_modules}", flush=True)
+        model.print_trainable_parameters()
+    elif args.gradient_checkpointing:
         model.gradient_checkpointing_enable()
     model.to(device)
 
