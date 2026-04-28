@@ -86,6 +86,7 @@ SAVE_LAST_EVERY_UPDATES="${SAVE_LAST_EVERY_UPDATES:-4000}"
 RESUME_FROM="${RESUME_FROM:-none}"
 LOCAL_FILES_ONLY="${LOCAL_FILES_ONLY:-1}"
 PREVIEW_SAMPLES="${PREVIEW_SAMPLES:-0}"
+CHECK_FORMAT_CONSISTENCY="${CHECK_FORMAT_CONSISTENCY:-1}"
 
 bool_flag() {
   local enabled="$1"
@@ -130,6 +131,7 @@ SAVE_BEST_FLAG="$(bool_flag "$SAVE_BEST_CHECKPOINT" --save_best_checkpoint --no-
 SAVE_FINAL_FLAG="$(bool_flag "$SAVE_FINAL_CHECKPOINT" --save_final_checkpoint --no-save_final_checkpoint)"
 VERIFY_LOAD_FLAG="$(bool_flag "$VERIFY_SAVED_CHECKPOINT_LOAD" --verify_saved_checkpoint_load --no-verify_saved_checkpoint_load)"
 LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_files_only)"
+CHECK_FORMAT_FLAG="$(bool_flag "$CHECK_FORMAT_CONSISTENCY" --check_format_consistency --no-check_format_consistency)"
 
 {
   echo "[$(date -Iseconds)] starting ${TASK_LABEL}"
@@ -145,6 +147,7 @@ LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_
   echo "use_lora=${USE_LORA} lora_r=${LORA_R} lora_alpha=${LORA_ALPHA} lora_dropout=${LORA_DROPOUT}"
   echo "train_prompt_student_mode=${TRAIN_PROMPT_STUDENT_MODE} prompt_problem_kind=${PROMPT_PROBLEM_KIND}"
   echo "best_by=${BEST_BY} id_eval_size=${ID_EVAL_SIZE} id_eval_batch_size=${ID_EVAL_BATCH_SIZE}"
+  echo "check_format_consistency=${CHECK_FORMAT_CONSISTENCY}"
   nvidia-smi || true
 
   "$PYTHON_BIN" results/transformer_replication/train_transformer_hf.py \
@@ -199,6 +202,7 @@ LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_
     "$SAVE_FINAL_FLAG" \
     "$VERIFY_LOAD_FLAG" \
     "$LOCAL_FILES_FLAG" \
+    "$CHECK_FORMAT_FLAG" \
     --save_best_only
 
   echo "[$(date -Iseconds)] finished ${TASK_LABEL}"
