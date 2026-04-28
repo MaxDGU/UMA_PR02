@@ -1,0 +1,197 @@
+{
+  "compression": "zstd",
+  "dataset_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed",
+  "out_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet",
+  "prefix": "singlevar_algebra_synth_v3_human_mixed",
+  "problem_col": "prob",
+  "prompt_col": "instruction_nl",
+  "response_col": "response_nl",
+  "rows_per_shard": 50000,
+  "splits": {
+    "test": {
+      "columns": [
+        "source_uid",
+        "split",
+        "subjid",
+        "prob",
+        "equation_type",
+        "variable",
+        "answer",
+        "correct",
+        "g",
+        "d",
+        "c",
+        "rt_mu",
+        "ice",
+        "instruction_nl",
+        "response_nl"
+      ],
+      "input_csv": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_test.csv.gz",
+      "num_shards": 1,
+      "out_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/test",
+      "rows": 18500,
+      "shards": [
+        {
+          "bytes": 453024,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/test/part-00000.parquet",
+          "rows": 18500
+        }
+      ]
+    },
+    "train": {
+      "columns": [
+        "source_uid",
+        "split",
+        "subjid",
+        "prob",
+        "equation_type",
+        "variable",
+        "answer",
+        "correct",
+        "g",
+        "d",
+        "c",
+        "rt_mu",
+        "ice",
+        "instruction_nl",
+        "response_nl"
+      ],
+      "input_csv": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_train.csv.gz",
+      "num_shards": 20,
+      "out_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train",
+      "rows": 961800,
+      "shards": [
+        {
+          "bytes": 2678734,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00000.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2674759,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00001.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2680086,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00002.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2681311,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00003.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2676212,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00004.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2688004,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00005.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2678693,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00006.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2676481,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00007.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2681385,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00008.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2677770,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00009.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2683774,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00010.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2684006,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00011.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2682555,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00012.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2676907,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00013.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2682255,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00014.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2688467,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00015.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2684671,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00016.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2688406,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00017.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 2690269,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00018.parquet",
+          "rows": 50000
+        },
+        {
+          "bytes": 790073,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/train/part-00019.parquet",
+          "rows": 11800
+        }
+      ]
+    },
+    "val": {
+      "columns": [
+        "source_uid",
+        "split",
+        "subjid",
+        "prob",
+        "equation_type",
+        "variable",
+        "answer",
+        "correct",
+        "g",
+        "d",
+        "c",
+        "rt_mu",
+        "ice",
+        "instruction_nl",
+        "response_nl"
+      ],
+      "input_csv": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_val.csv.gz",
+      "num_shards": 1,
+      "out_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/val",
+      "rows": 19700,
+      "shards": [
+        {
+          "bytes": 479612,
+          "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/parquet/val/part-00000.parquet",
+          "rows": 19700
+        }
+      ]
+    }
+  }
+}

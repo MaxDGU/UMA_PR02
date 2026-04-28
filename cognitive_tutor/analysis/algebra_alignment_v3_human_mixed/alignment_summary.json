@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "human": "cognitive_tutor/data/processed/algebra_2006_2007/singlevar_equation_human_uma_master.csv",
+    "synthetic_raw": "results/UMA_replication/algebra_uma_k100_v3_ct_flow/algebra_uma_synth_matched_master_10k_k100_v3_ct_flow.csv",
+    "synthetic_translated": "results/UMA_replication/algebra_uma_k100_v3_ct_flow/algebra_uma_synth_matched_master_10k_k100_v3_ct_flow_nlp_human_mixed.csv.gz"
+  },
+  "notes": [
+    "Outcome alignment compares accuracy by algebra equation type.",
+    "Error-process alignment compares incorrect-trace stuck stages by equation type.",
+    "Trace-shape alignment compares visible step-count distributions.",
+    "Answer-type alignment compares incorrect answer forms; synthetic_translated is used here because human_mixed can emit numeric wrong guesses."
+  ],
+  "outputs": {
+    "accuracy_by_equation_type": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/accuracy_by_equation_type.csv",
+    "answer_type_distribution": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/answer_type_distribution.csv",
+    "distribution_tv_summary": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/distribution_tv_summary.csv",
+    "examples": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/examples.csv",
+    "response_style_distribution": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/response_style_distribution.csv",
+    "step_count_distribution": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/step_count_distribution.csv",
+    "stuck_stage_distribution": "cognitive_tutor/analysis/algebra_alignment_v3_human_mixed/stuck_stage_distribution.csv"
+  },
+  "rows_by_source": {
+    "human": 3738,
+    "synthetic_raw": 1000000,
+    "synthetic_translated": 1000000
+  }
+}

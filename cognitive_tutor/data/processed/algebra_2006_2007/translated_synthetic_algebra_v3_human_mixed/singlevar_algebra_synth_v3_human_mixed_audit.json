@@ -1,0 +1,158 @@
+{
+  "columns": [
+    "source_uid",
+    "split",
+    "subjid",
+    "prob",
+    "equation_type",
+    "variable",
+    "answer",
+    "correct",
+    "g",
+    "d",
+    "c",
+    "rt_mu",
+    "ice",
+    "instruction_nl",
+    "response_nl"
+  ],
+  "definition": "Translated synthetic single-variable algebra distillation dataset. Rows come from v3 CT-flow synthetic traces translated to human_mixed NLP. Splits are deterministic by problem string to avoid equation overlap.",
+  "global": {
+    "accuracy_by_equation_type": {
+      "linear_one_step": 0.8328737300435414,
+      "linear_two_step": 0.8283934905069894,
+      "linear_variable_both_sides": 0.900412147505423,
+      "linear_with_denominator": 0.8238351063829787,
+      "reciprocal_variable_denominator": 0.8147715053763441
+    },
+    "accuracy_rate": 0.829447,
+    "equation_type_counts": {
+      "linear_one_step": 137800,
+      "linear_two_step": 479300,
+      "linear_variable_both_sides": 46100,
+      "linear_with_denominator": 188000,
+      "reciprocal_variable_denominator": 148800
+    },
+    "instruction_empty": 0,
+    "response_empty": 0,
+    "response_length_chars": {
+      "max": 305,
+      "mean": 138.497279,
+      "min": 47,
+      "p50": 130.0,
+      "p95": 219.0
+    },
+    "response_missing_answer_marker": 0,
+    "rows": 1000000,
+    "unique_probs": 10000,
+    "unique_subjids": 100
+  },
+  "max_rows": null,
+  "out_dir": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed",
+  "prefix": "singlevar_algebra_synth_v3_human_mixed",
+  "preview_csv": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_preview.csv",
+  "problem_split_counts": {
+    "test": 185,
+    "train": 9618,
+    "val": 197
+  },
+  "seed": 20260428,
+  "source_csv": "results/UMA_replication/algebra_uma_k100_v3_ct_flow/algebra_uma_synth_matched_master_10k_k100_v3_ct_flow_nlp_human_mixed.csv.gz",
+  "splits": {
+    "test": {
+      "accuracy_by_equation_type": {
+        "linear_one_step": 0.828,
+        "linear_two_step": 0.827972972972973,
+        "linear_variable_both_sides": 0.9,
+        "linear_with_denominator": 0.814,
+        "reciprocal_variable_denominator": 0.8154054054054054
+      },
+      "accuracy_rate": 0.8255675675675676,
+      "equation_type_counts": {
+        "linear_one_step": 2000,
+        "linear_two_step": 7400,
+        "linear_variable_both_sides": 900,
+        "linear_with_denominator": 4500,
+        "reciprocal_variable_denominator": 3700
+      },
+      "instruction_empty": 0,
+      "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_test.csv.gz",
+      "response_empty": 0,
+      "response_length_chars": {
+        "max": 299,
+        "mean": 136.3884864864865,
+        "min": 65,
+        "p50": 126.0,
+        "p95": 217.0
+      },
+      "response_missing_answer_marker": 0,
+      "rows": 18500,
+      "unique_probs": 185,
+      "unique_subjids": 100
+    },
+    "train": {
+      "accuracy_by_equation_type": {
+        "linear_one_step": 0.8330451127819549,
+        "linear_two_step": 0.8284625350896134,
+        "linear_variable_both_sides": 0.9000902934537246,
+        "linear_with_denominator": 0.8241058495821727,
+        "reciprocal_variable_denominator": 0.8147780126849894
+      },
+      "accuracy_rate": 0.8295633187772926,
+      "equation_type_counts": {
+        "linear_one_step": 133000,
+        "linear_two_step": 463100,
+        "linear_variable_both_sides": 44300,
+        "linear_with_denominator": 179500,
+        "reciprocal_variable_denominator": 141900
+      },
+      "instruction_empty": 0,
+      "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_train.csv.gz",
+      "response_empty": 0,
+      "response_length_chars": {
+        "max": 305,
+        "mean": 138.57745789145352,
+        "min": 47,
+        "p50": 130.0,
+        "p95": 219.0
+      },
+      "response_missing_answer_marker": 0,
+      "rows": 961800,
+      "unique_probs": 9618,
+      "unique_subjids": 100
+    },
+    "val": {
+      "accuracy_by_equation_type": {
+        "linear_one_step": 0.8282142857142857,
+        "linear_two_step": 0.8251136363636363,
+        "linear_variable_both_sides": 0.9166666666666666,
+        "linear_with_denominator": 0.82275,
+        "reciprocal_variable_denominator": 0.81375
+      },
+      "accuracy_rate": 0.8274111675126904,
+      "equation_type_counts": {
+        "linear_one_step": 2800,
+        "linear_two_step": 8800,
+        "linear_variable_both_sides": 900,
+        "linear_with_denominator": 4000,
+        "reciprocal_variable_denominator": 3200
+      },
+      "instruction_empty": 0,
+      "path": "cognitive_tutor/data/processed/algebra_2006_2007/translated_synthetic_algebra_v3_human_mixed/singlevar_algebra_synth_v3_human_mixed_val.csv.gz",
+      "response_empty": 0,
+      "response_length_chars": {
+        "max": 301,
+        "mean": 136.5630964467005,
+        "min": 62,
+        "p50": 127.0,
+        "p95": 218.0
+      },
+      "response_missing_answer_marker": 0,
+      "rows": 19700,
+      "unique_probs": 197,
+      "unique_subjids": 100
+    }
+  },
+  "test_frac": 0.02,
+  "val_frac": 0.02
+}

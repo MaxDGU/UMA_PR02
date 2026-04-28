@@ -1,0 +1,125 @@
+source_uid,split,subjid,prob,equation_type,variable,answer,correct,g,d,c,rt_mu,ice,instruction_nl,response_nl
+0b4f4e9f40101059e778a4280fff3911,train,0,y/36 = 5/18,linear_with_denominator,y,10,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: y/36 = 5/18.,"I start with y/36 = 5/18.
+I clear the denominator, so it turns into y = 10.
+So I get 10.
+### answer: 10"
+de4e4351afe8943cde214add782ac262,train,0,x/11 = -31/11,linear_with_denominator,x,-31,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: x/11 = -31/11.,"I write down x/11 = -31/11.
+I clear the denominator, so it turns into x = -31.
+The variable is isolated, so my answer is -31.
+### answer: -31"
+267378a57bbae4d308236c186c5b32af,train,0,12y-16 = -652,linear_two_step,y,-53,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 12y-16 = -652.,"12y-16 = -652
+move the constants -> 12*y = -636
+divide -> y = -53
+That makes the answer -53.
+### answer: -53"
+2db9cc050628ad3a6ba66f05a87ed623,train,0,(-10y-5)/9 = -415/3,linear_two_step,y,124,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: (-10y-5)/9 = -415/3.,"(-10y-5)/9 = -415/3
+simplify -> -10/9*y-5/9 = -415/3
+clear the denominator -> -10*y-5 = -1245
+move the constants -> -10*y = -1240
+divide -> y = 124
+That makes the answer 124.
+### answer: 124"
+3c376619fa71d394b68643020454492e,train,0,-3*(y-20) = -336,linear_two_step,y,132,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -3*(y-20) = -336.,"-3*(y-20) = -336
+simplify -> -3*y+60 = -336
+move the constants -> -3*y = -396
+divide -> y = 132
+That makes the answer 132.
+### answer: 132"
+a10a992b12efa11d4beded4156474afc,train,0,y/42-43 = -277/6,linear_with_denominator,y,-133,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: y/42-43 = -277/6.,"y/42-43 = -277/6
+clear the denominator -> y-1806 = -1939
+divide -> y = -133
+answer = -133
+### answer: -133"
+7043969e9a56a8b037ce8a3a9786b8b3,train,0,10x = -1370,linear_one_step,x,-137,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 10x = -1370.,"10x = -1370
+rewrite -> 10*x = -1370
+divide -> x = -137
+That makes the answer -137.
+### answer: -137"
+fcf44ff3dc969779dcad4c73f05f4986,train,0,(5y+5)/20 = -33,linear_two_step,y,1/4*y+1/4 = -33,0,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: (5y+5)/20 = -33.,"(5y+5)/20 = -33
+simplify -> 1/4*y+1/4 = -33
+not totally sure, but I enter 1/4*y+1/4 = -33
+### answer: 1/4*y+1/4 = -33"
+a2d59f28b99e78618921643d4781bf17,train,0,y/16+32 = 217/8,linear_with_denominator,y,-78,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: y/16+32 = 217/8.,"y/16+32 = 217/8
+clear the denominator -> y+512 = 434
+divide -> y = -78
+That makes the answer -78.
+### answer: -78"
+c1778e6505dd9750868257f9ba037805,train,0,-5y = -495,linear_one_step,y,99,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -5y = -495.,"I write down -5y = -495.
+Then I get -5*y = -495.
+Then I divide to get y = 99.
+The variable is isolated, so my answer is 99.
+### answer: 99"
+873d3341e90b6660143e199f9bc57521,train,0,-216/y = 3,reciprocal_variable_denominator,y,-72,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -216/y = 3.,"-216/y = 3
+clear the denominator -> -3*y = 216
+divide -> y = -72
+That makes the answer -72.
+### answer: -72"
+1a0f487197bd2c7871443e1be7f93dd6,train,0,9x = 864,linear_one_step,x,96,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 9x = 864.,"I start with 9x = 864.
+Then I get 9*x = 864.
+Then I divide to get x = 96.
+So I get 96.
+### answer: 96"
+7e5fc4d960b21ca6b5c70ee58235c96b,train,0,11y+12 = -6y-2249,linear_variable_both_sides,y,-133,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 11y+12 = -6y-2249.,"I write down 11y+12 = -6y-2249.
+Then I get 11*y+12 = -6*y-2249.
+I move the variable terms together: 17*y+12 = -2249.
+I move the number part over, giving 17*y = -2261.
+Then I divide to get y = -133.
+The variable is isolated, so my answer is -133.
+### answer: -133"
+9f6e4ac9953ee5a33f42e12e82f7b11b,train,0,-8y+20 = 9y+3148,linear_variable_both_sides,y,-8y+20 = 9y+3148,0,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -8y+20 = 9y+3148.,"-8y+20 = 9y+3148
+I get to -8y+20 = 9y+3148, but I am not sure what to do next.
+My answer is -8y+20 = 9y+3148.
+### answer: -8y+20 = 9y+3148"
+fc9539dd147a2cb3f2c42c6b5ce4892f,train,0,9x = -1098,linear_one_step,x,-122,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 9x = -1098.,"9x = -1098
+rewrite -> 9*x = -1098
+divide -> x = -122
+answer = -122
+### answer: -122"
+3629cb5daf4b7fa5f9a974fce893f252,train,0,-4*(x+14) = -316,linear_two_step,x,65,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -4*(x+14) = -316.,"-4*(x+14) = -316
+simplify -> -4*x-56 = -316
+move the constants -> -4*x = -260
+divide -> x = 65
+That makes the answer 65.
+### answer: 65"
+1caac58b5f947e39ba004243ac90a498,train,0,-7*(y-18) = -434,linear_two_step,y,80,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -7*(y-18) = -434.,"-7*(y-18) = -434
+simplify -> -7*y+126 = -434
+move the constants -> -7*y = -560
+divide -> y = 80
+answer = 80
+### answer: 80"
+29a5c7d5ebee12e37bfa9f504790323e,train,0,6x = -138,linear_one_step,x,-23,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: 6x = -138.,"I write down 6x = -138.
+Then I get 6*x = -138.
+Then I divide to get x = -23.
+The variable is isolated, so my answer is -23.
+### answer: -23"
+d3f51bdaf36f7d3829878ab739e4973f,train,0,-7x-6 = 2x-1023,linear_variable_both_sides,x,113,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -7x-6 = 2x-1023.,"I start with -7x-6 = 2x-1023.
+Then I get -7*x-6 = 2*x-1023.
+I move the variable terms together: -9*x-6 = -1023.
+I move the number part over, giving -9*x = -1017.
+Then I divide to get x = 113.
+So I get 113.
+### answer: 113"
+12d61c3c027f64c50d3c0b18d3446bbc,train,0,y/47-23 = -949/47,linear_with_denominator,y,1/132,0,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: y/47-23 = -949/47.,"I write down y/47-23 = -949/47.
+I think the last step should give y = 1/132.
+So I answer 1/132.
+### answer: 1/132"
+9a888654bd2f18706365443611c0f03c,train,0,-7*(y+16) = -1127,linear_two_step,y,145,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -7*(y+16) = -1127.,"-7*(y+16) = -1127
+simplify -> -7*y-112 = -1127
+move the constants -> -7*y = -1015
+divide -> y = 145
+answer = 145
+### answer: 145"
+3bb10fc0b31bc4ab408eeef3cb09d189,train,0,(12x-5)/10 = 619/10,linear_two_step,x,53,0,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: (12x-5)/10 = 619/10.,"I write down (12x-5)/10 = 619/10.
+I think the last step should give x = 53.
+So I answer 53.
+### answer: 53"
+41c70f8b177817acd73ed2d701726387,train,0,-11x+12 = 1046,linear_two_step,x,-94,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -11x+12 = 1046.,"I start with -11x+12 = 1046.
+I move the number part over, giving -11*x = 1034.
+Then I divide to get x = -94.
+So I get -94.
+### answer: -94"
+dc563cb80924e95bbdb05b7d38d6deb9,train,0,-5y+5 = 150,linear_two_step,y,-29,1,0.01,0.1,5.0,3.0,0.0,Solve this algebra equation: -5y+5 = 150.,"I start with -5y+5 = 150.
+I move the number part over, giving -5*y = 145.
+Then I divide to get y = -29.
+So I get -29.
+### answer: -29"

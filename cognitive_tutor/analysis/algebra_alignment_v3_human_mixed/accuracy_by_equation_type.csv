@@ -1,0 +1,16 @@
+accuracy,equation_type,rows,source
+0.832183908045977,linear_one_step,870,human
+0.8282890673255096,linear_two_step,1619,human
+0.9015151515151515,linear_variable_both_sides,132,human
+0.8248299319727891,linear_with_denominator,588,human
+0.8147448015122873,reciprocal_variable_denominator,529,human
+0.8328737300435414,linear_one_step,137800,synthetic_raw
+0.8283934905069894,linear_two_step,479300,synthetic_raw
+0.900412147505423,linear_variable_both_sides,46100,synthetic_raw
+0.8238351063829787,linear_with_denominator,188000,synthetic_raw
+0.8147715053763441,reciprocal_variable_denominator,148800,synthetic_raw
+0.8328737300435414,linear_one_step,137800,synthetic_translated
+0.8283934905069894,linear_two_step,479300,synthetic_translated
+0.900412147505423,linear_variable_both_sides,46100,synthetic_translated
+0.8238351063829787,linear_with_denominator,188000,synthetic_translated
+0.8147715053763441,reciprocal_variable_denominator,148800,synthetic_translated

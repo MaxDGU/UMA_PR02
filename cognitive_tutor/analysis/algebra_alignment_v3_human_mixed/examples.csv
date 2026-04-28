@@ -1,0 +1,42 @@
+answer,correct,equation_type,prob,response_nl,source,steps
+72,1,linear_with_denominator,9 = y/8,"Step 1: 9 = y/8
+### answer: 72",human,"[""9 = y/8""]"
+-2,1,reciprocal_variable_denominator,2 = -4/x,"Step 1: 2x = -4/x*x
+### answer: -2",human,"[""2x = -4/x*x""]"
+5/4,1,reciprocal_variable_denominator,-4 = -5/x,"Step 1: -4x = -5
+### answer: 5/4",human,"[""-4x = -5""]"
+4/9,1,linear_variable_both_sides,-3+(-2y) = 7y+(-7),"Step 1: 4 = 9y
+### answer: 4/9",human,"[""4 = 9y""]"
+12,1,linear_two_step,x+(-9) = 3,"Step 1: x+(-9)+9 = 3+9
+### answer: 12",human,"[""x+(-9)+9 = 3+9""]"
+10,1,linear_with_denominator,y/36 = 5/18,,synthetic_raw,"[""y/36 = 5/18"", ""y = 10""]"
+-31,1,linear_with_denominator,x/11 = -31/11,,synthetic_raw,"[""x/11 = -31/11"", ""x = -31""]"
+-53,1,linear_two_step,12y-16 = -652,,synthetic_raw,"[""12y-16 = -652"", ""12*y = -636"", ""y = -53""]"
+124,1,linear_two_step,(-10y-5)/9 = -415/3,,synthetic_raw,"[""(-10y-5)/9 = -415/3"", ""-10/9*y-5/9 = -415/3"", ""-10*y-5 = -1245"", ""-10*y = -1240"", ""y = 124""]"
+132,1,linear_two_step,-3*(y-20) = -336,,synthetic_raw,"[""-3*(y-20) = -336"", ""-3*y+60 = -336"", ""-3*y = -396"", ""y = 132""]"
+10,1,linear_with_denominator,y/36 = 5/18,"I start with y/36 = 5/18.
+I clear the denominator, so it turns into y = 10.
+So I get 10.
+### answer: 10",synthetic_translated,"[""10""]"
+-31,1,linear_with_denominator,x/11 = -31/11,"I write down x/11 = -31/11.
+I clear the denominator, so it turns into x = -31.
+The variable is isolated, so my answer is -31.
+### answer: -31",synthetic_translated,"[""-31""]"
+-53,1,linear_two_step,12y-16 = -652,"12y-16 = -652
+move the constants -> 12*y = -636
+divide -> y = -53
+That makes the answer -53.
+### answer: -53",synthetic_translated,"[""12y-16 = -652"", ""12*y = -636"", ""y = -53""]"
+124,1,linear_two_step,(-10y-5)/9 = -415/3,"(-10y-5)/9 = -415/3
+simplify -> -10/9*y-5/9 = -415/3
+clear the denominator -> -10*y-5 = -1245
+move the constants -> -10*y = -1240
+divide -> y = 124
+That makes the answer 124.
+### answer: 124",synthetic_translated,"[""(-10y-5)/9 = -415/3"", ""-10/9*y-5/9 = -415/3"", ""-10*y-5 = -1245"", ""-10*y = -1240"", ""y = 124""]"
+132,1,linear_two_step,-3*(y-20) = -336,"-3*(y-20) = -336
+simplify -> -3*y+60 = -336
+move the constants -> -3*y = -396
+divide -> y = 132
+That makes the answer 132.
+### answer: 132",synthetic_translated,"[""-3*(y-20) = -336"", ""-3*y+60 = -336"", ""-3*y = -396"", ""y = 132""]"
