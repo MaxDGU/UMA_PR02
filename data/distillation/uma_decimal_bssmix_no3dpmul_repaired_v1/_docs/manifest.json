@@ -1,0 +1,183 @@
+{
+  "dataset_id": "uma_decimal_bssmix_no3dpmul_repaired_v1",
+  "title": "UMA Decimal BSS Mixture No-3dp-Mul Repaired v1",
+  "generated_at_utc": "2026-04-28T18:09:28.052311+00:00",
+  "source_csv": "results/transformer_replication/decimal_bss_mixture_add2400_mul4800_no3dpmul_repaired_v1_k100_xlsx_distill/uma_traces_decimal_bss_mix_add2400_mul4800_no3dpmul_repaired_v1_k100_xlsx_nlp_think_aloud_child_train_mincols.csv.gz",
+  "source_csv_bytes": 162563434,
+  "output_dir": "data/distillation/uma_decimal_bssmix_no3dpmul_repaired_v1",
+  "compression": "zstd",
+  "rows_per_shard": 350000,
+  "path_prefixes_normalized": [
+    "/n/fs/cogai/cs1095/UMA_PR02/",
+    "/scratch/gpfs/BRENDEN/changho/UMA_PR02/"
+  ],
+  "summary": {
+    "row_count": 1643043,
+    "unique_subjids": 100,
+    "min_subjid": 0,
+    "max_subjid": 990,
+    "unique_probs": 17520,
+    "translation_versions": {
+      "uma_nlp_rules_v12_middle_school_decimal_think_aloud": 1643043
+    }
+  },
+  "schema": [
+    {
+      "name": "source_dataset",
+      "type": "string"
+    },
+    {
+      "name": "source_file",
+      "type": "string"
+    },
+    {
+      "name": "source_seed",
+      "type": "double"
+    },
+    {
+      "name": "source_row_idx",
+      "type": "int64"
+    },
+    {
+      "name": "source_uid",
+      "type": "string"
+    },
+    {
+      "name": "subjid",
+      "type": "int64"
+    },
+    {
+      "name": "prob",
+      "type": "string"
+    },
+    {
+      "name": "operation",
+      "type": "string"
+    },
+    {
+      "name": "strategy",
+      "type": "string"
+    },
+    {
+      "name": "goals",
+      "type": "string"
+    },
+    {
+      "name": "exec",
+      "type": "string"
+    },
+    {
+      "name": "answer",
+      "type": "double"
+    },
+    {
+      "name": "correct",
+      "type": "double"
+    },
+    {
+      "name": "is_correct",
+      "type": "bool"
+    },
+    {
+      "name": "g",
+      "type": "double"
+    },
+    {
+      "name": "d",
+      "type": "double"
+    },
+    {
+      "name": "rt_mu",
+      "type": "int64"
+    },
+    {
+      "name": "ice",
+      "type": "int64"
+    },
+    {
+      "name": "operation_nl",
+      "type": "string"
+    },
+    {
+      "name": "student_prompt_mode",
+      "type": "string"
+    },
+    {
+      "name": "student_params_visible",
+      "type": "bool"
+    },
+    {
+      "name": "student_nl",
+      "type": "double"
+    },
+    {
+      "name": "strategy_nl",
+      "type": "string"
+    },
+    {
+      "name": "goals_nl",
+      "type": "string"
+    },
+    {
+      "name": "exec_nl",
+      "type": "string"
+    },
+    {
+      "name": "instruction_nl",
+      "type": "string"
+    },
+    {
+      "name": "response_nl",
+      "type": "string"
+    },
+    {
+      "name": "reasoning_quality_flags",
+      "type": "string"
+    },
+    {
+      "name": "reasoning_verified_claims",
+      "type": "int64"
+    },
+    {
+      "name": "reasoning_unverified_claims",
+      "type": "int64"
+    },
+    {
+      "name": "translation_version",
+      "type": "string"
+    }
+  ],
+  "shard_count": 5,
+  "shards": [
+    {
+      "file": "part-00000.parquet",
+      "rows": 350000,
+      "bytes": 40859076,
+      "sha256": "5184d202a9e2801945380dac914c5d6e50852c2f717bc31904712fed9f95ef2e"
+    },
+    {
+      "file": "part-00001.parquet",
+      "rows": 350000,
+      "bytes": 42716598,
+      "sha256": "0974a44bd3730cc7aa0b76fb2cad1af34095a7746a12ffb6a12973c52370eaba"
+    },
+    {
+      "file": "part-00002.parquet",
+      "rows": 350000,
+      "bytes": 45331070,
+      "sha256": "10b606316ec0e1e6f29ae89c1b1f67d3c0300a63e8df0844e3c7eecfd5413902"
+    },
+    {
+      "file": "part-00003.parquet",
+      "rows": 350000,
+      "bytes": 40112302,
+      "sha256": "fbc6856d227c08614b2cc562e34f68e022aadfa5c7656ee2fa1a2f73d3ed9fbd"
+    },
+    {
+      "file": "part-00004.parquet",
+      "rows": 243043,
+      "bytes": 25585670,
+      "sha256": "a63d1fac123858911bccfa40fda9a0fb407bb4edf14d20ea6b718fdc0224490d"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=qwen3_distill
 #SBATCH --partition=all
-#SBATCH --gres=gpu:l40:1
+#SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=6
 #SBATCH --mem=128G
 #SBATCH --time=3-00:00:00
@@ -11,14 +11,14 @@
 set -euo pipefail
 
 ROOT="${REPO_ROOT:?REPO_ROOT is required}"
-PYTHON_BIN="${PYTHON_BIN:-/n/fs/cogai/cs1095/conda-envs/uma-transformer-l40/bin/python}"
+PYTHON_BIN="${PYTHON_BIN:-python}"
 DATA_CSV="${DATA_CSV:?DATA_CSV is required}"
 MODEL_NAME="${MODEL_NAME:?MODEL_NAME is required}"
 OUT_DIR="${OUT_DIR:?OUT_DIR is required}"
 
 cd "$ROOT"
 
-export HF_HOME="${HF_HOME:-/n/fs/cogai/.cache/hf}"
+export HF_HOME="${HF_HOME:-$ROOT/.cache/huggingface}"
 export HF_HUB_OFFLINE="${HF_HUB_OFFLINE:-1}"
 export TRANSFORMERS_OFFLINE="${TRANSFORMERS_OFFLINE:-1}"
 export TRANSFORMERS_NO_ADVISORY_WARNINGS=1

@@ -1499,10 +1499,14 @@ def load_and_clean_trace_frame(
     response_col: str,
     problem_col: str,
 ) -> pd.DataFrame:
-    df = pd.read_csv(csv_path, usecols=list(usecols))
+    data_path = str(csv_path)
+    if os.path.isdir(data_path) or data_path.endswith((".parquet", ".pq")):
+        df = pd.read_parquet(data_path, columns=list(usecols))
+    else:
+        df = pd.read_csv(data_path, usecols=list(usecols))
     missing = [c for c in usecols if c not in df.columns]
     if missing:
-        raise ValueError(f"Missing required columns in {csv_path}: {missing}")
+        raise ValueError(f"Missing required columns in {data_path}: {missing}")
 
     df = df.dropna(subset=list(usecols)).copy()
     df[prompt_col] = df[prompt_col].astype(str).str.strip()

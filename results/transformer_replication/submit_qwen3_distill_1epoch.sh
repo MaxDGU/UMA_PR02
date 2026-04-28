@@ -11,25 +11,41 @@ cd "$ROOT_DIR"
 TR_DIR="$ROOT_DIR/results/transformer_replication"
 LOG_DIR="$TR_DIR/slurm_logs"
 SBATCH_SCRIPT="$TR_DIR/slurm_train_qwen3_distill_1epoch.sbatch"
-PYTHON_BIN="${PYTHON_BIN:-/n/fs/cogai/cs1095/conda-envs/uma-transformer-l40/bin/python}"
-HF_HOME="${HF_HOME:-/n/fs/cogai/.cache/hf}"
+PYTHON_BIN="${PYTHON_BIN:-python}"
+HF_HOME="${HF_HOME:-$ROOT_DIR/.cache/huggingface}"
 
 RUN_TS="${RUN_TS:-$(date +%Y%m%d_%H%M%S)}"
 MANIFEST="$TR_DIR/jobs_qwen3_distill_1epoch_${RUN_TS}.tsv"
 
-FRACTION_CSV="${FRACTION_CSV:-$TR_DIR/synth_unique_panel25_even_g_rt5_ice50_seed1_tracev10_default_nosp2013_mincols.csv.gz}"
-DECIMAL_CSV="${DECIMAL_CSV:-$TR_DIR/decimal_bss_mixture_add2400_mul4800_no3dpmul_repaired_v1_k100_xlsx_distill/uma_traces_decimal_bss_mix_add2400_mul4800_no3dpmul_repaired_v1_k100_xlsx_nlp_think_aloud_child_train_mincols.csv.gz}"
+FRACTION_DATA="${FRACTION_DATA:-$ROOT_DIR/data/distillation/uma_fraction_distillation_25}"
+DECIMAL_DATA="${DECIMAL_DATA:-$ROOT_DIR/data/distillation/uma_decimal_bssmix_no3dpmul_repaired_v1}"
+RUN_FRACTION="${RUN_FRACTION:-1}"
+RUN_DECIMAL="${RUN_DECIMAL:-1}"
 
 PARTITION="${PARTITION:-all}"
-GRES="${GRES:-gpu:l40:1}"
+GRES="${GRES:-gpu:1}"
 CPUS_PER_TASK="${CPUS_PER_TASK:-6}"
 MEM="${MEM:-128G}"
 TIME_LIMIT="${TIME_LIMIT:-7-00:00:00}"
-EXCLUDE_NODES="${EXCLUDE_NODES:-neu317,neu322}"
+EXCLUDE_NODES="${EXCLUDE_NODES:-}"
 
 mkdir -p "$LOG_DIR"
 
-for required in "$SBATCH_SCRIPT" "$FRACTION_CSV" "$DECIMAL_CSV" "$PYTHON_BIN"; do
+if ! PYTHON_BIN_RESOLVED="$(command -v "$PYTHON_BIN" 2>/dev/null)"; then
+  echo "missing Python executable: $PYTHON_BIN" >&2
+  exit 1
+fi
+PYTHON_BIN="$PYTHON_BIN_RESOLVED"
+
+required_paths=("$SBATCH_SCRIPT")
+if [[ "$RUN_FRACTION" == "1" ]]; then
+  required_paths+=("$FRACTION_DATA")
+fi
+if [[ "$RUN_DECIMAL" == "1" ]]; then
+  required_paths+=("$DECIMAL_DATA")
+fi
+
+for required in "${required_paths[@]}"; do
   if [[ ! -e "$required" ]]; then
     echo "missing required path: $required" >&2
     exit 1
@@ -43,7 +59,7 @@ print(f"peft={peft.__version__}")
 PY
 
 echo "Checking local Qwen3-Base snapshots in $HF_HOME"
-HF_HOME="$HF_HOME" python - <<'PY'
+HF_HOME="$HF_HOME" "$PYTHON_BIN" - <<'PY'
 from pathlib import Path
 
 models = [
@@ -70,7 +86,7 @@ if errors:
     raise SystemExit("Missing model cache entries:\n- " + "\n- ".join(errors))
 PY
 
-printf "dataset\tmodel_label\tmodel_name\tuse_lora\tjob_id\tjob_name\tout_dir\tdata_csv\tbatch_size\tgrad_accum\tid_eval_batch\n" > "$MANIFEST"
+printf "dataset\tmodel_label\tmodel_name\tuse_lora\tjob_id\tjob_name\tout_dir\tdata_path\tbatch_size\tgrad_accum\tid_eval_batch\n" > "$MANIFEST"
 
 submit_one() {
   local dataset="$1"
@@ -81,10 +97,10 @@ submit_one() {
   local grad_accum="$6"
   local id_eval_batch="$7"
 
-  local data_csv prompt_kind max_length val_frac test_frac split_by_problem lr_scheduler id_eval_size id_eval_tokens best_by save_last lr min_lr out_dir job_name log_out log_err export_vars submit_out job_id
+  local data_path prompt_kind max_length val_frac test_frac split_by_problem lr_scheduler id_eval_size id_eval_tokens best_by save_last lr min_lr out_dir job_name log_out log_err export_vars submit_out job_id
 
   if [[ "$dataset" == "fraction_panel25_default" ]]; then
-    data_csv="$FRACTION_CSV"
+    data_path="$FRACTION_DATA"
     prompt_kind="fraction"
     max_length="288"
     val_frac="0.05"
@@ -100,7 +116,7 @@ submit_one() {
     out_dir="$TR_DIR/qwen3_${model_label}_panel25_default_base_e1_${RUN_TS}"
     job_name="q3${model_label}_p25"
   elif [[ "$dataset" == "decimal_repaired_mix" ]]; then
-    data_csv="$DECIMAL_CSV"
+    data_path="$DECIMAL_DATA"
     prompt_kind="decimal"
     max_length="256"
     val_frac="0.01"
@@ -128,45 +144,51 @@ submit_one() {
   log_out="$LOG_DIR/${job_name}_${RUN_TS}_%j.out"
   log_err="$LOG_DIR/${job_name}_${RUN_TS}_%j.err"
 
-  export_vars="ALL,REPO_ROOT=${ROOT_DIR},PYTHON_BIN=${PYTHON_BIN},HF_HOME=${HF_HOME},TASK_LABEL=${dataset}_${model_label},DATASET_KIND=${dataset},MODEL_NAME=${model_name},DATA_CSV=${data_csv},OUT_DIR=${out_dir},PROMPT_PROBLEM_KIND=${prompt_kind},EPOCHS=1,BATCH_SIZE=${batch_size},EVAL_BATCH_SIZE=${batch_size},GRAD_ACCUM_STEPS=${grad_accum},LR=${lr},MIN_LR=${min_lr},LR_SCHEDULER_TYPE=${lr_scheduler},MAX_LENGTH=${max_length},VAL_FRAC=${val_frac},TEST_FRAC=${test_frac},SPLIT_BY_PROBLEM=${split_by_problem},BEST_BY=${best_by},ID_EVAL_SIZE=${id_eval_size},ID_EVAL_BATCH_SIZE=${id_eval_batch},ID_EVAL_MAX_NEW_TOKENS=${id_eval_tokens},USE_LORA=${use_lora},MODEL_LOAD_DTYPE=bf16,GC=1,EVAL_SP2013=0,SP2013_USE_PARAM_GRID=0,EVAL_ID_FINAL_ANSWER=1,ID_EVAL_REPORT_TRUE_TARGET=1,MOVE_SP2013_ROWS_TO_VAL=0,STRICT_SP2013_ONLY_VALIDATION_LAYOUT=0,TRAIN_PROMPT_STUDENT_MODE=always,TRAIN_PROMPT_STUDENT_DROPOUT_PROB=0.0,SAVE_EVAL_CHECKPOINTS=0,SAVE_BEST_CHECKPOINT=1,SAVE_FINAL_CHECKPOINT=1,VERIFY_SAVED_CHECKPOINT_LOAD=0,LOCAL_FILES_ONLY=1,PREVIEW_SAMPLES=0,RESUME_FROM=none,SAVE_LAST_EVERY_UPDATES=${save_last}"
+  export_vars="ALL,REPO_ROOT=${ROOT_DIR},PYTHON_BIN=${PYTHON_BIN},HF_HOME=${HF_HOME},TASK_LABEL=${dataset}_${model_label},DATASET_KIND=${dataset},MODEL_NAME=${model_name},DATA_CSV=${data_path},OUT_DIR=${out_dir},PROMPT_PROBLEM_KIND=${prompt_kind},EPOCHS=1,BATCH_SIZE=${batch_size},EVAL_BATCH_SIZE=${batch_size},GRAD_ACCUM_STEPS=${grad_accum},LR=${lr},MIN_LR=${min_lr},LR_SCHEDULER_TYPE=${lr_scheduler},MAX_LENGTH=${max_length},VAL_FRAC=${val_frac},TEST_FRAC=${test_frac},SPLIT_BY_PROBLEM=${split_by_problem},BEST_BY=${best_by},ID_EVAL_SIZE=${id_eval_size},ID_EVAL_BATCH_SIZE=${id_eval_batch},ID_EVAL_MAX_NEW_TOKENS=${id_eval_tokens},USE_LORA=${use_lora},MODEL_LOAD_DTYPE=bf16,GC=1,EVAL_SP2013=0,SP2013_USE_PARAM_GRID=0,EVAL_ID_FINAL_ANSWER=1,ID_EVAL_REPORT_TRUE_TARGET=1,MOVE_SP2013_ROWS_TO_VAL=0,STRICT_SP2013_ONLY_VALIDATION_LAYOUT=0,TRAIN_PROMPT_STUDENT_MODE=always,TRAIN_PROMPT_STUDENT_DROPOUT_PROB=0.0,SAVE_EVAL_CHECKPOINTS=0,SAVE_BEST_CHECKPOINT=1,SAVE_FINAL_CHECKPOINT=1,VERIFY_SAVED_CHECKPOINT_LOAD=0,LOCAL_FILES_ONLY=1,PREVIEW_SAMPLES=0,RESUME_FROM=none,SAVE_LAST_EVERY_UPDATES=${save_last}"
 
-  submit_out="$(
-    sbatch \
-      --parsable \
-      --partition="$PARTITION" \
-      --gres="$GRES" \
-      --cpus-per-task="$CPUS_PER_TASK" \
-      --mem="$MEM" \
-      --time="$TIME_LIMIT" \
-      --exclude="$EXCLUDE_NODES" \
-      --job-name="$job_name" \
-      --output="$log_out" \
-      --error="$log_err" \
-      --export="$export_vars" \
-      "$SBATCH_SCRIPT"
-  )"
+  sbatch_args=(
+    --parsable
+    --partition="$PARTITION"
+    --gres="$GRES"
+    --cpus-per-task="$CPUS_PER_TASK"
+    --mem="$MEM"
+    --time="$TIME_LIMIT"
+    --job-name="$job_name"
+    --output="$log_out"
+    --error="$log_err"
+    --export="$export_vars"
+  )
+  if [[ -n "$EXCLUDE_NODES" ]]; then
+    sbatch_args+=(--exclude="$EXCLUDE_NODES")
+  fi
+
+  submit_out="$(sbatch "${sbatch_args[@]}" "$SBATCH_SCRIPT")"
   job_id="${submit_out%%;*}"
 
   printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" \
-    "$dataset" "$model_label" "$model_name" "$use_lora" "$job_id" "$job_name" "$out_dir" "$data_csv" "$batch_size" "$grad_accum" "$id_eval_batch" >> "$MANIFEST"
+    "$dataset" "$model_label" "$model_name" "$use_lora" "$job_id" "$job_name" "$out_dir" "$data_path" "$batch_size" "$grad_accum" "$id_eval_batch" >> "$MANIFEST"
   echo "submitted $job_id: $job_name -> $out_dir"
 }
 
 echo "Submitting Qwen3 1-epoch distillation jobs"
 echo "run_ts=$RUN_TS"
-echo "fraction_csv=$FRACTION_CSV"
-echo "decimal_csv=$DECIMAL_CSV"
+echo "fraction_data=$FRACTION_DATA run_fraction=$RUN_FRACTION"
+echo "decimal_data=$DECIMAL_DATA run_decimal=$RUN_DECIMAL"
 echo "partition=$PARTITION gres=$GRES time=$TIME_LIMIT exclude=$EXCLUDE_NODES"
 
-submit_one "fraction_panel25_default" "0p6b" "Qwen/Qwen3-0.6B-Base" "0" "32" "4" "16"
-submit_one "fraction_panel25_default" "1p7b" "Qwen/Qwen3-1.7B-Base" "1" "32" "4" "8"
-submit_one "fraction_panel25_default" "4b" "Qwen/Qwen3-4B-Base" "1" "16" "8" "4"
-submit_one "fraction_panel25_default" "8b" "Qwen/Qwen3-8B-Base" "1" "8" "16" "2"
+if [[ "$RUN_FRACTION" == "1" ]]; then
+  submit_one "fraction_panel25_default" "0p6b" "Qwen/Qwen3-0.6B-Base" "0" "32" "4" "16"
+  submit_one "fraction_panel25_default" "1p7b" "Qwen/Qwen3-1.7B-Base" "1" "32" "4" "8"
+  submit_one "fraction_panel25_default" "4b" "Qwen/Qwen3-4B-Base" "1" "16" "8" "4"
+  submit_one "fraction_panel25_default" "8b" "Qwen/Qwen3-8B-Base" "1" "8" "16" "2"
+fi
 
-submit_one "decimal_repaired_mix" "0p6b" "Qwen/Qwen3-0.6B-Base" "0" "32" "4" "16"
-submit_one "decimal_repaired_mix" "1p7b" "Qwen/Qwen3-1.7B-Base" "1" "32" "4" "8"
-submit_one "decimal_repaired_mix" "4b" "Qwen/Qwen3-4B-Base" "1" "16" "8" "4"
-submit_one "decimal_repaired_mix" "8b" "Qwen/Qwen3-8B-Base" "1" "8" "16" "2"
+if [[ "$RUN_DECIMAL" == "1" ]]; then
+  submit_one "decimal_repaired_mix" "0p6b" "Qwen/Qwen3-0.6B-Base" "0" "32" "4" "16"
+  submit_one "decimal_repaired_mix" "1p7b" "Qwen/Qwen3-1.7B-Base" "1" "32" "4" "8"
+  submit_one "decimal_repaired_mix" "4b" "Qwen/Qwen3-4B-Base" "1" "16" "8" "4"
+  submit_one "decimal_repaired_mix" "8b" "Qwen/Qwen3-8B-Base" "1" "8" "16" "2"
+fi
 
 echo "Manifest: $MANIFEST"
 cat "$MANIFEST"
