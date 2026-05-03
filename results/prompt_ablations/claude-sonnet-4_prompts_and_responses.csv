@@ -607,7 +607,7 @@ Since 19 is bigger than 15, I can write this as a mixed number:
 19 ÷ 15 = 1 with remainder 4
 So 19/15 = 1 4/15
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,below-average,direct,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to find a common denominator. Let me look at the denominators: 3 and 5.
@@ -2389,7 +2389,7 @@ Let me check if this can be simplified or written as a mixed number:
 
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,direct,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When I divide fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -2475,7 +2475,7 @@ Let me check if this can be simplified or written as a mixed number:
 
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,direct,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When I divide fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -2860,7 +2860,7 @@ Let me check if this can be simplified. Since 7 is bigger than 5, I can write th
 
 So 7/5 = 1 2/5
 
-Answer: 1 2/5",2/5,False
+Answer: 1 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",4/5+3/5,"I need to add 4/5 + 3/5.
 
 Since both fractions have the same denominator (5), I can add the numerators together and keep the same denominator.
@@ -3405,7 +3405,7 @@ So 19/15 = 1 4/15
 
 I should check if 4/15 can be simplified. The factors of 4 are 1, 2, 4 and the factors of 15 are 1, 3, 5, 15. They only share 1, so 4/15 is already simplified.
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to have the same denominator (bottom number). Right now I have different denominators: 3 and 5.
@@ -3432,7 +3432,7 @@ Let me check if I can simplify 19/15. Since 19 is bigger than 15, I can write th
 19 ÷ 15 = 1 with remainder 4
 So 19/15 = 1 4/15
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to have the same denominator (bottom number).
@@ -3525,7 +3525,7 @@ Let me check if this can be simplified. Since 19 is bigger than 15, this is an i
 19 ÷ 15 = 1 with remainder 4
 So 19/15 = 1 4/15
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to find a common denominator. Let me look at the denominators: 3 and 5.
@@ -3554,7 +3554,7 @@ Let me check if I can simplify 19/15. Since 19 is bigger than 15, this is an imp
 
 I should check if 4/15 can be simplified. The factors of 4 are 1, 2, 4 and the factors of 15 are 1, 3, 5, 15. Since they only share the factor 1, 4/15 cannot be simplified.
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to have the same denominator (bottom number).
@@ -5630,7 +5630,7 @@ Let me check if this can be simplified or converted to a mixed number:
 
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When I divide fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -5760,7 +5760,7 @@ So 12/5 = 2 2/5
 
 Let me check if this makes sense: if I have 3/5 and I'm dividing it by 1/4, I'm asking ""how many 1/4's fit into 3/5?"" Since 1/4 is smaller than 3/5, the answer should be bigger than 1, and 2 2/5 is bigger than 1, so that seems right.
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,show-reasoning,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When I divide fractions, I remember that dividing by a fraction is the same as multiplying by its reciprocal (flipping it upside down).
@@ -9000,7 +9000,7 @@ Let me check if this can be simplified or converted to a mixed number:
 
 So 12/5 = 2 2/5.
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,cot,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Think step by step. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When I divide fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -9017,7 +9017,7 @@ Let me check if this can be simplified or written as a mixed number:
 12 ÷ 5 = 2 with remainder 2
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,cot,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Think step by step. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -9158,7 +9158,7 @@ Let me check if this can be simplified or written as a mixed number:
 
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,below-average,cot,"You are a student in 6th grade who is below-average at math, solving fraction arithmetic problems. Think step by step. Do not use a calculator. End with 'Answer: <answer>'.",2/3÷3/5,"I need to solve 2/3 ÷ 3/5.
 
 When I divide fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -11719,7 +11719,7 @@ I can convert this to a mixed number:
 12 ÷ 5 = 2 with remainder 2
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,average,direct,"You are a student in 6th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal (flip the second fraction).
@@ -11791,7 +11791,7 @@ I can convert this to a mixed number:
 12 ÷ 5 = 2 remainder 2
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,average,direct,"You are a student in 6th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal of the second fraction.
@@ -11828,7 +11828,7 @@ Let me check if this can be simplified or converted to a mixed number:
 
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,average,direct,"You are a student in 6th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal of the second fraction.
@@ -18370,7 +18370,7 @@ Since 7/5 is an improper fraction (the numerator is larger than the denominator)
 
 So 7/5 = 1 2/5
 
-Answer: 1 2/5",2/5,False
+Answer: 1 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,6th,high-performing,direct,"You are a student in 6th grade who is high-performing at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",4/5+3/5,"I need to add two fractions with the same denominator.
 
 When fractions have the same denominator, I just add the numerators and keep the denominator the same.
@@ -18764,7 +18764,7 @@ Since 19 > 15, I can write this as a mixed number:
 19 ÷ 15 = 1 remainder 4
 So 19/15 = 1 4/15
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,6th,high-performing,direct,"You are a student in 6th grade who is high-performing at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need a common denominator. The denominators are 3 and 5.
@@ -30298,7 +30298,7 @@ Let me check if I can simplify 19/15. Since 19 is bigger than 15, this is an imp
 
 I should check if 4/15 can be simplified. The factors of 4 are 1, 2, 4 and the factors of 15 are 1, 3, 5, 15. They don't share any common factors except 1, so 4/15 is already in simplest form.
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,7th,below-average,show-reasoning,"You are a student in 7th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need to have the same denominator (bottom number) for both fractions.
@@ -36614,7 +36614,7 @@ Since 19 > 15, I can write this as a mixed number:
 19 ÷ 15 = 1 with remainder 4
 So 19/15 = 1 4/15
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,7th,average,direct,"You are a student in 7th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",2/3+3/5,"I need to add 2/3 + 3/5.
 
 To add fractions, I need a common denominator. Let me find the least common multiple of 3 and 5.
@@ -38504,7 +38504,7 @@ I can convert this to a mixed number:
 12 ÷ 5 = 2 with remainder 2
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,7th,average,direct,"You are a student in 7th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal of the second fraction.
@@ -45092,7 +45092,7 @@ Since 7/5 is an improper fraction (the numerator is larger than the denominator)
 
 So 7/5 = 1 2/5
 
-Answer: 1 2/5",2/5,False
+Answer: 1 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,7th,high-performing,direct,"You are a student in 7th grade who is high-performing at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",4/5+3/5,"I need to add two fractions with the same denominator.
 
 When adding fractions with the same denominator, I add the numerators and keep the denominator the same.
@@ -57108,7 +57108,7 @@ So 19/15 = 1 4/15
 
 I should check if 4/15 can be simplified. The factors of 4 are 1, 2, 4 and the factors of 15 are 1, 3, 5, 15. They only share 1 as a common factor, so 4/15 cannot be simplified.
 
-Answer: 1 4/15",4/15,False
+Answer: 1 4/15",4/15,True
 claude-sonnet-4-20250514,fraction,8th,below-average,show-reasoning,"You are a student in 8th grade who is below-average at math, solving fraction arithmetic problems. Show your reasoning. Do not use a calculator. End with 'Answer: <answer>'.",3/5-1/5,"I need to subtract 1/5 from 3/5.
 
 Since both fractions have the same denominator (5), I can subtract the numerators directly and keep the same denominator.
@@ -65207,7 +65207,7 @@ I can convert this to a mixed number:
 12 ÷ 5 = 2 remainder 2
 So 12/5 = 2 2/5
 
-Answer: 2 2/5",2/5,False
+Answer: 2 2/5",2/5,True
 claude-sonnet-4-20250514,fraction,8th,average,direct,"You are a student in 8th grade who is average at math, solving fraction arithmetic problems. Do not use a calculator. End with 'Answer: <answer>'.",3/5÷1/4,"I need to solve 3/5 ÷ 1/4.
 
 When dividing fractions, I need to multiply by the reciprocal of the second fraction.
