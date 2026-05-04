@@ -1,0 +1,148 @@
+{
+  "condition": "q3_0p6b_full_t15",
+  "model": "Qwen3-0.6B E1",
+  "method": "Full",
+  "source_report": "/n/fs/cogai/cs1095/UMA_PR02/reports/fraction_qwen_20260428",
+  "metric_protocol": "MAG-H from reports/fraction_qwen_20260428: mean absolute 8-cell accuracy gap vs human, in percentage points.",
+  "temperature": 1.5,
+  "MAG_H_pp": 6.562500000000002,
+  "MAG_U_pp": 6.124999999999998,
+  "mean_accuracy": 52.8625,
+  "sample_accuracy": 52.8625,
+  "any_correct_accuracy": 98.25,
+  "parseable_coverage": 99.925,
+  "operation_accuracy": {
+    "add": 62.425,
+    "sub": 73.69999999999999,
+    "mul": 53.05000000000001,
+    "div": 22.275
+  },
+  "operation_any_correct_accuracy": {
+    "add": 100.0,
+    "sub": 100.0,
+    "mul": 100.0,
+    "div": 93.0
+  },
+  "n_rows": 16000,
+  "n_problems": 16,
+  "n_prompt_rollout_groups": 400,
+  "backend": "vllm",
+  "metrics_path": "/n/fs/cogai/cs1095/UMA_PR02/results/transformer_replication/qwen3_0p6b_panel25_default_base_e1_20260428_103905/sp2013_panel25_seed1_roll40_true_final_temp1p5/sp2013_panel25_metrics.json",
+  "rollouts_path": "/n/fs/cogai/cs1095/UMA_PR02/results/transformer_replication/qwen3_0p6b_panel25_default_base_e1_20260428_103905/sp2013_panel25_seed1_roll40_true_final_temp1p5/sp2013_panel25_rollouts.csv.gz",
+  "best_operation_rows": [
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "operation": "Add",
+      "mean_accuracy": 62.425,
+      "any_correct_accuracy": 100.0
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "operation": "Div",
+      "mean_accuracy": 22.275,
+      "any_correct_accuracy": 93.0
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "operation": "Mul",
+      "mean_accuracy": 53.05,
+      "any_correct_accuracy": 100.0
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "operation": "Sub",
+      "mean_accuracy": 73.7,
+      "any_correct_accuracy": 100.0
+    }
+  ],
+  "best_cell_rows": [
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "add ED",
+      "qwen_mean_accuracy": 62.5,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "add UD",
+      "qwen_mean_accuracy": 62.35,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "div ED",
+      "qwen_mean_accuracy": 27.6,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "div UD",
+      "qwen_mean_accuracy": 16.95,
+      "qwen_any_correct_accuracy": 86.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "mul ED",
+      "qwen_mean_accuracy": 51.7,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "mul UD",
+      "qwen_mean_accuracy": 54.4,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "sub ED",
+      "qwen_mean_accuracy": 84.35,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 100.0,
+      "n_rows": 2000
+    },
+    {
+      "model": "Qwen3-0.6B E1",
+      "method": "Full",
+      "temperature": 1.5,
+      "cell": "sub UD",
+      "qwen_mean_accuracy": 63.05,
+      "qwen_any_correct_accuracy": 100.0,
+      "parseable_coverage": 99.4,
+      "n_rows": 2000
+    }
+  ]
+}

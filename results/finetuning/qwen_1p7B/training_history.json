@@ -1,0 +1,13 @@
+{
+  "source_report": "/n/fs/cogai/cs1095/UMA_PR02/reports/fraction_qwen_20260428",
+  "source_tables": [
+    "tables/temperature_summary.csv",
+    "tables/operation_temperature_summary.csv",
+    "tables/cell_temperature_summary.csv",
+    "tables/best_temperature.tex"
+  ],
+  "selected_condition": "q3_1p7b_lora_e2_t13",
+  "selected_by": "minimum MAG-H within this model/method block",
+  "selected_temperature": 1.3,
+  "selected_MAG_H_pp": 7.181250000000004
+}
