@@ -1,0 +1,91 @@
+{
+  "bundle": "open_response_seed_v2_max_share",
+  "created_at": "2026-05-14T14:54:10Z",
+  "dataset": "foundational_assist",
+  "file_row_count_method": "parsed CSV records; raw answer_text fields may contain embedded newlines, so physical line counts are not valid row counts",
+  "files": [
+    {
+      "bytes": 2260894,
+      "path": "answer_distribution.csv",
+      "rows": 60693,
+      "sha256": "615a540940af95ccf97e4111800e5ae2aebb321f290b65edf9f766730aa06396"
+    },
+    {
+      "bytes": 766191,
+      "path": "problems.csv",
+      "rows": 1206,
+      "sha256": "47478f758131a4348caec6f8179b8b366d5bc2b2a16f9c388c0546e596c80a4b"
+    },
+    {
+      "bytes": 25498294,
+      "path": "student_answers.csv.gz",
+      "rows": 690683,
+      "sha256": "08d74f75a1cb49b7ef605ee4310f48ba681105a514da58e9547ed6205b80f144"
+    }
+  ],
+  "filter_rule": "student answers are raw Interactions.csv rows whose problem_id appears in open_response_seed_v2/problems.csv",
+  "share_summary": {
+    "answer_distribution_rows": 60693,
+    "answer_rows_containing_at": 1,
+    "clean_first_attempt_nonempty_rows": 525353,
+    "email_like_answer_rows": 0,
+    "nonempty_answer_rows": 690681,
+    "problem_rows": 1206,
+    "student_answer_rows": 690683,
+    "unique_students": 5000,
+    "url_like_answer_note": "URL-like matches are mostly MathML namespace strings in raw answer markup; the scan also found a few pasted non-MathML links.",
+    "url_like_answer_rows": 518
+  },
+  "source_documentation": "/scratch/gpfs/BRENDEN/changho/symbolic-distillation/data/foundational_assist/docs/README.md",
+  "source_interactions": "/scratch/gpfs/BRENDEN/changho/symbolic-distillation/data/foundational_assist/raw/Interactions.csv",
+  "source_problem_artifact": "/scratch/gpfs/BRENDEN/changho/symbolic-distillation/data/foundational_assist/curated/open_response_seed_v2/problems.csv",
+  "source_v2_manifest": "/scratch/gpfs/BRENDEN/changho/symbolic-distillation/data/foundational_assist/curated/open_response_seed_v2/manifest.json",
+  "source_v2_summary": {
+    "answer_type_counts_v2": {
+      "Algebraic Expression": 53,
+      "Algebraic Expression, Numeric": 1,
+      "Exact Fraction": 2,
+      "Exact Match": 19,
+      "Numeric": 1124,
+      "Numeric Expression": 7
+    },
+    "created_at": "2026-05-10T13:04:06Z",
+    "domain_family_counts_v2": {
+      "decimal": 60,
+      "equation_algebra": 271,
+      "fraction": 117,
+      "functions_graphs": 18,
+      "geometry_measurement": 73,
+      "other": 40,
+      "ratio_percent": 548,
+      "statistics_probability": 50,
+      "whole_number_arithmetic": 29
+    },
+    "excluded_flag_counts": {
+      "answer_constant_not_locally_supported": 17,
+      "explicit_prior_reference": 12,
+      "missing_local_rate_or_equation": 13,
+      "missing_prior_quantity": 35,
+      "missing_visual_dataset_context": 25,
+      "no_local_quantities": 90
+    },
+    "excluded_nonstandalone_count": 129,
+    "excluded_prior_group_dependent_count": 68,
+    "excluded_problem_count": 129,
+    "excluded_problem_sets": 100,
+    "exclusion_source": "reports/data_curation_05092026/standalone_context_nonstandalone_candidates.csv",
+    "mean_score_v2_problem_weighted": 0.6092248384032385,
+    "source_problem_count": 1335,
+    "split_counts_v2": {
+      "model_dev": 831,
+      "test": 199,
+      "validation": 176
+    },
+    "total_interactions_v2": 690683,
+    "unique_students_sum_by_problem_v2": 659456,
+    "v2_answer_check_count": 1206,
+    "v2_canonical_form_count": 1206,
+    "v2_problem_count": 1206
+  },
+  "student_hash_rule": "sha256(\"foundational_assist_open_response_seed_v2:\" + source user_id)"
+}
