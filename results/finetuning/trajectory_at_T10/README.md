@@ -67,11 +67,6 @@ trajectory_at_T10/
 ├── qwen_trajectory_at_T10.png                # original plot (mixed parsers, kept for provenance)
 ├── qwen_trajectory_at_T10.csv                # original (size, stage, MAE_pp) data
 ├── qwen_trajectory_at_T10_fixed_parser.png   # new plot, all stages regraded with the fixed parser
-├── qwen_trajectory_parser_comparison.png     # side-by-side: old vs new parser MAE (same rollouts)
-├── qwen_trajectory_parser_comparison.csv     # MAE_new / MAE_old / delta per (size, stage)
-├── parser_drift_breakdown.csv                # rollout-level % disagreement per (size, stage)
-├── parser_drift_format_breakdown.csv         # per-output-format (mixed/decimal/fraction/int) gains
-├── parser_drift_analysis.py                  # script that produces all three drift artifacts
 ├── plot_trajectory_at_T10_fixed_parser.py    # mirror plot using fixed-parser numbers
 ├── submit_qwen_trajectory_at_T10.sh          # reproducer: 1-call distill + humanFT + eval
 ├── eval_qwen3_chained_sp2013.py              # SP2013 rollout/scoring driver (vendored)
@@ -86,31 +81,13 @@ trajectory_at_T10/
     └── per_problem_<stage>.csv                # 16 SP2013 problems × accuracy / abs-error
 ```
 
-## Parser fix and drift
+## Parser fix
 
-The `extract_answer` in the original eval driver dropped mixed-number outputs
-(e.g. "2 2/5" was parsed as just "2") and failed on decimals ("2.4"). The fixed
-parser in `eval_qwen3_chained_sp2013.py` correctly handles both.
-
-Applying both parsers to the *same* rollouts isolates the drift exactly. Across
-~94K rollouts in the trajectory:
-
-| Output format | n | old parser % correct | new parser % correct |
-|---|---:|---:|---:|
-| mixed_number ("2 2/5") | 2,892 | 0.3% | **16.0%** |
-| decimal ("2.4")       | 1,833 | 0.6% | **18.0%** |
-| plain_fraction        | 66,775 | 44.9% | 43.9% |
-| integer               | 3,188 | 20.7% | 10.1% |
-| other                 | 19,520 | 24.0% | 22.4% |
-
-Pretrained base models emit the most non-canonical formats — rollout-level
-parser disagreement is 8–21% at base, dropping to 0–3% after distillation, where
-outputs are overwhelmingly `### answer: P/Q`. Net effect on stage-level MAE:
-base MAE rises by 3–9 pp (the old parser was undercounting correct answers and
-artifactually pulling base accuracy down toward the human distribution);
-trained checkpoints shift by under 2 pp.
-
-The V-shape and per-size winners are unchanged.
+`qwen_trajectory_at_T10_fixed_parser.png` is regraded by the corrected
+`extract_answer` in `eval_qwen3_chained_sp2013.py`, which handles mixed-number
+("2 2/5") and decimal ("2.4") outputs that the original parser dropped. Both
+trajectory plots are kept for provenance; the V-shape and per-size winners are
+unchanged.
 
 Stages per size: `base`, `distill_ep1`, `humanft_ep1`, `humanft_ep2`,
 `humanft_ep3`, `humanft_ep5`. 4B is missing the ep2 cheap-fix point; everything
