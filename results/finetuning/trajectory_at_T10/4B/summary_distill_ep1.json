@@ -1,0 +1,18 @@
+{
+  "condition": "traj_4b_distill",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "adapter_dir": "/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/best",
+  "num_rollouts": 256,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 50,
+  "mae_pp_overall": 15.408528645833332,
+  "mae_pp_by_op": {
+    "add": 11.354166666666666,
+    "div": 8.346354166666666,
+    "mul": 25.377604166666664,
+    "sub": 16.55598958333333
+  },
+  "acc_overall_model": 0.637939453125,
+  "acc_overall_human": 0.5156250000000001
+}

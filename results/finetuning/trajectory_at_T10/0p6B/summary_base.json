@@ -1,0 +1,19 @@
+{
+  "temperature": 1.0,
+  "mae_pp_overall": 34.27734375,
+  "mae_pp_by_op": {
+    "add": 42.682291666666664,
+    "div": 12.044270833333332,
+    "mul": 26.770833333333336,
+    "sub": 55.61197916666667
+  },
+  "acc_overall_model": 0.1728515625,
+  "acc_overall_human": 0.5156250000000001,
+  "num_rollouts": 256,
+  "top_p": 0.95,
+  "top_k": 50,
+  "condition": "traj_0p6b_base",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "adapter_dir": null,
+  "elapsed_sec": 199.0
+}

@@ -1,0 +1,18 @@
+{
+  "condition": "traj_8b_base",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "adapter_dir": null,
+  "num_rollouts": 256,
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "top_k": 50,
+  "mae_pp_overall": 20.631510416666668,
+  "mae_pp_by_op": {
+    "add": 34.186197916666664,
+    "div": 7.571614583333334,
+    "mul": 10.839843750000002,
+    "sub": 29.92838541666667
+  },
+  "acc_overall_model": 0.328125,
+  "acc_overall_human": 0.5156250000000001
+}
