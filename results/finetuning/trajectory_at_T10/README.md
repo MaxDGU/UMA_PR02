@@ -64,11 +64,14 @@ Patterns:
 
 ```
 trajectory_at_T10/
-├── qwen_trajectory_at_T10.png   # the plot
-├── qwen_trajectory_at_T10.csv   # raw (size, stage, MAE_pp) data
+├── qwen_trajectory_at_T10.png         # the plot
+├── qwen_trajectory_at_T10.csv         # raw (size, stage, MAE_pp) data
+├── submit_qwen_trajectory_at_T10.sh   # reproducer: 1-call distill + humanFT + eval
+├── eval_qwen3_chained_sp2013.py       # SP2013 rollout/scoring driver (vendored)
+├── run_eval_qwen3_chained.slurm       # sbatch wrapper around the eval driver
 └── {0p6B,1p7B,4B,8B}/
-    ├── summary_<stage>.json      # condition / temperature / MAE pp / per-op MAE / acc
-    └── per_problem_<stage>.csv   # 16 SP2013 problems × accuracy/abs-error
+    ├── summary_<stage>.json            # condition / temperature / MAE pp / per-op / acc
+    └── per_problem_<stage>.csv         # 16 SP2013 problems × accuracy / abs-error
 ```
 
 Stages per size: `base`, `distill_ep1`, `humanft_ep1`, `humanft_ep2`,
@@ -77,6 +80,26 @@ else is complete.
 
 ## Reproducing
 
-Plot script: `fractions/scripts/plot_trajectory_at_T10.py`
-(reads from the trajectory eval cache; see comments in the script for source
-paths.)
+End-to-end (distill + humanFT + 24 evals submitted from one call):
+
+```bash
+REPO_ROOT=$(pwd) \
+  PYTHON_BIN=$(command -v python) \
+  HF_HOME=$REPO_ROOT/.cache/huggingface \
+  bash results/finetuning/trajectory_at_T10/submit_qwen_trajectory_at_T10.sh
+```
+
+Required local prereqs:
+- HuggingFace snapshots of `Qwen/Qwen3-{0.6B,1.7B,4B,8B}-Base` under
+  `$HF_HOME/hub/` (the script pre-flights this).
+- `data/distillation/uma_fraction_distillation_25/` (synthetic UMA distill
+  corpus, used by `train_transformer_hf.py`).
+- `data/human_ft/data_{train,val}_nlp.csv` (288-row Siegler-Pyke human corpus).
+- `data/siegler_fraction_human.csv` (per-problem human accuracies for eval —
+  vendored in this commit).
+
+Optional `SIZES="0p6b 1p7b 4b 8b"` (subset), `PARTITION`, `ACCOUNT`, `QOS`,
+`SKIP_DISTILL=1` / `SKIP_HUMANFT=1` / `SKIP_EVAL=1`.
+
+The plotting script that produced `qwen_trajectory_at_T10.png` lives in the
+sister fractions repo at `fractions/scripts/plot_trajectory_at_T10.py`.

@@ -61,6 +61,9 @@ SP2013_TEMPERATURE="${SP2013_TEMPERATURE:-0.7}"
 LOCAL_FILES_ONLY="${LOCAL_FILES_ONLY:-1}"
 LOG_EVERY="${LOG_EVERY:-10}"
 SEED="${SEED:-42}"
+INIT_STRATEGY="${INIT_STRATEGY:-pretrained}"
+MODEL_PATH="${MODEL_PATH:-}"
+CHECKPOINT_SUBDIR="${CHECKPOINT_SUBDIR:-best}"
 
 bool_flag() {
   if [[ "$1" == "1" ]]; then printf '%s' "$2"; else printf '%s' "$3"; fi
@@ -80,14 +83,38 @@ if [[ "$USE_LORA" == "1" ]]; then
   )
 fi
 
+INIT_ARGS=(--init_strategy "$INIT_STRATEGY")
+if [[ "$INIT_STRATEGY" == "checkpoint" ]]; then
+  if [[ -z "$MODEL_PATH" ]]; then
+    echo "MODEL_PATH is required when INIT_STRATEGY=checkpoint" >&2
+    exit 4
+  fi
+  INIT_ARGS+=(--model_path "$MODEL_PATH" --checkpoint_subdir "$CHECKPOINT_SUBDIR")
+  # When loading a saved adapter, do not also wrap with a fresh LoRA — the
+  # trainer will reject that combo, and the adapter from the checkpoint is
+  # already trainable.
+  LORA_ARGS=(--no-use_lora)
+fi
+
 EVAL_SP2013_FLAG="$(bool_flag "$EVAL_SP2013" --eval_sp2013 --no-eval_sp2013)"
 EVAL_LOADED_FLAG="$(bool_flag "$EVAL_LOADED_MODEL" --eval_loaded_model --no-eval_loaded_model)"
 LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_files_only)"
+
+EXTRA_ARGS=()
+if [[ "${SAVE_EPOCH_CHECKPOINTS:-0}" == "1" ]]; then
+  EXTRA_ARGS+=(--save_epoch_checkpoints)
+fi
+if [[ -n "${SAVE_EPOCH_LIST:-}" ]]; then
+  # sbatch --export splits on commas; callers pass ';' which we translate back.
+  SAVE_EPOCH_LIST="${SAVE_EPOCH_LIST//;/,}"
+  EXTRA_ARGS+=(--save_epoch_list "$SAVE_EPOCH_LIST")
+fi
 
 {
   echo "[$(date -Iseconds)] starting ${TASK_LABEL}"
   echo "job_id=${SLURM_JOB_ID:-unknown} node=${SLURMD_NODENAME:-unknown}"
   echo "model_name=${MODEL_NAME}"
+  echo "init_strategy=${INIT_STRATEGY} model_path=${MODEL_PATH} checkpoint_subdir=${CHECKPOINT_SUBDIR}"
   echo "use_lora=${USE_LORA} r=${LORA_R} alpha=${LORA_ALPHA} dropout=${LORA_DROPOUT}"
   echo "epochs=${EPOCHS} max_steps=${MAX_STEPS} batch=${BATCH_SIZE} grad_accum=${GRAD_ACCUM_STEPS} lr=${LR}"
   echo "instruction_style=${INSTRUCTION_STYLE} kl_beta=${KL_BETA} best_by=${BEST_BY}"
@@ -95,7 +122,7 @@ LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_
   nvidia-smi || true
 
   "$PYTHON_BIN" "$ROOT/human_ft/finetune_humandata.py" \
-    --init_strategy pretrained \
+    "${INIT_ARGS[@]}" \
     --base_model_name "$MODEL_NAME" \
     --train_csv "$TRAIN_CSV" \
     --val_csv "$VAL_CSV" \
@@ -119,6 +146,7 @@ LOCAL_FILES_FLAG="$(bool_flag "$LOCAL_FILES_ONLY" --local_files_only --no-local_
     --seed "$SEED" \
     "${LORA_ARGS[@]}" \
     "${GC_FLAG[@]}" \
+    "${EXTRA_ARGS[@]}" \
     "$EVAL_SP2013_FLAG" \
     "$EVAL_LOADED_FLAG" \
     "$LOCAL_FILES_FLAG"
