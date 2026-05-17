@@ -1,0 +1,4 @@
+profile,n_students,acc_min,acc_median,acc_max,rep_subjid,rep_acc,rep_g,rep_d,rep_rt_mu,rep_ice
+low,332,0.0,0.375,0.5,4,0.375,0.01,0.1,3,100
+mid,332,0.5,0.5625,0.625,611,0.5625,0.07,0.1,5,25
+high,332,0.625,0.6875,0.9375,966,0.6875,0.1,0.7,4,25
