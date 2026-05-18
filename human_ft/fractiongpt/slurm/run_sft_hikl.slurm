@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH --job-name=sft_hikl
+#SBATCH --output=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/logs/sft_hikl_%j.out
+#SBATCH --error=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/logs/sft_hikl_%j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=64G
+#SBATCH --time=04:00:00
+#SBATCH --gres=gpu:1
+#SBATCH --partition=pli
+#SBATCH --account=nam
+
+module purge
+module load anaconda3/2024.2
+conda activate /scratch/gpfs/GRIFFITHS/mg7411/conda_envs/nnsight-env
+
+cd /scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions
+mkdir -p logs
+
+echo "============================================================"
+echo "SFT+KL: higher kl_beta (1.5), same lr/clip as sft_norm_beta10"
+echo "Start: $(date)"
+echo "============================================================"
+
+python3 -u finetune/sft_reweight.py \
+    --sft_lr 1e-6 \
+    --sft_epochs 20 \
+    --batch_size 64 \
+    --smooth_alpha 0.05 \
+    --kl_beta 1.5 \
+    --max_weight 5.0 \
+    --eval_every 5 \
+    --tag sft_hikl_beta15
+
+echo "============================================================"
+echo "Done: $(date)"
+echo "============================================================"
