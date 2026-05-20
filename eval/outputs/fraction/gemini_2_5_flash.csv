@@ -1,0 +1,1873 @@
+problem,operation,denom_type,correct_answer,model,sample_idx,parsed_answer,is_correct,model_response
+2/3*3/5,Mul,UD,2/5,Gemini 2.5 Flash,0,2/5,True,"Okay, I can solve this!
+
+To multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+(2 * 3) / (3 * 5)
+
+Multiply the top:
+2 * 3 = 6
+
+Multiply the bottom:
+3 * 5 = 15
+
+So now I have 6/15.
+
+I can simplify this fraction! Both 6 and 15 can be divided by 3.
+
+6 divided by 3 = 2
+15 divided by 3 = 5
+
+So the simplified fraction is 2/5.
+
+Final Answer: 2/5"
+2/3*3/5,Mul,UD,2/5,Gemini 2.5 Flash,1,2/5,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I'll do it:
+
+2/3 * 3/5
+
+First, I notice that there's a '3' on the top in the second fraction and a '3' on the bottom in the first fraction. I can cross-cancel them!
+
+2/~~3~~ * ~~3~~/5
+   1       1
+
+Now it looks like:
+2/1 * 1/5
+
+Next, I multiply the new numerators:
+2 * 1 = 2
+
+Then, I multiply the new denominators:
+1 * 5 = 5
+
+So my answer is 2/5.
+
+**Answer:** 2/5"
+2/3*3/5,Mul,UD,2/5,Gemini 2.5 Flash,2,2/5,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the tops (numerators) together and the bottoms (denominators) together.
+
+Problem: 2/3 * 3/5
+
+First, I look to see if I can simplify anything before I multiply. I see a '3' on the top of the second fraction and a '3' on the bottom of the first fraction. I can cancel those out!
+
+2/~~3~~ * ~~3~~/5
+
+This leaves me with:
+2/1 * 1/5
+
+Now I multiply the numerators: 2 * 1 = 2
+And I multiply the denominators: 1 * 5 = 5
+
+So the answer is 2/5.
+
+**Answer:** 2/5"
+2/3*3/5,Mul,UD,2/5,Gemini 2.5 Flash,3,2/5,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the top numbers together (the numerators) and the bottom numbers together (the denominators).
+
+Here's the problem:
+2/3 * 3/5
+
+First, I'm going to look to see if I can make it easier by ""cross-canceling"" or ""simplifying diagonally.""
+I see a '3' in the denominator of the first fraction and a '3' in the numerator of the second fraction. They can both be divided by 3!
+
+2/~~3~~ * ~~3~~/5
+   (Divide both 3s by 3, so they become 1)
+
+Now it looks like this:
+2/1 * 1/5
+
+Now I multiply the new numerators and denominators:
+Numerator: 2 * 1 = 2
+Denominator: 1 * 5 = 5
+
+So, the answer is 2/5.
+
+The final answer is $\boxed{2/5}$."
+2/3*3/5,Mul,UD,2/5,Gemini 2.5 Flash,4,2/5,True,"To multiply fractions, I multiply the numerators (the top numbers) together and the denominators (the bottom numbers) together.
+
+Problem: 2/3 * 3/5
+
+**Step 1: Multiply the numerators.**
+2 * 3 = 6
+
+**Step 2: Multiply the denominators.**
+3 * 5 = 15
+
+So, 2/3 * 3/5 = 6/15
+
+**Step 3: Simplify the fraction (if possible).**
+I need to find a common factor for 6 and 15.
+Both 6 and 15 can be divided by 3.
+6 ÷ 3 = 2
+15 ÷ 3 = 5
+
+So, 6/15 simplifies to 2/5.
+
+Alternatively, I can cross-cancel before multiplying:
+2/3 * 3/5
+I see a 3 in the denominator of the first fraction and a 3 in the numerator of the second fraction. I can divide both of these by 3.
+2/(3÷3) * (3÷3)/5
+2/1 * 1/5
+
+Now multiply:
+Numerators: 2 * 1 = 2
+Denominators: 1 * 5 = 5
+
+Result: 2/5
+
+The final answer is $\boxed{2/5}$."
+2/3+3/5,Add,UD,19/15,Gemini 2.5 Flash,0,4/15,False,"Okay, I can solve this! We're adding two fractions with different bottoms, so we need to find a common denominator first.
+
+The problem is:
+2/3 + 3/5
+
+1.  **Find a common denominator:**
+    The denominators are 3 and 5. I need to find the smallest number that both 3 and 5 can divide into evenly.
+    Multiples of 3: 3, 6, 9, 12, **15**, 18...
+    Multiples of 5: 5, 10, **15**, 20...
+    The smallest common denominator is 15.
+
+2.  **Convert the fractions:**
+    *   For 2/3: To get 15 on the bottom, I need to multiply 3 by 5. Whatever I do to the bottom, I have to do to the top!
+        2/3 * 5/5 = (2 * 5) / (3 * 5) = 10/15
+    *   For 3/5: To get 15 on the bottom, I need to multiply 5 by 3.
+        3/5 * 3/3 = (3 * 3) / (5 * 3) = 9/15
+
+3.  **Add the new fractions:**
+    Now that they have the same denominator, I can just add the top numbers.
+    10/15 + 9/15 = (10 + 9) / 15 = 19/15
+
+4.  **Simplify the answer:**
+    19/15 is an improper fraction because the top number is bigger than the bottom. I can turn it into a mixed number.
+    How many times does 15 go into 19? It goes in 1 time with a remainder.
+    19 ÷ 15 = 1 with a remainder of 4 (because 19 - 15 = 4).
+    So, 19/15 is equal to 1 and 4/15.
+
+My final answer is **1 and 4/15**."
+2/3+3/5,Add,UD,19/15,Gemini 2.5 Flash,1,4/15,False,"Okay, I can solve this! We need to add 2/3 and 3/5.
+
+First, I need to find a common denominator for 3 and 5. The smallest number that both 3 and 5 divide into evenly is 15. So, 15 will be my common denominator.
+
+Now I need to change each fraction so it has 15 as the denominator:
+
+For 2/3:
+To get from 3 to 15, I multiply by 5 (3 * 5 = 15).
+So, I need to multiply the top number (numerator) by 5 too: 2 * 5 = 10.
+So, 2/3 is the same as 10/15.
+
+For 3/5:
+To get from 5 to 15, I multiply by 3 (5 * 3 = 15).
+So, I need to multiply the top number (numerator) by 3 too: 3 * 3 = 9.
+So, 3/5 is the same as 9/15.
+
+Now I have two fractions with the same denominator, so I can add them:
+10/15 + 9/15
+
+To add them, I just add the top numbers and keep the bottom number the same:
+10 + 9 = 19
+So, the answer is 19/15.
+
+The fraction 19/15 is an improper fraction because the top number is bigger than the bottom number. I can change it to a mixed number if I want.
+How many times does 15 go into 19? It goes in 1 time, with 4 leftover (19 - 15 = 4).
+So, 19/15 is the same as 1 and 4/15.
+
+My final answer is **19/15** or **1 4/15**."
+2/3+3/5,Add,UD,19/15,Gemini 2.5 Flash,2,2/3,False,"Okay, I can solve this! We need to add two fractions: 2/3 + 3/5.
+
+**Step 1: Find a common denominator.**
+To add fractions, their bottoms (denominators) have to be the same.
+The denominators are 3 and 5.
+I need to find a number that both 3 and 5 can go into evenly.
+Let's list multiples of 3: 3, 6, 9, 12, **15**, 18...
+Let's list multiples of 5: 5, 10, **15**, 20...
+The smallest number they both share is 15. So, our common denominator is 15.
+
+**Step 2: Convert each fraction to have the common denominator.**
+
+*   For 2/3:
+    To get from 3 to 15, I multiply by 5 (because 3 * 5 = 15).
+    Whatever I do to the bottom, I have to do to the top!
+    So, 2 * 5 = 10.
+    2/3 is the same as 10/15.
+
+*   For 3/5:
+    To get from 5 to 15, I multiply by 3 (because 5 * 3 = 15).
+    Whatever I do to the bottom, I have to do to the top!
+    So, 3 * 3 = 9.
+    3/5 is the same as 9/15.
+
+**Step 3: Add the new fractions.**
+Now I have:
+10/15 + 9/15
+
+When the denominators are the same, I just add the tops (numerators) and keep the bottom the same.
+10 + 9 = 19
+So, the answer is 19/15.
+
+**Step 4: Check if the answer can be simplified or changed to a mixed number.**
+19/15 is an improper fraction because the top number is bigger than the bottom number.
+I can turn it into a mixed number.
+How many times does 15 go into 19? It goes in 1 time (1 * 15 = 15).
+What's left over? 19 - 15 = 4.
+So, 19/15 is equal to 1 and 4/15.
+The fraction 4/15 cannot be simplified because 4 and 15 don't share any common factors other than 1.
+
+Final Answer:
+2/3 + 3/5 = 10/15 + 9/15 = 19/15 = 1 4/15"
+2/3+3/5,Add,UD,19/15,Gemini 2.5 Flash,3,4/15,False,"Okay, I need to add 2/3 and 3/5.
+
+First, I need to find a common denominator for 3 and 5. I can list the multiples of each number until I find one they share.
+Multiples of 3: 3, 6, 9, 12, **15**, 18...
+Multiples of 5: 5, 10, **15**, 20...
+The least common multiple is 15. So, 15 will be my common denominator.
+
+Now I need to convert both fractions to have 15 as the denominator:
+
+For 2/3:
+To get from 3 to 15, I multiply by 5 (because 3 * 5 = 15).
+So, I need to multiply the numerator (2) by 5 too.
+2 * 5 = 10
+So, 2/3 becomes 10/15.
+
+For 3/5:
+To get from 5 to 15, I multiply by 3 (because 5 * 3 = 15).
+So, I need to multiply the numerator (3) by 3 too.
+3 * 3 = 9
+So, 3/5 becomes 9/15.
+
+Now I can add the new fractions:
+10/15 + 9/15
+
+When adding fractions with the same denominator, I just add the numerators and keep the denominator the same:
+10 + 9 = 19
+So, the sum is 19/15.
+
+This is an improper fraction because the numerator (19) is larger than the denominator (15). I can convert it to a mixed number.
+How many times does 15 go into 19? It goes in 1 time.
+19 - 15 = 4
+So there is 1 whole and 4/15 left over.
+
+The final answer is 1 and 4/15.
+
+Final Answer: 1 and 4/15"
+2/3+3/5,Add,UD,19/15,Gemini 2.5 Flash,4,4/15,False,"Okay, I can solve this! I need to add these two fractions.
+
+**Problem:** 2/3 + 3/5
+
+**Step 1: Find a common denominator.**
+To add fractions, the bottom numbers (denominators) have to be the same. I need to find the least common multiple (LCM) of 3 and 5.
+Multiples of 3: 3, 6, 9, 12, **15**, 18...
+Multiples of 5: 5, 10, **15**, 20...
+The smallest number they both go into is 15. So, my common denominator is 15.
+
+**Step 2: Convert the fractions to have the common denominator.**
+
+*   For 2/3: To get 15 on the bottom, I need to multiply 3 by 5. Whatever I do to the bottom, I have to do to the top!
+    (2 * 5) / (3 * 5) = 10/15
+
+*   For 3/5: To get 15 on the bottom, I need to multiply 5 by 3. Again, multiply the top and bottom by 3.
+    (3 * 3) / (5 * 3) = 9/15
+
+**Step 3: Add the new fractions.**
+Now that they have the same denominator, I can just add the numerators (the top numbers).
+10/15 + 9/15 = (10 + 9) / 15 = 19/15
+
+**Step 4: Convert to a mixed number (if needed).**
+19/15 is an improper fraction because the top number is bigger than the bottom number. I can turn it into a mixed number.
+How many times does 15 go into 19? It goes in 1 time.
+What's left over? 19 - 15 = 4.
+So, it's 1 and 4/15.
+
+**Final Answer:**
+19/15 or 1 4/15"
+2/3-3/5,Sub,UD,1/15,Gemini 2.5 Flash,0,1/15,True,"Okay, I can solve this! It's a subtraction problem with fractions.
+
+Here's how I'll do it:
+
+First, I need to find a common denominator for 3 and 5. The easiest way is to find the least common multiple (LCM).
+
+Multiples of 3: 3, 6, 9, 12, **15**, 18...
+Multiples of 5: 5, 10, **15**, 20...
+
+The least common denominator is 15.
+
+Now I need to change both fractions so they have 15 as the denominator:
+
+For 2/3:
+To get 15, I multiply 3 by 5. So I have to multiply the top (numerator) by 5 too.
+(2 * 5) / (3 * 5) = 10/15
+
+For 3/5:
+To get 15, I multiply 5 by 3. So I have to multiply the top (numerator) by 3 too.
+(3 * 3) / (5 * 3) = 9/15
+
+Now I can rewrite the problem with the new fractions:
+10/15 - 9/15
+
+Now I just subtract the numerators and keep the common denominator:
+10 - 9 = 1
+
+So the answer is 1/15.
+
+The final answer is $\boxed{1/15}$."
+2/3-3/5,Sub,UD,1/15,Gemini 2.5 Flash,1,1/15,True,"Okay, I can solve this!
+
+To subtract fractions, I need a common denominator.
+
+My fractions are 2/3 and 3/5.
+The denominators are 3 and 5.
+
+1.  **Find a common denominator:**
+    *   Multiples of 3: 3, 6, 9, 12, **15**, 18...
+    *   Multiples of 5: 5, 10, **15**, 20...
+    *   The least common denominator (LCD) is 15.
+
+2.  **Convert each fraction to have the common denominator:**
+    *   For 2/3: To get 15 in the denominator, I need to multiply 3 by 5. So I also multiply the numerator (2) by 5.
+        2/3 = (2 * 5) / (3 * 5) = 10/15
+    *   For 3/5: To get 15 in the denominator, I need to multiply 5 by 3. So I also multiply the numerator (3) by 3.
+        3/5 = (3 * 3) / (5 * 3) = 9/15
+
+3.  **Now I can subtract the new fractions:**
+    10/15 - 9/15
+
+4.  **Subtract the numerators and keep the denominator:**
+    (10 - 9) / 15 = 1/15
+
+My final answer is 1/15."
+2/3-3/5,Sub,UD,1/15,Gemini 2.5 Flash,2,1/15,True,"Okay, I can solve this! To subtract fractions, I need to find a common denominator first.
+
+My problem is: 2/3 - 3/5
+
+1.  **Find a common denominator:**
+    I need to find a number that both 3 and 5 can divide into evenly.
+    Multiples of 3: 3, 6, 9, 12, **15**, 18...
+    Multiples of 5: 5, 10, **15**, 20...
+    The least common multiple (LCM) is 15. So, 15 is my common denominator.
+
+2.  **Convert the fractions:**
+    *   For 2/3: To get from 3 to 15, I multiply by 5. So I need to multiply the numerator (2) by 5 too.
+        2 * 5 = 10
+        3 * 5 = 15
+        So, 2/3 is the same as 10/15.
+
+    *   For 3/5: To get from 5 to 15, I multiply by 3. So I need to multiply the numerator (3) by 3 too.
+        3 * 3 = 9
+        5 * 3 = 15
+        So, 3/5 is the same as 9/15.
+
+3.  **Subtract the new fractions:**
+    Now my problem is 10/15 - 9/15.
+    I subtract the numerators (the top numbers) and keep the denominator (the bottom number) the same.
+    10 - 9 = 1
+    So, 10/15 - 9/15 = 1/15.
+
+4.  **Simplify (if needed):**
+    The fraction 1/15 cannot be simplified any further because 1 is the only common factor of 1 and 15.
+
+My final answer is 1/15.
+
+**Answer:** 1/15"
+2/3-3/5,Sub,UD,1/15,Gemini 2.5 Flash,3,1/15,True,"Okay, I need to solve 2/3 - 3/5.
+
+First, I can't subtract these fractions because they have different denominators. I need to find a common denominator. I'll list out multiples of 3 and 5 to find the least common multiple (LCM).
+
+Multiples of 3: 3, 6, 9, 12, **15**, 18...
+Multiples of 5: 5, 10, **15**, 20...
+
+The least common multiple is 15. So, I'll convert both fractions to have a denominator of 15.
+
+For the first fraction, 2/3:
+To change 3 to 15, I multiply by 5 (because 3 * 5 = 15).
+I have to do the same to the numerator: 2 * 5 = 10.
+So, 2/3 is the same as 10/15.
+
+For the second fraction, 3/5:
+To change 5 to 15, I multiply by 3 (because 5 * 3 = 15).
+I have to do the same to the numerator: 3 * 3 = 9.
+So, 3/5 is the same as 9/15.
+
+Now I can rewrite the problem with the new fractions:
+10/15 - 9/15
+
+Now I just subtract the numerators and keep the denominator the same:
+10 - 9 = 1
+
+So the answer is 1/15.
+
+My final answer is $\boxed{1/15}$."
+2/3-3/5,Sub,UD,1/15,Gemini 2.5 Flash,4,1/15,True,"Okay, I can solve this! To subtract fractions, I need to have the same bottom number (denominator).
+
+Here are the steps:
+
+1.  **Find a common denominator:**
+    The denominators are 3 and 5. I need to find the smallest number that both 3 and 5 can divide into evenly.
+    Multiples of 3: 3, 6, 9, 12, **15**, 18...
+    Multiples of 5: 5, 10, **15**, 20...
+    The least common denominator is 15.
+
+2.  **Convert the fractions:**
+    *   For 2/3: To change the denominator from 3 to 15, I multiply by 5 (because 3 * 5 = 15). I have to do the same to the top number:
+        2 * 5 = 10
+        So, 2/3 becomes 10/15.
+
+    *   For 3/5: To change the denominator from 5 to 15, I multiply by 3 (because 5 * 3 = 15). I have to do the same to the top number:
+        3 * 3 = 9
+        So, 3/5 becomes 9/15.
+
+3.  **Subtract the new fractions:**
+    Now the problem is 10/15 - 9/15.
+    I subtract the top numbers (numerators) and keep the bottom number (denominator) the same:
+    10 - 9 = 1
+    So, the answer is 1/15.
+
+4.  **Simplify (if needed):**
+    The fraction 1/15 cannot be simplified further because the only common factor of 1 and 15 is 1.
+
+**Final Answer:**
+2/3 - 3/5 = 10/15 - 9/15 = 1/15"
+2/3÷3/5,Div,UD,10/9,Gemini 2.5 Flash,0,1/9,False,"Okay, I can solve this! When we divide fractions, there's a trick we learn: ""Keep, Change, Flip!""
+
+Here's how it works:
+
+1.  **Keep** the first fraction the same: 2/3
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+So, the problem 2/3 ÷ 3/5 turns into:
+2/3 × 5/3
+
+Now, I just multiply the numerators (the top numbers) and multiply the denominators (the bottom numbers):
+
+Numerator: 2 × 5 = 10
+Denominator: 3 × 3 = 9
+
+My answer is 10/9.
+
+Since 10/9 is an improper fraction (the top number is bigger than the bottom number), I should change it to a mixed number.
+How many times does 9 go into 10? It goes in 1 time, with 1 left over.
+
+So, 10/9 is the same as 1 and 1/9.
+
+The final answer is $\boxed{1 \frac{1}{9}}$."
+2/3÷3/5,Div,UD,10/9,Gemini 2.5 Flash,1,1/9,False,"Okay, I can solve this! Dividing fractions is pretty neat, you just have to remember the ""Keep, Change, Flip"" rule.
+
+Here's how I do it:
+
+1.  **Keep** the first fraction the same: 2/3
+2.  **Change** the division sign to a multiplication sign: ÷ becomes ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+Now my problem looks like this:
+2/3 × 5/3
+
+Next, I multiply the numerators (the top numbers) together, and then multiply the denominators (the bottom numbers) together.
+
+*   Multiply numerators: 2 × 5 = 10
+*   Multiply denominators: 3 × 3 = 9
+
+So, my new fraction is 10/9.
+
+This is an improper fraction because the top number is bigger than the bottom number. I can change it to a mixed number.
+How many times does 9 go into 10? It goes in 1 time, with 1 left over.
+
+So, 10/9 is the same as 1 and 1/9.
+
+Final Answer: 1 and 1/9"
+2/3÷3/5,Div,UD,10/9,Gemini 2.5 Flash,2,10/9,True,"Okay, I can solve this! Dividing fractions is pretty fun once you get the hang of it. Here's how I do it:
+
+**Problem:** 2/3 ÷ 3/5
+
+**Step 1: Keep, Change, Flip!**
+*   **Keep** the first fraction the same: 2/3
+*   **Change** the division sign to a multiplication sign: ×
+*   **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+Now my problem looks like this:
+2/3 × 5/3
+
+**Step 2: Multiply the numerators (top numbers) together.**
+2 × 5 = 10
+
+**Step 3: Multiply the denominators (bottom numbers) together.**
+3 × 3 = 9
+
+**Step 4: Put the new numerator over the new denominator.**
+So, 10/9
+
+**Step 5: Simplify if possible.**
+10/9 is an improper fraction, but I can't simplify it further because 10 and 9 don't have any common factors other than 1.
+
+**Final Answer:** 10/9"
+2/3÷3/5,Div,UD,10/9,Gemini 2.5 Flash,3,1/9,False,"Okay, I can solve this fraction division problem!
+
+Here's how I do it:
+
+To divide fractions, I have to flip the second fraction and then multiply. This is called multiplying by the reciprocal.
+
+1.  **Write down the problem:**
+    2/3 ÷ 3/5
+
+2.  **Find the reciprocal of the second fraction (3/5):**
+    The reciprocal of 3/5 is 5/3. (I just flip it over!)
+
+3.  **Change the division problem to a multiplication problem using the reciprocal:**
+    2/3 * 5/3
+
+4.  **Multiply the numerators (the top numbers) together:**
+    2 * 5 = 10
+
+5.  **Multiply the denominators (the bottom numbers) together:**
+    3 * 3 = 9
+
+6.  **Put the new numerator and denominator together:**
+    10/9
+
+7.  **Since 10/9 is an improper fraction (the top number is bigger than the bottom number), I need to turn it into a mixed number:**
+    How many times does 9 go into 10? It goes in 1 time.
+    What's leftover? 10 - 9 = 1.
+    So, the mixed number is 1 and 1/9.
+
+My final answer is **1 and 1/9**."
+2/3÷3/5,Div,UD,10/9,Gemini 2.5 Flash,4,1/9,False,"Okay, I can solve this! Dividing fractions is like multiplying by the second fraction's flip.
+
+Here are the steps:
+
+1.  **Keep** the first fraction the same: 2/3
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+Now the problem looks like this:
+2/3 × 5/3
+
+Next, I multiply the numerators (the top numbers) and multiply the denominators (the bottom numbers):
+
+*   Numerator: 2 × 5 = 10
+*   Denominator: 3 × 3 = 9
+
+So, the answer is 10/9.
+
+This is an improper fraction, which means the top number is bigger than the bottom number. I can change it to a mixed number:
+
+How many times does 9 go into 10? Once, with 1 left over.
+So, 10/9 is the same as 1 and 1/9.
+
+The final answer is **1 and 1/9**."
+3/5*1/4,Mul,UD,3/20,Gemini 2.5 Flash,0,3/20,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the top numbers (numerators) together and multiply the bottom numbers (denominators) together.
+
+Here are the steps:
+
+1.  **Multiply the numerators:**
+    3 * 1 = 3
+
+2.  **Multiply the denominators:**
+    5 * 4 = 20
+
+3.  **Put the new numerator over the new denominator:**
+    3/20
+
+Now I need to check if I can simplify the fraction 3/20.
+The factors of 3 are 1 and 3.
+The factors of 20 are 1, 2, 4, 5, 10, 20.
+There are no common factors other than 1, so the fraction is already in simplest form.
+
+**Answer:**
+3/5 * 1/4 = (3 * 1) / (5 * 4) = 3/20"
+3/5*1/4,Mul,UD,3/20,Gemini 2.5 Flash,1,3/20,True,"Okay, I can do this! Multiplying fractions is pretty straightforward.
+
+To multiply fractions, you just multiply the numbers on top (the numerators) and then multiply the numbers on the bottom (the denominators).
+
+Here's how I'll do it:
+
+**Step 1: Multiply the numerators**
+3 * 1 = 3
+
+**Step 2: Multiply the denominators**
+5 * 4 = 20
+
+**Step 3: Put them together**
+So, the new fraction is 3/20.
+
+**Step 4: Check if I can simplify (reduce) the fraction**
+I need to see if 3 and 20 share any common factors other than 1.
+Factors of 3 are 1, 3.
+Factors of 20 are 1, 2, 4, 5, 10, 20.
+They only share the factor 1, so the fraction is already in its simplest form!
+
+My answer is **3/20**."
+3/5*1/4,Mul,UD,3/20,Gemini 2.5 Flash,2,3/20,True,"Okay, I can solve this! When you multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+3/5 * 1/4
+
+1.  Multiply the numerators (the top numbers):
+    3 * 1 = 3
+
+2.  Multiply the denominators (the bottom numbers):
+    5 * 4 = 20
+
+3.  Put the new numerator over the new denominator:
+    3/20
+
+Now I need to check if I can simplify 3/20.
+*   Factors of 3 are 1 and 3.
+*   Factors of 20 are 1, 2, 4, 5, 10, 20.
+The only common factor is 1, so the fraction is already in simplest form!
+
+My final answer is:
+**3/20**"
+3/5*1/4,Mul,UD,3/20,Gemini 2.5 Flash,3,3/20,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the numerators (the top numbers) together and the denominators (the bottom numbers) together.
+
+Here are the steps:
+
+1.  **Multiply the numerators:**
+    3 * 1 = 3
+
+2.  **Multiply the denominators:**
+    5 * 4 = 20
+
+3.  **Put the new numerator over the new denominator:**
+    So the new fraction is 3/20.
+
+4.  **Check if I can simplify:**
+    The factors of 3 are 1 and 3.
+    The factors of 20 are 1, 2, 4, 5, 10, 20.
+    Since 3 doesn't go into 20 evenly and there are no common factors other than 1, the fraction 3/20 is already in its simplest form.
+
+**Answer:**
+3/5 * 1/4 = 3/20"
+3/5*1/4,Mul,UD,3/20,Gemini 2.5 Flash,4,3/20,True,"Okay, I can solve this! We're multiplying fractions, which is pretty straightforward.
+
+Here's how I do it:
+
+To multiply fractions, you just multiply the numerators (the top numbers) together and then multiply the denominators (the bottom numbers) together.
+
+So, for 3/5 * 1/4:
+
+1.  **Multiply the numerators:**
+    3 * 1 = 3
+
+2.  **Multiply the denominators:**
+    5 * 4 = 20
+
+3.  **Put them together:**
+    This gives us the new fraction: 3/20
+
+Now I just need to check if I can simplify the fraction 3/20.
+The factors of 3 are 1 and 3.
+The factors of 20 are 1, 2, 4, 5, 10, 20.
+The only common factor is 1, so it's already in its simplest form!
+
+**Final Answer:**
+3/5 * 1/4 = 3/20"
+3/5*1/5,Mul,ED,3/25,Gemini 2.5 Flash,0,3/25,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+(3/5) * (1/5)
+
+1.  Multiply the numerators: 3 * 1 = 3
+2.  Multiply the denominators: 5 * 5 = 25
+
+So, the new fraction is 3/25.
+
+Can I simplify it?
+The factors of 3 are 1 and 3.
+The factors of 25 are 1, 5, and 25.
+They don't share any common factors other than 1, so it's already in simplest form!
+
+My answer is **3/25**."
+3/5*1/5,Mul,ED,3/25,Gemini 2.5 Flash,1,3/25,True,"Okay, I can solve this!
+
+To multiply fractions, I multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+1.  **Multiply the numerators:** 3 * 1 = 3
+2.  **Multiply the denominators:** 5 * 5 = 25
+
+So, the new fraction is 3/25.
+
+Can I simplify 3/25?
+The factors of 3 are 1, 3.
+The factors of 25 are 1, 5, 25.
+Since the only common factor is 1, the fraction is already in its simplest form.
+
+My final answer is **3/25**."
+3/5*1/5,Mul,ED,3/25,Gemini 2.5 Flash,2,3/25,True,"Okay, I can solve this!
+
+To multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here are the steps:
+
+1.  **Multiply the numerators:** 3 * 1 = 3
+2.  **Multiply the denominators:** 5 * 5 = 25
+
+So, the new fraction is 3/25.
+
+Can I simplify it? The factors of 3 are 1 and 3. The factors of 25 are 1, 5, and 25. There are no common factors other than 1, so it's already in its simplest form!
+
+My answer is:
+3/5 * 1/5 = (3 * 1) / (5 * 5) = 3/25
+
+**Answer: 3/25**"
+3/5*1/5,Mul,ED,3/25,Gemini 2.5 Flash,3,3/25,True,"Okay, I can do this! Multiplying fractions is pretty easy.
+
+To multiply fractions, you just multiply the top numbers (numerators) together and multiply the bottom numbers (denominators) together.
+
+Here's how I'll do it:
+
+(3/5) * (1/5)
+
+1.  **Multiply the numerators (the top numbers):**
+    3 * 1 = 3
+
+2.  **Multiply the denominators (the bottom numbers):**
+    5 * 5 = 25
+
+3.  **Put the new numerator over the new denominator:**
+    3/25
+
+Now I need to check if I can simplify the fraction 3/25.
+The factors of 3 are 1 and 3.
+The factors of 25 are 1, 5, and 25.
+The only common factor is 1, so it's already in simplest form!
+
+**Final Answer:**
+3/5 * 1/5 = **3/25**"
+3/5*1/5,Mul,ED,3/25,Gemini 2.5 Flash,4,3/25,True,"Okay, I can do this! Multiplying fractions is pretty easy.
+
+To multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I'll solve it:
+
+1.  **Multiply the numerators (the top numbers):**
+    3 * 1 = 3
+
+2.  **Multiply the denominators (the bottom numbers):**
+    5 * 5 = 25
+
+3.  **Put the new numerator over the new denominator:**
+    This gives me 3/25.
+
+4.  **Check if I can simplify the fraction:**
+    The numerator is 3. The denominator is 25.
+    Can both 3 and 25 be divided by the same number (other than 1)?
+    No, 3 is a prime number, and 25 isn't a multiple of 3. So, 3/25 is already in its simplest form.
+
+**My answer is:**
+
+3/5 * 1/5 = **3/25**"
+3/5+1/4,Add,UD,17/20,Gemini 2.5 Flash,0,17/20,True,"Okay, I can solve this!
+
+To add fractions, I need to have a common denominator.
+
+1.  **Find the least common multiple (LCM) of the denominators (5 and 4).**
+    *   Multiples of 5: 5, 10, 15, **20**, 25...
+    *   Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    *   The LCM is 20. This will be my new common denominator.
+
+2.  **Convert each fraction to an equivalent fraction with a denominator of 20.**
+    *   For 3/5:
+        *   To get 20 from 5, I multiply by 4 (5 x 4 = 20).
+        *   So, I need to multiply the numerator by 4 too (3 x 4 = 12).
+        *   3/5 becomes 12/20.
+
+    *   For 1/4:
+        *   To get 20 from 4, I multiply by 5 (4 x 5 = 20).
+        *   So, I need to multiply the numerator by 5 too (1 x 5 = 5).
+        *   1/4 becomes 5/20.
+
+3.  **Now add the new fractions:**
+    *   12/20 + 5/20
+
+4.  **Add the numerators and keep the common denominator:**
+    *   12 + 5 = 17
+    *   So, the sum is 17/20.
+
+5.  **Check if the answer can be simplified.**
+    *   17 is a prime number, and 17 does not go into 20. So, 17/20 is already in its simplest form.
+
+My final answer is:
+**17/20**"
+3/5+1/4,Add,UD,17/20,Gemini 2.5 Flash,1,17/20,True,"Okay, I can solve this!
+
+To add fractions, I need to have a common denominator.
+
+My fractions are 3/5 and 1/4.
+The denominators are 5 and 4.
+
+1.  **Find the least common multiple (LCM) of 5 and 4.**
+    *   Multiples of 5: 5, 10, 15, **20**, 25...
+    *   Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    *   The LCM is 20. This will be my new common denominator.
+
+2.  **Convert each fraction to have a denominator of 20.**
+    *   For 3/5: I need to multiply 5 by 4 to get 20. So I also multiply the numerator (3) by 4.
+        *   3/5 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: I need to multiply 4 by 5 to get 20. So I also multiply the numerator (1) by 5.
+        *   1/4 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Now add the new fractions:**
+    *   12/20 + 5/20
+
+4.  **Add the numerators and keep the denominator the same:**
+    *   (12 + 5) / 20 = 17/20
+
+5.  **Check if the answer can be simplified.**
+    *   17 is a prime number. 20 is not a multiple of 17.
+    *   So, 17/20 is already in simplest form.
+
+My final answer is **17/20**."
+3/5+1/4,Add,UD,17/20,Gemini 2.5 Flash,2,17/20,True,"Okay, I can do this! Adding fractions is pretty fun.
+
+Here's how I solve 3/5 + 1/4:
+
+1.  **Find a common denominator:** I need to find a number that both 5 and 4 can divide into.
+    *   Multiples of 5: 5, 10, 15, **20**, 25...
+    *   Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    *   The smallest common denominator is 20.
+
+2.  **Change the fractions to have the common denominator:**
+    *   For 3/5: To get 20 in the denominator, I multiply 5 by 4. So I have to multiply the numerator (3) by 4 too.
+        3/5 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: To get 20 in the denominator, I multiply 4 by 5. So I have to multiply the numerator (1) by 5 too.
+        1/4 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Add the new fractions:** Now that they have the same denominator, I just add the numerators.
+    12/20 + 5/20 = (12 + 5) / 20 = 17/20
+
+4.  **Check if I can simplify:** 17 is a prime number, and it doesn't divide evenly into 20. So, the fraction is already in its simplest form.
+
+**Final Answer:**
+3/5 + 1/4 = 17/20"
+3/5+1/4,Add,UD,17/20,Gemini 2.5 Flash,3,17/20,True,"Okay, I need to add 3/5 and 1/4. To add fractions, I need to find a common denominator first.
+
+1.  **Find the Least Common Denominator (LCD):**
+    I need to find a number that both 5 and 4 can divide into evenly.
+    Multiples of 5: 5, 10, 15, **20**, 25...
+    Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    The smallest common multiple is 20. So, 20 is my LCD.
+
+2.  **Convert the fractions to have the LCD:**
+    *   For 3/5: To get 20 in the denominator, I need to multiply 5 by 4. Whatever I do to the bottom, I have to do to the top!
+        3/5 * 4/4 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: To get 20 in the denominator, I need to multiply 4 by 5.
+        1/4 * 5/5 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Add the new fractions:**
+    Now that both fractions have the same denominator, I can add the numerators.
+    12/20 + 5/20 = (12 + 5) / 20 = 17/20
+
+4.  **Simplify the answer (if possible):**
+    The numerator is 17 and the denominator is 20. 17 is a prime number. 20 is not a multiple of 17. So, the fraction 17/20 cannot be simplified further.
+
+My final answer is **17/20**."
+3/5+1/4,Add,UD,17/20,Gemini 2.5 Flash,4,17/20,True,"Okay, I can solve this!
+
+To add fractions, I need to find a common denominator. The denominators are 5 and 4.
+
+1.  **Find the least common multiple (LCM) of 5 and 4.**
+    *   Multiples of 5: 5, 10, 15, **20**, 25...
+    *   Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    *   The LCM is 20. This will be my new common denominator.
+
+2.  **Convert each fraction to an equivalent fraction with a denominator of 20.**
+    *   For 3/5: I need to multiply 5 by 4 to get 20. So, I must also multiply the numerator (3) by 4.
+        3/5 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: I need to multiply 4 by 5 to get 20. So, I must also multiply the numerator (1) by 5.
+        1/4 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Now add the new fractions:**
+    12/20 + 5/20
+
+4.  **Add the numerators and keep the common denominator:**
+    (12 + 5) / 20 = 17/20
+
+5.  **Check if the answer can be simplified.**
+    *   17 is a prime number.
+    *   20 is not a multiple of 17.
+    *   So, 17/20 cannot be simplified further.
+
+The answer is **17/20**."
+3/5+1/5,Add,ED,4/5,Gemini 2.5 Flash,0,4/5,True,"Okay, I can do this!
+
+We have 3/5 + 1/5.
+
+When the bottoms numbers (the denominators) are the same, adding fractions is easy! You just add the top numbers (the numerators) and keep the bottom number the same.
+
+So, I add the numerators: 3 + 1 = 4.
+And I keep the denominator the same: 5.
+
+My answer is 4/5.
+
+Final Answer: 4/5"
+3/5+1/5,Add,ED,4/5,Gemini 2.5 Flash,1,4/5,True,"Okay, I can do this!
+
+We have 3/5 + 1/5.
+
+1.  **Look at the denominators:** Both fractions have a denominator of 5. That means they are already talking about the same-sized pieces!
+2.  **Add the numerators:** Since the pieces are the same size, I just add the top numbers: 3 + 1 = 4.
+3.  **Keep the denominator:** The denominator stays the same because the size of the pieces hasn't changed. It's still 5.
+
+So, 3/5 + 1/5 = 4/5.
+
+My final answer is **4/5**."
+3/5+1/5,Add,ED,4/5,Gemini 2.5 Flash,2,4/5,True,"Okay, I can do that! This looks like a straightforward addition problem because the denominators are already the same.
+
+Here's how I solve it:
+
+3/5 + 1/5
+
+1.  **Keep the denominator the same:** Since both fractions have 5 as the denominator, our answer will also have 5 as the denominator.
+2.  **Add the numerators:** I add the top numbers: 3 + 1 = 4.
+
+So, the new fraction is 4/5.
+
+Can I simplify 4/5?
+The factors of 4 are 1, 2, 4.
+The factors of 5 are 1, 5.
+The only common factor is 1, so it's already in its simplest form!
+
+**Final Answer:**
+3/5 + 1/5 = 4/5"
+3/5+1/5,Add,ED,4/5,Gemini 2.5 Flash,3,4/5,True,"Okay, I can solve this!
+
+To add fractions, if they have the same denominator, you just add the top numbers (numerators) together and keep the bottom number (denominator) the same.
+
+Here's how I do it:
+
+3/5 + 1/5
+
+1.  The denominators are both 5, so they are the same. Awesome!
+2.  Now I add the numerators: 3 + 1 = 4.
+3.  I keep the denominator, which is 5.
+
+So, the answer is 4/5.
+
+Can I simplify 4/5?
+Factors of 4 are 1, 2, 4.
+Factors of 5 are 1, 5.
+They don't share any common factors besides 1, so it's already in simplest form!
+
+**Final Answer:**
+3/5 + 1/5 = **4/5**"
+3/5+1/5,Add,ED,4/5,Gemini 2.5 Flash,4,4/5,True,"Okay, here's how I solve it!
+
+**Problem:** 3/5 + 1/5
+
+**Step 1: Look at the denominators.**
+Both fractions have the same denominator, which is 5. This makes it easy! When the denominators are the same, we can just add the top numbers.
+
+**Step 2: Add the numerators (the top numbers).**
+3 + 1 = 4
+
+**Step 3: Keep the denominator the same.**
+The denominator stays 5.
+
+**Step 4: Put it all together.**
+So, 3/5 + 1/5 = 4/5
+
+**Step 5: Check if I can simplify the fraction.**
+Can 4 and 5 be divided by the same number (other than 1)?
+Factors of 4 are 1, 2, 4.
+Factors of 5 are 1, 5.
+The only common factor is 1, so the fraction is already in simplest form.
+
+**My final answer is:**
+4/5"
+3/5-1/4,Sub,UD,7/20,Gemini 2.5 Flash,0,7/20,True,"Okay, I can solve this!
+
+To subtract fractions, I need to have a common denominator.
+
+1.  **Find a common denominator for 5 and 4.**
+    *   Multiples of 5: 5, 10, 15, **20**, 25...
+    *   Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    *   The least common denominator (LCD) is 20.
+
+2.  **Convert each fraction to an equivalent fraction with the denominator 20.**
+    *   For 3/5: I need to multiply the denominator (5) by 4 to get 20. So I also multiply the numerator (3) by 4.
+        3/5 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: I need to multiply the denominator (4) by 5 to get 20. So I also multiply the numerator (1) by 5.
+        1/4 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Now subtract the new fractions.**
+    12/20 - 5/20
+
+4.  **Subtract the numerators and keep the common denominator.**
+    (12 - 5) / 20 = 7/20
+
+5.  **Check if the answer can be simplified.**
+    7 is a prime number, and it doesn't divide evenly into 20. So, 7/20 is in its simplest form.
+
+The answer is **7/20**."
+3/5-1/4,Sub,UD,7/20,Gemini 2.5 Flash,1,7/20,True,"Okay, I need to solve 3/5 - 1/4.
+
+**Step 1: Find a common denominator.**
+I can't subtract fractions unless they have the same bottom number. I need to find a number that both 5 and 4 can divide into evenly.
+Multiples of 5: 5, 10, 15, **20**, 25...
+Multiples of 4: 4, 8, 12, 16, **20**, 24...
+The smallest common denominator is 20.
+
+**Step 2: Convert the fractions to have the common denominator.**
+*   For 3/5: To get 20 on the bottom, I multiply 5 by 4. So I have to multiply the top number (3) by 4 too.
+    3/5 = (3 * 4) / (5 * 4) = 12/20
+*   For 1/4: To get 20 on the bottom, I multiply 4 by 5. So I have to multiply the top number (1) by 5 too.
+    1/4 = (1 * 5) / (4 * 5) = 5/20
+
+**Step 3: Subtract the new fractions.**
+Now that they have the same denominator, I can subtract the top numbers.
+12/20 - 5/20 = (12 - 5) / 20 = 7/20
+
+**Step 4: Simplify the answer (if needed).**
+The fraction is 7/20.
+7 is a prime number. The factors of 7 are 1 and 7.
+The factors of 20 are 1, 2, 4, 5, 10, 20.
+Since there are no common factors other than 1, the fraction 7/20 is already in its simplest form.
+
+The final answer is **7/20**."
+3/5-1/4,Sub,UD,7/20,Gemini 2.5 Flash,2,7/20,True,"Okay, I can solve this!
+
+To subtract fractions, I need to find a common denominator.
+
+1.  **Find the least common multiple (LCM) of the denominators:**
+    The denominators are 5 and 4.
+    Multiples of 5: 5, 10, 15, **20**, 25...
+    Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    The least common multiple is 20.
+
+2.  **Rewrite each fraction with the common denominator:**
+    *   For 3/5: To get 20 in the denominator, I multiply 5 by 4. So I have to multiply the top (numerator) by 4 too.
+        3/5 = (3 * 4) / (5 * 4) = 12/20
+    *   For 1/4: To get 20 in the denominator, I multiply 4 by 5. So I have to multiply the top (numerator) by 5 too.
+        1/4 = (1 * 5) / (4 * 5) = 5/20
+
+3.  **Subtract the new fractions:**
+    Now I have 12/20 - 5/20.
+    I subtract the numerators and keep the denominator the same.
+    12 - 5 = 7
+    So, the answer is 7/20.
+
+4.  **Check if the answer can be simplified:**
+    The factors of 7 are 1 and 7.
+    The factors of 20 are 1, 2, 4, 5, 10, 20.
+    Since the only common factor is 1, the fraction 7/20 is already in its simplest form.
+
+The answer is **7/20**."
+3/5-1/4,Sub,UD,7/20,Gemini 2.5 Flash,3,7/20,True,"Okay, I can solve this! It's a subtraction problem with fractions.
+
+**Problem:** 3/5 - 1/4
+
+**Step 1: Find a common denominator.**
+To subtract fractions, I need them to have the same denominator. I'll find the least common multiple (LCM) of 5 and 4.
+Multiples of 5: 5, 10, 15, **20**, 25...
+Multiples of 4: 4, 8, 12, 16, **20**, 24...
+The least common denominator is 20.
+
+**Step 2: Convert the fractions to equivalent fractions with the common denominator.**
+For 3/5:
+To get 20 from 5, I multiply by 4. So I need to multiply the numerator by 4 too.
+3/5 = (3 * 4) / (5 * 4) = 12/20
+
+For 1/4:
+To get 20 from 4, I multiply by 5. So I need to multiply the numerator by 5 too.
+1/4 = (1 * 5) / (4 * 5) = 5/20
+
+**Step 3: Subtract the new fractions.**
+Now that they have the same denominator, I can subtract the numerators.
+12/20 - 5/20 = (12 - 5) / 20 = 7/20
+
+**Step 4: Simplify the answer (if possible).**
+The numerator is 7 and the denominator is 20.
+Factors of 7 are 1 and 7.
+Factors of 20 are 1, 2, 4, 5, 10, 20.
+The only common factor is 1, so the fraction 7/20 is already in its simplest form.
+
+**Final Answer:**
+3/5 - 1/4 = **7/20**"
+3/5-1/4,Sub,UD,7/20,Gemini 2.5 Flash,4,7/20,True,"Okay, I can solve this!
+
+To subtract fractions, I need to find a common denominator.
+
+1.  **Find a common denominator:**
+    The denominators are 5 and 4. I need to find the least common multiple (LCM) of 5 and 4.
+    Multiples of 5: 5, 10, 15, **20**, 25...
+    Multiples of 4: 4, 8, 12, 16, **20**, 24...
+    The smallest common multiple is 20. So, 20 will be my common denominator.
+
+2.  **Convert the fractions:**
+    *   For 3/5: To change the denominator from 5 to 20, I multiply by 4 (because 5 * 4 = 20). I have to do the same to the numerator:
+        3 * 4 = 12
+        So, 3/5 becomes 12/20.
+
+    *   For 1/4: To change the denominator from 4 to 20, I multiply by 5 (because 4 * 5 = 20). I have to do the same to the numerator:
+        1 * 5 = 5
+        So, 1/4 becomes 5/20.
+
+3.  **Subtract the new fractions:**
+    Now I have 12/20 - 5/20.
+    When the denominators are the same, I just subtract the numerators and keep the denominator.
+    12 - 5 = 7
+    So, the answer is 7/20.
+
+4.  **Simplify the answer (if possible):**
+    Can 7/20 be simplified? 7 is a prime number, and 20 is not a multiple of 7. So, it's already in simplest form.
+
+The answer is **7/20**."
+3/5-1/5,Sub,ED,2/5,Gemini 2.5 Flash,0,2/5,True,"Okay, I can solve this!
+
+We have: 3/5 - 1/5
+
+Since the denominators are the same (they are both 5), I just need to subtract the numerators.
+
+3 - 1 = 2
+
+So, we keep the denominator the same and put our new numerator on top.
+
+My answer is **2/5**."
+3/5-1/5,Sub,ED,2/5,Gemini 2.5 Flash,1,2/5,True,"Okay, I can do this! It's a subtraction problem with fractions.
+
+**Problem:** 3/5 - 1/5
+
+**Step 1: Check the denominators.**
+Both fractions have a denominator of 5. That means they have the same size pieces, so I don't need to find a common denominator! Yay!
+
+**Step 2: Subtract the numerators.**
+I subtract the top numbers: 3 - 1 = 2
+
+**Step 3: Keep the denominator the same.**
+The denominator stays as 5.
+
+**Answer:** 2/5"
+3/5-1/5,Sub,ED,2/5,Gemini 2.5 Flash,2,2/5,True,"Okay, I can solve this!
+
+To subtract fractions, if they have the same bottom number (denominator), you just subtract the top numbers (numerators) and keep the bottom number the same.
+
+Here's how I do it:
+
+3/5 - 1/5
+
+1.  The denominators are already the same (5).
+2.  Subtract the numerators: 3 - 1 = 2
+3.  Keep the denominator the same (5).
+
+So the answer is 2/5.
+
+**Answer:** 2/5"
+3/5-1/5,Sub,ED,2/5,Gemini 2.5 Flash,3,2/5,True,"Okay, I can do this! We're subtracting fractions.
+
+Here's how I solve it:
+
+1.  **Look at the denominators:** Both fractions have a denominator of 5. That's great, because when the denominators are the same, we can just subtract the numerators.
+2.  **Subtract the numerators:** We have 3 minus 1.
+    3 - 1 = 2
+3.  **Keep the denominator:** The denominator stays the same, which is 5.
+4.  **Put it together:** The answer is 2/5.
+
+So, 3/5 - 1/5 = **2/5**"
+3/5-1/5,Sub,ED,2/5,Gemini 2.5 Flash,4,2/5,True,"Okay, I can do this!
+
+We have 3/5 - 1/5.
+
+Since the fractions already have the same denominator (which is 5), I just need to subtract the numerators.
+
+1.  **Subtract the top numbers:** 3 - 1 = 2
+2.  **Keep the bottom number the same:** 5
+
+So, 3/5 - 1/5 = 2/5.
+
+The answer is **2/5**."
+3/5÷1/4,Div,UD,12/5,Gemini 2.5 Flash,0,2/5,False,"Okay, I can solve this! Dividing fractions is like multiplying, but with a flip!
+
+Here's how I do it:
+
+1.  **Keep the first fraction the same:** 3/5
+2.  **Change the division sign to a multiplication sign:** x
+3.  **Flip the second fraction (find its reciprocal):** The reciprocal of 1/4 is 4/1.
+
+Now my problem looks like this:
+3/5 x 4/1
+
+Now I just multiply straight across:
+*   Multiply the numerators: 3 x 4 = 12
+*   Multiply the denominators: 5 x 1 = 5
+
+So, I get 12/5.
+
+This is an improper fraction, so I can turn it into a mixed number.
+How many times does 5 go into 12? It goes in 2 times (because 5 x 2 = 10).
+How much is left over? 12 - 10 = 2.
+So, it's 2 and 2/5.
+
+**My Work:**
+3/5 ÷ 1/4
+= 3/5 × 4/1
+= (3 × 4) / (5 × 1)
+= 12/5
+= 2 and 2/5
+
+**Final Answer:** 2 and 2/5"
+3/5÷1/4,Div,UD,12/5,Gemini 2.5 Flash,1,2/5,False,"Okay, I can solve this fraction division problem!
+
+Here's how I do it:
+
+To divide fractions, I remember the rule: ""Keep, Change, Flip!""
+
+1.  **Keep** the first fraction the same: 3/5
+2.  **Change** the division sign to a multiplication sign: x
+3.  **Flip** the second fraction (find its reciprocal): 1/4 becomes 4/1
+
+Now my problem looks like this:
+
+3/5 ÷ 1/4 = 3/5 x 4/1
+
+Next, I multiply the numerators together and the denominators together:
+
+*   Multiply the top numbers (numerators): 3 x 4 = 12
+*   Multiply the bottom numbers (denominators): 5 x 1 = 5
+
+So, the answer is 12/5.
+
+This is an improper fraction because the top number is bigger than the bottom number. I can change it into a mixed number.
+
+How many times does 5 go into 12?
+5 goes into 12 two times (because 5 x 2 = 10).
+There are 2 left over (because 12 - 10 = 2).
+So, it's 2 whole and 2/5.
+
+**My final answer is:**
+
+2 and 2/5"
+3/5÷1/4,Div,UD,12/5,Gemini 2.5 Flash,2,2/5,False,"Okay, I can solve this!
+
+To divide fractions, I remember the rule: ""Keep, Change, Flip!""
+
+1.  **Keep** the first fraction the same: 3/5
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 1/4 becomes 4/1
+
+So the problem becomes:
+3/5 × 4/1
+
+Now I multiply the numerators together and the denominators together:
+
+*   Multiply the numerators: 3 × 4 = 12
+*   Multiply the denominators: 5 × 1 = 5
+
+This gives me the fraction: 12/5
+
+This is an improper fraction, so I need to change it to a mixed number. I ask myself, ""How many times does 5 go into 12?""
+
+*   5 goes into 12 two times (because 5 × 2 = 10).
+*   There's a remainder of 2 (because 12 - 10 = 2).
+*   The denominator stays the same.
+
+So, 12/5 is equal to 2 and 2/5.
+
+**Answer:** 2 and 2/5"
+3/5÷1/4,Div,UD,12/5,Gemini 2.5 Flash,3,2/5,False,"Okay, I can solve this! Dividing fractions is super fun!
+
+Here's how I do it:
+
+**Problem:** 3/5 ÷ 1/4
+
+When we divide fractions, we actually multiply by the reciprocal of the second fraction. That means we ""keep, change, flip!""
+
+1.  **Keep** the first fraction the same: 3/5
+2.  **Change** the division sign to a multiplication sign: x
+3.  **Flip** the second fraction (find its reciprocal): 1/4 becomes 4/1
+
+Now my problem looks like this:
+
+3/5 x 4/1
+
+Next, I multiply the numerators together and the denominators together:
+
+*   Numerators: 3 x 4 = 12
+*   Denominators: 5 x 1 = 5
+
+So, I get 12/5.
+
+This is an improper fraction, which means the top number is bigger than the bottom number. I should change it to a mixed number.
+
+How many times does 5 go into 12?
+5 goes into 12 two times (because 5 x 2 = 10).
+Then, I see what's left over: 12 - 10 = 2.
+So, I have 2 whole numbers and 2 left over, which goes over the original denominator, 5.
+
+My final answer is 2 and 2/5.
+
+**Answer:** 2 and 2/5"
+3/5÷1/4,Div,UD,12/5,Gemini 2.5 Flash,4,2/5,False,"Okay, I can solve this! Dividing fractions is pretty neat, you just have to remember to flip the second fraction and then multiply.
+
+Here's how I do it:
+
+3/5 ÷ 1/4
+
+First, I keep the first fraction the same, change the division sign to multiplication, and flip the second fraction (that's called finding the reciprocal).
+
+3/5 × 4/1
+
+Now, I multiply straight across the top (numerators) and straight across the bottom (denominators).
+
+Multiply the numerators: 3 × 4 = 12
+Multiply the denominators: 5 × 1 = 5
+
+So, my answer is 12/5.
+
+Since 12/5 is an improper fraction (the top number is bigger than the bottom number), I should change it to a mixed number.
+
+How many times does 5 go into 12?
+5 goes into 12 two times (because 5 × 2 = 10).
+The remainder is 12 - 10 = 2.
+
+So, the whole number is 2, and the fraction part is the remainder (2) over the original denominator (5).
+
+Final Answer: 2 and 2/5"
+3/5÷1/5,Div,ED,3,Gemini 2.5 Flash,0,3,True,"Okay, I can solve this! Dividing fractions is like multiplying by the reciprocal.
+
+Here's how I do it:
+
+1.  **Keep** the first fraction the same: 3/5
+2.  **Change** the division sign to a multiplication sign: x
+3.  **Flip** the second fraction (find its reciprocal): 1/5 becomes 5/1
+
+Now the problem looks like this:
+3/5 x 5/1
+
+Next, I multiply the numerators (top numbers) and the denominators (bottom numbers):
+
+Numerator: 3 x 5 = 15
+Denominator: 5 x 1 = 5
+
+So, I get 15/5.
+
+Finally, I need to simplify the fraction:
+15 ÷ 5 = 3
+
+My final answer is **3**."
+3/5÷1/5,Div,ED,3,Gemini 2.5 Flash,1,3,True,"Okay, I can solve this!
+
+To divide fractions, you flip the second fraction (find its reciprocal) and then multiply.
+
+Here's how I do it:
+
+1.  **Rewrite the division as multiplication:**
+    3/5 ÷ 1/5 becomes 3/5 × 5/1
+
+2.  **Multiply the numerators and the denominators:**
+    Numerator: 3 × 5 = 15
+    Denominator: 5 × 1 = 5
+    So we get 15/5
+
+3.  **Simplify the fraction:**
+    15 divided by 5 is 3.
+
+My final answer is **3**."
+3/5÷1/5,Div,ED,3,Gemini 2.5 Flash,2,3,True,"Okay, I can solve this!
+
+To divide fractions, you keep the first fraction, change the division sign to multiplication, and flip the second fraction (find its reciprocal).
+
+Here's how I do it:
+
+1.  **Keep** the first fraction: 3/5
+2.  **Change** the division sign to multiplication: ×
+3.  **Flip** the second fraction (1/5 becomes 5/1): 5/1
+
+So, the problem becomes:
+3/5 × 5/1
+
+Now I multiply the numerators and multiply the denominators:
+(3 × 5) / (5 × 1)
+= 15 / 5
+
+Finally, I simplify the fraction:
+15 ÷ 5 = 3
+
+My final answer is **3**."
+3/5÷1/5,Div,ED,3,Gemini 2.5 Flash,3,3/5,False,"Okay, I can solve this! Dividing fractions is pretty cool because you get to turn it into multiplication.
+
+Here's how I do it:
+
+1.  **Keep** the first fraction the same.
+2.  **Change** the division sign to a multiplication sign.
+3.  **Flip** the second fraction (this is called finding the reciprocal).
+
+Let's do it!
+
+My problem is: 3/5 ÷ 1/5
+
+1.  **Keep** 3/5
+2.  **Change** ÷ to ×
+3.  **Flip** 1/5 to become 5/1
+
+So now my problem looks like this:
+3/5 × 5/1
+
+Now I just multiply straight across the top (numerators) and straight across the bottom (denominators):
+
+Multiply the numerators: 3 × 5 = 15
+Multiply the denominators: 5 × 1 = 5
+
+So my answer is 15/5.
+
+But I can simplify that! 15 divided by 5 is 3.
+
+Final Answer:
+3/5 ÷ 1/5 = **3**"
+3/5÷1/5,Div,ED,3,Gemini 2.5 Flash,4,1/5,False,"Okay, I can solve this fraction division problem!
+
+Here's how I do it:
+
+When you divide fractions, you ""keep, change, flip.""
+
+1.  **Keep** the first fraction the same: 3/5
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 1/5 becomes 5/1
+
+So, the problem changes from:
+3/5 ÷ 1/5
+
+to:
+3/5 × 5/1
+
+Now I multiply the numerators (top numbers) and the denominators (bottom numbers):
+
+Multiply numerators: 3 × 5 = 15
+Multiply denominators: 5 × 1 = 5
+
+This gives me the fraction 15/5.
+
+Finally, I need to simplify my answer. 15/5 means 15 divided by 5.
+15 ÷ 5 = 3
+
+So, the answer is 3.
+
+**Answer:** 3/5 ÷ 1/5 = 3"
+4/5*3/5,Mul,ED,12/25,Gemini 2.5 Flash,0,12/25,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the numer tops (numerators) together and the bottoms (denominators) together.
+
+*   **Multiply the numerators:** 4 * 3 = 12
+*   **Multiply the denominators:** 5 * 5 = 25
+
+So, 4/5 * 3/5 = 12/25.
+
+**Answer:** 12/25"
+4/5*3/5,Mul,ED,12/25,Gemini 2.5 Flash,1,12/25,True,"Okay, I can solve this!
+
+To multiply fractions, I multiply the numerators (the top numbers) together and the denominators (the bottom numbers) together.
+
+Here's how I do it:
+
+1.  **Multiply the numerators:**
+    4 * 3 = 12
+
+2.  **Multiply the denominators:**
+    5 * 5 = 25
+
+3.  **Put them back together as a new fraction:**
+    12/25
+
+So the answer is 12/25. I can't simplify this fraction because 12 and 25 don't have any common factors other than 1.
+
+**Answer:** 12/25"
+4/5*3/5,Mul,ED,12/25,Gemini 2.5 Flash,2,12/25,True,"Okay, I can solve this!
+
+To multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+*   **Multiply the numerators:** 4 * 3 = 12
+*   **Multiply the denominators:** 5 * 5 = 25
+
+So the answer is **12/25**.
+
+I'll check if it can be simplified, but 12 and 25 don't have any common factors other than 1, so it's already in its simplest form.
+
+**Answer: 12/25**"
+4/5*3/5,Mul,ED,12/25,Gemini 2.5 Flash,3,12/25,True,"Okay, I can solve this!
+
+To multiply fractions, I just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I do it:
+
+(4/5) * (3/5)
+
+1.  Multiply the numerators: 4 * 3 = 12
+2.  Multiply the denominators: 5 * 5 = 25
+
+So the new fraction is 12/25.
+
+I'll check if I can simplify it. The factors of 12 are 1, 2, 3, 4, 6, 12. The factors of 25 are 1, 5, 25. There are no common factors other than 1, so it's already in simplest form!
+
+**Answer:** 12/25"
+4/5*3/5,Mul,ED,12/25,Gemini 2.5 Flash,4,12/25,True,"Okay, I can do this! To multiply fractions, you just multiply the top numbers (numerators) together and the bottom numbers (denominators) together.
+
+Here's how I'll solve it:
+
+4/5 * 3/5
+
+1.  **Multiply the numerators (the top numbers):**
+    4 * 3 = 12
+
+2.  **Multiply the denominators (the bottom numbers):**
+    5 * 5 = 25
+
+3.  **Put the new numerator over the new denominator:**
+    12/25
+
+Now I need to check if I can simplify the fraction 12/25.
+*   Factors of 12 are 1, 2, 3, 4, 6, 12.
+*   Factors of 25 are 1, 5, 25.
+The only common factor is 1, so the fraction is already in its simplest form!
+
+My final answer is **12/25**."
+4/5+3/5,Add,ED,7/5,Gemini 2.5 Flash,0,2/5,False,"Okay, I can do this! This is a fraction addition problem.
+
+**Problem:** 4/5 + 3/5
+
+**Step 1: Check the denominators.**
+Both fractions have the same denominator, which is 5. That makes it easy because I don't need to find a common denominator!
+
+**Step 2: Add the numerators.**
+I just add the top numbers together:
+4 + 3 = 7
+
+**Step 3: Keep the denominator the same.**
+The denominator stays 5.
+
+**Step 4: Write the new fraction.**
+So, 4/5 + 3/5 = 7/5
+
+**Step 5: Convert to a mixed number (optional, but good to do for improper fractions).**
+7/5 is an improper fraction because the top number is bigger than the bottom number. I can turn it into a mixed number.
+How many times does 5 go into 7?
+5 goes into 7 one time (1 x 5 = 5).
+What's left over?
+7 - 5 = 2
+So, the whole number is 1, and the remainder (2) becomes the new numerator over the original denominator (5).
+
+**Final Answer:**
+7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Gemini 2.5 Flash,1,2/5,False,"Okay, I can solve this!
+
+To add fractions, if they have the same bottom number (denominator), you just add the top numbers (numerators) together and keep the bottom number the same.
+
+Here's how I do it:
+
+**Problem:** 4/5 + 3/5
+
+1.  **Look at the denominators:** Both fractions have 5 as the denominator. That's great! It means I don't need to find a common denominator.
+2.  **Add the numerators:** I add the top numbers: 4 + 3 = 7.
+3.  **Keep the denominator:** The denominator stays 5.
+4.  **Write the new fraction:** So, I get 7/5.
+
+Now, 7/5 is an improper fraction because the top number (7) is bigger than the bottom number (5). I can change it to a mixed number.
+
+*   How many times does 5 go into 7? It goes in 1 time.
+*   What's left over? 7 - 5 = 2.
+*   So, the remainder is 2.
+
+This means 7/5 is the same as 1 and 2/5.
+
+**My work:**
+
+4/5 + 3/5
+= (4 + 3)/5
+= 7/5
+
+To change 7/5 to a mixed number:
+7 ÷ 5 = 1 with a remainder of 2.
+So, 7/5 = 1 2/5
+
+**Final Answer:** 1 2/5"
+4/5+3/5,Add,ED,7/5,Gemini 2.5 Flash,2,2/5,False,"Okay, I can solve that!
+
+**Problem:** 4/5 + 3/5
+
+**Step 1: Check the denominators.**
+Both fractions have the same denominator, which is 5. This makes it easy!
+
+**Step 2: Add the numerators.**
+4 + 3 = 7
+
+**Step 3: Keep the denominator the same.**
+So, we have 7/5.
+
+**Step 4: Convert the improper fraction to a mixed number (because 7 is bigger than 5).**
+How many times does 5 go into 7? It goes in 1 time (5 * 1 = 5).
+How much is left over? 7 - 5 = 2.
+The leftover number becomes the new numerator, and the denominator stays the same.
+
+So, 7/5 is the same as 1 and 2/5.
+
+**Answer:**
+4/5 + 3/5 = 7/5 = 1 and 2/5"
+4/5+3/5,Add,ED,7/5,Gemini 2.5 Flash,3,2/5,False,"Okay, I can solve this!
+
+To add fractions, if the denominators are the same, I just add the numer numerators and keep the denominator the same.
+
+Here's how I do it:
+
+4/5 + 3/5
+
+1.  **Look at the denominators:** They are both 5. That means I don't need to find a common denominator; it's already common!
+2.  **Add the numerators:** 4 + 3 = 7
+3.  **Keep the denominator:** It stays 5.
+
+So, the answer is 7/5.
+
+Now, 7/5 is an improper fraction because the numerator (7) is bigger than the denominator (5). My teacher usually wants me to change improper fractions into mixed numbers.
+
+To change 7/5 into a mixed number:
+
+1.  **Divide the numerator by the denominator:** 7 ÷ 5
+2.  7 divided by 5 is 1 with a remainder of 2.
+3.  The whole number part is the quotient (1).
+4.  The new numerator is the remainder (2).
+5.  The denominator stays the same (5).
+
+So, 7/5 is the same as 1 and 2/5.
+
+**My final answer is:**
+7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Gemini 2.5 Flash,4,2/5,False,"Okay, I can solve that!
+
+Here's my work:
+
+4/5 + 3/5
+
+1.  **Look at the denominators:** Both fractions have 5 as the denominator. That means I can just add the numerators!
+2.  **Add the numerators:** 4 + 3 = 7
+3.  **Keep the denominator:** The denominator stays 5.
+4.  So, I get 7/5.
+
+Now, 7/5 is an improper fraction (because the top number is bigger than the bottom number). I need to change it to a mixed number.
+
+*   How many times does 5 go into 7? It goes in 1 whole time (because 1 x 5 = 5).
+*   What's left over? 7 - 5 = 2.
+*   The remainder (2) becomes the new numerator, and the denominator stays 5.
+
+So, 7/5 is the same as 1 and 2/5.
+
+**Answer:** 1 2/5"
+4/5-3/5,Sub,ED,1/5,Gemini 2.5 Flash,0,1/5,True,"Okay, I can solve this!
+
+We have:
+4/5 - 3/5
+
+Since both fractions have the same bottom number (denominator), which is 5, we can just subtract the top numbers (numerators).
+
+4 - 3 = 1
+
+So, we keep the 5 on the bottom and put 1 on the top.
+
+The answer is **1/5**."
+4/5-3/5,Sub,ED,1/5,Gemini 2.5 Flash,1,1/5,True,"Okay, I can solve that!
+
+We have 4/5 - 3/5.
+
+Since the denominators are the same (they are both 5), I just subtract the numerators.
+
+4 - 3 = 1
+
+So, I keep the denominator the same and put the new numerator on top.
+
+My answer is **1/5**."
+4/5-3/5,Sub,ED,1/5,Gemini 2.5 Flash,2,1/5,True,"Okay, I can solve this!
+
+The problem is: 4/5 - 3/5
+
+1.  I see that both fractions have the same bottom number, which is 5. That makes it easy!
+2.  Since the denominators are the same, I just need to subtract the top numbers (the numerators).
+3.  So, I subtract 4 - 3.
+4.  4 - 3 = 1.
+5.  The bottom number (denominator) stays the same.
+
+So, 4/5 - 3/5 = 1/5
+
+**Answer:** 1/5"
+4/5-3/5,Sub,ED,1/5,Gemini 2.5 Flash,3,1/5,True,"Okay, I can solve that!
+
+When we subtract fractions that have the same bottom number (denominator), we just subtract the top numbers (numerators) and keep the bottom number the same.
+
+Here's how I do it:
+
+4/5 - 3/5
+
+1.  The denominators are both 5, so they are already the same.
+2.  Now I subtract the numerators: 4 - 3 = 1.
+3.  I keep the denominator the same: 5.
+
+So the answer is:
+
+1/5"
+4/5-3/5,Sub,ED,1/5,Gemini 2.5 Flash,4,1/5,True,"Okay, I can solve this!
+
+We have 4/5 - 3/5.
+
+1.  **Look at the denominators:** Both fractions have a denominator of 5. That means they have the same ""size"" pieces, so we can just subtract the top numbers (numerators).
+2.  **Subtract the numerators:** 4 - 3 = 1
+3.  **Keep the denominator:** The denominator stays the same, which is 5.
+
+So, 4/5 - 3/5 = 1/5.
+
+My final answer is **1/5**."
+4/5÷3/5,Div,ED,4/3,Gemini 2.5 Flash,0,1/3,False,"Okay, I can solve this! When we divide fractions, it's like multiplying by the flip of the second fraction.
+
+Here are the steps:
+
+1.  **Keep** the first fraction the same: 4/5
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+Now my problem looks like this:
+4/5 × 5/3
+
+Now I multiply the numerators (top numbers) and multiply the denominators (bottom numbers):
+
+Numerator: 4 × 5 = 20
+Denominator: 5 × 3 = 15
+
+So I get: 20/15
+
+This fraction can be simplified because both 20 and 15 can be divided by 5.
+
+20 ÷ 5 = 4
+15 ÷ 5 = 3
+
+So the simplified fraction is 4/3.
+
+I can also write this as a mixed number. How many times does 3 go into 4? Once, with 1 left over.
+So, 1 and 1/3.
+
+My answer is **4/3** or **1 1/3**."
+4/5÷3/5,Div,ED,4/3,Gemini 2.5 Flash,1,1/3,False,"Okay, I can solve this! Dividing fractions is like multiplying by the reciprocal.
+
+Here's how I do it:
+
+1.  **Keep** the first fraction the same: 4/5
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+Now my problem looks like this:
+4/5 × 5/3
+
+Next, I multiply the numerators (the top numbers) and the denominators (the bottom numbers):
+
+*   Numerator: 4 × 5 = 20
+*   Denominator: 5 × 3 = 15
+
+So I get: 20/15
+
+This is an improper fraction, and I can simplify it. Both 20 and 15 can be divided by 5.
+
+*   20 ÷ 5 = 4
+*   15 ÷ 5 = 3
+
+So the simplified fraction is 4/3.
+
+I can also write this as a mixed number:
+How many times does 3 go into 4? Once, with 1 left over.
+So, 1 and 1/3.
+
+My final answer is **4/3** or **1 1/3**."
+4/5÷3/5,Div,ED,4/3,Gemini 2.5 Flash,2,4/3,True,"To solve 4/5 ÷ 3/5, I need to remember the rule for dividing fractions: keep the first fraction, change the division sign to multiplication, and flip the second fraction (find its reciprocal).
+
+Here are the steps:
+
+1.  **Keep the first fraction:** It stays 4/5.
+2.  **Change the division sign to multiplication:** ÷ becomes ×.
+3.  **Flip the second fraction:** 3/5 becomes 5/3.
+
+Now the problem looks like this:
+4/5 × 5/3
+
+Now I multiply the numerators together and the denominators together:
+
+*   **Multiply the numerators:** 4 × 5 = 20
+*   **Multiply the denominators:** 5 × 3 = 15
+
+This gives me the fraction 20/15.
+
+Now I need to simplify the fraction. Both 20 and 15 can be divided by 5.
+
+*   20 ÷ 5 = 4
+*   15 ÷ 5 = 3
+
+So, the simplified fraction is 4/3.
+
+This is an improper fraction, so I can also write it as a mixed number. 4 divided by 3 is 1 with a remainder of 1.
+
+So, 4/3 is equal to 1 and 1/3.
+
+The final answer is $\boxed{4/3}$."
+4/5÷3/5,Div,ED,4/3,Gemini 2.5 Flash,3,4/3,True,"Okay, I can solve this!
+
+To divide fractions, I need to remember the rule: ""keep, change, flip.""
+This means I keep the first fraction, change the division sign to multiplication, and flip (find the reciprocal of) the second fraction.
+
+Here are the steps:
+
+1.  **Keep** the first fraction: 4/5
+2.  **Change** the division sign (÷) to a multiplication sign (×).
+3.  **Flip** the second fraction (3/5) to its reciprocal. The reciprocal of 3/5 is 5/3.
+
+Now my problem looks like this:
+4/5 × 5/3
+
+Next, I multiply the numerators together and multiply the denominators together:
+(4 × 5) / (5 × 3)
+
+I see that there's a 5 in the numerator and a 5 in the denominator, so I can cancel them out before multiplying to make it easier!
+
+4/$\cancel{5}$ × $\cancel{5}$/3
+
+This leaves me with:
+4/3
+
+The answer is 4/3.
+
+Final Answer: 4/3"
+4/5÷3/5,Div,ED,4/3,Gemini 2.5 Flash,4,4/3,True,"Okay, I can solve this!
+
+To divide fractions, we use a trick: ""Keep, Change, Flip!""
+
+1.  **Keep** the first fraction the same: 4/5
+2.  **Change** the division sign to a multiplication sign: ×
+3.  **Flip** the second fraction (find its reciprocal): 3/5 becomes 5/3
+
+So, 4/5 ÷ 3/5 turns into:
+
+4/5 × 5/3
+
+Now, to multiply fractions, we multiply the numerators (the top numbers) and multiply the denominators (the bottom numbers).
+
+Numerator: 4 × 5 = 20
+Denominator: 5 × 3 = 15
+
+So we get: 20/15
+
+Now I need to simplify my answer. Both 20 and 15 can be divided by 5.
+
+20 ÷ 5 = 4
+15 ÷ 5 = 3
+
+So, the simplified fraction is 4/3.
+
+My final answer is **4/3**."

@@ -1,0 +1,1338 @@
+problem,operation,denom_type,correct_answer,model,sample_idx,parsed_answer,is_correct,model_response
+3/5*1/2,Mul,UD,3/10,Centaur-70B,0,3/10,True,1/2*3/5 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,1,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,2,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,3,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,4,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,5,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,6,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,7,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,8,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,9,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,10,3/10,True,"1/2*3/5
+3/10"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,11,3/5,False,"3/5*1/2
+3/10
+6/10
+3/5"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,12,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,13,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,14,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,15,3/10,True,1/2*3/5=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,16,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,17,1/10,False,1/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,18,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,19,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,20,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,21,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,22,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,23,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,24,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,25,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,26,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,27,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,28,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,29,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,30,3,False,"You can solve this problem using the following steps:
+1. Multiply the numerators.
+2. Multiply the denominators.
+3. Write the result in simplest form."
+3/5*1/2,Mul,UD,3/10,Centaur-70B,31,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,32,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,33,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,34,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,35,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,36,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,37,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,38,3/10,True,"3/5*1/2
+3/10
+0.3"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,39,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,40,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,41,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,42,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,43,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,44,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,45,1/10,False,1/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,46,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,47,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,48,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,49,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,50,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,51,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,52,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,53,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,54,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,55,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,56,1/5,False,"3/5*1/2
+3/10
+1/5
+3/5*1/2=1/5"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,57,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,58,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,59,1/10,False,1/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,60,1/10,False,1/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,61,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,62,3/10,True,"3/5*1/2
+
+3/10
+
+0.3"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,63,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,64,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,65,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,66,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,67,3/10,True,The answer is 3/10.
+3/5*1/2,Mul,UD,3/10,Centaur-70B,68,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,69,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,70,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,71,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,72,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,73,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,74,3/10,True,"3/5*1/2
+
+3/10"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,75,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,76,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,77,?,False,"To multiply fractions, multiply the numerators and then multiply the denominators. Then simplify the fraction if needed."
+3/5*1/2,Mul,UD,3/10,Centaur-70B,78,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,79,1/10,False,1/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,80,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,81,3/10,True,"3/5 * 1/2
+3/10"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,82,3/10,True,"To solve this problem, we need to multiply the numerators and denominators. First, we multiply the numerators, 3 and 1, to get 3. Then, we multiply the denominators, 5 and 2, to get 10. The answer is 3/10."
+3/5*1/2,Mul,UD,3/10,Centaur-70B,83,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,84,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,85,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,86,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,87,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,88,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,89,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,90,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,91,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,92,3/10,True,"3/10
+3/10"
+3/5*1/2,Mul,UD,3/10,Centaur-70B,93,3/10,True,3/5*1/2 = 3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,94,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,95,1/2,False,3/5*1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,96,3/10,True,3/5*1/2=3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,97,1/2,False,1/2
+3/5*1/2,Mul,UD,3/10,Centaur-70B,98,3/10,True,3/10
+3/5*1/2,Mul,UD,3/10,Centaur-70B,99,3/10,True,3/5*1/2=3/10
+3/5*2/5,Mul,ED,6/25,Centaur-70B,0,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,1,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,2,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,3,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,4,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,5,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,6,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,7,6/25,True,"The answer is 6/25.
+The work is as follows:
+3/5*2/5=6/25."
+3/5*2/5,Mul,ED,6/25,Centaur-70B,8,1/2,False,1/2
+3/5*2/5,Mul,ED,6/25,Centaur-70B,9,3/25,False,3/5*2/5 = 3/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,10,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,11,1/2,False,1/2
+3/5*2/5,Mul,ED,6/25,Centaur-70B,12,6/25,True,"To multiply fractions, multiply the numerators together, then multiply the denominators together. (3*2)/(5*5) = 6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,13,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,14,3/25,False,3/5 * 2/5 = 3/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,15,3/25,False,"3/5*2/5
+= 3/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,16,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,17,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,18,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,19,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,20,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,21,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,22,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,23,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,24,?,False,I don't understand your question. Please ask another question.
+3/5*2/5,Mul,ED,6/25,Centaur-70B,25,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,26,3/25,False,3/5*2/5 = 3/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,27,6/25,True,3/5*2/5 = 3*2/5*5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,28,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,29,6/25,True,The answer is 6/25.
+3/5*2/5,Mul,ED,6/25,Centaur-70B,30,3/25,False,(3/5*2/5)=3/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,31,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,32,1/5,False,1/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,33,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,34,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,35,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,36,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,37,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,38,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,39,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,40,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,41,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,42,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,43,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,44,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,45,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,46,2/5,False,3/5*2/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,47,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,48,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,49,3/10,False,"3/5*2/5
+3/10
+0.3"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,50,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,51,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,52,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,53,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,54,2/5,False,3/5*2/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,55,6/25,True,(3*2)/(5*5) = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,56,6/25,True,3/5*2/5=3*2/5*5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,57,6/25,True,"3/5*2/5
+6/25
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,58,6/25,True,"3/5*2/5
+(3*2)/(5*5)
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,59,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,60,3/25,False,3/5*2/5=3/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,61,3/25,False,"3/5*2/5=3/25
+3/25=0.12"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,62,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,63,2/5,False,(3/5)*(2/5)
+3/5*2/5,Mul,ED,6/25,Centaur-70B,64,6/25,True,6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,65,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,66,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,67,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,68,3/10,False,"3/5*2/5
+3/10"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,69,2/5,False,3/5*2/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,70,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,71,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,72,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,73,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,74,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,75,3/10,False,"3/5*2/5
+3/10"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,76,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,77,6/25,True,The answer is 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,78,3/5,False,15/25=3/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,79,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,80,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,81,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,82,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,83,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,84,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,85,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,86,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,87,6/25,True,3/5*2/5=3*2/5*5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,88,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,89,1/5,False,1/5
+3/5*2/5,Mul,ED,6/25,Centaur-70B,90,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,91,6/25,True,= 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,92,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,93,2/5,False,(3/5)(2/5)
+3/5*2/5,Mul,ED,6/25,Centaur-70B,94,6/25,True,3/5*2/5 = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,95,6/25,True,3/5*2/5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,96,6/25,True,3/5*2/5=3*2/5*5=6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,97,6/25,True,"3/5*2/5
+6/25"
+3/5*2/5,Mul,ED,6/25,Centaur-70B,98,6/25,True,(3/5)*(2/5) = 6/25
+3/5*2/5,Mul,ED,6/25,Centaur-70B,99,6/25,True,"3/5*2/5
+6/25"
+3/5+1/2,Add,UD,11/10,Centaur-70B,0,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,1,4/5,False,"3/5+1/2
+=3/10+5/10
+=8/10
+=4/5"
+3/5+1/2,Add,UD,11/10,Centaur-70B,2,11/10,True,3/5+1/2 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,3,11/10,True,"3/5+1/2
+= (3*2+1*5)/(5*2)
+= (6+5)/10
+= 11/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,4,1/2,False,3/5 + 1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,5,11/10,True,3/5+1/2=11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,6,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,7,11/10,True,3/5 + 1/2 = (3*2) / (5*2) + (1*5) / (2*5) = 6/10 + 5/10 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,8,7/10,False,"The sum of the numerators is 7, the denominator is 10. The answer is 7/10."
+3/5+1/2,Add,UD,11/10,Centaur-70B,9,11/10,True,"1. 3/5+1/2
+2. (3x2+5x1)/(5x2)
+3. (6+5)/(10)
+4. 11/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,10,3/4,False,1.5/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,11,11/10,True,"Your work:
+
+3/5+1/2
+6/10+5/10
+11/10
+1 1/10
+
+Your answer: 1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,12,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,13,?,False,Let's break up the two fractions into their numerator and denominator. Then we can do the math separately.
+3/5+1/2,Add,UD,11/10,Centaur-70B,14,11/10,True,"3/5+1/2
+
+=6/10+5/10
+
+=11/10
+
+=1 1/10
+
+=1.1"
+3/5+1/2,Add,UD,11/10,Centaur-70B,15,11/10,True,3/5+1/2 = 6/10+5/10 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,16,11/10,True,3/5 + 1/2 = 6/10 + 5/10 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,17,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,18,1/2,False,3/5 + 1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,19,11/10,True,3/5+1/2 = 11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,20,11/10,True,3/5+1/2=11/10=1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,21,1,False,3/5+1/2=10/10=1
+3/5+1/2,Add,UD,11/10,Centaur-70B,22,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,23,1/2,False,(3/5)+(1/2)
+3/5+1/2,Add,UD,11/10,Centaur-70B,24,11/10,True,"3/5+1/2
+=6/10+5/10
+=11/10
+=1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,25,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,26,11/10,True,3/5+1/2= 11/10=1.1
+3/5+1/2,Add,UD,11/10,Centaur-70B,27,13/10,False,3/5+1/2=13/10=1 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,28,11/10,True,The result is 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,29,3/5,False,1/10+1/2=3/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,30,11/10,True,"3/5 + 1/2
+3/10 + 3/10 + 5/10
+11/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,31,11/10,True,3/5 + 1/2 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,32,11/10,True,3/5+1/2=(2*3+1*5)/10=(6+5)/10=11/10=1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,33,1/5,False,3/10 + 2/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,34,11/10,True,3/5 + 1/2 = 6/10 + 5/10 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,35,7/10,False,5/10+2/10=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,36,11/10,True,The least common multiple of 5 and 2 is 10. 3/5 + 1/2 = 6/10 + 5/10 = 11/10. The answer is 11/10.
+3/5+1/2,Add,UD,11/10,Centaur-70B,37,1/5,False,1/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,38,11/10,True,3/5 + 1/2 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,39,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,40,13/10,False,3/5+1/2=13/10=1.3
+3/5+1/2,Add,UD,11/10,Centaur-70B,41,1/2,False,3/10 + 3/10 + 1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,42,13/10,False,3/5+1/2=13/10=1 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,43,11/10,True,"3/5+1/2
+6/10+5/10
+11/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,44,11/10,True,5/10+6/10 = 11/10 = 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,45,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,46,4/5,False,(3/5+1/2)=(3/5+1/2)(5/5)=(3/5+5/10)=8/10=4/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,47,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,48,17/10,False,3/5+1/2=17/10=1 7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,49,11/10,True,"We need to add 3/5+1/2.
+First, we need to find the least common multiple of the denominators.
+The least common multiple of 5 and 2 is 10.
+Then, we need to change the denominator of each fraction to 10.
+3/5 becomes 6/10.
+1/2 becomes 5/10.
+Then, we can add the numerators.
+6+5=11.
+The final answer is 11/10."
+3/5+1/2,Add,UD,11/10,Centaur-70B,50,11/10,True,3/5+1/2 = 11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,51,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,52,11/10,True,"(3/5)+(1/2)
+=(6/10)+(5/10)
+=11/10
+=1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,53,6/5,False,"3/5 + 1/2
+3/5 * 2/2 + 1/2 * 5/5
+6/10 + 5/10
+11/10
+1 1/10
+1 1/5"
+3/5+1/2,Add,UD,11/10,Centaur-70B,54,11/10,True,3/5+1/2=11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,55,6/5,False,3/5+1/2=7/10+5/10=12/10=6/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,56,11/10,True,(3/5)+(1/2) 6/10+5/10=11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,57,4/5,False,"3/5+1/2
+3/10+1/2
+(3+5)/10
+8/10
+.8"
+3/5+1/2,Add,UD,11/10,Centaur-70B,58,1,False,3/5+1/2=5/10+5/10=10/10=1
+3/5+1/2,Add,UD,11/10,Centaur-70B,59,11/10,True,3/5+1/2 = 11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,60,13/10,False,The sum of 3/5 and 1/2 is 13/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,61,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,62,11/10,True,(6/10) + (5/10) = 11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,63,?,False,You can solve this problem by finding a common denominator.
+3/5+1/2,Add,UD,11/10,Centaur-70B,64,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,65,6/5,False,3/5 + 1/2 = 7/10 + 5/10 = 12/10 = 6/5 = 1 1/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,66,1/2,False,5/10+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,67,1/2,False,The problem is: 3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,68,11/10,True,"3/5+1/2 = 11/10
+1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,69,4/5,False,3/5+1/2=3/10+5/10=8/10=4/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,70,6/5,False,3/5+1/2 = 7/10+5/10 = 12/10 = 6/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,71,13/10,False,3/5+1/2=13/10=1 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,72,11/10,True,The answer is 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,73,4/5,False,3/5+1/2=8/10=4/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,74,1,False,3/5+1/2 = 5/10+5/10 = 10/10 = 1
+3/5+1/2,Add,UD,11/10,Centaur-70B,75,17/10,False,What is 3/5+1/2? 3/5+1/2=17/10=1 7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,76,11/10,True,"Let us find a common denominator and add the numerators.
+3/5 + 1/2 = (3x2)/(5x2) + (1x5)/(2x5) = 6/10 + 5/10 = 11/10
+11/10 = 1 1/10
+Final answer is 1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,77,1/2,False,3/5+1/2
+3/5+1/2,Add,UD,11/10,Centaur-70B,78,11/10,True,3/5+1/2=(6+5)/10=11/10=1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,79,13/10,False,3/5+1/2 = 3/5+5/10 = 13/10 = 1 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,80,2,False,3/5+1/2=(3+1)/2=4/2=2
+3/5+1/2,Add,UD,11/10,Centaur-70B,81,11/10,True,3/5+1/2= 11/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,82,1,False,"1/10
+3/10
+6/10
+9/10
+1/10
+2/10
+3/10
+4/10
+5/10
+6/10
+7/10
+8/10
+9/10
+10/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,83,9/10,False,3/5+1/2=4/10+5/10=9/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,84,1/10,False,1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,85,11/10,True,3/5+1/2=1.1
+3/5+1/2,Add,UD,11/10,Centaur-70B,86,11/10,True,"I'll show you how to solve this problem step-by-step.
+
+Step 1: The first thing we need to do is find the least common denominator (LCD) of the fractions. To do this, we take the product of the denominators, which in this case is 5 * 2 = 10.
+
+Step 2: Next, we need to rewrite the fractions with the LCD in the denominator. To do this, we multiply the numerator and denominator of each fraction by the same number. For the first fraction, we multiply the numerator and denominator by 2 to get 6/10. For the second fraction, we multiply the numerator and denominator by 5 to get 5/10.
+
+Step 3: Now that the fractions have the same denominator, we can add the numerators together to get the final answer. 6/10 + 5/10 = 11/10.
+
+Step 4: Simplify the final answer if possible. In this case, 11/10 cannot be simplified any further, so the final answer is 11/10."
+3/5+1/2,Add,UD,11/10,Centaur-70B,87,4/5,False,"3/5+1/2
+3/10+1/2
+3/10+5/10
+8/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,88,13/10,False,The final answer is 13/10.
+3/5+1/2,Add,UD,11/10,Centaur-70B,89,6/5,False,3/5+1/2 = 7/10+5/10=12/10=6/5
+3/5+1/2,Add,UD,11/10,Centaur-70B,90,11/10,True,3/5+1/2=1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,91,7/10,False,3/5+1/2=7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,92,13/10,False,The answer is 13/10 or 1 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,93,13/10,False,The sum of 3/5 and 1/2 is 13/10.
+3/5+1/2,Add,UD,11/10,Centaur-70B,94,7/10,False,3/5+1/2 = 2/10+5/10 = 7/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,95,3/10,False,3/5 + 1/2 = 13/10 = 1 and 3/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,96,11/10,True,3/5+1/2=(3*2+1*5)/(5*2)=11/10=1.1
+3/5+1/2,Add,UD,11/10,Centaur-70B,97,11/10,True,3/5+1/2= 11/10= 1 1/10
+3/5+1/2,Add,UD,11/10,Centaur-70B,98,11/10,True,"3/5+1/2
+6/10+5/10
+11/10
+1 1/10"
+3/5+1/2,Add,UD,11/10,Centaur-70B,99,2,False,"1.5/5+5/10
+1.5+5/10
+1.5+0.5
+2/5
+2"
+3/5+2/5,Add,ED,1,Centaur-70B,0,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,1,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,2,2/5,False,3/5+2/5
+3/5+2/5,Add,ED,1,Centaur-70B,3,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,4,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,5,1,True,(3+2)/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,6,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,7,1,True,3/5+2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,8,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,9,1,True,3/5+2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,10,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,11,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,12,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,13,1,True,3/5+2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,14,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,15,1,True,"The sum of 3/5 and 2/5 is 5/5, which can be simplified to 1/1, which can be further simplified to 1."
+3/5+2/5,Add,ED,1,Centaur-70B,16,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,17,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,18,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,19,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,20,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,21,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,22,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,23,2/5,False,3/5+2/5
+3/5+2/5,Add,ED,1,Centaur-70B,24,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,25,1,True,"The first step is to find the least common denominator of the two fractions. In this case, the least common denominator is 5. The next step is to convert each fraction to have the least common denominator. In this case, we don't need to do anything because both fractions already have the least common denominator. The final step is to add the two fractions. In this case, we add 3/5 and 2/5 to get 5/5, which simplifies to 1."
+3/5+2/5,Add,ED,1,Centaur-70B,26,1,True,"3/5+2/5
+5/5=1
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,27,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,28,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,29,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,30,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,31,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,32,1,True,3/5+2/5 = 5/5
+3/5+2/5,Add,ED,1,Centaur-70B,33,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,34,1,True,The answer is 1.0
+3/5+2/5,Add,ED,1,Centaur-70B,35,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,36,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,37,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,38,1,True,3/5+2/5=1/1=1
+3/5+2/5,Add,ED,1,Centaur-70B,39,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,40,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,41,1,True,"3/5+2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,42,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,43,1,True,"3/5+2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,44,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,45,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,46,1/5,False,1/5
+3/5+2/5,Add,ED,1,Centaur-70B,47,1,True,"The answer is 5/5, which is equal to 1."
+3/5+2/5,Add,ED,1,Centaur-70B,48,1,True,3/5+2/5 = 5/5
+3/5+2/5,Add,ED,1,Centaur-70B,49,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,50,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,51,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,52,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,53,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,54,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,55,1,True,"3/5 + 2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,56,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,57,1,True,3/5+2/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,58,1,True,The answer is 1.
+3/5+2/5,Add,ED,1,Centaur-70B,59,2/5,False,3/5+2/5
+3/5+2/5,Add,ED,1,Centaur-70B,60,1,True,"3/5+2/5
+5/5
+1
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,61,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,62,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,63,1,True,"3/5+2/5 = 5/5 = 1
+The problem has been solved correctly."
+3/5+2/5,Add,ED,1,Centaur-70B,64,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,65,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,66,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,67,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,68,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,69,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,70,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,71,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,72,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,73,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,74,1,True,5/5
+3/5+2/5,Add,ED,1,Centaur-70B,75,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,76,1,True,The sum is 1
+3/5+2/5,Add,ED,1,Centaur-70B,77,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,78,1,True,"3/5+2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,79,1,True,"The sum is 5/5, which is equal to 1."
+3/5+2/5,Add,ED,1,Centaur-70B,80,1,True,"3/5 + 2/5
+
+= 5/5
+
+= 1"
+3/5+2/5,Add,ED,1,Centaur-70B,81,1,True,"3/5+2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,82,1,True,"3/5+2/5
+5/5
+1"
+3/5+2/5,Add,ED,1,Centaur-70B,83,1,True,3/5+2/5=5/5
+3/5+2/5,Add,ED,1,Centaur-70B,84,2/5,False,3/5+2/5
+3/5+2/5,Add,ED,1,Centaur-70B,85,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,86,1,True,3/5+2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,87,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,88,1,True,The answer is 1.
+3/5+2/5,Add,ED,1,Centaur-70B,89,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,90,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,91,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,92,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,93,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,94,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,95,1,True,3/5+2/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,96,1,True,3/5+2/5=5/5=1
+3/5+2/5,Add,ED,1,Centaur-70B,97,1,True,3/5 + 2/5 = 5/5 = 1
+3/5+2/5,Add,ED,1,Centaur-70B,98,1,True,3/5+2/5 = 5/5
+3/5+2/5,Add,ED,1,Centaur-70B,99,1,True,3/5+2/5=1
+3/5-1/2,Sub,UD,1/10,Centaur-70B,0,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,1,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,2,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,3,?,False,What do you want to know?
+3/5-1/2,Sub,UD,1/10,Centaur-70B,4,1/10,True,The answer is 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,5,1/10,True,"3/5-1/2
+=3/5-1/2
+=6/10-5/10
+=1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,6,1/10,True,"= 3/5-1/2
+= (3*2)-(1*5)/10
+= 6-5/10
+= 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,7,1/10,True,The answer is 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,8,1/10,True,"3/5 - 1/2 = 1/10
+3/5 - 1/2 = 3/10 - 5/10 = 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,9,1/10,True,"=3/5-1/2
+=6/10-5/10
+=1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,10,?,False,What is the LCM of the denominators?
+3/5-1/2,Sub,UD,1/10,Centaur-70B,11,1/2,False,3/5 - 1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,12,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,13,10,False,The least common denominator is 10.
+3/5-1/2,Sub,UD,1/10,Centaur-70B,14,1/10,True,3/5 - 1/2 = 6/10 - 5/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,15,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,16,1/10,True,"3/5-1/2
+2/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,17,-1/2,False,What is 3/5-1/2?
+3/5-1/2,Sub,UD,1/10,Centaur-70B,18,-3/10,False,3/5 - 1/2 = (2/10) - (5/10) = -3/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,19,2/5,False,"3/5-1/2
+2/5"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,20,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,21,1/2,False,= 3/5 - 1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,22,1/10,True,The answer is 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,23,2/5,False,3/5-1/2=(3-1)/5=2/5
+3/5-1/2,Sub,UD,1/10,Centaur-70B,24,?,False,What's your answer?
+3/5-1/2,Sub,UD,1/10,Centaur-70B,25,1/10,True,"3/5-1/2
+= 6/10-5/10
+= 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,26,1/10,True,"3/5-1/2
+3/10+3/10-1/2
+6/10-1/2
+6/10-5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,27,-1/2,False,Subtract 1/2 from 3/5. 3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,28,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,29,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,30,3/10,False,3/5-1/2=3/5-5/10=3/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,31,1/10,True,"3/5-1/2
+6/10-5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,32,-1/5,False,"3/5 - 1/2
+3/10 - 5/10
+-2/10
+-1/5"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,33,1/5,False,2/10=1/5
+3/5-1/2,Sub,UD,1/10,Centaur-70B,34,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,35,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,36,2/5,False,"1/2-1/2=0
+3/5-1/5=2/5
+3/5-1/2=2/5"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,37,1/10,True,1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,38,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,39,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,40,1/10,True,3/5-1/2 = (3×2)-(1×5)/10 = 6-5/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,41,1/10,True,1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,42,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,43,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,44,1/10,True,1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,45,3/10,False,3/5-1/2=(2*3-3*1)/(2*5)=(6-3)/10=3/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,46,1/10,True,"3/5-1/2
+= (3*2-1*5)/(2*5)
+= (6-5)/10
+= 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,47,1/10,True,"3/5-1/2
+=6/10-5/10
+=1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,48,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,49,1/10,True,"What is 3/5-1/2? First, we need to get a common denominator. The common denominator is 10. The new equation is 6/10-5/10. Then, subtract the numerators: 6-5=1. The final answer is 1/10."
+3/5-1/2,Sub,UD,1/10,Centaur-70B,50,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,51,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,52,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,53,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,54,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,55,-1/5,False,"3/5-1/2
+3/10-1/2
+3/10-5/10
+-2/10
+-1/5"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,56,1/10,True,3/5 - 1/2 = (3*2 - 5*1) / 10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,57,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,58,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,59,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,60,1/10,True,"3/5-1/2
+3/10-1/2
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,61,1/5,False,3/5-1/2=2/10=1/5
+3/5-1/2,Sub,UD,1/10,Centaur-70B,62,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,63,1/10,True,"3/5 - 1/2
+= 6/10 - 5/10
+= 6 - 5
+= 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,64,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,65,?,False,What's the least common denominator?
+3/5-1/2,Sub,UD,1/10,Centaur-70B,66,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,67,1/10,True,The answer is: 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,68,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,69,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,70,1/10,True,"Your work:
+
+3/5-1/2 = 1/10
+
+Your final answer: 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,71,1/10,True,"3/5-1/2
+6/10-5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,72,-1/5,False,"=3/5-1/2
+=3/10-5/10
+=-2/10
+=-1/5"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,73,10,False,"3/5 - 1/2
+= (3*2 - 1*5) / (5*2)
+= (6 - 5) / 10
+= 1 / 10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,74,1/10,True,"3/5-1/2
+= 6/10-5/10
+= 1/10
+= 1/10
+= 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,75,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,76,1/10,True,1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,77,3/10,False,"3/5-1/2
+3/5-1/2=3/10
+3/10=0.3"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,78,1/10,True,3/5-1/2 = (6-5)/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,79,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,80,1/10,True,3/5-1/2 = (3*2)/(5*2)-(1*5)/(2*5) = 6/10-5/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,81,1/2,False,3/5 - 1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,82,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,83,1/10,True,3/5-1/2=1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,84,1/10,True,"3/5-1/2
+6/10-5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,85,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,86,1/10,True,"3/5-1/2 = 1/10
+3/10+4/10-1/2 = 1/10
+1/10 = 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,87,1/10,True,3/5-1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,88,1/10,True,The common denominator is 10. 3/5 is equal to 6/10 and 1/2 is equal to 5/10. 6/10-5/10=1/10.
+3/5-1/2,Sub,UD,1/10,Centaur-70B,89,1/10,True,"3/5 - 1/2
+6/10 - 5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,90,1/10,True,3/5-1/2=(3*2-1*5)/(5*2) = (6-5)/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,91,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,92,2/5,False,3/5-1/2=(3-1)/5=2/5
+3/5-1/2,Sub,UD,1/10,Centaur-70B,93,-1/2,False,3/5-1/2
+3/5-1/2,Sub,UD,1/10,Centaur-70B,94,1/10,True,"3/5-1/2
+=3/5-5/10
+=6/10-5/10
+=1/10
+Answer: 1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,95,3/5,False,"3/5 - 1/2
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 - 2/4
+3/5 -"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,96,1/10,True,3/5 - 1/2 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,97,1/10,True,"3/5-1/2
+3/5-1/2
+6/10-5/10
+1/10"
+3/5-1/2,Sub,UD,1/10,Centaur-70B,98,1/10,True,3/5-1/2 = (3*2-1*5)/10 = (6-5)/10 = 1/10
+3/5-1/2,Sub,UD,1/10,Centaur-70B,99,1/10,True,"3/5-1/2 = 1/10
+3/5=6/10
+1/2=5/10
+6/10-5/10=1/10"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,0,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,1,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,2,1/5,True,= 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,3,1/5,True,The answer is 1/5.
+3/5-2/5,Sub,ED,1/5,Centaur-70B,4,1/5,True,"3/5-2/5
+3/5-2/5=1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,5,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,6,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,7,1/5,True,"3/5-2/5
+=
+1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,8,-2/5,False,"3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5
+3/5-2/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,9,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,10,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,11,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,12,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,13,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,14,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,15,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,16,1/5,True,"3/5-2/5
+3/5 - 2/5
+3/5 - 2/5
+1/5
+1/5
+1/5
+1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,17,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,18,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,19,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,20,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,21,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,22,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,23,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,24,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,25,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,26,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,27,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,28,?,False,What is the first step?
+3/5-2/5,Sub,ED,1/5,Centaur-70B,29,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,30,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,31,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,32,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,33,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,34,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,35,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,36,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,37,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,38,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,39,1/5,True,"3/5-2/5
+= 1/5
+= 0.2"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,40,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,41,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,42,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,43,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,44,2/5,False,3/5 - 2/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,45,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,46,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,47,-2/5,False,3/5-2/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,48,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,49,1/5,True,The answer is 1/5.
+3/5-2/5,Sub,ED,1/5,Centaur-70B,50,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,51,1/5,True,"3/5-2/5 = 3/5-2/5
+= (3-2)/5
+= 1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,52,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,53,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,54,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,55,-2/5,False,3/5-2/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,56,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,57,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,58,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,59,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,60,1/5,True,The answer is 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,61,?,False,I don't understand. Please clarify.
+3/5-2/5,Sub,ED,1/5,Centaur-70B,62,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,63,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,64,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,65,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,66,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,67,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,68,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,69,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,70,?,False,I'm not sure I understand. Can you give me more information?
+3/5-2/5,Sub,ED,1/5,Centaur-70B,71,1/5,True,The answer is 1/5.
+3/5-2/5,Sub,ED,1/5,Centaur-70B,72,-2/5,False,3/5-2/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,73,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,74,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,75,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,76,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,77,1/5,True,"3/5-2/5
+= 1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,78,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,79,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,80,1/5,True,"Subtract 2/5 from 3/5
+3/5 - 2/5
+3/5-2/5=1/5
+The answer is 1/5."
+3/5-2/5,Sub,ED,1/5,Centaur-70B,81,-2/5,False,3/5-2/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,82,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,83,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,84,1/5,True,"3/5 - 2/5
+1/5"
+3/5-2/5,Sub,ED,1/5,Centaur-70B,85,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,86,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,87,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,88,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,89,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,90,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,91,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,92,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,93,1/5,True,1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,94,1/5,True,The answer is 1/5.
+3/5-2/5,Sub,ED,1/5,Centaur-70B,95,1/5,True,3/5-2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,96,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,97,1/5,True,3/5 - 2/5 = 1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,98,1/5,True,3/5-2/5=1/5
+3/5-2/5,Sub,ED,1/5,Centaur-70B,99,1/5,True,3/5 - 2/5 = 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,0,1/2,False,3/5 / 1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,1,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,2,6/5,True,"The answer is 1 1/5. Here's how to solve it:
+
+3/5:1/2
+= (3/5):(1/2)
+= (3/5)*(2/1)
+= 6/5
+= 1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,3,10,False,"First, you need to find a common denominator for the two fractions. In this case, it is 10."
+3/5:1/2,Div,UD,6/5,Centaur-70B,4,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,5,3/10,False,1/2*3/5=3/10
+3/5:1/2,Div,UD,6/5,Centaur-70B,6,6/5,True,3/5:1/2 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,7,6/5,True,3/5 divided by 1/2 is 3/5 * 2/1 or 6/5 or 1 1/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,8,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,9,6/5,True,3/5:1/2=3/5*2/1=6/5=1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,10,6/5,True,"3/5:1/2
+3/5*2/1
+6/5
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,11,1/2,False,3/5:1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,12,2,False,3/5:1/2 is equal to 3/5x2/1
+3/5:1/2,Div,UD,6/5,Centaur-70B,13,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,14,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,15,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,16,6/5,True,"3/5 * 2/1
+6/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,17,6/5,True,3/5:1/2 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,18,1/2,False,3/5:1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,19,2/3,False,1/2*2/3
+3/5:1/2,Div,UD,6/5,Centaur-70B,20,6/5,True,3/5:1/2 = 6/10:5/10 = 6:5 = 1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,21,6/5,True,"3/5 ÷ 1/2
+3/5 × 2/1
+6/5
+1 1/5
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,22,6/5,True,3/5:1/2 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,23,1/2,False,"3/5:1/2 = 3/5/1/2
+3/5:1/2 = 3/5/1/2
+3/5:1/2 = 6/10/1/2
+3/5:1/2 = 6/10/1/2
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 = 12/10/1
+3/5:1/2 ="
+3/5:1/2,Div,UD,6/5,Centaur-70B,24,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,25,6/5,True,3/5:1/2=6/10:5/10=6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,26,1/10,False,"1/2 = 5/10
+
+3/5 - 5/10 = 1/10"
+3/5:1/2,Div,UD,6/5,Centaur-70B,27,3/10,False,The answer is 3/10
+3/5:1/2,Div,UD,6/5,Centaur-70B,28,6/5,True,"1/2 = 2/4
+
+3/5:2/4
+
+3/5*4/2
+
+12/10
+
+1 2/10
+
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,29,6/5,True,"I think you meant 3/5÷1/2.
+I think the result is 6/5.
+I think the result is 1 1/5."
+3/5:1/2,Div,UD,6/5,Centaur-70B,30,6/5,True,3/5:1/2 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,31,6/5,True,(3/5) x (2/1) = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,32,6/5,True,"3/5:1/2
+3/5 x 2/1
+6/5
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,33,2/5,False,"3/5:1/2
+2/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,34,6/5,True,3/5:1/2 = (3/5)/(1/2) = (3/5)*(2/1) = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,35,6/5,True,3/5 / 1/2 = 6/10 / 5/10 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,36,3/10,False,"3/5:1/2 = 6/10:2/10
+6/10:2/10 = 3/10
+3/10 = 3/10"
+3/5:1/2,Div,UD,6/5,Centaur-70B,37,6/5,True,(3/5)/(1/2) = 3/5 * 2/1 = 3/5 * 2 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,38,?,False,"You must solve this problem. You can ask me for help, but I will not solve the problem for you."
+3/5:1/2,Div,UD,6/5,Centaur-70B,39,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,40,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,41,3/2,False,1.5
+3/5:1/2,Div,UD,6/5,Centaur-70B,42,1/2,False,3/5:1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,43,6/5,True,"3/5:1/2
+= 3/5 * 2/1
+= 3/5 * 2
+= 3 * 2
+= 6
+= 6/1
+= 6/1 * 1/5
+= 6/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,44,6/5,True,3/5:1/2 = 3/5 / 1/2 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,45,6/5,True,3/5:1/2 = 6/10:1/2 = 6/10:5/10 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,46,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,47,1/2,False,3/5:1/2 = 3/5 / 1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,48,6/5,True,3/5:1/2 = 3/5 * 2/1 = 3/5 * 2 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,49,6/5,True,"3/5:1/2
+3/5:1/2 = 3/5*2/1 = 6/5
+6/5 = 1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,50,6/5,True,3/5:1/2 = 3/5 ÷ 1/2 = 3/5 × 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,51,1/2,False,3/5 / 1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,52,3,False,3/5:1/2 = 6/10:2/10 = 6:2 = 3
+3/5:1/2,Div,UD,6/5,Centaur-70B,53,6/5,True,"3/5:1/2
+(3/5)(2/1) = 3/5(2/1)
+3(2)/5(1) = 6/5
+6/5 = 1 1/5
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,54,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,55,1/2,False,3/5:1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,56,6/5,True,3/5:1/2=6/5=1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,57,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,58,3/10,False,1/2 x 3/5 = 3/10
+3/5:1/2,Div,UD,6/5,Centaur-70B,59,6/5,True,"3/5:1/2
+(3/5)*(2/1)
+6/5
+1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,60,6/5,True,You can solve this using division. The equation is the same as 3/5÷1/2. You can solve this by multiplying the first fraction by the reciprocal of the second. The reciprocal of 1/2 is 2/1. 3/5*2/1=6/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,61,3/2,False,You can solve this problem by changing both fractions to have the same denominator (1/2 = 2/4) and then dividing the numerators (3/5 / 2/4 = 3/2)
+3/5:1/2,Div,UD,6/5,Centaur-70B,62,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,63,1/10,False,1/10
+3/5:1/2,Div,UD,6/5,Centaur-70B,64,1/5,False,3/5 divided by 1/2 is 3/5 times 2/1 which is 6/5 which is 1 and 1/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,65,1/5,False,"3/5:1/2
+1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,66,6/5,True,3/5:1/2 is 3/5 * 2/1. The answer is 6/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,67,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,68,6/5,True,3/5:1/2=3/5*2/1=6/5=1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,69,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,70,1/5,False,3/5 divided by 1/2. 3/5 times 2/1. 6/5. 1 and 1/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,71,3/5,False,3/5:1/2 = 6/10:2/10 = 3/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,72,6/5,True,3/5:1/2=3/5*2/1=6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,73,2,False,3/5:1/2 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/1 = 3/5 * 2/
+3/5:1/2,Div,UD,6/5,Centaur-70B,74,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5 = 1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,75,6/5,True,3/5:1/2 = (3/5)/(1/2) = 3/5 * 2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,76,2,False,3/5 x 2/1
+3/5:1/2,Div,UD,6/5,Centaur-70B,77,6/5,True,3/5:1/2=3/5÷1/2=3/5×2/1=6/5=1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,78,268435,False,"3/5:1/2
+
+3/5:2/2
+
+3/5:4/2
+
+3/5:8/2
+
+3/5:16/2
+
+3/5:32/2
+
+3/5:64/2
+
+3/5:128/2
+
+3/5:256/2
+
+3/5:512/2
+
+3/5:1024/2
+
+3/5:2048/2
+
+3/5:4096/2
+
+3/5:8192/2
+
+3/5:16384/2
+
+3/5:32768/2
+
+3/5:65536/2
+
+3/5:131072/2
+
+3/5:262144/2
+
+3/5:524288/2
+
+3/5:1048576/2
+
+3/5:2097152/2
+
+3/5:4194304/2
+
+3/5:8388608/2
+
+3/5:16777216/2
+
+3/5:33554432/2
+
+3/5:67108864/2
+
+3/5:134217728/2
+
+3/5:268435"
+3/5:1/2,Div,UD,6/5,Centaur-70B,79,6/5,True,3/5:1/2=3/5*2/1=6/5=1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,80,6/5,True,3/5:1/2=6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,81,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,82,6/5,True,"3/5:1/2
+(3/5) * (2/1) = 6/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,83,?,False,Let's solve this together. What's the first step?
+3/5:1/2,Div,UD,6/5,Centaur-70B,84,1/5,False,"3/5 ÷ 1/2 = 3/5 * 2/1
+= 6/5 = 1 and 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,85,6/5,True,"We need to find the reciprocal of the second fraction and then multiply the two fractions. The reciprocal of 1/2 is 2/1.
+3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,86,6/5,True,3/5:1/2=3/5*2/1=6/5=1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,87,2,False,3/5:1/2 = 3/5 * 2/1
+3/5:1/2,Div,UD,6/5,Centaur-70B,88,1/2,False,1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,89,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,90,6/5,True,3/5:1/2=3/5*2/1=3/5*2=6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,91,1/2,False,3/5:1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,92,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5 = 1.2
+3/5:1/2,Div,UD,6/5,Centaur-70B,93,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,94,6/5,True,The answer is 6/5.
+3/5:1/2,Div,UD,6/5,Centaur-70B,95,1/2,False,3/5 ÷ 1/2
+3/5:1/2,Div,UD,6/5,Centaur-70B,96,6/5,True,3/5:1/2 = 3/5 * 2/1 = 6/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,97,6/5,True,3/5:1/2 = 3/5*2/1 = 6/5 = 1 1/5
+3/5:1/2,Div,UD,6/5,Centaur-70B,98,6/5,True,"3/5 ÷ 1/2
+
+3/5 ÷ 1/2 = 6/10 ÷ 5/10
+
+6/10 ÷ 5/10 = 6/5
+
+6/5 = 1 1/5
+
+1 1/5 = 6/5"
+3/5:1/2,Div,UD,6/5,Centaur-70B,99,3/5,False,"(3/5)*(2/1)
+(3/5)*(2/1)
+3/5
+3/5"
+3/5:2/5,Div,ED,3/2,Centaur-70B,0,3/2,True,3/5:2/5 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,1,3/10,False,3/5:2/5 = 3/5/2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,2,3/10,False,3/5:2/5=3/5*5/2=3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,3,3/2,True,3/5:2/5 = 3/5 x 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,4,3/10,False,"3/5:2/5
+
+3/5 ÷ 2/5
+
+3/5 * 5/2
+
+3/10
+
+3/10"
+3/5:2/5,Div,ED,3/2,Centaur-70B,5,3/2,True,3/5:2/5 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,6,?,False,I'll be happy to help you with that. Could you please restate your question in a way that I could understand?
+3/5:2/5,Div,ED,3/2,Centaur-70B,7,3/2,True,3/5:2/5 = 3/5*5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,8,3/2,True,3/5:2/5 = 3/5 * 5/2 = 15/10 = 1 5/10 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,9,3/10,False,3/5:2/5=3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,10,3/2,True,The answer is 1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,11,3/2,True,"3/5:2/5
+3/5x5/2
+3/10x5
+15/10
+15/10=3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,12,1,False,1
+3/5:2/5,Div,ED,3/2,Centaur-70B,13,3/2,True,"3/5:2/5
+= 3/5 x 5/2
+= 15/10
+= 3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,14,3/2,True,3/5:2/5=3/5*5/2=15/10=3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,15,3/2,True,"3/5:2/5
+3/5*5/2
+3/2
+1 1/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,16,3/2,True,3/5:2/5 = 3/5*5/2 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,17,?,False,I will help you. What is your question?
+3/5:2/5,Div,ED,3/2,Centaur-70B,18,3/2,True,3/5:2/5 = 3/2 = 1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,19,?,False,What is the question?
+3/5:2/5,Div,ED,3/2,Centaur-70B,20,3/2,True,3/5:2/5 = 3/5*5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,21,3/2,True,"3/5:2/5
+= 3/5 * 5/2
+= 15/10
+= 3/2
+= 1.5"
+3/5:2/5,Div,ED,3/2,Centaur-70B,22,3/2,True,3/5:2/5 = 3/5*5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,23,3/2,True,3/5:2/5 = 3/5 x 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,24,3/2,True,"The fraction is: 3/5:2/5
+It can be written as: 3/5÷2/5
+To divide the fractions, we first find the reciprocal of the second fraction and then multiply the two fractions together.
+The reciprocal of 2/5 is: 5/2
+So, we multiply 3/5 by 5/2 to get: 15/10
+We simplify the fraction by dividing both the numerator and the denominator by 5 to get: 3/2
+So, the final answer is: 3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,25,3/2,True,"3/5:2/5 = 3/5 * 5/2
+= 15/10
+= 3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,26,3/2,True,"3/5:2/5
+3/5 ÷ 2/5
+3/5 × 5/2
+3/5 × 5/2
+3 × 5/5 × 2
+15/10
+3/2
+1 1/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,27,3/2,True,3/5:2/5 = 3/5*5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,28,3/10,False,"3/5:2/5
+3/5*(5/2)
+3/10"
+3/5:2/5,Div,ED,3/2,Centaur-70B,29,?,False,What is the problem you are trying to solve?
+3/5:2/5,Div,ED,3/2,Centaur-70B,30,3/10,False,3/5:2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,31,1/2,False,"The quotient of 3/5 and 2/5 is 3/2, or 1 and 1/2. 3/5:2/5 = 3/2 = 1 and 1/2."
+3/5:2/5,Div,ED,3/2,Centaur-70B,32,3/2,True,The answer is 3/2.
+3/5:2/5,Div,ED,3/2,Centaur-70B,33,3/2,True,3/5:2/5=3/5*5/2=15/10=3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,34,3/2,True,3/5:2/5=3/5*5/2=3/2=1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,35,2/5,False,3/5:2/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,36,3/10,False,3/5:2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,37,3/2,True,3/5 divided by 2/5 is 3/5 * 5/2. This equals 15/10 which simplifies to 3/2.
+3/5:2/5,Div,ED,3/2,Centaur-70B,38,2/5,False,3/5 : 2/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,39,3/2,True,3/5:2/5=3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,40,3/2,True,3/5:2/5 = 3/5 * 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,41,3/2,True,3/5:2/5 = 3/5*5/2 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,42,3/2,True,3/5:2/5 = 3/5 * 5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,43,3/5,False,2/5 ÷ 3/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,44,3/10,False,"3/5:2/5 = 3/10
+3/5:2/5 = 3/10"
+3/5:2/5,Div,ED,3/2,Centaur-70B,45,3/2,True,The answer is 3/2 or 1 1/2.
+3/5:2/5,Div,ED,3/2,Centaur-70B,46,3/2,True,3/5:2/5=3/5*5/2=3*5/5*2=15/10=1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,47,1,False,1/1
+3/5:2/5,Div,ED,3/2,Centaur-70B,48,3/2,True,"3/5:2/5
+3/5*5/2
+3/2
+1 1/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,49,3/2,True,3/5:2/5 = 3/5 / 2/5 = 3/2 = 1 1/2 = 1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,50,3/2,True,"3/5:2/5
+=3/5*5/2
+=15/10
+=3/2
+=1.5"
+3/5:2/5,Div,ED,3/2,Centaur-70B,51,3/2,True,"3/5 divided by 2/5 is 1.5. In order to divide fractions, multiply by the reciprocal."
+3/5:2/5,Div,ED,3/2,Centaur-70B,52,3/2,True,3/5:2/5 = 3/5*5/2 = 3*5/5*2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,53,3/2,True,3/5:2/5 = 3/5 * 5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,54,3/2,True,3/5:2/5 = 3/5 * 5/2 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,55,3/2,True,3/5:2/5 = 3/5 x 5/2 = 3/2 = 1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,56,3/2,True,3/5 divided by 2/5 = 3/5 x 5/2 = 3/10 x 5/1 = 15/10 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,57,1,False,"3/5:2/5=1
+3/5-2/5=1/5
+3/5:1/5=3
+2/5:1/5=2
+3/5-1/5=2/5
+2/5:1/5=2
+2/5:2/5=1
+1/5:2/5=1/2
+1/5:1/5=1
+2/5:1/5=2
+3/5:1/5=3
+2/5:2/5=1
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1
+3/5:1/5=3
+3/5:2/5=1"
+3/5:2/5,Div,ED,3/2,Centaur-70B,58,2/5,False,3/5:2/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,59,3/2,True,3/5:2/5=3/5*5/2=3/2=1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,60,1,False,1
+3/5:2/5,Div,ED,3/2,Centaur-70B,61,13/2,False,"First, we need to convert the mixed number into an improper fraction. To do this, we multiply the denominator by the whole number, and then add the numerator. In this case, 3/5:2/5 becomes 13/5:2/5.
+
+Next, we need to find the reciprocal of the second fraction. The reciprocal of 2/5 is 5/2.
+
+Now, we multiply the two fractions together. 13/5 x 5/2 = 13/2.
+
+Finally, we simplify the fraction. The greatest common factor of 13 and 2 is 1, so we can't simplify any further. Our final answer is 13/2."
+3/5:2/5,Div,ED,3/2,Centaur-70B,62,3/10,False,"3/5:2/5 is the same as 3/5/2/5
+3/5/2/5 is the same as 3/10
+3/10 is the same as 3/10
+3/10 is the same as 0.3"
+3/5:2/5,Div,ED,3/2,Centaur-70B,63,3/2,True,3/5:2/5 = 3/5*5/2 = 3/2 = 1.5
+3/5:2/5,Div,ED,3/2,Centaur-70B,64,3/2,True,3/5:2/5 = 3/5 * 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,65,3/2,True,3/5:2/5 = 3/5 * 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,66,3/10,False,3/5:2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,67,3/10,False,3/5:2/5=3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,68,3/2,True,"3/5:2/5
+= 3/5:2/5
+= 3/5:2/5
+= 3/2
+= 1 1/2
+= 3/2
+= 3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,69,3/2,True,3/5:2/5 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,70,5/2,False,3/5:2/5 is the same as 3/5*5/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,71,3/2,True,3/5:2/5=3/5*5/2=15/10=3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,72,2/5,False,3/5 ÷ 2/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,73,5/2,False,3/5:2/5 = 3/5 x 5/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,74,3/2,True,"To solve this problem, we must divide 3/5 by 2/5. This means we must flip the second fraction and multiply. The problem now looks like this: 3/5 x 5/2. We can cross multiply the top and bottom numbers. 3 x 5 = 15 and 5 x 2 = 10. The problem now looks like this: 15/10. We can simplify this fraction by dividing the top and bottom by 5. The answer is 3/2."
+3/5:2/5,Div,ED,3/2,Centaur-70B,75,3/2,True,"Since 3 and 2 are co-primes, we can find the answer by dividing the denominator by the numerator.
+3/5:2/5=3/2=1.5"
+3/5:2/5,Div,ED,3/2,Centaur-70B,76,1,False,1/1
+3/5:2/5,Div,ED,3/2,Centaur-70B,77,3/2,True,3/5:2/5=3/2=1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,78,3/2,True,"3/5:2/5
+=3/5 * 5/2
+=15/10
+=3/2
+=1 1/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,79,2/5,False,3/5 : 2/5
+3/5:2/5,Div,ED,3/2,Centaur-70B,80,3/2,True,"3/5 ÷ 2/5
+(3/5) / (2/5)
+3/5 × 5/2
+3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,81,3/10,False,"3/5:2/5
+3/5*(1/2)
+3/10
+3/10"
+3/5:2/5,Div,ED,3/2,Centaur-70B,82,3/2,True,3/5:2/5 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,83,3/2,True,"To solve this, we will use the rule for dividing fractions, which is: Flip the second fraction, then multiply. In this case, we will flip the second fraction, which becomes 5/2. Now, we will multiply 3/5 by 5/2, which gives us 15/10. We can simplify this by dividing the numerator and denominator by 5, which gives us 3/2. This is our final answer."
+3/5:2/5,Div,ED,3/2,Centaur-70B,84,3/2,True,3/5:2/5=3/5*5/2=15/10=3/2=1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,85,3/10,False,3/5:2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,86,3/2,True,The answer is 3/2. You can simplify to 1.5 or 1 1/2.
+3/5:2/5,Div,ED,3/2,Centaur-70B,87,3/2,True,3/5:2/5 is the same as 3/5 x 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,88,3/2,True,"3/5:2/5
+3/5*5/2
+3/2
+1 1/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,89,3/2,True,3/5:2/5 = 3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,90,1,False,1
+3/5:2/5,Div,ED,3/2,Centaur-70B,91,3/2,True,3/5:2/5=3/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,92,3/10,False,3/5:2/5 = 3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,93,3/2,True,3/5:2/5 = 3/5 x 5/2 = 3/2 = 1 1/2
+3/5:2/5,Div,ED,3/2,Centaur-70B,94,3/2,True,"You can solve this problem by using the division rule for fractions. You know that you can rewrite this problem as a multiplication problem by taking the reciprocal of the divisor, 2/5. The reciprocal of 2/5 is 5/2. So, you have 3/5 * 5/2. You can now multiply the numerators, 3 and 5, to get 15. You can multiply the denominators, 5 and 2, to get 10. So, your answer is 15/10. You can simplify this answer by dividing the numerator and denominator by 5 to get 3/2."
+3/5:2/5,Div,ED,3/2,Centaur-70B,95,3/2,True,"We can write 3/5:2/5 as 3/5 / 2/5. We can then invert the fraction in the denominator (2/5) and multiply both fractions, giving us: 3/5 * 5/2 = 15/10. We can then simplify this fraction by dividing both the numerator and denominator by 5, giving us 15/10 / 5 = 3/2. Therefore, 3/5:2/5 = 3/2."
+3/5:2/5,Div,ED,3/2,Centaur-70B,96,3/10,False,3/5:2/5=3/10
+3/5:2/5,Div,ED,3/2,Centaur-70B,97,1,False,1/1
+3/5:2/5,Div,ED,3/2,Centaur-70B,98,3/2,True,"To divide fractions, multiply by the reciprocal of the second fraction (the divisor).
+So, 3/5:2/5 = 3/5 * 5/2
+Simplify the fractions if you can.
+3/5 * 5/2 = 3 * 5/5 * 2 = 15/10 = 3/2"
+3/5:2/5,Div,ED,3/2,Centaur-70B,99,2/5,False,3/5:2/5

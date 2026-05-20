@@ -1,0 +1,520 @@
+problem,operation,denom_type,correct_answer,model,sample_idx,parsed_answer,is_correct,model_response
+3/5+1/5,Add,ED,4/5,Claude Sonnet 4.6,0,4/5,True,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 3 + 1 = 4, and keep the denominator the same.
+
+### answer: 4/5"
+3/5+1/5,Add,ED,4/5,Claude Sonnet 4.6,1,4/5,True,"To add these fractions, I can see they already have the same denominator (5), so I just add the numerators: 3 + 1 = 4, and keep the denominator the same.
+
+### answer: 4/5"
+3/5+1/5,Add,ED,4/5,Claude Sonnet 4.6,2,4/5,True,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 3 + 1 = 4, and keep the denominator the same.
+
+### answer: 4/5"
+3/5+1/5,Add,ED,4/5,Claude Sonnet 4.6,3,4/5,True,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 3 + 1 = 4, and keep the denominator the same.
+
+### answer: 4/5"
+3/5+1/5,Add,ED,4/5,Claude Sonnet 4.6,4,4/5,True,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 3 + 1 = 4, and keep the denominator the same.
+
+### answer: 4/5"
+4/5+3/5,Add,ED,7/5,Claude Sonnet 4.6,0,2/5,False,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 4 + 3 = 7. That gives me 7/5, which I can convert to a mixed number: 1 and 2/5.
+
+### answer: 7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Claude Sonnet 4.6,1,2/5,False,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 4 + 3 = 7. That gives me 7/5, which I can convert to a mixed number: 1 and 2/5.
+
+### answer: 7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Claude Sonnet 4.6,2,2/5,False,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 4 + 3 = 7. That gives me 7/5, which I can convert to a mixed number: 1 and 2/5.
+
+### answer: 7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Claude Sonnet 4.6,3,2/5,False,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 4 + 3 = 7. That gives me 7/5, which I can convert to a mixed number: 1 and 2/5.
+
+### answer: 7/5 or 1 2/5"
+4/5+3/5,Add,ED,7/5,Claude Sonnet 4.6,4,2/5,False,"To add these fractions, they already have the same denominator (5), so I just add the numerators: 4 + 3 = 7. That gives me 7/5, which I can convert to a mixed number: 1 and 2/5.
+
+### answer: 7/5 or 1 2/5"
+3/5+1/4,Add,UD,17/20,Claude Sonnet 4.6,0,17/20,True,"To add these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 + 5/20 = 17/20
+
+### answer: 17/20"
+3/5+1/4,Add,UD,17/20,Claude Sonnet 4.6,1,17/20,True,"To add these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 + 5/20 = 17/20
+
+### answer: 17/20"
+3/5+1/4,Add,UD,17/20,Claude Sonnet 4.6,2,17/20,True,"To add these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 + 5/20 = 17/20
+
+### answer: 17/20"
+3/5+1/4,Add,UD,17/20,Claude Sonnet 4.6,3,17/20,True,"To add these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 + 5/20 = 17/20
+
+### answer: 17/20"
+3/5+1/4,Add,UD,17/20,Claude Sonnet 4.6,4,17/20,True,"To add these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 + 5/20 = 17/20
+
+### answer: 17/20"
+2/3+3/5,Add,UD,19/15,Claude Sonnet 4.6,0,4/15,False,"To add these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 + 9/15 = 19/15 = 1 and 4/15
+
+### answer: 19/15 (or 1 and 4/15)"
+2/3+3/5,Add,UD,19/15,Claude Sonnet 4.6,1,19/15,True,"To add these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 + 9/15 = 19/15 = 1 and 4/15
+
+### answer: 19/15"
+2/3+3/5,Add,UD,19/15,Claude Sonnet 4.6,2,19/15,True,"To add these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 + 9/15 = 19/15 = 1 and 4/15
+
+### answer: 19/15"
+2/3+3/5,Add,UD,19/15,Claude Sonnet 4.6,3,19/15,True,"To add these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 + 9/15 = 19/15 = 1 and 4/15
+
+### answer: 19/15"
+2/3+3/5,Add,UD,19/15,Claude Sonnet 4.6,4,19/15,True,"To add these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 + 9/15 = 19/15 = 1 and 4/15
+
+### answer: 19/15"
+3/5-1/5,Sub,ED,2/5,Claude Sonnet 4.6,0,2/5,True,"To subtract these fractions, they already have the same denominator (5), so I just subtract the numerators: 3 - 1 = 2, and keep the denominator the same.
+
+### answer: 2/5"
+3/5-1/5,Sub,ED,2/5,Claude Sonnet 4.6,1,2/5,True,"To subtract these fractions, they already have the same denominator (5), so I just subtract the numerators: 3 - 1 = 2, and keep the denominator the same.
+
+### answer: 2/5"
+3/5-1/5,Sub,ED,2/5,Claude Sonnet 4.6,2,2/5,True,"To subtract these fractions, they already have the same denominator (5), so I just subtract the numerators: 3 - 1 = 2, and keep the denominator the same.
+
+### answer: 2/5"
+3/5-1/5,Sub,ED,2/5,Claude Sonnet 4.6,3,2/5,True,"To subtract these fractions, they already have the same denominator (5), so I just subtract the numerators: 3 - 1 = 2, and keep the denominator the same.
+
+### answer: 2/5"
+3/5-1/5,Sub,ED,2/5,Claude Sonnet 4.6,4,2/5,True,"To subtract these fractions, they already have the same denominator (5), so I just subtract the numerators: 3 - 1 = 2, and keep the denominator the same.
+
+### answer: 2/5"
+4/5-3/5,Sub,ED,1/5,Claude Sonnet 4.6,0,1/5,True,"Both fractions have the same denominator, so I just subtract the numerators: 4 - 3 = 1, keeping the denominator 5.
+
+### answer: 1/5"
+4/5-3/5,Sub,ED,1/5,Claude Sonnet 4.6,1,1/5,True,"Since the denominators are the same, I can just subtract the numerators.
+
+4/5 - 3/5 = (4-3)/5 = 1/5
+
+### answer: 1/5"
+4/5-3/5,Sub,ED,1/5,Claude Sonnet 4.6,2,1/5,True,"Since the denominators are the same, I can just subtract the numerators.
+
+4/5 - 3/5 = (4-3)/5 = 1/5
+
+### answer: 1/5"
+4/5-3/5,Sub,ED,1/5,Claude Sonnet 4.6,3,1/5,True,"Since the denominators are the same, I can just subtract the numerators.
+
+4/5 - 3/5 = (4-3)/5 = 1/5
+
+### answer: 1/5"
+4/5-3/5,Sub,ED,1/5,Claude Sonnet 4.6,4,1/5,True,"Since the denominators are the same, I can just subtract the numerators: 4 - 3 = 1, and keep the denominator 5.
+
+### answer: 1/5"
+3/5-1/4,Sub,UD,7/20,Claude Sonnet 4.6,0,7/20,True,"To subtract these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 - 5/20 = 7/20
+
+### answer: 7/20"
+3/5-1/4,Sub,UD,7/20,Claude Sonnet 4.6,1,7/20,True,"To subtract these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 - 5/20 = 7/20
+
+### answer: 7/20"
+3/5-1/4,Sub,UD,7/20,Claude Sonnet 4.6,2,7/20,True,"To subtract these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 - 5/20 = 7/20
+
+### answer: 7/20"
+3/5-1/4,Sub,UD,7/20,Claude Sonnet 4.6,3,7/20,True,"To subtract these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 - 5/20 = 7/20
+
+### answer: 7/20"
+3/5-1/4,Sub,UD,7/20,Claude Sonnet 4.6,4,7/20,True,"To subtract these fractions, I need a common denominator. The LCD of 5 and 4 is 20.
+
+3/5 = 12/20
+1/4 = 5/20
+
+12/20 - 5/20 = 7/20
+
+### answer: 7/20"
+2/3-3/5,Sub,UD,1/15,Claude Sonnet 4.6,0,1/15,True,"To subtract these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 - 9/15 = 1/15
+
+### answer: 1/15"
+2/3-3/5,Sub,UD,1/15,Claude Sonnet 4.6,1,1/15,True,"To subtract these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 - 9/15 = 1/15
+
+### answer: 1/15"
+2/3-3/5,Sub,UD,1/15,Claude Sonnet 4.6,2,1/15,True,"To subtract these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 - 9/15 = 1/15
+
+### answer: 1/15"
+2/3-3/5,Sub,UD,1/15,Claude Sonnet 4.6,3,1/15,True,"To subtract these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 - 9/15 = 1/15
+
+### answer: 1/15"
+2/3-3/5,Sub,UD,1/15,Claude Sonnet 4.6,4,1/15,True,"To subtract these fractions, I need a common denominator. The LCD of 3 and 5 is 15.
+
+2/3 = 10/15
+3/5 = 9/15
+
+10/15 - 9/15 = 1/15
+
+### answer: 1/15"
+3/5*1/5,Mul,ED,3/25,Claude Sonnet 4.6,0,3/25,True,"I need to multiply 3/5 times 1/5.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+Numerators: 3 × 1 = 3
+Denominators: 5 × 5 = 25
+
+So the answer is 3/25.
+
+### answer: 3/25"
+3/5*1/5,Mul,ED,3/25,Claude Sonnet 4.6,1,3/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 5 = 25
+
+So 3/5 × 1/5 = 3/25
+
+### answer: 3/25"
+3/5*1/5,Mul,ED,3/25,Claude Sonnet 4.6,2,3/25,True,"I need to multiply 3/5 times 1/5.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+Numerators: 3 × 1 = 3
+Denominators: 5 × 5 = 25
+
+So the answer is 3/25.
+
+### answer: 3/25"
+3/5*1/5,Mul,ED,3/25,Claude Sonnet 4.6,3,3/25,True,"I need to multiply 3/5 times 1/5.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+Numerators: 3 × 1 = 3
+Denominators: 5 × 5 = 25
+
+So the answer is 3/25.
+
+### answer: 3/25"
+3/5*1/5,Mul,ED,3/25,Claude Sonnet 4.6,4,3/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 5 = 25
+
+### answer: 3/25"
+4/5*3/5,Mul,ED,12/25,Claude Sonnet 4.6,0,12/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+4 × 3 = 12
+5 × 5 = 25
+
+So 4/5 × 3/5 = 12/25. This fraction is already in simplest form since 12 and 25 share no common factors.
+
+### answer: 12/25"
+4/5*3/5,Mul,ED,12/25,Claude Sonnet 4.6,1,12/25,True,"I need to multiply these fractions together.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+4 × 3 = 12
+5 × 5 = 25
+
+So 4/5 × 3/5 = 12/25. This fraction is already in simplest form since 12 and 25 share no common factors.
+
+### answer: 12/25"
+4/5*3/5,Mul,ED,12/25,Claude Sonnet 4.6,2,12/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+4 × 3 = 12
+5 × 5 = 25
+
+So 4/5 × 3/5 = 12/25. This fraction is already in simplest form since 12 and 25 share no common factors.
+
+### answer: 12/25"
+4/5*3/5,Mul,ED,12/25,Claude Sonnet 4.6,3,12/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+4 × 3 = 12
+5 × 5 = 25
+
+So 4/5 × 3/5 = 12/25. This fraction is already in simplest form since 12 and 25 share no common factors.
+
+### answer: 12/25"
+4/5*3/5,Mul,ED,12/25,Claude Sonnet 4.6,4,12/25,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+4 × 3 = 12
+5 × 5 = 25
+
+So 4/5 × 3/5 = 12/25. This fraction is already in simplest form since 12 and 25 share no common factors.
+
+### answer: 12/25"
+3/5*1/4,Mul,UD,3/20,Claude Sonnet 4.6,0,3/20,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 4 = 20
+
+So 3/5 × 1/4 = 3/20, which can't be simplified any further.
+
+### answer: 3/20"
+3/5*1/4,Mul,UD,3/20,Claude Sonnet 4.6,1,3/20,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 4 = 20
+
+So the answer is 3/20, which can't be simplified further.
+
+### answer: 3/20"
+3/5*1/4,Mul,UD,3/20,Claude Sonnet 4.6,2,3/20,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 4 = 20
+
+So the answer is 3/20, which can't be simplified since 3 and 20 share no common factors.
+
+### answer: 3/20"
+3/5*1/4,Mul,UD,3/20,Claude Sonnet 4.6,3,3/20,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 4 = 20
+
+So the answer is 3/20, which is already in simplest form since 3 and 20 share no common factors.
+
+### answer: 3/20"
+3/5*1/4,Mul,UD,3/20,Claude Sonnet 4.6,4,3/20,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+3 × 1 = 3
+5 × 4 = 20
+
+So 3/5 × 1/4 = 3/20. This fraction is already in simplest form since 3 and 20 share no common factors.
+
+### answer: 3/20"
+2/3*3/5,Mul,UD,2/5,Claude Sonnet 4.6,0,2/5,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+2 × 3 = 6
+3 × 5 = 15
+
+So I get 6/15. I can simplify this by dividing both by 3: 6÷3 = 2 and 15÷3 = 5.
+
+### answer: 2/5"
+2/3*3/5,Mul,UD,2/5,Claude Sonnet 4.6,1,2/5,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+2 × 3 = 6
+3 × 5 = 15
+
+So I get 6/15. I can simplify this by dividing both by 3, which gives me 2/5.
+
+### answer: 2/5"
+2/3*3/5,Mul,UD,2/5,Claude Sonnet 4.6,2,2/5,True,"I need to multiply 2/3 times 3/5.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+Numerators: 2 × 3 = 6
+Denominators: 3 × 5 = 15
+
+So I get 6/15. I can simplify this by dividing both by 3, which gives me 2/5.
+
+### answer: 2/5"
+2/3*3/5,Mul,UD,2/5,Claude Sonnet 4.6,3,2/5,True,"To multiply fractions, I multiply the numerators together and the denominators together.
+
+2 × 3 = 6
+3 × 5 = 15
+
+So I get 6/15. Then I simplify by dividing both by 3: 6÷3 = 2, 15÷3 = 5.
+
+### answer: 2/5"
+2/3*3/5,Mul,UD,2/5,Claude Sonnet 4.6,4,2/5,True,"I need to multiply 2/3 × 3/5.
+
+To multiply fractions, I multiply the numerators together and the denominators together.
+
+Numerators: 2 × 3 = 6
+Denominators: 3 × 5 = 15
+
+So I get 6/15. I can simplify this by dividing both by 3, which gives me 2/5.
+
+### answer: 2/5"
+3/5:1/5,Div,ED,3,Claude Sonnet 4.6,0,3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+3/5 ÷ 1/5 = 3/5 × 5/1 = 15/5 = 3
+
+### answer: 3"
+3/5:1/5,Div,ED,3,Claude Sonnet 4.6,1,3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+3/5 ÷ 1/5 = 3/5 × 5/1 = 15/5 = 3
+
+### answer: 3"
+3/5:1/5,Div,ED,3,Claude Sonnet 4.6,2,3,True,"To divide fractions, I multiply by the reciprocal. So 3/5 ÷ 1/5 = 3/5 × 5/1 = 15/5 = 3.
+
+### answer: 3"
+3/5:1/5,Div,ED,3,Claude Sonnet 4.6,3,3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+3/5 ÷ 1/5 = 3/5 × 5/1 = 15/5 = 3
+
+### answer: 3"
+3/5:1/5,Div,ED,3,Claude Sonnet 4.6,4,3,True,"To divide fractions, I can multiply by the reciprocal. So 3/5 ÷ 1/5 = 3/5 × 5/1 = 15/5 = 3.
+
+### answer: 3"
+4/5:3/5,Div,ED,4/3,Claude Sonnet 4.6,0,4/3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+4/5 ÷ 3/5 = 4/5 × 5/3 = 20/15 = 4/3
+
+### answer: 4/3"
+4/5:3/5,Div,ED,4/3,Claude Sonnet 4.6,1,4/3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+4/5 ÷ 3/5 = 4/5 × 5/3 = 20/15 = 4/3
+
+### answer: 4/3"
+4/5:3/5,Div,ED,4/3,Claude Sonnet 4.6,2,4/3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+4/5 ÷ 3/5 = 4/5 × 5/3 = 20/15 = 4/3
+
+### answer: 4/3"
+4/5:3/5,Div,ED,4/3,Claude Sonnet 4.6,3,4/3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+4/5 ÷ 3/5 = 4/5 × 5/3 = 20/15
+
+Now I simplify: 20/15 = 4/3
+
+### answer: 4/3"
+4/5:3/5,Div,ED,4/3,Claude Sonnet 4.6,4,4/3,True,"To divide fractions, I multiply by the reciprocal of the second fraction.
+
+4/5 ÷ 3/5 = 4/5 × 5/3 = 20/15 = 4/3
+
+### answer: 4/3"
+3/5:1/4,Div,UD,12/5,Claude Sonnet 4.6,0,2/5,False,"To divide fractions, I flip the second fraction and multiply.
+
+3/5 ÷ 1/4 = 3/5 × 4/1 = 12/5
+
+I can convert this to a mixed number: 12/5 = 2 and 2/5.
+
+### answer: 12/5 (or 2 2/5)"
+3/5:1/4,Div,UD,12/5,Claude Sonnet 4.6,1,2/5,False,"To divide fractions, I flip the second fraction and multiply.
+
+3/5 ÷ 1/4 = 3/5 × 4/1 = 12/5
+
+I can convert this to a mixed number: 12/5 = 2 and 2/5.
+
+### answer: 12/5 (or 2 2/5)"
+3/5:1/4,Div,UD,12/5,Claude Sonnet 4.6,2,2/5,False,"To divide fractions, I flip the second fraction and multiply.
+
+3/5 ÷ 1/4 = 3/5 × 4/1 = 12/5
+
+I can convert this to a mixed number: 12/5 = 2 and 2/5.
+
+### answer: 12/5 (or 2 2/5)"
+3/5:1/4,Div,UD,12/5,Claude Sonnet 4.6,3,2/5,False,"To divide fractions, I flip the second fraction and multiply.
+
+3/5 ÷ 1/4 = 3/5 × 4/1 = 12/5
+
+I can convert this to a mixed number: 12/5 = 2 and 2/5.
+
+### answer: 12/5 (or 2 2/5)"
+3/5:1/4,Div,UD,12/5,Claude Sonnet 4.6,4,2/5,False,"To divide fractions, I flip the second fraction and multiply.
+
+3/5 ÷ 1/4 = 3/5 × 4/1 = 12/5
+
+I can convert this to a mixed number: 12/5 = 2 and 2/5.
+
+### answer: 12/5 (or 2 2/5)"
+2/3:3/5,Div,UD,10/9,Claude Sonnet 4.6,0,1/9,False,"To divide fractions, I flip the second fraction and multiply.
+
+2/3 ÷ 3/5 = 2/3 × 5/3 = 10/9
+
+I can convert this to a mixed number: 10/9 = 1 and 1/9.
+
+### answer: 10/9 (or 1 1/9)"
+2/3:3/5,Div,UD,10/9,Claude Sonnet 4.6,1,1/9,False,"To divide fractions, I flip the second fraction and multiply.
+
+2/3 ÷ 3/5 = 2/3 × 5/3 = 10/9
+
+I can convert this to a mixed number: 10/9 = 1 and 1/9.
+
+### answer: 10/9 (or 1 1/9)"
+2/3:3/5,Div,UD,10/9,Claude Sonnet 4.6,2,10/9,True,"To divide fractions, I flip the second fraction and multiply.
+
+2/3 ÷ 3/5 = 2/3 × 5/3 = (2×5)/(3×3) = 10/9
+
+I can also write this as a mixed number: 10/9 = 1 and 1/9.
+
+### answer: 10/9"
+2/3:3/5,Div,UD,10/9,Claude Sonnet 4.6,3,1/9,False,"I need to divide 2/3 by 3/5.
+
+Dividing by a fraction means multiplying by its reciprocal. So I flip 3/5 to get 5/3.
+
+2/3 × 5/3 = 10/9
+
+I can convert this to a mixed number: 10/9 = 1 and 1/9.
+
+### answer: 10/9 (or 1 1/9)"
+2/3:3/5,Div,UD,10/9,Claude Sonnet 4.6,4,1/9,False,"To divide fractions, I flip the second fraction and multiply.
+
+2/3 ÷ 3/5 = 2/3 × 5/3
+
+Multiply the numerators: 2 × 5 = 10
+Multiply the denominators: 3 × 3 = 9
+
+So I get 10/9, which equals 1 and 1/9.
+
+### answer: 10/9 (or 1 1/9)"
