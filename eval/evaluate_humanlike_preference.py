@@ -12,7 +12,7 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from procedural_alignment import human_likeness_preference as hlp
+from eval import human_likeness_preference as hlp
 
 try:
     from eval import eval_utils as eu
@@ -77,14 +77,13 @@ def preflight_error_message(missing: Sequence[str]) -> str:
         "Missing humanlike-preference source files:",
         *[f"- {item}" for item in missing],
         "",
-        "Generate the panel25 distilled baseline with:",
-        "  CHECKPOINT_DIR=<distilled_checkpoint_dir> LAUNCH=1 procedural_alignment/submit_human_ft_fraction_eval.sh",
+        "Provide the distilled baseline with --baseline-csv. Expected baseline columns:",
+        "  prob, generation_text, pred_answer",
         "",
-        "Generate frontier max-prompt comparison files with commands like:",
-        "  python -m procedural_alignment.sandbox_human_ft_inference --backend sandbox --api_style portkey --model gemini-2.5-flash --split all --sample_unit problems --samples_per_target 250 --prompt_style max --temperature 0.7 --top_p 0.95 --max_tokens 512 --out_dir results/procedural_alignment/frontier_human_ft_max_prompt/gemini_2p5_flash_2000",
-        "  python -m procedural_alignment.sandbox_human_ft_inference --backend sandbox --api_style portkey --model gpt-4.1-mini --split all --sample_unit problems --samples_per_target 250 --prompt_style max --temperature 0.7 --top_p 0.95 --max_tokens 512 --out_dir results/procedural_alignment/frontier_human_ft_max_prompt/gpt_4p1_mini_2000",
+        "Provide each frontier comparison with --comparison. Expected comparison columns:",
+        "  prob, model_response, parsed_answer, request_id",
         "",
-        "If those runs show truncation, run the existing repair/merge commands from procedural_alignment/README.md, then rerun this script.",
+        "The standalone preference judge can run once those CSVs are present.",
     ]
     return "\n".join(lines)
 

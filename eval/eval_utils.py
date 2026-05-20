@@ -18,8 +18,8 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from procedural_alignment import frontier_arithmetic_baseline as fab
-from procedural_alignment.strategy_mapping import map_sp2013_strat_to_family
+from eval import frontier_arithmetic_baseline as fab
+from eval.strategy_mapping import map_sp2013_strat_to_family
 
 EVAL_DIR = ROOT_DIR / "eval"
 DEFAULT_FRONTIER_OUTPUTS_DIR = EVAL_DIR / "outputs"
@@ -32,7 +32,7 @@ DEFAULT_UMA_CSV = (
     / "uma_cognitive_model_sp2013_bss2021_20260516"
     / "uma_cognitive_model_sp2013_bss2021_trials.csv.gz"
 )
-DEFAULT_FRACTION_HUMAN_CSV = ROOT_DIR / "data" / "siegler_fraction_human.csv"
+DEFAULT_FRACTION_HUMAN_CSV = EVAL_DIR / "data" / "siegler_fraction_human.csv"
 CENTAUR_SOURCE_KEY = "centaur_70b"
 
 FRACTION_DOMAINS = ("fraction",)
@@ -369,7 +369,12 @@ def load_all_sources(
 ) -> list[SourceFrame]:
     sources: list[SourceFrame] = []
     if include_frontier:
-        sources.extend(load_frontier_sources(frontier_outputs_dir, domains))
+        frontier_sources = load_frontier_sources(frontier_outputs_dir, domains)
+        if not include_centaur:
+            frontier_sources = [
+                source for source in frontier_sources if source.source_family != "centaur"
+            ]
+        sources.extend(frontier_sources)
     if include_centaur:
         sources.extend(load_centaur_sources(centaur_fraction_csv, centaur_decimal_csv, domains))
     if include_uma:

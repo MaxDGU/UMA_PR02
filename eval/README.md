@@ -2,11 +2,19 @@
 
 This folder keeps the shared frontier arithmetic problem sets, inference runner,
 stable CSV outputs, and reproducible NeurIPS evaluation entrypoints together.
+It is self-contained for the shared frontier/Centaur evaluations: the former
+`procedural_alignment` helpers used by these entrypoints have been migrated
+into standalone scripts in this folder.
 
 ## Data
 
 - `data/fraction_problems.csv`: 16 SP2013 fraction problems.
 - `data/decimal_problems.csv`: 12 BSS2021 decimal problems.
+- `data/siegler_fraction_human.csv`: SP2013 human accuracy and coarse
+  strategy-reference data for MAE-H, MAG-H, and procedural summaries.
+- `data/human_ft/data_train.csv` and `data/human_ft/data_val.csv`: fraction
+  human-FT references used only when the standalone strategy extractor is run
+  with human few-shot examples or no `--input_csv`.
 
 The `prob` column is the canonical prompt used by default. Fraction data also
 includes:
@@ -40,6 +48,17 @@ python eval/run_inference.py \
 
 By default, completed runs are copied into `eval/outputs/<domain>/<model>.csv`.
 Sandbox models need `AI_SANDBOX_KEY`; Gemini models need `GEMINI_API_KEY`.
+
+The lower-level standalone runner is also available directly:
+
+```bash
+python eval/frontier_arithmetic_baseline.py \
+  --domain fraction \
+  --backend gemini \
+  --model gemini-2.5-flash \
+  --model_label "Gemini 2.5 Flash" \
+  --samples_per_problem 5
+```
 
 Sync saved Centaur runs into the same stable output layout:
 
@@ -82,6 +101,18 @@ For a prompt-only dry run:
 python eval/evaluate_procedural_alignment.py --backend requests --max-rows 4
 ```
 
+The lower-level standalone strategy extractor is available as:
+
+```bash
+python eval/fraction_strategy_extraction.py \
+  --input_csv eval/outputs/fraction/centaur_70b.csv \
+  --problem_col problem \
+  --trace_col model_response \
+  --answer_col parsed_answer \
+  --backend requests \
+  --max_rows 4
+```
+
 Run humanlike preference judging for the original distilled-vs-frontier
 human-FT comparison:
 
@@ -91,7 +122,15 @@ python eval/evaluate_humanlike_preference.py
 
 This script preflights the required 8-problem distilled/frontier source files
 before calling the judge. If those files are missing, it prints the exact paths
-and generation commands to run first.
+and expected CSV schemas.
+
+The lower-level standalone preference judge is available as:
+
+```bash
+python eval/human_likeness_preference.py --backend requests \
+  --baseline_csv <baseline.csv> \
+  --comparison name=frontier,path=<frontier.csv>
+```
 
 Run all stages through one entrypoint:
 

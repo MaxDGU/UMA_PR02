@@ -15,8 +15,8 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from procedural_alignment import fraction_strategy_extraction as fse
-from procedural_alignment.strategy_mapping import map_human_fraction_code_to_family
+from eval import fraction_strategy_extraction as fse
+from eval.strategy_mapping import map_human_fraction_code_to_family
 
 try:
     from eval import eval_utils as eu

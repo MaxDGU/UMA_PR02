@@ -23,7 +23,7 @@ OUTPUTS_DIR = EVAL_DIR / "outputs"
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from procedural_alignment import frontier_arithmetic_baseline as fab  # noqa: E402
+from eval import frontier_arithmetic_baseline as fab  # noqa: E402
 
 
 @dataclass(frozen=True)
