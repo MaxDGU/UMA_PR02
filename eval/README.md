@@ -85,6 +85,25 @@ These are the configurations reported in the paper's accuracy-profile alignment
 results. Model checkpoints (LoRA adapters) are not pushed to the repo
 (>100 MB per file); contact Max if you need them.
 
+## Frontier Baseline Sample Counts
+
+The frontier baselines used in the paper's accuracy-profile alignment figure
+were sampled 100 times per problem (fractions) or 120 times per problem
+(decimals) at $T{=}1.0$. Current sample counts in this folder:
+
+| Model | `outputs/fraction/` | `outputs/decimal/` |
+|---|---|---|
+| Centaur-70B            | 100 | 100 |
+| Claude Sonnet 4.6      | 100 | 120 |
+| Gemini 3 Flash         | 100 | 120 |
+| GPT-5.5 low            | 100 | 120 |
+| Gemini 2.5 Flash       | 5   | 120 |
+| GPT-4.1 mini           | 5   | 120 |
+
+The two 5-sample fraction files (Gemini 2.5 Flash, GPT-4.1 mini) are from an
+earlier sampling batch and have not been re-run at $100$ samples; the paper's
+figure uses these models only on the decimal panel.
+
 ## NeurIPS Evaluations
 
 Run answer-error alignment on saved outputs:
