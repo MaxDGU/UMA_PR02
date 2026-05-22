@@ -70,6 +70,21 @@ This writes `eval/outputs/fraction/centaur_70b.csv`,
 `eval/outputs/decimal/centaur_70b.csv`, and the 8-problem human-FT surface at
 `eval/outputs/fraction_humanft8/centaur_70b.csv`.
 
+## Our Distilled + Human-Finetuned Qwen3 Outputs
+
+Raw natural-language outputs from our cognitive-distillation + human-fine-tuned
+Qwen3 checkpoints, in the same schema as the frontier model CSVs (one row per
+problem-sample):
+
+- `outputs/fraction/qwen3_8b_distill_humanft.csv` — Qwen3-8B distill + humanFT
+  on the 16 SP2013 fraction problems (256 samples / problem, $T{=}1.0$).
+- `outputs/decimal/qwen3_4b_distill_humanft.csv` — Qwen3-4B distill + humanFT
+  on the 12 BSS2021 decimal problems (120 samples / problem, $T{=}1.0$).
+
+These are the configurations reported in the paper's accuracy-profile alignment
+results. Model checkpoints (LoRA adapters) are not pushed to the repo
+(>100 MB per file); contact Max if you need them.
+
 ## NeurIPS Evaluations
 
 Run answer-error alignment on saved outputs:
