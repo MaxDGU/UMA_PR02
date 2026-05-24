@@ -1,0 +1,1381 @@
+subjid,prob,resp,operation,operands,instruction_nl,response_nl,nl_source
+60011107,0.41*0.31,191,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I dropped the decimals and multiplied 41 by 31 and got 191. I left the decimal point where it looked right.
+### answer: 191",bss2021_real
+60011107,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60011107,31*3.2,18.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I dropped the decimals and multiplied 31 by 32 and got 18.2. Then I added up the digits after each decimal and placed the point.
+### answer: 18.2",bss2021_real
+60011107,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I dropped the decimals and multiplied 23 by 13 and got 299. Then I counted the decimal places in both numbers and moved the point over that many spots to get 0.299.
+### answer: 0.299",bss2021_real
+60011107,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+60011107,0.826+0.12,0.948,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.828 and 0.12 and added them and got .948. The decimal point lined up straight down.
+### answer: 0.948",bss2021_real
+60011107,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I treated them like whole numbers, so I multiplied 14 and 21 and got 294. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.94.
+### answer: 2.94",bss2021_real
+60011107,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I treated them like whole numbers, so I multiplied 24 and 12 and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.88.
+### answer: 2.88",bss2021_real
+60011107,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60011107,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60021107,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+60021107,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60021107,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60021107,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 02.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60021107,0.826+0.12,0.09912,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.09912. Then I counted the decimal places in both numbers and moved the point over that many spots. I think I mixed up the steps.
+### answer: 0.09912",bss2021_real
+60021107,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60021107,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 0.299. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 0.299",bss2021_real
+60021107,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60021107,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60021107,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+60041108,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 24.79",bss2021_real
+60041108,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.1271. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 0.1271",bss2021_real
+60041108,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 9.92. I wasn't sure where the decimal point went.
+### answer: 9.92",bss2021_real
+60041108,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60041108,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60041108,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 28.8",bss2021_real
+60041108,2.3*0.13,29.90,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 29.90. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 29.90",bss2021_real
+60041108,0.826+0.12,0.9460,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.9460. I left the decimal point where it looked right.
+### answer: 0.9460",bss2021_real
+60041108,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down. That was my answer.
+### answer: 52.415",bss2021_real
+60041108,14*0.21,294.00,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 1400 and 0.21 and got 294.00. Then I counted the decimal places in both numbers and moved the point over that many spots. I think I mixed up the steps.
+### answer: 294.00",bss2021_real
+60061108,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60061108,0.415+52,54.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 54.415",bss2021_real
+60061108,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60061108,2.3*0.13,29.6,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 1.3 and multiplied them and got 29.6. I wasn't sure where the decimal point went.
+### answer: 29.6",bss2021_real
+60061108,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60061108,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60061108,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 2.94",bss2021_real
+60061108,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 28.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 28.8",bss2021_real
+60061108,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60061108,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 2300 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60071113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60071113,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60071113,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down. So that was what I got.
+### answer: .946",bss2021_real
+60071113,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .299",bss2021_real
+60071113,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 1.2 and 2.4 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60071113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60071113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 2300 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60071113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60071113,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .1271",bss2021_real
+60071113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60091113,0.41*0.31,1.271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I ignored the decimal points and multiplied 41 and 31 as whole numbers and got 1271. I wasn't sure where the decimal point went. I had trouble with the place values.
+### answer: 1.271",bss2021_real
+60091113,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60091113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I dropped the decimals and multiplied 31 by 32 and got 992. Then I counted the decimal places in both numbers and moved the point over that many spots to get 99.2.
+### answer: 99.2",bss2021_real
+60091113,2.3*0.13,299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I treated them like whole numbers, so I multiplied 23 and 13 and got 299. I left the decimal point where it looked right. I had trouble with the place values.
+### answer: 299",bss2021_real
+60091113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60091113,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60091113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I ignored the decimal points and multiplied 14 and 21 as whole numbers and got 294. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.94. I had trouble with the place values.
+### answer: 2.94",bss2021_real
+60091113,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I dropped the decimals and multiplied 24 by 12 and got 288. Then I added up the digits after each decimal and placed the point to get 2.88. That was my answer.
+### answer: 2.88",bss2021_real
+60091113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60091113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60101113,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+60101113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60101113,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 288. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 2.88",bss2021_real
+60101113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 2.94",bss2021_real
+60101113,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.838. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.838",bss2021_real
+60101113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60101113,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 2.99. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 2.99",bss2021_real
+60101113,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 9.92. I left the decimal point where it looked right.
+### answer: 9.92",bss2021_real
+60101113,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.467",bss2021_real
+60101113,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+60111113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60111113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+60111113,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60111113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 2.94",bss2021_real
+60111113,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60111113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 24.79",bss2021_real
+60111113,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point.
+### answer: 0.299",bss2021_real
+60111113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 99.2",bss2021_real
+60111113,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+60111113,0.41*0.31,0.1251,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1251. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.1251",bss2021_real
+60121113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60121113,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60121113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60121113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60121113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60121113,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60121113,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.299",bss2021_real
+60121113,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60121113,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+60121113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 02.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+60131114,14*0.21,294,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 294.00. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 294",bss2021_real
+60131114,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60131114,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60131114,2.3*0.13,29.9,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 29.90. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 29.9",bss2021_real
+60131114,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 28.8",bss2021_real
+60131114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+60131114,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down. That was my answer.
+### answer: 28.61",bss2021_real
+60131114,31*3.2,992,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 992.0. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 992",bss2021_real
+60131114,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60131114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60141114,0.41*0.31,1.64,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 1.64. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 1.64",bss2021_real
+60141114,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+60141114,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 9.92. I wasn't sure where the decimal point went. I had trouble with the place values.
+### answer: 9.92",bss2021_real
+60141114,2.3*0.13,9.2,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 9.2. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 9.2",bss2021_real
+60141114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60141114,0.826+0.12,0.926,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.926. The decimal point lined up straight down.
+### answer: 0.926",bss2021_real
+60141114,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 02.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60141114,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60141114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60141114,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+60151114,14*0.21,29400,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I treated them like whole numbers, so I multiplied 1400 and 21 and got 29400. I left the decimal point where it looked right. I think I mixed up the steps.
+### answer: 29400",bss2021_real
+60151114,0.415+52,.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got .467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: .467",bss2021_real
+60151114,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down. That was my answer.
+### answer: .946",bss2021_real
+60151114,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 1.3 and got 2.99. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 2.99",bss2021_real
+60151114,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60151114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+60151114,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60151114,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60151114,0.41*0.31,1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1271. I wasn't sure where the decimal point went.
+### answer: 1271",bss2021_real
+60151114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60161114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60161114,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .1271",bss2021_real
+60161114,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60161114,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60161114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60161114,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60161114,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .299",bss2021_real
+60161114,0.826+0.12,.846,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got .846. The decimal point lined up straight down.
+### answer: .846",bss2021_real
+60161114,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60161114,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60171114,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60171114,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got nan. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60171114,31*3.2,62,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 62.0. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 62",bss2021_real
+60171114,2.3*0.13,6.9,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 6.9. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 6.9",bss2021_real
+60171114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60171114,0.826+0.12,0.949,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.949",bss2021_real
+60171114,14*0.21,14,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 14. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: 14",bss2021_real
+60171114,2.4*1.2,7,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I ignored the decimal points and multiplied 24 and 12 as whole numbers and got 7.0. I left the decimal point where it looked right.
+### answer: 7",bss2021_real
+60171114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60171114,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60181115,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+60181115,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+60181115,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60181115,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60181115,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60181115,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60181115,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 0.299. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 0.299",bss2021_real
+60181115,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 99.2",bss2021_real
+60181115,0.415+52,0.935,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 0.52 and added them and got 0.935. The decimal point lined up straight down.
+### answer: 0.935",bss2021_real
+60181115,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+60201115,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60201115,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.31 and 0.41 and got .1271. Then I added up the digits after each decimal and placed the point.
+### answer: .1271",bss2021_real
+60201115,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60201115,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down. That was my answer.
+### answer: 28.61",bss2021_real
+60201115,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60201115,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60201115,2.3*0.13,.2990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .2990. I left the decimal point where it looked right.
+### answer: .2990",bss2021_real
+60201115,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60201115,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60201115,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.9400. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 2.94",bss2021_real
+60211118,14*0.21,19.4,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 19.400. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 19.4",bss2021_real
+60211118,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down. So that was what I got.
+### answer: 52.415",bss2021_real
+60211118,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60211118,2.3*0.13,9.03,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 9.03. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 9.03",bss2021_real
+60211118,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60211118,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+60211118,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60211118,31*3.2,99.20,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.20. I wasn't sure where the decimal point went. So that was what I got.
+### answer: 99.20",bss2021_real
+60211118,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60211118,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60221118,0.41*0.31,.1251,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got .1251. Then I counted the decimal places in both numbers and moved the point over that many spots. I had trouble with the place values.
+### answer: .1251",bss2021_real
+60221118,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60221118,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60221118,2.3*0.13,.4990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0.4990. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: .4990",bss2021_real
+60221118,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60221118,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down. That was my answer.
+### answer: 0.946",bss2021_real
+60221118,14*0.21,1.12,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 1.12. Then I added up the digits after each decimal and placed the point.
+### answer: 1.12",bss2021_real
+60221118,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60221118,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60221118,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60231118,14*0.21,1.04,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 21 and 14 and multiplied them and got 1.04. Then I added up the digits after each decimal and placed the point.
+### answer: 1.04",bss2021_real
+60231118,0.415+52,.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got .467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: .467",bss2021_real
+60231118,0.826+0.12,8.38,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 8.38. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 8.38",bss2021_real
+60231118,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 1.3 and got 2.99. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+60231118,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 28.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 28.8",bss2021_real
+60231118,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60231118,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+60231118,31*3.2,155,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 155. I left the decimal point where it looked right.
+### answer: 155",bss2021_real
+60231118,0.41*0.31,1.63,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 1.63. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 1.63",bss2021_real
+60231118,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+60241118,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60241118,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+60241118,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60241118,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 0.23 and got 5.84. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+60241118,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+60241118,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60241118,2.3*0.13,0.199,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 0.199. Then I counted the decimal places in both numbers and moved the point over that many spots. I wasn't sure if that was the right method.
+### answer: 0.199",bss2021_real
+60241118,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60241118,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 0.052 and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+60241118,14*0.21,02.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 02.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 02.94",bss2021_real
+60301121,0.41*0.31,1.271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.271. I left the decimal point where it looked right.
+### answer: 1.271",bss2021_real
+60301121,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52000 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60301121,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 992. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60301121,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 2.99. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+60301121,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+60301121,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60301121,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 294. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+60301121,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60301121,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60301121,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 2300 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60311202,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60311202,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60311202,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60311202,2.3*0.13,0.923,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 923. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.923",bss2021_real
+60311202,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 2.88",bss2021_real
+60311202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+60311202,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60311202,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60311202,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1271. Then I added up the digits after each decimal and placed the point.
+### answer: .1271",bss2021_real
+60311202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60321202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60321202,0.41*0.31,1.21,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.21. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 1.21",bss2021_real
+60321202,31*3.2,90.32,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 903.2. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 90.32",bss2021_real
+60321202,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60321202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60321202,2.4*1.2,2.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.8. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 2.8",bss2021_real
+60321202,2.3*0.13,11.30,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 11.30. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 11.30",bss2021_real
+60321202,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down. That was my answer.
+### answer: .946",bss2021_real
+60321202,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down. So that was what I got.
+### answer: 52.415",bss2021_real
+60321202,14*0.21,14.21,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 14.21. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 14.21",bss2021_real
+60331202,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I treated them like whole numbers, so I multiplied 41 and 31 and got 1271. Then I added up the digits after each decimal and placed the point to get .1271. So that was what I got.
+### answer: .1271",bss2021_real
+60331202,0.415+52,.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I dropped the decimals and added 415 and 52 and got 467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: .467",bss2021_real
+60331202,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 32 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60331202,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I ignored the decimal points and multiplied 23 and 13 as whole numbers and got 299. Then I added up the digits after each decimal and placed the point to get .299.
+### answer: .299",bss2021_real
+60331202,24.45+0.34,.2479,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I ignored the decimal points and added 2445 and 34 as whole numbers and got .2479. Then I added up the digits after each decimal and placed the point. I wasn't sure if that was the right method.
+### answer: .2479",bss2021_real
+60331202,0.826+0.12,.00838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I treated them like whole numbers, so I added 826 and 12 and got .00838. Then I counted the decimal places in both numbers and moved the point over that many spots. I wasn't sure if that was the right method.
+### answer: .00838",bss2021_real
+60331202,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 21 and 14 and multiplied them and got 294. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 2.94",bss2021_real
+60331202,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I treated them like whole numbers, so I multiplied 24 and 12 and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.88.
+### answer: 2.88",bss2021_real
+60331202,12.3+5.6,1.79,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I treated them like whole numbers, so I added 123 and 56 and got 1.79. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 1.79",bss2021_real
+60331202,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I dropped the decimals and added 561 and 23 and got 584. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+60341202,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60341202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60341202,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 28.8",bss2021_real
+60341202,14*0.21,294.,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 1400 and 0.21 and got 00294.00. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 294.",bss2021_real
+60341202,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: .946",bss2021_real
+60341202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60341202,2.3*0.13,29.90,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 029.90. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 29.90",bss2021_real
+60341202,31*3.2,992.,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I ignored the decimal points and multiplied 310 and 3.2 as whole numbers and got 992. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 992.",bss2021_real
+60341202,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down. That was my answer.
+### answer: 52.415",bss2021_real
+60341202,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 012.71. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+60351202,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60351202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60351202,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60351202,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 02.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60351202,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60351202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60351202,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 2.99. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+60351202,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60351202,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60351202,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.1271",bss2021_real
+60361202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60361202,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.1271",bss2021_real
+60361202,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60361202,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60361202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60361202,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60361202,2.3*0.13,0.2990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 2990. I left the decimal point where it looked right.
+### answer: 0.2990",bss2021_real
+60361202,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60361202,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60361202,14*0.21,2.9400,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 29400. I left the decimal point where it looked right. That was my answer.
+### answer: 2.9400",bss2021_real
+60371202,14*0.21,02.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 02.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 02.94",bss2021_real
+60371202,0.415+52,10.337,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 10.337. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 10.337",bss2021_real
+60371202,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60371202,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.299",bss2021_real
+60371202,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60371202,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60371202,5.61+23,5.83,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.83. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.83",bss2021_real
+60371202,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 99.2",bss2021_real
+60371202,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.1271. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 0.1271",bss2021_real
+60371202,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60401203,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60401203,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I dropped the decimals and multiplied 41 by 31 and got 1271. Then I added up the digits after each decimal and placed the point to get 0.1271. I had trouble with the place values.
+### answer: 0.1271",bss2021_real
+60401203,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I treated them like whole numbers, so I multiplied 31 and 32 and got 992. Then I counted the decimal places in both numbers and moved the point over that many spots to get 99.2. That was my answer.
+### answer: 99.2",bss2021_real
+60401203,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60401203,12.3+5.6,17.90,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 5.6 and 12.3 and got 17.90. Then I added up the digits after each decimal and placed the point.
+### answer: 17.90",bss2021_real
+60401203,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I treated them like whole numbers, so I multiplied 24 and 12 and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.88.
+### answer: 2.88",bss2021_real
+60401203,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I ignored the decimal points and multiplied 23 and 13 as whole numbers and got 299. Then I added up the digits after each decimal and placed the point to get 0.299. So that was what I got.
+### answer: 0.299",bss2021_real
+60401203,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60401203,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60401203,14*0.21,1.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I ignored the decimal points and multiplied 14 and 21 as whole numbers and got 1.94. Then I added up the digits after each decimal and placed the point.
+### answer: 1.94",bss2021_real
+60411203,0.41*0.31,4.64,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 4.64. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 4.64",bss2021_real
+60411203,0.415+52,0.0467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.0467. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 0.0467",bss2021_real
+60411203,31*3.2,6.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 6.92. I wasn't sure where the decimal point went.
+### answer: 6.92",bss2021_real
+60411203,2.3*0.13,0.2990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0.2990. I wasn't sure where the decimal point went.
+### answer: 0.2990",bss2021_real
+60411203,24.45+0.34,8.3130,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 8.3130. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 8.3130",bss2021_real
+60411203,0.826+0.12,11.852,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 11.8520. The decimal point lined up straight down.
+### answer: 11.852",bss2021_real
+60411203,14*0.21,0.0281,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.14 and 0.21 and multiplied them and got 0.0281. I left the decimal point where it looked right.
+### answer: 0.0281",bss2021_real
+60411203,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60411203,12.3+5.6,1.79,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 179. Then I added up the digits after each decimal and placed the point. I wasn't sure if that was the right method.
+### answer: 1.79",bss2021_real
+60411203,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+60421203,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down. So that was what I got.
+### answer: 28.61",bss2021_real
+60421203,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60421203,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I treated them like whole numbers, so I multiplied 24 and 12 and got 288. Then I added up the digits after each decimal and placed the point to get 2.88.
+### answer: 2.88",bss2021_real
+60421203,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I dropped the decimals and multiplied 14 by 21 and got 294. Then I added up the digits after each decimal and placed the point to get 2.94. That was my answer.
+### answer: 2.94",bss2021_real
+60421203,0.826+0.12,.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.012 and added them and got .838. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: .838",bss2021_real
+60421203,24.45+0.34,24.80,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 35 and got 24.80. The decimal point lined up straight down.
+### answer: 24.80",bss2021_real
+60421203,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I ignored the decimal points and multiplied 23 and 13 as whole numbers and got 299. Then I added up the digits after each decimal and placed the point to get .299.
+### answer: .299",bss2021_real
+60421203,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 32 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60421203,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60421203,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I treated them like whole numbers, so I multiplied 41 and 31 and got 1271. Then I added up the digits after each decimal and placed the point to get .1271. It seemed off because multiplying should make the number bigger.
+### answer: .1271",bss2021_real
+60441209,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60441209,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I ignored the decimal points and multiplied 41 and 31 as whole numbers and got 1271. Then I added up the digits after each decimal and placed the point to get 0.1271.
+### answer: 0.1271",bss2021_real
+60441209,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I treated them like whole numbers, so I multiplied 31 and 32 and got 992. Then I added up the digits after each decimal and placed the point to get 99.2.
+### answer: 99.2",bss2021_real
+60441209,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down. So that was what I got.
+### answer: 28.61",bss2021_real
+60441209,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. So that was what I got.
+### answer: 17.9",bss2021_real
+60441209,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I ignored the decimal points and multiplied 24 and 12 as whole numbers and got 288. Then I added up the digits after each decimal and placed the point to get 2.88.
+### answer: 2.88",bss2021_real
+60441209,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I dropped the decimals and multiplied 2.3 by 13 and got 0.299. Then I added up the digits after each decimal and placed the point.
+### answer: 0.299",bss2021_real
+60441209,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60441209,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down. So that was what I got.
+### answer: 52.415",bss2021_real
+60441209,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I dropped the decimals and multiplied 14 by 21 and got 294. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.94.
+### answer: 2.94",bss2021_real
+60451209,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60451209,0.415+52,.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got .467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: .467",bss2021_real
+60451209,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down.
+### answer: .946",bss2021_real
+60451209,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .299",bss2021_real
+60451209,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60451209,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60451209,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60451209,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 99.2",bss2021_real
+60451209,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots. So that was what I got.
+### answer: .1271",bss2021_real
+60451209,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+60461216,0.41*0.31,1.21,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.21. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 1.21",bss2021_real
+60461216,0.415+52,5.615,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 5.2 and got 5.615. The decimal point lined up straight down.
+### answer: 5.615",bss2021_real
+60461216,31*3.2,9.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.1 and 3.2 and got 9.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 9.2",bss2021_real
+60461216,2.3*0.13,0.30,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.30. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 0.30",bss2021_real
+60461216,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60461216,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60461216,14*0.21,0.80,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 1.4 and multiplied them and got 0.80. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.80",bss2021_real
+60461216,2.4*1.2,2.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.8. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 2.8",bss2021_real
+60461216,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60461216,5.61+23,7.91,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 2.3 and added them and got 7.91. The decimal point lined up straight down.
+### answer: 7.91",bss2021_real
+60480212,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I dropped the decimals and added 24.45 and 34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60480212,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I dropped the decimals and multiplied 41 by 31 and got 1271. Then I added up the digits after each decimal and placed the point to get 0.1271.
+### answer: 0.1271",bss2021_real
+60480212,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60480212,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down. That was my answer.
+### answer: 28.61",bss2021_real
+60480212,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60480212,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 2.88",bss2021_real
+60480212,2.3*0.13,.0299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I treated them like whole numbers, so I multiplied 2.3 and 13 and got .0299. I wasn't sure where the decimal point went.
+### answer: .0299",bss2021_real
+60480212,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.838. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.838",bss2021_real
+60480212,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60480212,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I treated them like whole numbers, so I multiplied 14 and 21 and got 294. Then I added up the digits after each decimal and placed the point to get 2.94. That was my answer.
+### answer: 2.94",bss2021_real
+60490212,0.41*0.31,"1,271",Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I dropped the decimals and multiplied 41 by 31 and got 1271. I left the decimal point where it looked right.
+### answer: 1,271",bss2021_real
+60490212,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60490212,31*3.2,992,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I dropped the decimals and multiplied 31 by 32 and got 992. I wasn't sure where the decimal point went.
+### answer: 992",bss2021_real
+60490212,2.3*0.13,299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I dropped the decimals and multiplied 23 by 13 and got 299. I wasn't sure where the decimal point went.
+### answer: 299",bss2021_real
+60490212,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+60490212,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60490212,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I dropped the decimals and multiplied 14 by 21 and got 294. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.94.
+### answer: 2.94",bss2021_real
+60490212,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I ignored the decimal points and multiplied 24 and 12 as whole numbers and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.88.
+### answer: 2.88",bss2021_real
+60490212,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60490212,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60500212,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down. So that was what I got.
+### answer: 28.61",bss2021_real
+60500212,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60500212,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60500212,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60500212,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.838. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.838",bss2021_real
+60500212,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+60500212,2.3*0.13,.249,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got .249. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .249",bss2021_real
+60500212,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60500212,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60500212,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .1271",bss2021_real
+60510212,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+60510212,12.3+5.6,17.8,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.8. The decimal point lined up straight down.
+### answer: 17.8",bss2021_real
+60510212,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60510212,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+60510212,0.826+0.12,0.0838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .0838. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: 0.0838",bss2021_real
+60510212,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60510212,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point.
+### answer: 0.299",bss2021_real
+60510212,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 99.2",bss2021_real
+60510212,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.467",bss2021_real
+60510212,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.1271",bss2021_real
+60520213,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60520213,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+60520213,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+60520213,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60520213,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60520213,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+60520213,2.3*0.13,29.9,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 29.90. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 29.9",bss2021_real
+60520213,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down. That was my answer.
+### answer: .946",bss2021_real
+60520213,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+60520213,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 2.94",bss2021_real
+60540219,0.41*0.31,12.70,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.70. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.70",bss2021_real
+60540219,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got nan. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+60540219,31*3.2,92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 92. I left the decimal point where it looked right.
+### answer: 92",bss2021_real
+60540219,2.3*0.13,299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 299. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: 299",bss2021_real
+60540219,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60540219,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down. So that was what I got.
+### answer: 0.946",bss2021_real
+60540219,14*0.21,29.4,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 29.4. I wasn't sure where the decimal point went.
+### answer: 29.4",bss2021_real
+60540219,2.4*1.2,7.2,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I treated them like whole numbers, so I multiplied 24 and 12 and got 7.2. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 7.2",bss2021_real
+60540219,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60540219,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got nan. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+60550219,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+60550219,0.415+52,0.471,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.471. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.471",bss2021_real
+60550219,0.826+0.12,0.00838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.00838. Then I counted the decimal places in both numbers and moved the point over that many spots. I wasn't sure if that was the right method.
+### answer: 0.00838",bss2021_real
+60550219,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 0.299",bss2021_real
+60550219,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+60550219,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60550219,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+60550219,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+60550219,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+60550219,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60560219,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+60560219,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.1271",bss2021_real
+60560219,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I added up the digits after each decimal and placed the point. So that was what I got.
+### answer: 99.2",bss2021_real
+60560219,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5 and got 28. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+60560219,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+60560219,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 2.88",bss2021_real
+60560219,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 0.299. Then I added up the digits after each decimal and placed the point.
+### answer: 0.299",bss2021_real
+60560219,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.12 and 0.826 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+60560219,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got nan. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+60560219,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 14 and 0.21 and multiplied them and got 2.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80021113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5 and added them and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80021113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80021113,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 28.8",bss2021_real
+80021113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+80021113,0.826+0.12,0.0838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.0838. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: 0.0838",bss2021_real
+80021113,24.45+0.34,20.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 20.79. The decimal point lined up straight down.
+### answer: 20.79",bss2021_real
+80021113,2.3*0.13,29.90,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 29.90. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 29.90",bss2021_real
+80021113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+80021113,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+80021113,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+80051114,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+80051114,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+80051114,0.826+0.12,0.00838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.00838. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 0.00838",bss2021_real
+80051114,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 0.299",bss2021_real
+80051114,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 28.8. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 28.8",bss2021_real
+80051114,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+80051114,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80051114,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+80051114,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 1271. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+80051114,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80061115,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+80061115,0.415+52,0.935,Add,D-W,Solve this decimal problem: 0.415+52=?,"I ignored the decimal points and added 0.415 and 520 as whole numbers and got 0.935. The decimal point lined up straight down.
+### answer: 0.935",bss2021_real
+80061115,31*3.2,1280,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 1280. I left the decimal point where it looked right.
+### answer: 1280",bss2021_real
+80061115,2.3*0.13,26.39,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 2639. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 26.39",bss2021_real
+80061115,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+80061115,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80061115,14*0.21,3.20,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 320. Then I added up the digits after each decimal and placed the point.
+### answer: 3.20",bss2021_real
+80061115,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+80061115,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80061115,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+80071120,14*0.21,0.294,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 0.294. I wasn't sure where the decimal point went.
+### answer: 0.294",bss2021_real
+80071120,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.467",bss2021_real
+80071120,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.838. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.838",bss2021_real
+80071120,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 0.299. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 0.299",bss2021_real
+80071120,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots. So that was what I got.
+### answer: 2.88",bss2021_real
+80071120,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80071120,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+80071120,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+80071120,0.41*0.31,1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. I left the decimal point where it looked right.
+### answer: 1271",bss2021_real
+80071120,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80081120,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+80081120,0.41*0.31,43.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 43.71. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 43.71",bss2021_real
+80081120,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I treated them like whole numbers, so I multiplied 31 and 32 and got 992. Then I counted the decimal places in both numbers and moved the point over that many spots to get 99.2.
+### answer: 99.2",bss2021_real
+80081120,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80081120,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+80081120,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+80081120,2.3*0.13,06.7,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 06.70. I wasn't sure where the decimal point went.
+### answer: 06.7",bss2021_real
+80081120,0.826+0.12,0.940,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.940. The decimal point lined up straight down.
+### answer: 0.940",bss2021_real
+80081120,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80081120,14*0.21,02.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 02.94. Then I added up the digits after each decimal and placed the point. That was my answer.
+### answer: 02.94",bss2021_real
+80091120,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+80091120,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.467. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.467",bss2021_real
+80091120,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 9.92. I left the decimal point where it looked right. I had trouble with the place values.
+### answer: 9.92",bss2021_real
+80091120,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point. I had trouble with the place values.
+### answer: 0.299",bss2021_real
+80091120,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80091120,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.838. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 0.838",bss2021_real
+80091120,14*0.21,0.294,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 0.294. I left the decimal point where it looked right.
+### answer: 0.294",bss2021_real
+80091120,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point. I had trouble with the place values.
+### answer: 2.88",bss2021_real
+80091120,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80091120,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+80101209,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80101209,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80101209,2.4*1.2,7.0,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 7.0. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 7.0",bss2021_real
+80101209,14*0.21,0.42,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 0.42. Then I added up the digits after each decimal and placed the point.
+### answer: 0.42",bss2021_real
+80101209,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.838. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.838",bss2021_real
+80101209,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80101209,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 2.990. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+80101209,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+80101209,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80101209,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+80111210,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80111210,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80111210,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 28.8",bss2021_real
+80111210,14*0.21,294,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 294.00. I left the decimal point where it looked right. I wasn't sure if that was the right method.
+### answer: 294",bss2021_real
+80111210,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80111210,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+80111210,2.3*0.13,8.39,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 8.39. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 8.39",bss2021_real
+80111210,31*3.2,15.6,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 15.6. Then I counted the decimal places in both numbers and moved the point over that many spots. I think I mixed up the steps.
+### answer: 15.6",bss2021_real
+80111210,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80111210,0.41*0.31,12.30,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.30. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 12.30",bss2021_real
+80121210,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80121210,0.41*0.31,2.3,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 02.30. I wasn't sure where the decimal point went.
+### answer: 2.3",bss2021_real
+80121210,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+80121210,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80121210,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80121210,2.4*1.2,7.2,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 7.2. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 7.2",bss2021_real
+80121210,2.3*0.13,9.2,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 9.2. I left the decimal point where it looked right.
+### answer: 9.2",bss2021_real
+80121210,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80121210,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got nan. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80121210,14*0.21,3.01,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.021 and got 3.01. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 3.01",bss2021_real
+80131210,14*0.21,21.84,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 21.84. Then I added up the digits after each decimal and placed the point.
+### answer: 21.84",bss2021_real
+80131210,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80131210,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80131210,2.3*0.13,0.92,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0.92. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 0.92",bss2021_real
+80131210,2.4*1.2,7.2,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 7.2. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 7.2",bss2021_real
+80131210,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+80131210,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80131210,31*3.2,15.5,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 15.5. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 15.5",bss2021_real
+80131210,0.41*0.31,1.64,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.64. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 1.64",bss2021_real
+80131210,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I took 24.45 and 0.34 and added them and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80141210,0.41*0.31,13.21,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I treated them like whole numbers, so I multiplied 41 and 31 and got 13.21. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 13.21",bss2021_real
+80141210,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down. So that was what I got.
+### answer: 52.415",bss2021_real
+80141210,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I ignored the decimal points and multiplied 31 and 32 as whole numbers and got 992. Then I added up the digits after each decimal and placed the point to get 99.2.
+### answer: 99.2",bss2021_real
+80141210,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I treated them like whole numbers, so I multiplied 23 and 13 and got 299. Then I counted the decimal places in both numbers and moved the point over that many spots to get 0.299.
+### answer: 0.299",bss2021_real
+80141210,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80141210,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80141210,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I ignored the decimal points and multiplied 14 and 21 as whole numbers and got 294. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.94.
+### answer: 2.94",bss2021_real
+80141210,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I ignored the decimal points and multiplied 24 and 12 as whole numbers and got 288. Then I counted the decimal places in both numbers and moved the point over that many spots to get 2.88.
+### answer: 2.88",bss2021_real
+80141210,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80141210,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80161211,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80161211,0.41*0.31,1.64,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.64. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 1.64",bss2021_real
+80161211,31*3.2,15.5,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 15.5. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 15.5",bss2021_real
+80161211,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80161211,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80161211,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+80161211,2.3*0.13,.2990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .2990. I wasn't sure where the decimal point went.
+### answer: .2990",bss2021_real
+80161211,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down.
+### answer: .946",bss2021_real
+80161211,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+80161211,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.9400. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+80181213,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+80181213,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80181213,2.4*1.2,2.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.8. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 2.8",bss2021_real
+80181213,14*0.21,94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 94. I left the decimal point where it looked right.
+### answer: 94",bss2021_real
+80181213,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80181213,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80181213,2.3*0.13,7.13,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 7.13. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 7.13",bss2021_real
+80181213,31*3.2,15.5,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 15.5. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 15.5",bss2021_real
+80181213,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.467",bss2021_real
+80181213,0.41*0.31,12.61,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 12.61. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 12.61",bss2021_real
+80191213,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80191213,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+80191213,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 0. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+80191213,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 0. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80191213,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80191213,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 24.79",bss2021_real
+80191213,2.3*0.13,2.96,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 2.96",bss2021_real
+80191213,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 0. I wasn't sure where the decimal point went.
+### answer: 9.92",bss2021_real
+80191213,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 0. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80191213,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 12.71",bss2021_real
+80201213,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. That was my answer.
+### answer: 24.79",bss2021_real
+80201213,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.1271. Then I added up the digits after each decimal and placed the point.
+### answer: 0.1271",bss2021_real
+80201213,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+80201213,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80201213,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80201213,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I added up the digits after each decimal and placed the point. I had trouble with the place values.
+### answer: 2.88",bss2021_real
+80201213,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 0.299. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 0.299",bss2021_real
+80201213,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down. So that was what I got.
+### answer: 0.946",bss2021_real
+80201213,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+80201213,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80211216,14*0.21,294.00,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 294.00. Then I counted the decimal places in both numbers and moved the point over that many spots. I think I mixed up the steps.
+### answer: 294.00",bss2021_real
+80211216,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0 and 0 and got 0. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+80211216,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.12 and 0.826 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80211216,2.3*0.13,29.9,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 29.9. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 29.9",bss2021_real
+80211216,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 28.8",bss2021_real
+80211216,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80211216,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80211216,31*3.2,125,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 125.0. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 125",bss2021_real
+80211216,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+80211216,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80221216,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+80221216,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+80221216,31*3.2,93.62,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I treated them like whole numbers, so I multiplied 310 and 3.2 and got 93.62. I left the decimal point where it looked right. I think I mixed up the steps.
+### answer: 93.62",bss2021_real
+80221216,2.3*0.13,2.990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got 2.990. Then I added up the digits after each decimal and placed the point. I wasn't sure if that was the right method.
+### answer: 2.990",bss2021_real
+80221216,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80221216,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80221216,14*0.21,2.74,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.74. Then I counted the decimal places in both numbers and moved the point over that many spots. I wasn't sure if that was the right method.
+### answer: 2.74",bss2021_real
+80221216,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+80221216,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80221216,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down. That was my answer.
+### answer: 28.61",bss2021_real
+80231216,14*0.21,0.42,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got .42. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 0.42",bss2021_real
+80231216,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 52 and 0.415 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80231216,0.826+0.12,0.838,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I treated them like whole numbers, so I added 826 and 12 and got 0.838. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.838",bss2021_real
+80231216,2.3*0.13,.2990,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 2.3 and 0.13 and got .2990. I wasn't sure where the decimal point went.
+### answer: .2990",bss2021_real
+80231216,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+80231216,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80231216,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80231216,31*3.2,99.1,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.1. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 99.1",bss2021_real
+80231216,0.41*0.31,.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .1271. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: .1271",bss2021_real
+80231216,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+80240107,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80240107,0.41*0.31,0.1271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 0.1271. Then I counted the decimal places in both numbers and moved the point over that many spots. That was my answer.
+### answer: 0.1271",bss2021_real
+80240107,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 99.2. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 99.2",bss2021_real
+80240107,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 23 and 5.61 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80240107,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80240107,2.4*1.2,0.0288,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 0.0288. I left the decimal point where it looked right.
+### answer: 0.0288",bss2021_real
+80240107,2.3*0.13,0.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 0.299. Then I added up the digits after each decimal and placed the point.
+### answer: 0.299",bss2021_real
+80240107,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80240107,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80240107,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+80250107,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+80250107,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80250107,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+80250107,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got 2.99. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+80250107,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80250107,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80250107,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 14 and got 2.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80250107,2.4*1.2,7.2,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 1.2 and 2.4 and got 7.2. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 7.2",bss2021_real
+80250107,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. So that was what I got.
+### answer: 17.9",bss2021_real
+80250107,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80260113,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80260113,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I took 12 and 5 and added them and got 17.9. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 17.9",bss2021_real
+80260113,2.4*1.2,2.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2 and 1 and multiplied them and got 2.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 2.8",bss2021_real
+80260113,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.94. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.94",bss2021_real
+80260113,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80260113,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80260113,2.3*0.13,6.923,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got nan. Then I added up the digits after each decimal and placed the point. I think I mixed up the steps.
+### answer: 6.923",bss2021_real
+80260113,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 99.2. Then I added up the digits after each decimal and placed the point. I had trouble with the place values.
+### answer: 99.2",bss2021_real
+80260113,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 52.415",bss2021_real
+80260113,0.41*0.31,1.271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 12.71. I wasn't sure where the decimal point went.
+### answer: 1.271",bss2021_real
+80270115,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80270115,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80270115,2.4*1.2,28.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 28.8. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 28.8",bss2021_real
+80270115,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 2.9400. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80270115,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down. That was my answer.
+### answer: 0.946",bss2021_real
+80270115,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80270115,2.3*0.13,26.39,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 0.13 and 2.3 and multiplied them and got nan. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 26.39",bss2021_real
+80270115,31*3.2,155,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 31 and 3.2 and got 0. I wasn't sure where the decimal point went. I think I mixed up the steps.
+### answer: 155",bss2021_real
+80270115,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80270115,0.41*0.31,0.164,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0. I wasn't sure where the decimal point went.
+### answer: 0.164",bss2021_real
+80280212,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+80280212,0.41*0.31,.0774,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got .0774. Then I added up the digits after each decimal and placed the point. I had trouble with the place values.
+### answer: .0774",bss2021_real
+80280212,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+80280212,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I added 5.61 and 23 and got 28.61. The decimal point lined up straight down.
+### answer: 28.61",bss2021_real
+80280212,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80280212,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I added up the digits after each decimal and placed the point.
+### answer: 2.88",bss2021_real
+80280212,2.3*0.13,.299,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got .299. Then I counted the decimal places in both numbers and moved the point over that many spots. I had trouble with the place values.
+### answer: .299",bss2021_real
+80280212,0.826+0.12,946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I ignored the decimal points and added 0.826 and 12 as whole numbers and got .946. I wasn't sure where the decimal point went.
+### answer: 946",bss2021_real
+80280212,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 52 and 0.415 and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80280212,14*0.21,3.84,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 3.84. Then I added up the digits after each decimal and placed the point. I wasn't sure if that was the right method.
+### answer: 3.84",bss2021_real
+80290213,14*0.21,0.24,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 0.21 and 0.14 and got 0.24. Then I added up the digits after each decimal and placed the point.
+### answer: 0.24",bss2021_real
+80290213,0.415+52,0.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 0.467",bss2021_real
+80290213,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80290213,2.3*0.13,2.89,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 2.89. I put the decimal point straight down like I do for addition. I wasn't sure if that was the right method.
+### answer: 2.89",bss2021_real
+80290213,2.4*1.2,2.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 2.8",bss2021_real
+80290213,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80290213,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 5.84. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: 5.84",bss2021_real
+80290213,31*3.2,9.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I multiplied 3.2 and 31 and got 9.2. Then I added up the digits after each decimal and placed the point.
+### answer: 9.2",bss2021_real
+80290213,0.41*0.31,1.21,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got 1.21. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 1.21",bss2021_real
+80290213,24.45+0.34,24.89,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.89. The decimal point lined up straight down.
+### answer: 24.89",bss2021_real
+80310226,14*0.21,29.4,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 29.400. I wasn't sure where the decimal point went. I wasn't sure if that was the right method.
+### answer: 29.4",bss2021_real
+80310226,0.415+52,52.415,Add,D-W,Solve this decimal problem: 0.415+52=?,"I took 0.415 and 52 and added them and got 52.415. The decimal point lined up straight down.
+### answer: 52.415",bss2021_real
+80310226,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down.
+### answer: .946",bss2021_real
+80310226,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 2.990. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 2.99",bss2021_real
+80310226,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots.
+### answer: 2.88",bss2021_real
+80310226,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down. That was my answer.
+### answer: 17.9",bss2021_real
+80310226,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 28.61. The decimal point lined up straight down. I had trouble with the place values.
+### answer: 28.61",bss2021_real
+80310226,31*3.2,99.20,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 31 and 3.2 and multiplied them and got 99.20. I wasn't sure where the decimal point went.
+### answer: 99.20",bss2021_real
+80310226,0.41*0.31,12.71,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 1.271. I lined the decimal point up under the others the way I would when adding. I think I mixed up the steps.
+### answer: 12.71",bss2021_real
+80310226,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down. So that was what I got.
+### answer: 24.79",bss2021_real
+80320303,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I stacked them with the decimals aligned and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80320303,0.41*0.31,0.271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I multiplied 0.41 and 0.31 and got 0.271. I wasn't sure where the decimal point went.
+### answer: 0.271",bss2021_real
+80320303,31*3.2,99.2,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I took 3.2 and 31 and multiplied them and got 99.2. Then I added up the digits after each decimal and placed the point.
+### answer: 99.2",bss2021_real
+80320303,5.61+23,28.61,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 23 and 5.61 and added them and got 28.61. The decimal point lined up straight down. That was my answer.
+### answer: 28.61",bss2021_real
+80320303,12.3+5.6,17.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I stacked them with the decimals aligned and added 12.3 and 5.6 and got 17.9. The decimal point lined up straight down.
+### answer: 17.9",bss2021_real
+80320303,2.4*1.2,2.88,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I took 2.4 and 1.2 and multiplied them and got 2.88. Then I counted the decimal places in both numbers and moved the point over that many spots. So that was what I got.
+### answer: 2.88",bss2021_real
+80320303,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I multiplied 0.13 and 2.3 and got 02.99. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+80320303,0.826+0.12,0.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I added 0.826 and 0.12 and got 0.946. The decimal point lined up straight down.
+### answer: 0.946",bss2021_real
+80320303,0.415+52,0.935,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.935. The decimal point lined up straight down.
+### answer: 0.935",bss2021_real
+80320303,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I took 0.21 and 14 and multiplied them and got 02.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80340309,5.61+23,5.84,Add,D-W,Solve this decimal problem: 5.61+23=?,"I took 5.61 and 23 and added them and got 5.84. The decimal point lined up straight down. I wasn't sure if that was the right method.
+### answer: 5.84",bss2021_real
+80340309,12.3+5.6,27.9,Add,EDD,Solve this decimal problem: 12.3+5.6=?,"I lined up the decimal points and added 12.3 and 5.6 and got 27.9. The decimal point lined up straight down.
+### answer: 27.9",bss2021_real
+80340309,2.4*1.2,36.8,Mul,EDD,Solve this decimal problem: 2.4*1.2=?,"I multiplied 2.4 and 1.2 and got 36.8. I lined the decimal point up under the others the way I would when adding. I wasn't sure if that was the right method.
+### answer: 36.8",bss2021_real
+80340309,14*0.21,2.94,Mul,D-W,Solve this decimal problem: 14*0.21=?,"I multiplied 14 and 0.21 and got 02.94. Then I added up the digits after each decimal and placed the point.
+### answer: 2.94",bss2021_real
+80340309,0.826+0.12,.946,Add,UDD,Solve this decimal problem: 0.826+0.12=?,"I took 0.826 and 0.12 and added them and got .946. The decimal point lined up straight down.
+### answer: .946",bss2021_real
+80340309,24.45+0.34,24.79,Add,EDD,Solve this decimal problem: 24.45+0.34=?,"I lined up the decimal points and added 24.45 and 0.34 and got 24.79. The decimal point lined up straight down.
+### answer: 24.79",bss2021_real
+80340309,2.3*0.13,2.99,Mul,UDD,Solve this decimal problem: 2.3*0.13=?,"I took 2.3 and 0.13 and multiplied them and got 2.99. I put the decimal point straight down like I do for addition. I think I mixed up the steps.
+### answer: 2.99",bss2021_real
+80340309,31*3.2,9.92,Mul,D-W,Solve this decimal problem: 31*3.2=?,"I dropped the decimals and multiplied 310 by 3.2 and got 992. I left the decimal point where it looked right.
+### answer: 9.92",bss2021_real
+80340309,0.415+52,.467,Add,D-W,Solve this decimal problem: 0.415+52=?,"I added 0.415 and 52 and got 0.467. The decimal point lined up straight down. I think I mixed up the steps.
+### answer: .467",bss2021_real
+80340309,0.41*0.31,.3271,Mul,EDD,Solve this decimal problem: 0.41*0.31=?,"I took 0.41 and 0.31 and multiplied them and got .3271. Then I added up the digits after each decimal and placed the point.
+### answer: .3271",bss2021_real
