@@ -1,0 +1,4 @@
+qwen_entity,baseline_entity,preference_set,rows,parse_success_rate,qwen_preference_rate,baseline_preference_rate,tie_rate,qwen_on_a_rate
+qwen3_8b_distill_humanft,claude_sonnet_4_6,qwen3_8b_distill_humanft_vs_claude_sonnet_4_6,1600,1.0,0.5725,0.4275,0.0,0.5
+qwen3_8b_distill_humanft,gemini_3_flash,qwen3_8b_distill_humanft_vs_gemini_3_flash,1600,1.0,0.518125,0.481875,0.0,0.5
+qwen3_8b_distill_humanft,gpt_5_5_low,qwen3_8b_distill_humanft_vs_gpt_5_5_low,1600,1.0,0.543125,0.456875,0.0,0.5

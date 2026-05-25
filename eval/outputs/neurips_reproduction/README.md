@@ -23,6 +23,14 @@ outputs for the NeurIPS-style human-likeness evaluation.
   plus Human vs Gemini/GPT sanity checks.
 - `fraction_human_ft_centaur_20260504`: Distilled panel25 vs Centaur-70B and
   Human vs Centaur-70B.
+- `qwen_frontier3_gemini31_flash_lite`: Qwen3-8B fraction vs Claude Sonnet 4.6,
+  Gemini 3 Flash, and GPT-5.5 Low, judged with Gemini 3.1 Flash Lite.
+- `qwen_frontier3_requests`: request-only companion for the same Qwen/frontier
+  fraction comparisons.
+- `qwen_baselines_requests`: request-only Qwen3-8B fraction comparisons against
+  Human, UMA, and Centaur-70B after low-count frontier baselines were skipped.
+- `qwen_baselines_smoke_gemini`: one-pair smoke run covering Qwen3-8B fraction
+  against all available baselines.
 
 ## Deliberate Exclusion
 

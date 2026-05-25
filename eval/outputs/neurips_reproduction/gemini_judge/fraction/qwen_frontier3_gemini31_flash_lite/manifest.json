@@ -1,0 +1,79 @@
+{
+  "domain": "fraction",
+  "prompt_version": "qwen_humanlike_preference_v1",
+  "backend": "gemini_sync",
+  "judge_model": "gemini-3.1-flash-lite",
+  "seed": 20260522,
+  "samples_per_problem": 100,
+  "max_pairs_per_comparison": 0,
+  "only_baselines": [
+    "claude_sonnet_4_6",
+    "gemini_3_flash",
+    "gpt_5_5_low"
+  ],
+  "row_count": 4800,
+  "qwen_entity": "qwen3_8b_distill_humanft",
+  "included_entities": [
+    "claude_sonnet_4_6",
+    "gemini_3_flash",
+    "gpt_5_5_low",
+    "qwen3_8b_distill_humanft"
+  ],
+  "skipped_sources": [
+    {
+      "domain": "fraction",
+      "entity": "human",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/data/siegler_fraction_human.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1920,
+      "problem_count": 16,
+      "min_rows_per_problem": 120,
+      "max_rows_per_problem": 120
+    },
+    {
+      "domain": "fraction",
+      "entity": "uma",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/data/distillation/uma_fraction_distillation_1000",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 11700,
+      "problem_count": 16,
+      "min_rows_per_problem": 365,
+      "max_rows_per_problem": 1000
+    },
+    {
+      "domain": "fraction",
+      "entity": "centaur_70b",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/fraction/centaur_70b.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1600,
+      "problem_count": 16,
+      "min_rows_per_problem": 100,
+      "max_rows_per_problem": 100
+    },
+    {
+      "domain": "fraction",
+      "entity": "gemini_2_5_flash",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/fraction/gemini_2_5_flash.csv",
+      "status": "skipped_low_count",
+      "reason": "needs 100 rows/problem without replacement; low counts: {'2/3*3/5': 5, '2/3+3/5': 5, '2/3-3/5': 5, '2/3:3/5': 5, '3/5*1/4': 5, '3/5*1/5': 5, '3/5+1/4': 5, '3/5+1/5': 5, '3/5-1/4': 5, '3/5-1/5': 5, '3/5:1/4': 5, '3/5:1/5': 5, '4/5*3/5': 5, '4/5+3/5': 5, '4/5-3/5': 5, '4/5:3/5': 5}",
+      "row_count": 80,
+      "problem_count": 16,
+      "min_rows_per_problem": 5,
+      "max_rows_per_problem": 5
+    },
+    {
+      "domain": "fraction",
+      "entity": "gpt_4_1_mini",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/fraction/gpt_4_1_mini.csv",
+      "status": "skipped_low_count",
+      "reason": "needs 100 rows/problem without replacement; low counts: {'2/3*3/5': 5, '2/3+3/5': 5, '2/3-3/5': 5, '2/3:3/5': 5, '3/5*1/4': 5, '3/5*1/5': 5, '3/5+1/4': 5, '3/5+1/5': 5, '3/5-1/4': 5, '3/5-1/5': 5, '3/5:1/4': 5, '3/5:1/5': 5, '4/5*3/5': 5, '4/5+3/5': 5, '4/5-3/5': 5, '4/5:3/5': 5}",
+      "row_count": 80,
+      "problem_count": 16,
+      "min_rows_per_problem": 5,
+      "max_rows_per_problem": 5
+    }
+  ]
+}
