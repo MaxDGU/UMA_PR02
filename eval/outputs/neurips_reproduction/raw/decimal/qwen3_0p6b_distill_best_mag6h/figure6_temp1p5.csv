@@ -1,5 +1,0 @@
-figure6_bin,n,accuracy
-Add DD,4000,0.88575
-Add WD,2000,0.6035
-Mul DD,4000,0.54175
-Mul WD,2000,0.6845

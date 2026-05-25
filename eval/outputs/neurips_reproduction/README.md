@@ -5,11 +5,10 @@ outputs for the NeurIPS-style human-likeness evaluation.
 
 ## Layout
 
-- `raw/decimal/`: pre-May-6 decimal trace sources, decomposed so each model has
-  its own CSV where the original source contained multiple models.
-- `raw/fraction/`: individual fraction trace CSVs for the shared baselines and
-  the older fraction reproduction traces used for the NeurIPS-style preference
-  runs.
+- `raw/decimal/`: flat per-source CSVs for the decimal sources used by the
+  NeurIPS-style preference runs.
+- `raw/fraction/`: flat per-source CSVs for the fraction sources used by the
+  NeurIPS-style preference runs.
 - `pairs/fraction/<run>/`: exact `entity_samples.csv` and `pairings.csv` files
   used to build the judged fraction comparisons.
 - `pairs/decimal/<run>/`: exact `entity_samples.csv` and `pairings.csv` files
@@ -38,15 +37,24 @@ outputs for the NeurIPS-style human-likeness evaluation.
 The decimal run manifests reference
 `raw/decimal/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501_inputs/decimal_bss_trace_sample100_per_problem.csv`
 as the original compact sampled trace bank used to construct the decimal
-entities. In this bundle that file is split under
-`raw/decimal/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501_inputs/trace_sample100_by_model/`.
-Only judged entities are included in the split; the unused Qwen3-1.7B candidate
-rows from the original source bank are omitted to avoid confusing them with the
-NeurIPS Qwen3-0.6B results.
+entities. In this bundle that compact bank is split directly into:
 
-The original combined frontier output
-`fractionGPT/llm_baselines/llm_outputs_bss2021_decimals.csv` is split under
-`raw/decimal/llm_outputs_bss2021_decimals_by_model/`.
+- `raw/decimal/decimal_claude_sonnet_4_neurips_sampled_outputs.csv`
+- `raw/decimal/decimal_gemini_2p5_flash_neurips_sampled_outputs.csv`
+- `raw/decimal/decimal_gpt_4p1_mini_neurips_sampled_outputs.csv`
+- `raw/decimal/decimal_qwen3_0p6b_mag6h_neurips_sampled_outputs.csv`
+
+The Qwen model used in the decimal NeurIPS preference artifacts is
+`qwen3_0p6b_mag6h`. The original source bank also contained unused
+`qwen3_1p7b_mag6h` rows, but those rows are not present in the judged
+`entity_samples.csv` or `pairings.csv` files and are deliberately omitted here.
+The full 12,000-row source rollout file for the judged decimal Qwen model is
+also included as
+`raw/decimal/decimal_qwen3_0p6b_mag6h_full_temp1p5_rollouts.csv`.
+
+The fraction preference artifacts use `distilled_panel25`, not a Qwen-labeled
+source. Its raw rollout CSV is included as
+`raw/fraction/fraction_distilled_panel25_outputs.csv`.
 
 ## Deliberate Exclusion
 
