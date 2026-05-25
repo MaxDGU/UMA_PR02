@@ -5,9 +5,8 @@ outputs for the NeurIPS-style human-likeness evaluation.
 
 ## Layout
 
-- `raw/decimal/`: pre-May-6 decimal trace sources, including BSS human
-  responses, the original frontier decimal outputs, Centaur decimal outputs,
-  and Qwen3-0.6B MAG-6H distillation traces.
+- `raw/decimal/`: pre-May-6 decimal trace sources, decomposed so each model has
+  its own CSV where the original source contained multiple models.
 - `raw/fraction/`: individual fraction trace CSVs for the shared baselines and
   the older fraction reproduction traces used for the NeurIPS-style preference
   runs.
@@ -38,9 +37,16 @@ outputs for the NeurIPS-style human-likeness evaluation.
 
 The decimal run manifests reference
 `raw/decimal/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501_inputs/decimal_bss_trace_sample100_per_problem.csv`
-as the compact sampled trace bank used to construct the decimal entities. That
-source bank includes Qwen3-1.7B rows, but the committed decimal pairings use
-`qwen3_0p6b_mag6h` for the model-vs-baseline comparisons.
+as the original compact sampled trace bank used to construct the decimal
+entities. In this bundle that file is split under
+`raw/decimal/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501_inputs/trace_sample100_by_model/`.
+Only judged entities are included in the split; the unused Qwen3-1.7B candidate
+rows from the original source bank are omitted to avoid confusing them with the
+NeurIPS Qwen3-0.6B results.
+
+The original combined frontier output
+`fractionGPT/llm_baselines/llm_outputs_bss2021_decimals.csv` is split under
+`raw/decimal/llm_outputs_bss2021_decimals_by_model/`.
 
 ## Deliberate Exclusion
 

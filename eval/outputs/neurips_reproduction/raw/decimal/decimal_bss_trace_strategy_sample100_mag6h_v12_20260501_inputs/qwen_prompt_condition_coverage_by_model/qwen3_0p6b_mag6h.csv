@@ -1,0 +1,13 @@
+source_key,problem,nunique,min,max
+qwen3_0p6b_mag6h,0.32*2.1,100,0,99
+qwen3_0p6b_mag6h,0.41*0.31,100,0,99
+qwen3_0p6b_mag6h,0.415+52,100,0,99
+qwen3_0p6b_mag6h,0.826+0.12,100,0,99
+qwen3_0p6b_mag6h,12.3+5.6,100,0,99
+qwen3_0p6b_mag6h,14*0.21,100,0,99
+qwen3_0p6b_mag6h,2.3*0.13,100,0,99
+qwen3_0p6b_mag6h,2.4*1.2,100,0,99
+qwen3_0p6b_mag6h,2.46+4.1,100,0,99
+qwen3_0p6b_mag6h,24.45+0.34,100,0,99
+qwen3_0p6b_mag6h,31*3.2,100,0,99
+qwen3_0p6b_mag6h,5.61+23,100,0,99

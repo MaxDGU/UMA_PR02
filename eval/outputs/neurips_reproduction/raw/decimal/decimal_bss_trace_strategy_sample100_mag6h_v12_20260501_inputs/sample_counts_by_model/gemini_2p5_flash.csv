@@ -1,0 +1,13 @@
+source_key,source_model,problem,operation,rows,unique_traces,correct_count
+gemini_2p5_flash,Gemini 2.5 Flash,0.32*2.1,Mul,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,0.41*0.31,Mul,100,100,99
+gemini_2p5_flash,Gemini 2.5 Flash,0.415+52,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,0.826+0.12,Add,100,100,98
+gemini_2p5_flash,Gemini 2.5 Flash,12.3+5.6,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,14*0.21,Mul,100,100,99
+gemini_2p5_flash,Gemini 2.5 Flash,2.3*0.13,Mul,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,2.4*1.2,Mul,100,100,98
+gemini_2p5_flash,Gemini 2.5 Flash,2.46+4.1,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,24.45+0.34,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,31*3.2,Mul,100,100,97
+gemini_2p5_flash,Gemini 2.5 Flash,5.61+23,Add,100,100,100

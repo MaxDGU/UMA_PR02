@@ -1,0 +1,13 @@
+source_key,source_model,problem,operation,rows,unique_traces,correct_count
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.32*2.1,Mul,100,18,60
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.41*0.31,Mul,100,27,26
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.415+52,Add,100,7,53
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.826+0.12,Add,100,11,83
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,12.3+5.6,Add,100,4,98
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,14*0.21,Mul,100,16,71
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.3*0.13,Mul,100,20,58
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.4*1.2,Mul,100,14,77
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.46+4.1,Add,100,9,80
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,24.45+0.34,Add,100,5,98
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,31*3.2,Mul,100,12,69
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,5.61+23,Add,100,7,67
