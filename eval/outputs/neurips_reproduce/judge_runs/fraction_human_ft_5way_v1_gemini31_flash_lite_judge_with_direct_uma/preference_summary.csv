@@ -1,0 +1,7 @@
+preference_set,left_entity,right_entity,rows,parse_success_rate,left_preference_rate,right_preference_rate,tie_rate,left_on_a_rate
+distilled_panel25_vs_gemini_2p5_flash,distilled_panel25,gemini_2p5_flash,800,1.0,0.81,0.19,0.0,0.5
+distilled_panel25_vs_gpt_4p1_mini,distilled_panel25,gpt_4p1_mini,800,1.0,0.9325,0.0675,0.0,0.5
+distilled_panel25_vs_human,distilled_panel25,human,800,1.0,0.34,0.66,0.0,0.5
+distilled_panel25_vs_uma_nlp,distilled_panel25,uma_nlp,800,1.0,0.465,0.44375,0.09125,0.5
+human_vs_gemini_2p5_flash,human,gemini_2p5_flash,800,1.0,0.885,0.115,0.0,0.5
+human_vs_gpt_4p1_mini,human,gpt_4p1_mini,800,1.0,0.9375,0.0625,0.0,0.5

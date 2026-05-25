@@ -1,0 +1,57 @@
+{
+  "plan": "fraction_human_ft_5way",
+  "prompt_version": "human_likeness_preference_v5",
+  "backend": "gemini_batch_plus_gemini_sync_direct_uma",
+  "judge_model": "gemini-3.1-flash-lite-preview",
+  "seed": 20260501,
+  "samples_per_problem": 100,
+  "distilled_samples_per_panel": 4,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 128,
+  "thinking_level": "minimal",
+  "thinking_budget": null,
+  "row_count": 4800,
+  "entity_samples_count": 4000,
+  "preference_sets": [
+    {
+      "name": "distilled_panel25_vs_gemini_2p5_flash",
+      "left_entity": "distilled_panel25",
+      "right_entity": "gemini_2p5_flash"
+    },
+    {
+      "name": "distilled_panel25_vs_gpt_4p1_mini",
+      "left_entity": "distilled_panel25",
+      "right_entity": "gpt_4p1_mini"
+    },
+    {
+      "name": "distilled_panel25_vs_human",
+      "left_entity": "distilled_panel25",
+      "right_entity": "human"
+    },
+    {
+      "name": "distilled_panel25_vs_uma_nlp",
+      "left_entity": "distilled_panel25",
+      "right_entity": "uma_nlp"
+    },
+    {
+      "name": "human_vs_gemini_2p5_flash",
+      "left_entity": "human",
+      "right_entity": "gemini_2p5_flash"
+    },
+    {
+      "name": "human_vs_gpt_4p1_mini",
+      "left_entity": "human",
+      "right_entity": "gpt_4p1_mini"
+    }
+  ],
+  "sources": {
+    "human": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/data/human_ft/data.csv",
+    "distilled_panel25": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/results/procedural_alignment/human_ft_fraction_eval_20260428_200211/panel25_distilled/panel25_distilled_human_ft_rollouts.csv.gz",
+    "gemini_2p5_flash": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/results/procedural_alignment/frontier_human_ft_max_prompt/gemini_2p5_flash_2000_repaired/parsed_samples.csv",
+    "gpt_4p1_mini": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/results/procedural_alignment/frontier_human_ft_max_prompt/gpt_4p1_mini_2000_repaired/parsed_samples.csv",
+    "uma_nlp": "data/distillation/uma_fraction_distillation_25"
+  },
+  "direct_uma_eval_dir": "results/human_likeness_alignment/fraction_human_ft_5way_v1_gemini31_flash_lite_judge_direct_uma",
+  "base_eval_dir": "results/human_likeness_alignment/fraction_human_ft_5way_v1_gemini31_flash_lite_judge"
+}

@@ -1,0 +1,3 @@
+preference_set,left_entity,right_entity,rows,parse_success_rate,left_preference_rate,right_preference_rate,tie_rate,left_on_a_rate
+distilled_panel25_vs_centaur_70b,distilled_panel25,centaur_70b,800,1.0,0.63125,0.36875,0.0,0.5
+human_vs_centaur_70b,human,centaur_70b,800,1.0,0.845,0.155,0.0,0.5

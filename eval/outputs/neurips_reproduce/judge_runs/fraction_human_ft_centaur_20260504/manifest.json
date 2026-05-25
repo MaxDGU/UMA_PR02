@@ -1,0 +1,40 @@
+{
+  "plan": "fraction_human_ft_5way",
+  "prompt_version": "human_likeness_preference_v5",
+  "backend": "gemini_batch",
+  "judge_model": "gemini-3.1-flash-lite-preview",
+  "seed": 20260501,
+  "samples_per_problem": 100,
+  "distilled_samples_per_panel": 4,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 128,
+  "smoke_mode": "none",
+  "thinking_level": "minimal",
+  "thinking_budget": null,
+  "domain_label": "fraction",
+  "demographic_context": "Target population: sixth- and eighth-grade students, roughly ages 10-14, solving written fraction arithmetic problems.",
+  "format_bias_note": "",
+  "row_count": 1600,
+  "entity_samples_count": 4800,
+  "preference_sets": [
+    {
+      "name": "distilled_panel25_vs_centaur_70b",
+      "left_entity": "distilled_panel25",
+      "right_entity": "centaur_70b"
+    },
+    {
+      "name": "human_vs_centaur_70b",
+      "left_entity": "human",
+      "right_entity": "centaur_70b"
+    }
+  ],
+  "sources": {
+    "human": "data/human_ft/data.csv",
+    "distilled_panel25": "results/procedural_alignment/human_ft_fraction_eval_20260428_200211/panel25_distilled/panel25_distilled_human_ft_rollouts.csv.gz",
+    "uma_nlp": "data/distillation/uma_fraction_distillation_25",
+    "centaur_70b": "Centaur/runs/centaur_vllm_fraction_humanft8_s100/outputs.csv",
+    "gemini_2p5_flash": "results/procedural_alignment/frontier_human_ft_max_prompt/gemini_2p5_flash_2000_repaired/parsed_samples.csv",
+    "gpt_4p1_mini": "results/procedural_alignment/frontier_human_ft_max_prompt/gpt_4p1_mini_2000_repaired/parsed_samples.csv"
+  }
+}

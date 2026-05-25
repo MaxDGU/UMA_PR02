@@ -1,0 +1,11 @@
+anchor,anchor_label,comparator,comparator_label,anchor_rate,comparator_rate,tie_rate,rows,domain,comparison_type
+distilled_panel25,Distilled panel25,human,Human,34.0,66.0,0.0,800,Fraction,ours_vs_comparator
+distilled_panel25,Distilled panel25,uma_nlp,Direct UMA,46.5,44.375,9.125,800,Fraction,ours_vs_comparator
+distilled_panel25,Distilled panel25,centaur_70b,Centaur 70B,63.125,36.875,0.0,800,Fraction,ours_vs_comparator
+distilled_panel25,Distilled panel25,gemini_2p5_flash,Gemini 2.5 Flash,81.0,19.0,0.0,800,Fraction,ours_vs_comparator
+distilled_panel25,Distilled panel25,gpt_4p1_mini,GPT-4.1 mini,93.25,6.75,0.0,800,Fraction,ours_vs_comparator
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,human,Human,53.166666666666664,46.833333333333336,0.0,1200,Decimal,ours_vs_comparator
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,uma_nlp,Direct UMA,53.91666666666667,46.08333333333333,0.0,1200,Decimal,ours_vs_comparator
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,centaur_70b,Centaur 70B,90.66666666666666,9.33333333333333,0.0,1200,Decimal,ours_vs_comparator
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,gemini_2p5_flash,Gemini 2.5 Flash,92.33333333333333,7.666666666666661,0.0,1200,Decimal,ours_vs_comparator
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,gpt_4p1_mini,GPT-4.1 mini,98.0,2.0,0.0,1200,Decimal,ours_vs_comparator

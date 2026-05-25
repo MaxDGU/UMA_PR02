@@ -1,0 +1,23 @@
+{
+  "row_count": 4800,
+  "parse_success_rate": 1.0,
+  "preference_set_count": 6,
+  "problem_count": 8,
+  "total_prompt_tokens": 2126869,
+  "total_completion_tokens": 234098,
+  "total_tokens": 2360967,
+  "human_judged_rows": 2400,
+  "human_preference_rate": 0.8275,
+  "human_on_a_count": 800,
+  "human_on_b_count": 800,
+  "human_preference_rate_when_on_a": 0.9825,
+  "human_preference_rate_when_on_b": 0.84,
+  "human_side_bias_gap": 0.14250000000000007,
+  "backend": "gemini_batch_plus_gemini_sync_direct_uma",
+  "judge_model": "gemini-3.1-flash-lite-preview",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 128,
+  "prompt_version": "human_likeness_preference_v5",
+  "direct_uma_backend": "gemini_sync"
+}

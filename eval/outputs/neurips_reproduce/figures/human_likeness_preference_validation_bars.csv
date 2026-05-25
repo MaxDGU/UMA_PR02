@@ -1,0 +1,7 @@
+anchor,anchor_label,comparator,comparator_label,anchor_rate,comparator_rate,tie_rate,rows,domain,comparison_type
+human,Human,gemini_2p5_flash,Gemini 2.5 Flash,88.5,11.5,0.0,800,Fraction,human_vs_frontier_validation
+human,Human,gpt_4p1_mini,GPT-4.1 mini,93.75,6.25,0.0,800,Fraction,human_vs_frontier_validation
+human,Human,centaur_70b,Centaur 70B,84.5,15.5,0.0,800,Fraction,human_vs_frontier_validation
+human,Human,gemini_2p5_flash,Gemini 2.5 Flash,85.66666666666667,14.333333333333332,0.0,1200,Decimal,human_vs_frontier_validation
+human,Human,gpt_4p1_mini,GPT-4.1 mini,96.5,3.5000000000000004,0.0,1200,Decimal,human_vs_frontier_validation
+human,Human,centaur_70b,Centaur 70B,93.66666666666667,6.3333333333333295,0.0,1200,Decimal,human_vs_frontier_validation
