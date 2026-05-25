@@ -1,0 +1,16 @@
+{
+  "backend": "gemini_batch",
+  "judge_model": "gemini-3.1-flash-lite-preview",
+  "request_count": 2400,
+  "payload_size_bytes": 5260983,
+  "inline_limit_bytes": 20000000,
+  "thinking_level": "",
+  "thinking_budget": 0,
+  "estimated_cost": {
+    "method": "rough_chars_per_token",
+    "chars_per_token": 4.0,
+    "estimated_input_tokens": 1314045.75,
+    "estimated_output_tokens": 460800,
+    "note": "Uses the same rough estimator as procedural strategy extraction; final cost should be computed from actual token usage if returned."
+  }
+}

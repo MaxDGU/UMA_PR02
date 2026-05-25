@@ -1,0 +1,61 @@
+source_key,source_model,problem,operation,rows,unique_traces,correct_count
+claude_sonnet_4,Claude Sonnet 4,0.32*2.1,Mul,100,99,97
+claude_sonnet_4,Claude Sonnet 4,0.41*0.31,Mul,100,100,98
+claude_sonnet_4,Claude Sonnet 4,0.415+52,Add,100,81,100
+claude_sonnet_4,Claude Sonnet 4,0.826+0.12,Add,100,64,100
+claude_sonnet_4,Claude Sonnet 4,12.3+5.6,Add,100,16,100
+claude_sonnet_4,Claude Sonnet 4,14*0.21,Mul,100,100,82
+claude_sonnet_4,Claude Sonnet 4,2.3*0.13,Mul,100,99,90
+claude_sonnet_4,Claude Sonnet 4,2.4*1.2,Mul,100,97,86
+claude_sonnet_4,Claude Sonnet 4,2.46+4.1,Add,100,69,100
+claude_sonnet_4,Claude Sonnet 4,24.45+0.34,Add,100,24,100
+claude_sonnet_4,Claude Sonnet 4,31*3.2,Mul,100,99,98
+claude_sonnet_4,Claude Sonnet 4,5.61+23,Add,100,54,100
+gemini_2p5_flash,Gemini 2.5 Flash,0.32*2.1,Mul,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,0.41*0.31,Mul,100,100,99
+gemini_2p5_flash,Gemini 2.5 Flash,0.415+52,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,0.826+0.12,Add,100,100,98
+gemini_2p5_flash,Gemini 2.5 Flash,12.3+5.6,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,14*0.21,Mul,100,100,99
+gemini_2p5_flash,Gemini 2.5 Flash,2.3*0.13,Mul,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,2.4*1.2,Mul,100,100,98
+gemini_2p5_flash,Gemini 2.5 Flash,2.46+4.1,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,24.45+0.34,Add,100,100,100
+gemini_2p5_flash,Gemini 2.5 Flash,31*3.2,Mul,100,100,97
+gemini_2p5_flash,Gemini 2.5 Flash,5.61+23,Add,100,100,100
+gpt_4p1_mini,GPT-4.1 mini,0.32*2.1,Mul,100,100,68
+gpt_4p1_mini,GPT-4.1 mini,0.41*0.31,Mul,100,100,63
+gpt_4p1_mini,GPT-4.1 mini,0.415+52,Add,100,100,100
+gpt_4p1_mini,GPT-4.1 mini,0.826+0.12,Add,100,100,99
+gpt_4p1_mini,GPT-4.1 mini,12.3+5.6,Add,100,100,71
+gpt_4p1_mini,GPT-4.1 mini,14*0.21,Mul,100,100,43
+gpt_4p1_mini,GPT-4.1 mini,2.3*0.13,Mul,100,100,44
+gpt_4p1_mini,GPT-4.1 mini,2.4*1.2,Mul,100,100,30
+gpt_4p1_mini,GPT-4.1 mini,2.46+4.1,Add,100,100,98
+gpt_4p1_mini,GPT-4.1 mini,24.45+0.34,Add,100,100,100
+gpt_4p1_mini,GPT-4.1 mini,31*3.2,Mul,100,100,46
+gpt_4p1_mini,GPT-4.1 mini,5.61+23,Add,100,100,96
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.32*2.1,Mul,100,18,60
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.41*0.31,Mul,100,27,26
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.415+52,Add,100,7,53
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,0.826+0.12,Add,100,11,83
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,12.3+5.6,Add,100,4,98
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,14*0.21,Mul,100,16,71
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.3*0.13,Mul,100,20,58
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.4*1.2,Mul,100,14,77
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,2.46+4.1,Add,100,9,80
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,24.45+0.34,Add,100,5,98
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,31*3.2,Mul,100,12,69
+qwen3_0p6b_mag6h,Qwen3-0.6B MAG6-H,5.61+23,Add,100,7,67
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,0.32*2.1,Mul,100,19,61
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,0.41*0.31,Mul,100,23,59
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,0.415+52,Add,100,7,76
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,0.826+0.12,Add,100,13,73
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,12.3+5.6,Add,100,4,98
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,14*0.21,Mul,100,16,69
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,2.3*0.13,Mul,100,19,54
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,2.4*1.2,Mul,100,21,58
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,2.46+4.1,Add,100,7,66
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,24.45+0.34,Add,100,7,96
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,31*3.2,Mul,100,15,68
+qwen3_1p7b_mag6h,Qwen3-1.7B MAG6-H,5.61+23,Add,100,10,45

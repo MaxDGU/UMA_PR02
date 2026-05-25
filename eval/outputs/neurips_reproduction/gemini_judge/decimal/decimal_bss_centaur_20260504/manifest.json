@@ -1,0 +1,39 @@
+{
+  "plan": "decimal_bss_anchor_v1",
+  "prompt_version": "human_likeness_preference_v5",
+  "backend": "gemini_batch",
+  "judge_model": "gemini-3.1-flash-lite-preview",
+  "seed": 20260501,
+  "samples_per_problem": 100,
+  "distilled_samples_per_panel": 4,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 192,
+  "smoke_mode": "none",
+  "thinking_level": "",
+  "thinking_budget": 0,
+  "domain_label": "decimal",
+  "demographic_context": "Target population: sixth- and eighth-grade students, roughly ages 10-14, solving written decimal arithmetic problems.",
+  "format_bias_note": "Some responses may be compact transcriptions of written work, while others may be prose explanations. Do not prefer a response just because it is longer, more polished, or written in complete sentences.",
+  "row_count": 2400,
+  "entity_samples_count": 8400,
+  "preference_sets": [
+    {
+      "name": "qwen3_0p6b_mag6h_vs_centaur_70b",
+      "left_entity": "qwen3_0p6b_mag6h",
+      "right_entity": "centaur_70b"
+    },
+    {
+      "name": "human_vs_centaur_70b",
+      "left_entity": "human",
+      "right_entity": "centaur_70b"
+    }
+  ],
+  "sources": {
+    "human": "fractionGPT/decimals/bss2021_human_responses.csv",
+    "uma_nlp": "results/transformer_replication/decimal_study3_nlp_v12.csv.gz",
+    "uma_selected_params": "reports/decimals_uma_reproduce_20260423/tables/k100_selected_params_gd_full_grid_optimized100.csv",
+    "decimal_trace_bank": "results/procedural_alignment/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501/inputs/decimal_bss_trace_sample100_per_problem.csv",
+    "centaur_70b": "Centaur/runs/centaur_vllm_decimal_s100/outputs.csv"
+  }
+}

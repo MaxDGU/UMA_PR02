@@ -5,15 +5,20 @@ outputs for the NeurIPS-style human-likeness evaluation.
 
 ## Layout
 
-- `raw/decimal/`: individual decimal trace CSVs for the shared baselines and
-  Qwen3-4B human-FT/distillation output.
-- `raw/fraction/`: individual fraction trace CSVs for the shared baselines,
-  Qwen3-8B human-FT/distillation output, and the older fraction reproduction
-  traces used for the NeurIPS-style preference runs.
+- `raw/decimal/`: pre-May-6 decimal trace sources, including BSS human
+  responses, the original frontier decimal outputs, Centaur decimal outputs,
+  and Qwen3-0.6B MAG-6H distillation traces.
+- `raw/fraction/`: individual fraction trace CSVs for the shared baselines and
+  the older fraction reproduction traces used for the NeurIPS-style preference
+  runs.
 - `pairs/fraction/<run>/`: exact `entity_samples.csv` and `pairings.csv` files
   used to build the judged fraction comparisons.
+- `pairs/decimal/<run>/`: exact `entity_samples.csv` and `pairings.csv` files
+  used to build the judged decimal comparisons.
 - `gemini_judge/fraction/<run>/`: Gemini judge outputs, including parsed judge
   CSVs, raw request/response JSONL, prompt, manifest, and summaries.
+- `gemini_judge/decimal/<run>/`: Gemini judge outputs for the decimal
+  comparisons.
 - `figures/`: CSV data behind the human-likeness preference bars.
 
 ## Fraction Pair Runs
@@ -23,14 +28,19 @@ outputs for the NeurIPS-style human-likeness evaluation.
   plus Human vs Gemini/GPT sanity checks.
 - `fraction_human_ft_centaur_20260504`: Distilled panel25 vs Centaur-70B and
   Human vs Centaur-70B.
-- `qwen_frontier3_gemini31_flash_lite`: Qwen3-8B fraction vs Claude Sonnet 4.6,
-  Gemini 3 Flash, and GPT-5.5 Low, judged with Gemini 3.1 Flash Lite.
-- `qwen_frontier3_requests`: request-only companion for the same Qwen/frontier
-  fraction comparisons.
-- `qwen_baselines_requests`: request-only Qwen3-8B fraction comparisons against
-  Human, UMA, and Centaur-70B after low-count frontier baselines were skipped.
-- `qwen_baselines_smoke_gemini`: one-pair smoke run covering Qwen3-8B fraction
-  against all available baselines.
+
+## Decimal Pair Runs
+
+- `decimal_bss_full_gemini31lite`: Human and Qwen3-0.6B MAG-6H distillation
+  comparisons against frontier baselines and UMA-NLP.
+- `decimal_bss_centaur_20260504`: Human and Qwen3-0.6B MAG-6H distillation
+  comparisons against Centaur-70B.
+
+The decimal run manifests reference
+`raw/decimal/decimal_bss_trace_strategy_sample100_mag6h_v12_20260501_inputs/decimal_bss_trace_sample100_per_problem.csv`
+as the compact sampled trace bank used to construct the decimal entities. That
+source bank includes Qwen3-1.7B rows, but the committed decimal pairings use
+`qwen3_0p6b_mag6h` for the model-vs-baseline comparisons.
 
 ## Deliberate Exclusion
 
@@ -45,6 +55,10 @@ shipping the full raw UMA trace bank.
   preference sets.
 - Centaur judge run: 1,600 judged pairs, 8 fraction problems, 2 preference
   sets.
+- Decimal full judge run: 10,800 judged pairs, 12 decimal problems, 9
+  preference sets.
+- Decimal Centaur judge run: 2,400 judged pairs, 12 decimal problems, 2
+  preference sets.
 - Judge model in the reproduced NeurIPS rows: `gemini-3.1-flash-lite-preview`,
   temperature `0.0`.
 

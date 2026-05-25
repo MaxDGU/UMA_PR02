@@ -1,9 +1,0 @@
-qwen_entity,baseline_entity,prob,rows,parse_success_rate,qwen_preference_rate,baseline_preference_rate,tie_rate
-qwen3_8b_distill_humanft,centaur_70b,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,claude_sonnet_4_6,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,gemini_2_5_flash,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,gemini_3_flash,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,gpt_4_1_mini,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,gpt_5_5_low,2/3*3/5,1,1.0,0.0,1.0,0.0
-qwen3_8b_distill_humanft,human,2/3*3/5,1,1.0,1.0,0.0,0.0
-qwen3_8b_distill_humanft,uma,2/3*3/5,1,1.0,0.0,1.0,0.0

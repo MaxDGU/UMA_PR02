@@ -1,0 +1,10 @@
+preference_set,left_entity,right_entity,rows,parse_success_rate,left_preference_rate,right_preference_rate,tie_rate,left_on_a_rate
+human_vs_claude_sonnet_4,human,claude_sonnet_4,1200,1.0,0.9233333333333333,0.07666666666666666,0.0,0.5
+human_vs_gemini_2p5_flash,human,gemini_2p5_flash,1200,1.0,0.8566666666666667,0.14333333333333334,0.0,0.5
+human_vs_gpt_4p1_mini,human,gpt_4p1_mini,1200,1.0,0.965,0.035,0.0,0.5
+human_vs_uma_nlp,human,uma_nlp,1200,1.0,0.5566666666666666,0.44333333333333336,0.0,0.5
+qwen3_0p6b_mag6h_vs_claude_sonnet_4,qwen3_0p6b_mag6h,claude_sonnet_4,1200,1.0,0.9583333333333334,0.041666666666666664,0.0,0.5
+qwen3_0p6b_mag6h_vs_gemini_2p5_flash,qwen3_0p6b_mag6h,gemini_2p5_flash,1200,1.0,0.9233333333333333,0.07666666666666666,0.0,0.5
+qwen3_0p6b_mag6h_vs_gpt_4p1_mini,qwen3_0p6b_mag6h,gpt_4p1_mini,1200,1.0,0.98,0.02,0.0,0.5
+qwen3_0p6b_mag6h_vs_human,qwen3_0p6b_mag6h,human,1200,1.0,0.5316666666666666,0.4683333333333333,0.0,0.5
+qwen3_0p6b_mag6h_vs_uma_nlp,qwen3_0p6b_mag6h,uma_nlp,1200,1.0,0.5391666666666667,0.4608333333333333,0.0,0.5
