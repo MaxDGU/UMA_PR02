@@ -1,0 +1,2881 @@
+problem,operation,operands,correct_answer,model,sample_idx,parsed_answer,is_correct,model_response
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,0,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,1,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,2,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,3,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,4,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,5,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,6,672.0,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,7,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,8,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,9,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,10,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,11,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,12,672.0,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,13,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,14,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,15,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,16,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,17,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,18,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,19,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,20,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,21,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,22,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,23,672.0,0,"My answer is .0672.
+### answer: .0672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,24,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,25,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,26,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,27,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,28,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,29,672.0,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,30,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,31,672.0,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,32,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,33,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,34,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,35,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,36,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,37,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,38,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,39,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,40,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,41,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,42,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,43,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,44,1.152,0,"My answer is 1.152.
+### answer: 1.152"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,45,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,46,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,47,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,48,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,49,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,50,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,51,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,52,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,53,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,54,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,55,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,56,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,57,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,58,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,59,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,60,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,61,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,62,672.0,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,63,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,64,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,65,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,66,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,67,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,68,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,69,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,70,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,71,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,72,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,73,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,74,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,75,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,76,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,77,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,78,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,79,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,80,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,81,67.2,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,82,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,83,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,84,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,85,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,86,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,87,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,88,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,89,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,90,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,91,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,92,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,93,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,94,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,95,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,96,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,97,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,98,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,99,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,100,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,101,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,102,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,103,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,104,672.0,0,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,105,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,106,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,107,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,108,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,109,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,110,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,111,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,112,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,113,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,114,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,115,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,116,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,117,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,118,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,Qwen3-4B + humanFT,119,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,0,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,1,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,2,1.61,0,"My answer is 1.61.
+### answer: 1.61"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,3,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,4,0.23,0,"My answer is 0.23.
+### answer: 0.23"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,5,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,6,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,7,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,8,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,9,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,10,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,11,1271.0,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,12,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,13,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,14,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,15,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,16,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,17,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,18,16.0,0,"My answer is .16.
+### answer: .16"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,19,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,20,1.37,0,"My answer is 1.37.
+### answer: 1.37"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,21,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,22,1.13,0,"My answer is 1.13.
+### answer: 1.13"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,23,211.0,0,"My answer is .0211.
+### answer: .0211"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,24,1.6,0,"My answer is 1.60.
+### answer: 1.60"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,25,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,26,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,27,0.261,0,"My answer is 0.261.
+### answer: 0.261"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,28,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,29,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,30,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,31,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,32,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,33,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,34,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,35,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,36,1271.0,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,37,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,38,1271.0,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,39,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,40,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,41,0.123,0,"My answer is 0.1230.
+### answer: 0.1230"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,42,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,43,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,44,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,45,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,46,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,47,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,48,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,49,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,50,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,51,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,52,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,53,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,54,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,55,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,56,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,57,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,58,1271.0,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,59,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,60,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,61,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,62,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,63,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,64,1.0,0,"My answer is 1,06.
+### answer: 1,06"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,65,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,66,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,67,1.37,0,"My answer is 1.37.
+### answer: 1.37"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,68,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,69,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,70,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,71,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,72,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,73,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,74,1.23,0,"My answer is 1.23.
+### answer: 1.23"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,75,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,76,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,77,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,78,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,79,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,80,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,81,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,82,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,83,1.27,0,"My answer is 1.27.
+### answer: 1.27"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,84,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,85,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,86,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,87,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,88,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,89,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,90,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,91,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,92,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,93,1.23,0,"My answer is 1.23.
+### answer: 1.23"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,94,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,95,1271.0,0,"My answer is .01271.
+### answer: .01271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,96,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,97,2611.0,0,"My answer is .2611.
+### answer: .2611"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,98,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,99,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,100,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,101,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,102,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,103,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,104,1271.0,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,105,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,106,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,107,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,108,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,109,0.01271,0,"My answer is 0.01271.
+### answer: 0.01271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,110,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,111,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,112,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,113,134.0,0,"My answer is .134.
+### answer: .134"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,114,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,115,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,116,1.41,0,"My answer is 1.41.
+### answer: 1.41"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,117,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,118,1271.0,0,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,Qwen3-4B + humanFT,119,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,0,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,1,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,2,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,3,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,4,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,5,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,6,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,7,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,8,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,9,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,10,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,11,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,12,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,13,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,14,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,15,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,16,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,17,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,18,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,19,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,20,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,21,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,22,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,23,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,24,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,25,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,26,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,27,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,28,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,29,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,30,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,31,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,32,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,33,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,34,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,35,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,36,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,37,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,38,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,39,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,40,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,41,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,42,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,43,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,44,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,45,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,46,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,47,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,48,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,49,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,50,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,51,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,52,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,53,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,54,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,55,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,56,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,57,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,58,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,59,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,60,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,61,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,62,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,63,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,64,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,65,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,66,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,67,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,68,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,69,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,70,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,71,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,72,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,73,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,74,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,75,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,76,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,77,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,78,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,79,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,80,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,81,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,82,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,83,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,84,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,85,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,86,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,87,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,88,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,89,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,90,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,91,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,92,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,93,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,94,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,95,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,96,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,97,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,98,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,99,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,100,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,101,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,102,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,103,467.0,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,104,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,105,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,106,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,107,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,108,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,109,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,110,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,111,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,112,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,113,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,114,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,115,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,116,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,117,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,118,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,Qwen3-4B + humanFT,119,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,0,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,1,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,2,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,3,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,4,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,5,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,6,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,7,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,8,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,9,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,10,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,11,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,12,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,13,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,14,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,15,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,16,838.0,0,"My answer is 838.
+### answer: 838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,17,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,18,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,19,838.0,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,20,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,21,946.0,0,"My answer is .0946.
+### answer: .0946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,22,0.946,1,"My answer is .0.946.
+### answer: .0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,23,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,24,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,25,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,26,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,27,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,28,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,29,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,30,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,31,838.0,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,32,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,33,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,34,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,35,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,36,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,37,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,38,838.0,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,39,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,40,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,41,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,42,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,43,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,44,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,45,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,46,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,47,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,48,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,49,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,50,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,51,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,52,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,53,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,54,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,55,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,56,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,57,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,58,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,59,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,60,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,61,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,62,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,63,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,64,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,65,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,66,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,67,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,68,838.0,0,"My answer is 838.
+### answer: 838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,69,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,70,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,71,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,72,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,73,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,74,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,75,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,76,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,77,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,78,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,79,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,80,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,81,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,82,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,83,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,84,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,85,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,86,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,87,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,88,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,89,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,90,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,91,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,92,838.0,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,93,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,94,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,95,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,96,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,97,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,98,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,99,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,100,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,101,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,102,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,103,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,104,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,105,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,106,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,107,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,108,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,109,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,110,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,111,0.0928,0,"My answer is 0.0928.
+### answer: 0.0928"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,112,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,113,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,114,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,115,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,116,946.0,0,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,117,838.0,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,118,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,Qwen3-4B + humanFT,119,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,0,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,1,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,2,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,3,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,4,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,5,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,6,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,7,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,8,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,9,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,10,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,11,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,12,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,13,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,14,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,15,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,16,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,17,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,18,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,19,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,20,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,21,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,22,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,23,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,24,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,25,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,26,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,27,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,28,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,29,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,30,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,31,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,32,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,33,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,34,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,35,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,36,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,37,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,38,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,39,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,40,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,41,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,42,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,43,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,44,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,45,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,46,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,47,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,48,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,49,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,50,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,51,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,52,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,53,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,54,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,55,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,56,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,57,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,58,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,59,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,60,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,61,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,62,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,63,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,64,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,65,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,66,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,67,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,68,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,69,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,70,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,71,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,72,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,73,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,74,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,75,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,76,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,77,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,78,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,79,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,80,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,81,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,82,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,83,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,84,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,85,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,86,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,87,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,88,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,89,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,90,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,91,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,92,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,93,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,94,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,95,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,96,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,97,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,98,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,99,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,100,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,101,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,102,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,103,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,104,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,105,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,106,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,107,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,108,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,109,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,110,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,111,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,112,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,113,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,114,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,115,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,116,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,117,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,118,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,Qwen3-4B + humanFT,119,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,0,294.0,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,1,12.14,0,"My answer is 12.14.
+### answer: 12.14"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,2,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,3,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,4,14.2,0,"My answer is 14.2.
+### answer: 14.2"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,5,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,6,14.21,0,"My answer is 14.21.
+### answer: 14.21"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,7,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,8,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,9,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,10,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,11,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,12,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,13,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,14,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,15,0.0294,0,"My answer is 0.0294.
+### answer: 0.0294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,16,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,17,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,18,294.0,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,19,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,20,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,21,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,22,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,23,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,24,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,25,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,26,1.94,0,"My answer is 1.94.
+### answer: 1.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,27,14.0,0,"My answer is 14.
+### answer: 14"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,28,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,29,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,30,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,31,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,32,294.0,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,33,194.0,0,"My answer is 194.
+### answer: 194"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,34,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,35,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,36,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,37,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,38,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,39,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,40,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,41,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,42,16.8,0,"My answer is 16.8.
+### answer: 16.8"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,43,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,44,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,45,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,46,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,47,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,48,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,49,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,50,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,51,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,52,1.31,0,"My answer is 1.31.
+### answer: 1.31"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,53,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,54,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,55,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,56,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,57,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,58,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,59,14.42,0,"My answer is 14.42.
+### answer: 14.42"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,60,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,61,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,62,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,63,147.0,0,"My answer is 147.
+### answer: 147"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,64,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,65,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,66,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,67,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,68,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,69,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,70,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,71,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,72,14.21,0,"My answer is 14.21.
+### answer: 14.21"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,73,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,74,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,75,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,76,10.7,0,"My answer is 10.7.
+### answer: 10.7"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,77,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,78,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,79,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,80,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,81,294.0,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,82,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,83,294.0,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,84,294.0,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,85,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,86,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,87,0.84,0,"My answer is 0.84.
+### answer: 0.84"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,88,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,89,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,90,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,91,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,92,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,93,0.32,0,"My answer is 0.32.
+### answer: 0.32"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,94,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,95,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,96,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,97,294.0,0,"My answer is 0294.
+### answer: 0294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,98,1.1,0,"My answer is 1.1.
+### answer: 1.1"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,99,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,100,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,101,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,102,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,103,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,104,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,105,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,106,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,107,2940.0,0,"My answer is 2940.
+### answer: 2940"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,108,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,109,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,110,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,111,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,112,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,113,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,114,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,115,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,116,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,117,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,118,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,Qwen3-4B + humanFT,119,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,0,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,1,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,2,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,3,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,4,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,5,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,6,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,7,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,8,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,9,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,10,0.299,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,11,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,12,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,13,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,14,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,15,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,16,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,17,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,18,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,19,2.39,0,"My answer is 2.39.
+### answer: 2.39"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,20,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,21,1.19,0,"My answer is 1.19.
+### answer: 1.19"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,22,299.0,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,23,2.69,0,"My answer is 2.69.
+### answer: 2.69"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,24,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,25,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,26,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,27,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,28,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,29,2990.0,0,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,30,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,31,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,32,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,33,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,34,2990.0,0,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,35,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,36,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,37,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,38,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,39,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,40,299.0,0,"My answer is 299.00.
+### answer: 299.00"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,41,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,42,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,43,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,44,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,45,0.923,0,"My answer is 0.923.
+### answer: 0.923"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,46,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,47,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,48,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,49,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,50,2.59,0,"My answer is 2.59.
+### answer: 2.59"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,51,923.0,0,"My answer is .923.
+### answer: .923"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,52,2990.0,0,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,53,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,54,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,55,6.9,0,"My answer is 6.9.
+### answer: 6.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,56,923.0,0,"My answer is .923.
+### answer: .923"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,57,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,58,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,59,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,60,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,61,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,62,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,63,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,64,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,65,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,66,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,67,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,68,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,69,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,70,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,71,1.99,0,"My answer is 1.99.
+### answer: 1.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,72,2.63,0,"My answer is 2.63.
+### answer: 2.63"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,73,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,74,9.2,0,"My answer is 9.20.
+### answer: 9.20"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,75,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,76,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,77,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,78,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,79,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,80,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,81,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,82,2990.0,0,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,83,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,84,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,85,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,86,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,87,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,88,0.299,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,89,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,90,6.13,0,"My answer is 6.13.
+### answer: 6.13"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,91,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,92,299.0,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,93,2.99,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,94,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,95,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,96,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,97,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,98,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,99,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,100,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,101,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,102,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,103,0.299,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,104,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,105,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,106,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,107,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,108,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,109,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,110,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,111,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,112,299.0,0,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,113,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,114,0.0923,0,"My answer is 0.0923.
+### answer: 0.0923"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,115,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,116,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,117,299.0,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,118,29.9,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,Qwen3-4B + humanFT,119,299.0,0,"My answer is .299.
+### answer: .299"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,0,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,1,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,2,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,3,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,4,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,5,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,6,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,7,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,8,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,9,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,10,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,11,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,12,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,13,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,14,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,15,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,16,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,17,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,18,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,19,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,20,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,21,72.0,0,"My answer is 72.
+### answer: 72"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,22,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,23,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,24,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,25,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,26,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,27,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,28,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,29,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,30,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,31,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,32,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,33,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,34,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,35,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,36,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,37,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,38,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,39,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,40,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,41,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,42,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,43,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,44,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,45,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,46,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,47,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,48,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,49,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,50,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,51,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,52,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,53,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,54,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,55,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,56,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,57,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,58,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,59,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,60,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,61,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,62,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,63,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,64,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,65,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,66,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,67,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,68,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,69,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,70,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,71,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,72,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,73,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,74,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,75,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,76,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,77,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,78,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,79,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,80,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,81,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,82,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,83,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,84,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,85,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,86,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,87,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,88,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,89,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,90,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,91,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,92,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,93,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,94,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,95,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,96,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,97,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,98,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,99,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,100,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,101,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,102,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,103,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,104,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,105,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,106,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,107,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,108,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,109,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,110,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,111,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,112,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,113,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,114,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,115,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,116,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,117,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,118,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,Qwen3-4B + humanFT,119,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,0,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,1,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,2,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,3,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,4,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,5,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,6,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,7,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,8,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,9,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,10,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,11,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,12,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,13,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,14,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,15,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,16,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,17,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,18,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,19,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,20,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,21,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,22,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,23,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,24,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,25,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,26,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,27,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,28,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,29,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,30,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,31,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,32,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,33,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,34,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,35,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,36,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,37,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,38,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,39,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,40,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,41,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,42,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,43,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,44,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,45,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,46,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,47,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,48,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,49,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,50,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,51,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,52,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,53,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,54,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,55,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,56,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,57,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,58,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,59,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,60,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,61,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,62,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,63,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,64,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,65,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,66,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,67,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,68,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,69,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,70,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,71,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,72,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,73,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,74,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,75,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,76,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,77,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,78,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,79,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,80,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,81,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,82,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,83,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,84,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,85,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,86,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,87,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,88,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,89,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,90,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,91,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,92,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,93,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,94,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,95,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,96,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,97,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,98,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,99,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,100,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,101,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,102,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,103,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,104,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,105,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,106,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,107,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,108,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,109,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,110,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,111,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,112,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,113,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,114,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,115,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,116,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,117,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,118,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,Qwen3-4B + humanFT,119,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,0,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,1,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,2,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,3,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,4,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,5,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,6,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,7,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,8,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,9,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,10,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,11,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,12,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,13,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,14,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,15,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,16,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,17,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,18,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,19,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,20,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,21,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,22,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,23,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,24,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,25,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,26,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,27,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,28,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,29,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,30,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,31,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,32,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,33,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,34,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,35,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,36,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,37,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,38,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,39,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,40,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,41,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,42,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,43,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,44,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,45,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,46,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,47,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,48,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,49,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,50,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,51,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,52,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,53,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,54,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,55,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,56,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,57,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,58,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,59,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,60,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,61,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,62,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,63,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,64,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,65,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,66,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,67,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,68,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,69,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,70,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,71,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,72,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,73,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,74,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,75,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,76,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,77,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,78,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,79,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,80,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,81,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,82,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,83,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,84,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,85,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,86,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,87,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,88,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,89,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,90,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,91,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,92,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,93,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,94,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,95,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,96,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,97,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,98,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,99,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,100,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,101,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,102,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,103,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,104,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,105,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,106,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,107,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,108,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,109,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,110,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,111,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,112,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,113,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,114,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,115,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,116,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,117,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,118,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,Qwen3-4B + humanFT,119,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,0,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,1,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,2,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,3,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,4,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,5,155.0,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,6,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,7,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,8,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,9,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,10,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,11,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,12,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,13,123.2,0,"My answer is 123.2.
+### answer: 123.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,14,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,15,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,16,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,17,128.0,0,"My answer is 128.
+### answer: 128"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,18,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,19,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,20,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,21,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,22,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,23,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,24,1.92,0,"My answer is 1.92.
+### answer: 1.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,25,141.0,0,"My answer is 141.
+### answer: 141"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,26,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,27,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,28,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,29,124.0,0,"My answer is 124.
+### answer: 124"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,30,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,31,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,32,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,33,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,34,30.1,0,"My answer is 30.1.
+### answer: 30.1"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,35,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,36,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,37,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,38,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,39,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,40,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,41,16.9,0,"My answer is 16.9.
+### answer: 16.9"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,42,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,43,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,44,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,45,19.52,0,"My answer is 19.52.
+### answer: 19.52"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,46,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,47,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,48,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,49,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,50,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,51,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,52,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,53,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,54,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,55,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,56,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,57,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,58,15.2,0,"My answer is 15.2.
+### answer: 15.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,59,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,60,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,61,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,62,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,63,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,64,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,65,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,66,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,67,155.0,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,68,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,69,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,70,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,71,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,72,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,73,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,74,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,75,1.55,0,"My answer is 1.55.
+### answer: 1.55"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,76,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,77,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,78,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,79,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,80,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,81,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,82,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,83,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,84,9.8,0,"My answer is 9.8.
+### answer: 9.8"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,85,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,86,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,87,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,88,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,89,155.0,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,90,19.0,0,"My answer is 19.
+### answer: 19"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,91,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,92,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,93,16.0,0,"My answer is 16.
+### answer: 16"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,94,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,95,1.1,0,"My answer is 1.1.
+### answer: 1.1"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,96,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,97,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,98,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,99,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,100,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,101,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,102,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,103,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,104,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,105,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,106,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,107,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,108,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,109,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,110,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,111,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,112,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,113,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,114,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,115,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,116,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,117,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,118,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,Qwen3-4B + humanFT,119,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,0,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,1,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,2,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,3,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,4,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,5,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,6,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,7,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,8,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,9,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,10,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,11,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,12,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,13,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,14,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,15,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,16,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,17,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,18,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,19,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,20,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,21,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,22,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,23,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,24,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,25,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,26,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,27,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,28,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,29,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,30,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,31,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,32,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,33,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,34,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,35,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,36,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,37,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,38,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,39,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,40,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,41,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,42,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,43,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,44,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,45,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,46,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,47,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,48,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,49,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,50,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,51,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,52,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,53,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,54,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,55,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,56,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,57,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,58,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,59,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,60,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,61,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,62,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,63,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,64,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,65,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,66,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,67,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,68,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,69,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,70,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,71,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,72,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,73,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,74,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,75,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,76,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,77,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,78,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,79,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,80,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,81,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,82,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,83,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,84,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,85,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,86,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,87,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,88,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,89,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,90,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,91,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,92,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,93,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,94,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,95,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,96,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,97,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,98,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,99,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,100,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,101,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,102,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,103,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,104,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,105,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,106,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,107,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,108,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,109,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,110,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,111,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,112,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,113,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,114,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,115,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,116,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,117,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,118,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,Qwen3-4B + humanFT,119,28.61,1,"My answer is 28.61.
+### answer: 28.61"
