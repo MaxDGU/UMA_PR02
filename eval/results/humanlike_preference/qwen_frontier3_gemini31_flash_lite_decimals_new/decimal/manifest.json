@@ -1,0 +1,79 @@
+{
+  "domain": "decimal",
+  "prompt_version": "qwen_humanlike_preference_v1",
+  "backend": "gemini_sync",
+  "judge_model": "gemini-3.1-flash-lite",
+  "seed": 20260522,
+  "samples_per_problem": 100,
+  "max_pairs_per_comparison": 0,
+  "only_baselines": [
+    "claude_sonnet_4_6",
+    "gemini_3_flash",
+    "gpt_5_5_low"
+  ],
+  "row_count": 3600,
+  "qwen_entity": "qwen3_4b_distill_humanft_reasoning",
+  "included_entities": [
+    "claude_sonnet_4_6",
+    "gemini_3_flash",
+    "gpt_5_5_low",
+    "qwen3_4b_distill_humanft_reasoning"
+  ],
+  "skipped_sources": [
+    {
+      "domain": "decimal",
+      "entity": "human",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/fractionGPT/decimals/bss2021_human_responses.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1103,
+      "problem_count": 12,
+      "min_rows_per_problem": 91,
+      "max_rows_per_problem": 92
+    },
+    {
+      "domain": "decimal",
+      "entity": "uma",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02/results/UMA_replication/decimal_bss2021_human_problems_k100_x100_traces/uma_traces_decimal_human_problems.csv.gz",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 120000,
+      "problem_count": 12,
+      "min_rows_per_problem": 10000,
+      "max_rows_per_problem": 10000
+    },
+    {
+      "domain": "decimal",
+      "entity": "centaur_70b",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/decimal/centaur_70b.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1200,
+      "problem_count": 12,
+      "min_rows_per_problem": 100,
+      "max_rows_per_problem": 100
+    },
+    {
+      "domain": "decimal",
+      "entity": "gemini_2_5_flash",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/decimal/gemini_2_5_flash.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1440,
+      "problem_count": 12,
+      "min_rows_per_problem": 120,
+      "max_rows_per_problem": 120
+    },
+    {
+      "domain": "decimal",
+      "entity": "gpt_4_1_mini",
+      "source_path": "/scratch/gpfs/BRENDEN/changho/UMA_PR02_main_max_share/eval/outputs/decimal/gpt_4_1_mini.csv",
+      "status": "skipped_by_filter",
+      "reason": "excluded by --only-baselines",
+      "row_count": 1440,
+      "problem_count": 12,
+      "min_rows_per_problem": 120,
+      "max_rows_per_problem": 120
+    }
+  ]
+}

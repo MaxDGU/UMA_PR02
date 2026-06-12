@@ -1,0 +1,15 @@
+{
+  "row_count": 3600,
+  "parse_success_rate": 1.0,
+  "preference_set_count": 3,
+  "problem_count": 12,
+  "total_prompt_tokens": 1477027,
+  "total_completion_tokens": 163580,
+  "total_tokens": 1640607,
+  "backend": "gemini_sync",
+  "judge_model": "gemini-3.1-flash-lite",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 192,
+  "prompt_version": "qwen_humanlike_preference_v1"
+}

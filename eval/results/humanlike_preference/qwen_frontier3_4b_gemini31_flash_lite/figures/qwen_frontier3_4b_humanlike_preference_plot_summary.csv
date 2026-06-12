@@ -1,0 +1,7 @@
+domain,qwen_entity,baseline_entity,rows,parse_success_rate,qwen_preference_rate,baseline_preference_rate,tie_rate,qwen_pct,baseline_pct,tie_pct
+decimal,qwen3_4b_distill_humanft_reasoning,claude_sonnet_4_6,1200,1.0,0.365,0.635,0.0,36.5,63.5,0.0
+decimal,qwen3_4b_distill_humanft_reasoning,gemini_3_flash,1200,1.0,0.5891666666666666,0.4108333333333333,0.0,58.916666666666664,41.08333333333333,0.0
+decimal,qwen3_4b_distill_humanft_reasoning,gpt_5_5_low,1200,1.0,0.6466666666666666,0.3533333333333333,0.0,64.66666666666666,35.33333333333333,0.0
+fraction,qwen3_4b_distill_humanft,claude_sonnet_4_6,1600,1.0,0.649375,0.350625,0.0,64.9375,35.0625,0.0
+fraction,qwen3_4b_distill_humanft,gemini_3_flash,1600,1.0,0.574375,0.425625,0.0,57.4375,42.5625,0.0
+fraction,qwen3_4b_distill_humanft,gpt_5_5_low,1600,1.0,0.614375,0.385625,0.0,61.4375,38.5625,0.0
