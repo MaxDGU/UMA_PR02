@@ -301,7 +301,7 @@ problem,operation,denom_type,correct_answer,model,sample_idx,parsed_answer,is_co
 ### answer: 6/8"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,153,2/5,1,"I multiplied 2 times 3 and got 6, and I multiplied 3 times 5 and got 15 and I put 6 over 15 and i thought that's the answer and that was wrong
 ### answer: 6/15"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,154,2/5,0,"### answer: 2/5
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,154,2/5,1,"### answer: 2/5
 ### answer: 1/1"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,155,5/8,0,"I think I added 3 plus 3 then 2 plus 5.
 ### answer: 5/8"
@@ -488,17 +488,17 @@ problem,operation,denom_type,correct_answer,model,sample_idx,parsed_answer,is_co
 ### answer: 6/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,248,6/5,0,"And then I multiplied 2 times 3 and that equals 6.
 ### answer: 6/5"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,249,2/5,0,"######I multiplied straight across and that would have been 6/15, but then I was just trying to do that like I do for any other math problem, and I kept simplifying until I had 2/5, so I think that's my answer.
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,249,2/5,1,"######I multiplied straight across and that would have been 6/15, but then I was just trying to do that like I do for any other math problem, and I kept simplifying until I had 2/5, so I think that's my answer.
 #################################################################################################################################################################################################################################################################################################"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,250,2/5,1,"First, I multiplied the two denominators to get 3 times 5. I got 15 and then I multiplied the numerators and I got 6.
 ### answer: 6/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,251,2/5,1,"### answer: 6/15
 ### answer: 6/15"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,252,3,1,"### answer: 3/3I first did 3 times 2 and got 6, then I did 3 times 5 and got 15, and I put them together as a fraction and it was 6/15 because I put 3 times 5
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,252,3,0,"### answer: 3/3I first did 3 times 2 and got 6, then I did 3 times 5 and got 15, and I put them together as a fraction and it was 6/15 because I put 3 times 5
 ### answer: 6/15I multiplied the numerators (2 and 3) to get 6, and the denominators (3 and 5) to get 15, because 2 over 3 times 3 over 5 equals 6 over 15
 ### answer: 6/15I first multiplied 2 times 3 and got 6 and then 3 times 5 and got 15, since 2 over 3 times 3 over 5 is 6 over 15 because 2 times 3 is 6 and 3 times 5 is 15
 ###"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,253,2/5,0,"###Answer:2/5###### Explanation:To find the answer, we multiply the numerators together and then multiply the denominators together:2*3=6 and 3*5=15
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + humanFT,253,2/5,1,"###Answer:2/5###### Explanation:To find the answer, we multiply the numerators together and then multiply the denominators together:2*3=6 and 3*5=15
 
 ### answer: 14/9
 ### ### answer: 2
@@ -2080,7 +2080,7 @@ I divided 2 over 3 and 3 over 5 because they had a common denominator
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,2,3/20,1,"### I did that 3 times 1 is 3 and 5 times 4 was 20 because 5 times 4 because
 ### answer: 3/20"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,3,3/5,1,"### answer: 3/5*1/4 equals to 3/20
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,3,3/5,0,"### answer: 3/5*1/4 equals to 3/20
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,4,4/15,0,"I just times them
 ### answer: 4/15"
@@ -2230,7 +2230,7 @@ I divided 2 over 3 and 3 over 5 because they had a common denominator
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,80,3/20,1,"###I multiplied the bottom to get 20, and I multiplied the top to get 3
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,81,,0,### I multiplied 3 times 1 which equals 3 and then I multiplied 5 times 4 which equals 20
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,82,3/5,1,"I did that because I have to keep my first denominator and multiply my first denominator by my second numerators and then keep my numerator and multiply my denominator and my numerator and then I just did 3 times 1 and 5 times 4
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,82,3/5,0,"I did that because I have to keep my first denominator and multiply my first denominator by my second numerators and then keep my numerator and multiply my denominator and my numerator and then I just did 3 times 1 and 5 times 4
 ### answer: 3/5*1/4 = 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,83,3/20,1,"I multiplied across first and got 3 times 1=3 times 5 times 4 is 20
 ### answer: 3/20"
@@ -2356,7 +2356,7 @@ I divided 2 over 3 and 3 over 5 because they had a common denominator
 ### answer: 4
 
 ### answer: 4"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,143,3/5,1,### answer: 3/5*1/4= 3/5*1/4 = 3/20### answer: 3/5### answer: 1/4### answer: ### answer: 3/20
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,143,3/5,0,### answer: 3/5*1/4= 3/5*1/4 = 3/20### answer: 3/5### answer: 1/4### answer: ### answer: 3/20
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,144,3/20,1,"I multiplied the numerators and got 3 over 20.
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + humanFT,145,3/20,1,"I figured I was supposed to multiply the numerator by the numerator and then multiply the denominator by the denominator.
@@ -2658,7 +2658,7 @@ I divided 2 over 3 and 3 over 5 because they had a common denominator
 ### answer: 3/5"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,40,3/5,0,"I would get it by multiplying 3 times 1 which equals 3 and 5 times 5 which equals 5 and 3 times 1 which equals 5 over 5.
 ### answer: 3/5"
-3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,41,3/5,1,### ### answer: 3/5*1/5 = 3/25
+3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,41,3/5,0,### ### answer: 3/5*1/5 = 3/25
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,42,3/25,1,"I made a common denominator and multiplied the numerators because the denominators would be the same
 ### answer: 3/25"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,43,4,0,"I changed the 3/5 into 3 wholes, and the 1/5 into 1 whole, and i got 4 wholes.
@@ -3076,7 +3076,7 @@ I divided 2 over 3 and 3 over 5 because they had a common denominator
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,251,6/25,0,"### answer: 6/25
 ### answer: 6/25"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,252,3/25,1,### answer: 3/25
-3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,253,3,1,"###Answer: 3 over 5 times 1 over 5 equals 3 over 25.
+3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,253,3,0,"###Answer: 3 over 5 times 1 over 5 equals 3 over 25.
 ### answer: 3/25"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + humanFT,254,2/5,0,"I got 4/10, I multiplied across
 ### answer: 4/10"
@@ -3400,7 +3400,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,158,4/9,0,"I did 3 and 1 to get 4 over 5 and 4 and 5 to get 5 over 10
 ### answer: 4/9"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,159,37/20,1,"I found the LCM which was 12 and 15. For the numerator I added 3 and 1 for 4 and for the denominator I added 15 and 12 for 27 and then I reduced it and got 27/20 because 27 divided by 20 equals 1, and 1/20.
+3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,159,37/20,0,"I found the LCM which was 12 and 15. For the numerator I added 3 and 1 for 4 and for the denominator I added 15 and 12 for 27 and then I reduced it and got 27/20 because 27 divided by 20 equals 1, and 1/20.
 ### answer: 1 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,160,4/9,0,"i just added the denominators and did the numerators together for this problem and got 4 over 9, and i just did that
 ### answer: 4/9"
@@ -3582,7 +3582,7 @@ I added the top numbers together, and I added the bottom numbers together."
 3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,250,17/20,1,"First, I had to find a common denominator for 3/5 and 1/4, which I did by multiplying 5 times 4, which equals 20.
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,251,,0,############################################################################################################################################################################################# ######################################################################################################### ##################################################################### ##################################################################### ################## ################## ################## #######
-3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,252,3,1,"### answer: 3/4I first did a common denominator for the 5 and the 4 which I got 20 and then I divided 4 by 4 because I multiplied 5 by 4, which I got 20 because that was my common denominator, and I divided 3 because I had to multiplied 3 because it had been multiplied by 4, which I got 12, and I divided 1 by 1 because I multiplied 4 because that had been multiplied by 5 which I got 5, and then I divided 12 plus 5 because I had to add the two and I got 17.
+3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,252,3,0,"### answer: 3/4I first did a common denominator for the 5 and the 4 which I got 20 and then I divided 4 by 4 because I multiplied 5 by 4, which I got 20 because that was my common denominator, and I divided 3 because I had to multiplied 3 because it had been multiplied by 4, which I got 12, and I divided 1 by 1 because I multiplied 4 because that had been multiplied by 5 which I got 5, and then I divided 12 plus 5 because I had to add the two and I got 17.
 ### answer: 17/20
 ### answer: 17/20I di"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + humanFT,253,4/9,0,"I added up the numerators and added up the denominators to get 4/9.
@@ -3876,7 +3876,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 4/10"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,141,4/5,1,"I added the 3 and 1 which was 4 and I added the bottom because 5 times 5 was 5 and 4/5 is my answer
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,142,4,1,"### answer: 4/5I just added because the denominators were the same
+3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,142,4,0,"### answer: 4/5I just added because the denominators were the same
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,143,4/5,1,"### answer: 4/5
 ### answer: 4/5"
@@ -4060,7 +4060,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 4/10"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,234,2/5,0,"I added the denominators together and the numerators and got 4 over 10.
 ### answer: 4/10"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,235,4/5,0,"### I added the numerator because I figured since they were the same denominator.
+3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,235,4/5,1,"### I added the numerator because I figured since they were the same denominator.
 ### I added the numerator because I figured since they were the same denominator.
 ### 3/5+1/5=4/5 because since they had the same denominator, it just added up and I added the top because I added the fractions with the same denominator.
 ### Because the fractions have the same denominator I added the numerators."
@@ -4094,7 +4094,7 @@ I added the top numbers together, and I added the bottom numbers together."
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,250,2/5,0,"First, I had to find a common denominator for 3/5 and 1/5, which I did by multiplying the numerator of each fraction by the denominator of the other.
 ### answer: 4/10"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,251,,0,############################################################################################################################################################################################# ######################################################################################################### ##################################################################### ##################################################################### ################## ################## ################## #######
-3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,252,3/5,1,### answer: 3/5 plus 1/5 equals 4/5
+3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,252,3/5,0,### answer: 3/5 plus 1/5 equals 4/5
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,253,4/5,1,"###I added the numerators together because the denominators were the same.
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + humanFT,254,2/5,0,"I got 4/10, I got that by adding 5 times 5 was 25 and 5 times 5 was 25 and I divided 25 and 25 and I got 4 over 10.
@@ -4886,7 +4886,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 1/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,129,2/5,1,"I subtracted the numerator because they were the same and left the denominator and got 2/5.
 ### answer: 2/5"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,130,2/5,0,"###I subtracted because when you have a fraction with an equal denominator you subtract straight across
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,130,2/5,1,"###I subtracted because when you have a fraction with an equal denominator you subtract straight across
 ### 2/5, 0 over 5, or one minus 3 minus 1 minus 3 and minus 1 minus 1 is 2 and minus over minus 2
 ### 2 over 5 because 0 times 5 equals zero minus five plus zero minus 1 minus 1
 ### 0 minus 5 plus 5 minus 1 and minus 1 minus 1 and minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus 1 minus"
@@ -4912,7 +4912,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 2 over 0"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,141,,0,"I subtracted 3 and 1 which was 2 and I subtracted 5 and 5 which was 0 and the answer was 0/2.
 ### answer: 2/0"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,142,2,1,"### answer: 2/5I just subtracted the denominators because they were the same and the numerators because they were the same and I got 2 over 5
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,142,2,0,"### answer: 2/5I just subtracted the denominators because they were the same and the numerators because they were the same and I got 2 over 5
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,143,2/5,1,"### answer: 2/5
 ### answer: 2/5"
@@ -5074,7 +5074,7 @@ I added the top numbers together, and I added the bottom numbers together."
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,223,2/5,1,"I got the answer 2/5
 ### answer: 2/5"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,224,2/5,0,### answer: 2/5### answer: 1/5
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,224,2/5,1,### answer: 2/5### answer: 1/5
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,225,2/5,1,"I put 2 over 5 because I subtracted 3 from 1 and 5 from 5.
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,226,2/5,1,"I subtracted the numerators, because they had the same denominators.
@@ -5127,7 +5127,7 @@ I added the top numbers together, and I added the bottom numbers together."
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,250,2/5,1,"First, I had to find a common denominator for 3 and 5. I didn't have to find one because they were both 5ths, which is a 5.
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,251,,0,############################################################################################################################################################################################# ######################################################################################################### ##################################################################### ##################################################################### ################## ################## ################## #######
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,252,3/5,1,### answer: 3/5-1/5=2/5
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,252,3/5,0,### answer: 3/5-1/5=2/5
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,253,2/5,1,"###I took 1 away from 3 and 5 away from 5.###3/5-1/5###I didn't have to do anything with the bottom because I couldn't cross it out.
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + humanFT,254,2/5,1,"I got 4/10, I got that cause I added 3 plus 1 that equals 4 and 5 plus 5 equals 10
@@ -5265,7 +5265,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: -3/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,61,7,0,"I got 7/9 because I did 5+1 which gave me 6 and 4+3 gave me 7 and 5 times 4 is 20 then I did 6 times 7 which gave me 42 and then I did 6 times 6 because I added 5 and 1 together again
 ### answer: 42/6"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,62,2,1,"I multiplied 3 times 4 to get 12 and 5 times 1 got 5, then I made it 12 over 5 which simplified to 2 2/5ths
+3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,62,2,0,"I multiplied 3 times 4 to get 12 and 5 times 1 got 5, then I made it 12 over 5 which simplified to 2 2/5ths
 ### answer: 2 2/5ths"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,63,3,0,"I divided 3 by 1 which is 3, and I divided 5 by 4 which is 1.
 ### answer: 3/1"
@@ -5385,7 +5385,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1 5/4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,119,3,0,"I converted 3/5 to 12 and 1/4 to 4 and I divided 12 divided by 4 and got 3
 ### answer: 3"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,120,5/4,1,"I divided 3/5 times 4/1 which gave me 12/5I divided 1/4 times 5/1 and got 5/4I got an answer of 5/4 and 12/5. I turned 5/4 into a mixed number 1 1/4
+3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,120,5/4,0,"I divided 3/5 times 4/1 which gave me 12/5I divided 1/4 times 5/1 and got 5/4I got an answer of 5/4 and 12/5. I turned 5/4 into a mixed number 1 1/4
 ### answer: 1 1/4 and 12/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + humanFT,121,13/4,0,"I divided 3 by 1 and got 3 and I divided 5 by 4 and got 1 so I said it was 3 1/4
 ### answer: 3 1/4"
@@ -5676,7 +5676,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,3,2/5,0,"###  answer: 2/5
 ### answer: 2/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,4,3,0,"I just divided and got 3 and 1 and 1 and 3 because 1 divided by 1 was 1
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,4,3,1,"I just divided and got 3 and 1 and 1 and 3 because 1 divided by 1 was 1
 ### answer: 3,1/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,5,3/5,0,"I multiplied it because I had to have the denominator and numerators be the same and I didn't have to change the numerators because 3 is greater then 1.
 ### answer: 3/5"
@@ -5708,7 +5708,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,19,2/5,0,"### I tried to subtract 3/5 minus 1/5 because it was a division so I changed the fraction over to a subtraction and did that.
 ### answer: 2/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,20,3,0,"### I divided 3 and 1 then I divided 5 and 5.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,20,3,1,"### I divided 3 and 1 then I divided 5 and 5.
 ### answer: 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,21,3/5,0,"I just divided 3 by 1 for 3 for the numerator and 5 by 5 for 5 for the denominator
@@ -5753,7 +5753,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 30/0"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,42,7/5,0,"I made a common denominator and got 6/5 plus 1/5.
 ### answer: 7/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,43,3,0,"I guessed I did that by flipping over 3/5 and dividing them and that's all I did.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,43,3,1,"I guessed I did that by flipping over 3/5 and dividing them and that's all I did.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,44,1,0,"I guessed and thought that it would be one because one went into five so I divided, and that is what I got.
 ### answer: 1"
@@ -5777,7 +5777,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 4/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,54,6/5,0,"I added the numerator since they were the same and I kept the same denominator because it's the same.
 ### answer: 6/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,55,3,0,"I took out the 5's and just divided them
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,55,3,1,"I took out the 5's and just divided them
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,56,1,0,"I subtracted 5 from 5 and 3 from 1, so 5 and 1
 ### answer: 4/4"
@@ -5799,7 +5799,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 6/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,65,2,0,"I subtracted and got 1, because 5 minus 3 is 2.
 ### answer: 2"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,66,3,0,"I divided 5 by 5 which gave me 1 and I multiplied 3 and 1 giving me 3 so I put it over 1 which gave me 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,66,3,1,"I divided 5 by 5 which gave me 1 and I multiplied 3 and 1 giving me 3 so I put it over 1 which gave me 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,67,2,0,"I took 3 minus 1 and I got 2, and 5 minus 5 and I got 1 so the answer is 2/1.
 ### answer: 2/1"
@@ -5820,7 +5820,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1 1/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,75,3,1,"I did 3 divided by 1, and 5 divided by 5 and got 3/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,76,3,0,"I divided both by 1/5 and then the whole thing.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,76,3,1,"I divided both by 1/5 and then the whole thing.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,77,3,1,"I thought, I just took 3 divided by 1 and got 3
 ### answer: 3/1"
@@ -5828,7 +5828,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 4/10"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,79,3/5,0,"I divided 3 by 1, and I got 3 over 5.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,80,3,0,"###I divided the common denominator,5 by the 5 to get 1 and then I divided three by one to get 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,80,3,1,"###I divided the common denominator,5 by the 5 to get 1 and then I divided three by one to get 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,81,0,0,"I got 0 for the answer I didn't know if I did it right.
 ### answer: 0/5"
@@ -5838,7 +5838,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,84,2/5,0,"I figured out 3 plus 1 is 4 for the top and 5 plus 5 is 10 for the bottom.
 ### answer: 4/10"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,85,3,0,"I took 3 and divided by 1 and I got 3
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,85,3,1,"I took 3 and divided by 1 and I got 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,86,,0,"I just subtracted the top and bottom and it was zero over zero
 ### answer: 0/0"
@@ -5899,9 +5899,9 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 2/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,114,3/5,0,"I divided and got 3 over 5 because you divide 3 divided by 5
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,115,3,0,"I divided 3 by 1 and got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,115,3,1,"I divided 3 by 1 and got 3.
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,116,3,0,"I divided 3 into 1 and I got 3
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,116,3,1,"I divided 3 into 1 and I got 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,117,5/3,0,"I divided 5 by 5 and 3 by 1 got 5 times 5 and 3 times 1 equals 5 divided 3
 ### answer: 5/3"
@@ -5911,10 +5911,10 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 0.3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,120,3/25,0,"I divided 3/5 times 1/5 which gave me 3/25I divided 5 times 5 for the 25 and 3 times 1 which is 3.
 ### answer: 3/25"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,121,3,0,"I divided 3 by 1 and got 3 and I divided 5 by 5 and got 1 so I said it was 3 1.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,121,3,1,"I divided 3 by 1 and got 3 and I divided 5 by 5 and got 1 so I said it was 3 1.
 ### answer: 3 1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,122,2/5,0,I thought it would be 2/5 because that's the only one I tried adding and subtracting.### answer: 2/5
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,123,3,0,"I had to convert it because you can't have a common denominator.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,123,3,1,"I had to convert it because you can't have a common denominator.
 ### answer: 3:1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,124,1,0,"I'm actually just dividing I just flipped it and multiplied.
 ### answer: 1"
@@ -5942,7 +5942,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,136,3,1,"I divided 5 by 5 and 3 by 1 to get 3/1. But I'm not sure if I'm right.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,137,3,0,"I did not just divide it because I put them on different numbers
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,137,3,1,"I did not just divide it because I put them on different numbers
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,138,2/5,0,i took 3/5 minus 1/5 and i just got 2/5 because i just took the bottom away from the top because it was equal to one another.### answer: 2/5### answer: 2/5
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,139,2/5,0,"I changed the 3/5 into 6/10 and the 1/5 into 2/10 because I figured 3 times 2 is 6 and 5 times 5 is 10 and also I added the 2 and the 5.
@@ -5955,15 +5955,15 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 4
 
 ### answer: 4"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,143,3,0,"###The answer is 3 because 5 goes into 5 one time and since 3 goes into 1 three times, so 1 plus 3 equals 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,143,3,1,"###The answer is 3 because 5 goes into 5 one time and since 3 goes into 1 three times, so 1 plus 3 equals 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,144,6/25,0,"I timesed both and I got 6 over 25.
 ### answer: 6/25"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,145,3,0,"I figured I was supposed to do 3 divided by 1 and 5 divided by 5 but I didn't know if 1 got divided into 3, and I also didn't know if 5 got divided into 5, so I just did 3 because 1 didn't go in, and 5 did.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,145,3,1,"I figured I was supposed to do 3 divided by 1 and 5 divided by 5 but I didn't know if 1 got divided into 3, and I also didn't know if 5 got divided into 5, so I just did 3 because 1 didn't go in, and 5 did.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,146,4,0,"I turned 5 into like 1 and 3 plus 1 because I had 2 in the numerator, and 5 times 1 equals 1.
 ### answer: 4/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,147,3,0,"I divided to get my answer and got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,147,3,1,"I divided to get my answer and got 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,148,,0,"I subtracted 3-1 and it was 2, 5-5 was 0
 ### answer: 2/0"
@@ -5981,7 +5981,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 3/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,155,2/5,0,"I think I added 3 plus 1 then 5 plus 5.
 ### answer: 4/10"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,156,3,0,"I did 3 divided by 1, then I did 5 divided by 5.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,156,3,1,"I did 3 divided by 1, then I did 5 divided by 5.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,157,1/3,0,"I divided 1 by 3 and got one third.
 ### answer: 1/3"
@@ -5991,7 +5991,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,160,,0,"i just subtracted the numerator by the denominator
 ### answer: 2/0"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,161,3,0,"I divided 3 by 1 got 3 and 5 divided by 5 got 1 so that's my answer.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,161,3,1,"I divided 3 by 1 got 3 and 5 divided by 5 got 1 so that's my answer.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,162,1,0,"I divided the two, but I think I didn't divide all of it
 ### answer: 5/5"
@@ -6020,11 +6020,11 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 6"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,175,2,0,"I know you get 2.
 ### answer: 2"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,176,3,0,"I multiplied the fraction by the reciprocal which was 3/1 and then multiplied, so that equals 3, because 3 over 5 and 1 over 5 is just 3 over 1.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,176,3,1,"I multiplied the fraction by the reciprocal which was 3/1 and then multiplied, so that equals 3, because 3 over 5 and 1 over 5 is just 3 over 1.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,177,4/5,0,"I converted 1/5 to 3/5 because that is the LCM and then I added the numerators because that made it 4/5
 ### answer: 4/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,178,3,0,"I figured out that it was 3
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,178,3,1,"I figured out that it was 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,179,3/5,0,"I decided to do this problem because I was stuck on multiplying fractions because I just couldn't get the right answer.
 ### answer: 3/5"
@@ -6061,7 +6061,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 4/10"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,196,2/5,0,"I added 1 and 3 to get 4, and I added 5 and 5 to get 10.
 ### answer: 4/10"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,197,3,0,"I just multiplied across and divided the denominator and the numerator by the same number.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,197,3,1,"I just multiplied across and divided the denominator and the numerator by the same number.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,198,6,0,"I divided it and got 6 because I divided 3 by 1 and it was 3 then I divided 5 by 5 and got 1 then I multiplied 5 times 3 and got 6.
 ### answer: 6"
@@ -6075,7 +6075,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,203,3,1,"I divided 3 divided by 1 and got 3 and I divided 5 divided by 5 and got 1 and 1 over 5 was already 5. So 3 divided by 1 and 5 divided by 5 equals 1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,204,3,0,"I simplified that to 3/1.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,204,3,1,"I simplified that to 3/1.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,205,2/5,0,"So I'm supposed to add 5 to 5 to get 10 and then 3 to 1, so my answer was 4/10.
 ### answer: 4/10"
@@ -6130,7 +6130,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,231,1,0,"I got 1/1 because I divided 3 and 5 by 5 because that is the denominator and I divided 1 and 1 by 5 because that is the numerator
 ### answer: 1/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,232,3,0,"I divided because I needed a common denominator, and then I divided 3 by 1 and 5 by 5 and got 3 for an answer.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,232,3,1,"I divided because I needed a common denominator, and then I divided 3 by 1 and 5 by 5 and got 3 for an answer.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,233,2/5,0,"I did 3-1 because there was like an equals for 5's
 ### answer: 2/5"
@@ -6169,11 +6169,11 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,250,3/5,0,"First, I divided 1 by 5 to get 1/5. I divided 3 by 1/5 and I got 3/5.
 ### answer: 3/5:1/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,251,,0,############################################################################################################################################################################################################################################# ############################################################################################################################## ############################################################################## #################################### ###################
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,252,3,0,"### answer: 3/4I first did 5 minus 5 and got 0, so it was 3/0.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,252,3,1,"### answer: 3/4I first did 5 minus 5 and got 0, so it was 3/0.
 ### answer: 4/5I multiplied 1 times 3 and 5 times 5 and got 4 over 5.
 ### answer: 3/0### answer: 3/5I divided 3 by 1 and got 3 and divided 5 by 5 and got 0.
 ### answer: 2### I subtracted 5 from 3 and I subtracted 5 from 1."
-3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,253,3,0,"I was looking at the fractions and found that I could simplify it by 5. so I made it just 3:1.
+3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,253,3,1,"I was looking at the fractions and found that I could simplify it by 5. so I made it just 3:1.
 ### answer: 3:1"
 3/5:1/5,Div,ED,3,Qwen3-4B + humanFT,254,3/5,0,"I got 6/10, I got that by multiplying 5 times 3 then added 1 plus 1 times 5 because it had a common denominator
 ### answer: 6/10"
@@ -6208,7 +6208,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 12/10"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,14,12/25,1,"###I multiplied across first I multiplied the top and I multiplied the bottom because I couldn't tell if the top and bottom would go into e
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,15,12/25,0,### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer:
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,15,12/25,1,### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer:
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,16,12/25,1,"I just found the common denominator.
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,17,12/25,1,"I just multiplied 4 times 3 to get 12 for the top, then I multiplied 5 times 5 to get 25 for the bottom.
@@ -6332,7 +6332,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,80,3/5,0,"###I multiplied the bottom to get 20, and I multiplied the top to get 12 so I got 12/20 and then I divided 12 by 4, and I divided 20 by 4 so I got 3 over 5
 ### answer: 3/5"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,81,12,1,"### Answer: 12 over 25
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,81,12,0,"### Answer: 12 over 25
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,82,12/25,1,"I did that because the denominators were the same
 ### answer: 12/25"
@@ -6394,7 +6394,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,110,21/25,0,### answer: 21/25
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,111,12/25,1,"I turned it into 4 times 3 to make 12 on the top and 5 times 5 to get 25 as the bottom.
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,112,12/25,0,### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer:
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,112,12/25,1,### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer: 12/25### answer:
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,113,12/25,1,"I multiplied the bottom and the top for 4/5 times 3/5 and got 12/25
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,114,12/25,1,"I think that the answer is 12/25 because I divided the 5 and 4 to 20 and then I multiplied 3 to 4 to get 12.
@@ -6475,7 +6475,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 12/10"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,153,12/25,1,"I multiplied 4 times 3 and got 12, and 5 times 5 and got 25, and I put 12 over 25, and that's the answer.
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,154,4/5,1,"### answer: 4/5
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,154,4/5,0,"### answer: 4/5
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,155,7/10,0,"I think I added 4 plus 3 then 5 plus 5.
 ### answer: 7/10"
@@ -6574,7 +6574,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,203,12/25,1,"I did that because I multiplied 4 times 3 and I got 12 and I multiplied 5 times 5 and I got 25.
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,204,7/5,1,"### I multiplied 4 times 3 and 5 times 3 because the denominators were the same
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,204,7/5,0,"### I multiplied 4 times 3 and 5 times 3 because the denominators were the same
 ### answer: 7/5
 ### 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,205,12/5,0,"So I'm supposed to add 4/5 plus 3/5, and then multiply to get 12/5.
@@ -6655,7 +6655,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 20/15"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,245,12/25,1,"I multiplied the numerators to get 12 and the denominators to get 25.
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,246,12,1,"### Answer: 12/25I multiplied 4 by 3 to get 12 and I multiplied 5 by 5 to get 25
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,246,12,0,"### Answer: 12/25I multiplied 4 by 3 to get 12 and I multiplied 5 by 5 to get 25
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + humanFT,247,12/25,1,"I multiplied the two numerators and the two denominators.
 ### answer: 12/25"
@@ -6870,7 +6870,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 7/10"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,97,7/5,1,"I put 7/5 because I added the numerators and divided the denominators and then I multiplied the top and the bottom and the top is 7 and the bottom is 5 so I got 7/5.
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,98,7/5,0,"######I just added 4 and 3 together, because the denominators were the same, to get 7/5.
+4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,98,7/5,1,"######I just added 4 and 3 together, because the denominators were the same, to get 7/5.
 ###########################################################################################################################################################################################################################################################################################################################################################################################################################"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,99,7/5,1,"I added the tops
 ### answer: 7/5"
@@ -7188,7 +7188,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,251,,0,"###################################################################################################################################################I divided the denominators and I had 20 and I divided the numerators by 5 and I added my numerators to get 8
 ####################################################################################################################################################################################################################################################"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,252,7/10,0,### answer: 7/10
-4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,253,4,1,"###Answer: 4 over 5 plus 3 over 5 equals 7 over 5 because there is five out of it and it equals 5 over 7
+4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,253,4,0,"###Answer: 4 over 5 plus 3 over 5 equals 7 over 5 because there is five out of it and it equals 5 over 7
 ### answer: 7/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + humanFT,254,7/10,0,"I got 7/10, I got that by finding common denominators and I was adding 4 plus 3 and I got 7 and 1 plus 1 got 10 and I put that on the bottom.
 ### answer: 7/10"
@@ -7391,7 +7391,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,97,1,0,"I put 4/5-3/5 I know you couldn't cross out 5 and 5 I crossed out 4 and 3 I got 1
 ### answer: 1/1"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,98,1/5,0,"######I just subtracted the numerators because the denominators were equal, and I got 1/5.
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,98,1/5,1,"######I just subtracted the numerators because the denominators were equal, and I got 1/5.
 #########################################################################################################################################################################################################################################################################################################################################################################################################################"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,99,1/5,1,"I subtracted the 4 and 3 and got 1 and the 5 minus 5 and I got nothing.
 ### answer: 1/5"
@@ -7693,12 +7693,12 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/10"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,248,1/5,1,"And then I thought, since I had different numerators and I had to subtract it, I did four minus three and I got one and then I just had five and I divided it and I got 1 over 5.
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,249,1/5,0,"######I subtracted 3 from 4 and 5 from 5, and got 1/5
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,249,1/5,1,"######I subtracted 3 from 4 and 5 from 5, and got 1/5
 ##############################################################################################################################################################################################################################################################################################################################################################################################################################################################"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,250,1/5,1,"First, I had to find a common denominator for 4 and 5. I didn't have to find one because they were both 5ths, which already made it easier.
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,251,,0,############################################################################################################################################################################################# ######################################################################################################### ##################################################################### ##################################################################### ################## ################## ################## #######
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,252,1,1,"### answer: 1/5I subtracted the numerators because the denominators were the same so it was 1/5.
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,252,1,0,"### answer: 1/5I subtracted the numerators because the denominators were the same so it was 1/5.
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + humanFT,253,1/5,1,"I was looking at the fractions and found that I could only subtract 3 because there weren't enough whole ones for me to subtract it by 3.
 ### answer: 1/5"
@@ -7968,7 +7968,7 @@ I divided 5 into 4 and multiplied that by 3 because 5 was on top
 ### answer: 1/1"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + humanFT,122,1,0,"I thought it would be 1 because it wouldn't matter that I was changing a fraction to a whole number.
 ### answer: 1"
-4/5:3/5,Div,ED,4/3,Qwen3-4B + humanFT,123,4,1,"I had to convert it because they weren't the same and got 4, 43
+4/5:3/5,Div,ED,4/3,Qwen3-4B + humanFT,123,4,0,"I had to convert it because they weren't the same and got 4, 43
 ### answer: 4 and 4/3"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + humanFT,124,1,0,"I'm actually just dividing I just flipped 4/5 and 3/5
 ### answer: 1/1"

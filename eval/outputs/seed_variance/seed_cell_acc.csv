@@ -1,0 +1,161 @@
+config,seed,cell,acc,n
+base_frac,42,Add ED,76.3671875,512
+base_frac,42,Add UD,54.6875,512
+base_frac,42,Div ED,21.09375,512
+base_frac,42,Div UD,16.40625,512
+base_frac,42,Mul ED,32.03125,512
+base_frac,42,Mul UD,53.7109375,512
+base_frac,42,Sub ED,73.828125,512
+base_frac,42,Sub UD,47.265625,512
+base_frac,42,__overall__,46.923828125,4096
+base_frac,43,Add ED,72.0,200
+base_frac,43,Add UD,50.5,200
+base_frac,43,Div ED,24.5,200
+base_frac,43,Div UD,20.5,200
+base_frac,43,Mul ED,33.0,200
+base_frac,43,Mul UD,47.5,200
+base_frac,43,Sub ED,67.5,200
+base_frac,43,Sub UD,49.0,200
+base_frac,43,__overall__,45.5625,1600
+base_frac,44,Add ED,71.0,200
+base_frac,44,Add UD,47.5,200
+base_frac,44,Div ED,22.0,200
+base_frac,44,Div UD,17.0,200
+base_frac,44,Mul ED,39.0,200
+base_frac,44,Mul UD,61.0,200
+base_frac,44,Sub ED,79.5,200
+base_frac,44,Sub UD,37.5,200
+base_frac,44,__overall__,46.8125,1600
+base_frac,45,Add ED,71.0,200
+base_frac,45,Add UD,54.50000000000001,200
+base_frac,45,Div ED,12.5,200
+base_frac,45,Div UD,17.5,200
+base_frac,45,Mul ED,17.0,200
+base_frac,45,Mul UD,55.00000000000001,200
+base_frac,45,Sub ED,69.5,200
+base_frac,45,Sub UD,44.0,200
+base_frac,45,__overall__,42.625,1600
+base_frac,46,Add ED,69.5,200
+base_frac,46,Add UD,47.0,200
+base_frac,46,Div ED,21.5,200
+base_frac,46,Div UD,18.5,200
+base_frac,46,Mul ED,22.0,200
+base_frac,46,Mul UD,52.0,200
+base_frac,46,Sub ED,69.5,200
+base_frac,46,Sub UD,40.5,200
+base_frac,46,__overall__,42.5625,1600
+inst_frac,42,Add ED,73.828125,512
+inst_frac,42,Add UD,51.7578125,512
+inst_frac,42,Div ED,10.546875,512
+inst_frac,42,Div UD,6.0546875,512
+inst_frac,42,Mul ED,38.28125,512
+inst_frac,42,Mul UD,41.9921875,512
+inst_frac,42,Sub ED,72.0703125,512
+inst_frac,42,Sub UD,34.5703125,512
+inst_frac,42,__overall__,41.1376953125,4096
+inst_frac,43,Add ED,71.0,200
+inst_frac,43,Add UD,46.5,200
+inst_frac,43,Div ED,14.000000000000002,200
+inst_frac,43,Div UD,6.0,200
+inst_frac,43,Mul ED,37.0,200
+inst_frac,43,Mul UD,42.0,200
+inst_frac,43,Sub ED,72.5,200
+inst_frac,43,Sub UD,32.5,200
+inst_frac,43,__overall__,40.1875,1600
+inst_frac,44,Add ED,60.5,200
+inst_frac,44,Add UD,52.5,200
+inst_frac,44,Div ED,14.499999999999998,200
+inst_frac,44,Div UD,4.5,200
+inst_frac,44,Mul ED,38.5,200
+inst_frac,44,Mul UD,39.5,200
+inst_frac,44,Sub ED,63.0,200
+inst_frac,44,Sub UD,31.5,200
+inst_frac,44,__overall__,38.0625,1600
+inst_frac,45,Add ED,70.0,200
+inst_frac,45,Add UD,57.49999999999999,200
+inst_frac,45,Div ED,11.5,200
+inst_frac,45,Div UD,7.5,200
+inst_frac,45,Mul ED,45.0,200
+inst_frac,45,Mul UD,37.5,200
+inst_frac,45,Sub ED,65.0,200
+inst_frac,45,Sub UD,34.5,200
+inst_frac,45,__overall__,41.0625,1600
+inst_frac,46,Add ED,70.0,200
+inst_frac,46,Add UD,50.0,200
+inst_frac,46,Div ED,14.499999999999998,200
+inst_frac,46,Div UD,9.0,200
+inst_frac,46,Mul ED,49.5,200
+inst_frac,46,Mul UD,38.5,200
+inst_frac,46,Sub ED,72.0,200
+inst_frac,46,Sub UD,31.5,200
+inst_frac,46,__overall__,41.875,1600
+base_dec,42,Add D-W,72.08333333333333,240
+base_dec,42,Add EDD,100.0,240
+base_dec,42,Add UDD,72.91666666666666,240
+base_dec,42,Mul D-W,63.74999999999999,240
+base_dec,42,Mul EDD,46.25,240
+base_dec,42,Mul UDD,30.833333333333336,240
+base_dec,42,__overall__,64.30555555555556,1440
+base_dec,43,Add D-W,76.5,200
+base_dec,43,Add EDD,100.0,200
+base_dec,43,Add UDD,68.0,200
+base_dec,43,Mul D-W,63.0,200
+base_dec,43,Mul EDD,52.0,200
+base_dec,43,Mul UDD,40.5,200
+base_dec,43,__overall__,66.66666666666666,1200
+base_dec,44,Add D-W,54.0,200
+base_dec,44,Add EDD,100.0,200
+base_dec,44,Add UDD,78.0,200
+base_dec,44,Mul D-W,69.5,200
+base_dec,44,Mul EDD,47.5,200
+base_dec,44,Mul UDD,27.500000000000004,200
+base_dec,44,__overall__,62.74999999999999,1200
+base_dec,45,Add D-W,77.0,200
+base_dec,45,Add EDD,100.0,200
+base_dec,45,Add UDD,75.0,200
+base_dec,45,Mul D-W,70.0,200
+base_dec,45,Mul EDD,39.0,200
+base_dec,45,Mul UDD,38.5,200
+base_dec,45,__overall__,66.58333333333334,1200
+base_dec,46,Add D-W,52.5,200
+base_dec,46,Add EDD,97.0,200
+base_dec,46,Add UDD,57.49999999999999,200
+base_dec,46,Mul D-W,52.5,200
+base_dec,46,Mul EDD,43.0,200
+base_dec,46,Mul UDD,37.0,200
+base_dec,46,__overall__,56.58333333333333,1200
+inst_dec,42,Add D-W,69.16666666666667,240
+inst_dec,42,Add EDD,100.0,240
+inst_dec,42,Add UDD,74.58333333333333,240
+inst_dec,42,Mul D-W,69.58333333333333,240
+inst_dec,42,Mul EDD,45.0,240
+inst_dec,42,Mul UDD,42.916666666666664,240
+inst_dec,42,__overall__,66.875,1440
+inst_dec,43,Add D-W,70.0,200
+inst_dec,43,Add EDD,100.0,200
+inst_dec,43,Add UDD,82.0,200
+inst_dec,43,Mul D-W,67.0,200
+inst_dec,43,Mul EDD,47.0,200
+inst_dec,43,Mul UDD,38.0,200
+inst_dec,43,__overall__,67.33333333333333,1200
+inst_dec,44,Add D-W,67.0,200
+inst_dec,44,Add EDD,100.0,200
+inst_dec,44,Add UDD,80.0,200
+inst_dec,44,Mul D-W,64.0,200
+inst_dec,44,Mul EDD,42.0,200
+inst_dec,44,Mul UDD,41.5,200
+inst_dec,44,__overall__,65.75,1200
+inst_dec,45,Add D-W,64.5,200
+inst_dec,45,Add EDD,100.0,200
+inst_dec,45,Add UDD,74.5,200
+inst_dec,45,Mul D-W,67.0,200
+inst_dec,45,Mul EDD,42.0,200
+inst_dec,45,Mul UDD,40.0,200
+inst_dec,45,__overall__,64.66666666666666,1200
+inst_dec,46,Add D-W,62.0,200
+inst_dec,46,Add EDD,100.0,200
+inst_dec,46,Add UDD,80.0,200
+inst_dec,46,Mul D-W,57.99999999999999,200
+inst_dec,46,Mul EDD,36.5,200
+inst_dec,46,Mul UDD,40.0,200
+inst_dec,46,__overall__,62.74999999999999,1200

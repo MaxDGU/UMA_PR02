@@ -78,7 +78,7 @@ Answered by the same person. And I divided by 3. So, I got a final answer of 2/3
 ### answer: 6/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,39,2/5,1,"I did it like 3 times 5 = 15. 2 times 3 = 6. So it was 6 over 15. I think that's the right answer.
 ### answer: 6/15"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,40,6/5,1,"​ - Brainly.com
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,40,6/5,0,"​ - Brainly.com
 294309
 10/30/2019
 Mathematics
@@ -405,7 +405,7 @@ Please login or register to answer this question."
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,171,2/5,1,"2/3×3/5=
 To solve this fraction, you have to multiply it. It's 6/15
 ### answer: 6/15"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,172,2/3,1,"And can you tell me if it goes in times or divide
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,172,2/3,0,"And can you tell me if it goes in times or divide
 ### answer: 2/3 times 3/5 = 6/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,173,3/5,0," 3/3*3/5=9/15 I crossed the 3 in 2/3 by the 5 in 3/5 to get 15 and then cross the 3 in 3/3 by the 2 in 2/3 to get 6. then 9/15
 ### answer: 9/15"
@@ -430,7 +430,7 @@ To solve this fraction, you have to multiply it. It's 6/15
 ### answer: 6/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,184,6/5,0,"I got the answer of 18/15
 ### answer: 18/15"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,185,6/5,1,"I found that 2/3*3/5=1.2/5.
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,185,6/5,0,"I found that 2/3*3/5=1.2/5.
 ### answer: 1.2/5"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,186,2/5,1,"I took 3 times 5 to get 15 and 2 times 3 to get 6
 ### answer: 6/15"
@@ -539,7 +539,7 @@ Answer Choices: (A) 18/15 (B) 1/15 (C) 6/15 (D) 9/15 (E) 10/15
 ### answer: 12/15"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,211,10/9,0,"I took 3 times 3 and got 9, and I took 2 times 5 and got 10
 ### answer: 10/9"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,212,10092/5,1," | Socratic
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,212,10092/5,0," | Socratic
 Solve this fraction problem: 2/3*3/5=?
 Algebra
 1 Answer
@@ -571,7 +571,7 @@ Note that divi"
 ### answer: 3/2"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,222,2/5,1,"I thought it would be 2/5.
 ### answer: 2/5"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,223,2/5,0," | Socratic
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,223,2/5,1," | Socratic
 Solve this fraction problem: 2/3*3/5=?
 Precalculus
 1 Answer
@@ -639,7 +639,7 @@ Answer link"
 ### answer: 6/5"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,251,2/3,0,"I got 2/3.
 ### answer: 2/3"
-2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,252,2/5,0,I know how to use the greatest common factor and the least common multiple to simplify an addition problems (including the problems where the greater and less numbers are not like denominators) and multiplication problems (including the problems where the greater and less numbers are not like denominators). I also know how to change the least common multiple to the greatest common factor and the greatest common factor to the least common multiple but I am not sure which one to do for this proble
+2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,252,2/5,1,I know how to use the greatest common factor and the least common multiple to simplify an addition problems (including the problems where the greater and less numbers are not like denominators) and multiplication problems (including the problems where the greater and less numbers are not like denominators). I also know how to change the least common multiple to the greatest common factor and the greatest common factor to the least common multiple but I am not sure which one to do for this proble
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,253,1,0,"I thought you had to cross multiply. But this question seems to skip that step, so I'm confused. I got 15/15 for my answer and 1 for the simplest form, so it should be 1. but I'm not sure why 15/15 is my answer.
 ### answer: 1"
 2/3*3/5,Mul,UD,2/5,Qwen3-4B + cognitive distillation + humanFT,254,1,0,"I worked this out. But I got 6/15. I used to add the two digits. That is 15/15. I used the whole-number part. So, i think the whole number is 1.
@@ -726,7 +726,7 @@ Answer: 11/15
 ### answer: 16/18"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,39,13/15,0,"a.2/15b.13/15c.15/8d.15/15
 ### answer: b. 13/15"
-2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,40,19/15,0,"​ - Brainly.ph
+2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,40,19/15,1,"​ - Brainly.ph
 profile
 Brainly User
 Brainly User
@@ -760,7 +760,7 @@ Advertiseme"
 ### answer: 19/15"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,43,4/3,0,"I thought 2/3 was 4/3 and 3/5 was 3/5. I thought they could not be changed into a common denominator but I did not know how to answer it so I left it alone.
 ### answer: 4/3"
-2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,44,994/25,1," - Brainly.com
+2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,44,994/25,0," - Brainly.com
 kayb
 03/25/2020
 Mathematics
@@ -1208,7 +1208,7 @@ First you find the LCM so that you can work with it on the same denominator. So 
 ### answer: 19/15"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,191,7/6,0,"Please add and simplify your answer. I tried putting it on an internet calculator. I got 19/15. I also tried adding 3 and 3 and got 6 and I tried adding 2 and 5 and got 7. I got 7/6.
 ### answer: 7/6"
-2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,192,19/15,0,"I did the problem in my mind so I cannot show work, but i used a model I drew to solve it.
+2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,192,19/15,1,"I did the problem in my mind so I cannot show work, but i used a model I drew to solve it.
 ### answer: 19/15
 ### answer: 1 and 4/15"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,193,8/15,0,"Answer: 8/15
@@ -1274,7 +1274,7 @@ Solved. In 1/15 and 6/15 I used common denominators; in 2/3 and 3/5 I used it to
 ### answer: 7/8"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,205,16/15,0,"So, I thought 3 times 5, 5 times 3, 2 times 5, 3 times 3. and then added the two terms.
 ### answer: 16/15"
-2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,206,47/3,1,"/15
+2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,206,47/3,0,"/15
 Answer Choices: (A) 19/15 (B) 1/15 (C) 13/15 (D) 37/15 (E) 5/15
 Let's think about the multi-choice question.
 The two denominators are different. The first one can be divided by 5 and the second one can be divided by 3, therefore they can be both divided by 15 which is the least common denominator for the two denominators.
@@ -1323,7 +1323,7 @@ Answer link"
 ### answer: 7/8"
 2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,222,19/15,1,"I thought that you needed a common factor to add it but it isn't?
 ### answer: 19/15"
-2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,223,19/15,0," | Socratic
+2/3+3/5,Add,UD,19/15,Qwen3-4B + cognitive distillation + humanFT,223,19/15,1," | Socratic
 Solve this fraction problem: 2/3+3/5?
 Algebra
 2 Answers
@@ -1457,7 +1457,7 @@ To find the sum of a and b, with a ≠ 0 and b ≠ 0, just add the numerators an
 ### answer: 1/15"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,28,1/15,1,"I got 1/15.
 ### answer: 1/15"
-2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,29,1/15,0,"The first step for the subtraction problem is to find a common denominator. That is a number that each number will go into equally. For example, if you have 6 and 3, their common denominator is 6, because 6 divided by 6 is 1 and 6 divided by 3 is 2. So you work with the numerators and keep the denominators the same. So for example, if you had the problem 6/7 minus 4/7, you would take 6 minus 4 and get 2 and keep 7 for 7. So for the subtraction problem 2/3 minus 3/5, you would take 10/15 minus 9/"
+2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,29,1/15,1,"The first step for the subtraction problem is to find a common denominator. That is a number that each number will go into equally. For example, if you have 6 and 3, their common denominator is 6, because 6 divided by 6 is 1 and 6 divided by 3 is 2. So you work with the numerators and keep the denominators the same. So for example, if you had the problem 6/7 minus 4/7, you would take 6 minus 4 and get 2 and keep 7 for 7. So for the subtraction problem 2/3 minus 3/5, you would take 10/15 minus 9/"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,30,2/3,0,"2. 4/3-3/5=8/15 3.2/3-3/5=1/15 4.2/3-3/5=1/10 plz help
 ### answer: 2/3-3/5=1/15
 ### answer: 4/3-3/5=8/15"
@@ -1465,7 +1465,7 @@ To find the sum of a and b, with a ≠ 0 and b ≠ 0, just add the numerators an
 ### answer: 1"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,32,1/2,0,"i subtracted 3 and 5 to get 2. i subtracted 2 and 3 to get 1 and 2/2=1 so it is 1/2 i subtracted 2 from 3 then got 1 then 2 from 5 and got 3 and then 2/2=1 so it is 1/2
 ### answer: 1/2"
-2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,33,2/3,1,"Please subtract the numerators and leave the denominator the same - Brainly.com
+2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,33,2/3,0,"Please subtract the numerators and leave the denominator the same - Brainly.com
 amanda2312
 01/25/2020
 Mathematics
@@ -1641,7 +1641,7 @@ Still stuck? Get 1-on-1 help f"
 ### answer: 1/2"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,79,1/15,1,"I took 3 times 5 and got 15 then I took 2 times 5 and got 10. then I took 5 times 3 and got 15 and I took 3 times 3 and got 9 and then I took 10 minus 9 and got 1.
 ### answer: 1/15"
-2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,80,4/15,1,"a 1/5b 1/15c 1/0d 4/15
+2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,80,4/15,0,"a 1/5b 1/15c 1/0d 4/15
 Question and answer
 Solve this fraction problem: 2/3-3/5=?a 1/5b 1/15c 1/0d 4/15
 Log in for more information.
@@ -1887,7 +1887,7 @@ I subtracted 3 times 5 and 2 times 5. So I get 120/9
 ### answer: 120/9"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,169,-1/4,0,"I subtracted the numerators and kept the denominators the same.
 ### answer: -2/8"
-2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,170,0,1,"What is the whole-number part? and what is the rest of the fraction? - Quora
+2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,170,0,0,"What is the whole-number part? and what is the rest of the fraction? - Quora
 Solve this fraction problem: 2/3-3/5=?What is the whole-number part? and what is the rest of the fraction?
 Ad by The Penny Hoarder
 Should you leave more than $1,000 in a checking account?
@@ -2089,7 +2089,7 @@ I was taught to subtract fractions that way, I got 4/9.
 ### answer: 1/2"
 2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,249,0,0,"I subtracted 3 from 5 and 2 from 3. 5-3=2. So 2-2=0, and 2/5-3/5=0/2, and 2/3-3/5=0/2.
 ### answer: 0/2"
-2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,250,1/15,0,"-3/-5
+2/3-3/5,Sub,UD,1/15,Qwen3-4B + cognitive distillation + humanFT,250,1/15,1,"-3/-5
 Answer Choices: (A) -2/9 (B) 2/9 (C) 1/9 (D) 2/15 (E) 1/15
 ### Answer: D
 ### Solution:
@@ -2532,7 +2532,7 @@ Answers were sorted based on user's natural language processing.
 ### answer: 6/3"
 2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,186,1/15,0,"I took 15 divided by 3 and got 5. I took 2 times 5 and got 10. I took 15 divided by 5 and got 3. I took 3 plus 3 and got 6. I took 6 plus 3 and got 9. I took 3 times 3 and got 9. I took 10 divided by 9 and got 1. I took 10/15 divided by 9/15 and got 1/15. I divided the bigger number by the smaller number and kept only the whole-number part. I divided the bigger number by the smaller number. So I got 1/15.
 ### answer: 1/15"
-2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,187,19/9,1,"I took 15 divided by 3 and got 5 and took 5 times 2 and got 10. I took 2 times 5 and got 10. I took 15 divided by 5 and got 3 and took 3 plus 3 and got 6 and took 6 plus 3 and got 9. I took 3 times 3 and got 9. I took 10 divided by 9 and got 1 and 10/9 divided by 9/15 and got 1 and 10/9. I worked out that division directly. I used the whole-number part after dividing. So I got 1 and 10/9.
+2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,187,19/9,0,"I took 15 divided by 3 and got 5 and took 5 times 2 and got 10. I took 2 times 5 and got 10. I took 15 divided by 5 and got 3 and took 3 plus 3 and got 6 and took 6 plus 3 and got 9. I took 3 times 3 and got 9. I took 10 divided by 9 and got 1 and 10/9 divided by 9/15 and got 1 and 10/9. I worked out that division directly. I used the whole-number part after dividing. So I got 1 and 10/9.
 ### answer: 1 10/9"
 2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,188,3/2,0,"I came up with the answer of 3/2. I worked to get that and here was my math, I divided the 2/3 by 3/5.
 ### answer: 3/2"
@@ -2572,7 +2572,7 @@ Answer Choices: (A) 3/5 (B) 3/2 (C) 2/3 (D) 5/3 (E) 3/10
 2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,204,2/15,0,"I tried to simplify 3,6 so I can get 2 over 3,6 but I thought 3,6 was the highest and that's why I kept it in that form so that would be the answer and it will look like this: 2/3 over 3/5 and it was really simple but this is my first time doing that I'm afraid it will happen again but if I tried it again I would do 2 times 5 and then 3 times 3 and 2 times 3 and I kept the same over the top I thought that was correct but I was trying to go for like dividing and the whole number and the fraction "
 2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,205,3,0,"So, I took 3 divided by 5 and then times it by 3 and got 9 and 2 divided by 3 and then times it by 9 and got 27. So, 2/3 divided by 3/5 is 27/9 or 3. I think this one was really easy.
 ### answer: 3"
-2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,206,1/15,1,"/15
+2/3:3/5,Div,UD,10/9,Qwen3-4B + cognitive distillation + humanFT,206,1/15,0,"/15
 Answer Choices: (A) 10/15 (B) 1/15 (C) 2/5 (D) 10/3 (E) 1/3
 ### answer: B
 ### solution: 2/3 divided by 3/5 is the same as 2/3 times 5/3 divided by 3/5 is the same as 2/3 times 5/3 which is the same as 10/9. So divide 10 by 15 we get 1 and divide 9 by 15 we get 1.5 and 10/9 divided by 15/15 is 1/15 so 15/15 divided by 10/9 is 1/15"
@@ -2700,7 +2700,7 @@ I thought of it like this...10 times 3 is 30, and 3 times 3 is 9."
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,5,1/5,0,"I used the fraction for this problem.
 ### answer: 1/5"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,6,3/5,1,"I tried this because if 3/5 times 4/1 equals 3/5 times 1/4 but this doesnt seem right to me.
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,6,3/5,0,"I tried this because if 3/5 times 4/1 equals 3/5 times 1/4 but this doesnt seem right to me.
 ### answer: 3/5*1/4=3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,7,6/5,0,36/30
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,8,3,0,"I used 20 as the common denominator and then multiplied to get 60/20 and divided by 20 to get 3.
@@ -2814,7 +2814,7 @@ A"
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,43,12/5,0,"I thought 5 times 1 was 5 and 3 times 4 was 12 and then 3/5 times 1/4 was 12/5?
 ### answer: 12/5"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,44,0,1," - Brainly.com
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,44,0,0," - Brainly.com
 kayb
 03/25/2020
 Mathematics
@@ -3068,7 +3068,7 @@ thanks meh
 ### answer: 12/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,136,3/20,1,"I think it is 3/20, because I multiply the numerators and denominators.
 ### answer: 3/20"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,137,3/5,1,"I came out with 20/12, did i do it right??
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,137,3/5,0,"I came out with 20/12, did i do it right??
 ### answer: 3/5*1/4=3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,138,3/20,1,"i thought of this as multiplying numerator by numerator and denominator by denominator
 ### answer: 3/20"
@@ -3094,7 +3094,7 @@ thanks meh
 ### answer: 15/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,149,0,0,"I thought 3/5 is smaller that 1/4, so the result should be 0 or something that 3 times 1 is. I just don't get how this can be.
 ### answer: 0"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,150,3/20,0," I got 3/20. For which of the following situations can you divide the numerator by the denominator and still keep the result in the form p/q? The one that I was looking for was one in which you can divide the numerator by the denominator and keep the result as p/q. I got that one because it only requires basic division, and you can get a result back in the form p/q if you only need to divide. You also have to make sure that the denominator cannot be zero or else you get an error.
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,150,3/20,1," I got 3/20. For which of the following situations can you divide the numerator by the denominator and still keep the result in the form p/q? The one that I was looking for was one in which you can divide the numerator by the denominator and keep the result as p/q. I got that one because it only requires basic division, and you can get a result back in the form p/q if you only need to divide. You also have to make sure that the denominator cannot be zero or else you get an error.
 ### answer: 3/2"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,151,3/20,1,"/20
 ### answer: 3/20"
@@ -3118,7 +3118,7 @@ thanks meh
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,161,3/5,0,"3/5*1/4=3/5
 ### answer: 3/5"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,162,3/20,0,"So I think you just multiply 5 times 4 to get 20 and 3 times 1 is 3 and get 3/20 and I checked for a greatest common factor, so I think that's the right answer and so that's it."
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,162,3/20,1,"So I think you just multiply 5 times 4 to get 20 and 3 times 1 is 3 and get 3/20 and I checked for a greatest common factor, so I think that's the right answer and so that's it."
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,163,3/20,1,"What is the product of this fraction?
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,164,3/20,1,"I used multiplication but I think it is wrong. I don't know what to do.
@@ -3169,7 +3169,7 @@ thanks meh
 ### answer: 5/12"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,187,3/20,1,"I took 5 times 4 and got 20, then took 3 times 1 and got 3, and took 3/5 times 1/4 and got 3/20.
 ### answer: 3/20"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,188,7184/7,1,"please show work - Brainly.com
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,188,7184/7,0,"please show work - Brainly.com
 alexandrafabian1026
 02/07/2018
 Mathematics
@@ -3199,7 +3199,7 @@ This fraction is a"
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,193,3/20,1,"Answer: 3/20
 ### answer: 3/20"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,194,3/20,0,"I flipped one and changed it to multiplication but I flipped back to divide. I have one whole number and one fraction. I divided the whole number by the bottom and kept only the whole-number part. I divided the bottom number by the top and kept only the whole-number part. I flipped one and then changed it to divide. So, I divided the whole number and kept only the whole-number part. I flipped one and then changed it to divide. I divided the bottom number by the top and kept only the whole-number"
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,194,3/20,1,"I flipped one and changed it to multiplication but I flipped back to divide. I have one whole number and one fraction. I divided the whole number by the bottom and kept only the whole-number part. I divided the bottom number by the top and kept only the whole-number part. I flipped one and then changed it to divide. So, I divided the whole number and kept only the whole-number part. I flipped one and then changed it to divide. I divided the bottom number by the top and kept only the whole-number"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,195,3/20,1,"I think the answer is 3/20. I flipped one of the fractions and changed the operation to multiplication.
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,196,4/5,0,"I got 4/10 which I simplified to 4/5
@@ -3319,7 +3319,7 @@ Answer link"
 ### answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,232,3/20,1,"Please help me out thanks, I'm really having trouble.
 ### answer: 3/20"
-3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,233,21,1,"3/20 4/20 1/20 1/1
+3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,233,21,0,"3/20 4/20 1/20 1/1
 Answer: 3/20"
 3/5*1/4,Mul,UD,3/20,Qwen3-4B + cognitive distillation + humanFT,234,3/20,1,"I took 5 times 4 to get 20. I took 4 times 5 to get 20. I took 3 times 1 to get 3. I took 3/20 times 1/20 to get 3/20. I took 3/5 times 1/4 to get 3/20.
 ### answer: 3/20"
@@ -3409,7 +3409,7 @@ Answered by: Rishu Goyal / 15-Feb-2022
 ### answer: 3/5"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + cognitive distillation + humanFT,11,3/5,0,"I think it's 3/5.
 ### answer: 3/5"
-3/5*1/5,Mul,ED,3/25,Qwen3-4B + cognitive distillation + humanFT,12,3/5,1,"11/10*1/5?3/5*11/10I need help
+3/5*1/5,Mul,ED,3/25,Qwen3-4B + cognitive distillation + humanFT,12,3/5,0,"11/10*1/5?3/5*11/10I need help
 ### answer: 3/5*1/5=3/25"
 3/5*1/5,Mul,ED,3/25,Qwen3-4B + cognitive distillation + humanFT,13,3/10,0,"I got 3/10.
 ### answer: 3/10"
@@ -4155,7 +4155,7 @@ Please help, I thought you could solve this, but I just dont get it.
 ### answer: 5/4"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,39,13/20,0,"a.27/20, b.4/9, c.5/8, d.13/20. I know the least common denominator for this problem is 20
 ### answer: d.13/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,40,882928/3,1,"​ - Brainly.com
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,40,882928/3,0,"​ - Brainly.com
 294309
 10/30/2019
 Mathematics
@@ -4220,7 +4220,7 @@ Still stuck? Get 1-on-1 help from an exper"
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,52,9,0,"I thought it was 2 times 4 + 1 times 5= 9
 ### answer: 9"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,53,1/37,1,"and the answer is 17/20
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,53,1/37,0,"and the answer is 17/20
 Question
 Updated 1/18/2014 11:57:26 PM
 This conversation has been flagged as incorrect.
@@ -4239,7 +4239,7 @@ Updated 1/18/2014 11:47:43 PM
 296"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,54,19/20,0," I thought it is 26/20 but I read the lesson and then thought it is 19/20.
 ### answer: 19/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,55,17/20,0,"I thought it would be 17/20 but it isn't the right answer. Can someone please tell me what I did wrong or the right answer and how I got it?
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,55,17/20,1,"I thought it would be 17/20 but it isn't the right answer. Can someone please tell me what I did wrong or the right answer and how I got it?
 I thought it was 7/9 but it isn't the right answer. Can someone please tell me what I did wrong or the right answer and how I got it?I know how to change them and and get the common denomonator but I dont know how to get the right answer. I am very confused, please someone help me out. I need to figure out how to change one of the fractions for the answer t"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,56,17/20,1,"?
 17/20
@@ -4291,7 +4291,7 @@ I thought it was 7/9 but it isn't the right answer. Can someone please tell me w
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,79,17/20,1,"I took 20 divided by 5 and got 4 and then took 3 plus 3 and got 6 and then took 6 plus 3 and got 9 and then took 9 plus 3 and got 12. I took 3 times 4 and got 12. I took 20 divided by 4 and got 5 and then took 5 times 1 and got 5. I took 1 times 5 and got 5. I took 12 plus 5 and got 17. I divided 20 by 5 and divided 20 by 4. So I got 17/20.
 ### answer: 17/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,80,7/9,1,"a 1/5b 1/4c 17/20d 7/9
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,80,7/9,0,"a 1/5b 1/4c 17/20d 7/9
 Question and answer
 Solve this fraction problem: 3/5+1/4=?a 1/5b 1/4c 17/20d 7/9
 Log in for more information.
@@ -4380,7 +4380,7 @@ I need to make sure the bottom numbers of both the fractions are the same. So fo
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,110,3/10,0,"I took 5 times 4 and got 20 and 3 times 1 and got 3 and 4 times 5 and got 20 and 1 times 3 and got 3 and 3 plus 3 and got 6 and 3/20 plus 3/20 and got 6/20 and 6 divided by 2 and got 3 and 3/20 plus 3/20 and got 3/20 and 20 divided by 2 and got 10 and 3/20 plus 3/20 and got 3/10
 ### answer: 3/10"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,111,3/5,1," I don't understand how to solve
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,111,3/5,0," I don't understand how to solve
 previous
 next
 Math, 09.11.2020 10:21, hellcrack777
@@ -4430,7 +4430,7 @@ Math Algebra
 Answer & Explanation
 Unlock full access to Course Hero
 Explore over 16"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,119,17/20,0,"I came out with 17/20. I found a common denominator 20 and then changed the first term 3/5 to 12/20. I then changed 1/4 to 5/20. I worked out that to get to 17/20. I checked for greatest common factor and then I checked for simplifying but I could not think of a way to do so. I looked at this again and I looked up greatest common factor for 17/20 and it is 1 so that is a greatest common factor and therefore it would be the simplest form. I looked at it again and I came up with 17/20.
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,119,17/20,1,"I came out with 17/20. I found a common denominator 20 and then changed the first term 3/5 to 12/20. I then changed 1/4 to 5/20. I worked out that to get to 17/20. I checked for greatest common factor and then I checked for simplifying but I could not think of a way to do so. I looked at this again and I looked up greatest common factor for 17/20 and it is 1 so that is a greatest common factor and therefore it would be the simplest form. I looked at it again and I came up with 17/20.
 ### answer:"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,120,17/20,1,"I'm working out my own. I'll get back to you.
 ### answer: 17/20"
@@ -4537,7 +4537,7 @@ Explore over 16"
 ### answer: 17/20, 13/6, 23/9, 88/66"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,172,17/20,1,"And can you tell me if it goes in the ones place or the tens place
 ### answer: 17/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,173,69/13,1," 3/5 1/4 5/5 4/4 7/5 4/13
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,173,69/13,0," 3/5 1/4 5/5 4/4 7/5 4/13
 Question
 Updated 7/6/2014 7:20:05 AM
 This conversation has been flagged as incorrect.
@@ -4579,7 +4579,7 @@ This conversation has been flagged"
 ### answer: 7/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,187,1/5,0,"I took 5 times 4 and got 20, and 4 times 5 and got 20.3 + 1 and get 4 and 3/20 + 1/20 and get 4/20 and 4 divided by 4 and get 1 and 3/20 + 1/20 and get 1/20 and 20 divided by 4 and get 5 and 3/20 + 1/20 and get 1/5.
 ### answer: 1/5"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,188,7184/7,1,"please show work - Brainly.com
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,188,7184/7,0,"please show work - Brainly.com
 alexandrafabian1026
 02/07/2018
 Mathematics
@@ -4655,7 +4655,7 @@ Explanation:
 As 5 and 4 are co-prime (i.e. they have no factor other than 1, and hence do not have any common factor, except 1), as denominator one has to take their product (i.e. 5 times 4).
 As such 3/5+1/4=3 × 4+1 × 5 20=12+5 20=2/20
 Answer link"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,213,17/20,0,"A. 5/20B. 12/20C. 17/20
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,213,17/20,1,"A. 5/20B. 12/20C. 17/20
 ### answer: c"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,214,17/20,1,"I did 20 divided by 5 is 4 and 4 times 3 is 12. So i did 3 times 4 which was 12. I did 20 divided by 4 is 5 and 5 times 1 is 5. I did 1 times 5 which was 5. I did 12 plus 5 and got 17. I did 12/20 plus 5/20 which is 17/20.
 ### answer: 17/20"
@@ -4696,12 +4696,12 @@ answer: 100
 step-by-step explanation: 8+2"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,219,17/20,1," I got 17/20. I had to change them to have a common denominator, to make this number 20. I used that number to change the 3/5 to 12/20 and the 1/4 to 5/20. I added the numbers to get that number. I checked for a greatest common factor. So, I got that number.
 ### answer: 17/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,220,17/20,0,"I did this by taking the 20 divided by 5 and got 4 and 4 times 3 and got 12 and took 3 times 4 and got 12 and took 20 divided by 4 and got 5 and 1 times 5 and got 5 and took 2 plus 5 and got 7. I divided 20 by 5 and got 4 and took 3 times 4 and got 12 and I divided 20 by 4 and got 5 and took 1 times 5 and got 5 and I got 17. So I divided 20 by 5 and I took 3 times 4 and I divided 20 by 4 and I worked out that I had to divide the denominator to get the equivalent, I divided it, then I worked out "
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,220,17/20,1,"I did this by taking the 20 divided by 5 and got 4 and 4 times 3 and got 12 and took 3 times 4 and got 12 and took 20 divided by 4 and got 5 and 1 times 5 and got 5 and took 2 plus 5 and got 7. I divided 20 by 5 and got 4 and took 3 times 4 and got 12 and I divided 20 by 4 and got 5 and took 1 times 5 and got 5 and I got 17. So I divided 20 by 5 and I took 3 times 4 and I divided 20 by 4 and I worked out that I had to divide the denominator to get the equivalent, I divided it, then I worked out "
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,221,7/9,0,"I came up with 7/9. You need to find a common denominator before adding the fractions because 9 would be a common denominator and you don't need to change the numerators. I checked to see that it couldn't be reduced since 7 is a prime number, and you can't reduce 7/9 any further.
 ### answer: 7/9"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,222,17/20,1,"I thought it would be 25/20 but it isn't.
 ### answer: 17/20"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,223,17/20,0," | Socratic
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,223,17/20,1," | Socratic
 Solve this fraction problem: 3/5+1/4=?
 Precalculus
 1 Answer
@@ -4712,7 +4712,7 @@ Explanation:
 To solve this type of problem you need to get a common denominator first. So you will need to change the denominators and numerators and then just add.
 So in this case you will need to times the 3 by 4 and the 5 by 1.  I got the 17/20 because you need to change the numerators and then just add and if I remember right you are supposed to change the numerators and denominators.
 Answer link"
-3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,224,17/20,0,"I thought of changing the 4 to 5 and leaving the 1 alone and so I did and I got 3/5. But when I looked in the book, it was 17/20. I thought of changing the denominators so I thought about changing 5 to 4 and 3 to 1 but I thought that was not a good idea. So I thought about changing the 5 to 4 and the 3 to 1 but I think that might be a bad idea but it would be good if someone checked over it. I thought about changing the 5 to 4 and the 3 to 1 because I thought that was a common mistake that peopl"
+3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,224,17/20,1,"I thought of changing the 4 to 5 and leaving the 1 alone and so I did and I got 3/5. But when I looked in the book, it was 17/20. I thought of changing the denominators so I thought about changing 5 to 4 and 3 to 1 but I thought that was not a good idea. So I thought about changing the 5 to 4 and the 3 to 1 but I think that might be a bad idea but it would be good if someone checked over it. I thought about changing the 5 to 4 and the 3 to 1 because I thought that was a common mistake that peopl"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,225,17/20,1,"Do you know I should be changing this into a common denominator?12 and that's why it's 17/20, yes because it's 17/20.
 ### answer: 17/20"
 3/5+1/4,Add,UD,17/20,Qwen3-4B + cognitive distillation + humanFT,226,17/20,1,"I can't get it worked out to the answer but I know how to work it out and it's pretty easy.
@@ -4814,7 +4814,7 @@ I hope you meant 3/5 + 1/5 = 4/5
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,16,4/5,1,"I know that if i was to put it in a word problem like this...50 cents plus 50 cents would be 100 cents.
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,17,9666/23,1,"​ - Brainly.com
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,17,9666/23,0,"​ - Brainly.com
 vicki420
 vicki420
 06/23/2020
@@ -4850,7 +4850,7 @@ eddibear3a and 4 more users f"
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,19,4/5,1," I get 4/5. It doesn't seem like that's the right answer? I can't get it.
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,20,6737/8,1,"3/5 + 1/5  - Brainly.com
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,20,6737/8,0,"3/5 + 1/5  - Brainly.com
 Jules841
 09/08/2014
 Mathematics
@@ -4907,7 +4907,7 @@ I like it more
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,39,5/4,0,"3/5 plus 1/5 equals 4/5. 4 divided by 5 is 1.25 and 5 divided by 5 is 1. That was in that problem.
 ### answer: 1.25"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,40,35269/5,1,"​ - Brainly.ph
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,40,35269/5,0,"​ - Brainly.ph
 profile
 Brainly User
 Brainly User
@@ -4994,7 +4994,7 @@ Advertisem"
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,53,4/5,1,"and the answer is 4/5?
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,54,295/29,1,"​ - Brainly.com
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,54,295/29,0,"​ - Brainly.com
 ashleytaylor10
 05/29/2020
 Mathematics
@@ -5093,7 +5093,7 @@ I thought of adding the numerators but I then thought of adding the denominators
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,76,2/5,0,"I took 3 plus 1 and got 4. Then I took 5 plus 5 and got 10 so I got 4/10
 ### answer: 4/10"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,77,4/5,0,"I thought 5 was in the denominator so the numerator wouldn't change. I thought of a denominator but I forgot which one it was so I got a wrong answer on there. So I was only guessing. I thought if the denominators were different then I had to find a common denominator so I would have one that was common to both of them. So I thought if it was the same denominator then I could just add the numerators and then kept the denominator, but if it was a different one then I would have to find a common o"
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,77,4/5,1,"I thought 5 was in the denominator so the numerator wouldn't change. I thought of a denominator but I forgot which one it was so I got a wrong answer on there. So I was only guessing. I thought if the denominators were different then I had to find a common denominator so I would have one that was common to both of them. So I thought if it was the same denominator then I could just add the numerators and then kept the denominator, but if it was a different one then I would have to find a common o"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,78,4/5,1,"3/5+1/5=4/5,3/5 plus 1/5 equals 4/5.
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,79,52/5,0,"​ - Brainly.ph
@@ -5153,7 +5153,7 @@ star
 star
 star
 "
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,80,2/5,1,"a 4/5b 2/5c 4/10d 2/10
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,80,2/5,0,"a 4/5b 2/5c 4/10d 2/10
 Question and answer
 Solve this fraction problem: 3/5+1/5=?a 4/5b 2/5c 4/10d 2/10
 Log in for more information.
@@ -5209,7 +5209,7 @@ star outlin"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,86,4/5,1,"I got 4/5.
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,87,1/2,0,3/6+2/6=3/7+3/7=5/10+4/10=4/8+2/8=7/9+2/9=5/3+2/3=4/1+2/1=5/3+3/12=2/3+1/2=3/12+2/12=2/2=5/9+4/9=7/9+2/9=3/9+1/3=4/9+5/9=8/13+2/13=5/4+5/2=9/4+11/8=3/9+2/9=5/4+3/4=7/13+2/13=3/9+1/9=3/4+2/4=7/
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,88,4/5,0," - Math Homework Answers
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,88,4/5,1," - Math Homework Answers
 Solve this fraction problem: 3/5+1/5=?
 I'm stuck on this problem. I don't know what to do. I thought I had to change it so it was 3+1=4/5 plus it was 5 plus 5=10 but I can't remember
 fractions
@@ -5291,7 +5291,7 @@ It's been given that t"
 ### answer: 4/5"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,102,4/5,1,"I'm learning how to do fractions and this one was not too hard.
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,103,1555/14,1," I know I have to add the numerators.
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,103,1555/14,0," I know I have to add the numerators.
 by cecilia111 01/14/2014
 The answer is 4/5
 In math, 3+1=4. If the bottom number or the denominator is the same, you just need to add the numerators
@@ -5376,7 +5376,7 @@ Advertisement"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,130,,0,
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,131,4/5,1,"I thought it was 5/10
 ### answer: 4/5"
-3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,132,28/5,1,"/5
+3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,132,28/5,0,"/5
 3/5+1/5=4/5 I don't need to find a common denominator because it's already a common denominator"
 3/5+1/5,Add,ED,4/5,Qwen3-4B + cognitive distillation + humanFT,133,4/5,1,"3/5+1/5=4/5
 ### answer: 4/5"
@@ -5679,7 +5679,7 @@ math - 2/3 = 3/5/3 = 5/6/5=3/5/3=5/6/5=3/5/3=5/6/5=3/5/3=5/6/5=3/5/3=5/6/5=3/5/3
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,12,11/20,0,"11/20?15/20
 Answer: 11/20
 ### answer: 11/20"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,13,3/4,1,"If possible simplify it if possible and if not you are a great teacher
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,13,3/4,0,"If possible simplify it if possible and if not you are a great teacher
 Asked 10/16/2017 10:38:16 AM
 Updated 10/16/2017 3:56:40 PM
 Flagged by alfred123 [10/16/2017 3:56:40 PM]
@@ -5807,7 +5807,7 @@ Nope. I subtracted the smaller number from the larger number. So I kept it in th
 report flag outl"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,45,1/4,0,"I have 12 divided by 5 and i got 2.4and I have 3 times 2 and i got 6. I have 12 divided by 4 and i got 3 and I have 1 times 3 and i got 3 and I have 6 minus 3 and i got 3 and I divided it and i subtracted so i got 3/12 and I divided it and i subtracted so i got 1/4
 ### answer: 1/4"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,46,7/20,0," 3/5-1/4 = 7/20
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,46,7/20,1," 3/5-1/4 = 7/20
 
 ### Answered by Topperlearning User | 27th Apr, 2014, 10:07: AM
 
@@ -5886,7 +5886,7 @@ JEE NEET CBSE Class 12 Class 11 Class 10 Class 9 Class 8 Class 7 Class 6"
 ### answer: 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,79,7/20,1,"I took 20 divided by 5 and got 4 and then took 3 times 4 and got 12. I took 20 divided by 4 and got 5 and then took 5 times 1 and got 5. I took 12/20 minus 5/20 and got 7/20. I took 3/5 minus 1/4 and got 7/20.
 ### answer: 7/20"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,80,7/5,1,"a 7/20b 1/12c 1/5d 7/5
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,80,7/5,0,"a 7/20b 1/12c 1/5d 7/5
 Question and answer
 Solve this fraction problem: 3/5-1/4=?a 7/20b 1/12c 1/5d 7/5
 Log in for more information.
@@ -6078,7 +6078,7 @@ Find the product. Your"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,133,7/20,1,"3/20 7/20 12/20 7/5
 Answer: 7/20
 ### answer: 7/20"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,134,47/20,1,"If i subtract the whole numbers i get 2 and then i subtract the fractions and I got 7/20 so my final answer is 2 7/20
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,134,47/20,0,"If i subtract the whole numbers i get 2 and then i subtract the fractions and I got 7/20 so my final answer is 2 7/20
 ### answer: 2 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,135,7/20,1,"I will give you one point for each step and two points for the whole thing.
 ### answer: 7/20"
@@ -6154,7 +6154,7 @@ Find the least common denominator.
 ### answer: 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,157,2,0,"I subtracted the 5 from the 4. I got 1. I subtracted the 3 from the 1 and I got 2. I got 2/1. I checked for a greatest common factor and found none. So that is the final answer.
 ### answer: 2/1"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,158,7/20,0,"I've thought about changing it to like terms and then subtracting, but I think I'll just subtract directly. So I have 3/5-1/4 which becomes 7/20. I checked it by changing it into like terms, and it's still the same thing. I don't know how to explain it any more so I won't. So that's the answer, but I really didn't have to think about it much, because it is very quick and not really complicated."
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,158,7/20,1,"I've thought about changing it to like terms and then subtracting, but I think I'll just subtract directly. So I have 3/5-1/4 which becomes 7/20. I checked it by changing it into like terms, and it's still the same thing. I don't know how to explain it any more so I won't. So that's the answer, but I really didn't have to think about it much, because it is very quick and not really complicated."
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,159,7/20,1,"I took 5 times 4 and 3 times 4 and got 12/20. I took 4 times 5 and 1 times 5 and got 5/20. I took 12 divided by 4 and 3/20. I took 20 divided by 4 and 5/20. I took 12/20-5/20 and got 7/20. I took 3/5-1/4 and got 7/20. I used a subtraction fact. I divided the greatest common factor. So my answer is 7/20.
 ### answer: 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,160,7/20,1," I first need to find a common denominator.5 x 4=20,3 x 4=12 and 4 x 5=20,1 x 5=5. Then I need to subtract 12 from 5 to get 7. And I need to subtract 12/20 from 5/20 to get 7/20.
@@ -6208,7 +6208,7 @@ Find the least common denominator.
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,186,,0,"I took 3 minus 1 to get 2, and 5 minus 4 to get 1."
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,187,2/15,0,"I subtracted 20 from 5 and got 15 and 5 from 15 and got 10. I subtracted 3 from 1 and got 2 and 3/15 from 1/15 and got 2/15.
 ### answer: 2/15"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,188,11/5,1,"please show work - Brainly.com
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,188,11/5,0,"please show work - Brainly.com
 alexandrafabian1
 06/05/2019
 Mathematics
@@ -6269,7 +6269,7 @@ Step-by-step explanation: The denominators 5 and 4 don't have a greatest common 
 ### answer: 7"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,212,2,0,"I thought it'd be subtracting the bigger number from the smaller number. so I thought 3-1 would be 2 and 5-4 would be 1. I got 2/1.
 ### answer: 2/1"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,213,19/20,1,A. 7/20B. 1/2C. 12/5D. 11/20I took 20/20 minus 1/20 and got 19/20. I took 3/5 minus 1/4 and got 19/20. I subtracted the fractions.
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,213,19/20,0,A. 7/20B. 1/2C. 12/5D. 11/20I took 20/20 minus 1/20 and got 19/20. I took 3/5 minus 1/4 and got 19/20. I subtracted the fractions.
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,214,7/20,1,"I did 20 divided by 5 is 4 and 4 times 3 is 12. So i did 3 times 4 which was 12. I did 20 divided by 4 is 5 and 5 times 1 is 5. I did 1 times 5 which was 5. I did 12-5 which was 7. I did 12/20 minus 5/20 which was 7/20. I did 3/5-1/4 which was 7/20. I subtracted it in the second stage. I divided it and multiplied it. I checked for a greatest common factor and see if it could be simplified but it can't. So I got 7/20.
 ### answer: 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,215,7/20,1,3/5 − 1/4 = 7/20. You need to find a common denominator so it's possible to subtract these fractions.
@@ -6318,7 +6318,7 @@ Get a common denominator. Multiply the first one times four and the second one t
 ### answer: 7/20"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,224,0,0,"I thought of changing the 4 to 5 and the 1 to 3 so that 3/5-3/5=0/5 but I thought the 0/5 should be 0/1 so thought of changing the denominator but the 5 didn't change
 ### answer: 0/1"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,225,3/5,1,"Do you know I should be doing this?
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,225,3/5,0,"Do you know I should be doing this?
 ### answer: 12/20 - 5/20 = 12-5/20=7/20
 ### answer: 3/5-1/4=7/20
 ### answer: 7/20"
@@ -6339,7 +6339,7 @@ Math - I need help I'm help to solve this probability question a fair die is rol
 Math - I need help I'm help to solve th"
 3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,232,7/20,1,"Please help me
 ### answer: 7/20"
-3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,233,103/5,1,"3/20 7/20 17/20 12/20
+3/5-1/4,Sub,UD,7/20,Qwen3-4B + cognitive distillation + humanFT,233,103/5,0,"3/20 7/20 17/20 12/20
 Question and answer
 Solve this fraction problem: 3/5-1/4=?3/20 7/20 17/20 12/20
 Log in for more information.
@@ -6523,7 +6523,7 @@ Step-by-step explanation:
 In this example both the denominators are the same so you just need to subtract the numerators which are 3 and 1.
 Answer: 2/5
 Answer is 2/5 because it is simplified by dividing numerator and den"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,40,27/5,1,"​ - Brainly.ph
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,40,27/5,0,"​ - Brainly.ph
 profile
 Brainly User
 Brainly User
@@ -6590,7 +6590,7 @@ Because we can see that they have the same denominators so we can directly subtr
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,46,2/5,1," 3/7-1/5=? 2/10-1/5=?
 ### answer: 2/5"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,47,2/5,1,"I know that the denominators are the same so what i did was 3-1, and 3/5 -1/5 =2/5 so the answer is 2/5"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,48,137/140,1,3/5 - 1/5 = 2/5 11.14/18/10/16/22/28/34/40/46/52/58/64/70/76/82/88/94/100/106/112/118/124/130/136/142/148/154/160/166/172/178/184/190/196/202/208/214/220/226/232/238/244/250/256/262/268/274/280/
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,48,137/140,0,3/5 - 1/5 = 2/5 11.14/18/10/16/22/28/34/40/46/52/58/64/70/76/82/88/94/100/106/112/118/124/130/136/142/148/154/160/166/172/178/184/190/196/202/208/214/220/226/232/238/244/250/256/262/268/274/280/
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,49,,0,"I subtracted five from five and got 0. I subtracted three from one and got 2. I subtracted three-fifth minus one-fifth and got two-ninth.
 ### answer: 2/0"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,50,2/5,1,"I subtracted them directly. I thought 5 goes into 5 one time and that the other 3 goes into 5.
@@ -6628,7 +6628,7 @@ Because we can see that they have the same denominators so we can directly subtr
 ### answer: 8/15"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,66,2/5,1,"I subtracted 3 by 1 and got 2 and I kept it all as 5's.
 ### answer: 2/5"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,67,2/5,0,"Is it 3/5?
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,67,2/5,1,"Is it 3/5?
 Answer: 3/5 - 1/5 = 2/5. For more information, use the site shown below.
 ### answer: 2/5
 ### answer: 3/5-1/5
@@ -6701,7 +6701,7 @@ Find more answers
 plus
 Ask your question
 New quest"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,80,,1,"a 2/5b 2/10c 2/0d 4/10
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,80,,0,"a 2/5b 2/10c 2/0d 4/10
 Question and answer
 Solve this fraction problem: 3/5-1/5=?a 2/5b 2/10c 2/0d 4/10
 Log in for more information.
@@ -6788,7 +6788,7 @@ superscript"
 ### answer: 21 minus 7/12"
 3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,96,2/5,1,"I worked it out and I got 2/5
 ### answer: 2/5"
-3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,97,13/5,1,"​ - Brainly.in
+3/5-1/5,Sub,ED,2/5,Qwen3-4B + cognitive distillation + humanFT,97,13/5,0,"​ - Brainly.in
 profile
 profile
 suhani84
@@ -7188,7 +7188,7 @@ Answer link"
 ### answer: 3/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,6,12/5,1,"I tried this because if 3/5 times 4 over 1 = 12/5, and 5 over 1 times 1/4 = 5/4.
 ### answer: 12/5"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,7,12/5,0,"3/5:1/4?3/5 divided by 1/4 is 3/5 divided by 1/4.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,7,12/5,1,"3/5:1/4?3/5 divided by 1/4 is 3/5 divided by 1/4.
 Answer: 3/5 ÷ 1/4 = 2.4/5 (worked out by hand)
 ### answer: 2.4/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,8,1/4,0,"I flipped 1/4. I checked for greatest common factor. I changed 5 to 4 and 4 to 5. I changed 3 to 1 and 1 to 3. I flipped 1/4. I thought it went on the bottom but I am not sure and I took 12/20 divided by 5/20. I got 2/20 divided by 5/20 but I flipped it. So I got 5/20.
@@ -7246,7 +7246,7 @@ Com"
 ### answer: 2/3"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,23,3/20,0,"3/20
 ### answer: 3/20"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,24,12/5,0,"I used the simplest form method. I found the least common multiple of 5 and 4 which was 20. Then I divided by that number
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,24,12/5,1,"I used the simplest form method. I found the least common multiple of 5 and 4 which was 20. Then I divided by that number
 ### answer: 2.4/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,25,4/5,0,"I divided 5 into 4 and got 0.8, I then divided 3 by 1 and got 3, therefore the final answer is 3/0.8.
 ### answer: 3/0.8"
@@ -7263,7 +7263,7 @@ Com"
 ### answer: 2.4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,32,3/4,0,"i found 3:1 in a way but i was wondering if 3/5 is 3 and 5/4 is 4 and 1 so it is 3/4 i got that way but i was wondering if that was right
 ### answer: 3/4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,33,12/5,0,"Please show the working out
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,33,12/5,1,"Please show the working out
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,34,12/5,1,"And then I have another one in which I do not know how to change it to a simpler fraction. I worked it out in another way but I thought you wanted to change it.
 ### answer: 2.4"
@@ -7279,9 +7279,9 @@ Com"
 ### answer: 12"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,40,1/3,0,"I worked out that, because of the common denominator, it would be 3/5:5/4=1/3
 ### answer: 1/3"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,41,12/5,0,"I flipped the second fraction and changed division to multiplication. This answer was incorrect.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,41,12/5,1,"I flipped the second fraction and changed division to multiplication. This answer was incorrect.
 ### answer: 2.4/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,42,12/5,0,"I think that I did it right but I would like someone to double check it if they are able.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,42,12/5,1,"I think that I did it right but I would like someone to double check it if they are able.
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,43,12/5,1,"I thought 5 times 1 and 3 times 4 but I think I'm wrong.
 ### answer: 12/5"
@@ -7377,7 +7377,7 @@ I thought it was 2 but I was wrong.
 ### answer: 2/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,77,1,0,"I thought 5 divided by 4 is 1 and the rest just didn't matter.
 ### answer: 1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,78,12/5,0,"I got 2.4/1
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,78,12/5,1,"I got 2.4/1
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,79,3/20,0,"I took 5 times 4 and got 20 then I took 3 times 1 and got 3. I took 3/5 times 1/4 and got 3/20 and I took 3/5 divided by 1/4 and got 3/20 I checked for a greatest common factor and there was none so I left it as is.
 ### answer: 3/20"
@@ -7405,9 +7405,9 @@ For example:
 ### answer: 1/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,84,3/16,0,"/16?I took 5 divided by 4 which equals 1.25 and 1.25 times 1 equals 1. I took 3 times 1 and I got 3.
 ### answer: 3/16"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,85,12/5,0,"I thought that this was 7/20 but my teacher said that i got it incorrect can you help please
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,85,12/5,1,"I thought that this was 7/20 but my teacher said that i got it incorrect can you help please
 ### answer: 2.4/20"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,86,12/5,0,"I got 2.4/5.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,86,12/5,1,"I got 2.4/5.
 ### answer: 2.4/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,87,16/5,0,"I put it as a division problem, but I got 3.2. Is that correct?
 ### answer: 3.2"
@@ -7422,11 +7422,11 @@ Here's what I've worked out.
 3/5 : 1/4
 I would change the denominators to equivalent numbers. I would make it 12 because it's the least common multiple of 5 and 4. I would then change the numerators by the number I needed to change the denominator.
 3*4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,91,12/5,0,"I didn't know how to get the solution for the problem like that
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,91,12/5,1,"I didn't know how to get the solution for the problem like that
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,92,3/4,0,"I thought I should multiply, so I tried 3/20. I checked for a greatest common factor. I found one, too, and divided the answer by that number, so it becomes 3/4.
 ### answer: 3/4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,93,12/5,0,"Can you use these methods:1. Simplify (If possible)2. Find common denominators3. Times it
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,93,12/5,1,"Can you use these methods:1. Simplify (If possible)2. Find common denominators3. Times it
 ### answer: 2.4/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,94,4/3,0,"I have done a division. I have checked for a greatest common factor and then used that. I checked for a greatest common factor. So I got 1 and 1/3.
 ### answer: 1 1/3"
@@ -7434,7 +7434,7 @@ I would change the denominators to equivalent numbers. I would make it 12 becaus
 ### answer: 3/5:1/4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,96,6/5,0,"I worked it out to be 2.4/4 but I think it should be 2.4/1 so 2.4 times 1/4 = 1.2/4
 ### answer: 1.2/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,97,12/5,0,"I got 2.4/1
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,97,12/5,1,"I got 2.4/1
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,98,12/5,1,"I chose 2.4 because I divided the larger number by the smaller number. I checked it by multiplying 5 times 1, and I got 5, and I checked it by multiplying 1 times 4, and I got 4.
 ### answer: 2.4"
@@ -7444,7 +7444,7 @@ I would change the denominators to equivalent numbers. I would make it 12 becaus
 ### answer: 2.4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,101,4,0," I got 4
 ### answer: 4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,102,12/5,0,"I tried dividing 5 into 3 and 4 into 1 and I got 0.6/0.25 which equals 2.4/1
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,102,12/5,1,"I tried dividing 5 into 3 and 4 into 1 and I got 0.6/0.25 which equals 2.4/1
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,103,12/5,1," I know I need to flip and multiply so i did 3/5 times 4/1 then i multiplied the numerators and the denominators. I got 12/5.
 ### answer: 12/5"
@@ -7494,7 +7494,7 @@ I would change the denominators to equivalent numbers. I would make it 12 becaus
 ### answer: 3/1.25"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,127,6/5,0,"I got that a/b divided by c/d is a/b times d/c. So I got 3/5 times 4/1. I did that because a divisor is multiplied by the inverse to turn it to multiplication. So I got 12/5. I did that because I flipped the second fraction (4/1 flipped into 1/4) and that is an inverse, I thought. Did I do this right? I multiplied the tops and divided the bottoms. The result would be a simple number. I thought it would have come out as 1.2.
 ### answer: 1.2"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,128,1/4,1,3/5 divided by 1/4 equals 2.4 (or 1 and 2/5) divided by 1/4. The fraction divided by the fraction equals the quotient of the divided and quotient fractions.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,128,1/4,0,3/5 divided by 1/4 equals 2.4 (or 1 and 2/5) divided by 1/4. The fraction divided by the fraction equals the quotient of the divided and quotient fractions.
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,129,6/25,0,"I need someone to explain and show me how to work this problem
 ### answer: 6/25"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,130,3,0,"/1.
@@ -7543,7 +7543,7 @@ Step-by-step explanation:  This is a division problem which means you flip the 
 ### answer: 2.4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,146,2/5,0,"How does it work?
 ### answer: 2/5"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,147,1/4,1,"I did this with a calculator so it's 2.4, so I went with that number. I worked out that it was 3/5 divided by 1/4 directly. So, I got 2.4. So, it was just worked out directly with the calculator. So, I went with 2.4."
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,147,1/4,0,"I did this with a calculator so it's 2.4, so I went with that number. I worked out that it was 3/5 divided by 1/4 directly. So, I got 2.4. So, it was just worked out directly with the calculator. So, I went with 2.4."
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,148,3/2,0,"I got 1,10/8 but i need to divide it.?
 ### answer: 1.5
 ### answer: 2
@@ -7573,9 +7573,9 @@ Step-by-step explanation:  This is a division problem which means you flip the 
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,151,2/5,0,"/20
 ### answer: 8/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,152,4,0,"I divided the first numerator by the second numerator and the first denominator by the second denominator. I then divided the two numbers after. So, I got 2.4/1."
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,153,12/5,0,"How did you do it?
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,153,12/5,1,"How did you do it?
 ### answer: 2.4/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,154,12/5,0,"I took 20 divided by 5 and got 4. I took 4 times 3 and got 12. I took 3 times 4 and got 12. I took 20 divided by 4 and got 5. I took 5 times 1 and got 5. I took 1 times 5 and got 5. I took 12 divided by 5 and got 2.4. I took 12/20 divided by 5/20 and got 2.4/20. I divided the bigger number by the smaller number and kept only the whole-number part. I divided the bigger number by the smaller number. So I got 2.4/20.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,154,12/5,1,"I took 20 divided by 5 and got 4. I took 4 times 3 and got 12. I took 3 times 4 and got 12. I took 20 divided by 4 and got 5. I took 5 times 1 and got 5. I took 1 times 5 and got 5. I took 12 divided by 5 and got 2.4. I took 12/20 divided by 5/20 and got 2.4/20. I divided the bigger number by the smaller number and kept only the whole-number part. I divided the bigger number by the smaller number. So I got 2.4/20.
 ### answer: 2.4/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,155,24/5,0,"I am confused if it is supposed to be divided or a multiplication?
 ### answer: 24/5"
@@ -7612,9 +7612,9 @@ Weegy: There is a 125% increase in going from 4 to 9. 9/4 x 100 = 225, 225/100 =
 ### answer: 12/10"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,167,4,0,"I got 4/1
 ### answer: 4/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,168,12/5,0,"I got 2.4/5
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,168,12/5,1,"I got 2.4/5
 ### answer: 2.4/5"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,169,12/5,0,"I got 2.4/1
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,169,12/5,1,"I got 2.4/1
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,170,6,0,"What is the ratio in simplest form?
 ### answer: 6/1"
@@ -7633,7 +7633,7 @@ Weegy: There is a 125% increase in going from 4 to 9. 9/4 x 100 = 225, 225/100 =
 ### answer: 2.4
 ### answer: 2.4
 ### answer: 2.4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,172,12/5,0,"And can you tell me the whole process and the reason for every step. I need an answer because I am having a hard time understanding it.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,172,12/5,1,"And can you tell me the whole process and the reason for every step. I need an answer because I am having a hard time understanding it.
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,173,5/4,0," 3 over 5 divided by 1 over 4. I flipped the second fractions so it would be 1 over 4. I think it's 5 over 4. I flipped the second fraction, so it would be 5 over 4. So 3 over 5 divided by 1 over 4 is 5 over 4. I divided the fractions. Is this right?
 ### answer: 5/4"
@@ -7685,7 +7685,7 @@ Weegy: There is a 125% increase in going from 4 to 9. 9/4 x 100 = 225, 225/100 =
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,197,12/5,1,"I flipped 5 over 4 and 3 over 1. I flipped the whole equation.
 ### answer: 12/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,198,5/2,0,I got 4/15 and 15/6.
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,199,12/5,0," 3/5 divided by 1/4 = 2.4/5. I flipped the 1/4 and changed the division problem to a multiplication problem.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,199,12/5,1," 3/5 divided by 1/4 = 2.4/5. I flipped the 1/4 and changed the division problem to a multiplication problem.
 ### answer: 2.4/5"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,200,6,0,"I am so confused on how to do this. I think that the answer has 6/1
 ### answer: 6/1"
@@ -7693,7 +7693,7 @@ Weegy: There is a 125% increase in going from 4 to 9. 9/4 x 100 = 225, 225/100 =
 ### answer: 2.4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,202,5/3,0,"A. 3/5B. 3/20C. 7/10D. 5/3
 ### answer: D"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,203,12/5,0,"I thought I had to find a common denominator but I can't find one that works for both 3/5 and 1/4.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,203,12/5,1,"I thought I had to find a common denominator but I can't find one that works for both 3/5 and 1/4.
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,204,1/5,0,"I tried to simplify 3/5 so I can get a whole-number answer but I didn't work out so well in my attempt. I thought that I would find 5 times 1 to get 5 and then 3 times 4 to get 12 but I found it would come out like 1/5.
 ### answer: 1/5"
@@ -7739,15 +7739,15 @@ we have, 52 feet = 624 inches
 ### answer: 3/4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,217,1/5,0,"I tried to divide but I don't know how to do that. So I used my hands and tried to take them and keep them but it doesn't work.
 ### answer: 1/5"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,218,12/5,0," (What is this? I thought I read this last night, but I can't find it.)
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,218,12/5,1," (What is this? I thought I read this last night, but I can't find it.)
 In order to divide one number by another, you must first determine the divisor (the number you are dividing by) and the dividend (the number you are dividing into), and then you can take one number, divide it by the other.
 Answer: 2.4/1
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,219,1,0," I got 1/1.
 ### answer: 1/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,220,12/5,0,"I did 5 times 4=20 and 3 times 4 =12 and 4 times 5 =20 and 1 times 5 =5 and 12/20 divided by 5/20 =2.4/20.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,220,12/5,1,"I did 5 times 4=20 and 3 times 4 =12 and 4 times 5 =20 and 1 times 5 =5 and 12/20 divided by 5/20 =2.4/20.
 ### answer: 2.4/20"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,221,12/5,0,"I came up with 2.4 because I divided 3 by 5 and then I divided that number by 1 and then I divided that number by 4. I did this because I used the division operation in the equation. So 2.4/1 is the answer because that’s the best I could do in that order.
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,221,12/5,1,"I came up with 2.4 because I divided 3 by 5 and then I divided that number by 1 and then I divided that number by 4. I did this because I used the division operation in the equation. So 2.4/1 is the answer because that’s the best I could do in that order.
 ### answer: 2.4/1"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,222,8/5,0,"I thought it would be 24/15 but it isn't.
 ### answer: 24/15"
@@ -7775,9 +7775,9 @@ MATH - PERmutations/Combinations: What is the number of ways of arranging 12 ...
 Math - Find the least common multiple of 15 and 12. Use any method"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,232,12/5,1,"Please help me out thanks, I'm really having trouble.
 ### answer: 2.4"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,233,12/5,0,"3/5 divided by 1/4
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,233,12/5,1,"3/5 divided by 1/4
 ### answer: 2.4/1"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,234,12/5,0,"I got 2.4/5.4
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,234,12/5,1,"I got 2.4/5.4
 ### answer: 2.4/5.4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,235,5/12,0,"I got 2 3/11. I did 3 times 4 and got 12. I did 5 times 1 and got 5. I did 5/12 times 1/4 and got 5/12. I did 3/5 divided by 1/4 and got 5/12. I flipped one of the fractions. So, 5/12. I checked for a greatest common factor. So, 5/12.
 ### answer: 5/12"
@@ -7785,7 +7785,7 @@ Math - Find the least common multiple of 15 and 12. Use any method"
 ### answer: 5 1/4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,237,6/5,0,"I made it 12/20 divided by 5/20 but i do not know to divide those.
 ### answer: 1.2"
-3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,238,12/5,0,"I am working on this problem and am confused. I want to change the bottom numbers for both fractions. So, I got 12/20:5/20. If I divided it, I got 2.4/20. I divided 12 by 5 and 20 divided by 20. I divided it. I don't know what to do next. Did I do it wrong?
+3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,238,12/5,1,"I am working on this problem and am confused. I want to change the bottom numbers for both fractions. So, I got 12/20:5/20. If I divided it, I got 2.4/20. I divided 12 by 5 and 20 divided by 20. I divided it. I don't know what to do next. Did I do it wrong?
 ### answer: 2.4/20"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,239,4,0,"3/5 times 1/4 is not one. I think it is 4 times 3.
 ### answer: 4 times 3"
@@ -7821,7 +7821,7 @@ Math - Find the least common multiple of 15 and 12. Use any method"
 ### answer: 2/4"
 3/5:1/4,Div,UD,12/5,Qwen3-4B + cognitive distillation + humanFT,255,3,0,"I need to change 3/5 into a fraction with an 8 in the denominator. I change it to 24/40. I need to change 1/4 into a fraction with an 8 in the denominator. I change it to 2/8. Now I can divide. I use the fact family: 8 divided by 2 is 4. 24 divided by 2 is 12. 24/40 divided by 2/8 is 12/4 or 3.
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,0,3,0," I tried dividing 3 by 1 and got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,0,3,1," I tried dividing 3 by 1 and got 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,1,3,1,"I came up with 3/1
 ### answer: 3/1"
@@ -7859,7 +7859,7 @@ Math - Find the least common multiple of 15 and 12. Use any method"
 ### answer: 2/0"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,18,3,1,"I divided 5 by 5 and got 1. I divided 3/5 by 1/5 and got 3/1. I divided 3/5 by 1/5 and got 3 divided by 1 and got 3, and got 1 divided by 1 and got 1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,19,3,0," I get 15/5 because they are all over 5 but that was easy so its not 15/5 but 3
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,19,3,1," I get 15/5 because they are all over 5 but that was easy so its not 15/5 but 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,20,3,1,3/5 divided by 1/5 is 3/1 and the division is true. I worked out that division. It's like dividing 3 by 1.
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,21,3,1,"Can you help me to work it out?I don't want to know the answer, but would like to know how to work it out. I would have thought 3/5 divided by 1/5 was 3/1, but that would be division I guess.
@@ -7885,23 +7885,23 @@ Math - Find the least common multiple of 15 and 12. Use any method"
 ### answer: 5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,32,3/5,0,"i just did not get it. I mean the answer is.6 but 3/5 is a whole number, how do u get 0.6 because it is a whole number
 ### answer: 0.6"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,33,3,0,"Please explain the answer.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,33,3,1,"Please explain the answer.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,34,1,0,"And that is the most simplest form I came up with for a fraction division problem.
 ### answer: 1/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,35,3,1,"I divided 5 by 5 and got 1, then i used that for the fraction and then i divided 1 by 3 and that is 3. so i did 1/5 by 3/5.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,36,3,0,"I have only ever worked with this type of problem but I worked it out and got the correct answer.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,36,3,1,"I have only ever worked with this type of problem but I worked it out and got the correct answer.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,37,3,1,"The 5's equal and there are 3/1 5ths?
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,38,3,1,"I am confused because after dividing 3 over 1 i will get 3/1 so can i keep 5 there or will i take it out
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,39,3,0,"What is the problem 3/5 divided by 1/5?I divided 3 by 1 and got 3 and 5 divided by 5 and got 1 and then worked that out.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,39,3,1,"What is the problem 3/5 divided by 1/5?I divided 3 by 1 and got 3 and 5 divided by 5 and got 1 and then worked that out.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,40,3/5,0,"I used the fifth, because of the common denominator, it worked out to be five-tenths.
 ### answer: 3/5:1/5=3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,41,3,0,"I flipped the second fraction and changed division to multiplication.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,41,3,1,"I flipped the second fraction and changed division to multiplication.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,42,1,0,"I think it's 5/5 which is 1
 ### answer: 1"
@@ -7940,7 +7940,7 @@ I divided the numerator because it was "
 ### answer: 1/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,47,4,0,"I got 20/5 or 4 so i worked out 3 times 1 and 3 times 5 so i got 20/5 or 4.
 ### answer: 4"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,48,3,0,"3/5 divided by 1/5. I get 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,48,3,1,"3/5 divided by 1/5. I get 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,49,3,1,"I got 3/5. 3 is divided by 1 is 3. So that's my result.5/5 is 1.5/5 is 5/1.
 ### answer: 3/1"
@@ -7968,21 +7968,21 @@ I divided the numerator because it was "
 ### answer: 1 1/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,62,3,1,"I got 3/1, then changed it from improper to whole number. I also flipped the denominator and the numerator.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,63,3,0,"Can you explain step by step?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,63,3,1,"Can you explain step by step?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,64,3,1,"I took 3 times 5 and got 15 and 5 times 1 and got 5 so I got 15/5 and then I took 3/5 times 1/5 and got 15/5.
 ### answer: 15/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,65,3,0,"I just need help thinking of what the right way to find it is
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,65,3,1,"I just need help thinking of what the right way to find it is
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,66,3/5,0,"I don't even know how to do this and I'm so tired. I'm taking it for college.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,67,3,0,"Is it 3?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,67,3,1,"Is it 3?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,68,3/5,0,"It is important to determine first whether the fractions have the same denominator.
 ### answer: 3/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,69,1/5,0,"It's one part you keep going to work and other one you will stay home and take 10 days off. So then, you have 2/10. You use this one plus 10 on the bottom and 2 times the bottom and this is the way to do it.
 ### answer: 2/10"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,70,3,0,"I need to divide because I am not using a common denominator.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,70,3,1,"I need to divide because I am not using a common denominator.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,71,3/5,0,"Do you have to use a common denominator?
 ### answer: 3/5"
@@ -8024,7 +8024,7 @@ I divided the numerator because it was "
 ### answer: 6"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,89,3,1,"I got 1. Please correct me if I am wrong, but I thought that the 5 and 5 would be deleted because it is the same number, so then it just would have been 3/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,90,3,0," I have no clue what I did wrong in this one. I thought 5 would go away since there's no 5's on the bottom. So I got 3. Thanks.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,90,3,1," I have no clue what I did wrong in this one. I thought 5 would go away since there's no 5's on the bottom. So I got 3. Thanks.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,91,2,0,"I didn't know how to get the solution for the problem like that
 ### answer: 2
@@ -8035,23 +8035,23 @@ I divided the numerator because it was "
 ### answer: 3/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,94,3/5,0,"Simplify and explain
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,95,3,0,"How many times greater is this?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,95,3,1,"How many times greater is this?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,96,12/5,0,"I worked it out to be 60/25 but I knew what the answer was going to be so I didn't work it out. (I thought it was 12/5)
 ### answer: 12/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,97,2,0,"I got 2. Can someone check for me, please??
 ### answer: 2"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,98,3,0,"I just put 1 but i am not sure if it was 3 or 1?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,98,3,1,"I just put 1 but i am not sure if it was 3 or 1?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,99,3,1,"I got 3/1.
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,100,3,1,"I got 3/1, if I have 3/5 and 1/5, because we have the same 5 I divided it out and it became 3/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,101,3,0," I got 3
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,101,3,1," I got 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,102,9/5,0,"I'm not sure how to do this problem, do we divide the fraction and what are the steps on how to do this?
 ### answer: 1.8"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,103,3,0," I know I work it out by dividing 3/5 by 1/5, but that's the problem I am stuck on. Can you help me?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,103,3,1," I know I work it out by dividing 3/5 by 1/5, but that's the problem I am stuck on. Can you help me?
 Mathematics help
 ### answer: 3
 ### explanation: we divide the numerator by the numerator and keep the denominator. so we get 3/5
@@ -8069,7 +8069,7 @@ Mathematics help
 ### answer: 3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,108,1,0,"I know that 5/3/15 would be 3/1 but I don't know where the 1 comes from.
 ### answer: 1/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,109,3,0,"What is the ratio equivalent to 3/5:1/5?3/5:1/5?I just took 3/5 divided by 1/5 and got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,109,3,1,"What is the ratio equivalent to 3/5:1/5?3/5:1/5?I just took 3/5 divided by 1/5 and got 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,110,3,1,"I took 5 times 1 and got 5. I took 3 times 5 and got 15. I took 3/5 times 5/1 and got 15/5. I took 3/5 divided by 1/5 and got 15/5.
 ### answer: 15/5"
@@ -8085,17 +8085,17 @@ Mathematics help
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,115,1/5,0,"I worked out the problems and got the right answers. It is so funny, I had to double check each problems by working out and the right answer. I was so happy that I got it right and I was also able to get the right answers. I had to check for lowest common factors and then I was able to check if the answer was in lowest term. I thought about flipping but I thought it would be easier without fliping and I was really happy that I got it right. I think it was really easy and I was so happy I got it "
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,116,3/5,0,"?
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,117,3,0,"So then i divided 3 by 1, and I got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,117,3,1,"So then i divided 3 by 1, and I got 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,118,1,0,"What is the answer?5/5
 ### answer: 5/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,119,1/5,0,"I came out with 1/2, because I divided 3 by 1. But when I checked my work, I tried dividing 3/5 by 1/5 to see if it was equal to 1/2, and it was not. I thought it was equal because it is a division problem and you can divide in this way, and 3 divided by 1 is equal to 1, and 5/5 is 1 because 5 divided by 5 is 1. So I checked my work in order to be sure that it was actually equal to that. So what I divided 3/5 by 1/5 was 1/5.
 ### answer: 1/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,120,3,0,"I'm not sure if its 3:1
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,120,3,1,"I'm not sure if its 3:1
 ### answer: 3:1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,121,3,1,"I took 3 times 5 and got 15, then I took 3/5 times 5/1 and got 15/5.
 ### answer: 15/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,122,3,0,"I need to find a ratio.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,122,3,1,"I need to find a ratio.
 ### answer: 3:1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,123,15,0,"I thought the answer was 15 because you times it by 3 and 1
 ### answer: 15"
@@ -8111,7 +8111,7 @@ Mathematics help
 ### answer: 3/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,129,6/25,0,"I need someone to check my answer and to confirm the right answer
 ### answer: 6/25"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,130,3,0,"/1.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,130,3,1,"/1.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,131,1/3,0,"I thought it was 5/15
 ### answer: 5/15"
@@ -8126,7 +8126,7 @@ Mathematics help
 ### answer: 3/5:1/5 = 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,136,3,1,"I think it is 3 to 1, because the denominator is 5 in both fractions.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,137,3/5,1,"I came out with 2 but I am not sure what kind of numbers you meant.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,137,3/5,0,"I came out with 2 but I am not sure what kind of numbers you meant.
 ### answer: 3/5:1/5=3/1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,138,3,1,"i thought of this as 3/5 and 1/5. i thought of 3/5=3 and 1/5=1 and that gave me 3/1
 ### answer: 3/1"
@@ -8134,7 +8134,7 @@ Mathematics help
 ### answer: 1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,140,1,0,"I don't get this can anybody explain it to me?I thought it was 5 over 3 but I'm wrong.
 ### answer: 1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,141,3,0,"I was thinking it would be 3/1 but I got it wrong?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,141,3,1,"I was thinking it would be 3/1 but I got it wrong?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,142,3333/1000,0,"I divided 5/3 by 5/1. I ended up with 0.667/0.2. I took 0.667 divided by 0.2 and got 3.333. I took 5/3 divided by 5/1 and got 3.333/0.2. I took 3/5 divided by 1/5 and got 3.333/0.2. I worked out that division directly. So I got 3.333/0.2.
 ### answer: 3.333/0.2"
@@ -8144,11 +8144,11 @@ Mathematics help
 ### answer: 1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,145,1/3,0,"I did 3/5 divided by 1/5 and got 1/3, I also thought about dividing the 3 by the 1 but that didn't help me or did not fit the criteria.
 ### answer: 1/3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,146,3,0,"How does it work?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,146,3,1,"How does it work?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,147,3/5,0,"I did this by dividing 3/5 by 1/5 so I got 3/5 I worked out that it was 3 and kept the 5. I got that by working out 3/5 divided by 1/5 so I got 3/5
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,148,3,0,"I got 15 divided by 5 which equals 3
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,148,3,1,"I got 15 divided by 5 which equals 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,149,3/5,0,"I thought 3/5 is less than 1/5, so the division should be 0 or undefined.
 ### answer: 3/5"
@@ -8158,7 +8158,7 @@ Mathematics help
 ### answer: 6"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,152,3/5,0,"I divided 3 by 1 and got 3 and I divided 3/5 by 1/5 and got 3/5.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,153,3,0,"How did you do it?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,153,3,1,"How did you do it?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,154,3/5,0,"I took 3 divided by 1 and got 3, then took 3/5 divided by 1/5 and got 3/5.
 ### answer: 3/5"
@@ -8166,9 +8166,9 @@ Mathematics help
 ### answer: 5/10"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,156,1/5,0,"I got 1/5.
 ### answer: 1/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,157,3,0,"I don't get it. You've made it too difficult for me. Is there a simpler way to do it?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,157,3,1,"I don't get it. You've made it too difficult for me. Is there a simpler way to do it?
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,158,3,0,"I've thought about doing it like this: 3/5 divided by 1/5=3/5 times 5/1 because you flip it so it's 5 times 1 and 3 times 5, but I got that wrong and 15/5 and 3/5 would cancel out and leave it with 3, right?I thought I flipped it, but I didn't. Thanks.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,158,3,1,"I've thought about doing it like this: 3/5 divided by 1/5=3/5 times 5/1 because you flip it so it's 5 times 1 and 3 times 5, but I got that wrong and 15/5 and 3/5 would cancel out and leave it with 3, right?I thought I flipped it, but I didn't. Thanks.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,159,3/5,0,"I took the bottom number five and divided three by one and got three. so the bottom number has to stay the same because that was the only number we could have divided. I took the top number three and divided it by the bottom number one, and got three, so you got 3/5.
 ### answer: 3/5"
@@ -8196,15 +8196,15 @@ Mathematics help
 ### answer: 5/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,171,1,0,"Please work out that equation.
 ### answer: 1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,172,3,0,"And can you tell me if it goes in times or divide
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,172,3,1,"And can you tell me if it goes in times or divide
 ### answer: 3 divided by 1 and that equals 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,173,3,0," 3 over 5 divided by 1 over 5. I would say: 3 divided by 1 =3
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,173,3,1," 3 over 5 divided by 1 over 5. I would say: 3 divided by 1 =3
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,174,3,0,"?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,174,3,1,"?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,175,3,1,"I thought it would just be 3/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,176,3,0,"I worked out that 5 goes in each, so it just becomes 3 divided by 1. which is 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,176,3,1,"I worked out that 5 goes in each, so it just becomes 3 divided by 1. which is 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,177,8/5,0,"I know I must divide, I got 1.6 when I worked out 3/5 divided by 1/5 (3/5 ÷ 1/5 = 1.6). If you're like I am, you divide when you need to, or you divide so you don't have to change denominators (or the bottom number).
 ### answer: 1.6"
@@ -8228,9 +8228,9 @@ Mathematics help
 ### answer: 3/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,187,3,1,"I took 5 times 1 and got 5 and 3 times 5 and got 15 and 3/5 times 1/5 and got 15/5 and 3/5 divided by 1/5 and got 15/5.
 ### answer: 15/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,188,3,0,"I came up with the answer of 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,188,3,1,"I came up with the answer of 3.
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,189,3,0,"I worked out I got 3/5 divided by 1/5=3, just took 3 divided by 1 and got 3. Is there any way to work out this problem?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,189,3,1,"I worked out I got 3/5 divided by 1/5=3, just took 3 divided by 1 and got 3. Is there any way to work out this problem?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,190,3,1,"5/3:1/5=?
 ### answer: 3/1"
@@ -8240,7 +8240,7 @@ Mathematics help
 ### answer: 10/17"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,193,3,1,"I was thinking 3/1. I thought it meant divide and 3 divided by 1 is 3 so the answer is 3/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,194,3,0,"I flipped one and changed the bottom to the same number, so just divided and left it like that
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,194,3,1,"I flipped one and changed the bottom to the same number, so just divided and left it like that
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,195,3,1,"I divided the top number with the bottom number, so 3/5 divided by 1/5 equals 3/1.
 ### answer: 3/1"
@@ -8269,7 +8269,7 @@ Mathematics help
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,207,,0,"I tried dividing and multiplying and all that I got as the answer is 5, since 5 divided by 5 equals 1 and 3 divided by 1 is 3."
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,208,3/5,0,"I took 3 divided by 1 and got 3 and I took 3/5 divided by 1/5 and got 3/5.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,209,3,0,"3/5 divided by 1/5
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,209,3,1,"3/5 divided by 1/5
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,210,3/5,0,"Can you explain to me how to get the answer?I'm in 7th grade
 ### answer: 3/5"
@@ -8307,11 +8307,11 @@ Mathematics help
 ### answer: 15"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,227,1/5,0,"I found it to be 1/5 or 3/1?What is 1/5 divided by 5/3?I divided the larger number by the smaller number but it was not a whole number so I left it in the denominator?What about the second one though. I divided 5 by 3 but it was not a whole number so I left it in the denominator. So it’s 1/5
 ### answer: 1/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,228,3,0,"I took 3 over 1 and got 3.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,228,3,1,"I took 3 over 1 and got 3.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,229,3/5,0,"I am in class but I don't know how to do the problem and I am trying to study for an exam today.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,230,3,0,"I divided the 5 into the 3 and 5 and got 3:2.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,230,3,1,"I divided the 5 into the 3 and 5 and got 3:2.
 ### answer: 3:2"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,231,,0,"Answer this Question
 5th grade math - What is the highest common factor of 52 and 22 and 15?I did this ...
@@ -8332,19 +8332,19 @@ Maths - The GCF of two numbers is 8. The LCM of the numbers is"
 ### answer: 15/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,237,3,1,"I made it 3:1 but I have a hard time dividing 3/5 by 1/5.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,238,3,0,"I am working on this problem and I do not think I am doing it correctly.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,238,3,1,"I am working on this problem and I do not think I am doing it correctly.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,239,5,0,"3/5 times 1/5 is not one. I think it is 3 times one and 5 times 5. I think 15/3 is correct.
 ### answer: 15/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,240,3/5,0,"I don't think this is a good problem because it is not divided. I divided 3 by 1 and got 3 and I divided 3/5 by 1/5 and got 3/5
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,241,3,0,"I tried that and I got 3:1.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,241,3,1,"I tried that and I got 3:1.
 ### answer: 3:1"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,242,3,1,"I took 5 times 1 and got 5 and 5 times 3 and got 15
 ### answer: 15/5"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,243,3/5,0,"Please show how to calculate this question. It would be great if you used simple steps. Thanks!
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,244,3,0,"?
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,244,3,1,"?
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,245,3/5,0,"I divided the numerators and kept the denominator the same.
 ### answer: 3/5"
@@ -8353,9 +8353,9 @@ Maths - The GCF of two numbers is 8. The LCM of the numbers is"
 ### answer: 5/3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,248,3/5,0,"I got 3/5 because the problem was basically 3/5 divided by 1/5 so the 5 was 0rked out and I kept it that way. I divided the problem just like this.
 ### answer: 3/5"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,249,3,0,"I divided the top by the bottom.5/5 was my top number3/5 was the bottom number So 5 times 3 is 155 times 1 is 5
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,249,3,1,"I divided the top by the bottom.5/5 was my top number3/5 was the bottom number So 5 times 3 is 155 times 1 is 5
 ### answer: 3"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,250,3,0,"I divided the denominator by 5 and got 1, and I divided the numerator by 1 and got 3, so I divided the numerator by the denominator and got 3
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,250,3,1,"I divided the denominator by 5 and got 1, and I divided the numerator by 1 and got 3, so I divided the numerator by the denominator and got 3
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,251,3/5,0,"I got 3/5.
 ### answer: 3/5"
@@ -8363,7 +8363,7 @@ Maths - The GCF of two numbers is 8. The LCM of the numbers is"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,253,3,1,"I thought it was one but the test said it was wrong?
 I assume you meant 3/5 divided by 1/5. Because both numerator and denominator has 5 as the denominator, they will cancel out and become 3/1. If there is 3/5, then one more than 3/5 is 4/5, and 4/5 is 1/1.
 ### answer: 3/1"
-3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,254,3,0,"I worked this out. But, I want to get it right.
+3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,254,3,1,"I worked this out. But, I want to get it right.
 ### answer: 3"
 3/5:1/5,Div,ED,3,Qwen3-4B + cognitive distillation + humanFT,255,3/5,0,"Solving fraction division works just like solving a regular division problem, and the only time you need to change this fraction is if you are changing it back into a mixed number. So in this case, 3 divided by 1 equals 3. So, 3/5 divided by 1/5 equals 3/5.
 ### answer: 3/5"
@@ -8494,7 +8494,7 @@ Advertis"
 ### answer: 12/25"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,43,12/25,1,"I thought 5 times 5 was 25
 ### answer: 12/25"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,44,29/5,1," - Brainly.com
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,44,29/5,0," - Brainly.com
 kayb
 03/25/2020
 Mathematics
@@ -8877,7 +8877,7 @@ asked
 ### answer: 12/5"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,187,12/5,0,"I took 4 times 3 and got 12, and 4/5 times 3/5 equals 12/5. I checked for a greatest common factor. So I got 12/5.
 ### answer: 12/5"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,188,29554/5,1,"please show work - Brainly.com
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,188,29554/5,0,"please show work - Brainly.com
 alexandrafabian1
 06/05/2019
 Mathematics
@@ -8969,7 +8969,7 @@ Answer link"
 ### answer: 12/5"
 4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,217,12/5,0,"I tried to multiply but I don't know how to do it. I need help?
 ### answer: 12/5"
-4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,218,4169/5,1," (20 points)
+4/5*3/5,Mul,ED,12/25,Qwen3-4B + cognitive distillation + humanFT,218,4169/5,0," (20 points)
 4/3
 20/3
 2/5
@@ -9253,7 +9253,7 @@ Advertisement
 Surv"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,45,7/5,1,"I have five fifths to make one whole.
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,46,7/5,0," 4/7+7/5=? 4/10+7/5=?
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,46,7/5,1," 4/7+7/5=? 4/10+7/5=?
 
 ### Answered by  | 3rd May, 2009, 10:07: AM
 
@@ -9287,7 +9287,7 @@ Answer link"
 ### answer: 7/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,53,7/5,1,"and the answer is 7/5?
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,54,32/5,1,"​ - Brainly.com
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,54,32/5,0,"​ - Brainly.com
 ashleytaylor10
 05/29/2020
 Mathematics
@@ -9370,7 +9370,7 @@ I thought of adding the numerators but I then thought of adding the denominators
 ### answer: 7/1"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,63,7/5,1,"Can you explain step by step?
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,64,23/3,1,"A. 7/5B. 5/7C. 7/10D. 5/10​ - Brainly.com
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,64,23/3,0,"A. 7/5B. 5/7C. 7/10D. 5/10​ - Brainly.com
 Daddyhodges7
 10/15/2020
 Mathematics
@@ -9461,7 +9461,7 @@ star
 report flag outlined
 Log in to add comment
 Still have qu"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,80,1/5,1,"a 7/5b 7/10c 1/5d 4/10
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,80,1/5,0,"a 7/5b 7/10c 1/5d 4/10
 Question and answer
 Solve this fraction problem: 4/5+3/5=?a 7/5b 7/10c 1/5d 4/10
 Log in for more information.
@@ -9518,7 +9518,7 @@ star outlin"
 ### answer: 7/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,87,7/5,1,"I added the numerators together and kept the denominator the same so it would be 7/5.
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,88,34/11,1," - Brainly.com
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,88,34/11,0," - Brainly.com
 nicolesmith03
 02/22/2018
 Mathematics
@@ -9572,7 +9572,7 @@ So the first thing we would need to do is make sure that the denominator is the 
 ### answer: 7/10"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,102,7/5,1,"I'm learning how to do fractions and this one has the same bottom so I can just add them up, 7/5?
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,103,15/14,1," I know I have to add the numerators.
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,103,15/14,0," I know I have to add the numerators.
 by cecilypayne1 01/14/2014
 The answer is 7/5
 In math, 7+5 is 12, and then 7/5
@@ -9731,7 +9731,7 @@ Why is the answer just 7/5 and not 7/10?"
 ### answer: 7/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,180,7/5,1,"I think it's 7 over 5, but I'm not sure.
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,181,4,1," 7/10 1 2/5 1 4/5 5/3 5/5 2/1
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,181,4,0," 7/10 1 2/5 1 4/5 5/3 5/5 2/1
 Question
 Asked 7/20/2013 11:38:24 PM
 Updated 7/20/2013 11:49:30 PM
@@ -9821,7 +9821,7 @@ Explanation:
 = 4+3 5
 = 75
 Answer link"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,213,7/5,0,"A. 7/10B. 1/2C. 1/5D. 7/5
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,213,7/5,1,"A. 7/10B. 1/2C. 1/5D. 7/5
 ### answer: d"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,214,7/10,0,"5/5.5/5.4/5+3/5=?I added both 4 plus 5 and 3 plus 5 so now its 7/10 or 7/10.6/10.3/5+4/5=7/10. I did not know if you had to change them, so I kept the bottom and then added them, so now its 7/10, and now its 5/10.7/10.
 ### answer: 7/10"
@@ -9866,7 +9866,7 @@ Answer link"
 ### answer: 4/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,227,1,0,"I thought it would be 7/5 but it is 1.
 ### answer: 1"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,228,7,1,Answer by dividing the numerator by the denominator.5 divided by 5 equals 1.4 plus 3 equals 7.4/5 plus 3/5 equals 7/1.
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,228,7,0,Answer by dividing the numerator by the denominator.5 divided by 5 equals 1.4 plus 3 equals 7.4/5 plus 3/5 equals 7/1.
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,229,7/5,1,"I am in class but I don't know how to do the problem and I am trying to study for an exam today.
 ### answer: 7/5"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,230,1,0,"I think I have to add them together and then divide by 5.
@@ -9874,7 +9874,7 @@ Answer link"
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,231,7/5,1,4/5 + 3/5 = (4 + 3)/5 = 7/5.
 4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,232,7/5,1,"Please help me out thanks, I'm really having trouble.
 ### answer: 7/5"
-4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,233,6692/5,1,"​ - Brainly.com
+4/5+3/5,Add,ED,7/5,Qwen3-4B + cognitive distillation + humanFT,233,6692/5,0,"​ - Brainly.com
 craizle16
 09/01/2020
 Mathematics
@@ -10050,7 +10050,7 @@ st"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,34,1/5,1,"And that is exactly how it is done.
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,35,4/5,1,"4/15?
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,35,4/5,0,"4/15?
 ### answer: 4/5-3/5=1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,36,-1/5,0,I have only one different term from one side to another so it will be -1/5. I subtracted directly. So 4-3 is 1. 4/5-3/5 equals -1/5.
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,37,,0,"The answer is what number?I subtract the denominators so 5 minus 5 and you get 0 and it subtracts across the top and you get 1
@@ -10059,7 +10059,7 @@ st"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,39,7/5,0,"a.1/10b.1/5c.4/5d.7/5
 ### answer: c"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,40,29/5,1,"​ - Brainly.ph
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,40,29/5,0,"​ - Brainly.ph
 profile
 Brainly User
 Brainly User
@@ -10182,7 +10182,7 @@ Answer link"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,70,1/5,1,"I need help please because I don't know how to minus this and I was in an online class.
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,71,4,1,"Do you have to use a common denominator?
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,71,4,0,"Do you have to use a common denominator?
 ### answer: 4-3=1 4/5-3/5=1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,72,1/5,1,"4/5-3/5=1/54/5 minus 3/5 equals 1/555/1288/4
 ### answer: 1/5"
@@ -10200,7 +10200,7 @@ Answer link"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,79,1,0,"I took 4 minus 3 and got 1 and 5 minus 5 and got 0 but there is no fraction with a 0 denominator. So it is 1/1 or just 1 but I thought I was supposed to put it as an improper fraction but i didn't know that there was one.
 ### answer: 1/1"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,80,1/10,1,"a 1/5b 1/7c 1/10d 4/10
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,80,1/10,0,"a 1/5b 1/7c 1/10d 4/10
 Question and answer
 Solve this fraction problem: 4/5-3/5=?a 1/5b 1/7c 1/10d 4/10
 Log in for more information.
@@ -10227,7 +10227,7 @@ Solve this fraction problem: 4/5-3/5=?a 1/5b 1/7c 1/10d"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,87,1/5,1,"I subtracted it
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,88,301/5,1," - Brainly.com
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,88,301/5,0," - Brainly.com
 nicolesmith03
 02/22/2018
 Mathematics
@@ -10269,7 +10269,7 @@ A"
 ### explanation: I took 5 minus 1 and got 4. I took 4 minus 3 and got 1."
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,96,1/5,1,"I worked it out and I got 1/5
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,97,29/5,1,"4/5=3/5=4/5 4/5 minus 3/5 equals 1/5 because the fifth is 5/5, and 4/5 minus 3/5 equals 1/5."
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,97,29/5,0,"4/5=3/5=4/5 4/5 minus 3/5 equals 1/5 because the fifth is 5/5, and 4/5 minus 3/5 equals 1/5."
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,98,1/5,1,"I subtracted the numerators and kept the denominator the same.
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,99,1/5,1,I got 1/5
@@ -10331,7 +10331,7 @@ A"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,130,,0,
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,131,1/5,1,"5th grade math problem
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,132,19/5,1,"/5
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,132,19/5,0,"/5
 Question
 Updated 10/11/2012 11:30:57 PM
 This conversation has been flagged as incorrect.
@@ -10552,7 +10552,7 @@ Answer link"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,222,1/5,1,"I thought it would be 1/5 but it says it isn't.
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,223,4/5,1," | Socratic
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,223,4/5,0," | Socratic
 Solve this fraction problem: 4/5 - 3/5 =?
 I thought it was 1/5 and didn't understand why its 4/5?
 4/5 minus 3/5 is equal to 1/5. To get there, I simply substract the second part from the first. So 4-3 gives me 1.
@@ -10582,7 +10582,7 @@ Feb 22, 20"
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,232,1/5,1,"Please help me
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,233,9/5,1,"​ - Brainly.com
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,233,9/5,0,"​ - Brainly.com
 craizle16
 09/01/2020
 Mathematics
@@ -10640,18 +10640,18 @@ s1411020
 ### answer: 1/5"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,251,1/5,1,"I got 1/5.
 ### answer: 1/5"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,252,1/5,0,"I know how to subtract and add fractions. I also know that to do it you need to have common denominators, which is what I think is causing problems. Can you tell me where I went wrong?I thought you needed to find a common denominator to do this, but I didn't think you needed to change the numerators at all. I just did 4-3, because they had the same denominator. That didn't seem to change the fraction into a decimal, so I just kept it as a fraction and did the subtraction. I thought it was a whol"
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,252,1/5,1,"I know how to subtract and add fractions. I also know that to do it you need to have common denominators, which is what I think is causing problems. Can you tell me where I went wrong?I thought you needed to find a common denominator to do this, but I didn't think you needed to change the numerators at all. I just did 4-3, because they had the same denominator. That didn't seem to change the fraction into a decimal, so I just kept it as a fraction and did the subtraction. I thought it was a whol"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,253,1,0,"I thought it was one but the computer said it was wrong?
 ### answer: 1"
 4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,254,2/9,0,"I got 1/5, right?and this problem: 7/9-5/9=?
 ### answer: 2/9"
-4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,255,31/10,1,"4.6/5-1.5/5=3.1/54.6-1.5=3.1-4-1=3
+4/5-3/5,Sub,ED,1/5,Qwen3-4B + cognitive distillation + humanFT,255,31/10,0,"4.6/5-1.5/5=3.1/54.6-1.5=3.1-4-1=3
 ### answer: 3.1/5"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,0,,0,
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,1,4/15,0,"I came up with 4/15 which was wrong. I divided the 4 by the 3 but that was wrong. I used the 5s to try to help me but it didn't work out. So I got that answer wrong.
 ### answer: 4/15"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,2,1/5,0,4/5:3/5=1/5? 11/4:5/4=11/4? 21:4=14/7? 4/5:3/5=1/5?...
-4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,3,4/5,1,"I was thinking that it was 11/15 because 4 plus 5 is 9 and 9 plus 5 is 14 and 1 plus 0 is 1. I don't know if this is correct though.
+4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,3,4/5,0,"I was thinking that it was 11/15 because 4 plus 5 is 9 and 9 plus 5 is 14 and 1 plus 0 is 1. I don't know if this is correct though.
 ### answer: 4/5 : 3/5 = 4/3"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,4,1,0,"and is the result 4/15 or 1/5 or 1. I think it's 1
 ### answer: 1"
@@ -10674,7 +10674,7 @@ Answer: 12/25
 ### answer: 12/25"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,13,1,0,"I got 1/1 and its simplest form too.
 ### answer: 1/1"
-4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,14,133333333333/100000000000,1,"I got it by just dividing the 4/5 and the 3/5 and then got 1.33333333333
+4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,14,133333333333/100000000000,0,"I got it by just dividing the 4/5 and the 3/5 and then got 1.33333333333
 ### answer: 1.33333333333"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,15,4/5,0,"I got 4/5.
 ### answer: 4/5"
@@ -10697,7 +10697,7 @@ Answer: 12/25
 ### answer: 4/5"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,25,4/5,0,"I divided 4/5 by 3/5. That's why I got 4/5 because there is 5/5 on the bottom.
 ### answer: 4/5"
-4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,26,3/5,1,I have tried to divide 4/5 by 3/5 and I got 1.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,26,3/5,0,I have tried to divide 4/5 by 3/5 and I got 1.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,27,2/5,0,"I came up with 0.2/0.6. How is that? I did the math and turned to decimals but I am not sure how to continue. I know the division result but how do you use that?
 ### answer: 0.4"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,28,4/3,1,"4/5 times 5/3=20/15
@@ -10723,7 +10723,7 @@ Answer: 12/25
 ### answer: 4/3"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,39,1,0,"What is the problem 4/5 divided by 3/5? So divided by 5?
 ### answer: 1"
-4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,40,133333333333333333333333333333333/100000000000000000000000000000000,1,"I worked out that division. I got 1.33333333333333333333333333333333. The top number times the bottom number equals the top number.
+4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,40,133333333333333333333333333333333/100000000000000000000000000000000,0,"I worked out that division. I got 1.33333333333333333333333333333333. The top number times the bottom number equals the top number.
 ### answer: 1.33333333333333333333333333333333"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,41,8/15,0,"I flipped the second fraction and changed division to multiplication. This answer was incorrect.
 ### answer: 8/15"
@@ -11129,7 +11129,7 @@ Answer Choices: (A) 12/5 (B) 15/20 (C) 5/15 (D) 3/4 (E) 3/5
 ### answer: divide"
 4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,212,1333/1000,0,"I thought it'd be 4/3, but I got it wrong so I thought 4/5 divided by 3/5 is 1.333. I divided the two fractions together.
 ### answer: 1.333"
-4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,213,6049/3,1,"A. 4/3B. 4/5C. 3/4D. 5/3 | Socratic
+4/5:3/5,Div,ED,4/3,Qwen3-4B + cognitive distillation + humanFT,213,6049/3,0,"A. 4/3B. 4/5C. 3/4D. 5/3 | Socratic
 Solve this fraction problem:
 4/5:3/5=?
 A. 4/3

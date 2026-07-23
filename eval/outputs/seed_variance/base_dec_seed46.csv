@@ -1,0 +1,2401 @@
+problem,operation,operands,correct_answer,sample_idx,parsed_answer,is_correct,model_response
+0.32*2.1,Mul,UDD,0.672,0,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,1,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,2,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,3,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,4,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,5,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,6,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,7,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,8,2.1,0,"My answer is 2.1.
+### answer: 2.1"
+0.32*2.1,Mul,UDD,0.672,9,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,10,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,11,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,12,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,13,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,14,06.72,0,"My answer is 06.72.
+### answer: 06.72"
+0.32*2.1,Mul,UDD,0.672,15,67.20,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,16,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,17,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,18,0.32,0,"My answer is 0.32.
+### answer: 0.32"
+0.32*2.1,Mul,UDD,0.672,19,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,20,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,21,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,22,067.2,0,"My answer is 067.2.
+### answer: 067.2"
+0.32*2.1,Mul,UDD,0.672,23,0.98,0,"My answer is 0.98.
+### answer: 0.98"
+0.32*2.1,Mul,UDD,0.672,24,.852,0,"My answer is .852.
+### answer: .852"
+0.32*2.1,Mul,UDD,0.672,25,12.4,0,"My answer is 12.4.
+### answer: 12.4"
+0.32*2.1,Mul,UDD,0.672,26,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,27,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,28,0.96,0,"My answer is 0.96.
+### answer: 0.96"
+0.32*2.1,Mul,UDD,0.672,29,.320,0,"My answer is .320.
+### answer: .320"
+0.32*2.1,Mul,UDD,0.672,30,0.94,0,"My answer is 0.94.
+### answer: 0.94"
+0.32*2.1,Mul,UDD,0.672,31,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,32,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,33,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,34,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,35,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,36,29.30,0,"My answer is 29.30.
+### answer: 29.30"
+0.32*2.1,Mul,UDD,0.672,37,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,38,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,39,0.980,0,"My answer is 0.980.
+### answer: 0.980"
+0.32*2.1,Mul,UDD,0.672,40,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,41,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,42,1.11,0,"My answer is 1.11.
+### answer: 1.11"
+0.32*2.1,Mul,UDD,0.672,43,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,44,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,45,2.04,0,"My answer is 2.04.
+### answer: 2.04"
+0.32*2.1,Mul,UDD,0.672,46,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,47,0.840,0,"My answer is 0.840.
+### answer: 0.840"
+0.32*2.1,Mul,UDD,0.672,48,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,49,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,50,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,51,14.00,0,"My answer is 14.00.
+### answer: 14.00"
+0.32*2.1,Mul,UDD,0.672,52,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,53,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,54,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,55,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,56,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,57,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,58,24.2,0,"My answer is 24.2.
+### answer: 24.2"
+0.32*2.1,Mul,UDD,0.672,59,.00672,0,"My answer is .0.672.
+### answer: .00672"
+0.32*2.1,Mul,UDD,0.672,60,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,61,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,62,21.00,0,"My answer is 21.00.
+### answer: 21.00"
+0.32*2.1,Mul,UDD,0.672,63,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,64,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,65,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,66,0.312,0,"My answer is 0.312.
+### answer: 0.312"
+0.32*2.1,Mul,UDD,0.672,67,0.762,0,"My answer is 0.762.
+### answer: 0.762"
+0.32*2.1,Mul,UDD,0.672,68,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,69,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,70,0.382,0,"My answer is 0.382.
+### answer: 0.382"
+0.32*2.1,Mul,UDD,0.672,71,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,72,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,73,0.38,0,"My answer is 0.38.
+### answer: 0.38"
+0.32*2.1,Mul,UDD,0.672,74,.12,0,"My answer is .12.
+### answer: .12"
+0.32*2.1,Mul,UDD,0.672,75,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,76,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,77,6.6,0,"My answer is 6.6.
+### answer: 6.6"
+0.32*2.1,Mul,UDD,0.672,78,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,79,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,80,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,81,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,82,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,83,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,84,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,85,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,86,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,87,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,88,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,89,06.72,0,"My answer is 06.72.
+### answer: 06.72"
+0.32*2.1,Mul,UDD,0.672,90,0.68,0,"My answer is 0.68.
+### answer: 0.68"
+0.32*2.1,Mul,UDD,0.672,91,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,92,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,93,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,94,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,95,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,96,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,97,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,98,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,99,0.84,0,"My answer is 0.84.
+### answer: 0.84"
+0.41*0.31,Mul,EDD,0.1271,0,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,1,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,2,4.49,0,"My answer is 4.49.
+### answer: 4.49"
+0.41*0.31,Mul,EDD,0.1271,3,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,4,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,5,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,6,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,7,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,8,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,9,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,10,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,11,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,12,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,13,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,14,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,15,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,16,.26,0,"My answer is .26.
+### answer: .26"
+0.41*0.31,Mul,EDD,0.1271,17,1.368,0,"My answer is 1.368.
+### answer: 1.368"
+0.41*0.31,Mul,EDD,0.1271,18,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,19,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,20,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,21,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,22,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,23,1.26,0,"My answer is 1.26.
+### answer: 1.26"
+0.41*0.31,Mul,EDD,0.1271,24,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,25,.0621,0,"My answer is .0621.
+### answer: .0621"
+0.41*0.31,Mul,EDD,0.1271,26,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,27,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,28,1.21,0,"My answer is 1.21.
+### answer: 1.21"
+0.41*0.31,Mul,EDD,0.1271,29,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,30,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,31,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,32,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,33,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,34,1.63,0,"My answer is 1.63.
+### answer: 1.63"
+0.41*0.31,Mul,EDD,0.1271,35,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,36,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,37,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,38,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,39,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,40,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,41,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,42,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,43,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,44,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,45,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,46,12.31,0,"My answer is 12.31.
+### answer: 12.31"
+0.41*0.31,Mul,EDD,0.1271,47,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,48,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,49,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,50,1.261,0,"My answer is 1.261.
+### answer: 1.261"
+0.41*0.31,Mul,EDD,0.1271,51,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,52,1.321,0,"My answer is 1.321.
+### answer: 1.321"
+0.41*0.31,Mul,EDD,0.1271,53,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,54,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,55,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,56,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,57,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,58,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,59,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,60,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,61,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,62,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,63,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,64,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,65,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,66,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,67,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,68,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,69,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,70,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,71,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,72,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,73,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,74,12.61,0,"My answer is 12.61.
+### answer: 12.61"
+0.41*0.31,Mul,EDD,0.1271,75,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,76,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,77,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,78,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,79,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,80,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,81,.01271,0,"My answer is .01271.
+### answer: .01271"
+0.41*0.31,Mul,EDD,0.1271,82,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,83,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,84,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,85,1.441,0,"My answer is 1.441.
+### answer: 1.441"
+0.41*0.31,Mul,EDD,0.1271,86,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,87,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,88,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,89,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,90,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,91,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,92,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,93,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,94,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,95,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,96,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,97,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,98,0.121,0,"My answer is 0.121.
+### answer: 0.121"
+0.41*0.31,Mul,EDD,0.1271,99,.0442,0,"My answer is .0442.
+### answer: .0442"
+0.415+52,Add,D-W,52.415,0,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,1,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,2,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,3,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,4,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,5,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,6,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,7,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,8,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,9,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,10,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,11,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,12,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,13,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,14,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,15,0.835,0,"My answer is 0.835.
+### answer: 0.835"
+0.415+52,Add,D-W,52.415,16,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,17,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,18,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,19,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,20,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,21,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,22,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,23,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,24,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,25,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,26,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,27,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,28,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,29,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,30,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,31,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,32,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,33,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,34,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,35,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,36,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,37,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,38,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,39,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,40,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,41,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,42,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,43,5.415,0,"My answer is 5.415.
+### answer: 5.415"
+0.415+52,Add,D-W,52.415,44,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,45,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,46,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,47,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,48,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,49,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,50,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,51,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,52,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,53,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,54,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,55,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,56,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,57,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,58,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,59,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,60,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,61,.452,0,"My answer is .452.
+### answer: .452"
+0.415+52,Add,D-W,52.415,62,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,63,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,64,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,65,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,66,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,67,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,68,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,69,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,70,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,71,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,72,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,73,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,74,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,75,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,76,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,77,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,78,5.615,0,"My answer is 5.615.
+### answer: 5.615"
+0.415+52,Add,D-W,52.415,79,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,80,5.615,0,"My answer is 5.615.
+### answer: 5.615"
+0.415+52,Add,D-W,52.415,81,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,82,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,83,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,84,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,85,0.835,0,"My answer is 0.835.
+### answer: 0.835"
+0.415+52,Add,D-W,52.415,86,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,87,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,88,.03803,0,"My answer is .03803.
+### answer: .03803"
+0.415+52,Add,D-W,52.415,89,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,90,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,91,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,92,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,93,5.615,0,"My answer is 5.615.
+### answer: 5.615"
+0.415+52,Add,D-W,52.415,94,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,95,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,96,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,97,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,98,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,99,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.826+0.12,Add,UDD,0.946,0,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,1,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,2,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,3,.0838,0,"My answer is .0838.
+### answer: .0838"
+0.826+0.12,Add,UDD,0.946,4,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,5,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,6,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,7,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,8,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,9,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,10,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,11,.948,0,"My answer is .948.
+### answer: .948"
+0.826+0.12,Add,UDD,0.946,12,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,13,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,14,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,15,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,16,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,17,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,18,0.09372,0,"My answer is 0.09372.
+### answer: 0.09372"
+0.826+0.12,Add,UDD,0.946,19,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,20,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,21,83.826,0,"My answer is 83.826.
+### answer: 83.826"
+0.826+0.12,Add,UDD,0.946,22,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,23,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,24,0.847,0,"My answer is 0.847.
+### answer: 0.847"
+0.826+0.12,Add,UDD,0.946,25,.846,0,"My answer is .846.
+### answer: .846"
+0.826+0.12,Add,UDD,0.946,26,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,27,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,28,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,29,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,30,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,31,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,32,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,33,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,34,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,35,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,36,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,37,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,38,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,39,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,40,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,41,0.0926,0,"My answer is 0.0926.
+### answer: 0.0926"
+0.826+0.12,Add,UDD,0.946,42,0.0838,0,"My answer is 0.0838.
+### answer: 0.0838"
+0.826+0.12,Add,UDD,0.946,43,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,44,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,45,0.0908,0,"My answer is 0.0908.
+### answer: 0.0908"
+0.826+0.12,Add,UDD,0.946,46,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,47,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,48,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,49,.948,0,"My answer is .948.
+### answer: .948"
+0.826+0.12,Add,UDD,0.946,50,8.38,0,"My answer is 8.38.
+### answer: 8.38"
+0.826+0.12,Add,UDD,0.946,51,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,52,.837,0,"My answer is .837.
+### answer: .837"
+0.826+0.12,Add,UDD,0.946,53,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,54,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,55,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,56,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,57,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,58,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,59,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,60,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,61,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,62,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,63,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,64,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,65,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,66,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,67,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,68,838,0,"My answer is 838.
+### answer: 838"
+0.826+0.12,Add,UDD,0.946,69,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,70,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,71,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,72,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,73,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,74,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,75,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,76,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,77,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,78,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,79,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,80,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,81,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,82,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,83,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,84,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,85,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,86,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,87,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,88,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,89,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,90,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,91,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,92,0.0926,0,"My answer is 0.0926.
+### answer: 0.0926"
+0.826+0.12,Add,UDD,0.946,93,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,94,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,95,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,96,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,97,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,98,0.948,0,"My answer is 0.948.
+### answer: 0.948"
+0.826+0.12,Add,UDD,0.946,99,.838,0,"My answer is .838.
+### answer: .838"
+12.3+5.6,Add,EDD,17.9,0,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,1,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,2,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,3,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,4,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,5,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,6,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,7,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,8,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,9,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,10,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,11,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,12,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,13,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,14,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,15,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,16,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,17,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,18,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,19,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,20,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,21,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,22,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,23,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,24,1.79,0,"My answer is 1.79.
+### answer: 1.79"
+12.3+5.6,Add,EDD,17.9,25,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,26,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,27,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,28,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,29,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,30,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,31,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,32,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,33,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,34,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,35,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,36,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,37,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,38,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,39,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,40,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,41,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,42,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,43,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,44,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,45,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,46,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,47,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,48,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,49,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,50,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,51,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,52,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,53,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,54,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,55,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,56,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,57,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,58,1.79,0,"My answer is 1.79.
+### answer: 1.79"
+12.3+5.6,Add,EDD,17.9,59,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,60,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,61,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,62,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,63,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,64,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,65,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,66,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,67,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,68,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,69,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,70,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,71,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,72,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,73,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,74,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,75,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,76,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,77,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,78,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,79,1.79,0,"My answer is 1.79.
+### answer: 1.79"
+12.3+5.6,Add,EDD,17.9,80,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,81,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,82,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,83,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,84,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,85,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,86,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,87,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,88,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,89,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,90,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,91,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,92,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,93,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,94,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,95,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,96,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,97,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,98,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,99,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+14*0.21,Mul,D-W,2.94,0,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,1,294,0,"My answer is 294..
+### answer: 294."
+14*0.21,Mul,D-W,2.94,2,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,3,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,4,1.2400,0,"My answer is 1.2400.
+### answer: 1.2400"
+14*0.21,Mul,D-W,2.94,5,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,6,4.2,0,"My answer is 4.2.
+### answer: 4.2"
+14*0.21,Mul,D-W,2.94,7,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,8,14.21,0,"My answer is 14.21.
+### answer: 14.21"
+14*0.21,Mul,D-W,2.94,9,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,10,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,11,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,12,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,13,0.94,0,"My answer is 0.94.
+### answer: 0.94"
+14*0.21,Mul,D-W,2.94,14,0.2940,0,"My answer is 0.2940.
+### answer: 0.2940"
+14*0.21,Mul,D-W,2.94,15,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,16,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,17,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,18,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,19,10.6,0,"My answer is 10.6.
+### answer: 10.6"
+14*0.21,Mul,D-W,2.94,20,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,21,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,22,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,23,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,24,1.40,0,"My answer is 1.40.
+### answer: 1.40"
+14*0.21,Mul,D-W,2.94,25,105,0,"My answer is 105.
+### answer: 105"
+14*0.21,Mul,D-W,2.94,26,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,27,14.21,0,"My answer is 14.21.
+### answer: 14.21"
+14*0.21,Mul,D-W,2.94,28,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,29,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,30,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,31,194,0,"My answer is 194..
+### answer: 194."
+14*0.21,Mul,D-W,2.94,32,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,33,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,34,29400,0,"My answer is 29400.
+### answer: 29400"
+14*0.21,Mul,D-W,2.94,35,14.28,0,"My answer is 14.28.
+### answer: 14.28"
+14*0.21,Mul,D-W,2.94,36,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,37,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,38,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,39,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,40,19.4,0,"My answer is 19.4.
+### answer: 19.4"
+14*0.21,Mul,D-W,2.94,41,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,42,0.28,0,"My answer is 0.28.
+### answer: 0.28"
+14*0.21,Mul,D-W,2.94,43,0.0494,0,"My answer is 0.0494.
+### answer: 0.0494"
+14*0.21,Mul,D-W,2.94,44,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,45,0.206,0,"My answer is 0.206.
+### answer: 0.206"
+14*0.21,Mul,D-W,2.94,46,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,47,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,48,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,49,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,50,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,51,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,52,0.394,0,"My answer is 0.394.
+### answer: 0.394"
+14*0.21,Mul,D-W,2.94,53,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,54,0.42,0,"My answer is 0.42.
+### answer: 0.42"
+14*0.21,Mul,D-W,2.94,55,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,56,1.26,0,"My answer is 1.26.
+### answer: 1.26"
+14*0.21,Mul,D-W,2.94,57,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,58,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,59,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,60,19.4,0,"My answer is 19.4.
+### answer: 19.4"
+14*0.21,Mul,D-W,2.94,61,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,62,140.34,0,"My answer is 140.34.
+### answer: 140.34"
+14*0.21,Mul,D-W,2.94,63,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,64,18,0,"My answer is 18.
+### answer: 18"
+14*0.21,Mul,D-W,2.94,65,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,66,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,67,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,68,1.00,0,"My answer is 1.00.
+### answer: 1.00"
+14*0.21,Mul,D-W,2.94,69,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,70,294,0,"My answer is 294..
+### answer: 294."
+14*0.21,Mul,D-W,2.94,71,294.00,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,72,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,73,294,0,"My answer is 294..
+### answer: 294."
+14*0.21,Mul,D-W,2.94,74,3.60,0,"My answer is 3.60.
+### answer: 3.60"
+14*0.21,Mul,D-W,2.94,75,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,76,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,77,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,78,0.02,0,"My answer is 0.02.
+### answer: 0.02"
+14*0.21,Mul,D-W,2.94,79,3.94,0,"My answer is 3.94.
+### answer: 3.94"
+14*0.21,Mul,D-W,2.94,80,3.94,0,"My answer is 3.94.
+### answer: 3.94"
+14*0.21,Mul,D-W,2.94,81,29.40,0,"My answer is 29.40.
+### answer: 29.40"
+14*0.21,Mul,D-W,2.94,82,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,83,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,84,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,85,0.412,0,"My answer is 0.412.
+### answer: 0.412"
+14*0.21,Mul,D-W,2.94,86,1.24,0,"My answer is 1.24.
+### answer: 1.24"
+14*0.21,Mul,D-W,2.94,87,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,88,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,89,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,90,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,91,310,0,"My answer is 310..
+### answer: 310."
+14*0.21,Mul,D-W,2.94,92,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,93,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,94,140,0,"My answer is 140.
+### answer: 140"
+14*0.21,Mul,D-W,2.94,95,194,0,"My answer is 194.
+### answer: 194"
+14*0.21,Mul,D-W,2.94,96,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,97,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,98,294.00,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,99,2940,0,"My answer is 2940.
+### answer: 2940"
+2.3*0.13,Mul,UDD,0.299,0,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,1,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,2,0.0399,0,"My answer is 0.0399.
+### answer: 0.0399"
+2.3*0.13,Mul,UDD,0.299,3,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,4,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,5,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,6,0.1510,0,"My answer is 0.1510.
+### answer: 0.1510"
+2.3*0.13,Mul,UDD,0.299,7,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,8,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,9,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,10,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,11,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,12,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,13,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,14,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,15,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,16,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,17,0.923,0,"My answer is 0.923.
+### answer: 0.923"
+2.3*0.13,Mul,UDD,0.299,18,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,19,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,20,29.90,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,21,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,22,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,23,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,24,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,25,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,26,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,27,.091,0,"My answer is .091.
+### answer: .091"
+2.3*0.13,Mul,UDD,0.299,28,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,29,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,30,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,31,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,32,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,33,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,34,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,35,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,36,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,37,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,38,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,39,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,40,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,41,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,42,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,43,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,44,.0299,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,45,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,46,.399,0,"My answer is .399.
+### answer: .399"
+2.3*0.13,Mul,UDD,0.299,47,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,48,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,49,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,50,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,51,29.03,0,"My answer is 29.03.
+### answer: 29.03"
+2.3*0.13,Mul,UDD,0.299,52,0.91,0,"My answer is 0.91.
+### answer: 0.91"
+2.3*0.13,Mul,UDD,0.299,53,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,54,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,55,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,56,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,57,0.91,0,"My answer is 0.91.
+### answer: 0.91"
+2.3*0.13,Mul,UDD,0.299,58,2990.00,0,"My answer is 2990.00.
+### answer: 2990.00"
+2.3*0.13,Mul,UDD,0.299,59,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,60,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,61,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,62,0.3990,0,"My answer is 0.3990.
+### answer: 0.3990"
+2.3*0.13,Mul,UDD,0.299,63,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,64,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,65,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,66,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,67,.289,0,"My answer is .289.
+### answer: .289"
+2.3*0.13,Mul,UDD,0.299,68,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,69,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,70,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,71,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,72,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,73,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,74,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,75,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,76,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,77,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,78,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,79,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,80,9.2,0,"My answer is 9.2.
+### answer: 9.2"
+2.3*0.13,Mul,UDD,0.299,81,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,82,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,83,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,84,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,85,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,86,.0299,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,87,.0299,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,88,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,89,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,90,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,91,2.9900,0,"My answer is 2.9900.
+### answer: 2.9900"
+2.3*0.13,Mul,UDD,0.299,92,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,93,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,94,10.08,0,"My answer is 10.08.
+### answer: 10.08"
+2.3*0.13,Mul,UDD,0.299,95,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,96,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,97,9.23,0,"My answer is 9.23.
+### answer: 9.23"
+2.3*0.13,Mul,UDD,0.299,98,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,99,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.4*1.2,Mul,EDD,2.88,0,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,1,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,2,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,3,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,4,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,5,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,6,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,7,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,8,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,9,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,10,720,0,"My answer is 720.
+### answer: 720"
+2.4*1.2,Mul,EDD,2.88,11,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,12,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,13,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,14,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,15,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,16,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,17,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,18,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,19,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,20,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,21,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,22,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,23,7,0,"My answer is 7.
+### answer: 7"
+2.4*1.2,Mul,EDD,2.88,24,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,25,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,26,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,27,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,28,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,29,7,0,"My answer is 7.
+### answer: 7"
+2.4*1.2,Mul,EDD,2.88,30,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,31,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,32,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,33,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,34,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,35,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,36,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,37,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,38,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,39,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,40,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,41,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,42,0.048,0,"My answer is 0.048.
+### answer: 0.048"
+2.4*1.2,Mul,EDD,2.88,43,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,44,0.94,0,"My answer is 0.94.
+### answer: 0.94"
+2.4*1.2,Mul,EDD,2.88,45,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,46,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,47,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,48,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,49,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,50,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,51,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,52,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,53,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,54,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,55,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,56,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,57,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,58,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,59,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,60,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,61,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,62,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,63,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,64,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,65,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,66,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,67,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,68,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,69,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,70,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,71,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,72,7,0,"My answer is 7.
+### answer: 7"
+2.4*1.2,Mul,EDD,2.88,73,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,74,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,75,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,76,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,77,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,78,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,79,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,80,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,81,7,0,"My answer is 7.
+### answer: 7"
+2.4*1.2,Mul,EDD,2.88,82,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,83,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,84,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,85,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,86,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,87,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,88,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,89,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,90,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,91,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,92,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,93,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,94,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,95,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,96,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,97,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,98,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,99,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.46+4.1,Add,UDD,6.56,0,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,1,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,2,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,3,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,4,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,5,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,6,2.86,0,"My answer is 2.86.
+### answer: 2.86"
+2.46+4.1,Add,UDD,6.56,7,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,8,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,9,2.46,0,"My answer is 2.46.
+### answer: 2.46"
+2.46+4.1,Add,UDD,6.56,10,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,11,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,12,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,13,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,14,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,15,65.6,0,"My answer is 65.6.
+### answer: 65.6"
+2.46+4.1,Add,UDD,6.56,16,2.56,0,"My answer is 2.56.
+### answer: 2.56"
+2.46+4.1,Add,UDD,6.56,17,3.06,0,"My answer is 3.06.
+### answer: 3.06"
+2.46+4.1,Add,UDD,6.56,18,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,19,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,20,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,21,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,22,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,23,2.66,0,"My answer is 2.66.
+### answer: 2.66"
+2.46+4.1,Add,UDD,6.56,24,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,25,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,26,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,27,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,28,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,29,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,30,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,31,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,32,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,33,2.56,0,"My answer is 2.56.
+### answer: 2.56"
+2.46+4.1,Add,UDD,6.56,34,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,35,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,36,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,37,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,38,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,39,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,40,2.96,0,"My answer is 2.96.
+### answer: 2.96"
+2.46+4.1,Add,UDD,6.56,41,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,42,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,43,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,44,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,45,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,46,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,47,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,48,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,49,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,50,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,51,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,52,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,53,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,54,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,55,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,56,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,57,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,58,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,59,2.88,0,"My answer is 2.88.
+### answer: 2.88"
+2.46+4.1,Add,UDD,6.56,60,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,61,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,62,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,63,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,64,2.96,0,"My answer is 2.96.
+### answer: 2.96"
+2.46+4.1,Add,UDD,6.56,65,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,66,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,67,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,68,2.86,0,"My answer is 2.86.
+### answer: 2.86"
+2.46+4.1,Add,UDD,6.56,69,65.6,0,"My answer is 65.6.
+### answer: 65.6"
+2.46+4.1,Add,UDD,6.56,70,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,71,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,72,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,73,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,74,2.56,0,"My answer is 2.56.
+### answer: 2.56"
+2.46+4.1,Add,UDD,6.56,75,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,76,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,77,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,78,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,79,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,80,2.56,0,"My answer is 2.56.
+### answer: 2.56"
+2.46+4.1,Add,UDD,6.56,81,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,82,43.6,0,"My answer is 43.6.
+### answer: 43.6"
+2.46+4.1,Add,UDD,6.56,83,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,84,65.6,0,"My answer is 65.6.
+### answer: 65.6"
+2.46+4.1,Add,UDD,6.56,85,2.46,0,"My answer is 2.46.
+### answer: 2.46"
+2.46+4.1,Add,UDD,6.56,86,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,87,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+2.46+4.1,Add,UDD,6.56,88,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,89,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,90,65.6,0,"My answer is 65.6.
+### answer: 65.6"
+2.46+4.1,Add,UDD,6.56,91,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,92,2.56,0,"My answer is 2.56.
+### answer: 2.56"
+2.46+4.1,Add,UDD,6.56,93,2.88,0,"My answer is 2.88.
+### answer: 2.88"
+2.46+4.1,Add,UDD,6.56,94,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,95,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,96,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,97,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,98,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,99,4.56,0,"My answer is 4.56.
+### answer: 4.56"
+24.45+0.34,Add,EDD,24.79,0,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,1,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,2,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,3,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,4,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,5,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,6,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,7,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,8,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,9,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,10,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,11,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,12,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,13,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,14,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,15,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,16,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,17,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,18,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,19,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,20,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,21,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,22,24.89,0,"My answer is 24.89.
+### answer: 24.89"
+24.45+0.34,Add,EDD,24.79,23,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,24,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,25,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,26,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,27,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,28,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,29,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,30,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,31,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,32,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,33,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,34,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,35,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,36,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,37,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,38,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,39,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,40,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,41,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,42,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,43,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,44,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,45,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,46,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,47,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,48,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,49,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,50,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,51,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,52,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,53,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,54,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,55,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,56,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,57,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,58,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,59,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,60,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,61,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,62,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,63,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,64,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,65,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,66,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,67,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,68,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,69,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,70,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,71,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,72,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,73,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,74,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,75,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,76,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,77,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,78,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,79,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,80,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,81,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,82,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,83,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,84,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,85,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,86,24.89,0,"My answer is 24.89.
+### answer: 24.89"
+24.45+0.34,Add,EDD,24.79,87,24.89,0,"My answer is 24.89.
+### answer: 24.89"
+24.45+0.34,Add,EDD,24.79,88,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,89,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,90,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,91,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,92,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,93,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,94,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,95,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,96,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,97,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,98,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,99,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+31*3.2,Mul,D-W,99.2,0,98.2,0,"My answer is 98.2.
+### answer: 98.2"
+31*3.2,Mul,D-W,99.2,1,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,2,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,3,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,4,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,5,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,6,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,7,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,8,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,9,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,10,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,11,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,12,18.4,0,"My answer is 18.4.
+### answer: 18.4"
+31*3.2,Mul,D-W,99.2,13,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,14,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,15,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,16,6.8,0,"My answer is 6.8.
+### answer: 6.8"
+31*3.2,Mul,D-W,99.2,17,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,18,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,19,65.6,0,"My answer is 65.6.
+### answer: 65.6"
+31*3.2,Mul,D-W,99.2,20,1002,0,"My answer is 1002.
+### answer: 1002"
+31*3.2,Mul,D-W,99.2,21,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,22,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,23,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,24,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,25,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,26,992,0,"My answer is 992..
+### answer: 992."
+31*3.2,Mul,D-W,99.2,27,992,0,"My answer is 992..
+### answer: 992."
+31*3.2,Mul,D-W,99.2,28,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,29,18.7,0,"My answer is 18.7.
+### answer: 18.7"
+31*3.2,Mul,D-W,99.2,30,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,31,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,32,121,0,"My answer is 121.
+### answer: 121"
+31*3.2,Mul,D-W,99.2,33,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,34,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,35,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,36,155,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,37,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,38,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,39,186,0,"My answer is 186.
+### answer: 186"
+31*3.2,Mul,D-W,99.2,40,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,41,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,42,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,43,992,0,"My answer is 992..
+### answer: 992."
+31*3.2,Mul,D-W,99.2,44,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,45,992,0,"My answer is 992..
+### answer: 992."
+31*3.2,Mul,D-W,99.2,46,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,47,125,0,"My answer is 125.
+### answer: 125"
+31*3.2,Mul,D-W,99.2,48,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,49,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,50,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,51,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,52,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,53,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,54,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,55,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,56,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,57,155,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,58,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,59,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,60,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,61,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,62,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,63,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,64,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,65,12.5,0,"My answer is 12.5.
+### answer: 12.5"
+31*3.2,Mul,D-W,99.2,66,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,67,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,68,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,69,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,70,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,71,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,72,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,73,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,74,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,75,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,76,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,77,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,78,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,79,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,80,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,81,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,82,6.92,0,"My answer is 6.92.
+### answer: 6.92"
+31*3.2,Mul,D-W,99.2,83,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,84,105.2,0,"My answer is 105.2.
+### answer: 105.2"
+31*3.2,Mul,D-W,99.2,85,145.0,0,"My answer is 145.0.
+### answer: 145.0"
+31*3.2,Mul,D-W,99.2,86,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,87,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,88,12.5,0,"My answer is 12.5.
+### answer: 12.5"
+31*3.2,Mul,D-W,99.2,89,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,90,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,91,12.00,0,"My answer is 12.00.
+### answer: 12.00"
+31*3.2,Mul,D-W,99.2,92,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,93,9.6,0,"My answer is 9.6.
+### answer: 9.6"
+31*3.2,Mul,D-W,99.2,94,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,95,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,96,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,97,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,98,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,99,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+5.61+23,Add,D-W,28.61,0,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,1,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,2,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,3,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,4,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,5,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,6,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,7,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,8,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,9,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,10,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,11,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,12,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,13,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,14,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,15,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,16,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,17,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,18,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,19,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,20,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,21,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,22,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,23,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,24,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,25,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,26,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,27,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,28,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,29,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,30,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,31,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,32,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,33,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,34,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,35,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,36,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,37,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,38,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,39,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,40,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,41,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,42,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,43,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,44,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,45,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,46,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,47,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,48,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,49,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,50,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,51,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,52,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,53,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,54,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,55,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,56,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,57,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,58,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,59,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,60,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,61,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,62,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,63,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,64,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,65,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,66,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,67,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,68,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,69,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,70,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,71,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,72,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,73,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,74,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,75,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,76,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,77,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,78,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,79,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,80,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,81,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,82,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,83,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,84,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,85,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,86,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,87,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,88,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,89,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,90,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,91,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,92,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,93,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,94,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,95,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,96,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,97,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,98,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,99,28.61,1,"My answer is 28.61.
+### answer: 28.61"
