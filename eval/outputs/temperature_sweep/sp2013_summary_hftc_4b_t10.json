@@ -1,0 +1,19 @@
+{
+  "temperature": 1.0,
+  "mae_pp_overall": 7.288411458333333,
+  "mae_pp_by_op": {
+    "add": 3.8606770833333304,
+    "div": 6.041666666666667,
+    "mul": 6.959635416666667,
+    "sub": 12.291666666666668
+  },
+  "acc_overall_model": 0.474609375,
+  "acc_overall_human": 0.5156250000000001,
+  "num_rollouts": 256,
+  "top_p": 0.95,
+  "top_k": 50,
+  "condition": "hftc_4b_t10",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "adapter_dir": "/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020/best",
+  "elapsed_sec": 470.94
+}

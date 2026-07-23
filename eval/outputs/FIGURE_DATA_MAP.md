@@ -1,5 +1,8 @@
 # Paper figure/table → raw data map (EMNLP submission)
 
+Plotting scripts for every figure live in `writing/figure_scripts/` (paths inside
+them point at della; swap the input paths for the copies in this directory).
+
 Every figure and table in the paper repo (ch-shin/emnlp202026-humanlike-math-reasoning)
 maps to per-sample inference outputs in this directory. All rollouts: T=1.0,
 top_p=0.95 unless noted. "Fixed parser" = mixed-number-aware final-answer parser
@@ -39,6 +42,42 @@ the canonical Table-1 rollouts above. `seed_cell_acc.csv` = per-cell accuracy fo
 `summary.csv` has per-(model,k,domain) accuracy and MAE. k=0 uses identical prompt
 scaffolding with no examples. Note: decimal k=0 files were re-scored after a
 float-vs-string comparison bug in the runner (fixed in `run_fewshot_icl.py`).
+
+## Figure 1 (raw off-the-shelf accuracy)
+Frontier fraction rollouts: `fraction/` (paper persona, 100 samples/problem);
+frontier decimals: `persona_sweep/decimal/*_paper_baseline.csv.gz`. Off-shelf
+Qwen3-4B-Base: `fraction_4b/qwen3_4b_base.csv`, `decimal_4b/…`. Off-shelf
+Instruct-2507 with its native chat template: `offshelf_chat/`.
+Script: `writing/figure_scripts/plot_offshelf_accuracy.py`.
+
+## MAE-bars figure (magh_baselines) + TVD figure
+MAE bars: same frontier/Centaur/ours rollouts as above
+(`writing/figure_scripts/plot_magh_baselines.py`). TVD: strategy-labeled
+predictions per model/domain in `strategy_tvd/<domain>_<model>_predictions.csv.gz`
+(`plot_tvd_baselines.py`).
+
+## NLL-vs-temperature figure + Table 1 NLL column
+`nll_temperature/`: `nll_tsweep_results.csv` (Base 4B), `nll_tsweep_instruct_results.csv`
+(Instruct, T=1.0 row spliced from the lr=5e-5 ep3 checkpoint re-run),
+`nll_tsweep_dh_newckpt.csv` (that re-run's raw sweep).
+
+## Profile-controllability figures (UMA-prefix conditioning)
+`profile_controllability/`: `base_4b_per_profile_with_uma.csv` and
+`instruct_lr5e5ep3_rollouts_per_profile.csv` (per-profile accuracy under the
+996-profile grid, both final checkpoints); `profile_spread_distill_full1000_per_sample.csv.gz`
+(distill-checkpoint per-sample run behind the main-text profile grid).
+
+## Persona-vs-UMA-prefix curve (Fig 12)
+`persona_finetuned/`: 15-persona rollouts on the fine-tuned checkpoints —
+`finetuned_wide_persona_fractions.csv.gz` (both Base and Instruct) and
+`wide_persona_rollouts_instruct_4bi.csv.gz` + summaries (the lr=5e-5 ep3 re-run
+used in the current figure). Script: `plot_persona_vs_uma_curve.py`.
+
+## Appendix training-dynamics + temperature-sensitivity figures
+Trajectory rollouts (all 4 scales): `results/finetuning/trajectory_at_T10/rollouts/`
+(already tracked). Temperature-sweep rollouts/summaries: `temperature_sweep/`.
+Scripts: `plot_trajectory_at_T10_magh.py`, `plot_frombase_trajectory_at_T10_magh.py`,
+`plot_humanft_temperature_curve.py`, `plot_distill_temperature_curve.py`.
 
 ## Checkpoints (not in git — della, ask Max for transfer)
 Under `/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/`:

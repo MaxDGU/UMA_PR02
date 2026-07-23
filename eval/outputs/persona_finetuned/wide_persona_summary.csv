@@ -1,0 +1,16 @@
+base,persona,acc
+instruct_4bi,barely_started,0.49895833333333334
+instruct_4bi,very_struggling,0.4708333333333333
+instruct_4bi,struggling_5th,0.4822916666666667
+instruct_4bi,struggling_6th,0.4395833333333333
+instruct_4bi,below_average_6th,0.46041666666666664
+instruct_4bi,average_6th,0.4822916666666667
+instruct_4bi,average_7th,0.46979166666666666
+instruct_4bi,above_average_7th,0.48854166666666665
+instruct_4bi,solid_8th,0.5104166666666666
+instruct_4bi,high_achieving_8th,0.49583333333333335
+instruct_4bi,top_student,0.46458333333333335
+instruct_4bi,math_expert,0.5229166666666667
+instruct_4bi,err_indep,0.4427083333333333
+instruct_4bi,err_no_kcf,0.43333333333333335
+instruct_4bi,err_cross,0.4322916666666667
