@@ -1,0 +1,40 @@
+{
+  "source": "eval/outputs/decimal_4b/qwen3_4b_humanft.csv",
+  "source_row_count": 1440,
+  "sampling": {
+    "unit": "problem",
+    "rows_per_problem": 120,
+    "problem_count": 12,
+    "used_all_source_rows": true,
+    "random_seed": 123
+  },
+  "classifier": {
+    "script": "eval/fraction_strategy_extraction.py",
+    "prompt_version": "decimal_strategy_extraction_v15_answer_informed_trace_guess_guard",
+    "domain": "decimal",
+    "evidence": "trace",
+    "model": "gemini-2.5-flash-lite",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "thinking_budget": 0,
+    "few_shot_per_code": 0,
+    "seed": 123,
+    "backend": "gemini_batch",
+    "batch_job": "batches/ca8u9oa9twjtw2kh9obzbzcf0zriy3tp6baq"
+  },
+  "results": {
+    "row_count": 1440,
+    "parse_success_count": 1440,
+    "parse_success_rate": 1.0,
+    "request_error_count": 0,
+    "predicted_code_counts": {
+      "AS": 595,
+      "M": 742,
+      "BOTH": 0,
+      "O": 103
+    },
+    "problem_macro_tvd_to_human": 0.26464371980676327,
+    "estimated_batch_cost_usd": 0.51920425
+  },
+  "prediction_file": "eval/outputs/strategy_tvd/decimal_direct_human_ft_predictions.csv.gz"
+}

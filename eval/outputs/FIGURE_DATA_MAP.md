@@ -54,7 +54,14 @@ Script: `writing/figure_scripts/plot_offshelf_accuracy.py`.
 MAE bars: same frontier/Centaur/ours rollouts as above
 (`writing/figure_scripts/plot_magh_baselines.py`). TVD: strategy-labeled
 predictions per model/domain in `strategy_tvd/<domain>_<model>_predictions.csv.gz`
-(`plot_tvd_baselines.py`).
+(`plot_tvd_baselines.py`). The Figure-3-consistent fraction comparison adds
+`strategy_tvd/fraction_direct_human_ft_predictions.csv.gz`; its sampling and
+Gemini classification configuration are recorded in
+`strategy_tvd/fraction_direct_human_ft_classification.json`. The combined
+fraction/decimal TVD table also uses
+`strategy_tvd/decimal_direct_human_ft_predictions.csv.gz`; its all-row
+Gemini Batch configuration is recorded in
+`strategy_tvd/decimal_direct_human_ft_classification.json`.
 
 ## NLL-vs-temperature figure + Table 1 NLL column
 `nll_temperature/`: `nll_tsweep_results.csv` (Base 4B), `nll_tsweep_instruct_results.csv`

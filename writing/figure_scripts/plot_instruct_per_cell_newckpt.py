@@ -1,33 +1,35 @@
 #!/usr/bin/env python3
-"""Per-cell accuracy comparison: 4B Base vs 4B Instruct, both as Cognitive-LLM.
+"""Per-cell accuracy comparison: 4B Base vs 4B Instruct, both as CPT-LLM.
 
 Side-by-side panels for fractions and decimals, four bars per cell:
-Human reference, UMA, Cognitive-LLM (Base 4B), Cognitive-LLM (Instruct 4B)."""
+student reference, UMA, CPT-LLM (Base 4B), CPT-LLM (Instruct 4B)."""
 from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
 
-INSTRUCT_DIR = Path("/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/tmp/newckpt_rollouts_4bi")
-BASE_FRAC_ROLLOUTS = Path("/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/5702f84f/UMA_PR02/eval/outputs/fraction_4b/qwen3_4b_distill_humanft.csv")
-BASE_DEC_ROLLOUTS = Path("/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/5702f84f/UMA_PR02/eval/outputs/decimal_4b/qwen3_4b_distill_humanft.csv")
-HUMAN_FRAC = Path("/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/data/siegler_fraction_human.csv")
-UMA_FRAC = Path("/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/UMA_replication/verification_full_results.csv")
-DEC_BSS_SUMMARY = Path("/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/data/uma_bss2021_summary.csv")
-DEC_HUMAN_PER_CELL = Path("/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_humanft_bss2021_from_distill_20260520_143350/bss2021_eval_20260520_144339/per_cell.csv")
-
-OUT_DIR = Path("/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/figures")
-PAPER_FIG_DIR = Path("/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/emnlp-paper/figures")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parents[1]
+PAPER_ROOT = REPO_ROOT / "writing" / "emnlp202026-humanlike-math-reasoning"
+OUTPUTS = REPO_ROOT / "eval" / "outputs"
+INSTRUCT_FRAC_DIR = OUTPUTS / "fraction_4bi"
+INSTRUCT_DEC_DIR = OUTPUTS / "decimal_4bi"
+BASE_FRAC_ROLLOUTS = OUTPUTS / "fraction_4b" / "qwen3_4b_distill_humanft.csv"
+BASE_DEC_ROLLOUTS = OUTPUTS / "decimal_4b" / "qwen3_4b_distill_humanft.csv"
+HUMAN_FRAC = REPO_ROOT / "eval" / "data" / "siegler_fraction_human.csv"
+UMA_FRAC = OUTPUTS / "uma_reference" / "verification_full_results.csv.gz"
+DEC_BSS_SUMMARY = OUTPUTS / "uma_reference" / "uma_bss2021_summary.csv"
+DEC_HUMAN_PER_CELL = OUTPUTS / "decimals_new" / "per_cell.csv"
+SEED_CSV = OUTPUTS / "seed_variance" / "seed_cell_acc.csv"
+PAPER_FIG_DIR = PAPER_ROOT / "figures"
+SYSNAME = "CPT-LLM"
 
 FRAC_CELLS = [("add","ED"),("add","UD"),("sub","ED"),("sub","UD"),
               ("mul","ED"),("mul","UD"),("div","ED"),("div","UD")]
 FRAC_LABELS = {"add":"Add","sub":"Sub","mul":"Mul","div":"Div"}
 DEC_CELLS = [("Add","EDD"),("Add","UDD"),("Add","D-W"),
              ("Mul","EDD"),("Mul","UDD"),("Mul","D-W")]
-SEED_CSV = Path("/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/tmp/seed_variance/seed_cell_acc.csv")
-
-
 def seed_sd(config, cells):
     """Per-cell accuracy SD (pp) across the 5 humanFT seeds."""
     s = pd.read_csv(SEED_CSV)
@@ -74,7 +76,7 @@ def main():
     h_f, u_f = frac_human_uma()
     base_frac = cell_acc(BASE_FRAC_ROLLOUTS, [(o.capitalize(), d) for o,d in FRAC_CELLS],
                           op_col="operation", od_col="denom_type")
-    instruct_frac = cell_acc(INSTRUCT_DIR/"rollouts_4bi_fractions_distill_humanFT.csv",
+    instruct_frac = cell_acc(INSTRUCT_FRAC_DIR/"rollouts_4bi_fractions_distill_humanFT.csv",
                               [(o.capitalize(), d) for o,d in FRAC_CELLS],
                               op_col="operation", od_col="operands")
 
@@ -82,20 +84,20 @@ def main():
     h_d, u_d = dec_human_uma()
     base_dec = cell_acc(BASE_DEC_ROLLOUTS, DEC_CELLS,
                          op_col="operation", od_col="operands")
-    instruct_dec = cell_acc(INSTRUCT_DIR/"rollouts_4bi_decimals_distill_humanFT.csv",
+    instruct_dec = cell_acc(INSTRUCT_DEC_DIR/"rollouts_4bi_decimals_distill_humanFT.csv",
                              DEC_CELLS, op_col="operation", od_col="operands")
 
     series_frac = [
-        ("Human (SP2013)", h_f),
+        ("Students", h_f),
         ("UMA", u_f),
-        ("Cognitive-LLM (4B Base)", base_frac),
-        ("Cognitive-LLM (4B Instruct)", instruct_frac),
+        (f"{SYSNAME} (4B Base)", base_frac),
+        (f"{SYSNAME} (4B Instruct)", instruct_frac),
     ]
     series_dec = [
-        ("Human (BSS2021)", h_d),
+        ("Students", h_d),
         ("UMA", u_d),
-        ("Cognitive-LLM (4B Base)", base_dec),
-        ("Cognitive-LLM (4B Instruct)", instruct_dec),
+        (f"{SYSNAME} (4B Base)", base_dec),
+        (f"{SYSNAME} (4B Instruct)", instruct_dec),
     ]
 
     colors = plt.cm.viridis(np.linspace(0.10, 0.90, 4))
@@ -106,14 +108,14 @@ def main():
                                     gridspec_kw={"width_ratios":[8,6]})
 
     sd_map = {
-        "Fractions (SP2013)": {"Cognitive-LLM (4B Base)": seed_sd("base_frac", FRAC_CELLS),
-                               "Cognitive-LLM (4B Instruct)": seed_sd("inst_frac", FRAC_CELLS)},
-        "Decimals (BSS2021)": {"Cognitive-LLM (4B Base)": seed_sd("base_dec", DEC_CELLS),
-                               "Cognitive-LLM (4B Instruct)": seed_sd("inst_dec", DEC_CELLS)},
+        "Fractions": {f"{SYSNAME} (4B Base)": seed_sd("base_frac", FRAC_CELLS),
+                      f"{SYSNAME} (4B Instruct)": seed_sd("inst_frac", FRAC_CELLS)},
+        "Decimals": {f"{SYSNAME} (4B Base)": seed_sd("base_dec", DEC_CELLS),
+                     f"{SYSNAME} (4B Instruct)": seed_sd("inst_dec", DEC_CELLS)},
     }
     for ax, series, xlabels, title in [
-        (axL, series_frac, frac_xlabels, "Fractions (SP2013)"),
-        (axR, series_dec, dec_xlabels, "Decimals (BSS2021)"),
+        (axL, series_frac, frac_xlabels, "Fractions"),
+        (axR, series_dec, dec_xlabels, "Decimals"),
     ]:
         x = np.arange(len(xlabels))
         n = len(series); w = 0.78/n
@@ -131,31 +133,13 @@ def main():
     axR.legend(loc="upper right", frameon=False, fontsize=7, bbox_to_anchor=(1.02,1.08))
     plt.tight_layout()
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out = OUT_DIR/"qwen3_4b_vs_4bi_per_cell_comparison.png"
-    plt.savefig(out, bbox_inches="tight")
-    if PAPER_FIG_DIR.exists():
-        plt.savefig(PAPER_FIG_DIR/"qwen3_4b_vs_4bi_per_cell_comparison.png", bbox_inches="tight")
-    print("wrote", out)
+    PAPER_FIG_DIR.mkdir(parents=True, exist_ok=True)
+    for suffix in ("png", "pdf"):
+        out = PAPER_FIG_DIR / f"qwen3_4b_vs_4bi_per_cell_comparison.{suffix}"
+        plt.savefig(out, bbox_inches="tight")
+        print("wrote", out)
 
-    # Per-cell summary CSV for all 4 Instruct variants
-    rows = []
-    for var, slug in [("Base","Base"),("+ humanFT","humanFT"),
-                      ("+ distill","distill"),("+ distill + humanFT","distill_humanFT")]:
-        for dom, cells, op_col, od_col in [
-            ("fractions", [(o.capitalize(), d) for o,d in FRAC_CELLS], "operation", "operands"),
-            ("decimals", DEC_CELLS, "operation", "operands"),
-        ]:
-            p = INSTRUCT_DIR/f"rollouts_4bi_{dom}_{slug}.csv"
-            df = pd.read_csv(p)
-            g = df.groupby([op_col, od_col])["is_correct"].mean().reindex(cells)
-            for (op,od), acc in g.items():
-                rows.append({"variant":var,"domain":dom,"operation":op,
-                              "operands":od,"acc_instruct":acc})
-    pd.DataFrame(rows).to_csv(OUT_DIR/"per_cell_acc_instruct.csv", index=False)
-    print("wrote", OUT_DIR/"per_cell_acc_instruct.csv")
-
-    print("\n=== Cognitive-LLM (4B Instruct) per-cell accuracy ===")
+    print(f"\n=== {SYSNAME} (4B Instruct) per-cell accuracy ===")
     print("\nFractions:")
     for (op,od), acc_base, acc_inst in zip(FRAC_CELLS, base_frac, instruct_frac):
         print(f"  {FRAC_LABELS[op]:5s}{od}  Base={acc_base*100:5.1f}%  Instruct={acc_inst*100:5.1f}%")

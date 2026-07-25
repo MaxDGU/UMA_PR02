@@ -1,0 +1,41 @@
+{
+  "source": "eval/outputs/fraction_4b/qwen3_4b_humanft_v1.csv",
+  "source_row_count": 4096,
+  "sampling": {
+    "unit": "problem",
+    "rows_per_problem": 100,
+    "problem_count": 16,
+    "random_seed": 123
+  },
+  "classifier": {
+    "script": "eval/fraction_strategy_extraction.py",
+    "prompt_version": "fraction_strategy_extraction_v7",
+    "domain": "fraction",
+    "evidence": "trace",
+    "model": "gemini-2.5-flash-lite",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "thinking_budget": 0,
+    "few_shot_per_code": 2,
+    "few_shot_preset": "human_shortest",
+    "seed": 123,
+    "backend": "gemini_batch",
+    "batch_job": "batches/tla21752sam9tjy0yz9vnfo31eulfo2g19w0"
+  },
+  "results": {
+    "row_count": 1600,
+    "parse_success_count": 1600,
+    "parse_success_rate": 1.0,
+    "request_error_count": 0,
+    "predicted_code_counts": {
+      "KDON": 360,
+      "CDON": 146,
+      "ONOD": 846,
+      "ICDM": 16,
+      "CROP": 66,
+      "OTHER": 166
+    },
+    "estimated_batch_cost_usd": 0.6164129375
+  },
+  "prediction_file": "eval/outputs/strategy_tvd/fraction_direct_human_ft_predictions.csv.gz"
+}
