@@ -86,8 +86,14 @@ Trajectory rollouts (all 4 scales): `results/finetuning/trajectory_at_T10/rollou
 Scripts: `plot_trajectory_at_T10_magh.py`, `plot_frombase_trajectory_at_T10_magh.py`,
 `plot_humanft_temperature_curve.py`, `plot_distill_temperature_curve.py`.
 
-## Checkpoints (not in git — della, ask Max for transfer)
-Under `/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/`:
+## Checkpoints
+Base-4B checkpoints (both domains, incl. per-epoch fine-tuning trajectories and
+the decimal CV fold models) are on HuggingFace:
+**huggingface.co/MaxDGUPTA/uma-cognitive-llm-checkpoints** (private — ask Max
+for access; its README has the layout and a PeftModel loading snippet).
+Instruct-2507 and seed-variance checkpoints remain only on della.
+
+della originals under `/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/`:
 - Base 4B distill (fractions): `qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/best`
 - Base 4B distill+humanFT (fractions): `qwen_humanft_from_distill_4b_ep1_20260503_124020/best`
 - Base 4B decimals: distill `qwen3_4b_decimal_bssmix_no3dpmul_repaired_v1_base_e1_20260518_134624_lora/best`,
