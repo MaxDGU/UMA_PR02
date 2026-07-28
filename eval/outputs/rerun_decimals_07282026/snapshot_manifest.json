@@ -1,0 +1,63 @@
+{
+  "snapshot_id": "rerun_decimals_07282026",
+  "experiment_freeze_date": "2026-07-28",
+  "protocol": "decimal_profile_weighted_v2",
+  "scope": "results_only",
+  "experiment_start_commit": "a043142e8fcf01108855651b5d94ed05dbcb0060",
+  "packaging_base_commit": "020bc680ab8c9ec548ef544947a137d1f4ec53f9",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "conditions": [
+    "direct_human_ft",
+    "cpt_human_ft",
+    "cpt_weighted_beta_0",
+    "cpt_weighted_beta_0p01",
+    "cpt_weighted_beta_0p1",
+    "cpt_weighted_beta_0p5"
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "inference": {
+    "backend": "vllm",
+    "rollout_seed": 20260729,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 192,
+    "problems": 12,
+    "samples_per_problem": 120,
+    "profile_conditioned_evaluation": false,
+    "rollout_csv_files": 30,
+    "rollout_manifest_files": 30
+  },
+  "evaluation": {
+    "protocol": "decimal_profile_weighted_v2_test_only_scoring",
+    "human_participants": 19,
+    "human_responses": 228,
+    "human_test_sha256": "f08d1a12443dc63a174d8214316779139365702f4c80ace875e3a40ffcbc5c3d",
+    "corrected_runs": 30,
+    "scored_runs_including_unchanged_baselines": 35,
+    "kl_beta_selection": "none; report all four pre-specified beta values",
+    "metric_csv_files": 4,
+    "metric_manifest_files": 1,
+    "source_metric_manifest_sha256": "2c2a013a4f8632741c952b971190b4d45080d051d9c22d3eaef9c4cae48a58bb"
+  },
+  "slurm_jobs": {
+    "training_array": "11709627",
+    "inference": "11709628",
+    "aggregation": "11709629"
+  },
+  "excluded": [
+    "superseded_unconditioned_weighted_kl_pilot",
+    "model_checkpoints_and_optimizer_state",
+    "profile_conditioned_source_traces_and_training_bundle",
+    "fewshot_icl",
+    "strategy_judge_outputs",
+    "persona_sweep_outputs",
+    "instruct_initialization_outputs",
+    "unchanged_baseline_rollouts"
+  ]
+}

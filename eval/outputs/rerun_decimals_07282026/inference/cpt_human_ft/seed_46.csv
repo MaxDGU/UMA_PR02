@@ -1,0 +1,2881 @@
+problem,operation,operands,correct_answer,model_key,training_seed,rollout_seed,sample_idx,parsed_answer,is_correct,model_response
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,0,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,1,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,2,2.43,0,"My answer is 2.43.
+### answer: 2.43"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,3,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,4,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,5,.0672,0,"My answer is .0672.
+### answer: .0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,6,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,7,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,8,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,9,.32,0,"My answer is .32.
+### answer: .32"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,10,67.20,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,11,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,12,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,13,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,14,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,15,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,16,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,17,0.30,0,"My answer is 0.30.
+### answer: 0.30"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,18,67.20,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,19,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,20,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,21,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,22,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,23,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,24,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,25,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,26,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,27,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,28,.32,0,"My answer is .32.
+### answer: .32"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,29,.6720,1,"My answer is .6720.
+### answer: .6720"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,30,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,31,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,32,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,33,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,34,.6720,1,"My answer is .6720.
+### answer: .6720"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,35,20.4,0,"My answer is 20.4.
+### answer: 20.4"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,36,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,37,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,38,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,39,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,40,.0672,0,"My answer is .0672.
+### answer: .0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,41,0.840,0,"My answer is 0.840.
+### answer: 0.840"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,42,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,43,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,44,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,45,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,46,2.42,0,"My answer is 2.42.
+### answer: 2.42"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,47,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,48,.21,0,"My answer is .21.
+### answer: .21"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,49,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,50,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,51,.126,0,"My answer is .126.
+### answer: .126"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,52,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,53,6720,0,"My answer is 6720.
+### answer: 6720"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,54,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,55,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,56,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,57,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,58,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,59,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,60,2.42,0,"My answer is 2.42.
+### answer: 2.42"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,61,672,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,62,6.720,0,"My answer is 6.720.
+### answer: 6.720"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,63,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,64,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,65,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,66,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,67,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,68,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,69,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,70,67.20,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,71,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,72,2.42,0,"My answer is 2.42.
+### answer: 2.42"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,73,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,74,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,75,672,0,"My answer is 672.
+### answer: 672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,76,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,77,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,78,0.96,0,"My answer is 0.96.
+### answer: 0.96"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,79,0.0672,0,"My answer is 0.0672.
+### answer: 0.0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,80,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,81,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,82,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,83,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,84,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,85,.21,0,"My answer is .21.
+### answer: .21"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,86,.321,0,"My answer is .321.
+### answer: .321"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,87,.105,0,"My answer is .105.
+### answer: .105"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,88,10.5,0,"My answer is 10.5.
+### answer: 10.5"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,89,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,90,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,91,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,92,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,93,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,94,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,95,0.105,0,"My answer is 0.105.
+### answer: 0.105"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,96,2.42,0,"My answer is 2.42.
+### answer: 2.42"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,97,6.72,0,"My answer is 6.72.
+### answer: 6.72"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,98,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,99,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,100,.6720,1,"My answer is .6720.
+### answer: .6720"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,101,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,102,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,103,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,104,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,105,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,106,67.20,0,"My answer is 67.20.
+### answer: 67.20"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,107,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,108,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,109,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,110,16.2,0,"My answer is 16.2.
+### answer: 16.2"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,111,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,112,67.2,0,"My answer is 67.2.
+### answer: 67.2"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,113,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,114,.0672,0,"My answer is .0672.
+### answer: .0672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,115,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,116,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,117,0.96,0,"My answer is 0.96.
+### answer: 0.96"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,118,.672,1,"My answer is .672.
+### answer: .672"
+0.32*2.1,Mul,UDD,0.672,cpt_human_ft,46,20260729,119,0.672,1,"My answer is 0.672.
+### answer: 0.672"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,0,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,1,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,2,21,0,"My answer is 21/31.
+### answer: 21/31"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,3,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,4,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,5,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,6,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,7,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,8,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,9,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,10,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,11,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,12,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,13,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,14,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,15,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,16,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,17,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,18,19.41,0,"My answer is 19.41.
+### answer: 19.41"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,19,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,20,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,21,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,22,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,23,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,24,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,25,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,26,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,27,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,28,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,29,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,30,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,31,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,32,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,33,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,34,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,35,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,36,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,37,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,38,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,39,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,40,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,41,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,42,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,43,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,44,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,45,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,46,1.64,0,"My answer is 1.64.
+### answer: 1.64"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,47,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,48,21.70,0,"My answer is 21.70.
+### answer: 21.70"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,49,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,50,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,51,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,52,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,53,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,54,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,55,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,56,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,57,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,58,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,59,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,60,2.25,0,"My answer is 2.25.
+### answer: 2.25"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,61,19,0,"My answer is 19.
+### answer: 19"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,62,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,63,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,64,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,65,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,66,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,67,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,68,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,69,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,70,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,71,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,72,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,73,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,74,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,75,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,76,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,77,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,78,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,79,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,80,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,81,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,82,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,83,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,84,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,85,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,86,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,87,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,88,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,89,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,90,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,91,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,92,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,93,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,94,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,95,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,96,1.271,0,"My answer is 1.271.
+### answer: 1.271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,97,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,98,0.281,0,"My answer is 0.281.
+### answer: 0.281"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,99,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,100,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,101,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,102,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,103,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,104,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,105,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,106,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,107,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,108,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,109,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,110,12.71,0,"My answer is 12.71.
+### answer: 12.71"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,111,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,112,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,113,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,114,.01271,0,"My answer is .01271.
+### answer: .01271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,115,.1271,1,"My answer is .1271.
+### answer: .1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,116,1271,0,"My answer is 1271.
+### answer: 1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,117,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,118,.0310,0,"My answer is .0310.
+### answer: .0310"
+0.41*0.31,Mul,EDD,0.1271,cpt_human_ft,46,20260729,119,0.1271,1,"My answer is 0.1271.
+### answer: 0.1271"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,0,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,1,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,2,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,3,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,4,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,5,.00730,0,"My answer is .00730.
+### answer: .00730"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,6,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,7,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,8,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,9,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,10,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,11,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,12,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,13,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,14,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,15,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,16,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,17,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,18,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,19,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,20,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,21,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,22,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,23,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,24,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,25,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,26,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,27,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,28,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,29,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,30,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,31,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,32,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,33,.935,0,"My answer is .935.
+### answer: .935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,34,.935,0,"My answer is .935.
+### answer: .935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,35,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,36,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,37,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,38,.415,0,"My answer is .415.
+### answer: .415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,39,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,40,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,41,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,42,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,43,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,44,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,45,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,46,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,47,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,48,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,49,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,50,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,51,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,52,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,53,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,54,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,55,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,56,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,57,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,58,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,59,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,60,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,61,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,62,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,63,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,64,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,65,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,66,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,67,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,68,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,69,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,70,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,71,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,72,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,73,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,74,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,75,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,76,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,77,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,78,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,79,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,80,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,81,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,82,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,83,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,84,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,85,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,86,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,87,.467,0,"My answer is .467.
+### answer: .467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,88,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,89,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,90,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,91,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,92,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,93,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,94,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,95,0.935,0,"My answer is 0.935.
+### answer: 0.935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,96,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,97,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,98,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,99,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,100,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,101,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,102,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,103,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,104,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,105,0.415,0,"My answer is 0.415.
+### answer: 0.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,106,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,107,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,108,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,109,0.477,0,"My answer is 0.477.
+### answer: 0.477"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,110,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,111,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,112,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,113,.935,0,"My answer is .935.
+### answer: .935"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,114,.00890,0,"My answer is .00890.
+### answer: .00890"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,115,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,116,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,117,52.415,1,"My answer is 52.415.
+### answer: 52.415"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,118,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.415+52,Add,D-W,52.415,cpt_human_ft,46,20260729,119,0.467,0,"My answer is 0.467.
+### answer: 0.467"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,0,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,1,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,2,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,3,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,4,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,5,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,6,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,7,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,8,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,9,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,10,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,11,0.01602,0,"My answer is 0.01602.
+### answer: 0.01602"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,12,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,13,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,14,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,15,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,16,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,17,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,18,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,19,0.00838,0,"My answer is 0.00838.
+### answer: 0.00838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,20,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,21,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,22,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,23,0.000928,0,"My answer is 0.000928.
+### answer: 0.000928"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,24,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,25,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,26,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,27,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,28,8.18,0,"My answer is 8.18.
+### answer: 8.18"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,29,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,30,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,31,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,32,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,33,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,34,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,35,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,36,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,37,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,38,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,39,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,40,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,41,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,42,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,43,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,44,8.98,0,"My answer is 8.98.
+### answer: 8.98"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,45,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,46,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,47,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,48,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,49,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,50,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,51,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,52,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,53,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,54,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,55,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,56,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,57,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,58,0.0926,0,"My answer is 0.0926.
+### answer: 0.0926"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,59,0.026,0,"My answer is 0.026.
+### answer: 0.026"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,60,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,61,838,0,"My answer is 838.
+### answer: 838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,62,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,63,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,64,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,65,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,66,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,67,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,68,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,69,.01026,0,"My answer is .01026.
+### answer: .01026"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,70,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,71,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,72,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,73,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,74,83.8,0,"My answer is 83.8.
+### answer: 83.8"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,75,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,76,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,77,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,78,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,79,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,80,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,81,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,82,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,83,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,84,.0926,0,"My answer is .0926.
+### answer: .0926"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,85,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,86,.838,0,"My answer is .838.
+### answer: .838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,87,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,88,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,89,8.98,0,"My answer is 8.98.
+### answer: 8.98"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,90,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,91,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,92,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,93,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,94,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,95,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,96,0.948,0,"My answer is 0.948.
+### answer: 0.948"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,97,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,98,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,99,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,100,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,101,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,102,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,103,83.8,0,"My answer is 83.8.
+### answer: 83.8"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,104,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,105,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,106,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,107,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,108,0.838,0,"My answer is 0.838.
+### answer: 0.838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,109,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,110,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,111,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,112,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,113,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,114,.00838,0,"My answer is .00838.
+### answer: .00838"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,115,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,116,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,117,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,118,.946,1,"My answer is .946.
+### answer: .946"
+0.826+0.12,Add,UDD,0.946,cpt_human_ft,46,20260729,119,0.946,1,"My answer is 0.946.
+### answer: 0.946"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,0,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,1,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,2,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,3,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,4,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,5,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,6,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,7,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,8,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,9,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,10,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,11,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,12,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,13,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,14,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,15,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,16,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,17,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,18,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,19,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,20,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,21,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,22,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,23,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,24,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,25,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,26,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,27,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,28,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,29,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,30,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,31,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,32,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,33,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,34,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,35,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,36,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,37,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,38,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,39,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,40,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,41,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,42,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,43,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,44,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,45,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,46,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,47,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,48,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,49,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,50,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,51,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,52,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,53,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,54,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,55,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,56,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,57,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,58,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,59,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,60,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,61,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,62,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,63,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,64,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,65,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,66,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,67,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,68,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,69,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,70,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,71,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,72,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,73,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,74,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,75,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,76,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,77,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,78,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,79,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,80,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,81,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,82,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,83,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,84,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,85,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,86,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,87,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,88,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,89,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,90,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,91,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,92,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,93,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,94,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,95,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,96,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,97,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,98,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,99,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,100,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,101,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,102,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,103,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,104,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,105,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,106,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,107,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,108,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,109,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,110,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,111,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,112,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,113,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,114,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,115,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,116,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,117,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,118,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+12.3+5.6,Add,EDD,17.9,cpt_human_ft,46,20260729,119,17.9,1,"My answer is 17.9.
+### answer: 17.9"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,0,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,1,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,2,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,3,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,4,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,5,0.22,0,"My answer is 0.22.
+### answer: 0.22"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,6,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,7,0.21,0,"My answer is 0.21.
+### answer: 0.21"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,8,294.00,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,9,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,10,294.00,0,"My answer is 294.00.
+### answer: 294.00"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,11,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,12,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,13,2940,0,"My answer is 2940.
+### answer: 2940"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,14,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,15,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,16,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,17,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,18,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,19,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,20,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,21,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,22,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,23,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,24,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,25,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,26,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,27,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,28,3.04,0,"My answer is 3.04.
+### answer: 3.04"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,29,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,30,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,31,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,32,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,33,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,34,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,35,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,36,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,37,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,38,294,0,"My answer is 294.
+### answer: 294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,39,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,40,0.0294,0,"My answer is 0.0294.
+### answer: 0.0294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,41,0.84,0,"My answer is 0.84.
+### answer: 0.84"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,42,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,43,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,44,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,45,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,46,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,47,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,48,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,49,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,50,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,51,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,52,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,53,31.4,0,"My answer is 31.4.
+### answer: 31.4"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,54,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,55,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,56,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,57,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,58,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,59,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,60,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,61,10,0,"My answer is 10.
+### answer: 10"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,62,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,63,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,64,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,65,100,0,"My answer is 100.
+### answer: 100"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,66,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,67,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,68,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,69,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,70,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,71,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,72,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,73,3.64,0,"My answer is 3.64.
+### answer: 3.64"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,74,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,75,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,76,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,77,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,78,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,79,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,80,2940,0,"My answer is 2940.
+### answer: 2940"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,81,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,82,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,83,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,84,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,85,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,86,3.12,0,"My answer is 3.12.
+### answer: 3.12"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,87,10.5,0,"My answer is 10.5.
+### answer: 10.5"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,88,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,89,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,90,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,91,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,92,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,93,0.0214,0,"My answer is 0.0214.
+### answer: 0.0214"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,94,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,95,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,96,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,97,12.6,0,"My answer is 12.6.
+### answer: 12.6"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,98,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,99,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,100,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,101,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,102,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,103,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,104,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,105,0.214,0,"My answer is 0.214.
+### answer: 0.214"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,106,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,107,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,108,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,109,0.21,0,"My answer is 0.21.
+### answer: 0.21"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,110,14.21,0,"My answer is 14.21.
+### answer: 14.21"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,111,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,112,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,113,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,114,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,115,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,116,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,117,2.94,1,"My answer is 2.94.
+### answer: 2.94"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,118,0.294,0,"My answer is 0.294.
+### answer: 0.294"
+14*0.21,Mul,D-W,2.94,cpt_human_ft,46,20260729,119,29.4,0,"My answer is 29.4.
+### answer: 29.4"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,0,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,1,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,2,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,3,0.0299,0,"My answer is 0.0299.
+### answer: 0.0299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,4,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,5,.029,0,"My answer is .029.
+### answer: .029"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,6,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,7,02.99,0,"My answer is 02.99.
+### answer: 02.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,8,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,9,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,10,29.90,0,"My answer is 29.90.
+### answer: 29.90"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,11,0.092,0,"My answer is 0.092.
+### answer: 0.092"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,12,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,13,99.00,0,"My answer is 99.00.
+### answer: 99.00"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,14,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,15,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,16,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,17,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,18,9.90,0,"My answer is 9.90.
+### answer: 9.90"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,19,9.00,0,"My answer is 9.00.
+### answer: 9.00"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,20,9.0,0,"My answer is 9.0.
+### answer: 9.0"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,21,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,22,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,23,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,24,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,25,9.9,0,"My answer is 9.9.
+### answer: 9.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,26,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,27,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,28,299,0,"My answer is 299.
+### answer: 299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,29,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,30,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,31,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,32,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,33,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,34,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,35,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,36,0.0299,0,"My answer is 0.0299.
+### answer: 0.0299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,37,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,38,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,39,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,40,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,41,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,42,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,43,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,44,9.9,0,"My answer is 9.9.
+### answer: 9.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,45,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,46,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,47,.923,0,"My answer is .923.
+### answer: .923"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,48,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,49,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,50,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,51,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,52,.92,0,"My answer is .92.
+### answer: .92"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,53,91,0,"My answer is 91.
+### answer: 91"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,54,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,55,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,56,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,57,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,58,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,59,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,60,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,61,9.23,0,"My answer is 9.23.
+### answer: 9.23"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,62,9.0,0,"My answer is 9.0.
+### answer: 9.0"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,63,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,64,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,65,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,66,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,67,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,68,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,69,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,70,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,71,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,72,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,73,2.69,0,"My answer is 2.69.
+### answer: 2.69"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,74,9.23,0,"My answer is 9.23.
+### answer: 9.23"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,75,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,76,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,77,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,78,0.923,0,"My answer is 0.923.
+### answer: 0.923"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,79,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,80,2990,0,"My answer is 2990.
+### answer: 2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,81,0.2990,1,"My answer is 0.2990.
+### answer: 0.2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,82,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,83,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,84,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,85,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,86,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,87,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,88,29.9,0,"My answer is 29.9.
+### answer: 29.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,89,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,90,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,91,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,92,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,93,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,94,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,95,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,96,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,97,9.9,0,"My answer is 9.9.
+### answer: 9.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,98,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,99,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,100,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,101,2.99,0,"My answer is 2.99.
+### answer: 2.99"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,102,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,103,26.9,0,"My answer is 26.9.
+### answer: 26.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,104,2.63,0,"My answer is 2.63.
+### answer: 2.63"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,105,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,106,2.66,0,"My answer is 2.66.
+### answer: 2.66"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,107,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,108,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,109,.0299,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,110,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,111,.2990,1,"My answer is .2990.
+### answer: .2990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,112,0.299,1,"My answer is 0.299.
+### answer: 0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,113,.98,0,"My answer is .98.
+### answer: .98"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,114,.0299,0,"My answer is .0299.
+### answer: .0299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,115,.299,1,"My answer is .299.
+### answer: .299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,116,9.9,0,"My answer is 9.9.
+### answer: 9.9"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,117,2.990,0,"My answer is 2.990.
+### answer: 2.990"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,118,.0,0,"My answer is .0.299.
+### answer: .0.299"
+2.3*0.13,Mul,UDD,0.299,cpt_human_ft,46,20260729,119,0.92,0,"My answer is 0.92.
+### answer: 0.92"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,0,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,1,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,2,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,3,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,4,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,5,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,6,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,7,72,0,"My answer is 72.
+### answer: 72"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,8,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,9,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,10,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,11,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,12,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,13,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,14,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,15,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,16,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,17,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,18,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,19,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,20,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,21,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,22,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,23,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,24,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,25,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,26,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,27,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,28,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,29,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,30,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,31,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,32,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,33,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,34,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,35,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,36,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,37,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,38,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,39,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,40,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,41,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,42,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,43,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,44,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,45,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,46,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,47,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,48,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,49,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,50,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,51,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,52,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,53,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,54,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,55,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,56,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,57,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,58,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,59,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,60,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,61,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,62,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,63,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,64,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,65,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,66,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,67,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,68,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,69,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,70,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,71,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,72,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,73,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,74,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,75,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,76,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,77,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,78,0.96,0,"My answer is 0.96.
+### answer: 0.96"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,79,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,80,7.0,0,"My answer is 7.0.
+### answer: 7.0"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,81,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,82,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,83,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,84,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,85,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,86,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,87,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,88,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,89,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,90,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,91,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,92,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,93,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,94,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,95,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,96,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,97,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,98,0.28,0,"My answer is 0.28.
+### answer: 0.28"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,99,2.8,0,"My answer is 2.8.
+### answer: 2.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,100,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,101,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,102,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,103,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,104,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,105,0.288,0,"My answer is 0.288.
+### answer: 0.288"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,106,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,107,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,108,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,109,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,110,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,111,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,112,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,113,28.8,0,"My answer is 28.8.
+### answer: 28.8"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,114,0.89,0,"My answer is 0.89.
+### answer: 0.89"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,115,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,116,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,117,2.88,1,"My answer is 2.88.
+### answer: 2.88"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,118,7.2,0,"My answer is 7.2.
+### answer: 7.2"
+2.4*1.2,Mul,EDD,2.88,cpt_human_ft,46,20260729,119,72.0,0,"My answer is 72.0.
+### answer: 72.0"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,0,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,1,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,2,2.96,0,"My answer is 2.96.
+### answer: 2.96"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,3,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,4,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,5,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,6,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,7,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,8,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,9,.82,0,"My answer is .82.
+### answer: .82"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,10,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,11,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,12,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,13,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,14,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,15,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,16,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,17,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,18,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,19,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,20,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,21,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,22,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,23,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,24,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,25,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,26,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,27,.656,0,"My answer is .656.
+### answer: .656"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,28,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,29,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,30,.55,0,"My answer is .55.
+### answer: .55"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,31,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,32,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,33,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,34,.687,0,"My answer is .687.
+### answer: .687"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,35,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,36,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,37,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,38,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,39,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,40,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,41,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,42,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,43,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,44,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,45,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,46,2.86,0,"My answer is 2.86.
+### answer: 2.86"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,47,.961,0,"My answer is .961.
+### answer: .961"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,48,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,49,2.96,0,"My answer is 2.96.
+### answer: 2.96"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,50,2.96,0,"My answer is 2.96.
+### answer: 2.96"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,51,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,52,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,53,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,54,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,55,.246,0,"My answer is .246.
+### answer: .246"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,56,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,57,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,58,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,59,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,60,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,61,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,62,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,63,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,64,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,65,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,66,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,67,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,68,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,69,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,70,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,71,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,72,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,73,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,74,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,75,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,76,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,77,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,78,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,79,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,80,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,81,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,82,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,83,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,84,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,85,.287,0,"My answer is .287.
+### answer: .287"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,86,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,87,.105,0,"My answer is .105.
+### answer: .105"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,88,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,89,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,90,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,91,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,92,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,93,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,94,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,95,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,96,2.91,0,"My answer is 2.91.
+### answer: 2.91"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,97,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,98,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,99,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,100,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,101,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,102,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,103,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,104,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,105,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,106,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,107,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,108,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,109,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,110,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,111,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,112,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,113,.98,0,"My answer is .98.
+### answer: .98"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,114,.0089,0,"My answer is .0089.
+### answer: .0089"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,115,2.87,0,"My answer is 2.87.
+### answer: 2.87"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,116,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,117,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,118,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+2.46+4.1,Add,UDD,6.56,cpt_human_ft,46,20260729,119,6.56,1,"My answer is 6.56.
+### answer: 6.56"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,0,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,1,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,2,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,3,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,4,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,5,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,6,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,7,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,8,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,9,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,10,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,11,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,12,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,13,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,14,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,15,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,16,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,17,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,18,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,19,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,20,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,21,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,22,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,23,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,24,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,25,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,26,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,27,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,28,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,29,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,30,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,31,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,32,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,33,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,34,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,35,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,36,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,37,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,38,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,39,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,40,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,41,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,42,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,43,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,44,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,45,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,46,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,47,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,48,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,49,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,50,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,51,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,52,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,53,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,54,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,55,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,56,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,57,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,58,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,59,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,60,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,61,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,62,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,63,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,64,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,65,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,66,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,67,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,68,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,69,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,70,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,71,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,72,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,73,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,74,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,75,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,76,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,77,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,78,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,79,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,80,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,81,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,82,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,83,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,84,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,85,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,86,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,87,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,88,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,89,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,90,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,91,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,92,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,93,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,94,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,95,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,96,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,97,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,98,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,99,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,100,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,101,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,102,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,103,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,104,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,105,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,106,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,107,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,108,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,109,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,110,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,111,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,112,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,113,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,114,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,115,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,116,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,117,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,118,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+24.45+0.34,Add,EDD,24.79,cpt_human_ft,46,20260729,119,24.79,1,"My answer is 24.79.
+### answer: 24.79"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,0,155,0,"My answer is 155.
+### answer: 155"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,1,6.4,0,"My answer is 6.4.
+### answer: 6.4"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,2,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,3,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,4,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,5,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,6,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,7,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,8,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,9,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,10,12.5,0,"My answer is 12.5.
+### answer: 12.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,11,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,12,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,13,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,14,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,15,6.92,0,"My answer is 6.92.
+### answer: 6.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,16,6.7,0,"My answer is 6.7.
+### answer: 6.7"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,17,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,18,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,19,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,20,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,21,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,22,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,23,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,24,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,25,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,26,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,27,67,0,"My answer is 67.
+### answer: 67"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,28,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,29,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,30,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,31,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,32,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,33,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,34,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,35,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,36,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,37,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,38,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,39,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,40,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,41,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,42,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,43,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,44,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,45,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,46,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,47,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,48,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,49,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,50,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,51,12.5,0,"My answer is 12.5.
+### answer: 12.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,52,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,53,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,54,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,55,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,56,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,57,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,58,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,59,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,60,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,61,692,0,"My answer is 692.
+### answer: 692"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,62,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,63,69.2,0,"My answer is 69.2.
+### answer: 69.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,64,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,65,12.8,0,"My answer is 12.8.
+### answer: 12.8"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,66,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,67,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,68,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,69,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,70,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,71,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,72,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,73,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,74,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,75,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,76,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,77,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,78,12.8,0,"My answer is 12.8.
+### answer: 12.8"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,79,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,80,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,81,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,82,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,83,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,84,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,85,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,86,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,87,10.8,0,"My answer is 10.8.
+### answer: 10.8"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,88,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,89,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,90,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,91,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,92,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,93,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,94,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,95,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,96,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,97,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,98,992,0,"My answer is 992.
+### answer: 992"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,99,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,100,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,101,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,102,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,103,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,104,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,105,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,106,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,107,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,108,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,109,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,110,15.5,0,"My answer is 15.5.
+### answer: 15.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,111,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,112,67.4,0,"My answer is 67.4.
+### answer: 67.4"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,113,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,114,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,115,12.5,0,"My answer is 12.5.
+### answer: 12.5"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,116,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,117,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,118,9.92,0,"My answer is 9.92.
+### answer: 9.92"
+31*3.2,Mul,D-W,99.2,cpt_human_ft,46,20260729,119,99.2,1,"My answer is 99.2.
+### answer: 99.2"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,0,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,1,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,2,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,3,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,4,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,5,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,6,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,7,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,8,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,9,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,10,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,11,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,12,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,13,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,14,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,15,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,16,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,17,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,18,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,19,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,20,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,21,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,22,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,23,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,24,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,25,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,26,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,27,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,28,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,29,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,30,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,31,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,32,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,33,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,34,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,35,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,36,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,37,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,38,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,39,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,40,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,41,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,42,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,43,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,44,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,45,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,46,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,47,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,48,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,49,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,50,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,51,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,52,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,53,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,54,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,55,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,56,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,57,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,58,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,59,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,60,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,61,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,62,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,63,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,64,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,65,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,66,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,67,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,68,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,69,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,70,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,71,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,72,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,73,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,74,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,75,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,76,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,77,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,78,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,79,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,80,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,81,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,82,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,83,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,84,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,85,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,86,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,87,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,88,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,89,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,90,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,91,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,92,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,93,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,94,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,95,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,96,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,97,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,98,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,99,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,100,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,101,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,102,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,103,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,104,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,105,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,106,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,107,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,108,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,109,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,110,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,111,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,112,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,113,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,114,5.84,0,"My answer is 5.84.
+### answer: 5.84"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,115,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,116,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,117,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,118,28.61,1,"My answer is 28.61.
+### answer: 28.61"
+5.61+23,Add,D-W,28.61,cpt_human_ft,46,20260729,119,28.61,1,"My answer is 28.61.
+### answer: 28.61"
