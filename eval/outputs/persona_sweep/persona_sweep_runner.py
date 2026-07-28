@@ -28,21 +28,18 @@ import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from decimal import Decimal
-from fractions import Fraction
 from pathlib import Path
 from typing import Any, Mapping
 
 import pandas as pd
 import requests as http_requests
 
-# --- import the existing fraction parser (parse_answer) ---
-sys.path.insert(0, "/scratch/gpfs/GRIFFITHS/mg7411/llm_student/fractions/finetune")
-import eval_llm_baseline as ev  # fraction parser only — make_client is NOT used here
+ROOT = Path(__file__).resolve().parents[3]
 
-# --- import the existing decimal parser from frontier_arithmetic_baseline ---
-sys.path.insert(0, "/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/uma_pr02_push/eval")
-import frontier_arithmetic_baseline as fab  # decimal parser + extract_chat_text + DEFAULT_PORTKEY_BASE_URL
+# --- import the shared fraction/decimal answer parser ---
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from eval import frontier_arithmetic_baseline as fab  # noqa: E402
 
 
 # Backend label per model slug. The fewshot-ICL runner uses the same routing.
@@ -64,8 +61,8 @@ def _token_limit_param(model_id: str) -> str:
 
 
 # --- problem sets (match the existing fraction_baselines_100samples and BSS2021) ---
-FRACTION_PROBLEMS_CSV = "/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/uma_pr02_push/eval/data/fraction_problems.csv"
-DECIMAL_PROBLEMS_CSV = "/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/uma_pr02_push/eval/data/decimal_problems.csv"
+FRACTION_PROBLEMS_CSV = ROOT / "eval/data/fraction_problems.csv"
+DECIMAL_PROBLEMS_CSV = ROOT / "eval/data/decimal_problems.csv"
 
 
 def _load_fraction_problems() -> list[dict]:
@@ -341,19 +338,8 @@ def _user_prompt(problem: str, domain: str) -> str:
 
 
 def _score_fraction(text: str, correct: str) -> tuple[str | None, bool]:
-    try:
-        parsed = ev.parse_answer(text or "")  # returns Fraction or None
-    except (ZeroDivisionError, ValueError):
-        return None, False
-    if parsed is None:
-        return None, False
-    # canonical "num/den" string for parsed_answer column
-    parsed_str = f"{parsed.numerator}/{parsed.denominator}"
-    try:
-        correct_frac = Fraction(correct)
-    except (ZeroDivisionError, ValueError):
-        return parsed_str, False
-    return parsed_str, (parsed == correct_frac)
+    parsed = fab.parse_answer(text or "", "fraction")
+    return parsed, fab.answers_match(parsed, correct, "fraction")
 
 
 def _score_decimal(text: str, correct: str) -> tuple[str | None, bool]:
@@ -388,7 +374,7 @@ def _run_sample(client, model_id: str, system_prompt: str, problem: str,
 def run_one_cell(model_slug: str, persona_slug: str, domain: str,
                  n_samples: int, max_workers: int, out_dir: Path,
                  temperature: float, max_tokens: int,
-                 force: bool) -> Path:
+                 force: bool, repair_errors: bool) -> Path:
     model_id, pretty = MODEL_SPECS[model_slug]
     sys_prompts = PERSONAS[persona_slug]
     system_prompt = sys_prompts[0] if domain == "fraction" else sys_prompts[1]
@@ -397,7 +383,36 @@ def run_one_cell(model_slug: str, persona_slug: str, domain: str,
     cell_dir = out_dir / domain
     cell_dir.mkdir(parents=True, exist_ok=True)
     out_path = cell_dir / f"{model_slug}_{persona_slug}.csv"
-    if out_path.exists() and not force:
+    compressed_path = out_path.with_suffix(out_path.suffix + ".gz")
+    if compressed_path.exists() and not out_path.exists():
+        out_path = compressed_path
+
+    existing = None
+    repair_keys: set[tuple[str, int]] = set()
+    if repair_errors:
+        if not out_path.exists():
+            raise FileNotFoundError(f"Cannot repair missing output: {out_path}")
+        existing = pd.read_csv(out_path, low_memory=False)
+        error_mask = (
+            existing["model_response"]
+            .fillna("")
+            .astype(str)
+            .str.startswith("[ERROR]")
+        )
+        repair_keys = {
+            (str(row.problem), int(row.sample_idx))
+            for row in existing.loc[
+                error_mask, ["problem", "sample_idx"]
+            ].itertuples(index=False)
+        }
+        if not repair_keys:
+            print(f"  CLEAN {out_path}")
+            return out_path
+        print(
+            f"  repairing {len(repair_keys)} failed requests in {out_path}",
+            flush=True,
+        )
+    elif out_path.exists() and not force:
         print(f"  SKIP existing {out_path}")
         return out_path
 
@@ -408,6 +423,8 @@ def run_one_cell(model_slug: str, persona_slug: str, domain: str,
     with ThreadPoolExecutor(max_workers=max_workers) as pool:
         for prob_meta in problems:
             for s in range(n_samples):
+                if repair_errors and (str(prob_meta["problem"]), s) not in repair_keys:
+                    continue
                 futures.append(pool.submit(
                     _run_sample, client, model_id, system_prompt,
                     prob_meta["problem"], domain, s, prob_meta["correct_answer"],
@@ -445,11 +462,31 @@ def run_one_cell(model_slug: str, persona_slug: str, domain: str,
         })
         rows.append(row)
 
-    df = pd.DataFrame(rows).sort_values(["problem", "sample_idx"]).reset_index(drop=True)
-    df["sample_idx"] = df.groupby("problem").cumcount()
-    df.to_csv(out_path, index=False)
+    repaired = pd.DataFrame(rows)
+    if existing is not None:
+        existing_keys = pd.Series(
+            list(zip(existing["problem"].astype(str), existing["sample_idx"].astype(int))),
+            index=existing.index,
+        )
+        existing = existing.loc[~existing_keys.isin(repair_keys)]
+        df = pd.concat([existing, repaired[existing.columns]], ignore_index=True)
+    else:
+        df = repaired
+    df = df.sort_values(["problem", "sample_idx"]).reset_index(drop=True)
+
+    tmp_path = out_path.with_name(out_path.name + ".tmp")
+    compression = "gzip" if out_path.suffix == ".gz" else None
+    df.to_csv(tmp_path, index=False, compression=compression)
+    tmp_path.replace(out_path)
     mean_acc = df["is_correct"].mean()
-    print(f"  wrote {out_path}  rows={len(df)}  mean_acc={mean_acc:.3f}", flush=True)
+    remaining_errors = int(
+        df["model_response"].fillna("").astype(str).str.startswith("[ERROR]").sum()
+    )
+    print(
+        f"  wrote {out_path}  rows={len(df)}  errors={remaining_errors}"
+        f"  mean_acc={mean_acc:.3f}",
+        flush=True,
+    )
     return out_path
 
 
@@ -465,6 +502,11 @@ def main():
     ap.add_argument("--max_workers", type=int, default=20)
     ap.add_argument("--out_dir", default="/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/persona_sweep_baselines")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument(
+        "--repair_errors",
+        action="store_true",
+        help="Retry only [ERROR] rows in existing output files.",
+    )
     ap.add_argument("--smoke", action="store_true",
                     help="1 sample per problem, single persona, single model — debug only.")
     args = ap.parse_args()
@@ -491,6 +533,7 @@ def main():
             temperature=args.temperature,
             max_tokens=args.max_tokens,
             force=args.force,
+            repair_errors=args.repair_errors,
         )
 
 
