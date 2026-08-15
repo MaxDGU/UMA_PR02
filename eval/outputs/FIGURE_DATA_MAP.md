@@ -91,7 +91,9 @@ Base-4B checkpoints (both domains, incl. per-epoch fine-tuning trajectories and
 the decimal CV fold models) are on HuggingFace:
 **huggingface.co/MaxDGUPTA/uma-cognitive-llm-checkpoints** (private — ask Max
 for access; its README has the layout and a PeftModel loading snippet).
-Instruct-2507 and seed-variance checkpoints remain only on della.
+The Instruct-2507 canonical checkpoints (distill + distill+humanFT, both
+domains) are there too under `*/instruct_*`; only seed-variance checkpoints
+remain della-only.
 
 della originals under `/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/`:
 - Base 4B distill (fractions): `qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/best`
