@@ -114,11 +114,11 @@ def load_fraction_profiles(repo_root: Path) -> dict[str, pd.Series]:
     return {
         "Human": human_profile,
         "UMA": uma_profile,
-        # Best whole-profile MAE in the extended 15-persona frontier sweep:
-        # GPT-5.5 low prompted as a student who has "barely started" fractions.
+        # Best whole-profile MAE in the unified NAEP persona sweep:
+        # GPT-5.5 low prompted as a Basic-level sixth grader.
         "Best persona prompt": fraction_profile(
             outputs
-            / "persona_sweep/fraction/gpt_5_5_low_wide_barely_started.csv.gz",
+            / "persona_sweep/fraction/gpt_5_5_low_naep_basic_6th.csv.gz",
             "is_correct",
         ),
         "Centaur-70B": fraction_profile(

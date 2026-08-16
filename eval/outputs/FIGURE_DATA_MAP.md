@@ -28,7 +28,22 @@ canonical checkpoint per config (best-by-val-NLL; epoch_3 for inst_frac). Seed 4
 the canonical Table-1 rollouts above. `seed_cell_acc.csv` = per-cell accuracy for all
 5 seeds with the fixed parsers; `seed_humanft.sbatch` + `eval_seed_ckpt.py` reproduce.
 
-## Table 3 (15-persona sweep, frontier + off-shelf Qwen)
+## Persona tables — NAEP revision (Tables 8/9 of the current draft)
+The persona set was unified to 9 NAEP achievement-level x grade prompts
+(Basic/Proficient/Advanced x 6th/7th/8th) plus the domain error-procedure
+prompts. New rollouts, same protocols as below:
+- Frontier: `persona_sweep/{fraction,decimal}/<model>_naep_*.csv.gz`
+  (100 samples/problem).
+- Off-shelf Qwen + fine-tuned checkpoints: `persona_offshelf_naep/`
+  (60 samples/problem; `decimal_persona_rollouts_*` files include the kept
+  Table-9 control personas re-run under this runner for protocol uniformity).
+- 12-persona merged files behind the persona-vs-UMA figure:
+  `persona_offshelf_naep12/`.
+Decimal val/test participant split: reconstructed per plan_and_logs/
+rerun_decimals.md (sklearn stratified, seed 42) and verified to reproduce the
+published summary MAEs exactly.
+
+## Table 3 (15-persona sweep, frontier + off-shelf Qwen) — superseded by the NAEP revision above
 - Frontier (Claude Sonnet 4.6, Gemini 3 Flash, GPT-5.5-low), 100 samples/problem:
   `persona_sweep/fraction/*_wide_*.csv.gz` (15 personas) and the original 10-persona
   files (`*_paper_baseline` … `*_cohort_anchored`); decimals under
