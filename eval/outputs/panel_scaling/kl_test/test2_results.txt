@@ -1,0 +1,14 @@
+               MAE    acc  UD_addsub  incoherent_UD  words  val_NLL  n
+arm kl_beta                                                           
+A   0.0       6.69  47.61      59.42          36.08   19.5     1.37  2
+    0.1       6.44  48.51      61.43          27.00   24.0     1.30  2
+    1.0       7.16  55.79      69.48           6.20   46.0     1.55  2
+B   0.0      16.85  34.72      24.22          64.26   20.0     1.36  2
+    0.1      14.94  36.62      26.32          52.44   25.5     1.31  2
+    1.0       5.63  49.26      51.32          14.31   43.0     1.59  2
+
+missing: []
+B-A MAE gap at kl_beta=0.0: 10.2
+B-A MAE gap at kl_beta=0.1: 8.5
+B-A MAE gap at kl_beta=1.0: -1.5
+children: acc 51.6, UD add/sub 54.8

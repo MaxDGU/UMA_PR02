@@ -1,0 +1,12 @@
+=== TRAINING DATA: strategy UMA used, unequal-denominator + and - problems
+A paper25  rows 226,700  acc 48.8%  common-denominator strategy 74.1%  strategy entropy 1.78 bits  learner-level top-strategy share 58.8%
+           top strategies: {'CDON_OG': 44.2, 'CDON_AS': 29.9, 'ONOD_OG': 17.7, 'ICDM_OG': 8.2}
+B all996   rows 226,009  acc 39.8%  common-denominator strategy 67.3%  strategy entropy 1.86 bits  learner-level top-strategy share 54.3%
+           top strategies: {'CDON_OG': 38.6, 'CDON_AS': 28.7, 'ONOD_OG': 23.0, 'ICDM_OG': 9.7}
+
+=== MODEL OUTPUTS: procedure implied by the answer, unequal-denominator + and - (256 samples x 4 problems)
+arm    stage    n  answer entropy (bits/problem)  correct  op on num & den separately  combine nums, keep a den  combine nums, multiply dens  other wrong  unparseable
+  A  distill 1024                           1.43     70.1                        12.4                       0.6                          9.5          3.0          4.4
+  B  distill 1024                           1.57     56.8                        29.7                       0.4                          5.2          5.1          2.8
+  A human FT 1024                           3.15     55.8                         4.2                       1.4                          2.2         25.0         11.4
+  B human FT 1024                           4.85     23.9                         9.8                       2.5                          2.1         47.7         14.1

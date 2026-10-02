@@ -1,0 +1,3 @@
+checkpoint,nll_human_train,nll_human_val,entropy_on_human_val,nll_corpus_pub25,nll_corpus_all996,nll_corpus_v8p25
+A paper25 distill,3.307,3.066,0.395,0.103,1.522,1.541
+B all996 distill,3.451,3.277,0.461,0.092,1.766,1.846
