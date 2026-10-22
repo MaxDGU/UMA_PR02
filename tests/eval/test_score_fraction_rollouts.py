@@ -25,7 +25,16 @@ def test_problem_cell_uses_denominators() -> None:
     assert problem_cell("2/3:3/5") == "Div UD"
 
 
-def test_paper_rollouts_reproduce_aaai_scores() -> None:
+def test_stored_answers_reproduce_paper_table() -> None:
+    with no_string_inference():
+        result = score_rollouts(
+            pd.read_csv(PAPER_ROLLOUTS), pd.read_csv(DEFAULT_HUMAN), load_aaai_parser(), answers="stored"
+        )
+    assert result["mae_pp"] == pytest.approx(5.238, abs=1e-3)
+    assert result["categorical_nll"] == pytest.approx(2.291, abs=1e-3)
+
+
+def test_reparsed_paper_rollouts_differ_only_by_truncation() -> None:
     with no_string_inference():
         result = score_rollouts(pd.read_csv(PAPER_ROLLOUTS), pd.read_csv(DEFAULT_HUMAN), load_aaai_parser())
     assert result["human_answers_scored"] == 1867

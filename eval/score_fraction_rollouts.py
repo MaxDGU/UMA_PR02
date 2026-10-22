@@ -13,16 +13,24 @@ This NLL is NOT the `val_nll` written by `human_ft/finetune_humandata.py`. That
 one is the teacher-forced per-token NLL of the 96 held-out Siegler (2011)
 think-aloud responses; it measures text fit and is on a different scale.
 
-Answers are re-parsed from `model_response` with the AAAI parser
-(`extract_answer` in `results/finetuning/trajectory_at_T10/eval_qwen3_chained_sp2013.py`),
-ignoring any stored `parsed_answer` / `is_correct` columns, so files produced by
-different generation scripts are scored identically. On the archived paper
-rollouts (`eval/outputs/fraction_4b/qwen3_4b_distill_humanft_v1.csv`) this gives
-MAE 5.29 and NLL 2.296; the paper's 5.24 / 2.291 used the labels stored by the
-original pre-fix parser.
+Answers are parsed with the AAAI parser (`extract_answer` in
+`results/finetuning/trajectory_at_T10/eval_qwen3_chained_sp2013.py`), the parser
+behind every fraction number in the paper.
+
+`--answers reparse` (default) re-parses `model_response` and ignores any stored
+`parsed_answer` / `is_correct` columns, so files from different generation
+scripts are scored identically. Use it for all new rollouts.
+
+`--answers stored` scores the stored `parsed_answer` column instead. Use it only
+for the archived paper rollouts in `eval/outputs/fraction_4b/*_v1.csv`: those
+answers were parsed from the full generations, but `model_response` was saved
+truncated to 500 characters, so re-parsing differs on a few truncated rows.
+Stored mode reproduces the paper exactly (ours: MAE 5.24, NLL 2.291; reparse
+gives 5.29 / 2.296).
 
 Example:
     python eval/score_fraction_rollouts.py path/to/rollouts/*.csv --out-csv scores.csv
+    python eval/score_fraction_rollouts.py eval/outputs/fraction_4b/*_v1.csv --answers stored
 """
 
 from __future__ import annotations
@@ -94,9 +102,16 @@ def score_rollouts(
     *,
     problem_column: str = "problem",
     response_column: str = "model_response",
+    answers: str = "reparse",
 ) -> dict:
     model = pd.DataFrame({"problem": rollouts[problem_column].map(canonical_problem)})
-    predictions = rollouts[response_column].fillna("").astype(str).map(parser.extract_answer)
+    if answers == "reparse":
+        predictions = rollouts[response_column].fillna("").astype(str).map(parser.extract_answer)
+    elif answers == "stored":
+        stored = rollouts["parsed_answer"].map(normalize_fraction_model_answer)
+        predictions = stored.map(lambda answer: None if answer is None else Fraction(answer))
+    else:
+        raise ValueError(f"Unknown answers mode: {answers!r}")
     truth = model["problem"].map(parser.gt_answer)
     model["correct"] = [pred is not None and pred == gt for pred, gt in zip(predictions, truth)]
     model["answer"] = [None if pred is None else str(pred) for pred in predictions]
@@ -135,6 +150,11 @@ def main() -> None:
     parser.add_argument("--human-csv", type=Path, default=DEFAULT_HUMAN)
     parser.add_argument("--problem-column", default="problem")
     parser.add_argument("--response-column", default="model_response")
+    parser.add_argument(
+        "--answers", choices=["reparse", "stored"], default="reparse",
+        help="reparse model_response with the AAAI parser (default), or use stored parsed_answer "
+             "(archived paper rollouts only; see module docstring).",
+    )
     parser.add_argument("--out-csv", type=Path, default=None)
     args = parser.parse_args()
 
@@ -147,6 +167,7 @@ def main() -> None:
             result = score_rollouts(
                 frame, human, aaai,
                 problem_column=args.problem_column, response_column=args.response_column,
+                answers=args.answers,
             )
         rows.append({"file": str(path), **result})
         if result["samples_per_problem_min"] != 256 or result["samples_per_problem_max"] != 256:
