@@ -1,0 +1,4 @@
+C1000_tag50 /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_C1000drop_v10_e1_v10regen_lora 42
+C1000_tag50 /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_C1000drop_v10_e1_v10regen_lora 43
+Acontrol_tag50 /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_Adrop_v10_e1_v10regen_lora 42
+Acontrol_tag50 /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_Adrop_v10_e1_v10regen_lora 43

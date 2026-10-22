@@ -244,6 +244,14 @@ def parse_args() -> argparse.Namespace:
         default="none",
         help="Optional dtype passed to from_pretrained; default preserves previous loading behavior.",
     )
+    parser.add_argument(
+        "--attn_implementation",
+        choices=["eager", "sdpa", "flash_attention_2"],
+        default="eager",
+        help="Attention backend passed to from_pretrained. 'sdpa' uses PyTorch's "
+             "fused scaled-dot-product-attention (routes to a flash kernel for "
+             "bf16+causal); 'flash_attention_2' requires the flash-attn package.",
+    )
     parser.add_argument("--preview_samples", type=int, default=3, help="Generate N preview samples after training.")
     parser.add_argument("--preview_max_new_tokens", type=int, default=96)
     parser.add_argument("--sp2013_csv", type=str, default=DEFAULT_SP2013_CSV)
@@ -974,8 +982,9 @@ ANSWER_TOKEN_RE = re.compile(
     r"-?(?:\d+\s+\d+/\d+|\d+(?:\.\d+)?/-?(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)"
 )
 PROB_RE = re.compile(rf"\s*({NUMERIC_TOKEN_RE})\s*([+\-*/:])\s*({NUMERIC_TOKEN_RE})\s*")
-PROMPT_PROB_RE = re.compile(r"Solve this (?:fraction|decimal) problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
-VALID_PROMPT_PROBLEM_KINDS = ("fraction", "decimal")
+PROMPT_PROB_RE = re.compile(r"Solve this (?:fraction|decimal|whole-number arithmetic) problem:\s*(.*?)\s*=\?\s*$", flags=re.IGNORECASE)
+VALID_PROMPT_PROBLEM_KINDS = ("fraction", "decimal", "whole_number")
+PROMPT_PROBLEM_KIND_SURFACE = {"fraction": "fraction", "decimal": "decimal", "whole_number": "whole-number arithmetic"}
 
 
 def canonicalize_division_op(op: str) -> str:
@@ -1054,7 +1063,7 @@ def detect_prompt_style_counts(prompts: pd.Series) -> Dict[str, int]:
     text = prompts.astype(str).str.strip()
     has_student = text.str.contains(r"<student>", case=False, regex=True, na=False)
     has_solve = text.str.contains(
-        r"Solve this (?:fraction|decimal) problem:\s*.+\s*=\?\s*$",
+        r"Solve this (?:fraction|decimal|whole-number arithmetic) problem:\s*.+\s*=\?\s*$",
         case=False,
         regex=True,
         na=False,
@@ -1277,7 +1286,8 @@ def build_plain_prompt(
         prob,
         surface_style=problem_surface_style,
     )
-    return f"Solve this {prompt_problem_kind} problem: {prompt_prob}=?"
+    surface = PROMPT_PROBLEM_KIND_SURFACE.get(prompt_problem_kind, prompt_problem_kind)
+    return f"Solve this {surface} problem: {prompt_prob}=?"
 
 
 def build_masked_student_prompt(
@@ -1326,10 +1336,11 @@ def build_student_prompt(
         prompt_prob = render_problem_for_prompt(prob)
     else:
         raise ValueError(f"Unknown problem surface style: {problem_surface_style}")
+    surface = PROMPT_PROBLEM_KIND_SURFACE.get(prompt_problem_kind, prompt_problem_kind)
     return (
         f"<student> g {format_numeric_token(g)} d {format_numeric_token(d)} "
         f"rt {format_numeric_token(rt_mu)} ice {format_numeric_token(ice)} </student>\n"
-        f"Solve this {prompt_problem_kind} problem: {prompt_prob}=?"
+        f"Solve this {surface} problem: {prompt_prob}=?"
     )
 
 
@@ -2787,6 +2798,8 @@ def main() -> None:
         model_load_kwargs: Dict[str, Any] = {}
         if model_load_dtype is not None:
             model_load_kwargs["torch_dtype"] = model_load_dtype
+        if getattr(args, "attn_implementation", "eager") != "eager":
+            model_load_kwargs["attn_implementation"] = args.attn_implementation
 
         if is_lora_resume:
             try:
@@ -2843,6 +2856,8 @@ def main() -> None:
         model.config.use_cache = False
         if args.gradient_checkpointing:
             model.gradient_checkpointing_enable()
+            if hasattr(model, "enable_input_require_grads"):
+                model.enable_input_require_grads()
         model.to(device)
 
         if distributed:

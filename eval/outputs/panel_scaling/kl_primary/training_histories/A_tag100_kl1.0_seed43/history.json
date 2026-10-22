@@ -1,0 +1,30 @@
+[
+  {
+    "epoch": 0,
+    "phase": "loaded_model",
+    "updates_done": 0,
+    "train_nll": 3.3050141217766336,
+    "val_nll": 3.062370438815495,
+    "val_ppl": 21.378172798297218,
+    "train_kl": 0.0,
+    "val_kl": 0.0,
+    "kl_beta": 1.0,
+    "sp2013_acc": NaN,
+    "sp2013_by_op": {},
+    "elapsed_sec": 19.354936599731445
+  },
+  {
+    "epoch": 1,
+    "updates_done": 18,
+    "train_nll": 1.8120355174008067,
+    "val_nll": 1.5478438771636793,
+    "val_ppl": 4.701322617766761,
+    "train_batch_objective": 2.3684728658861585,
+    "train_batch_sft_nll": 2.061060807771153,
+    "train_batch_kl": 0.30741205989316867,
+    "kl_beta": 1.0,
+    "sp2013_acc": NaN,
+    "sp2013_by_op": {},
+    "elapsed_sec": 73.6174807548523
+  }
+]

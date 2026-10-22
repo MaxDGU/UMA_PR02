@@ -1,0 +1,37 @@
+[10-17 19:55] sentinel start
+[10-17 19:55] C1000drop distill 15752165: RUNNING
+[10-17 19:55] Adrop distill 15752166: RUNNING
+[10-17 19:55] C progress: update 2980/145688 | train_loss 0.0832
+[10-17 20:20] Adrop distill 15752166: COMPLETED
+[10-17 20:30] Adrop post task 1 completed
+[10-17 20:35] Adrop post task 0 completed
+[10-17 20:35] Adrop post task 2 completed
+[10-17 20:35] Adrop post task 3 completed
+[10-17 20:35] Adrop post task 4 completed
+[10-17 20:40] Adrop post task 5 completed
+[10-17 20:40] Adrop post task 6 completed
+[10-17 21:56] C progress: update 18580/145688 | train_loss 0.1047
+[10-17 23:52] C EVAL [eval full e01_u29138] train=0.0833 val=0.0408 test=0.0408 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.5484 id_val_true=0.5938
+[10-17 23:57] C progress: update 29780/145688 | train_loss 0.0824
+[10-18 00:02] CANARY:   C1000drop_ckpt training format (student tag)    loss 0.0360   C1000drop_ckpt plain, spaced problem            loss 0.0404   C1000drop_ckpt greedy, tagged prompt: 'I took 5 times 4 and got 20. I took 3 times 4 and got 12. I took 4 times 5 and got 20. I took 1 time' 
+[10-18 01:58] C progress: update 45360/145688 | train_loss 0.0674
+[10-18 03:59] C progress: update 58260/145688 | train_loss 0.0601
+[10-18 04:14] C EVAL [eval full e01_u58276] train=0.0601 val=0.0331 test=0.0331 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.6290 id_val_true=0.6094
+[10-18 06:00] C progress: update 72080/145688 | train_loss 0.0549
+[10-18 08:01] C progress: update 87400/145688 | train_loss 0.0508
+[10-18 08:36] C EVAL [eval full e01_u87413] train=0.0509 val=0.0312 test=0.0312 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.6452 id_val_true=0.6406
+[10-18 10:02] C progress: update 98720/145688 | train_loss 0.0486
+[10-18 12:03] C progress: update 114200/145688 | train_loss 0.0462
+[10-18 12:58] C EVAL [eval full e01_u116551] train=0.0459 val=0.0302 test=0.0302 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.6774 id_val_true=0.6094
+[10-18 14:04] C progress: update 125320/145688 | train_loss 0.0448
+[10-18 16:05] C progress: update 140780/145688 | train_loss 0.0431
+[10-18 17:20] C1000drop distill 15752165: COMPLETED
+[10-18 17:20] C EVAL [eval full e01_u145688] train=0.0427 val=0.0298 test=0.0298 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.6452 id_val_true=0.6250
+[10-18 17:40] C1000drop post task 0 completed
+[10-18 17:40] C1000drop post task 1 completed
+[10-18 17:40] C1000drop post task 2 completed
+[10-18 17:45] C1000drop post task 3 completed
+[10-18 17:45] C1000drop post task 4 completed
+[10-18 17:50] C1000drop post task 5 completed
+[10-18 17:50] C1000drop post task 6 completed
+[10-18 17:50] ALL STAGES FINISHED

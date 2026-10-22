@@ -1,0 +1,6 @@
+arm,stage,MAE,acc,child_NLL,n
+A control: 25 learners,distill,8.3,57.3,3.141,1
+A control: 25 learners,human-FT,12.2 ± 2.2,39.4,1.367,4
+A control: 25 learners,KL human-FT,6.3 ± 0.1,52.5,1.544,2
+"C: 1000 learners, all problems",distill,41.0,14.8,12.130,1
+"C: 1000 learners, all problems",human-FT,37.9 ± 2.9,13.6,5.730,3

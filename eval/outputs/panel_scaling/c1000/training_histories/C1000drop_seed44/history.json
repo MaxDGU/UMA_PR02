@@ -1,0 +1,16 @@
+[
+  {
+    "epoch": 1,
+    "updates_done": 18,
+    "train_nll": 8.07844290137291,
+    "val_nll": 5.776824136575063,
+    "val_ppl": 322.73260645399307,
+    "train_batch_objective": 8.07844290137291,
+    "train_batch_sft_nll": 8.07844290137291,
+    "train_batch_kl": 0.0,
+    "kl_beta": 0.0,
+    "sp2013_acc": NaN,
+    "sp2013_by_op": {},
+    "elapsed_sec": 39.21369695663452
+  }
+]

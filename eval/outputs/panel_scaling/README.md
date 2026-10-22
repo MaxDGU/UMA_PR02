@@ -1,55 +1,64 @@
-# Panel scaling: distilling on all 996 UMA learners vs the 25-learner panel (fractions)
+# Panel scaling: 25 vs 1,000 UMA learners (fractions)
 
-Controlled comparison of the fraction pipeline when the distillation corpus is drawn from the paper's 25-learner
-panel versus the full population of 996 saved UMA learners (1,000-profile grid; subjids 92, 93, 97, 98 never
-finished training). Every stage follows the paper recipe; only the learner set changes. Study design and run log:
-`DESIGN.md`. All rollouts: 16 SP2013 problems x 256 samples, T=1.0, top_p=0.95, scored with the
-mixed-number-aware parser in `scripts/rescore_frac_dir.py`. MAE = mean absolute error vs. children over the 8
-operation x denominator cells.
+How the fraction distill -> human-FT pipeline changes when the UMA learner panel grows from the paper's 25 learners to the
+full 1,000-profile population. Full design, run log, and corrections: `DESIGN.md`.
+
+**Evaluation.** SP2013: 16 problems x 256 samples, T=1.0, top_p=0.95, mixed-number-aware parser (`scripts/rescore_frac_dir.py`).
+MAE = mean absolute error vs. children's accuracy (51.6%) across 8 operation x denominator cells. NLL = per-token NLL on 96
+held-out Siegler 2011 child responses. **Prompt format:** training writes problems spaced ("3/5 + 1/4"); long-trained models are
+sensitive to the unspaced form, so all arm-C / control / KL-primary / long-FT numbers use `c1000/eval_spaced.py`. Short-trained
+arms are format-insensitive (B1000 seed 42: 18.7 unspaced vs 19.9 spaced).
+
+**Human FT** = 288 Siegler 2011 responses, lr 1e-4, full FT, 16 examples/update (18 updates/epoch). **KL human FT** adds
+KL(policy || distill ckpt) with beta 1.0 and is the primary metric.
 
 ## Arms
-| arm | learners | corpus rows | status |
+| arm | learners x problems/learner | train rows / updates | learner tag | folder |
+|---|---|---|---|---|
+| A | 25 x 20,720 (paper panel) | 466K / 3,643 | 100% | `results/arm_v10_p25regen_*` |
+| A control | 25 x 20,720 | 466K / 3,643 | 50% | `c1000/` (Adrop) |
+| B996 / B1000 | 996 or 1,000 x 520 (matched total compute) | 466K / 3,642-3,657 | 100% | `results/`, `b1000/` |
+| C | 1,000 x 20,720 (matched problems per learner) | 18.65M / 145,688 | 50% | `c1000/` |
+| D | 25 random learners x 20,720 | 466K / 3,643 | 100% | `results/D_*` |
+The 4 profiles missing from the saved population (92, 93, 97, 98) were re-simulated with the original UMA code (`fill4/`, c=4).
+"Learner tag" = fraction of distillation prompts prefixed with `<student> g .. d .. rt .. ice .. </student>`. With 100% tags,
+long training makes the model unusable on untagged prompts (the first full-data run), so arm C uses 50%.
+
+## Primary result: KL human FT, 4 seeds (`kl_primary/`)
+| arm | MAE | acc | NLL |
 |---|---|---|---|
-| A | paper's 25 (g in .02-.10 even, all d, rt_mu 5, ice 50) | 518K | done |
-| B | all 996, 520 problems per learner | 518K | done |
-| D | 25 drawn at random from the 996 (seeds 42, 43) | 518K | done |
-| balanced 98 | 10 per g value | 518K sub / 2.03M full | done |
-| C | all 996, all problems | 20.6M | **failed: saved checkpoint is corrupted (see diag_C/); not a result** |
+| A (25, tag 100%) | 8.1 +- 0.9 | 55.2% | 1.56 |
+| A control (25, tag 50%) | **6.1 +- 0.5** | 53.5% | **1.55** |
+| B1000 (1,000 x 520) | 7.4 +- 1.1 | 46.6% | 1.63 |
+| C (1,000 x 20,720) | 7.3 +- 0.3 | 51.2% | 6.56 |
+Welch: A vs B1000 p=0.34; A control vs C p=0.011; tag 50% vs 100% (A) p=0.012.
 
-Arms A and B are matched on rows (466,200 vs 466,128 trained), updates (3,643 vs 3,642), effective batch 128,
-lr 5e-4 cosine, 1 epoch; human-FT is 288 Siegler (2011) responses, 1 epoch (18 updates), lr 1e-4. Neither stage
-uses early stopping: each evaluates once at the end and keeps the final checkpoint.
-
-## Main result (arm A vs arm B, human-FT mean +- SD over seeds 42-45)
-| | A: paper's 25 | B: all 996 |
+## Longer KL human FT for the matched-problems comparison (`longhft/`, `longhft30/`; 2 seeds)
+| | 25 learners MAE / NLL | 1,000 learners MAE / NLL |
 |---|---|---|
-| distill MAE / accuracy | 10.3 / 60.0% | 9.5 / 53.9% |
-| distill val NLL, held-out children | 3.07 | 3.28 |
-| distill + human-FT MAE | 7.6 +- 2.1 | 18.7 +- 3.0 (Welch p = 0.001) |
-| distill + human-FT accuracy | 47.4 +- 1.5% | 32.9 +- 2.9% |
-| distill + human-FT val NLL | 1.371 +- 0.013 | 1.364 +- 0.013 (p = 0.47) |
-Children: 51.6% accuracy. Per-seed: `results/A_vs_B_per_seed.csv`; per-cell: `results/A_vs_B_per_cell.csv`.
-The arms are nearly identical after distillation; the gap opens during human-FT and is concentrated in
-unequal-denominator addition and subtraction (B: 17% and 25% vs children 51% and 58%).
+| 1 epoch (18 updates) | 6.1 / 1.55 | 7.3 / 6.56 |
+| 10 epochs, best by child NLL | 4.9 / 1.44 (epochs 3-4) | 6.9 / 4.26 |
+| 30 epochs, epoch 20 | - (overfits after epoch 3) | 4.8 / 3.86 |
+| 30 epochs, epoch 30 | - | 4.8 / 3.84 |
+With ~7x more human-FT updates the 1,000-learner model matches the 25-learner error profile, but its NLL plateaus ~2.6x higher:
+the KL anchor, not training length, limits how far it moves toward children's writing.
 
-## Why (kl_test/)
-* Strategy consistency (`kl_test/test1_strategy_consistency.txt`): B's training data uses the common-denominator
-  strategy slightly less often (67% vs 74%). After human-FT, 48% of B's unequal-denominator answers match no
-  recognizable procedure (A: 25%).
-* Human-FT anchored to the distilled model with a KL penalty (`kl_test/test2_results.txt`, seeds 42-43):
-  | arm | kl_beta | MAE | unequal-denom +/- acc | response words | val NLL |
-  |---|---|---|---|---|---|
-  | A | 0 | 6.7 | 59% | 20 | 1.37 |
-  | A | 1.0 | 7.2 | 69% | 46 | 1.55 |
-  | B | 0 | 16.9 | 24% | 20 | 1.36 |
-  | B | 1.0 | 5.6 | 51% | 43 | 1.59 |
-  Anchoring removes the A-B gap at a cost in NLL. Interpretation: human-FT on short child responses erases the
-  step-by-step reasoning that B's common-denominator procedure depends on.
+## Standard human FT (secondary)
+A 7.6 +- 2.1, B996 18.7 +- 3.0, B1000 20.0 +- 2.0, A control 11.4 +- 2.3, C 13.0 +- 3.3 (all MAE, 4 seeds); NLL ~1.37 for every
+arm except C (5.76). Mechanism (`kl_test/`): standard human FT erases the multi-step procedures the wider panels learned less firmly.
 
-## Files
-* `results/` rollout CSVs per arm and stage (`*_distill.csv`, `*_dh*.csv`), `summary.csv`, A-vs-B tables.
-  Arm A = `arm_v10_p25regen_*`; `control_published_dh.csv` = the paper's checkpoint through this harness.
-* `fig/` figures and plotting scripts (`armB_vs_A_mae_nll`, `armB_vs_A_valloss_acc`), `distill_nll.csv`.
-* `kl_test/`, `diag_C/` tests above. `scripts/` generation, translation, arm-building, distillation, human-FT and
-  scoring scripts (paths point at della). `learner_lists/` subjid lists per arm.
-* Not included (size): per-learner raw traces (~265 GB), translated corpora (1.3 GB full, 31-51 MB per arm), checkpoints.
+## Corrections to the earlier version of this folder
+* The first full-data arm C was reported as a corrupted checkpoint. It was not: it works on tagged prompts (loss 0.021) and
+  fails only on untagged ones because it was trained with the tag on 100% of prompts (`diag_C2/diag3.py`).
+* `results/transformer_replication/train_transformer_hf.py` and `human_ft/finetune_humandata.py` now include the versions used for
+  every run here: `enable_input_require_grads()` for gradient checkpointing with LoRA, an `--attn_implementation` option
+  (default `eager`, unchanged), and whole-number prompt wording (fractions unchanged).
+
+## Folders
+`scripts/` generation, translation, arm building, distillation, human FT, scoring. `c1000/` full-data arm and control
+(launcher with 50% tags, follow-up array, sentinel, canary, spaced eval). `kl_primary/` 4-seed KL runs. `longhft/`, `longhft30/`
+10- and 30-epoch human FT (`--epochs N --save_epoch_list ...`). `b1000/`, `fill4/` 1,000-learner arm at matched compute and the
+4 regenerated learners. `valcurve/` distillation validation curves. `diag_C/`, `diag_C2/` arm C diagnostics. `fig/`,
+`fig_matched/` figures and plotting scripts. `*/training_histories/` per-run train_args, summaries, and per-epoch val NLL.
+Not included (size): raw traces, translated corpora, checkpoints (on HF: MaxDGUPTA/uma-cognitive-llm-checkpoints).
+All scripts contain della paths.

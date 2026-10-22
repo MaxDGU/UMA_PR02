@@ -1,0 +1,11 @@
+example training prompt: '<student> g 0.03 d 0.7 rt 5 ice 50 </student>\nSolve this fraction problem: 9/4 - 9/8=?'
+  B1000    training format (student tag)    loss 0.0239
+  B1000    plain, spaced problem            loss 0.0392
+  B1000    greedy, tagged prompt: 'I took 5 times 4 and got 20. I took 3 times 4 and got 12. I took 4 times 5 and got 20. I took 1 time'
+  v8p1000  training format (student tag)    loss 7.5805
+  v8p1000  plain, spaced problem            loss 7.6926
+  v8p1000  greedy, tagged prompt: 'I took 3 plus 1 and got 4, and 5 plus 4 and got 9. So I got 4/9.\n### answer: 4/9'
+  C        training format (student tag)    loss 0.0214
+  C        plain, spaced problem            loss 0.9551
+  C        greedy, tagged prompt: 'I took 5 times 4 and got 20. I took 3 times 4 and got 12. I took 4 times 5 and got 20. I took 1 time'
+DONE

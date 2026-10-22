@@ -919,6 +919,11 @@ def main() -> None:
         model.print_trainable_parameters()
     elif args.gradient_checkpointing:
         model.gradient_checkpointing_enable()
+        # Needed for PEFT/LoRA-from-checkpoint: base embeddings are frozen, so
+        # we have to opt the embedding outputs into requires_grad for backward
+        # through the gradient-checkpointed wrappers.
+        if hasattr(model, "enable_input_require_grads"):
+            model.enable_input_require_grads()
     model.to(device)
 
     kl_ref_model = None

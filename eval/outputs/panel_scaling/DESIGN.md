@@ -95,3 +95,72 @@ differ by 8 MAE points); the paper's slice is at the good end of that distributi
   Cost: NLL on child text rises 1.36 -> 1.59 and responses stay UMA-length (~45 words vs children ~30).
 * Conclusion: the full-distribution penalty is created by human-FT erasing step-by-step reasoning that B's common-denominator
   procedure depends on; anchoring human-FT to the distilled model recovers it. MAE/NLL trade-off is the open design question.
+
+## Arm B1000 (2026-10-14; b1000/)
+The 4 learners missing from the saved population (92, 93, 97, 98; g=.01, d=.9) were re-simulated through the full
+grade 1-6 curriculum with the original fork code (c=4, matching their saved neighbors), replayed over the 20,720
+problems (97, 98, 92 via 8-way problem chunks), translated with the paper recipe, and added to arm B's exact rows
+(+520 each -> 520,000 rows). Same recipe, 2 GPUs, 5 val evals (best = final, val 0.0259).
+| | B996 | B1000 |
+|---|---|---|
+| distill MAE / acc / child NLL | 9.5 / 53.9 / 3.28 | 7.7 / 53.2 / 3.40 |
+| D+H MAE (4 seeds) | 18.7 +- 3.0 | 20.0 +- 2.0 (paired p = 0.12) |
+| D+H acc | 32.9 +- 3.0 | 31.6 +- 2.0 |
+| D+H val NLL | 1.364 +- 0.013 | 1.378 +- 0.012 |
+Same per-cell signature (unequal-denominator add 17.0 vs 18.4). Adding the 4 learners does not change the result.
+
+## CORRECTION (2026-10-17): arm C was not corrupted
+diag_C2/diag3: arm C's saved checkpoint gives loss 0.0214 on training-format prompts (matches the trainer's 0.0218) and
+coherent generations, but loss 0.955 and garbage on plain prompts. Cause: distillation used
+TRAIN_PROMPT_STUDENT_MODE=always (every prompt prefixed with "<student> g .. d .. rt .. ice .. </student>"), while SP2013
+evaluation and human-FT use plain prompts. After 145k updates the model became fully dependent on the tag. B1000 (3.7k
+updates): 0.024 tagged vs 0.039 plain. Arm C's 0.2% accuracy and D+H MAE 50 are artifacts of this train/eval prompt
+mismatch, not a checkpoint bug. The mismatch applies to every arm and grows with training length (likely contributes
+to the balanced98-full NLL increase). Fix for the full-data rerun: TRAIN_PROMPT_STUDENT_MODE=dropout (0.5).
+
+## Arm C, full corpus (2026-10-18; c1000/)
+1000 learners x 20,720 problems = 20.72M rows (18.65M train, 145,688 updates, 8 GPUs, 21.9 h), prompt tag on 50% of rows
+(TRAIN_PROMPT_STUDENT_MODE=dropout 0.5), 5 evals (val 0.0408 -> 0.0331 -> 0.0312 -> 0.0302 -> 0.0298, best = final).
+Loss spike at updates ~7,200-8,800 (window loss 0.034 -> 0.73) at peak lr 5e-4; recovered by ~u30k.
+EVALUATION FORMAT: eval_seed_ckpt.py writes problems unspaced ("3/5+1/5"); training uses spaced ("3/5 + 1/5"). Arm C is
+format-sensitive (distill 14.9% / MAE 42.5 unspaced vs 54.1% / 7.9 spaced); short arms are not (A control 7.0 vs 8.0;
+B1000 seed 42 18.7 vs 19.9). All arm C / control numbers below use spaced prompts (c1000/eval_spaced.py), 256 samples.
+| | A control (25, tag 50%) | C (1000, all problems, tag 50%) |
+|---|---|---|
+| distill MAE / acc / child NLL | 10.4 / 57.2% / 3.14 | 7.2 / 53.3% / 12.13 |
+| human-FT MAE (4 seeds) / NLL | 11.4 +- 2.3 / 1.367 | 13.0 +- 3.3 / 5.76 (p = 0.45) |
+| KL human-FT MAE (2 seeds) / NLL | 5.8 +- 0.2 / 1.544 | 7.2 +- 0.5 / 6.55 (p = 0.12) |
+Reading: on error profile (MAE) the full-data arm matches the 25-learner panel at every stage (best distill MAE of any arm),
+but its text fit to children is far worse (NLL 5.8 vs 1.4 after human-FT): 40x distillation makes the model very confident
+in UMA-style text and 18 human-FT updates cannot pull it back.
+
+## PRIMARY METRIC: KL-anchored human-FT, 4 seeds each, spaced evaluation (2026-10-19; kl_primary/)
+| arm | KL human-FT MAE | acc | child NLL |
+|---|---|---|---|
+| A: 25 learners, tag 100% | 8.1 +- 0.9 | 55.2% | 1.555 |
+| A control: 25 learners, tag 50% | 6.1 +- 0.5 | 53.5% | 1.548 |
+| B1000: 1000 x 520, tag 100% | 7.4 +- 1.1 | 46.6% | 1.630 |
+| C: 1000 x 20,720, tag 50% | 7.3 +- 0.3 | 51.2% | 6.556 |
+Welch: tag 50 vs 100 on A p=0.012; A vs B1000 (tag 100) p=0.34; control vs C (tag 50) p=0.011; B1000 vs C p=0.91.
+Reading: under KL human-FT the "1000 learners doubles MAE" result disappears (B1000 7.4 vs A 8.1). Full data (C) gives no
+MAE gain over B1000 and costs ~4x NLL on children's text. Tag 50% beats tag 100% for the 25-learner panel.
+
+## Longer KL human-FT (10 epochs = 180 updates, kl 1.0, lr 1e-4; 2 seeds; spaced eval; longhft/) 2026-10-19
+| | 25 learners MAE / NLL | 1,000 learners (full data) MAE / NLL |
+|---|---|---|
+| 1 epoch (4 seeds, earlier) | 6.1 / 1.55 | 7.3 / 6.56 |
+| epoch 3 of 10 | 4.3 / 1.44 | 8.5 / 4.71 |
+| epoch 10 of 10 | 5.7 / 1.56 | 6.2 / 4.26 |
+| best by held-out child NLL | 4.9 (epochs 3-4) / 1.44 | 6.9 (epoch 9) / 4.26 |
+Longer FT helps both arms; arm C's NLL falls 6.56 -> 4.26 but plateaus ~3x the 25-learner arm. 25 learners still better on both.
+
+## Even longer KL human-FT for arm C (30 epochs = 540 updates, 2 seeds; longhft30/) 2026-10-21
+| checkpoint | MAE | acc | child NLL |
+|---|---|---|---|
+| epoch 10 | 6.8 +- 1.8 | 44.8% | 3.95 |
+| epoch 15 | 5.1 +- 0.0 | 47.0% | 3.90 |
+| epoch 20 | 4.8 +- 0.0 | 47.1% | 3.86 |
+| epoch 30 | 4.8 +- 0.2 | 47.0% | 3.84 |
+| best by child NLL (epochs 18-19) | 5.4 | 46.4% | 3.82 |
+MAE reaches the 25-learner arm's best (~4.3-4.9) by epoch 20 and holds; NLL plateaus ~3.84 (2.6x the 25-learner 1.44).
+The KL anchor (beta 1.0) is now the binding constraint on style, not training length.

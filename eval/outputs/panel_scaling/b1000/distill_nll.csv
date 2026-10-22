@@ -1,0 +1,2 @@
+checkpoint,nll_human_train,nll_human_val,entropy_on_human_val,nll_corpus_pub25,nll_corpus_all996,nll_corpus_v8p25
+B1000 distill,3.649,3.4,0.4,0.093,1.725,1.726

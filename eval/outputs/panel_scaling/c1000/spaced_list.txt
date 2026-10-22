@@ -1,0 +1,15 @@
+C1000drop_distill /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_C1000drop_v10_e1_v10regen_lora/best
+Adrop_distill /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_Adrop_v10_e1_v10regen_lora/best
+C1000drop_seed42_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_seed42/best
+C1000drop_seed43_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_seed43/best
+C1000drop_seed44_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_seed44/best
+C1000drop_seed45_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_seed45/best
+C1000drop_kl1.0_seed42_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_kl1.0_seed42/best
+C1000drop_kl1.0_seed43_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/C1000drop_kl1.0_seed43/best
+Adrop_seed42_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_seed42/best
+Adrop_seed43_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_seed43/best
+Adrop_seed44_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_seed44/best
+Adrop_seed45_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_seed45/best
+Adrop_kl1.0_seed42_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_kl1.0_seed42/best
+Adrop_kl1.0_seed43_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/c1000/hft_runs/Adrop_kl1.0_seed43/best
+B1000_check_seed42_dh /scratch/gpfs/GRIFFITHS/mg7411/llm_student/panel_scaling/b1000/hft_runs/B1000_sub_seed42/best

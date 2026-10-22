@@ -1,0 +1,15 @@
+=== adapter norms (product |B@A|*scale / |W| needs base; here raw |A|,|B|)
+  A        dtype ['torch.float32'] nonfinite 0 |A| mean 3.08 |B| mean 1.47 |B| max 3.82
+  B1000    dtype ['torch.float32'] nonfinite 0 |A| mean 3.42 |B| mean 1.86 |B| max 4.90
+  v8p1000  dtype ['torch.float32'] nonfinite 0 |A| mean 11.01 |B| mean 11.15 |B| max 32.27
+  C        dtype ['torch.float32'] nonfinite 0 |A| mean 11.27 |B| mean 12.94 |B| max 27.37
+=== reload variants: teacher-forced loss on 150 corpus rows (trainer reported val ~0.02-0.03) + greedy sample
+  B1000 base=bfloat16 merged=False         loss 0.0391 | 'I took 5 plus 4 and got 9. I took 3 plus 1 and got 4. I took 3/5 plus 1/4 and got 4/9. I checked for a greates'
+  B1000 base=float32 merged=False          loss 0.0391 | 'I took 5 plus 4 and got 9. I took 3 plus 1 and got 4. I took 3/5 plus 1/4 and got 4/9. I checked for a greates'
+  B1000 base=float32 merged=True           loss 0.0391 | 'I took 5 plus 4 and got 9. I took 3 plus 1 and got 4. I took 3/5 plus 1/4 and got 4/9. I checked for a greates'
+  B1000 base=bfloat16 merged=True          loss 0.0392 | 'I took 5 plus 4 and got 9. I took 3 plus 1 and got 4. I took 3/5 plus 1/4 and got 4/9. I checked for a greates'
+  C base=bfloat16 merged=False             loss 0.9561 | ' 5 4.  5  4. 4. 4. 5 4. I took 4. 4. 4. I took 4 times 5 and got 5. I took 5 times 4 and got 5. I took'
+  C base=float32 merged=False              loss 0.9526 | ' 5 4.  5  4. 4. 4. 5 4. I took 4. 4 and 4. I took 4 times 5 and got 4. I took 5 times 4 and got 4. I took'
+  C base=float32 merged=True               loss 0.9526 | ' 5 4.  5  4. 4. 4. 5 4. I took 4. 4 and 4. I took 4 times 5 and got 4. I took 5 times 4 and got 4. I took'
+  C base=bfloat16 merged=True              loss 0.9551 | ' 5 4.  5 4.  4. 5. 4.  5. 4. 4. 5. 4. I took 4. 5 and  .4. I took 5 plus 4 and  '
+DONE

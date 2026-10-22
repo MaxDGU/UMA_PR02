@@ -1,0 +1,5 @@
+arm,stage,train_rows,updates,synthetic_val_loss,MAE,acc,child_val_NLL
+B996,distill,466128.0,3642.0,0.0244,9.5,53.9,3.277
+B1000,distill,468000.0,3657.0,0.0259,7.7,53.2,3.4
+B996,distill+humanFT (4 seeds),,,,18.7 ± 3.0,32.9 ± 3.0,1.364 ± 0.013
+B1000,distill+humanFT (4 seeds),,,,20.0 ± 2.0,31.6 ± 2.0,1.378 ± 0.012

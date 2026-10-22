@@ -122,7 +122,9 @@ della originals under `/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_
 - Seed-variance runs (seeds 43–46): `/scratch/gpfs/GRIFFITHS/mg7411/.claude/jobs/73c8dadc/tmp/seed_variance/runs/`
 All are LoRA adapters (~150 MB each) with `train_args.json` inside.
 
-## Panel scaling: 25-learner panel vs all 996 learners (fractions)
+## Panel scaling: 25-learner panel vs 1,000 learners (fractions)
 `panel_scaling/` — controlled re-run of the fraction distill + human-FT pipeline on the paper's 25 learners vs all
-996 saved learners at matched corpus size, random 25-learner panels, and KL-anchored human-FT. See
-`panel_scaling/README.md`. Scoring parser: `panel_scaling/scripts/rescore_frac_dir.py`.
+1,000 learners, at matched corpus size (B1000) and at matched problems per learner (full-data arm C, 20.7M rows), plus
+random 25-learner panels, KL-anchored human-FT (primary metric, `kl_primary/`), and 10/30-epoch human-FT (`longhft/`,
+`longhft30/`). Figures: `fig/`, `fig_matched/` (`matched_25v1000_*`, `*_KL`). See `panel_scaling/README.md`.
+Scoring parser: `panel_scaling/scripts/rescore_frac_dir.py`; spaced-prompt eval: `panel_scaling/c1000/eval_spaced.py`.

@@ -1,0 +1,4 @@
+c=4 build=15560115 distill=15579060 distill_rollout=15560117 hft_array=15560118 compare=15560119
+chunk_array=15569080 merge=15569081
+chunk_array2=15574952 merge2=15574953
+distill_ailab2gpu=15579060 (replaces pli 4-GPU 15560116)
