@@ -3,6 +3,10 @@
 How the fraction distill -> human-FT pipeline changes when the UMA learner panel grows from the paper's 25 learners to the
 full 1,000-profile population. Full design, run log, and corrections: `DESIGN.md`.
 
+> **Comparing with the paper:** score rollouts with `eval/score_fraction_rollouts.py` (AAAI answer parser, profile MAE,
+> categorical answer NLL). The "NLL" / "child NLL" columns below are the human-FT `val_nll` (teacher-forced per-token NLL
+> on 96 Siegler 2011 responses), not the paper's answer NLL, and are not comparable with it.
+
 **Evaluation.** SP2013: 16 problems x 256 samples, T=1.0, top_p=0.95, mixed-number-aware parser (`scripts/rescore_frac_dir.py`).
 MAE = mean absolute error vs. children's accuracy (51.6%) across 8 operation x denominator cells. NLL = per-token NLL on 96
 held-out Siegler 2011 child responses. **Prompt format:** training writes problems spaced ("3/5 + 1/4"); long-trained models are
