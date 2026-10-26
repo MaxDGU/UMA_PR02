@@ -11,7 +11,7 @@ corpus size). Launched 2026-09-17; job ids in `chain_jobids.txt`.
 | Trace generation | `results/UMA_replication/run_saved_models_on_problem_set.py`, 20,720 published problems, writes `trace_steps_json` |
 | Translation | one run of `translate_uma_traces_to_nlp.py` over all 996 learners: `trace_or_child`, `--row-filter none`, no student prefix |
 | Distillation | Qwen3-4B-Base, LoRA r16, 1 epoch, lr 5e-4 cosine, max_len 288, effective batch 128, 90/5/5 row split, best by val loss |
-| Human-FT | paper protocol: 288 Siegler-2011 train / 96 val rows, 1 epoch (18 updates), lr 1e-4, full FT, best by val NLL |
+| Human-FT | paper protocol: 288 Siegler-2011 train / 96 val rows, 1 epoch (18 updates), lr 1e-4, continue training the distilled LoRA adapter (33M trainable; not full FT), no KL, best by val NLL |
 | Evaluation | SP2013 16 problems, 256 samples each, T=1.0 top_p=0.95, fixed mixed-number parser; 8-cell MAE vs children, accuracy, val NLL |
 | Seeds | distill seed fixed; human-FT seeds 42, 43, 44, 45 for every arm (mean and SD reported) |
 

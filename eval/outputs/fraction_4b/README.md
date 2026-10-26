@@ -29,6 +29,9 @@ All four stages use **Qwen3-4B-Base** + a 142 MB LoRA adapter (base for the
 | + distill + humanFT | `qwen_humanft_from_distill_4b_ep1_20260503_124020/best` |
 | + humanFT (from base) | `qwen_humanft_frombase_4b_20260512_221255/best` |
 
+The exact training commands, configs, logs and paper-era trainer code for these two checkpoints are in
+[`paper_runs/`](paper_runs/README.md) (learner tag on every prompt; human FT continues the LoRA adapter with no KL term).
+
 ## Source rollouts
 
 - `qwen3_4b_base.csv`, `qwen3_4b_distill.csv`, `qwen3_4b_distill_humanft.csv`

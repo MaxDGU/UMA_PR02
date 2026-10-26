@@ -1,0 +1,53 @@
+[2026-05-03T12:41:16-04:00] starting humanft_distill_4b_ep1
+job_id=7637206 node=della-i24g1
+model_name=Qwen/Qwen3-4B-Base
+init_strategy=checkpoint model_path=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora checkpoint_subdir=best
+use_lora=0 r=16 alpha=32 dropout=0.05
+epochs=1 max_steps=0 batch=2 grad_accum=8 lr=1e-4
+instruction_style=plain kl_beta=0.0 best_by=val_nll
+out_dir=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020
+Sun May  3 12:41:16 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.58.03              Driver Version: 595.58.03      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:CB:00.0 Off |                    0 |
+| N/A   35C    P0             78W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/human_ft/finetune_humandata.py:820: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(amp_dtype == torch.float16 and device.type == "cuda"))
+======================================================================
+HUMAN-DATA FINETUNE PIPELINE
+======================================================================
+init_strategy: checkpoint
+checkpoint_dir: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/best
+train_csv: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/data/human_ft/data_train_nlp.csv
+val_csv:   /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/data/human_ft/data_val_nlp.csv
+output_dir: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020
+device: cuda
+amp_dtype: torch.bfloat16
+rows train: 288
+rows val:   96
+instruction_style: plain
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:06<00:13,  6.93s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:12<00:06,  6.09s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  3.39s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:12<00:00,  4.20s/it]
+params (total/trainable): 4,055,498,240/33,030,144
+epoch 1/1 | update 10/18 | train_loss 2.1847 | lr 4.13e-05
+[epoch 01] train_nll=1.9203 val_nll=1.3607 val_ppl=3.90 train_batch_kl=0.000000 sp2013_acc=nan
+  saved best checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020/best
+  saved last checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020/last
+saved final checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen_humanft_from_distill_4b_ep1_20260503_124020/final
+Done.
+[2026-05-03T12:43:08-04:00] finished humanft_distill_4b_ep1

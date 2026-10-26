@@ -1,0 +1,26 @@
+[
+  {
+    "epoch": 1,
+    "eval_tag": "e01_u3596",
+    "eval_scope": "full",
+    "update_in_epoch": 3596,
+    "updates_done": 3596,
+    "train_loss": 0.029106164120153103,
+    "val_loss": 0.018321865659617402,
+    "test_loss": 0.01827785047936779,
+    "sp2013_acc": NaN,
+    "sp2013_primary": NaN,
+    "sp2013_primary_name": "overall_acc",
+    "sp2013_primary_higher_is_better": true,
+    "sp2013_by_op": {},
+    "id_val_acc": 0.546875,
+    "id_val_coverage": 1.0,
+    "id_val_true_acc": 0.53125,
+    "id_val_true_coverage": 1.0,
+    "id_test_acc": NaN,
+    "id_test_coverage": NaN,
+    "id_test_true_acc": NaN,
+    "id_test_true_coverage": NaN,
+    "elapsed_sec": 12529.02122092247
+  }
+]

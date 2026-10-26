@@ -1,0 +1,284 @@
+[2026-05-02T19:49:52-04:00] starting fraction_panel25_default_4b
+job_id=7607804 node=della-i21g2 cuda_visible_devices=0
+python_bin=/home/mg7411/.conda/envs/gpt-analysis/bin/python
+dataset_kind=fraction_panel25_default
+data_csv=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/data/distillation/uma_fraction_distillation_25
+model_name=Qwen/Qwen3-4B-Base
+model_load_dtype=bf16
+out_dir=/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora
+epochs=1 batch_size=16 grad_accum=8 lr=5e-4 min_lr=1e-6 scheduler=cosine
+max_length=288 val_frac=0.05 test_frac=0.05 split_by_problem=0
+use_lora=1 lora_r=16 lora_alpha=32 lora_dropout=0.05
+train_prompt_student_mode=always prompt_problem_kind=fraction
+best_by=val_loss id_eval_size=64 id_eval_batch_size=4
+Sat May  2 19:49:52 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.58.03              Driver Version: 595.58.03      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H200                    On  |   00000000:4C:00.0 Off |                    0 |
+| N/A   29C    P0             75W /  700W |       0MiB / 143771MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/train_transformer_hf.py:2353: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(amp_dtype == torch.float16 and device.type == "cuda"))
+======================================================================
+HF BACKBONE FINETUNING ON NLP UMA TRACES
+======================================================================
+model: Qwen/Qwen3-4B-Base
+init_from_scratch: False
+data: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/data/distillation/uma_fraction_distillation_25
+output_dir: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora
+distributed: False (world_size=1)
+sp2013_eval: False (/scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/UMA_replication/sp2013.csv)
+sp2013_target_mode: true
+sp2013_target_csv: /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/UMA_replication/sp2013_eval/seed_1/sp2013_seed1_all_models.csv
+sp2013_param_grid_eval: False
+sp2013_sampling: rollouts=1 do_sample=False temperature=0.7 top_p=0.95 top_k=50 rollout_batch=1
+evals_per_epoch: 1
+loss_evals_per_epoch: 1
+lr: 0.0005
+min_lr: 1e-06
+lr_scheduler_type: cosine
+local_files_only: True
+resume_from: none
+save_last_every_updates: 2000
+save_eval_checkpoints: False
+save_best_checkpoint: True
+save_final_checkpoint: True
+verify_saved_checkpoint_load: False
+best checkpoint criterion: val_loss
+check_format_consistency: True
+id_eval: True (split=val, sample_size=64, target=response, report_true_target=True, batch_size=4)
+
+split mode: row-level
+rows total: 511,315
+rows train: 460,185
+rows val:   25,565
+rows test:  25,565
+train prompt student mode: always (dropout_prob=0.0, dropout_seed=0)
+prompt rewrite train: rows=460,185, student_visible=460,185, plain_retained=0
+prompt rewrite val: rows=25,565, student_visible=25,565, plain_retained=0
+prompt rewrite test: rows=25,565, student_visible=25,565, plain_retained=0
+problem overlap counts: train∩val=14,948, train∩test=14,827, val∩test=10,638
+prompt format counts by split:
+  train: student_prefixed=460,185, plain_solve=0, student_other=0, other=0
+  val: student_prefixed=25,565, plain_solve=0, student_other=0, other=0
+  test: student_prefixed=25,565, plain_solve=0, student_other=0, other=0
+
+resume requested (none) but no valid trainer_state.pt found; starting fresh.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 12.68it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.49it/s]
+device: cuda:0
+amp_dtype: torch.bfloat16
+model_load_dtype: bf16
+params (total/trainable): 4,055,498,240/33,030,144
+use_lora: True
+lora target modules: q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
+trainable params: 33,030,144 || all params: 4,055,498,240 || trainable%: 0.8145
+global batch (samples/update): 128
+
+train batches/epoch: 28762
+optimizer updates/epoch: 3596
+total optimizer updates: 3596
+warmup updates: 107
+
+epoch 1/1 | update 20/3596 | train_loss 1.0565 | lr 9.35e-05
+epoch 1/1 | update 40/3596 | train_loss 0.6573 | lr 1.87e-04
+epoch 1/1 | update 60/3596 | train_loss 0.4698 | lr 2.80e-04
+epoch 1/1 | update 80/3596 | train_loss 0.3679 | lr 3.74e-04
+epoch 1/1 | update 100/3596 | train_loss 0.3041 | lr 4.67e-04
+epoch 1/1 | update 120/3596 | train_loss 0.2609 | lr 5.00e-04
+epoch 1/1 | update 140/3596 | train_loss 0.2296 | lr 5.00e-04
+epoch 1/1 | update 160/3596 | train_loss 0.2059 | lr 5.00e-04
+epoch 1/1 | update 180/3596 | train_loss 0.1874 | lr 4.99e-04
+epoch 1/1 | update 200/3596 | train_loss 0.1724 | lr 4.99e-04
+epoch 1/1 | update 220/3596 | train_loss 0.1599 | lr 4.99e-04
+epoch 1/1 | update 240/3596 | train_loss 0.1494 | lr 4.98e-04
+epoch 1/1 | update 260/3596 | train_loss 0.1405 | lr 4.98e-04
+epoch 1/1 | update 280/3596 | train_loss 0.1327 | lr 4.97e-04
+epoch 1/1 | update 300/3596 | train_loss 0.1258 | lr 4.96e-04
+epoch 1/1 | update 320/3596 | train_loss 0.1197 | lr 4.95e-04
+epoch 1/1 | update 340/3596 | train_loss 0.1144 | lr 4.95e-04
+epoch 1/1 | update 360/3596 | train_loss 0.1096 | lr 4.94e-04
+epoch 1/1 | update 380/3596 | train_loss 0.1052 | lr 4.92e-04
+epoch 1/1 | update 400/3596 | train_loss 0.1014 | lr 4.91e-04
+epoch 1/1 | update 420/3596 | train_loss 0.0980 | lr 4.90e-04
+epoch 1/1 | update 440/3596 | train_loss 0.0947 | lr 4.89e-04
+epoch 1/1 | update 460/3596 | train_loss 0.0917 | lr 4.88e-04
+epoch 1/1 | update 480/3596 | train_loss 0.0889 | lr 4.86e-04
+epoch 1/1 | update 500/3596 | train_loss 0.0863 | lr 4.85e-04
+epoch 1/1 | update 520/3596 | train_loss 0.0839 | lr 4.83e-04
+epoch 1/1 | update 540/3596 | train_loss 0.0816 | lr 4.81e-04
+epoch 1/1 | update 560/3596 | train_loss 0.0795 | lr 4.80e-04
+epoch 1/1 | update 580/3596 | train_loss 0.0775 | lr 4.78e-04
+epoch 1/1 | update 600/3596 | train_loss 0.0757 | lr 4.76e-04
+epoch 1/1 | update 620/3596 | train_loss 0.0739 | lr 4.74e-04
+epoch 1/1 | update 640/3596 | train_loss 0.0723 | lr 4.72e-04
+epoch 1/1 | update 660/3596 | train_loss 0.0709 | lr 4.70e-04
+epoch 1/1 | update 680/3596 | train_loss 0.0694 | lr 4.68e-04
+epoch 1/1 | update 700/3596 | train_loss 0.0681 | lr 4.65e-04
+epoch 1/1 | update 720/3596 | train_loss 0.0668 | lr 4.63e-04
+epoch 1/1 | update 740/3596 | train_loss 0.0656 | lr 4.61e-04
+epoch 1/1 | update 760/3596 | train_loss 0.0645 | lr 4.58e-04
+epoch 1/1 | update 780/3596 | train_loss 0.0634 | lr 4.56e-04
+epoch 1/1 | update 800/3596 | train_loss 0.0623 | lr 4.53e-04
+epoch 1/1 | update 820/3596 | train_loss 0.0613 | lr 4.50e-04
+epoch 1/1 | update 840/3596 | train_loss 0.0604 | lr 4.48e-04
+epoch 1/1 | update 860/3596 | train_loss 0.0595 | lr 4.45e-04
+epoch 1/1 | update 880/3596 | train_loss 0.0586 | lr 4.42e-04
+epoch 1/1 | update 900/3596 | train_loss 0.0578 | lr 4.39e-04
+epoch 1/1 | update 920/3596 | train_loss 0.0570 | lr 4.36e-04
+epoch 1/1 | update 940/3596 | train_loss 0.0562 | lr 4.33e-04
+epoch 1/1 | update 960/3596 | train_loss 0.0555 | lr 4.30e-04
+epoch 1/1 | update 980/3596 | train_loss 0.0548 | lr 4.27e-04
+epoch 1/1 | update 1000/3596 | train_loss 0.0542 | lr 4.24e-04
+epoch 1/1 | update 1020/3596 | train_loss 0.0535 | lr 4.20e-04
+epoch 1/1 | update 1040/3596 | train_loss 0.0529 | lr 4.17e-04
+epoch 1/1 | update 1060/3596 | train_loss 0.0523 | lr 4.14e-04
+epoch 1/1 | update 1080/3596 | train_loss 0.0517 | lr 4.10e-04
+epoch 1/1 | update 1100/3596 | train_loss 0.0511 | lr 4.07e-04
+epoch 1/1 | update 1120/3596 | train_loss 0.0506 | lr 4.03e-04
+epoch 1/1 | update 1140/3596 | train_loss 0.0501 | lr 4.00e-04
+epoch 1/1 | update 1160/3596 | train_loss 0.0496 | lr 3.96e-04
+epoch 1/1 | update 1180/3596 | train_loss 0.0491 | lr 3.92e-04
+epoch 1/1 | update 1200/3596 | train_loss 0.0486 | lr 3.89e-04
+epoch 1/1 | update 1220/3596 | train_loss 0.0482 | lr 3.85e-04
+epoch 1/1 | update 1240/3596 | train_loss 0.0477 | lr 3.81e-04
+epoch 1/1 | update 1260/3596 | train_loss 0.0473 | lr 3.77e-04
+epoch 1/1 | update 1280/3596 | train_loss 0.0469 | lr 3.73e-04
+epoch 1/1 | update 1300/3596 | train_loss 0.0465 | lr 3.69e-04
+epoch 1/1 | update 1320/3596 | train_loss 0.0461 | lr 3.65e-04
+epoch 1/1 | update 1340/3596 | train_loss 0.0457 | lr 3.61e-04
+epoch 1/1 | update 1360/3596 | train_loss 0.0453 | lr 3.57e-04
+epoch 1/1 | update 1380/3596 | train_loss 0.0450 | lr 3.53e-04
+epoch 1/1 | update 1400/3596 | train_loss 0.0446 | lr 3.49e-04
+epoch 1/1 | update 1420/3596 | train_loss 0.0442 | lr 3.45e-04
+epoch 1/1 | update 1440/3596 | train_loss 0.0439 | lr 3.41e-04
+epoch 1/1 | update 1460/3596 | train_loss 0.0436 | lr 3.37e-04
+epoch 1/1 | update 1480/3596 | train_loss 0.0433 | lr 3.32e-04
+epoch 1/1 | update 1500/3596 | train_loss 0.0430 | lr 3.28e-04
+epoch 1/1 | update 1520/3596 | train_loss 0.0427 | lr 3.24e-04
+epoch 1/1 | update 1540/3596 | train_loss 0.0424 | lr 3.20e-04
+epoch 1/1 | update 1560/3596 | train_loss 0.0421 | lr 3.15e-04
+epoch 1/1 | update 1580/3596 | train_loss 0.0418 | lr 3.11e-04
+epoch 1/1 | update 1600/3596 | train_loss 0.0415 | lr 3.07e-04
+epoch 1/1 | update 1620/3596 | train_loss 0.0414 | lr 3.02e-04
+epoch 1/1 | update 1640/3596 | train_loss 0.0412 | lr 2.98e-04
+epoch 1/1 | update 1660/3596 | train_loss 0.0409 | lr 2.93e-04
+epoch 1/1 | update 1680/3596 | train_loss 0.0407 | lr 2.89e-04
+epoch 1/1 | update 1700/3596 | train_loss 0.0405 | lr 2.84e-04
+epoch 1/1 | update 1720/3596 | train_loss 0.0402 | lr 2.80e-04
+epoch 1/1 | update 1740/3596 | train_loss 0.0400 | lr 2.76e-04
+epoch 1/1 | update 1760/3596 | train_loss 0.0398 | lr 2.71e-04
+epoch 1/1 | update 1780/3596 | train_loss 0.0396 | lr 2.67e-04
+epoch 1/1 | update 1800/3596 | train_loss 0.0393 | lr 2.62e-04
+epoch 1/1 | update 1820/3596 | train_loss 0.0391 | lr 2.58e-04
+epoch 1/1 | update 1840/3596 | train_loss 0.0389 | lr 2.53e-04
+epoch 1/1 | update 1860/3596 | train_loss 0.0387 | lr 2.49e-04
+epoch 1/1 | update 1880/3596 | train_loss 0.0385 | lr 2.44e-04
+epoch 1/1 | update 1900/3596 | train_loss 0.0383 | lr 2.40e-04
+epoch 1/1 | update 1920/3596 | train_loss 0.0381 | lr 2.35e-04
+epoch 1/1 | update 1940/3596 | train_loss 0.0379 | lr 2.31e-04
+epoch 1/1 | update 1960/3596 | train_loss 0.0377 | lr 2.26e-04
+epoch 1/1 | update 1980/3596 | train_loss 0.0376 | lr 2.22e-04
+  saved resumable checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/last (global_update=2000)
+epoch 1/1 | update 2000/3596 | train_loss 0.0374 | lr 2.17e-04
+epoch 1/1 | update 2020/3596 | train_loss 0.0372 | lr 2.13e-04
+epoch 1/1 | update 2040/3596 | train_loss 0.0370 | lr 2.08e-04
+epoch 1/1 | update 2060/3596 | train_loss 0.0368 | lr 2.04e-04
+epoch 1/1 | update 2080/3596 | train_loss 0.0367 | lr 2.00e-04
+epoch 1/1 | update 2100/3596 | train_loss 0.0365 | lr 1.95e-04
+epoch 1/1 | update 2120/3596 | train_loss 0.0363 | lr 1.91e-04
+epoch 1/1 | update 2140/3596 | train_loss 0.0362 | lr 1.86e-04
+epoch 1/1 | update 2160/3596 | train_loss 0.0360 | lr 1.82e-04
+epoch 1/1 | update 2180/3596 | train_loss 0.0359 | lr 1.78e-04
+epoch 1/1 | update 2200/3596 | train_loss 0.0357 | lr 1.73e-04
+epoch 1/1 | update 2220/3596 | train_loss 0.0356 | lr 1.69e-04
+epoch 1/1 | update 2240/3596 | train_loss 0.0354 | lr 1.65e-04
+epoch 1/1 | update 2260/3596 | train_loss 0.0353 | lr 1.61e-04
+epoch 1/1 | update 2280/3596 | train_loss 0.0351 | lr 1.57e-04
+epoch 1/1 | update 2300/3596 | train_loss 0.0350 | lr 1.52e-04
+epoch 1/1 | update 2320/3596 | train_loss 0.0349 | lr 1.48e-04
+epoch 1/1 | update 2340/3596 | train_loss 0.0347 | lr 1.44e-04
+epoch 1/1 | update 2360/3596 | train_loss 0.0346 | lr 1.40e-04
+epoch 1/1 | update 2380/3596 | train_loss 0.0345 | lr 1.36e-04
+epoch 1/1 | update 2400/3596 | train_loss 0.0343 | lr 1.32e-04
+epoch 1/1 | update 2420/3596 | train_loss 0.0342 | lr 1.28e-04
+epoch 1/1 | update 2440/3596 | train_loss 0.0341 | lr 1.24e-04
+epoch 1/1 | update 2460/3596 | train_loss 0.0340 | lr 1.21e-04
+epoch 1/1 | update 2480/3596 | train_loss 0.0338 | lr 1.17e-04
+epoch 1/1 | update 2500/3596 | train_loss 0.0337 | lr 1.13e-04
+epoch 1/1 | update 2520/3596 | train_loss 0.0336 | lr 1.09e-04
+epoch 1/1 | update 2540/3596 | train_loss 0.0335 | lr 1.06e-04
+epoch 1/1 | update 2560/3596 | train_loss 0.0334 | lr 1.02e-04
+epoch 1/1 | update 2580/3596 | train_loss 0.0332 | lr 9.83e-05
+epoch 1/1 | update 2600/3596 | train_loss 0.0331 | lr 9.48e-05
+epoch 1/1 | update 2620/3596 | train_loss 0.0330 | lr 9.13e-05
+epoch 1/1 | update 2640/3596 | train_loss 0.0329 | lr 8.79e-05
+epoch 1/1 | update 2660/3596 | train_loss 0.0328 | lr 8.45e-05
+epoch 1/1 | update 2680/3596 | train_loss 0.0327 | lr 8.12e-05
+epoch 1/1 | update 2700/3596 | train_loss 0.0326 | lr 7.79e-05
+epoch 1/1 | update 2720/3596 | train_loss 0.0325 | lr 7.47e-05
+epoch 1/1 | update 2740/3596 | train_loss 0.0324 | lr 7.15e-05
+epoch 1/1 | update 2760/3596 | train_loss 0.0323 | lr 6.84e-05
+epoch 1/1 | update 2780/3596 | train_loss 0.0322 | lr 6.54e-05
+epoch 1/1 | update 2800/3596 | train_loss 0.0321 | lr 6.24e-05
+epoch 1/1 | update 2820/3596 | train_loss 0.0320 | lr 5.95e-05
+epoch 1/1 | update 2840/3596 | train_loss 0.0319 | lr 5.66e-05
+epoch 1/1 | update 2860/3596 | train_loss 0.0318 | lr 5.38e-05
+epoch 1/1 | update 2880/3596 | train_loss 0.0317 | lr 5.11e-05
+epoch 1/1 | update 2900/3596 | train_loss 0.0316 | lr 4.84e-05
+epoch 1/1 | update 2920/3596 | train_loss 0.0316 | lr 4.58e-05
+epoch 1/1 | update 2940/3596 | train_loss 0.0315 | lr 4.33e-05
+epoch 1/1 | update 2960/3596 | train_loss 0.0314 | lr 4.08e-05
+epoch 1/1 | update 2980/3596 | train_loss 0.0313 | lr 3.84e-05
+epoch 1/1 | update 3000/3596 | train_loss 0.0312 | lr 3.61e-05
+epoch 1/1 | update 3020/3596 | train_loss 0.0311 | lr 3.38e-05
+epoch 1/1 | update 3040/3596 | train_loss 0.0310 | lr 3.16e-05
+epoch 1/1 | update 3060/3596 | train_loss 0.0310 | lr 2.95e-05
+epoch 1/1 | update 3080/3596 | train_loss 0.0309 | lr 2.74e-05
+epoch 1/1 | update 3100/3596 | train_loss 0.0308 | lr 2.55e-05
+epoch 1/1 | update 3120/3596 | train_loss 0.0307 | lr 2.36e-05
+epoch 1/1 | update 3140/3596 | train_loss 0.0307 | lr 2.17e-05
+epoch 1/1 | update 3160/3596 | train_loss 0.0306 | lr 2.00e-05
+epoch 1/1 | update 3180/3596 | train_loss 0.0305 | lr 1.83e-05
+epoch 1/1 | update 3200/3596 | train_loss 0.0304 | lr 1.67e-05
+epoch 1/1 | update 3220/3596 | train_loss 0.0304 | lr 1.52e-05
+epoch 1/1 | update 3240/3596 | train_loss 0.0303 | lr 1.37e-05
+epoch 1/1 | update 3260/3596 | train_loss 0.0302 | lr 1.23e-05
+epoch 1/1 | update 3280/3596 | train_loss 0.0301 | lr 1.10e-05
+epoch 1/1 | update 3300/3596 | train_loss 0.0301 | lr 9.81e-06
+epoch 1/1 | update 3320/3596 | train_loss 0.0300 | lr 8.67e-06
+epoch 1/1 | update 3340/3596 | train_loss 0.0299 | lr 7.60e-06
+epoch 1/1 | update 3360/3596 | train_loss 0.0299 | lr 6.61e-06
+epoch 1/1 | update 3380/3596 | train_loss 0.0298 | lr 5.70e-06
+epoch 1/1 | update 3400/3596 | train_loss 0.0297 | lr 4.88e-06
+epoch 1/1 | update 3420/3596 | train_loss 0.0297 | lr 4.13e-06
+epoch 1/1 | update 3440/3596 | train_loss 0.0296 | lr 3.46e-06
+epoch 1/1 | update 3460/3596 | train_loss 0.0295 | lr 2.87e-06
+epoch 1/1 | update 3480/3596 | train_loss 0.0295 | lr 2.36e-06
+epoch 1/1 | update 3500/3596 | train_loss 0.0294 | lr 1.93e-06
+epoch 1/1 | update 3520/3596 | train_loss 0.0293 | lr 1.58e-06
+epoch 1/1 | update 3540/3596 | train_loss 0.0293 | lr 1.32e-06
+epoch 1/1 | update 3560/3596 | train_loss 0.0292 | lr 1.13e-06
+epoch 1/1 | update 3580/3596 | train_loss 0.0292 | lr 1.03e-06
+[eval full e01_u3596] train=0.0291 val=0.0183 test=0.0183 sp2013=nan sp2013_primary=nan (overall_acc) id_val=0.5469 id_val_true=0.5312
+  saved best checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/best (val=0.0183)
+  saved resumable checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/last (epoch=1, update_in_epoch=3596)
+
+Saved final checkpoint -> /scratch/gpfs/GRIFFITHS/mg7411/llm_student/UMA_PR02_feat_humanft/results/transformer_replication/qwen3_4b_panel25_default_base_e1_ailab_20260502_171918_4Bretry_lora/final
+
+Done.
+[2026-05-02T23:20:25-04:00] finished fraction_panel25_default_4b

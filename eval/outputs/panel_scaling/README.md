@@ -13,7 +13,7 @@ held-out Siegler 2011 child responses. **Prompt format:** training writes proble
 sensitive to the unspaced form, so all arm-C / control / KL-primary / long-FT numbers use `c1000/eval_spaced.py`. Short-trained
 arms are format-insensitive (B1000 seed 42: 18.7 unspaced vs 19.9 spaced).
 
-**Human FT** = 288 Siegler 2011 responses, lr 1e-4, full FT, 16 examples/update (18 updates/epoch). **KL human FT** adds
+**Human FT** = 288 Siegler 2011 responses, lr 1e-4, continues training the distilled LoRA adapter (33M trainable params; not full FT), 16 examples/update (18 updates/epoch). **KL human FT** adds
 KL(policy || distill ckpt) with beta 1.0 and is the primary metric.
 
 ## Arms
