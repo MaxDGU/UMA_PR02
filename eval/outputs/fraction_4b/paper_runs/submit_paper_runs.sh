@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Exact SLURM submissions behind the Table 1 fraction model (Qwen3-4B, 25-learner panel), copied verbatim from
-# `sacct -j <id> --format=SubmitLine` on della. Paths are della paths. The wrappers run the trainers from
-# $REPO_ROOT, so to reproduce bit-for-bit, first put code_a9823d7/train_transformer_hf.py at
-# results/transformer_replication/train_transformer_hf.py (see README.md for how main_max's copy differs).
+# `sacct -j <id> --format=SubmitLine` on della. Paths are della paths. The wrappers run the trainers from $REPO_ROOT;
+# use the main_max versions of results/transformer_replication/train_transformer_hf.py and human_ft/finetune_humandata.py
+# (see README.md: the May runs had enable_input_require_grads, which the older commit a9823d7 lacks).
 set -euo pipefail
 
 # Stage 1: distillation on UMA traces. Job 7607804, submitted 2026-05-02, 1x H200, 3,596 updates, 3.5 h.

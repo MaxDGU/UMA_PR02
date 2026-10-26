@@ -10,9 +10,6 @@ human-FT val NLL 1.361). Everything here was taken from the run directories and 
 
 ## Contents
 * `submit_paper_runs.sh`: the two `sbatch` commands, copied verbatim from `sacct --format=SubmitLine`.
-* `code_a9823d7/`: the trainers and SLURM wrappers as they were when the runs started (commit `a9823d7` on the
-  local `feature/qwen-humanft-lora` branch, which was never pushed). The line numbers of warnings in both
-  logs match these files.
 * `distill_run/`, `humanft_run/`: `train_args.json`, `history.json`, summary metrics, `adapter_config.json`,
   and the SLURM log of each run.
 
@@ -36,16 +33,24 @@ human-FT val NLL 1.361). Everything here was taken from the run directories and 
   It does not mean full fine-tuning.
 * Prompts are plain: no learner tag.
 
-## Differences from the current code on main_max
-* `human_ft/finetune_humandata.py` and `slurm_train_qwen3_distill_1epoch.sbatch` are identical to these copies.
-* `slurm_train_qwen_humanft_lora.sbatch` on main_max only adds the optional `SAVE_EPOCH_CHECKPOINTS` and
-  `SAVE_EPOCH_LIST` flags. With those unset it runs the same command.
-* `results/transformer_replication/train_transformer_hf.py` on main_max differs in three ways:
-  * It adds an `--attn_implementation` flag. The default (`eager`) passes nothing, so behaviour is unchanged.
-  * It adds whole-number prompt wording, which leaves fraction prompts unchanged.
-  * It calls `model.enable_input_require_grads()` when LoRA is used with gradient checkpointing.
-    **This last change affects training**, and the paper run predates it. Use `code_a9823d7/train_transformer_hf.py`
-    to reproduce the paper exactly.
+## Which code produced these runs
+Use the main_max versions of `results/transformer_replication/train_transformer_hf.py`, `human_ft/finetune_humandata.py`
+and the two `slurm_train_*.sbatch` wrappers. The exact trainer file from 2026-05-02 was not preserved. The evidence:
+
+* **The trainer had `model.enable_input_require_grads()`.** The last committed version before the runs (local commit
+  `a9823d7`, 2026-04-29, never pushed) lacks this call. In the same conda environment it crashes at the first
+  backward pass ("element 0 of tensors does not require grad"): reproduced on 2026-10-26 with Qwen3-4B-Base and
+  Qwen3-14B-Base.
+  * The environment has not changed since October 2025 (torch 2.8.0, transformers 4.57.0, peft 0.17.1).
+  * The May 4B and 8B logs show no such warning and trained normally.
+  * The first 4B attempt on 2026-05-02 (job 7605429, log `slurm_logs/q34b_p25l_ailab_20260502_155943_7605429.err`)
+    failed with exactly this error after 2 minutes.
+  * The run in this folder is the retry ("4Bretry", job 7607804), started 3 hours later after the call was added.
+* **The other differences on main_max don't change fraction runs.** They are an `--attn_implementation` flag whose
+  default passes nothing, and whole-number prompt wording.
+* **The human-FT trainer was unchanged.** `human_ft/finetune_humandata.py` has not changed since 2026-04-29.
+* **The wrappers behave the same.** `slurm_train_qwen3_distill_1epoch.sbatch` only adds the attention flag (default
+  eager). `slurm_train_qwen_humanft_lora.sbatch` only adds the optional `SAVE_EPOCH_*` flags.
 
 ## Known mismatches with the paper text
 * The appendix says human FT uses early stopping with a maximum of five epochs. The reported model was trained
